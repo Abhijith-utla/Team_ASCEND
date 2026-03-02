@@ -1,0 +1,4469 @@
+{
+  "meta": {
+    "generated_at": "2026-03-02T00:12:55.330810Z",
+    "pipeline": "Ascend Variant Generator v1.0",
+    "config": {
+      "num_roots": 30,
+      "variants_per_node": 3,
+      "tree_depth": 3,
+      "model": "llama-3.3-70b-versatile",
+      "max_tokens": 1500,
+      "retry_attempts": 3,
+      "retry_delay": 2
+    },
+    "stats": {
+      "total_problems": 201,
+      "root_problems": 30,
+      "total_variants": 171,
+      "topics_covered": [
+        "Arrays & Hashing",
+        "Dynamic Programming",
+        "Graphs",
+        "Greedy",
+        "Linked Lists",
+        "Sliding Window",
+        "Stack & Queue",
+        "Trees",
+        "Two Pointers"
+      ],
+      "difficulty_distribution": {
+        "Easy": 182,
+        "Easy-Medium": 11,
+        "Medium": 8
+      },
+      "simplification_types": {
+        "dimension_reduction": 49,
+        "technique_decomposition": 24,
+        "domain_swap": 35,
+        "edge_case_removal": 17,
+        "constraint_relaxation": 46
+      },
+      "depth_distribution": {
+        "0": 30,
+        "1": 15,
+        "2": 45,
+        "3": 111
+      }
+    }
+  },
+  "problems": [
+    {
+      "title": "Duplicate-Free Sublist",
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "description": "Given a list of integers, find the length of the longest sublist that does not contain any duplicate elements. For example, if the input is [1, 2, 3, 4, 2, 3], the output should be 4 because the longest duplicate-free sublist is [1, 2, 3, 4]. Another example: if the input is [1, 1, 1, 1], the output should be 1 because the longest duplicate-free sublist is [1].",
+      "constraints": [
+        "1 <= list length <= 1000",
+        "0 <= element value <= 1000"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Use a sliding window approach with a hash set to track unique elements in the current sublist",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_0",
+      "depth": 0,
+      "parent_id": null,
+      "children": [
+        "root_0_v0",
+        "root_0_v1",
+        "root_0_v2"
+      ]
+    },
+    {
+      "title": "Duplicate Node Remover in a Sorted Linked List",
+      "difficulty": "Easy-Medium",
+      "topic": "Linked Lists",
+      "description": "Given a sorted linked list, remove any duplicate nodes. The list is sorted in ascending order. For example, given the list 1 -> 2 -> 2 -> 3 -> 4 -> 4 -> 5, return 1 -> 2 -> 3 -> 4 -> 5. Another example, given the list 1 -> 1 -> 1 -> 2 -> 3, return 1 -> 2 -> 3.",
+      "constraints": [
+        "The input linked list is sorted in ascending order",
+        "The list does not contain any cycles"
+      ],
+      "core_technique": "Traversing a linked list and comparing node values",
+      "insight": "The key insight is to compare each node with its next node and remove the next node if they have the same value",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_1",
+      "depth": 0,
+      "parent_id": null,
+      "children": [
+        "root_1_v0",
+        "root_1_v1",
+        "root_1_v2"
+      ]
+    },
+    {
+      "title": "Minimizing Coins for Change",
+      "difficulty": "Easy",
+      "topic": "Greedy",
+      "description": "You are given a set of coin denominations and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denominations. For example, if you have coin denominations of 1, 5, and 10, and you need to make change for 8, the minimum number of coins needed would be 2 (5 + 1 + 1 + 1 or 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 but the optimal solution is not unique, however one optimal solution is 5 + 1 + 1 + 1). Another example, if you have coin denominations of 2 and 5, and you need to make change for 6, the minimum number of coins needed would be 2 (2 + 2 + 2)",
+      "constraints": [
+        "Coin denominations are positive integers",
+        "Amount of money is a positive integer"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Always choose the largest denomination that does not exceed the remaining amount",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_2",
+      "depth": 0,
+      "parent_id": null,
+      "children": [
+        "root_2_v0",
+        "root_2_v1",
+        "root_2_v2"
+      ]
+    },
+    {
+      "title": "Minimum Window with Equal Elements",
+      "difficulty": "Easy-Medium",
+      "topic": "Two Pointers",
+      "description": "Given an array of integers and a target integer, find the minimum length of a subarray that contains the same number of occurrences of the target integer as the total number of occurrences in the entire array. For example, if the array is [1, 2, 2, 3, 2, 4, 2] and the target is 2, the function should return 4 because the subarray [2, 2, 3, 2] has the same number of occurrences of 2 as the entire array. If no such subarray exists, return -1. Another example: for the array [1, 1, 1, 2, 2, 2] and the target 1, the function should return 3.",
+      "constraints": [
+        "1 <= array length <= 10^5",
+        "array elements are between 1 and 10^5"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "The key to solving this problem is maintaining a count of the target element within the current window and adjusting the window boundaries based on this count.",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_3",
+      "depth": 0,
+      "parent_id": null,
+      "children": [
+        "root_3_v0",
+        "root_3_v1",
+        "root_3_v2"
+      ]
+    },
+    {
+      "title": "Frequent Element Finder",
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "description": "Given an array of integers, find the first element that appears more than once in the array. If no such element exists, return -1. For example, given the array [2, 3, 4, 2, 5], the function should return 2 because it is the first element that appears more than once. Given the array [1, 2, 3, 4, 5], the function should return -1 because no element appears more than once.",
+      "constraints": [
+        "1 <= array length <= 10000",
+        "0 <= array elements <= 10000"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash map to store the frequency of each element can efficiently solve this problem",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_4",
+      "depth": 0,
+      "parent_id": null,
+      "children": [
+        "root_4_v0",
+        "root_4_v1",
+        "root_4_v2"
+      ]
+    },
+    {
+      "title": "Minimum Cost to Paint Houses",
+      "difficulty": "Easy",
+      "topic": "Dynamic Programming",
+      "description": "You are given a list of houses, each of which can be painted with one of three colors: red, blue, or green. The cost of painting each house with a particular color is given. Your task is to find the minimum cost to paint all houses such that no two adjacent houses have the same color. For example, if the costs are [[1, 2, 3], [4, 5, 6], [7, 8, 9]], the minimum cost would be 12 (by painting the first house red, the second house green, and the third house blue). Another example: if the costs are [[10, 20, 30], [15, 25, 35], [5, 10, 15]], the minimum cost would be 40.",
+      "constraints": [
+        "The number of houses will be between 1 and 100",
+        "The cost of painting each house with a particular color will be between 1 and 100"
+      ],
+      "core_technique": "Dynamic Programming",
+      "insight": "Breaking down the problem into smaller subproblems and storing the minimum cost for each subproblem",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_5",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Balanced Substrings",
+      "difficulty": "Easy-Medium",
+      "topic": "Two Pointers",
+      "description": "Given a string containing only 'a', 'b', and 'c', find the longest substring with a balanced count of 'a', 'b', and 'c'. A balanced count means that the difference between the counts of any two characters is at most 1. For example, given the string 'abcabc', the longest balanced substring is 'abcabc' itself. Given the string 'aabbc', the longest balanced substring is 'aabbc'.",
+      "constraints": [
+        "1 <= length of string <= 10000"
+      ],
+      "core_technique": "Two Pointers with Sliding Window",
+      "insight": "Maintaining a frequency count of characters within the window and adjusting the window bounds based on balance conditions",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_6",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Valid Subsequences",
+      "difficulty": "Easy",
+      "topic": "Stack & Queue",
+      "description": "Given a string of parentheses, determine the number of valid subsequences that can be formed. A subsequence is valid if it has an equal number of opening and closing parentheses and the opening parentheses appear before the closing ones. For example, '()' and '(())' are valid subsequences, while ')(' is not. Given the input string '()()(', the output should be 4 because the valid subsequences are: '', '()', '()()', and '()()'. Given the input string '())', the output should be 1 because the only valid subsequence is ''.",
+      "constraints": [
+        "The input string only contains parentheses.",
+        "The length of the input string will be between 1 and 100."
+      ],
+      "core_technique": "Stack",
+      "insight": "Use a stack to keep track of the indices of the opening parentheses that do not have a corresponding closing parenthesis yet.",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_7",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Coin Collector",
+      "difficulty": "Easy",
+      "topic": "Greedy",
+      "description": "You are given a set of coins, each with a specific value. You want to collect a certain amount of coins. The goal is to find the minimum number of coins needed to reach the target amount. For example, if the available coins are [1, 2, 5] and the target amount is 11, the minimum number of coins needed is 3 (5 + 5 + 1). Another example is if the available coins are [1, 3, 4] and the target amount is 6, the minimum number of coins needed is 2 (3 + 3).",
+      "constraints": [
+        "All coin values are positive integers",
+        "The target amount is a positive integer"
+      ],
+      "core_technique": "Greedy algorithm with sorting",
+      "insight": "Always choose the coin with the largest value that does not exceed the remaining target amount",
+      "expected_complexity": {
+        "time": "O(n log n)",
+        "space": "O(1)"
+      },
+      "id": "root_8",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Minimum Cost to Paint Houses with Restrictions",
+      "difficulty": "Medium",
+      "topic": "Dynamic Programming",
+      "description": "You are given an array of houses, where each house can be painted with one of three colors: red, blue, or green. However, there are restrictions on the colors that can be used on adjacent houses. Given a 2D array costs where costs[i][j] is the cost to paint the ith house with the jth color, find the minimum cost to paint all houses. The restrictions are as follows: if a house is painted with color j, the next house cannot be painted with color j. For example, if the input is [[17, 2, 17], [16, 16, 5], [14, 3, 19]], the output should be 10, which is the minimum cost to paint the houses with the given restrictions. Another example: if the input is [[7, 3, 8], [6, 4, 1], [10, 9, 4]], the output should be 8.",
+      "constraints": [
+        "1 <= number of houses <= 100",
+        "costs[i][j] will be between 1 and 100"
+      ],
+      "core_technique": "Dynamic Programming with State Transition",
+      "insight": "To solve this, you need to track the minimum cost for each house with each possible color, considering the restrictions for adjacent houses",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_9",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Subarray Sum with K Consecutive Elements",
+      "difficulty": "Easy-Medium",
+      "topic": "Sliding Window",
+      "description": "Given an array of integers and an integer k, find the maximum sum of k consecutive elements in the array. For example, if the input array is [1, 2, 3, 4, 5] and k is 3, the output should be 12 because the maximum sum of 3 consecutive elements is 3 + 4 + 5 = 12. If the input array is [1, -2, 3, -4, 5] and k is 2, the output should be 6 because the maximum sum of 2 consecutive elements is 5 + 1 (considering the array in a circular manner, where the last element is followed by the first element) = 6.",
+      "constraints": [
+        "1 <= k <= array length",
+        "array length <= 1000"
+      ],
+      "core_technique": "Sliding Window Technique",
+      "insight": "Maintaining a running sum of k consecutive elements and updating the maximum sum as the window moves",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_10",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Balanced Subarrays",
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "description": "Given an array of integers, find the number of subarrays where the sum of elements at even indices equals the sum of elements at odd indices. For example, given the array [1, 2, 3, 2, 1], the balanced subarray [1, 2, 3, 2, 1] and [3, 2] are two such subarrays. Given [1, 1, 1, 1], the number of balanced subarrays is 10.",
+      "constraints": [
+        "1 <= array length <= 1000",
+        "-1000 <= element value <= 1000"
+      ],
+      "core_technique": "Two Pointers technique with prefix sum",
+      "insight": "Calculating prefix sums for even and odd indices separately can simplify the comparison process",
+      "expected_complexity": {
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      "id": "root_11",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Frequent Element Finder",
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "description": "Given an array of integers, find the first element that appears more than once in the array. If no such element exists, return -1. For example, given the array [2, 3, 5, 2, 7, 8], the function should return 2 because it is the first element to appear more than once. Given the array [12, 45, 7, 23, 56, 89, 34], the function should return -1 because no element appears more than once.",
+      "constraints": [
+        "1 <= array length <= 10^5",
+        "1 <= array elements <= 10^5"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash map to keep track of the frequency of each element in the array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_12",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Subarray Sum with K-Zero Replacement",
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "description": "Given an array of integers and a positive integer k, find the maximum sum of a subarray where you can replace up to k zeros in the subarray with the average of the non-zero elements in the subarray. For example, given the array [1, 0, 2, 0, 3] and k = 1, the maximum sum is 6.0 (replace the first zero with (1 + 2 + 3) / 3 = 2), and given the array [0, 0, 0] and k = 2, the maximum sum is 0.",
+      "constraints": [
+        "1 <= length of array <= 10^5",
+        "0 <= k <= 10^5"
+      ],
+      "core_technique": "Sliding Window with prefix sum and dynamic replacement",
+      "insight": "The key to this problem is to maintain a sliding window and track the sum of non-zero elements, the count of zeros, and the total sum within the window, then adjust the sum by replacing zeros with the average of non-zero elements when the number of zeros exceeds k.",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_13",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Frequent Element Finder",
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "description": "Given an array of integers, find the first element that appears in the array with a frequency greater than 1 and return its index. If no such element exists, return -1. For example, given the array [2, 3, 4, 2, 5], the function should return 0 because the element 2 appears at index 0 and has a frequency greater than 1. Given the array [1, 2, 3, 4, 5], the function should return -1 because all elements appear only once.",
+      "constraints": [
+        "1 <= array length <= 10^5",
+        "1 <= element value <= 10^5"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash map to count the frequency of each element",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_14",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Non-Overlapping Bookshelf",
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "description": "You are given a list of books with their widths and heights. You want to build a bookshelf using these books such that the total width of the books on the shelf does not exceed a certain limit. The goal is to maximize the total height of the books on the shelf. Each book can be placed either vertically or horizontally. When placed horizontally, the book occupies the full width of the shelf and its height is added to the total height. When placed vertically, the book occupies a portion of the shelf's width equal to its own width and its height is added to the total height. The books are placed in a way that no book overlaps with another. Given the list of books and the width limit of the shelf, return the maximum total height that can be achieved. For example, if the books are [[10, 5], [20, 3], [30, 4]] and the width limit is 50, one possible arrangement could be placing the first book horizontally (width 10, height 5), then placing the second book vertically (width 20, height 3), and finally placing the third book vertically (width 30, height 4), resulting in a total height of 5 + 3 + 4 = 12. Another example is with books [[5, 4], [4, 5], [3, 2]] and a width limit of 10, where an optimal arrangement could be placing the first book vertically, then the second book horizontally, resulting in a total height of 4 + 5 = 9.",
+      "constraints": [
+        "1 <= number of books <= 100",
+        "1 <= width of each book <= 100",
+        "1 <= height of each book <= 100",
+        "1 <= width limit <= 1000"
+      ],
+      "core_technique": "Greedy Algorithm with Sorting",
+      "insight": "To maximize the total height, prioritize placing books with larger heights and smaller widths, and decide whether to place each book horizontally or vertically based on the remaining width of the shelf",
+      "expected_complexity": {
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      "id": "root_15",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Minimum Window with Distinct Averages",
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "description": "Given an array of integers and an integer k, find the minimum length of a subarray that contains at least k distinct averages. The average of a subarray is calculated as the sum of its elements divided by the length of the subarray. For example, given the array [1, 2, 3, 4, 5] and k = 3, the output should be 4 because the subarray [1, 2, 3, 4] has an average of 2.5, [1, 2, 3] has an average of 2, and [1, 2] has an average of 1.5, which are 3 distinct averages. Another example is the array [1, 1, 1, 1] with k = 2, the output should be -1 because there is no subarray with 2 distinct averages.",
+      "constraints": [
+        "1 <= arr.length <= 10^5",
+        "1 <= k <= 10^5"
+      ],
+      "core_technique": "Two Pointers and Hash Set",
+      "insight": "Using two pointers to represent the sliding window and a hash set to store distinct averages",
+      "expected_complexity": {
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      "id": "root_16",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Minimum Window Balance",
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "description": "Given a string consisting of '+' and '-' characters, find the minimum window size that contains a balanced number of '+' and '-' characters. A window is balanced if it contains an equal number of '+' and '-' characters. If no such window exists, return -1. For example, given the string '++--', the minimum window size is 4 because '++--' is a balanced window. Another example, given the string '+-+', the minimum window size is 2 because '+-' and '-+' are balanced windows.",
+      "constraints": [
+        "1 <= string length <= 10^5",
+        "Only '+' and '-' characters are allowed in the string"
+      ],
+      "core_technique": "Two Pointers technique with a sliding window approach",
+      "insight": "Maintain a count of '+' and '-' characters within the current window and adjust the window boundaries based on the balance condition",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_17",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Array Subsequence Matching",
+      "difficulty": "Easy-Medium",
+      "topic": "Two Pointers",
+      "description": "Given two arrays, A and B, determine the longest subsequence in A that matches a subsequence in B. For example, given A = [1, 2, 3, 4, 5] and B = [1, 3, 5], the longest matching subsequence is [1, 3, 5]. Another example is A = [1, 2, 2, 3] and B = [2, 3], the longest matching subsequence is [2, 3].",
+      "constraints": [
+        "1 <= length of A <= 1000",
+        "1 <= length of B <= 1000"
+      ],
+      "core_technique": "Two Pointers technique to traverse both arrays and find the matching subsequence",
+      "insight": "The key insight is to maintain two pointers, one for each array, and move them based on whether the current elements match or not",
+      "expected_complexity": {
+        "time": "O(n*m)",
+        "space": "O(1)"
+      },
+      "id": "root_18",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Friendship Groups",
+      "difficulty": "Easy-Medium",
+      "topic": "Graphs",
+      "description": "In a social network, a group of friends is defined as a set of people who are all directly or indirectly friends with each other. Given a list of friendships where each friendship is represented as an array of two people, find the number of distinct friendship groups. For example, if the friendships are [[1, 2], [2, 3], [4, 5]], there are two distinct groups: {1, 2, 3} and {4, 5}. Another example is [[1, 2], [3, 4], [5, 6]], which has three distinct groups: {1, 2}, {3, 4}, and {5, 6}.",
+      "constraints": [
+        "1 <= number of friendships <= 1000",
+        "1 <= number of people in each friendship <= 1000"
+      ],
+      "core_technique": "Depth-First Search (DFS) or Union-Find",
+      "insight": "Using DFS or Union-Find to identify connected components in the graph",
+      "expected_complexity": {
+        "time": "O(n + m)",
+        "space": "O(n)"
+      },
+      "id": "root_19",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Sum Subarray of Size K with Constraints",
+      "difficulty": "Easy-Medium",
+      "topic": "Sliding Window",
+      "description": "Given an array of integers and an integer k, find the maximum sum of a subarray of size k such that the subarray contains at least one positive and one negative number. If no such subarray exists, return 0. For example, given the array [1, -2, 3, -4, 5] and k = 3, the maximum sum subarray of size 3 with at least one positive and one negative number is [1, -2, 3] or [-2, 3, -4] with a sum of 2. Another example is the array [1, 2, 3, 4, 5] and k = 3, in this case the function should return 0 because there's no subarray of size 3 with at least one negative number.",
+      "constraints": [
+        "1 <= k <= array length",
+        "array length <= 10^5",
+        "-10^5 <= array elements <= 10^5"
+      ],
+      "core_technique": "Sliding Window technique to track the sum and the presence of positive and negative numbers within the current window",
+      "insight": "Maintain a sliding window of size k and track the sum of elements within the window along with flags to indicate the presence of at least one positive and one negative number",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_20",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Valid Subsequence Stacks",
+      "difficulty": "Easy",
+      "topic": "Stack & Queue",
+      "description": "You are given two stacks of integers, stack1 and stack2. Determine if the elements in stack2 can form a valid subsequence of the elements in stack1. A valid subsequence is one where the elements appear in the same order, but not necessarily contiguous. For example, if stack1 = [1, 2, 3, 4, 5] and stack2 = [1, 3, 5], then stack2 is a valid subsequence of stack1. However, if stack1 = [1, 2, 3, 4, 5] and stack2 = [5, 3, 1], then stack2 is not a valid subsequence. You can use a queue to help you solve this problem.",
+      "constraints": [
+        "stack1 and stack2 will only contain integers",
+        "0 <= stack1 length, stack2 length <= 1000"
+      ],
+      "core_technique": "Stack and Queue operations",
+      "insight": "Using a queue to keep track of the elements in stack1 that have been matched so far can help solve this problem efficiently",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "id": "root_21",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Alternate Node Sum",
+      "difficulty": "Easy-Medium",
+      "topic": "Linked Lists",
+      "description": "Given a singly linked list, calculate the sum of nodes at even indices (0-based) and the sum of nodes at odd indices separately. Return the absolute difference between these two sums. For example, given the linked list 1 -> 2 -> 3 -> 4 -> 5, the sum of nodes at even indices is 1 + 3 + 5 = 9 and the sum of nodes at odd indices is 2 + 4 = 6, so the function should return |9 - 6| = 3. Another example: given the linked list 10 -> 20 -> 30, the function should return |10 + 30 - 20| = 20.",
+      "constraints": [
+        "The linked list will not be empty",
+        "The number of nodes in the linked list will not exceed 1000"
+      ],
+      "core_technique": "Traversing the linked list",
+      "insight": "Keep track of the current index while traversing the list to determine whether a node is at an even or odd index",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_22",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Tree Node Balancer",
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "description": "Given a binary tree, find the minimum number of nodes that need to be removed to balance the tree. A tree is balanced if the absolute difference between the heights of its left and right subtrees does not exceed 1 for all nodes. For example, given the tree [1, 2, 3, 4, null, null, 5], the minimum number of nodes to remove is 1 because removing node 5 results in a balanced tree. Another example is the tree [1, 2, null, 3], which requires removing 1 node (either 2 or 3) to balance the tree.",
+      "constraints": [
+        "The tree has at most 10^4 nodes",
+        "Each node has a unique value"
+      ],
+      "core_technique": "Tree traversal and height calculation",
+      "insight": "The key is to identify nodes with subtrees that have a height difference greater than 1 and consider removing nodes from the taller subtree",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(h)"
+      },
+      "id": "root_23",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Minimum Window With Unique Elements In Both Arrays",
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "description": "Given two arrays, arr1 and arr2, find the minimum length of a subarray in arr1 that contains all unique elements present in arr2. If no such subarray exists, return -1. For example, if arr1 = [1, 2, 3, 2, 4] and arr2 = [1, 3, 4], the output should be 3 because the subarray [1, 3, 4] in arr1 contains all unique elements from arr2. Another example is arr1 = [1, 2, 3] and arr2 = [4, 5], the output should be -1 because no subarray in arr1 contains all unique elements from arr2.",
+      "constraints": [
+        "1 <= arr1.length, arr2.length <= 10^5",
+        "0 <= arr1[i], arr2[i] <= 10^5"
+      ],
+      "core_technique": "Sliding Window with Hashing",
+      "insight": "Maintaining a frequency count of elements in arr2 and using a sliding window in arr1 to find the minimum subarray that satisfies the condition",
+      "expected_complexity": {
+        "time": "O(n + m)",
+        "space": "O(n + m)"
+      },
+      "id": "root_24",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Coin Collector",
+      "difficulty": "Easy-Medium",
+      "topic": "Greedy",
+      "description": "You are given a set of coins, each with a specific value and a limited number of occurrences. Your goal is to collect as much value as possible from these coins, but you can only carry a certain maximum weight of coins. The value and weight of each coin are given. Determine the maximum value you can collect without exceeding the maximum weight. For example, given coins with values [1, 3, 4] and weights [1, 2, 1] and a maximum weight of 4, the maximum value you can collect is 8 (by taking two coins of weight 1 and value 4, or other combinations that result in this total). Another example: given coins with values [2, 1] and weights [2, 1] and a maximum weight of 2, the maximum value you can collect is 3 (by taking one coin of weight 2 and value 2, and one coin of weight 1 and value 1, if both are available).",
+      "constraints": [
+        "The values and weights of the coins are positive integers",
+        "The maximum weight is a positive integer"
+      ],
+      "core_technique": "Greedy algorithm with sorting based on value-to-weight ratio",
+      "insight": "Sorting the coins based on their value-to-weight ratio in descending order allows for the selection of the most valuable coins first, ensuring the maximum value is collected within the given weight limit",
+      "expected_complexity": {
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      "id": "root_25",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Sum Subarray of Fixed Length",
+      "difficulty": "Easy",
+      "topic": "Sliding Window",
+      "description": "Given an array of integers and an integer k, find the maximum sum of a subarray of length k. For example, given the array [1, 2, 3, 4, 5] and k = 3, the maximum sum subarray is [3, 4, 5] with a sum of 12. If the array is [1, -2, 3, 4, -5] and k = 2, the maximum sum subarray is [3, 4] with a sum of 7.",
+      "constraints": [
+        "1 <= k <= array length",
+        "array length is at least 1"
+      ],
+      "core_technique": "Sliding Window",
+      "insight": "Maintaining a running sum of the current window and updating it as the window slides through the array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_26",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Valid Subsequence Stacks",
+      "difficulty": "Easy-Medium",
+      "topic": "Stack & Queue",
+      "description": "You are given two arrays of integers, `main` and `sub`. Determine if it's possible to create a subsequence of `main` that is equal to `sub` by using a stack to store elements from `main` and then popping them in the correct order to form `sub`. The stack can only be used in a last-in-first-out (LIFO) manner. For example, given `main = [1, 2, 3, 4, 5]` and `sub = [4, 5, 3]`, the function should return `false` because the elements in `sub` cannot be obtained by popping from a stack loaded with elements from `main` in any order. However, given `main = [1, 2, 3, 4, 5]` and `sub = [1, 2, 3]`, the function should return `true` because the elements in `sub` can be obtained by pushing the first three elements of `main` onto the stack and then popping them off.",
+      "constraints": [
+        "1 <= main.length <= 1000",
+        "1 <= sub.length <= 1000",
+        "0 <= main[i], sub[i] <= 1000"
+      ],
+      "core_technique": "Stack Operations",
+      "insight": "Recognizing the LIFO nature of stack operations and matching it with the subsequence requirement",
+      "expected_complexity": {
+        "time": "O(n + m)",
+        "space": "O(n)"
+      },
+      "id": "root_27",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Maximum Subarray Sum with Constraints",
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "description": "Given an array of integers and two integers k and m, find the maximum sum of a subarray of size k such that the sum of the absolute differences between consecutive elements does not exceed m. For example, given the array [1, 3, 2, 5, 4] and k = 3, m = 3, the output should be 12 because the subarray [3, 2, 5] has the maximum sum and the sum of absolute differences is |3-2| + |2-5| = 3 which does not exceed m. Another example is the array [1, 2, 3, 4, 5] with k = 2 and m = 1, the output should be 9 because the subarray [4, 5] has the maximum sum and the sum of absolute differences is |4-5| = 1 which does not exceed m.",
+      "constraints": [
+        "1 <= k <= n",
+        "1 <= m <= 10^5",
+        "-10^5 <= array elements <= 10^5"
+      ],
+      "core_technique": "Sliding Window with custom constraint checking",
+      "insight": "Maintaining a sliding window of size k and checking the constraint of the sum of absolute differences for each window",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "id": "root_28",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Valid Subsequence Stacks",
+      "difficulty": "Easy",
+      "topic": "Stack & Queue",
+      "description": "Given two stacks of integers, determine if one stack is a subsequence of the other. A stack A is a subsequence of stack B if the elements of A appear in the same order in B. For example, if stack A is [1, 3, 5] and stack B is [1, 2, 3, 4, 5], then A is a subsequence of B. On the other hand, if stack A is [5, 3, 1] and stack B is [1, 2, 3, 4, 5], then A is not a subsequence of B. Provide a function that takes two stacks as input and returns True if the first stack is a subsequence of the second, False otherwise. For instance, given the stacks [1, 3, 5] and [1, 2, 3, 4, 5], the function should return True.",
+      "constraints": [
+        "Both stacks only contain integers",
+        "Stacks can be empty"
+      ],
+      "core_technique": "Queue iteration",
+      "insight": "Iterate over the potential subsequence stack and check for each element if it exists in the same order in the other stack",
+      "expected_complexity": {
+        "time": "O(n*m)",
+        "space": "O(1)"
+      },
+      "id": "root_29",
+      "depth": 0,
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "title": "Unique Element Count",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, find the number of unique elements in the list. For example, if the input is [1, 2, 2, 3, 3, 3], the output should be 3 because the unique elements are [1, 2, 3].",
+      "constraints": [
+        "Input list contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Using a hash set to store unique elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the need to find the longest sublist, only need to count unique elements",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v0",
+      "depth": 1,
+      "parent_id": "root_0",
+      "children": [
+        "root_0_v0_v0",
+        "root_0_v0_v1",
+        "root_0_v0_v2"
+      ]
+    },
+    {
+      "title": "Duplicate-Free List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a list of integers, determine if the list contains any duplicate elements. For example, if the input is [1, 2, 3, 4], the output should be False because the list does not contain any duplicates. If the input is [1, 2, 2, 3], the output should be True because the list contains a duplicate.",
+      "constraints": [
+        "Input list contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Using a hash set to check for duplicate elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed the problem to a simple duplicate check, rather than finding the longest sublist",
+      "simplification_type": "technique_decomposition",
+      "id": "root_0_v1",
+      "depth": 1,
+      "parent_id": "root_0",
+      "children": [
+        "root_0_v1_v0",
+        "root_0_v1_v1",
+        "root_0_v1_v2"
+      ]
+    },
+    {
+      "title": "Unique Sublist Length in Static Window",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a list of integers and a fixed window size, find the length of the longest unique sublist within the window. For example, if the input is [1, 2, 3, 4] and the window size is 3, the output should be 3 because the longest unique sublist is [1, 2, 3].",
+      "constraints": [
+        "Input list contains only integers",
+        "Window size is fixed"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Using a hash set to store unique elements within the window",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed the problem to use a fixed window, rather than finding the longest sublist overall",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v2",
+      "depth": 1,
+      "parent_id": "root_0",
+      "children": [
+        "root_0_v2_v0",
+        "root_0_v2_v1",
+        "root_0_v2_v2"
+      ]
+    },
+    {
+      "title": "Unique Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers and a target integer, determine if the target is a unique element in the list. For example, if the input is [1, 2, 2, 3] and the target is 1, the output should be True because 1 is unique. If the target is 2, the output should be False because 2 is not unique.",
+      "constraints": [
+        "List contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Counting occurrences of the target element",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to count all unique elements, only checking one target element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v0_v0",
+      "depth": 2,
+      "parent_id": "root_0_v0",
+      "children": [
+        "root_0_v0_v0_v0",
+        "root_0_v0_v0_v1",
+        "root_0_v0_v0_v2"
+      ]
+    },
+    {
+      "title": "Set Membership",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a set of integers and a target integer, determine if the target is in the set. For example, if the input is {1, 2, 3} and the target is 2, the output should be True. If the target is 4, the output should be False.",
+      "constraints": [
+        "Set contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Checking membership in a set",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Switched from list to set, and from counting unique elements to checking membership",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v0_v1",
+      "depth": 2,
+      "parent_id": "root_0_v0",
+      "children": [
+        "root_0_v0_v1_v0",
+        "root_0_v0_v1_v1",
+        "root_0_v0_v1_v2"
+      ]
+    },
+    {
+      "title": "Duplicate Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if there are any duplicate elements. For example, if the input is [1, 2, 3], the output should be False because there are no duplicates. If the input is [1, 2, 2], the output should be True.",
+      "constraints": [
+        "List contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Checking for any duplicate elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the need to count all unique elements, only checking for any duplicates",
+      "simplification_type": "edge_case_removal",
+      "id": "root_0_v0_v2",
+      "depth": 2,
+      "parent_id": "root_0_v0",
+      "children": [
+        "root_0_v0_v2_v0",
+        "root_0_v0_v2_v1",
+        "root_0_v0_v2_v2"
+      ]
+    },
+    {
+      "title": "Empty List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if the list is empty. For example, if the input is [], the output should be True because the list is empty. If the input is [1, 2, 3], the output should be False because the list is not empty.",
+      "constraints": [
+        "List can be empty"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Checking if a list is empty is a fundamental operation",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check, only checking for empty list",
+      "simplification_type": "edge_case_removal",
+      "id": "root_0_v1_v0",
+      "depth": 2,
+      "parent_id": "root_0_v1",
+      "children": [
+        "root_0_v1_v0_v0",
+        "root_0_v1_v0_v1",
+        "root_0_v1_v0_v2"
+      ]
+    },
+    {
+      "title": "Single Element List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list with a single integer, determine if the list contains any duplicate elements. For example, if the input is [1], the output should be False because the list does not contain any duplicates.",
+      "constraints": [
+        "List contains only one element"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "A single element list cannot have duplicates",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduced list size to a single element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v1_v1",
+      "depth": 2,
+      "parent_id": "root_0_v1",
+      "children": [
+        "root_0_v1_v1_v0",
+        "root_0_v1_v1_v1",
+        "root_0_v1_v1_v2"
+      ]
+    },
+    {
+      "title": "Set Membership Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a set of integers and a target integer, determine if the target integer is in the set. For example, if the input is {1, 2, 3} and the target is 2, the output should be True because the target is in the set.",
+      "constraints": [
+        "Set can contain any integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Checking set membership is a fundamental operation",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Swapped list for set, same underlying technique",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v1_v2",
+      "depth": 2,
+      "parent_id": "root_0_v1",
+      "children": [
+        "root_0_v1_v2_v0",
+        "root_0_v1_v2_v1",
+        "root_0_v1_v2_v2"
+      ]
+    },
+    {
+      "title": "Unique Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if all elements are unique. For example, if the input is [1, 2, 3, 4], the output should be True because all elements are unique.",
+      "constraints": [
+        "List contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Use a hash set to keep track of unique elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the window size constraint and the concept of a sublist",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v2_v0",
+      "depth": 2,
+      "parent_id": "root_0_v2",
+      "children": [
+        "root_0_v2_v0_v0",
+        "root_0_v2_v0_v1",
+        "root_0_v2_v0_v2"
+      ]
+    },
+    {
+      "title": "Unique Window Existence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers and a fixed window size, determine if there exists a window with all unique elements. For example, if the input is [1, 2, 3, 4] and the window size is 3, the output should be True because the window [1, 2, 3] has all unique elements.",
+      "constraints": [
+        "List contains only integers",
+        "Window size is fixed"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Use a hash set to keep track of unique elements within the window",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the need to find the longest unique sublist, only need to check for existence",
+      "simplification_type": "edge_case_removal",
+      "id": "root_0_v2_v1",
+      "depth": 2,
+      "parent_id": "root_0_v2",
+      "children": [
+        "root_0_v2_v1_v0",
+        "root_0_v2_v1_v1",
+        "root_0_v2_v1_v2"
+      ]
+    },
+    {
+      "title": "Unique Sublist Length in Single Element Window",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, find the length of the longest unique sublist within a window of size 1. For example, if the input is [1, 2, 3, 4], the output should be 1 because the longest unique sublist is any single element.",
+      "constraints": [
+        "List contains only integers",
+        "Window size is 1"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Use a hash set to keep track of unique elements, but only need to consider single-element windows",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Fixed the window size to 1, making the problem trivial",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v2_v2",
+      "depth": 2,
+      "parent_id": "root_0_v2",
+      "children": [
+        "root_0_v2_v2_v0",
+        "root_0_v2_v2_v1",
+        "root_0_v2_v2_v2"
+      ]
+    },
+    {
+      "title": "Singleton Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer, determine if it is 0 or not. For example, if the input is 1, the output should be True because it is not 0. If the input is 0, the output should be False.",
+      "constraints": [
+        "Input is a single integer"
+      ],
+      "core_technique": "Basic Conditional Statements",
+      "insight": "Understanding the concept of a singleton",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the list and target integer, now just checking a single integer",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v0_v0_v0",
+      "depth": 3,
+      "parent_id": "root_0_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Element Presence Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a list of integers and a target integer, determine if the target is present in the list. For example, if the input is [1, 2, 2, 3] and the target is 1, the output should be True because 1 is present. If the target is 4, the output should be False because 4 is not present.",
+      "constraints": [
+        "Input list contains only integers",
+        "Target is an integer"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Understanding the concept of set membership",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the uniqueness constraint, now just checking presence",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v0_v0_v1",
+      "depth": 3,
+      "parent_id": "root_0_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Set Size Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a set of integers, determine if the size of the set is 1. For example, if the input is {1}, the output should be True because the size of the set is 1. If the input is {1, 2, 3}, the output should be False because the size of the set is not 1.",
+      "constraints": [
+        "Input is a set of integers"
+      ],
+      "core_technique": "Set Operations",
+      "insight": "Understanding the concept of set size",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the domain to sets, now checking set size",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v0_v0_v2",
+      "depth": 3,
+      "parent_id": "root_0_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Singleton Set Membership",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and a target integer, determine if the target is equal to the integer. For example, if the input is 1 and the target is 1, the output should be True. If the target is 2, the output should be False.",
+      "constraints": [
+        "single integer"
+      ],
+      "core_technique": "Basic Comparison",
+      "insight": "Direct equality comparison",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed set data structure, now just comparing single values",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v0_v1_v0",
+      "depth": 3,
+      "parent_id": "root_0_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Set Non-Membership",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a set of integers and a target integer, determine if the target is NOT in the set. For example, if the input is {1, 2, 3} and the target is 4, the output should be True. If the target is 2, the output should be False.",
+      "constraints": [
+        "set of integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Negation of set membership",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed problem framing to non-membership",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v0_v1_v1",
+      "depth": 3,
+      "parent_id": "root_0_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Empty Set Membership",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an empty set and a target integer, determine if the target is in the set. For example, if the input is {} and the target is any integer, the output should be False.",
+      "constraints": [
+        "empty set"
+      ],
+      "core_technique": "Basic Logic",
+      "insight": "Empty set has no elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed need to search the set, as it is empty",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v0_v1_v2",
+      "depth": 3,
+      "parent_id": "root_0_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Empty Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if it is empty. For example, if the input is [], the output should be True. If the input is [1, 2, 3], the output should be False.",
+      "constraints": [
+        "list contains integers"
+      ],
+      "core_technique": "Basic list operations",
+      "insight": "Checking the size of the list",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check, now just checks for empty list",
+      "simplification_type": "edge_case_removal",
+      "id": "root_0_v0_v2_v0",
+      "depth": 3,
+      "parent_id": "root_0_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Single Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if it contains a specific element. For example, if the input is [1, 2, 3] and the target is 2, the output should be True. If the target is 4, the output should be False.",
+      "constraints": [
+        "list contains integers",
+        "target is an integer"
+      ],
+      "core_technique": "Basic list operations",
+      "insight": "Checking for the presence of a target element",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Now checking for a single element instead of duplicates",
+      "simplification_type": "technique_decomposition",
+      "id": "root_0_v0_v2_v1",
+      "depth": 3,
+      "parent_id": "root_0_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Fixed Size Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a list of integers of fixed size 2, determine if there are any duplicate elements. For example, if the input is [1, 2], the output should be False. If the input is [1, 1], the output should be True.",
+      "constraints": [
+        "list contains integers",
+        "list size is 2"
+      ],
+      "core_technique": "Basic comparison",
+      "insight": "Comparing two elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "List size is now fixed, reducing the complexity of the problem",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v0_v2_v2",
+      "depth": 3,
+      "parent_id": "root_0_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Bool Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a boolean value, return the value itself. For example, if the input is True, the output should be True. If the input is False, the output should be False.",
+      "constraints": [
+        "Input is a boolean value"
+      ],
+      "core_technique": "Basic Boolean Operations",
+      "insight": "Understanding boolean values",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed list checking, now just a single boolean value",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v1_v0_v0",
+      "depth": 3,
+      "parent_id": "root_0_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Null Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a nullable integer, determine if the value is null. For example, if the input is null, the output should be True. If the input is 5, the output should be False.",
+      "constraints": [
+        "Input is either an integer or null"
+      ],
+      "core_technique": "Basic Null Checks",
+      "insight": "Understanding null values",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Decomposed list checking into null checking",
+      "simplification_type": "technique_decomposition",
+      "id": "root_0_v1_v0_v1",
+      "depth": 3,
+      "parent_id": "root_0_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Single Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a list with at most one element, determine if the list is empty. For example, if the input is [], the output should be True. If the input is [1], the output should be False.",
+      "constraints": [
+        "Input list has at most one element"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Understanding lists with a single element",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Relaxed constraint on list size",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v1_v0_v2",
+      "depth": 3,
+      "parent_id": "root_0_v1_v0",
+      "children": []
+    },
+    {
+      "title": "List Existence Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list, determine if it exists. For example, if the input is [1], the output should be True because the list exists.",
+      "constraints": [],
+      "core_technique": "Basic List Operations",
+      "insight": "List existence is a fundamental property",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check, now just existence",
+      "simplification_type": "technique_decomposition",
+      "id": "root_0_v1_v1_v0",
+      "depth": 3,
+      "parent_id": "root_0_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Empty List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list, determine if it is empty. For example, if the input is [], the output should be True because the list is empty.",
+      "constraints": [],
+      "core_technique": "Basic List Operations",
+      "insight": "Empty list is a basic property",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check and single element check, now just empty check",
+      "simplification_type": "edge_case_removal",
+      "id": "root_0_v1_v1_v1",
+      "depth": 3,
+      "parent_id": "root_0_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Single Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a list, determine if it contains exactly one element. For example, if the input is [1], the output should be True because the list contains a single element.",
+      "constraints": [],
+      "core_technique": "Basic List Operations",
+      "insight": "Single element list is a basic property",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check, now just single element check",
+      "simplification_type": "technique_decomposition",
+      "id": "root_0_v1_v1_v2",
+      "depth": 3,
+      "parent_id": "root_0_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Singleton Membership Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and a target integer, determine if the target integer is equal to the given integer. For example, if the input is 1 and the target is 1, the output should be True.",
+      "constraints": [
+        "Single integer"
+      ],
+      "core_technique": "Simple comparison",
+      "insight": "Direct equality check",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed set data structure, now just a simple comparison",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v1_v2_v0",
+      "depth": 3,
+      "parent_id": "root_0_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Fixed Set Membership Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a fixed set of integers {1, 2, 3} and a target integer, determine if the target integer is in the set. For example, if the input is 2, the output should be True.",
+      "constraints": [
+        "Fixed set of integers"
+      ],
+      "core_technique": "HashSet lookup",
+      "insight": "Predefined set for lookup",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Set is now fixed and predefined",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v1_v2_v1",
+      "depth": 3,
+      "parent_id": "root_0_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Boolean Array Membership Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a boolean array and an index, determine if the value at the index is True. For example, if the input is [True, False, True] and the index is 0, the output should be True.",
+      "constraints": [
+        "Boolean array"
+      ],
+      "core_technique": "Array lookup",
+      "insight": "Direct index-based lookup",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Different domain, now using boolean array",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v1_v2_v2",
+      "depth": 3,
+      "parent_id": "root_0_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Empty List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list, determine if it is empty. For example, if the input is [], the output should be True.",
+      "constraints": [
+        "List can only contain integers"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Empty list has no elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed uniqueness check, only checking for emptiness",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v2_v0_v0",
+      "depth": 3,
+      "parent_id": "root_0_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Single Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list with a single element, determine if the element is unique. For example, if the input is [1], the output should be True.",
+      "constraints": [
+        "List can only contain a single integer"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Single element is always unique",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed multiple elements, only checking a single element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v2_v0_v1",
+      "depth": 3,
+      "parent_id": "root_0_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Set Equivalence Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a set of integers, determine if the set has the same number of elements as its corresponding list. For example, if the input is {1, 2, 3}, the output should be True because the set has the same number of elements as the list [1, 2, 3].",
+      "constraints": [
+        "Input is a set of integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Set automatically removes duplicates",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed from list to set, using set properties to simplify the problem",
+      "simplification_type": "domain_swap",
+      "id": "root_0_v2_v0_v2",
+      "depth": 3,
+      "parent_id": "root_0_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Unique Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if all elements are unique. For example, if the input is [1, 2, 3, 4], the output should be True because all elements are unique.",
+      "constraints": [
+        "List contains only integers"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Using a hash set to store elements allows for efficient uniqueness checks",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed window size constraint, now checking the entire list",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v2_v1_v0",
+      "depth": 3,
+      "parent_id": "root_0_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Window Size of One",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers and a fixed window size of 1, determine if there exists a window with all unique elements. For example, if the input is [1, 2, 3, 4], the output should be True because each window of size 1 has a unique element.",
+      "constraints": [
+        "Window size is 1"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "With a window size of 1, each element is its own window",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Fixed window size to 1, simplifying the problem",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v2_v1_v1",
+      "depth": 3,
+      "parent_id": "root_0_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Unique Window Existence with Two Elements",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of two integers and a fixed window size of 2, determine if there exists a window with all unique elements. For example, if the input is [1, 2], the output should be True because the window [1, 2] has all unique elements.",
+      "constraints": [
+        "List contains only two integers",
+        "Window size is 2"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "With only two elements, the window must contain both elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduced list size to 2 and fixed window size to 2",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v2_v1_v2",
+      "depth": 3,
+      "parent_id": "root_0_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Unique Single Element",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer, determine if it is unique. For example, if the input is 5, the output should be True because 5 is a unique element.",
+      "constraints": [
+        "Single integer input"
+      ],
+      "core_technique": "Hash Set",
+      "insight": "Understanding set operations",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for a window and a list, focusing on a single element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v2_v2_v0",
+      "depth": 3,
+      "parent_id": "root_0_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Empty List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of integers, determine if it is empty. For example, if the input is [], the output should be True because the list is empty.",
+      "constraints": [
+        "List input"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Understanding list properties",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for a window and unique sublist, focusing on basic list properties",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_0_v2_v2_v1",
+      "depth": 3,
+      "parent_id": "root_0_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Single Element List Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list containing a single integer, determine its value. For example, if the input is [5], the output should be 5 because the list contains a single element.",
+      "constraints": [
+        "Single-element list input"
+      ],
+      "core_technique": "Basic List Operations",
+      "insight": "Understanding list indexing",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for a window and unique sublist, focusing on basic list indexing",
+      "simplification_type": "dimension_reduction",
+      "id": "root_0_v2_v2_v2",
+      "depth": 3,
+      "parent_id": "root_0_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Single Node Checker in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list and a value, check if a node with that value exists in the list. For example, given the list 1 -> 2 -> 3 and the value 2, return True. Given the list 1 -> 2 -> 3 and the value 4, return False.",
+      "constraints": [
+        "List is not empty",
+        "Value is an integer"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "Checking for a single value is simpler than removing duplicates",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to compare and remove nodes, focusing on a single node check",
+      "simplification_type": "technique_decomposition",
+      "id": "root_1_v0",
+      "depth": 1,
+      "parent_id": "root_1",
+      "children": [
+        "root_1_v0_v0",
+        "root_1_v0_v1",
+        "root_1_v0_v2"
+      ]
+    },
+    {
+      "title": "Unique Node Counter in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a linked list, count the number of unique nodes. For example, given the list 1 -> 2 -> 2 -> 3, return 3. Given the list 1 -> 1 -> 1 -> 2, return 2.",
+      "constraints": [
+        "List is not empty"
+      ],
+      "core_technique": "Traversing a linked list and counting unique values",
+      "insight": "Counting unique nodes does not require removing them",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed the goal from removing duplicates to counting unique nodes",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v1",
+      "depth": 1,
+      "parent_id": "root_1",
+      "children": [
+        "root_1_v1_v0",
+        "root_1_v1_v1",
+        "root_1_v1_v2"
+      ]
+    },
+    {
+      "title": "Adjacent Duplicate Checker in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a linked list, check if there are any adjacent duplicate nodes. For example, given the list 1 -> 2 -> 2 -> 3, return True. Given the list 1 -> 2 -> 3 -> 4, return False.",
+      "constraints": [
+        "List is not empty"
+      ],
+      "core_technique": "Traversing a linked list and comparing adjacent nodes",
+      "insight": "Checking for adjacent duplicates is simpler than removing all duplicates",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduced the scope from all duplicates to just adjacent ones",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v2",
+      "depth": 1,
+      "parent_id": "root_1",
+      "children": [
+        "root_1_v2_v0",
+        "root_1_v2_v1",
+        "root_1_v2_v2"
+      ]
+    },
+    {
+      "title": "Single Node Checker in a Small Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list of at most 5 nodes and a value, check if a node with that value exists in the list. For example, given the list 1 -> 2 -> 3 and the value 2, return True. Given the list 1 -> 2 -> 3 and the value 4, return False.",
+      "constraints": [
+        "List size is at most 5"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "Checking each node's value is sufficient",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed large list sizes",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v0_v0",
+      "depth": 2,
+      "parent_id": "root_1_v0",
+      "children": [
+        "root_1_v0_v0_v0",
+        "root_1_v0_v0_v1",
+        "root_1_v0_v0_v2"
+      ]
+    },
+    {
+      "title": "Value Existence in a Linked List with Unique Values",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a linked list with unique node values and a target value, check if a node with that value exists in the list. For example, given the list 1 -> 2 -> 3 and the value 2, return True. Given the list 1 -> 2 -> 3 and the value 4, return False.",
+      "constraints": [
+        "All node values are unique"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "No need to handle duplicate values",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Added uniqueness constraint",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v0_v1",
+      "depth": 2,
+      "parent_id": "root_1_v0",
+      "children": [
+        "root_1_v0_v1_v0",
+        "root_1_v0_v1_v1",
+        "root_1_v0_v1_v2"
+      ]
+    },
+    {
+      "title": "Node Existence in a Singly Linked List with a Fixed Size",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a singly linked list of fixed size (e.g., 3 nodes) and a target value, check if a node with that value exists. For example, given the list 1 -> 2 -> 3 and the value 2, return True. Given the list 1 -> 2 -> 3 and the value 4, return False.",
+      "constraints": [
+        "List size is fixed and known"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "Knowing the list size does not affect the solution",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Domain remains the same but with a fixed size list",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v0_v2",
+      "depth": 2,
+      "parent_id": "root_1_v0",
+      "children": [
+        "root_1_v0_v2_v0",
+        "root_1_v0_v2_v1",
+        "root_1_v0_v2_v2"
+      ]
+    },
+    {
+      "title": "Count Nodes in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list, count the total number of nodes. For example, given the list 1 -> 2 -> 3, return 3.",
+      "constraints": [
+        "No duplicates"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "Simply traverse the list and increment a counter",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed uniqueness constraint",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v1_v0",
+      "depth": 2,
+      "parent_id": "root_1_v1",
+      "children": [
+        "root_1_v1_v0_v0",
+        "root_1_v1_v0_v1",
+        "root_1_v1_v0_v2"
+      ]
+    },
+    {
+      "title": "Count Unique Elements in an Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array, count the number of unique elements. For example, given the array [1, 2, 2, 3], return 3.",
+      "constraints": [
+        "Array is unsorted"
+      ],
+      "core_technique": "Counting unique values",
+      "insight": "Use a set or dictionary to keep track of unique elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed domain from linked list to array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v1_v1",
+      "depth": 2,
+      "parent_id": "root_1_v1",
+      "children": [
+        "root_1_v1_v1_v0",
+        "root_1_v1_v1_v1",
+        "root_1_v1_v1_v2"
+      ]
+    },
+    {
+      "title": "Check for Duplicate Nodes in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a linked list, return True if there are any duplicate nodes, False otherwise. For example, given the list 1 -> 2 -> 2 -> 3, return True.",
+      "constraints": [
+        "List is non-empty"
+      ],
+      "core_technique": "Traversing a linked list and checking for duplicates",
+      "insight": "Use a set to keep track of seen nodes",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed problem to detect duplicates instead of count unique nodes",
+      "simplification_type": "technique_decomposition",
+      "id": "root_1_v1_v2",
+      "depth": 2,
+      "parent_id": "root_1_v1",
+      "children": [
+        "root_1_v1_v2_v0",
+        "root_1_v1_v2_v1",
+        "root_1_v1_v2_v2"
+      ]
+    },
+    {
+      "title": "Single Node Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single node with a value, check if the value is a duplicate of a given target value. For example, given the node 2 and target 2, return True. Given the node 1 and target 2, return False.",
+      "constraints": [
+        "Single node"
+      ],
+      "core_technique": "Simple comparison",
+      "insight": "Direct value comparison",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed traversal and only consider a single node",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v2_v0",
+      "depth": 2,
+      "parent_id": "root_1_v2",
+      "children": [
+        "root_1_v2_v0_v0",
+        "root_1_v2_v0_v1",
+        "root_1_v2_v0_v2"
+      ]
+    },
+    {
+      "title": "Array Duplicate Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array, check if there are any adjacent duplicate elements. For example, given the array [1, 2, 2, 3], return True. Given the array [1, 2, 3, 4], return False.",
+      "constraints": [
+        "Array data structure"
+      ],
+      "core_technique": "Traversing and comparing adjacent elements",
+      "insight": "Index-based comparison",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Swapped linked list with array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v2_v1",
+      "depth": 2,
+      "parent_id": "root_1_v2",
+      "children": [
+        "root_1_v2_v1_v0",
+        "root_1_v2_v1_v1",
+        "root_1_v2_v1_v2"
+      ]
+    },
+    {
+      "title": "Null or Empty Linked List Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list, check if it is null or empty. For example, given an empty list, return True. Given a list with one node, return False.",
+      "constraints": [
+        "Null or empty list"
+      ],
+      "core_technique": "Checking for null or empty",
+      "insight": "List existence check",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate check and only consider list existence",
+      "simplification_type": "edge_case_removal",
+      "id": "root_1_v2_v2",
+      "depth": 2,
+      "parent_id": "root_1_v2",
+      "children": [
+        "root_1_v2_v2_v0",
+        "root_1_v2_v2_v1",
+        "root_1_v2_v2_v2"
+      ]
+    },
+    {
+      "title": "Single Node Checker in an Empty Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an empty linked list and a value, check if a node with that value exists in the list. For example, given the empty list and the value 2, return False.",
+      "constraints": [
+        "The linked list is empty"
+      ],
+      "core_technique": "Initializing a linked list",
+      "insight": "Recognizing an empty linked list has no nodes",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to traverse the linked list",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v0_v0_v0",
+      "depth": 3,
+      "parent_id": "root_1_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Node Existence in a Single-Node Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list with a single node and a value, check if a node with that value exists in the list. For example, given the list 1 and the value 1, return True. Given the list 1 and the value 2, return False.",
+      "constraints": [
+        "The linked list has only 1 node"
+      ],
+      "core_technique": "Accessing a single node",
+      "insight": "Recognizing a single-node linked list only has one value to check",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduced the number of nodes to traverse",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v0_v0_v1",
+      "depth": 3,
+      "parent_id": "root_1_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Value Checker in a Static Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a static array of at most 5 elements and a value, check if that value exists in the array. For example, given the array [1, 2, 3] and the value 2, return True. Given the array [1, 2, 3] and the value 4, return False.",
+      "constraints": [
+        "The array has at most 5 elements"
+      ],
+      "core_technique": "Traversing an array",
+      "insight": "Recognizing arrays and linked lists can be traversed similarly",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Swapped the data structure from a linked list to an array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v0_v0_v2",
+      "depth": 3,
+      "parent_id": "root_1_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Node Existence in a Singleton Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list with only one node and a target value, check if the node's value matches the target. For example, given the list 1 and the value 1, return True. Given the list 1 and the value 2, return False.",
+      "constraints": [
+        "Linked list has only one node"
+      ],
+      "core_technique": "Node value comparison",
+      "insight": "Direct comparison is sufficient",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed traversal requirement",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v0_v1_v0",
+      "depth": 3,
+      "parent_id": "root_1_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Value Presence in an Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array of unique integers and a target value, check if the target value exists in the array. For example, given the array [1, 2, 3] and the value 2, return True. Given the array [1, 2, 3] and the value 4, return False.",
+      "constraints": [
+        "Array has unique integers"
+      ],
+      "core_technique": "Linear search",
+      "insight": "Array iteration is sufficient",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed data structure from linked list to array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v0_v1_v1",
+      "depth": 3,
+      "parent_id": "root_1_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Head Node Value Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list and a target value, check if the head node's value matches the target. For example, given the list 1 -> 2 -> 3 and the value 1, return True. Given the list 1 -> 2 -> 3 and the value 2, return False.",
+      "constraints": [
+        "Only head node needs to be checked"
+      ],
+      "core_technique": "Node value comparison",
+      "insight": "Only head node is relevant",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed traversal requirement",
+      "simplification_type": "edge_case_removal",
+      "id": "root_1_v0_v1_v2",
+      "depth": 3,
+      "parent_id": "root_1_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Node Existence in a Singly Linked List with One Node",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a singly linked list with only one node and a target value, check if the node's value matches the target. For example, given the list 1 and the value 1, return True. Given the list 1 and the value 2, return False.",
+      "constraints": [
+        "List size is always 1"
+      ],
+      "core_technique": "Accessing a node's value",
+      "insight": "Since the list only has one node, we can simply check its value",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to traverse the list",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v0_v2_v0",
+      "depth": 3,
+      "parent_id": "root_1_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Value Check in a Single Variable",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single variable and a target value, check if the variable's value matches the target. For example, given the variable 1 and the value 1, return True. Given the variable 1 and the value 2, return False.",
+      "constraints": [
+        "No linked list"
+      ],
+      "core_technique": "Basic comparison",
+      "insight": "We can simply compare the variable's value to the target",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the linked list altogether",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v0_v2_v1",
+      "depth": 3,
+      "parent_id": "root_1_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Node Existence in a Fixed-Size Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a fixed-size array (e.g., 3 elements) and a target value, check if an element with that value exists. For example, given the array [1, 2, 3] and the value 2, return True. Given the array [1, 2, 3] and the value 4, return False.",
+      "constraints": [
+        "Fixed-size array"
+      ],
+      "core_technique": "Traversing an array",
+      "insight": "We can iterate over the array to find the target value",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Swapped linked list for array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v0_v2_v2",
+      "depth": 3,
+      "parent_id": "root_1_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Count Nodes in a Short Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list with at most 5 nodes, count the total number of nodes. For example, given the list 1 -> 2, return 2.",
+      "constraints": [
+        "The list will have at most 5 nodes"
+      ],
+      "core_technique": "Traversing a linked list",
+      "insight": "The list is very short, so we can count the nodes easily",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to handle long linked lists",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v1_v0_v0",
+      "depth": 3,
+      "parent_id": "root_1_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Count Empty Linked Lists",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list, return 0 if it is empty, otherwise return 1. For example, given an empty list, return 0.",
+      "constraints": [
+        "The list is either empty or has only one node"
+      ],
+      "core_technique": "Checking for an empty linked list",
+      "insight": "We only need to check if the list is empty",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Only need to handle the simplest case",
+      "simplification_type": "edge_case_removal",
+      "id": "root_1_v1_v0_v1",
+      "depth": 3,
+      "parent_id": "root_1_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Count Nodes in a Linked List with a Single Node",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a linked list with only one node, count the total number of nodes. For example, given the list 1, return 1.",
+      "constraints": [
+        "The list will have only one node"
+      ],
+      "core_technique": "Accessing the head of a linked list",
+      "insight": "The list only has one node, so we can return 1 immediately",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to traverse the linked list",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v1_v0_v2",
+      "depth": 3,
+      "parent_id": "root_1_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Count Unique Elements in a Small Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small array of length up to 5, count the number of unique elements. For example, given the array [1, 2, 2], return 2.",
+      "constraints": [
+        "Array length is up to 5"
+      ],
+      "core_technique": "Counting unique values",
+      "insight": "Use a simple loop to count unique elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed large array consideration",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v1_v1_v0",
+      "depth": 3,
+      "parent_id": "root_1_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Check for Duplicate Elements",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array, determine if there are any duplicate elements. For example, given the array [1, 2, 3], return False. Given the array [1, 2, 2], return True.",
+      "constraints": [
+        "Return a boolean value"
+      ],
+      "core_technique": "Counting unique values",
+      "insight": "Use a set to track unique elements",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Different output, same technique",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v1_v1_v1",
+      "depth": 3,
+      "parent_id": "root_1_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Count Unique Elements in a Set",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a set, count the number of unique elements. For example, given the set {1, 2, 2, 3}, return 3.",
+      "constraints": [
+        "Input is a set"
+      ],
+      "core_technique": "Counting unique values",
+      "insight": "Sets only store unique elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Sets remove duplicate consideration",
+      "simplification_type": "technique_decomposition",
+      "id": "root_1_v1_v1_v2",
+      "depth": 3,
+      "parent_id": "root_1_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Check for Duplicate in a Small List",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a list of up to 5 elements, return True if there are any duplicates, False otherwise. For example, given the list [1, 2, 2, 3], return True.",
+      "constraints": [
+        "List size is up to 5 elements"
+      ],
+      "core_technique": "Iterating through a list and checking for duplicates",
+      "insight": "Key insight is to use a simple iterative approach",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the complexity of a linked list, focusing on a simple list",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v1_v2_v0",
+      "depth": 3,
+      "parent_id": "root_1_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Find Duplicate in an Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array of integers, return True if there are any duplicates, False otherwise. For example, given the array [1, 2, 2, 3], return True.",
+      "constraints": [
+        "Array is not sorted"
+      ],
+      "core_technique": "Traversing an array and checking for duplicates",
+      "insight": "Key insight is to use a simple array traversal approach",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Swapped the domain from a linked list to an array",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v1_v2_v1",
+      "depth": 3,
+      "parent_id": "root_1_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Check for Consecutive Duplicates in a Linked List",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a linked list, return True if there are any consecutive duplicate nodes, False otherwise. For example, given the list 1 -> 2 -> 2 -> 3, return True.",
+      "constraints": [
+        "Only check for consecutive duplicates"
+      ],
+      "core_technique": "Traversing a linked list and checking for consecutive duplicates",
+      "insight": "Key insight is to only compare adjacent nodes",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to check all nodes for duplicates, focusing on consecutive ones",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v1_v2_v2",
+      "depth": 3,
+      "parent_id": "root_1_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Value Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single value, check if it is equal to itself. For example, given the value 2, return True.",
+      "constraints": [],
+      "core_technique": "Simple comparison",
+      "insight": "Self-comparison always returns True",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed target value comparison",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_1_v2_v0_v0",
+      "depth": 3,
+      "parent_id": "root_1_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Boolean Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single boolean value, return the value itself. For example, given True, return True.",
+      "constraints": [],
+      "core_technique": "Simple return",
+      "insight": "No comparison needed",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Simplified to a single boolean value",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v2_v0_v1",
+      "depth": 3,
+      "parent_id": "root_1_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Null Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a null value, check if it is null. For example, given null, return True.",
+      "constraints": [],
+      "core_technique": "Null check",
+      "insight": "Null is always null",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed value comparison",
+      "simplification_type": "technique_decomposition",
+      "id": "root_1_v2_v0_v2",
+      "depth": 3,
+      "parent_id": "root_1_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Single Element Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single element, check if it is equal to a target value. For example, given the element 5 and target 5, return True. Given the element 3 and target 5, return False.",
+      "constraints": [
+        "single element"
+      ],
+      "core_technique": "Simple comparison",
+      "insight": "Key insight is that only one element needs to be checked",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to traverse an array and compare adjacent elements",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v2_v1_v0",
+      "depth": 3,
+      "parent_id": "root_1_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Fixed Size Array Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given an array of size 2, check if the two elements are equal. For example, given the array [1, 1], return True. Given the array [1, 2], return False.",
+      "constraints": [
+        "array size is 2"
+      ],
+      "core_technique": "Simple comparison",
+      "insight": "Key insight is that only two elements need to be compared",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to traverse an array of arbitrary size",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v2_v1_v1",
+      "depth": 3,
+      "parent_id": "root_1_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Array Equality Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given two arrays of the same size, check if the corresponding elements are equal. For example, given the arrays [1, 2, 3] and [1, 2, 3], return True. Given the arrays [1, 2, 3] and [1, 2, 4], return False.",
+      "constraints": [
+        "arrays are the same size"
+      ],
+      "core_technique": "Traversing and comparing elements",
+      "insight": "Key insight is that corresponding elements in the two arrays need to be compared",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the domain from checking adjacent elements in a single array to checking corresponding elements in two arrays",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v2_v1_v2",
+      "depth": 3,
+      "parent_id": "root_1_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Null Checker for Single Variable",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single variable, check if it is null. For example, given null, return True. Given a non-null value, return False.",
+      "constraints": [
+        "Variable can only be null or non-null"
+      ],
+      "core_technique": "Null checking",
+      "insight": "Understanding the difference between null and non-null values",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the linked list aspect, now just checking a single variable",
+      "simplification_type": "dimension_reduction",
+      "id": "root_1_v2_v2_v0",
+      "depth": 3,
+      "parent_id": "root_1_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Empty String Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a string, check if it is empty. For example, given an empty string, return True. Given a non-empty string, return False.",
+      "constraints": [
+        "String can only be empty or non-empty"
+      ],
+      "core_technique": "Empty checking",
+      "insight": "Understanding the difference between empty and non-empty strings",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Same difficulty, but now working with strings instead of linked lists",
+      "simplification_type": "domain_swap",
+      "id": "root_1_v2_v2_v1",
+      "depth": 3,
+      "parent_id": "root_1_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Null Node Checker in a Tree",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a tree node, check if it is null. For example, given a null node, return True. Given a non-null node, return False.",
+      "constraints": [
+        "Node can only be null or non-null"
+      ],
+      "core_technique": "Null checking",
+      "insight": "Understanding the difference between null and non-null nodes in a tree",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the linked list aspect, now working with a tree node",
+      "simplification_type": "technique_decomposition",
+      "id": "root_1_v2_v2_v2",
+      "depth": 3,
+      "parent_id": "root_1_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Minimizing Coins for Small Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a set of coin denominations of 1 and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denomination. For example, if you need to make change for 8, the minimum number of coins needed would be 8 (1 + 1 + 1 + 1 + 1 + 1 + 1 + 1).",
+      "constraints": [
+        "Only one coin denomination is available"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The minimum number of coins is always equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed multiple coin denominations",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v0",
+      "depth": 1,
+      "parent_id": "root_2",
+      "children": [
+        "root_2_v0_v0",
+        "root_2_v0_v1",
+        "root_2_v0_v2"
+      ]
+    },
+    {
+      "title": "Making Change with Unlimited Coins",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given a set of coin denominations and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denominations, assuming you have an unlimited supply of each coin. For example, if you have coin denominations of 1 and 5, and you need to make change for 8, the minimum number of coins needed would be 2 (5 + 1 + 1 + 1 or 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1).",
+      "constraints": [
+        "Unlimited supply of each coin"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Always choose the largest coin denomination that does not exceed the remaining amount",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed limited coin supply constraint",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v1",
+      "depth": 1,
+      "parent_id": "root_2",
+      "children": [
+        "root_2_v1_v0",
+        "root_2_v1_v1",
+        "root_2_v1_v2"
+      ]
+    },
+    {
+      "title": "Minimum Coins for Fixed Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given two coin denominations, 1 and 5, and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denominations. For example, if you need to make change for 8, the minimum number of coins needed would be 2 (5 + 1 + 1 + 1 or 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1).",
+      "constraints": [
+        "Only two coin denominations are available"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Always choose the largest coin denomination that does not exceed the remaining amount",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Fixed coin denominations",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v2",
+      "depth": 1,
+      "parent_id": "root_2",
+      "children": [
+        "root_2_v2_v0",
+        "root_2_v2_v1",
+        "root_2_v2_v2"
+      ]
+    },
+    {
+      "title": "Counting Coins",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination of 1 and an amount of money. Your task is to find the number of coins needed to make change for the given amount.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The number of coins needed is equal to the amount of money",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to minimize coins, now just a simple counting problem",
+      "simplification_type": "technique_decomposition",
+      "id": "root_2_v0_v0",
+      "depth": 2,
+      "parent_id": "root_2_v0",
+      "children": [
+        "root_2_v0_v0_v0",
+        "root_2_v0_v0_v1",
+        "root_2_v0_v0_v2"
+      ]
+    },
+    {
+      "title": "Coin Existence Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination of 1 and an amount of money. Your task is to determine if it is possible to make change for the given amount using the available coin denomination.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "It is always possible to make change for any amount of money with a coin denomination of 1",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find the minimum number of coins, now just a simple existence check",
+      "simplification_type": "edge_case_removal",
+      "id": "root_2_v0_v1",
+      "depth": 2,
+      "parent_id": "root_2_v0",
+      "children": [
+        "root_2_v0_v1_v0",
+        "root_2_v0_v1_v1",
+        "root_2_v0_v1_v2"
+      ]
+    },
+    {
+      "title": "Coin Limit Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given a set of coin denominations of 1, a maximum number of coins, and an amount of money. Your task is to determine if it is possible to make change for the given amount using the available coin denomination without exceeding the maximum number of coins.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "It is possible to make change if the amount of money is less than or equal to the maximum number of coins",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Added a constraint on the maximum number of coins, but still a simple arithmetic problem",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v0_v2",
+      "depth": 2,
+      "parent_id": "root_2_v0",
+      "children": [
+        "root_2_v0_v2_v0",
+        "root_2_v0_v2_v1",
+        "root_2_v0_v2_v2"
+      ]
+    },
+    {
+      "title": "Making Change with Single Coin Denomination",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denomination. For example, if you have a coin denomination of 5 and you need to make change for 10, the minimum number of coins needed would be 2.",
+      "constraints": [
+        "Single coin denomination"
+      ],
+      "core_technique": "Division",
+      "insight": "Key insight is to divide the amount by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed multiple coin denominations, now just a simple division problem",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v1_v0",
+      "depth": 2,
+      "parent_id": "root_2_v1",
+      "children": [
+        "root_2_v1_v0_v0",
+        "root_2_v1_v0_v1",
+        "root_2_v1_v0_v2"
+      ]
+    },
+    {
+      "title": "Counting Coins of Same Denomination",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a set of coins of the same denomination and an amount of money. Your task is to find the number of coins that add up to the given amount. For example, if you have coins of denomination 1 and you need to make change for 5, the number of coins needed would be 5.",
+      "constraints": [
+        "Same coin denomination"
+      ],
+      "core_technique": "Simple arithmetic",
+      "insight": "Key insight is to simply divide the amount by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed different coin denominations, now just a simple arithmetic problem",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v1_v1",
+      "depth": 2,
+      "parent_id": "root_2_v1",
+      "children": [
+        "root_2_v1_v1_v0",
+        "root_2_v1_v1_v1",
+        "root_2_v1_v1_v2"
+      ]
+    },
+    {
+      "title": "Minimum Coins with Only Two Coin Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given two coin denominations and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denominations. For example, if you have coin denominations of 1 and 2, and you need to make change for 4, the minimum number of coins needed would be 2 (2 + 2).",
+      "constraints": [
+        "Only two coin denominations"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Key insight is to use the larger coin denomination as much as possible and then use the smaller coin denomination to make up the remaining amount",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed multiple coin denominations, now just two coin denominations",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v1_v2",
+      "depth": 2,
+      "parent_id": "root_2_v1",
+      "children": [
+        "root_2_v1_v2_v0",
+        "root_2_v1_v2_v1",
+        "root_2_v1_v2_v2"
+      ]
+    },
+    {
+      "title": "Minimum Coins for Single Denomination",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount. For example, if you need to make change for 8 using coins of denomination 1, the minimum number of coins needed would be 8.",
+      "constraints": [
+        "Single denomination"
+      ],
+      "core_technique": "Simple Division",
+      "insight": "The minimum number of coins is the amount divided by the denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed multiple denominations, now just a simple division problem",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v2_v0",
+      "depth": 2,
+      "parent_id": "root_2_v2",
+      "children": [
+        "root_2_v2_v0_v0",
+        "root_2_v2_v0_v1",
+        "root_2_v2_v0_v2"
+      ]
+    },
+    {
+      "title": "Minimum Coins for Unlimited Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given an unlimited number of coins of denominations 1 and 5, and an amount of money. However, you are only allowed to use one type of coin. Your task is to find the minimum number of coins needed to make change for the given amount using one of the available coin denominations. For example, if you need to make change for 8, the minimum number of coins needed would be 8 (using 1 denominations) or 2 (using 5 denominations but that is not possible since 5 * 2 = 10 which is more than 8).",
+      "constraints": [
+        "Unlimited coins of two denominations",
+        "Only one denomination can be used"
+      ],
+      "core_technique": "Simple Comparison",
+      "insight": "Compare the minimum number of coins for each denomination and choose the smaller one",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for combination of coins, now just compare two options",
+      "simplification_type": "technique_decomposition",
+      "id": "root_2_v2_v1",
+      "depth": 2,
+      "parent_id": "root_2_v2",
+      "children": [
+        "root_2_v2_v1_v0",
+        "root_2_v2_v1_v1",
+        "root_2_v2_v1_v2"
+      ]
+    },
+    {
+      "title": "Minimum Coins for Exact Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given two coin denominations, 1 and 5, and an amount of money. However, you know that it is possible to make the exact change. Your task is to find the minimum number of coins needed to make the exact change for the given amount. For example, if you need to make change for 8, the minimum number of coins needed would be 3 (5 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1 or 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1).",
+      "constraints": [
+        "Exact change is possible"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Use the largest denomination coin as many times as possible and fill the remaining amount with the smaller denomination coin",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Same problem but with a guarantee of exact change being possible",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v2",
+      "depth": 2,
+      "parent_id": "root_2_v2",
+      "children": [
+        "root_2_v2_v2_v0",
+        "root_2_v2_v2_v1",
+        "root_2_v2_v2_v2"
+      ]
+    },
+    {
+      "title": "Counting Small Amounts",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given an amount of money that is less than 10 and a single coin denomination of 1. Your task is to find the number of coins needed to make change for the given amount. For example, if the amount is 5, the answer is 5 because you need 5 coins of 1 to make 5.",
+      "constraints": [
+        "amount < 10"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The number of coins needed is equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed larger amounts",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v0_v0_v0",
+      "depth": 3,
+      "parent_id": "root_2_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Coin Counter",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You have a piggy bank with a single coin slot and you want to know how many coins are in it. You are given the total amount of money in the piggy bank. Assuming each coin is 1 unit, find the number of coins in the piggy bank.",
+      "constraints": [],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The number of coins is equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Different domain but same problem",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v0_v0_v1",
+      "depth": 3,
+      "parent_id": "root_2_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Single Coin",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin and you want to know how many coins you have. The answer is always 1, but write a program to calculate it.",
+      "constraints": [],
+      "core_technique": "Basic Assignment",
+      "insight": "The number of coins is always 1",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed variable amount",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v0_v0_v2",
+      "depth": 3,
+      "parent_id": "root_2_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Coin Parity Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single coin denomination of 1 and an amount of money, determine if the amount is even or odd.",
+      "constraints": [
+        "Amount is a non-negative integer"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "Recognize that even amounts can be made with any number of coins, while odd amounts require at least one coin.",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find a combination of coins, now just check parity.",
+      "simplification_type": "edge_case_removal",
+      "id": "root_2_v0_v1_v0",
+      "depth": 3,
+      "parent_id": "root_2_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Coin Threshold Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single coin denomination of 1 and an amount of money, determine if the amount is greater than or equal to the coin denomination.",
+      "constraints": [
+        "Amount is a non-negative integer"
+      ],
+      "core_technique": "Basic Comparison",
+      "insight": "Realize that if the amount is greater than or equal to the coin denomination, it can be made with at least one coin.",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduced to a simple comparison, removing the need to find a combination of coins.",
+      "simplification_type": "technique_decomposition",
+      "id": "root_2_v0_v1_v1",
+      "depth": 3,
+      "parent_id": "root_2_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Single Coin Availability Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single coin denomination of 1 and a boolean indicating whether the coin is available, determine if the coin can be used.",
+      "constraints": [
+        "Coin availability is a boolean value"
+      ],
+      "core_technique": "Basic Conditional Statement",
+      "insight": "Understand that if the coin is available, it can be used, regardless of the amount.",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the amount and focused solely on coin availability.",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v0_v1_v2",
+      "depth": 3,
+      "parent_id": "root_2_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Coin Limit Check for Single Coin",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a coin denomination of 1 and an amount of money. Your task is to determine if it is possible to make change for the given amount using the available coin denomination.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The amount can always be made if it's less than or equal to the maximum number of coins",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to consider different coin denominations",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v0_v2_v0",
+      "depth": 3,
+      "parent_id": "root_2_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Check if Amount is Within Coin Limit",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a maximum number of coins and an amount of money. Your task is to determine if the amount is within the limit of the maximum number of coins, assuming a coin denomination of 1.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Comparison",
+      "insight": "The amount is within the limit if it's less than or equal to the maximum number of coins",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to consider making change",
+      "simplification_type": "edge_case_removal",
+      "id": "root_2_v0_v2_v1",
+      "depth": 3,
+      "parent_id": "root_2_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Maximum Coins Required",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given an amount of money and a coin denomination of 1. Your task is to determine the maximum number of coins required to make change for the given amount.",
+      "constraints": [
+        "Coin denomination is always 1"
+      ],
+      "core_technique": "Basic Arithmetic",
+      "insight": "The maximum number of coins required is equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the problem to find the maximum number of coins instead of checking if it's within the limit",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v0_v2_v2",
+      "depth": 3,
+      "parent_id": "root_2_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Counting Coins",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a number of coins. Your task is to count them.",
+      "constraints": [
+        "Number of coins is a non-negative integer"
+      ],
+      "core_technique": "Basic counting",
+      "insight": "No mathematical operations are required, just return the given number",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for division to calculate change",
+      "simplification_type": "technique_decomposition",
+      "id": "root_2_v1_v0_v0",
+      "depth": 3,
+      "parent_id": "root_2_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Coin Denomination Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a coin denomination and an amount of money. Your task is to check if the coin denomination can be used to make change for the given amount.",
+      "constraints": [
+        "Coin denomination is a positive integer"
+      ],
+      "core_technique": "Modulus operation",
+      "insight": "Use modulus to check if the amount is divisible by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Only need to check if change is possible, not calculate the minimum number of coins",
+      "simplification_type": "edge_case_removal",
+      "id": "root_2_v1_v0_v1",
+      "depth": 3,
+      "parent_id": "root_2_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Single Coin Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given a coin denomination of 1 and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount.",
+      "constraints": [
+        "Coin denomination is 1"
+      ],
+      "core_technique": "Basic division",
+      "insight": "The minimum number of coins is equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Fixed coin denomination to 1, removing need for division",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v1_v0_v2",
+      "depth": 3,
+      "parent_id": "root_2_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Counting Single Coin",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin of a certain denomination and an amount of money that is exactly equal to the coin's denomination. Your task is to find the number of coins that add up to the given amount.",
+      "constraints": [
+        "The amount is always equal to the coin's denomination"
+      ],
+      "core_technique": "Simple assignment",
+      "insight": "The number of coins needed is always 1",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for arithmetic by making the amount equal to the coin's denomination",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v1_v1_v0",
+      "depth": 3,
+      "parent_id": "root_2_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Coin Quantity Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a set of coins of the same denomination and a specific quantity of coins. Your task is to determine if the given quantity of coins can make up a certain amount of money.",
+      "constraints": [
+        "The amount is always a multiple of the coin's denomination"
+      ],
+      "core_technique": "Simple comparison",
+      "insight": "The task is to check if the quantity is sufficient to make up the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for arithmetic by making the task a simple comparison",
+      "simplification_type": "technique_decomposition",
+      "id": "root_2_v1_v1_v1",
+      "depth": 3,
+      "parent_id": "root_2_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Counting Coins for Unit Amount",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a set of coins of the same denomination and an amount of money that is 1 unit. Your task is to find the number of coins that add up to the given amount.",
+      "constraints": [
+        "The amount is always 1 unit"
+      ],
+      "core_technique": "Simple assignment",
+      "insight": "The number of coins needed is always 1",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for arithmetic by making the amount always 1 unit",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v1_v1_v2",
+      "depth": 3,
+      "parent_id": "root_2_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Single Coin Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denomination. For example, if you have a coin denomination of 1 and you need to make change for 4, the minimum number of coins needed would be 4 (1 + 1 + 1 + 1).",
+      "constraints": [
+        "Coin denomination is 1"
+      ],
+      "core_technique": "Simple Division",
+      "insight": "Key insight is to divide the amount by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for two coin denominations and the greedy algorithm, now just simple division",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v1_v2_v0",
+      "depth": 3,
+      "parent_id": "root_2_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Two Coin Change with Equal Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given two equal coin denominations and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denominations. For example, if you have coin denominations of 1 and 1, and you need to make change for 4, the minimum number of coins needed would be 4 (1 + 1 + 1 + 1).",
+      "constraints": [
+        "Both coin denominations are equal"
+      ],
+      "core_technique": "Simple Division",
+      "insight": "Key insight is to divide the amount by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for different coin denominations, now the problem is reduced to simple division",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v1_v2_v1",
+      "depth": 3,
+      "parent_id": "root_2_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Minimum Coins with Unbounded Coin Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given an unbounded coin denomination (i.e., you can use any integer value) and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount using the available coin denomination. For example, if you need to make change for 4, the minimum number of coins needed would be 1 (4).",
+      "constraints": [
+        "Coin denomination is unbounded"
+      ],
+      "core_technique": "Simple Math",
+      "insight": "Key insight is that the minimum number of coins is always 1, since you can use any integer value as the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the domain to unbounded coin denominations, but the problem remains equivalent in terms of difficulty",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v1_v2_v2",
+      "depth": 3,
+      "parent_id": "root_2_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Minimum Coins for Single Denomination with Zero Amount",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "You are given a single coin denomination and an amount of money. If the amount is zero, find the minimum number of coins needed to make change for the given amount.",
+      "constraints": [
+        "amount is always zero"
+      ],
+      "core_technique": "Simple Constant Return",
+      "insight": "No calculation needed when amount is zero",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed need for division, now just returns a constant",
+      "simplification_type": "edge_case_removal",
+      "id": "root_2_v2_v0_v0",
+      "depth": 3,
+      "parent_id": "root_2_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Minimum Coins for Single Denomination with Coin Value of 1",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given a single coin denomination of 1 and an amount of money. Your task is to find the minimum number of coins needed to make change for the given amount.",
+      "constraints": [
+        "coin denomination is always 1"
+      ],
+      "core_technique": "Simple Identity Function",
+      "insight": "Coin value of 1 means the minimum number of coins equals the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed need for division, now just returns the amount",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v0_v1",
+      "depth": 3,
+      "parent_id": "root_2_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Minimum Items for Single Item Type",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given a single item type and a quantity needed. Your task is to find the minimum number of items needed to fulfill the given quantity.",
+      "constraints": [
+        "item type is indivisible"
+      ],
+      "core_technique": "Simple Division",
+      "insight": "Same logic as coins, but with items",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Domain swap from coins to items",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v2_v0_v2",
+      "depth": 3,
+      "parent_id": "root_2_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Single Coin Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an amount of money and a single coin denomination of 1, find the minimum number of coins needed to make change for the given amount. For example, if you need to make change for 5, the minimum number of coins needed would be 5.",
+      "constraints": [
+        "coin denomination is 1"
+      ],
+      "core_technique": "Simple Arithmetic",
+      "insight": "The minimum number of coins is equal to the amount",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the choice between two coin denominations",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v1_v0",
+      "depth": 3,
+      "parent_id": "root_2_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Fixed Coin Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "You are given an unlimited number of coins of denomination 5, and an amount of money that is a multiple of 5. Find the minimum number of coins needed to make change for the given amount. For example, if you need to make change for 10, the minimum number of coins needed would be 2.",
+      "constraints": [
+        "amount is a multiple of 5",
+        "coin denomination is 5"
+      ],
+      "core_technique": "Simple Division",
+      "insight": "The minimum number of coins is equal to the amount divided by the coin denomination",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the choice between two coin denominations and restricted the amount to be a multiple of 5",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v1_v1",
+      "depth": 3,
+      "parent_id": "root_2_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Minimum Bills for Unlimited Denominations",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "You are given an unlimited number of bills of denominations 1 and 5, and an amount of money. However, you are only allowed to use one type of bill. Your task is to find the minimum number of bills needed to make change for the given amount using one of the available bill denominations.",
+      "constraints": [
+        "bill denominations are 1 and 5"
+      ],
+      "core_technique": "Simple Comparison",
+      "insight": "The minimum number of bills is equal to the minimum of the amount divided by each bill denomination, rounded up to the nearest whole number",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the domain from coins to bills",
+      "simplification_type": "domain_swap",
+      "id": "root_2_v2_v1_v2",
+      "depth": 3,
+      "parent_id": "root_2_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Minimum Coins for Small Amounts",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a coin denomination of 1 and an amount of money less than 10, find the minimum number of coins needed to make the exact change. For example, if you need to make change for 5, the minimum number of coins needed would be 5 (1 + 1 + 1 + 1 + 1).",
+      "constraints": [
+        "amount < 10"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Since the denomination is 1, the minimum number of coins is equal to the amount.",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the 5 denomination coin and limited the amount to less than 10",
+      "simplification_type": "dimension_reduction",
+      "id": "root_2_v2_v2_v0",
+      "depth": 3,
+      "parent_id": "root_2_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Single Denomination Change",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single coin denomination and an amount of money, find the minimum number of coins needed to make the exact change. For example, if you need to make change for 8 with a denomination of 1, the minimum number of coins needed would be 8 (1 + 1 + 1 + 1 + 1 + 1 + 1 + 1).",
+      "constraints": [
+        "single denomination"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Since there is only one denomination, the minimum number of coins is equal to the amount divided by the denomination.",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the multiple denomination aspect",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v2_v1",
+      "depth": 3,
+      "parent_id": "root_2_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Exact Change with Unlimited Coins",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given two coin denominations, 1 and 5, and an amount of money, find the minimum number of coins needed to make the exact change, assuming you have an unlimited supply of coins. For example, if you need to make change for 8, the minimum number of coins needed would be 2 (5 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1 or 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 but one optimal solution is 5 + 1 + 1 + 1).",
+      "constraints": [
+        "unlimited coins"
+      ],
+      "core_technique": "Greedy Algorithm",
+      "insight": "Since you have an unlimited supply of coins, you can always make the exact change",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the constraint of limited coins",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_2_v2_v2_v2",
+      "depth": 3,
+      "parent_id": "root_2_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Minimum Window with Single Element",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find the minimum length of a subarray that contains the target integer. If the target integer is not in the array, return -1. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return 1 because the subarray [3] contains the target.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "The minimum window will always contain the first occurrence of the target integer",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to match the total number of occurrences",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v0",
+      "depth": 1,
+      "parent_id": "root_3",
+      "children": [
+        "root_3_v0_v0",
+        "root_3_v0_v1",
+        "root_3_v0_v2"
+      ]
+    },
+    {
+      "title": "Fixed Size Window with Target Count",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given an array of integers, a target integer, and a window size, find the number of windows of the given size that contain the same number of occurrences of the target integer as the total number of occurrences in the entire array. For example, if the array is [1, 2, 2, 3, 2, 4, 2], the target is 2, and the window size is 3, the function should return 2 because the windows [2, 2, 3] and [2, 4, 2] contain the same number of occurrences of 2 as the entire array.",
+      "constraints": [
+        "Window size is between 1 and 100"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "The number of windows can be calculated by counting the occurrences of the target integer in each window",
+      "expected_complexity": {
+        "time": "O(n*m)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Added a fixed window size to simplify the problem",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v1",
+      "depth": 1,
+      "parent_id": "root_3",
+      "children": [
+        "root_3_v1_v0",
+        "root_3_v1_v1",
+        "root_3_v1_v2"
+      ]
+    },
+    {
+      "title": "Minimum Window with Equal Elements in a Binary Array",
+      "difficulty": "Easy-Medium",
+      "difficulty_delta": "equivalent",
+      "description": "Given a binary array (containing only 0s and 1s) and a target integer (either 0 or 1), find the minimum length of a subarray that contains the same number of occurrences of the target integer as the total number of occurrences in the entire array. For example, if the array is [0, 1, 1, 0, 1, 0, 1] and the target is 1, the function should return 4 because the subarray [1, 0, 1, 0] has the same number of occurrences of 1 as the entire array.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "The problem can be solved using a similar approach to the parent problem, but with a simpler array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Restricted the array to binary values",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v2",
+      "depth": 1,
+      "parent_id": "root_3",
+      "children": [
+        "root_3_v2_v0",
+        "root_3_v2_v1",
+        "root_3_v2_v2"
+      ]
+    },
+    {
+      "title": "Find Target Integer",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a sorted array of integers and a target integer, find if the target integer is present in the array. If the target integer is found, return its index. If the target integer is not in the array, return -1. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return 2 because the target is at index 2.",
+      "constraints": [
+        "Array is sorted"
+      ],
+      "core_technique": "Binary Search",
+      "insight": "Key insight is to use binary search for efficient lookup",
+      "expected_complexity": {
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for a window and only focused on finding a single element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v0_v0",
+      "depth": 2,
+      "parent_id": "root_3_v0",
+      "children": [
+        "root_3_v0_v0_v0",
+        "root_3_v0_v0_v1",
+        "root_3_v0_v0_v2"
+      ]
+    },
+    {
+      "title": "Check Target Presence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find if the target integer is present in the array. If the target integer is found, return True. If the target integer is not in the array, return False. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return True because the target is in the array.",
+      "constraints": [],
+      "core_technique": "Linear Search",
+      "insight": "Key insight is to check each element in the array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for finding a minimum window and only focused on checking presence",
+      "simplification_type": "edge_case_removal",
+      "id": "root_3_v0_v1",
+      "depth": 2,
+      "parent_id": "root_3_v0",
+      "children": [
+        "root_3_v0_v1_v0",
+        "root_3_v0_v1_v1",
+        "root_3_v0_v1_v2"
+      ]
+    },
+    {
+      "title": "Single Element Window",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find the length of the smallest possible window that contains the target integer. The window must contain only the target integer. If the target integer is not in the array, return -1. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return 1 because the window [3] contains the target.",
+      "constraints": [
+        "Window can only contain the target integer"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Key insight is to find the target and return a window of size 1",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for finding a minimum window with variable size and only focused on a window of size 1",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v0_v2",
+      "depth": 2,
+      "parent_id": "root_3_v0",
+      "children": [
+        "root_3_v0_v2_v0",
+        "root_3_v0_v2_v1",
+        "root_3_v0_v2_v2"
+      ]
+    },
+    {
+      "title": "Single Element Window with Target Count",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find the number of elements in the array that are equal to the target. For example, if the array is [1, 2, 2, 3, 2, 4, 2] and the target is 2, the function should return 4.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Counting elements in an array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed window size and sliding window approach",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v1_v0",
+      "depth": 2,
+      "parent_id": "root_3_v1",
+      "children": [
+        "root_3_v1_v0_v0",
+        "root_3_v1_v0_v1",
+        "root_3_v1_v0_v2"
+      ]
+    },
+    {
+      "title": "Target Count in Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find the total number of occurrences of the target integer in the array. For example, if the array is [1, 2, 2, 3, 2, 4, 2] and the target is 2, the function should return 4.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Counting elements in an array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed window size and sliding window approach",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v1_v1",
+      "depth": 2,
+      "parent_id": "root_3_v1",
+      "children": [
+        "root_3_v1_v1_v0",
+        "root_3_v1_v1_v1",
+        "root_3_v1_v1_v2"
+      ]
+    },
+    {
+      "title": "Window with Target Count in Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a binary array (contains only 0s and 1s), a target integer (0 or 1), and a window size, find the number of windows of the given size that contain the same number of occurrences of the target integer as the total number of occurrences in the entire array. For example, if the array is [1, 1, 0, 1, 0, 1], the target is 1, and the window size is 3, the function should return 2.",
+      "constraints": [
+        "Array length is between 1 and 1000",
+        "Window size is between 1 and 1000"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "Counting elements in a binary array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Simplified the problem by restricting the array to binary",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v1_v2",
+      "depth": 2,
+      "parent_id": "root_3_v1",
+      "children": [
+        "root_3_v1_v2_v0",
+        "root_3_v1_v2_v1",
+        "root_3_v1_v2_v2"
+      ]
+    },
+    {
+      "title": "Maximum Consecutive Ones in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array, find the maximum number of consecutive ones in the array. For example, if the array is [0, 1, 1, 0, 1, 1, 1], the function should return 3 because the array has 3 consecutive ones.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Keep track of the maximum count of consecutive ones",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find a subarray with equal elements",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v2_v0",
+      "depth": 2,
+      "parent_id": "root_3_v2",
+      "children": [
+        "root_3_v2_v0_v0",
+        "root_3_v2_v0_v1",
+        "root_3_v2_v0_v2"
+      ]
+    },
+    {
+      "title": "Count Ones in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array, count the number of ones in the array. For example, if the array is [0, 1, 1, 0, 1, 0, 1], the function should return 4.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Count the number of ones in the array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find a subarray with equal elements and the sliding window",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v2_v1",
+      "depth": 2,
+      "parent_id": "root_3_v2",
+      "children": [
+        "root_3_v2_v1_v0",
+        "root_3_v2_v1_v1",
+        "root_3_v2_v1_v2"
+      ]
+    },
+    {
+      "title": "Find First Occurrence of Target in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array and a target integer (either 0 or 1), find the index of the first occurrence of the target in the array. For example, if the array is [0, 1, 1, 0, 1, 0, 1] and the target is 1, the function should return 1.",
+      "constraints": [
+        "Array contains only 0s and 1s",
+        "Target is either 0 or 1"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Stop at the first occurrence of the target",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find a subarray with equal elements and the sliding window",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v2_v2",
+      "depth": 2,
+      "parent_id": "root_3_v2",
+      "children": [
+        "root_3_v2_v2_v0",
+        "root_3_v2_v2_v1",
+        "root_3_v2_v2_v2"
+      ]
+    },
+    {
+      "title": "Find Target in Small Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small sorted array of integers (max size 5) and a target integer, find if the target integer is present in the array. If the target integer is found, return its index. If the target integer is not in the array, return -1. For example, if the array is [1, 2, 3] and the target is 2, the function should return 1.",
+      "constraints": [
+        "array size is at most 5"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Small array size allows for simple search",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed need for binary search, now linear search is sufficient",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v0_v0_v0",
+      "depth": 3,
+      "parent_id": "root_3_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Check if Target is First Element",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a sorted array of integers and a target integer, check if the target integer is the first element in the array. If it is, return 0. If it's not, return -1.",
+      "constraints": [
+        "only check the first element"
+      ],
+      "core_technique": "Simple Comparison",
+      "insight": "Only one comparison needed",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed search aspect, now just a simple comparison",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v0_v0_v1",
+      "depth": 3,
+      "parent_id": "root_3_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Find Target in Unsorted Duplicate Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an unsorted array of integers with duplicates and a target integer, find if the target integer is present in the array. If the target integer is found, return its index. If the target integer is not in the array, return -1. For example, if the array is [3, 2, 1, 3] and the target is 3, the function should return 0 or 3.",
+      "constraints": [
+        "array can contain duplicates"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Presence of duplicates doesn't affect search",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed domain from sorted to unsorted with duplicates",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v0_v0_v2",
+      "depth": 3,
+      "parent_id": "root_3_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Check Single Element",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and a target integer, find if the target integer is equal to the given integer. If the target integer is found, return True. If the target integer is not equal, return False. For example, if the integer is 5 and the target is 5, the function should return True.",
+      "constraints": [
+        "Single integer input"
+      ],
+      "core_technique": "Simple Comparison",
+      "insight": "Direct equality check",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed array and linear search, now just a direct comparison",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v0_v1_v0",
+      "depth": 3,
+      "parent_id": "root_3_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Check Presence in Pair",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a pair of integers and a target integer, find if the target integer is present in the pair. If the target integer is found, return True. If the target integer is not in the pair, return False. For example, if the pair is [1, 2] and the target is 2, the function should return True.",
+      "constraints": [
+        "Pair of integers input"
+      ],
+      "core_technique": "Linear Search with limited elements",
+      "insight": "Checking each element in the pair",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Limited the array size to 2",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v0_v1_v1",
+      "depth": 3,
+      "parent_id": "root_3_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Check Target in Empty or Single Element Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers that can either be empty or contain a single integer, and a target integer, find if the target integer is present in the array. If the target integer is found, return True. If the target integer is not in the array, return False. For example, if the array is [5] and the target is 5, the function should return True.",
+      "constraints": [
+        "Array can be empty or have one element"
+      ],
+      "core_technique": "Linear Search with limited scenarios",
+      "insight": "Checking for empty array or single element match",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Limited the array size to 0 or 1",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v0_v1_v2",
+      "depth": 3,
+      "parent_id": "root_3_v0_v1",
+      "children": []
+    },
+    {
+      "title": "Single Element Check",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, check if the target integer exists in the array. If it does, return the index of the target integer, otherwise return -1. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return 2.",
+      "constraints": [
+        "Array contains distinct integers"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Check each element in the array until the target is found",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to find the smallest window",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v0_v2_v0",
+      "depth": 3,
+      "parent_id": "root_3_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Element Existence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, return True if the target integer exists in the array, False otherwise. For example, if the array is [1, 2, 3, 4] and the target is 3, the function should return True.",
+      "constraints": [
+        "Array contains distinct integers"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Check each element in the array until the target is found",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to find the smallest window and return its length",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v0_v2_v1",
+      "depth": 3,
+      "parent_id": "root_3_v0_v2",
+      "children": []
+    },
+    {
+      "title": "First Occurrence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a sorted array of integers and a target integer, find the index of the first occurrence of the target integer. If the target integer is not in the array, return -1. For example, if the array is [1, 2, 2, 3, 3, 3] and the target is 2, the function should return 1.",
+      "constraints": [
+        "Array is sorted"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Check each element in the array until the target is found",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the array to be sorted and removed the requirement to find the smallest window",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v0_v2_v2",
+      "depth": 3,
+      "parent_id": "root_3_v0_v2",
+      "children": []
+    },
+    {
+      "title": "Single Element in Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers, find if the number 1 exists in the array. For example, if the array is [1, 2, 3] the function should return True, and if the array is [2, 3, 4] the function should return False.",
+      "constraints": [
+        "Array length is less than 100"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "We only need to check each element once",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed target count requirement, now just checking for existence",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v1_v0_v0",
+      "depth": 3,
+      "parent_id": "root_3_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Counting Zeros in Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a binary array (array containing only 0s and 1s), find the number of zeros in the array. For example, if the array is [0, 1, 0, 0] the function should return 3.",
+      "constraints": [
+        "Array contains only binary numbers"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Since the array only contains two distinct values, we can simplify the counting process",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Now only dealing with binary numbers, but still counting",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v1_v0_v1",
+      "depth": 3,
+      "parent_id": "root_3_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Single Element Window with Target Count in Small Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a small array of integers (less than 10 elements) and a target integer, find the number of elements in the array that are equal to the target. For example, if the array is [1, 2, 2] and the target is 2, the function should return 2.",
+      "constraints": [
+        "Array length is less than 10"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "The small array size reduces the problem complexity",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Array size is now limited, making the problem easier to solve",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v1_v0_v2",
+      "depth": 3,
+      "parent_id": "root_3_v1_v0",
+      "children": []
+    },
+    {
+      "title": "Count First Occurrence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, find the index of the first occurrence of the target integer in the array. If the target is not found, return -1. For example, if the array is [1, 2, 2, 3, 2, 4, 2] and the target is 2, the function should return 1.",
+      "constraints": [
+        "Array length is at least 1"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Stop iterating as soon as the target is found",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to count all occurrences, only need to find the first one",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v1_v1_v0",
+      "depth": 3,
+      "parent_id": "root_3_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Check Target Presence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, determine if the target integer is present in the array. For example, if the array is [1, 2, 2, 3, 2, 4, 2] and the target is 2, the function should return True.",
+      "constraints": [
+        "Array length is at least 1"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Can stop iterating as soon as the target is found",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to count occurrences, only need to check for presence",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v1_v1_v1",
+      "depth": 3,
+      "parent_id": "root_3_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Count in Small Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small array of integers (length 3 or less) and a target integer, find the total number of occurrences of the target integer in the array. For example, if the array is [1, 2, 2] and the target is 2, the function should return 2.",
+      "constraints": [
+        "Array length is 3 or less"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Can brute-force the solution due to small input size",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Limited the input size to make the problem simpler",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v1_v1_v2",
+      "depth": 3,
+      "parent_id": "root_3_v1_v1",
+      "children": []
+    },
+    {
+      "title": "Count Target in Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array and a target integer (0 or 1), find the total number of occurrences of the target integer in the array. For example, if the array is [1, 1, 0, 1, 0, 1] and the target is 1, the function should return 4.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Basic iteration",
+      "insight": "Simple counting",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed window size and sliding window aspect",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v1_v2_v0",
+      "depth": 3,
+      "parent_id": "root_3_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Window with Target Existence",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array, a target integer (0 or 1), and a window size, find if there exists at least one window of the given size that contains the target integer. For example, if the array is [1, 1, 0, 1, 0, 1], the target is 1, and the window size is 3, the function should return True.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Two Pointers with a Sliding Window approach",
+      "insight": "Existence check rather than count",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Relaxed requirement from count to existence",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v1_v2_v1",
+      "depth": 3,
+      "parent_id": "root_3_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Fixed Window with Target Count",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a binary array, a target integer (0 or 1), and a fixed window size, find the number of windows of the given size that contain the same number of occurrences of the target integer as the total number of occurrences in the entire array, but the window must start at the beginning of the array. For example, if the array is [1, 1, 0, 1, 0, 1], the target is 1, and the window size is 3, the function should return 1.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Basic iteration",
+      "insight": "Single window evaluation",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Restricted window to start at the beginning of the array",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v1_v2_v2",
+      "depth": 3,
+      "parent_id": "root_3_v1_v2",
+      "children": []
+    },
+    {
+      "title": "Count Ones in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array, find the total number of ones in the array. For example, if the array is [0, 1, 1, 0, 1, 1, 1], the function should return 5 because the array has 5 ones.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Just iterate through the array and count the ones",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to find consecutive ones",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v2_v0_v0",
+      "depth": 3,
+      "parent_id": "root_3_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Find Single One in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array with a single one, find the index of the one. For example, if the array is [0, 0, 1, 0, 0], the function should return 2 because the one is at index 2.",
+      "constraints": [
+        "Array length is between 1 and 1000",
+        "There is only one one in the array"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Just iterate through the array until you find the one",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to find consecutive ones and added a constraint that there is only one one",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v2_v0_v1",
+      "depth": 3,
+      "parent_id": "root_3_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Check if Binary Array Contains a One",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array, check if it contains at least one one. For example, if the array is [0, 0, 0, 0], the function should return False, but if the array is [0, 1, 0, 0], the function should return True.",
+      "constraints": [
+        "Array length is between 1 and 1000"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Just iterate through the array and check if you find a one",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the requirement to find consecutive ones and only need to check if there is at least one one",
+      "simplification_type": "edge_case_removal",
+      "id": "root_3_v2_v0_v2",
+      "depth": 3,
+      "parent_id": "root_3_v2_v0",
+      "children": []
+    },
+    {
+      "title": "Count Ones in a Small Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small binary array of length 5, count the number of ones in the array. For example, if the array is [0, 1, 1, 0, 1], the function should return 3.",
+      "constraints": [
+        "Array length is 5"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Counting ones in a small array",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Array length is fixed and small",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v2_v1_v0",
+      "depth": 3,
+      "parent_id": "root_3_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Check if Array Contains a One",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a binary array, check if the array contains at least one 1. For example, if the array is [0, 0, 0, 0, 0], the function should return False, but if the array is [0, 1, 0, 0, 0], the function should return True.",
+      "constraints": [
+        "Array contains only 0s and 1s"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Checking for presence of a one",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Only need to find one 1, not count all",
+      "simplification_type": "technique_decomposition",
+      "id": "root_3_v2_v1_v1",
+      "depth": 3,
+      "parent_id": "root_3_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Count Ones in a Binary String",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a binary string, count the number of '1' characters in the string. For example, if the string is '011010', the function should return 3.",
+      "constraints": [
+        "String contains only '0' and '1' characters"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Counting ones in a binary string",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Same problem, different data type",
+      "simplification_type": "domain_swap",
+      "id": "root_3_v2_v1_v2",
+      "depth": 3,
+      "parent_id": "root_3_v2_v1",
+      "children": []
+    },
+    {
+      "title": "Find Target in a Short Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array of length 5 and a target integer (either 0 or 1), find the index of the target in the array. For example, if the array is [0, 1, 1, 0, 1] and the target is 1, the function should return 1.",
+      "constraints": [
+        "Array length is 5"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Iterate through the short array to find the target",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to handle large arrays",
+      "simplification_type": "dimension_reduction",
+      "id": "root_3_v2_v2_v0",
+      "depth": 3,
+      "parent_id": "root_3_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Check if Target is Present in a Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a binary array and a target integer (either 0 or 1), check if the target is present in the array. For example, if the array is [0, 1, 1, 0, 1] and the target is 1, the function should return True.",
+      "constraints": [
+        "Target is either 0 or 1"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Iterate through the array to check if the target is present",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need to find the index of the target",
+      "simplification_type": "edge_case_removal",
+      "id": "root_3_v2_v2_v1",
+      "depth": 3,
+      "parent_id": "root_3_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Find First Occurrence of Target in a Fixed-Size Binary Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a binary array of length 10 and a target integer (either 0 or 1), find the index of the first occurrence of the target in the array. For example, if the array is [0, 1, 1, 0, 1, 0, 1, 0, 1, 0] and the target is 1, the function should return 1.",
+      "constraints": [
+        "Array length is 10"
+      ],
+      "core_technique": "Simple iteration",
+      "insight": "Iterate through the fixed-size array to find the target",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Changed the array size to a fixed value",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_3_v2_v2_v2",
+      "depth": 3,
+      "parent_id": "root_3_v2_v2",
+      "children": []
+    },
+    {
+      "title": "Frequent Element Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a single integer and an array of integers, check if the given integer appears more than once in the array. If it does, return true, otherwise return false. For example, given the integer 2 and the array [2, 3, 4, 2, 5], the function should return true. Given the integer 1 and the array [2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "The input array will not be empty"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash set to keep track of seen elements can simplify the problem",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Removed the need to find the first frequent element, instead checking a specific element",
+      "simplification_type": "dimension_reduction",
+      "id": "root_4_v0",
+      "depth": 1,
+      "parent_id": "root_4",
+      "children": [
+        "root_4_v0_v0",
+        "root_4_v0_v1",
+        "root_4_v0_v2"
+      ]
+    },
+    {
+      "title": "Element Occurrence Counter",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array of integers, count the number of occurrences of each unique element in the array. For example, given the array [2, 3, 4, 2, 5], the function should return a dictionary with the counts of each element, e.g. {2: 2, 3: 1, 4: 1, 5: 1}.",
+      "constraints": [
+        "The input array will not be empty"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash map to count element occurrences can simplify the problem",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changed the problem to focus on counting occurrences instead of finding the first frequent element",
+      "simplification_type": "domain_swap",
+      "id": "root_4_v1",
+      "depth": 1,
+      "parent_id": "root_4",
+      "children": [
+        "root_4_v1_v0",
+        "root_4_v1_v1",
+        "root_4_v1_v2"
+      ]
+    },
+    {
+      "title": "Duplicate Element Detector",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small array of integers (maximum length 5), check if there are any duplicate elements in the array. If there are, return true, otherwise return false. For example, given the array [2, 3, 4, 2, 5], the function should return true. Given the array [1, 2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "The input array will have a maximum length of 5"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Using a hash set to keep track of seen elements can simplify the problem",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Significantly reduced the input size, making the problem much simpler",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_4_v2",
+      "depth": 1,
+      "parent_id": "root_4",
+      "children": [
+        "root_4_v2_v0",
+        "root_4_v2_v1",
+        "root_4_v2_v2"
+      ]
+    },
+    {
+      "title": "Element Presence Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and an array of integers, check if the given integer appears in the array. If it does, return true, otherwise return false. For example, given the integer 2 and the array [2, 3, 4, 5], the function should return true. Given the integer 1 and the array [2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "The array will not be empty"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Check each element in the array to see if it matches the target",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removes the need to count occurrences, only checks for presence",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_4_v0_v0",
+      "depth": 2,
+      "parent_id": "root_4_v0",
+      "children": [
+        "root_4_v0_v0_v0",
+        "root_4_v0_v0_v1",
+        "root_4_v0_v0_v2"
+      ]
+    },
+    {
+      "title": "Duplicate Checker in Pairs",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given two integers, check if they are the same. For example, given the integers 2 and 2, the function should return true. Given the integers 1 and 2, the function should return false.",
+      "constraints": [
+        "The input will always be two integers"
+      ],
+      "core_technique": "Basic Comparison",
+      "insight": "Simply compare the two integers for equality",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Reduces the problem to a simple comparison",
+      "simplification_type": "dimension_reduction",
+      "id": "root_4_v0_v1",
+      "depth": 2,
+      "parent_id": "root_4_v0",
+      "children": []
+    },
+    {
+      "title": "Frequent Element Checker in Sets",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given a single integer and a set of integers, check if the given integer appears more than once in the set. If it does, return true, otherwise return false. For example, given the integer 2 and the set [2, 3, 4, 2, 5], the function should return true. Given the integer 1 and the set [2, 3, 4, 5], the function should return false. Note: Since sets automatically eliminate duplicates, this problem is equivalent to checking if the given integer appears in the set and then checking the original array for duplicates.",
+      "constraints": [
+        "The input set will not be empty"
+      ],
+      "core_technique": "Set Operations",
+      "insight": "Use set operations to eliminate duplicates and then check for presence in the original array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Changes the domain from arrays to sets",
+      "simplification_type": "domain_swap",
+      "id": "root_4_v0_v2",
+      "depth": 2,
+      "parent_id": "root_4_v0",
+      "children": []
+    },
+    {
+      "title": "Single Element Counter",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and an array of integers, count the number of occurrences of the given integer in the array. For example, given the integer 2 and the array [2, 3, 4, 2, 5], the function should return 2.",
+      "constraints": [
+        "Array length is less than 100"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Key insight is to use a simple hash table to count occurrences",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Differs by only counting a single specified element, rather than all unique elements",
+      "simplification_type": "dimension_reduction",
+      "id": "root_4_v1_v0",
+      "depth": 2,
+      "parent_id": "root_4_v1",
+      "children": []
+    },
+    {
+      "title": "Element Presence Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given an array of integers and a target integer, determine if the target integer is present in the array. For example, given the array [2, 3, 4, 2, 5] and the target 2, the function should return True.",
+      "constraints": [
+        "Array length is less than 100"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Key insight is to use a hash table to check for presence in constant time",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Differs by only checking for presence, rather than counting occurrences",
+      "simplification_type": "technique_decomposition",
+      "id": "root_4_v1_v1",
+      "depth": 2,
+      "parent_id": "root_4_v1",
+      "children": []
+    },
+    {
+      "title": "Counting Duplicate Elements",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given an array of integers, count the number of duplicate elements (i.e., elements that occur more than once). For example, given the array [2, 3, 4, 2, 5], the function should return 1, because only the element 2 is duplicated.",
+      "constraints": [
+        "Array length is less than 100"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Key insight is to use a hash table to count occurrences and then count the number of elements with more than one occurrence",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Differs by only counting duplicate elements, rather than all unique elements",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_4_v1_v2",
+      "depth": 2,
+      "parent_id": "root_4_v1",
+      "children": []
+    },
+    {
+      "title": "Single Element Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small array of integers (maximum length 5), check if a specific target element exists in the array. For example, given the array [2, 3, 4, 2, 5] and the target 2, the function should return true. Given the array [1, 2, 3, 4, 5] and the target 6, the function should return false.",
+      "constraints": [
+        "array length maximum 5"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Check each element in the array against the target",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate detection, now just checking for a single element",
+      "simplification_type": "technique_decomposition",
+      "id": "root_4_v2_v0",
+      "depth": 2,
+      "parent_id": "root_4_v2",
+      "children": []
+    },
+    {
+      "title": "Empty Array Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a small array of integers (maximum length 5), check if the array is empty. For example, given the array [], the function should return true. Given the array [1, 2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "array length maximum 5"
+      ],
+      "core_technique": "Simple Conditional",
+      "insight": "Check if the array has any elements",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed duplicate detection, now just checking for an empty array",
+      "simplification_type": "edge_case_removal",
+      "id": "root_4_v2_v1",
+      "depth": 2,
+      "parent_id": "root_4_v2",
+      "children": []
+    },
+    {
+      "title": "Set Size Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "easier",
+      "description": "Given a small array of integers (maximum length 5), check if the size of the set of unique elements is less than the size of the original array. For example, given the array [2, 3, 4, 2, 5], the function should return true. Given the array [1, 2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "array length maximum 5"
+      ],
+      "core_technique": "Hashing",
+      "insight": "Compare the size of the set of unique elements to the size of the original array",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "relationship_to_parent": "Simplified the problem by focusing on set size comparison",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_4_v2_v2",
+      "depth": 2,
+      "parent_id": "root_4_v2",
+      "children": []
+    },
+    {
+      "title": "Singleton Presence Checker",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and a single-element array of integers, check if the given integer matches the array's element. If it does, return true, otherwise return false. For example, given the integer 2 and the array [2], the function should return true. Given the integer 1 and the array [2], the function should return false.",
+      "constraints": [
+        "Array has only one element"
+      ],
+      "core_technique": "Simple Comparison",
+      "insight": "Direct equality check is sufficient",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for searching through an array, now just a simple comparison",
+      "simplification_type": "dimension_reduction",
+      "id": "root_4_v0_v0_v0",
+      "depth": 3,
+      "parent_id": "root_4_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Element Presence Checker in Empty Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "much_easier",
+      "description": "Given a single integer and an empty array of integers, check if the given integer appears in the array. If it does, return true, otherwise return false. Since the array is empty, the function should always return false.",
+      "constraints": [
+        "Array is empty"
+      ],
+      "core_technique": "Immediate False Response",
+      "insight": "An empty array can never contain any element",
+      "expected_complexity": {
+        "time": "O(1)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Removed the need for searching, as the array is always empty",
+      "simplification_type": "constraint_relaxation",
+      "id": "root_4_v0_v0_v1",
+      "depth": 3,
+      "parent_id": "root_4_v0_v0",
+      "children": []
+    },
+    {
+      "title": "Presence of Zero in Array",
+      "difficulty": "Easy",
+      "difficulty_delta": "equivalent",
+      "description": "Given an array of integers, check if the integer 0 appears in the array. If it does, return true, otherwise return false. For example, given the array [2, 3, 0, 5], the function should return true. Given the array [2, 3, 4, 5], the function should return false.",
+      "constraints": [
+        "Only looking for the presence of 0"
+      ],
+      "core_technique": "Linear Search",
+      "insight": "Same linear search as the parent problem but with a fixed target value",
+      "expected_complexity": {
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      "relationship_to_parent": "Specified the target integer, reducing the problem's generality",
+      "simplification_type": "domain_swap",
+      "id": "root_4_v0_v0_v2",
+      "depth": 3,
+      "parent_id": "root_4_v0_v0",
+      "children": []
+    }
+  ]
+}

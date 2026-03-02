@@ -1,25 +1,26 @@
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import roc_auc_score
+from extract_features import get_features
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import roc_auc_score
-import pandas as pd
 
-# Load data
-train = pd.read_csv('variant_scoring_train.csv')
-test = pd.read_csv('variant_scoring_test.csv')
+df = get_features()
 
-threshold = train['reward_delta'].quantile(0.7)
-train['useful'] = (train['reward_delta'] > threshold).astype(int)
-test['useful'] = (test['reward_delta'] > threshold).astype(int)
+print('\n===== DATASET SUMMARY =====')
+print('Total samples:', len(df))
+print('Class distribution:')
+print(df['useful'].value_counts())
+print('Class distribution (percent):')
+print(df['useful'].value_counts(normalize=True))
+print('===========================\n')
 
-X_train = train[['variant_length','ast_depth','edit_distance','partial_pass_rate']].values
-y_train = train['useful'].values
+X = df.drop(columns=['useful']).values
+y = df['useful'].values
 
-X_test = test[['variant_length','ast_depth','edit_distance','partial_pass_rate']].values
-y_test = test['useful'].values
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Normalize features
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
@@ -30,27 +31,30 @@ y_train = torch.tensor(y_train, dtype=torch.float32).unsqueeze(1)
 X_test = torch.tensor(X_test, dtype=torch.float32)
 y_test = torch.tensor(y_test, dtype=torch.float32).unsqueeze(1)
 
-# Define MLP
 class VariantScorer(nn.Module):
-    def __init__(self):
+    def __init__(self, input_dim):
         super().__init__()
         self.net = nn.Sequential(
-            nn.Linear(4, 32),
+            nn.Linear(input_dim, 32),
             nn.ReLU(),
             nn.Linear(32, 16),
             nn.ReLU(),
             nn.Linear(16, 1),
             nn.Sigmoid()
         )
-    
+
     def forward(self, x):
         return self.net(x)
 
-model = VariantScorer()
+model = VariantScorer(X_train.shape[1])
 criterion = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# Train
+print('\n===== MODEL ARCHITECTURE =====')
+print(model)
+print('Number of parameters:', sum(p.numel() for p in model.parameters()))
+print('==============================\n')
+
 for epoch in range(200):
     optimizer.zero_grad()
     outputs = model(X_train)
@@ -58,10 +62,19 @@ for epoch in range(200):
     loss.backward()
     optimizer.step()
 
+    if epoch % 20 == 0:
+        print(f'Epoch {epoch:03d} | Loss: {loss.item():.4f}')
+
 model.eval()
 with torch.no_grad():
-    probs = model(X_test).numpy()
-    auc = roc_auc_score(y_test.numpy(), probs)
-    print('ROC AUC:', auc)
+    probs = model(X_test)
+    preds = (probs > 0.5).float()
 
+    accuracy = (preds == y_test).float().mean()
+    print('\n===== EVALUATION =====')
+    print('Test Accuracy:', accuracy.item())
+
+    auc = roc_auc_score(y_test.numpy(), probs.numpy())
+    print('Test ROC AUC:', auc)
+    print('======================\n')
 print('Final training loss:', loss.item())
