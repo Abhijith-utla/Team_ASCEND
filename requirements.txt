@@ -1,0 +1,11 @@
+numpy<2
+torch>=2.4
+torchvision
+torchaudio
+
+transformers
+datasets
+accelerate
+peft
+trl
+
