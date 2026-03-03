@@ -1,7 +1,7 @@
 import os
 import torch
 from datasets import Dataset
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import LoraConfig
 from trl import GRPOConfig, GRPOTrainer
 
@@ -76,13 +76,22 @@ peft_config = LoraConfig(
 )
 
 trainer = GRPOTrainer(
-    model=MODEL_ID,               # can also pass a loaded model object
+    model=model,               # can also pass a loaded model object
     args=training_args,
     train_dataset=train_dataset,
     reward_funcs=reward_func,
     processing_class=tokenizer,   # tokenizer
     peft_config=peft_config,      # comment out to full-finetune (not recommended on 3060)
 )
+
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_ID,
+    torch_dtype=torch.float16,
+    device_map=None,
+    low_cpu_mem_usage=True
+).to('cuda')
+
+model.eval()
 
 @torch.no_grad()
 def generate_one(prompt: str, max_new_tokens: int = 256) -> str:
