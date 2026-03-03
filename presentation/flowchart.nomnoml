@@ -1,0 +1,19 @@
+[P3 Dataset|Problem 1|Problem 2|...|Problem N] Take one problem -> [LADDER Pipeline| [Problem]
+
+[Problem] -> [Candidate Problems|Synthetic Problem 1|Synthetic Problem 2|...|Synthetic Problem N]
+[Problem] -> [Tree of Variants]
+[Candidate Problems] -> [Difficulty Estimator] -> [Tree of Variants|
+	[30% Difficulty Group|Problem 1|Problem 2|Problem 3]|
+    [70% Difficulty Group|Problem 4|Problem 5|Problem 6]|
+    [100% Difficulty Group|Original Problem]]
+
+[Tree of Variants] -> [GRPO Optimizer|
+	[Input Problem] ->
+    	[Model] ->
+    	[Generated Solution] ->
+        [Python Interpreter|assert sat(sol())] ->
+        [Model]]
+        
+
+[GRPO Optimizer] -> [Candidate Problems]]
+
