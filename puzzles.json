@@ -1,0 +1,6 @@
+[
+    {
+      "name": "sum_list",
+      "sat": "assert sum_list([1,2,3]) == 6"
+    }
+  ]
