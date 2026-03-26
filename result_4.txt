@@ -1,0 +1,2689 @@
+
+=== Evaluate Pre-train accuracy ===
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+Problem group easy: 45.0% accuracy pass@1
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [i for i in range(10) if i % 2 == 0]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+Problem group medium: 90.0% accuracy pass@1
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i + 1 for i in range(999)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    l = list(range(999))
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+Problem group hard: 0.0% accuracy pass@1
+
+=== Pre-train Sample Generation ===
+```
+
+=== Begin Training ===
+
+==================================================
+Training on easy (1 problems)
+==================================================
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.1017', 'grad_norm': '0.2479', 'learning_rate': '5e-06', 'num_tokens': '460', 'completions/mean_length': '17', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '17', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.114', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.529', 'epoch': '1'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.1154', 'grad_norm': '0.298', 'learning_rate': '4.75e-06', 'num_tokens': '930', 'completions/mean_length': '19.5', 'completions/min_length': '15', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19.5', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.475', 'rewards/_reward_func/std': '0.55', 'reward': '0.475', 'reward_std': '0.55', 'frac_reward_zero_std': '0', 'entropy': '0.1144', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.659', 'epoch': '2'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '4.5e-06', 'num_tokens': '1398', 'completions/mean_length': '19', 'completions/min_length': '19', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19', 'completions/min_terminated_length': '19', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.9', 'rewards/_reward_func/std': '0', 'reward': '0.9', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1173', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.508', 'epoch': '3'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+No additional imports are needed for this function.
+
+assert sat(sol())
+
+{'loss': '-0.02066', 'grad_norm': '0.3297', 'learning_rate': '4.25e-06', 'num_tokens': '1856', 'completions/mean_length': '16.5', 'completions/min_length': '10', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16.5', 'completions/min_terminated_length': '10', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.475', 'rewards/_reward_func/std': '0.55', 'reward': '0.475', 'reward_std': '0.55', 'frac_reward_zero_std': '0', 'entropy': '0.2703', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.82', 'epoch': '4'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.1567', 'grad_norm': '0.3855', 'learning_rate': '4e-06', 'num_tokens': '2315', 'completions/mean_length': '16.75', 'completions/min_length': '15', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16.75', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.75', 'rewards/_reward_func/std': '0.5', 'reward': '0.75', 'reward_std': '0.5', 'frac_reward_zero_std': '0', 'entropy': '0.1291', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.646', 'epoch': '5'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '3.75e-06', 'num_tokens': '2795', 'completions/mean_length': '22', 'completions/min_length': '22', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '22', 'completions/min_terminated_length': '22', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.08431', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.708', 'epoch': '6'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.05293', 'grad_norm': '0.2211', 'learning_rate': '3.5e-06', 'num_tokens': '3272', 'completions/mean_length': '21.25', 'completions/min_length': '19', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21.25', 'completions/min_terminated_length': '19', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.225', 'rewards/_reward_func/std': '0.45', 'reward': '0.225', 'reward_std': '0.45', 'frac_reward_zero_std': '0', 'entropy': '0.08794', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.851', 'epoch': '7'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.09379', 'grad_norm': '0.2532', 'learning_rate': '3.25e-06', 'num_tokens': '3739', 'completions/mean_length': '18.75', 'completions/min_length': '15', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18.75', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.7', 'rewards/_reward_func/std': '0.469', 'reward': '0.7', 'reward_std': '0.469', 'frac_reward_zero_std': '0', 'entropy': '0.1019', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.707', 'epoch': '8'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.08317', 'grad_norm': '0.2066', 'learning_rate': '3e-06', 'num_tokens': '4203', 'completions/mean_length': '18', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1197', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.536', 'epoch': '9'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.03086', 'grad_norm': '0.2314', 'learning_rate': '2.75e-06', 'num_tokens': '4676', 'completions/mean_length': '20.25', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20.25', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.225', 'rewards/_reward_func/std': '0.45', 'reward': '0.225', 'reward_std': '0.45', 'frac_reward_zero_std': '0', 'entropy': '0.09447', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.602', 'epoch': '10'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.04532', 'grad_norm': '0.2404', 'learning_rate': '2.5e-06', 'num_tokens': '5135', 'completions/mean_length': '16.75', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16.75', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.725', 'rewards/_reward_func/std': '0.4856', 'reward': '0.725', 'reward_std': '0.4856', 'frac_reward_zero_std': '0', 'entropy': '0.1134', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.645', 'epoch': '11'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.01501', 'grad_norm': '0.2459', 'learning_rate': '2.25e-06', 'num_tokens': '5598', 'completions/mean_length': '17.75', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '17.75', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.7', 'rewards/_reward_func/std': '0.469', 'reward': '0.7', 'reward_std': '0.469', 'frac_reward_zero_std': '0', 'entropy': '0.1058', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.457', 'epoch': '12'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.1638', 'grad_norm': '0.3534', 'learning_rate': '2e-06', 'num_tokens': '6064', 'completions/mean_length': '18.5', 'completions/min_length': '15', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18.5', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.5', 'rewards/_reward_func/std': '0.5774', 'reward': '0.5', 'reward_std': '0.5774', 'frac_reward_zero_std': '0', 'entropy': '0.09718', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.689', 'epoch': '13'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.08317', 'grad_norm': '0.196', 'learning_rate': '1.75e-06', 'num_tokens': '6528', 'completions/mean_length': '18', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.09781', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.605', 'epoch': '14'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sat(l):
+    return l == [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.04532', 'grad_norm': '0.242', 'learning_rate': '1.5e-06', 'num_tokens': '6987', 'completions/mean_length': '16.75', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16.75', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.725', 'rewards/_reward_func/std': '0.4856', 'reward': '0.725', 'reward_std': '0.4856', 'frac_reward_zero_std': '0', 'entropy': '0.108', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.423', 'epoch': '15'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.1017', 'grad_norm': '0.2384', 'learning_rate': '1.25e-06', 'num_tokens': '7447', 'completions/mean_length': '17', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '17', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.1012', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.467', 'epoch': '16'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.09356', 'grad_norm': '0.2196', 'learning_rate': '1e-06', 'num_tokens': '7903', 'completions/mean_length': '16', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1062', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.413', 'epoch': '17'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.09356', 'grad_norm': '0.2197', 'learning_rate': '7.5e-07', 'num_tokens': '8359', 'completions/mean_length': '16', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1052', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.634', 'epoch': '18'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.08317', 'grad_norm': '0.1942', 'learning_rate': '5e-07', 'num_tokens': '8823', 'completions/mean_length': '18', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.09409', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.432', 'epoch': '19'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+{'loss': '0.09356', 'grad_norm': '0.2197', 'learning_rate': '2.5e-07', 'num_tokens': '9279', 'completions/mean_length': '16', 'completions/min_length': '15', 'completions/max_length': '19', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '16', 'completions/min_terminated_length': '15', 'completions/max_terminated_length': '19', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1048', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.449', 'epoch': '20'}
+{'train_runtime': '57.35', 'train_samples_per_second': '1.395', 'train_steps_per_second': '0.349', 'train_loss': '0.0716', 'epoch': '20'}
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == [1, 2, 3]
+
+
+
+
+assert sat(sol())
+
+
+Accuracy on easy: 70.00%
+Warning: Target accuracy 80% not reached for easy
+
+==================================================
+Training on medium (1 problems)
+==================================================
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08645', 'grad_norm': '0.2023', 'learning_rate': '5e-06', 'num_tokens': '484', 'completions/mean_length': '20', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.1016', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.747', 'epoch': '1'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08645', 'grad_norm': '0.2007', 'learning_rate': '4.75e-06', 'num_tokens': '968', 'completions/mean_length': '20', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.1019', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.721', 'epoch': '2'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.01721', 'grad_norm': '0.1874', 'learning_rate': '4.5e-06', 'num_tokens': '1459', 'completions/mean_length': '21.75', 'completions/min_length': '21', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21.75', 'completions/min_terminated_length': '21', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.09869', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.679', 'epoch': '3'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '-0.3441', 'grad_norm': '0.3851', 'learning_rate': '4.25e-06', 'num_tokens': '1933', 'completions/mean_length': '17.5', 'completions/min_length': '5', 'completions/max_length': '25', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '17.5', 'completions/min_terminated_length': '5', 'completions/max_terminated_length': '25', 'rewards/_reward_func/mean': '0.7', 'rewards/_reward_func/std': '0.469', 'reward': '0.7', 'reward_std': '0.469', 'frac_reward_zero_std': '0', 'entropy': '0.1539', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '3.043', 'epoch': '4'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.01721', 'grad_norm': '0.1887', 'learning_rate': '4e-06', 'num_tokens': '2424', 'completions/mean_length': '21.75', 'completions/min_length': '21', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21.75', 'completions/min_terminated_length': '21', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1003', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.7', 'epoch': '5'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08085', 'grad_norm': '0.211', 'learning_rate': '3.75e-06', 'num_tokens': '2915', 'completions/mean_length': '21.75', 'completions/min_length': '18', 'completions/max_length': '25', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '25', 'rewards/_reward_func/mean': '0.7', 'rewards/_reward_func/std': '0.469', 'reward': '0.7', 'reward_std': '0.469', 'frac_reward_zero_std': '0', 'entropy': '0.09375', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.897', 'epoch': '6'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.1324', 'grad_norm': '0.2497', 'learning_rate': '3.5e-06', 'num_tokens': '3404', 'completions/mean_length': '21.25', 'completions/min_length': '18', 'completions/max_length': '25', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21.25', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '25', 'rewards/_reward_func/mean': '0.5', 'rewards/_reward_func/std': '0.5774', 'reward': '0.5', 'reward_std': '0.5774', 'frac_reward_zero_std': '0', 'entropy': '0.1033', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '3.007', 'epoch': '7'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.1146', 'grad_norm': '0.2223', 'learning_rate': '3.25e-06', 'num_tokens': '3891', 'completions/mean_length': '20.75', 'completions/min_length': '18', 'completions/max_length': '25', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '25', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.1056', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.871', 'epoch': '8'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08645', 'grad_norm': '0.2035', 'learning_rate': '3e-06', 'num_tokens': '4375', 'completions/mean_length': '20', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.1021', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.688', 'epoch': '9'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.07879', 'grad_norm': '0.1858', 'learning_rate': '2.75e-06', 'num_tokens': '4855', 'completions/mean_length': '19', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1061', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.718', 'epoch': '10'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08645', 'grad_norm': '0.2048', 'learning_rate': '2.5e-06', 'num_tokens': '5339', 'completions/mean_length': '20', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.09918', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.778', 'epoch': '11'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.05208', 'grad_norm': '0.2038', 'learning_rate': '2.25e-06', 'num_tokens': '5826', 'completions/mean_length': '20.75', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.0986', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.621', 'epoch': '12'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.05999', 'grad_norm': '0.2224', 'learning_rate': '2e-06', 'num_tokens': '6305', 'completions/mean_length': '18.75', 'completions/min_length': '18', 'completions/max_length': '21', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '21', 'rewards/_reward_func/mean': '0.75', 'rewards/_reward_func/std': '0.5', 'reward': '0.75', 'reward_std': '0.5', 'frac_reward_zero_std': '0', 'entropy': '0.11', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.636', 'epoch': '13'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '1.75e-06', 'num_tokens': '6784', 'completions/mean_length': '18.75', 'completions/min_length': '18', 'completions/max_length': '21', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '18.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '21', 'rewards/_reward_func/mean': '1', 'rewards/_reward_func/std': '0', 'reward': '1', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1057', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.762', 'epoch': '14'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.03651', 'grad_norm': '0.1836', 'learning_rate': '1.5e-06', 'num_tokens': '7270', 'completions/mean_length': '20.5', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20.5', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.1006', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.647', 'epoch': '15'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.07129', 'grad_norm': '0.1722', 'learning_rate': '1.25e-06', 'num_tokens': '7758', 'completions/mean_length': '21', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '21', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.08669', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.71', 'epoch': '16'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.08645', 'grad_norm': '0.21', 'learning_rate': '1e-06', 'num_tokens': '8242', 'completions/mean_length': '20', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '20', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.95', 'rewards/_reward_func/std': '0.05774', 'reward': '0.95', 'reward_std': '0.05774', 'frac_reward_zero_std': '0', 'entropy': '0.09072', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.683', 'epoch': '17'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.05685', 'grad_norm': '0.1868', 'learning_rate': '7.5e-07', 'num_tokens': '8725', 'completions/mean_length': '19.75', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.975', 'rewards/_reward_func/std': '0.05', 'reward': '0.975', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.09614', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.932', 'epoch': '18'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+{'loss': '0.1154', 'grad_norm': '0.2407', 'learning_rate': '5e-07', 'num_tokens': '9207', 'completions/mean_length': '19.5', 'completions/min_length': '18', 'completions/max_length': '24', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19.5', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '24', 'rewards/_reward_func/mean': '0.75', 'rewards/_reward_func/std': '0.5', 'reward': '0.75', 'reward_std': '0.5', 'frac_reward_zero_std': '0', 'entropy': '0.09912', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.817', 'epoch': '19'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+assert sat(sol())
+
+{'loss': '0.03844', 'grad_norm': '0.2185', 'learning_rate': '2.5e-07', 'num_tokens': '9690', 'completions/mean_length': '19.75', 'completions/min_length': '18', 'completions/max_length': '22', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '19.75', 'completions/min_terminated_length': '18', 'completions/max_terminated_length': '22', 'rewards/_reward_func/mean': '0.725', 'rewards/_reward_func/std': '0.4856', 'reward': '0.725', 'reward_std': '0.4856', 'frac_reward_zero_std': '0', 'entropy': '0.09784', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.767', 'epoch': '20'}
+{'train_runtime': '60.68', 'train_samples_per_second': '1.318', 'train_steps_per_second': '0.33', 'train_loss': '0.04799', 'epoch': '20'}
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [0, 2, 4, 6, 8]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return list(range(0, 10, 2))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return l == list(range(0, 10, 2))
+
+
+def sol():
+    return [i for i in range(10) if i % 2 == 0]
+
+assert sat(sol())
+
+
+Accuracy on medium: 90.00%
+Target accuracy 80% reached for medium
+
+==================================================
+Training on hard (1 problems)
+==================================================
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(l[i] != i for i in range(999)) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '5e-06', 'num_tokens': '624', 'completions/mean_length': '39', 'completions/min_length': '34', 'completions/max_length': '41', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '39', 'completions/min_terminated_length': '34', 'completions/max_terminated_length': '41', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.07277', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '3.796', 'epoch': '1'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(1000) if i != 999]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '4.75e-06', 'num_tokens': '1238', 'completions/mean_length': '36.5', 'completions/min_length': '26', 'completions/max_length': '49', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '36.5', 'completions/min_terminated_length': '26', 'completions/max_terminated_length': '49', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1767', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.315', 'epoch': '2'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), list(range(999)))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '4.5e-06', 'num_tokens': '1855', 'completions/mean_length': '37.25', 'completions/min_length': '17', 'completions/max_length': '47', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '37.25', 'completions/min_terminated_length': '17', 'completions/max_terminated_length': '47', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1341', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.185', 'epoch': '3'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and list(range(999)) == sorted(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '4.25e-06', 'num_tokens': '2514', 'completions/mean_length': '47.75', 'completions/min_length': '45', 'completions/max_length': '50', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '47.75', 'completions/min_terminated_length': '45', 'completions/max_terminated_length': '50', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1274', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.549', 'epoch': '4'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999) if i % 2 == 0]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), list(range(999)))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '4e-06', 'num_tokens': '3151', 'completions/mean_length': '42.25', 'completions/min_length': '30', 'completions/max_length': '50', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '42.25', 'completions/min_terminated_length': '30', 'completions/max_terminated_length': '50', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.135', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.332', 'epoch': '5'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999) if i != 998]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '3.75e-06', 'num_tokens': '3748', 'completions/mean_length': '32.25', 'completions/min_length': '13', 'completions/max_length': '46', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '32.25', 'completions/min_terminated_length': '13', 'completions/max_terminated_length': '46', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1926', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.081', 'epoch': '6'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999)]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '3.5e-06', 'num_tokens': '4352', 'completions/mean_length': '34', 'completions/min_length': '17', 'completions/max_length': '50', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '34', 'completions/min_terminated_length': '17', 'completions/max_terminated_length': '50', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1636', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.305', 'epoch': '7'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and list(range(999)) == sorted(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '3.25e-06', 'num_tokens': '5001', 'completions/mean_length': '45.25', 'completions/min_length': '41', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '45.25', 'completions/min_terminated_length': '41', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1129', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.4', 'epoch': '8'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip([999], range(999))) and sorted([999]) == [999]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '3e-06', 'num_tokens': '5643', 'completions/mean_length': '43.5', 'completions/min_length': '41', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '43.5', 'completions/min_terminated_length': '41', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.106', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.236', 'epoch': '9'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(l[i] != i for i in range(999)) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '2.75e-06', 'num_tokens': '6251', 'completions/mean_length': '35', 'completions/min_length': '17', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '35', 'completions/min_terminated_length': '17', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1191', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.222', 'epoch': '10'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '2.5e-06', 'num_tokens': '6911', 'completions/mean_length': '48', 'completions/min_length': '48', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '48', 'completions/min_terminated_length': '48', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.12', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.346', 'epoch': '11'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(1, 1000)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return sorted([i for i in range(1000)])
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(1, 1000)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '2.25e-06', 'num_tokens': '7496', 'completions/mean_length': '29.25', 'completions/min_length': '21', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '29.25', 'completions/min_terminated_length': '21', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.2169', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.233', 'epoch': '12'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), list(range(999)) + [1])) and sorted(list(range(999)) + [1]) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '2e-06', 'num_tokens': '8152', 'completions/mean_length': '47', 'completions/min_length': '41', 'completions/max_length': '58', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '47', 'completions/min_terminated_length': '41', 'completions/max_terminated_length': '58', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.09979', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.832', 'epoch': '13'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip([23, 55, 87, 11, 34, 67, 98, 45, 76], range(999))) and sorted([23, 55, 87, 11, 34, 67, 98, 45, 76]) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and list(range(999)) == sorted(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and list(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '1.75e-06', 'num_tokens': '8845', 'completions/mean_length': '56.25', 'completions/min_length': '21', 'completions/max_length': '108', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '56.25', 'completions/min_terminated_length': '21', 'completions/max_terminated_length': '108', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1856', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '7.803', 'epoch': '14'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999) if i not in [j for j in range(999) if i == j]]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(1000)]
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(999)]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '1.5e-06', 'num_tokens': '9445', 'completions/mean_length': '33', 'completions/min_length': '21', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '33', 'completions/min_terminated_length': '21', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.2157', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.421', 'epoch': '15'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), list(range(999)))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '1.25e-06', 'num_tokens': '1.008e+04', 'completions/mean_length': '43', 'completions/min_length': '40', 'completions/max_length': '51', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '43', 'completions/min_terminated_length': '40', 'completions/max_terminated_length': '51', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.08909', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.428', 'epoch': '16'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '1e-06', 'num_tokens': '1.072e+04', 'completions/mean_length': '41.5', 'completions/min_length': '40', 'completions/max_length': '44', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '41.5', 'completions/min_terminated_length': '40', 'completions/max_terminated_length': '44', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.08325', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.019', 'epoch': '17'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(list(range(999)), range(999))) and sorted(list(range(999))) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '7.5e-07', 'num_tokens': '1.136e+04', 'completions/mean_length': '43.25', 'completions/min_length': '41', 'completions/max_length': '50', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '43.25', 'completions/min_terminated_length': '41', 'completions/max_terminated_length': '50', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.05984', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.529', 'epoch': '18'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return [i for i in range(1000)]
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '5e-07', 'num_tokens': '1.198e+04', 'completions/mean_length': '37', 'completions/min_length': '22', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '37', 'completions/min_terminated_length': '22', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.1191', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.246', 'epoch': '19'}
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+=== Executing Code ===
+def sat(l):
+    return all(i != j for i, j in zip(l, range(999))) and sorted(l) == list(range(999))
+
+
+def sol():
+    return all(i != j for i, j in zip(range(999), range(999))) and sorted(range(999)) == list(range(999))
+
+assert sat(sol())
+
+{'loss': '0', 'grad_norm': '0', 'learning_rate': '2.5e-07', 'num_tokens': '1.264e+04', 'completions/mean_length': '48', 'completions/min_length': '48', 'completions/max_length': '48', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '48', 'completions/min_terminated_length': '48', 'completions/max_terminated_length': '48', 'rewards/_reward_func/mean': '0', 'rewards/_reward_func/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '0.12', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '4.258', 'epoch': '20'}
+{'train_runtime': '95.42', 'train_samples_per_second': '0.838', 'train_steps_per_second': '0.21', 'train_loss': '0', 'epoch': '20'}
