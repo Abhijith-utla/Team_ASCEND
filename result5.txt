@@ -1,0 +1,24 @@
+Total puzzles: 1715
+Keys in each puzzle: dict_keys(['name', 'sat', 'ans_type', 'sol_header', 'sol_docstring', 'sol_bodies', 'module', 'notes', 'weight'])
+
+--- Example puzzle ---
+{'name': 'Study_1:0', 'sat': "def sat(s: str):\n    return s.count('o') == 1000 and s.count('oo') == 0", 'ans_type': 'str', 'sol_header': 'def sol():', 'sol_docstring': '    """Find a string with 1000 \'o\'s but no two adjacent \'o\'s."""', 'sol_bodies': ["    return ('h' + 'o') * 1000"], 'module': 'study.py', 'notes': '', 'weight': 1.0}
+Model loaded!
+Beginning train step
+Discovered 1715 base problems
+Restricting initial train step to 10 problems for debugging PLEASE REMOVE LATER
+
+=== Evaluate Pre-train accuracy ===
+Problem group hard: 2.25% accuracy pass@1
+
+=== Beginning Train Loop ===
+    Starting problem 0 of 10...
+    Generating variant tree... Done!
+    Creating LadderOptimizer... end!
+
+   --- Begin Training --- 
+
+==================================================
+Training on easy (27 problems)
+==================================================
+{'loss': '0.1796', 'grad_norm': '0.7331', 'learning_rate': '5e-06', 'num_tokens': '422', 'completions/mean_length': '12.5', 'completions/min_length': '8', 'completions/max_length': '16', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '12.5', 'completions/min_terminated_length': '8', 'completions/max_terminated_length': '16', 'rewards/_reward_func/mean': '0.925', 'rewards/_reward_func/std': '0.05', 'reward': '0.925', 'reward_std': '0.05', 'frac_reward_zero_std': '0', 'entropy': '0.2729', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'step_time': '2.511', 'epoch': '0.03704'}

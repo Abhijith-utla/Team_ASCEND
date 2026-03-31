@@ -2,6 +2,7 @@ import torch
 from datasets import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import LoraConfig
+from tqdm import tqdm
 from trl import GRPOConfig, GRPOTrainer
 
 SYSTEM_PROMPT = (
@@ -44,7 +45,7 @@ class LadderOptimizer:
         self.train_dataset = {}
         for difficulty, problems in self.dataset.items():
             self.train_dataset[difficulty] = []
-            for problem in problems:
+            for problem in tqdm(problems, desc="Constructing Dataset", unit="test case"):
                 messages = [
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": problem["prompt"]},
@@ -103,7 +104,7 @@ class LadderOptimizer:
             test_string = f"{sat_code}\n\n{sol_code}\n\nassert sat(sol())"
 
             try:
-                print(f"=== Executing Code ===\n{test_string}\n")
+                # print(f"=== Executing Code ===\n{test_string}\n")
                 exec(test_string, {}, {})
                 rewards.append(1.0 - fmt_penalty)
             except:
@@ -133,7 +134,7 @@ class LadderOptimizer:
         correct = 0
         total = 0
 
-        for problem in problems:
+        for problem in tqdm(problems):
             messages = problem["prompt"]
 
             inputs = self.tokenizer.apply_chat_template(
@@ -161,12 +162,12 @@ class LadderOptimizer:
                 marker = "<|im_start|>assistant\n"
                 marker_pos = full_text.rfind(marker)
                 if marker_pos >= 0:
-                    completion = full_text[marker_pos + len(marker):]
+                    completion = full_text[marker_pos + len(marker) :]
                 else:
                     completion = full_text
 
                 if completion.endswith("<|im_end|>"):
-                    completion = completion[:-1 * len("<|im_end|>")]
+                    completion = completion[: -1 * len("<|im_end|>")]
 
                 try:
                     reward = self._reward_func(
