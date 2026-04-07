@@ -160,6 +160,8 @@ def generate_variant_tree(
     return out
 
 
+import diff_estimator as de
+
 # --- Code cell 8 ---
 print("Beginning train step")
 
@@ -183,6 +185,14 @@ for i, problem in enumerate(base_dataset):
     print("    Generating variant tree... ", end="")
     tree = generate_variant_tree(model, sat_code, "No description available")
     print("Done!")
+
+    print("    Filtering variant tree... ", end="")
+    tree = de.filter_variant_tree(tree)
+    print("Done!")
+    print("    --- Tree Filter Summary ---")
+    de.print_filter_summary(tree)
+    print()
+    tree = { "hard": tree["hard"]["kept"], "medium": tree["medium"]["kept"], "easy": tree["easy"]["kept"] }
 
     print("    Creating LadderOptimizer... ", end="")
     opt = lo.LadderOptimizer(tree, model, tokenizer)
