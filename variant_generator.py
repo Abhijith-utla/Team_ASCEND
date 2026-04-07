@@ -37,7 +37,7 @@ print(puzzles[0])
 #
 import ladder_optimizer as lo
 
-model, tokenizer = lo.load_default_model()
+model, tokenizer = lo.load_default_model("bigcode/starcoder2-3b")
 
 print("Model loaded!")
 
