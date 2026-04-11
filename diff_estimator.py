@@ -23,7 +23,6 @@ class DifficultyMetrics:
 
 
 class CodeComplexityAnalyzer(ast.NodeVisitor):
-
     def __init__(self):
         self.current_function = None
         self.metrics = {}
@@ -31,8 +30,8 @@ class CodeComplexityAnalyzer(ast.NodeVisitor):
         self._max_nesting = 0
 
     def visit_FunctionDef(self, node):
-        old_function    = self.current_function
-        old_nesting     = self._nesting
+        old_function = self.current_function
+        old_nesting = self._nesting
         old_max_nesting = self._max_nesting
 
         self.current_function = node.name
@@ -64,8 +63,8 @@ class CodeComplexityAnalyzer(ast.NodeVisitor):
         self.metrics[node.name]["nesting_depth"] = self._max_nesting
 
         self.current_function = old_function
-        self._nesting         = old_nesting
-        self._max_nesting     = old_max_nesting
+        self._nesting = old_nesting
+        self._max_nesting = old_max_nesting
 
     def _enter_nested_block(self):
         self._nesting += 1
@@ -97,14 +96,18 @@ class CodeComplexityAnalyzer(ast.NodeVisitor):
 
     def visit_Try(self, node):
         if self.current_function:
-            self.metrics[self.current_function]["decision_paths"] += max(1, len(node.handlers))
+            self.metrics[self.current_function]["decision_paths"] += max(
+                1, len(node.handlers)
+            )
         self._enter_nested_block()
         self.generic_visit(node)
         self._exit_nested_block()
 
     def visit_BoolOp(self, node):
         if self.current_function:
-            self.metrics[self.current_function]["decision_paths"] += max(0, len(node.values) - 1)
+            self.metrics[self.current_function]["decision_paths"] += max(
+                0, len(node.values) - 1
+            )
         self.generic_visit(node)
 
     def visit_IfExp(self, node):
@@ -150,24 +153,28 @@ def _bucket(score):
 
 
 def _score_metrics(m: dict) -> tuple[float, float, float]:
-    loc_score       = _normalize(m["lines_of_code"], 5,  80) * 10
-    inputs_score    = _normalize(m["num_inputs"],    1,   6) * 10
-    nesting_score   = _normalize(m["nesting_depth"], 0,   4) * 10
+    loc_score = _normalize(m["lines_of_code"], 5, 80) * 10
+    inputs_score = _normalize(m["num_inputs"], 1, 6) * 10
+    nesting_score = _normalize(m["nesting_depth"], 0, 4) * 10
     structure_score = (loc_score + inputs_score + nesting_score) / 3
 
     decision_score = _normalize(m["decision_paths"], 1, 12) * 10
-    call_score     = _normalize(m["function_calls"], 0, 10) * 10
-    state_score    = _normalize(m["state_changes"],  0, 12) * 10
+    call_score = _normalize(m["function_calls"], 0, 10) * 10
+    state_score = _normalize(m["state_changes"], 0, 12) * 10
 
     difficulty_score = (
-        0.35 * structure_score +
-        0.30 * decision_score  +
-        0.15 * call_score      +
-        0.20 * state_score
+        0.35 * structure_score
+        + 0.30 * decision_score
+        + 0.15 * call_score
+        + 0.20 * state_score
     )
 
     difficulty_pct = difficulty_score / MAX_DIFFICULTY_SCORE
-    return round(structure_score, 2), round(difficulty_score, 2), round(difficulty_pct, 4)
+    return (
+        round(structure_score, 2),
+        round(difficulty_score, 2),
+        round(difficulty_pct, 4),
+    )
 
 
 def analyse_variant(code: str) -> dict[str, DifficultyMetrics]:
@@ -185,27 +192,27 @@ def analyse_variant(code: str) -> dict[str, DifficultyMetrics]:
         kept = LOWER_BOUND <= difficulty_pct <= UPPER_BOUND
 
         results[fn_name] = DifficultyMetrics(
-            lines_of_code    = m["lines_of_code"],
-            num_inputs       = m["num_inputs"],
-            nesting_depth    = m["nesting_depth"],
-            decision_paths   = m["decision_paths"],
-            function_calls   = m["function_calls"],
-            state_changes    = m["state_changes"],
-            structure_score  = structure_score,
-            difficulty_score = difficulty_score,
-            difficulty_pct   = difficulty_pct,
-            difficulty_bucket= _bucket(difficulty_score),
-            kept             = kept,
+            lines_of_code=m["lines_of_code"],
+            num_inputs=m["num_inputs"],
+            nesting_depth=m["nesting_depth"],
+            decision_paths=m["decision_paths"],
+            function_calls=m["function_calls"],
+            state_changes=m["state_changes"],
+            structure_score=structure_score,
+            difficulty_score=difficulty_score,
+            difficulty_pct=difficulty_pct,
+            difficulty_bucket=_bucket(difficulty_score),
+            kept=kept,
         )
     return results
 
 
 def filter_variants(variants: list[dict]) -> dict:
-    kept      = []
+    kept = []
     discarded = []
 
     for variant in variants:
-        code    = variant.get("prompt", "")
+        code = variant.get("prompt", "")
         metrics = analyse_variant(code)
 
         if not metrics:
@@ -213,18 +220,20 @@ def filter_variants(variants: list[dict]) -> dict:
             continue
 
         fn_name, m = next(iter(metrics.items()))
-        m_dict     = asdict(m)
-        pct_label  = f"{m.difficulty_pct * 100:.1f}%"
+        m_dict = asdict(m)
+        pct_label = f"{m.difficulty_pct * 100:.1f}%"
 
         if m.kept:
             kept.append({**variant, "fn_name": fn_name, "metrics": m_dict})
         else:
             reason = (
-                f"too easy ({pct_label} < {int(LOWER_BOUND*100)}%)"
+                f"too easy ({pct_label} < {int(LOWER_BOUND * 100)}%)"
                 if m.difficulty_pct < LOWER_BOUND
-                else f"too hard ({pct_label} > {int(UPPER_BOUND*100)}%)"
+                else f"too hard ({pct_label} > {int(UPPER_BOUND * 100)}%)"
             )
-            discarded.append({**variant, "fn_name": fn_name, "metrics": m_dict, "reason": reason})
+            discarded.append(
+                {**variant, "fn_name": fn_name, "metrics": m_dict, "reason": reason}
+            )
 
     return {"kept": kept, "discarded": discarded}
 
@@ -241,22 +250,27 @@ def filter_variant_tree(tree: dict) -> dict:
 
 def print_filter_summary(filtered_tree: dict) -> None:
     for tier, result in filtered_tree.items():
-        kept_n  = len(result["kept"])
+        kept_n = len(result["kept"])
         total_n = kept_n + len(result["discarded"])
         print(f"\n── {tier.upper()} ({kept_n}/{total_n} kept) " + "─" * 40)
 
         for v in result["kept"]:
-            m = v["metrics"]
+            m = v.get("metrics")
             if m:
-                print(f"  ✓ KEEP   {v.get('fn_name','?'):20s}  "
-                      f"score={m['difficulty_score']:4.1f}/10  "
-                      f"({m['difficulty_pct']*100:.1f}%)  "
-                      f"[{m['difficulty_bucket']}]")
+                print(
+                    f"  ✓ KEEP   {v.get('fn_name', '?'):20s}  "
+                    f"score={m['difficulty_score']:4.1f}/10  "
+                    f"({m['difficulty_pct'] * 100:.1f}%)  "
+                    f"[{m['difficulty_bucket']}]"
+                )
 
         for v in result["discarded"]:
             m = v.get("metrics")
             score_str = (
-                f"score={m['difficulty_score']:4.1f}/10  ({m['difficulty_pct']*100:.1f}%)"
-                if m else "unparseable"
+                f"score={m['difficulty_score']:4.1f}/10  ({m['difficulty_pct'] * 100:.1f}%)"
+                if m
+                else "unparseable"
             )
-            print(f"  ✗ DROP   {v.get('fn_name','?'):20s}  {score_str}  → {v.get('reason','')}")
+            print(
+                f"  ✗ DROP   {v.get('fn_name', '?'):20s}  {score_str}  → {v.get('reason', '')}"
+            )

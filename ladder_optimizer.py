@@ -16,6 +16,9 @@ SYSTEM_PROMPT = (
 
 def load_default_model(model_id: str = "Qwen/Qwen2.5-Coder-3B-Instruct"):
     tokenizer = AutoTokenizer.from_pretrained(model_id)
+    # Set chat template for models that don't have one
+    if tokenizer.chat_template is None:
+        tokenizer.chat_template = "{% for message in messages %}{{'<|im_start|>' + message['role'] + '\\n' + message['content'] + '<|im_end|>' + '\\n'}}{% endfor %}{% if add_generation_prompt %}{{'<|im_start|>assistant\\n'}}{% endif %}"
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         torch_dtype=torch.float16,
@@ -45,7 +48,9 @@ class LadderOptimizer:
         self.train_dataset = {}
         for difficulty, problems in self.dataset.items():
             self.train_dataset[difficulty] = []
-            for problem in tqdm(problems, desc="Constructing Dataset", unit="test case"):
+            for problem in tqdm(
+                problems, desc="Constructing Dataset", unit="test case"
+            ):
                 messages = [
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": problem["prompt"]},
@@ -85,6 +90,40 @@ class LadderOptimizer:
             else:
                 sol_code = str(completion).strip()
 
+            # Strip chat template special tokens and everything after im_end
+            if "<|im_end|>" in sol_code:
+                sol_code = sol_code.split("<|im_end|>")[0]
+            sol_code = (
+                sol_code.replace("<|im_start|>system", "")
+                .replace("<|im_start|>user", "")
+                .replace("<|im_start|>assistant", "")
+                .replace("<|im_end|>", "")
+                .strip()
+            )
+
+            # Extract function definition - take first "def " line and its indented body
+            lines = sol_code.split("\n")
+            sol_code = ""
+            for i, line in enumerate(lines):
+                if line.startswith("def "):
+                    # Take this line and all following indented lines
+                    result_lines = [line]
+                    for j in range(i + 1, len(lines)):
+                        next_line = lines[j]
+                        if (
+                            next_line.strip()
+                            and not next_line.startswith(" ")
+                            and not next_line.startswith("\t")
+                        ):
+                            break
+                        if next_line.strip():
+                            result_lines.append(next_line)
+                    sol_code = "\n".join(result_lines)
+                    break
+            # If no def found, just take first line
+            if not sol_code and lines and lines[0].strip():
+                sol_code = lines[0].strip()
+
             fmt_penalty = 0.0
 
             # Strip code fence artifacts
@@ -104,10 +143,11 @@ class LadderOptimizer:
             test_string = f"{sat_code}\n\n{sol_code}\n\nassert sat(sol())"
 
             try:
-                # print(f"=== Executing Code ===\n{test_string}\n")
+                print(f"=== Executing Code ===\n{test_string}\n")
                 exec(test_string, {}, {})
                 rewards.append(1.0 - fmt_penalty)
-            except:
+            except Exception as e:
+                print(f"=== Execution failed: {e} ===")
                 rewards.append(0.0)
 
         return rewards
@@ -129,7 +169,7 @@ class LadderOptimizer:
 
         return out
 
-    def _evaluate_accuracy(self, problems: list[dict], num_samples: int = 4) -> float:
+    def _evaluate_accuracy(self, problems: list[dict], num_samples: int = 1) -> float:
         self.model.eval()
         correct = 0
         total = 0
@@ -169,6 +209,7 @@ class LadderOptimizer:
                 if completion.endswith("<|im_end|>"):
                     completion = completion[: -1 * len("<|im_end|>")]
 
+                print(f"=== Model output: {completion[:500]} ===")
                 try:
                     reward = self._reward_func(
                         [messages],

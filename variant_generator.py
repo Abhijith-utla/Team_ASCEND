@@ -1,4 +1,5 @@
 import torch
+
 #!/usr/bin/env python3
 # Converted from variant_generator.ipynb
 import os
@@ -169,8 +170,8 @@ base_dataset = [{"prompt": puzzle["sat"]} for puzzle in puzzles]
 
 print(f"Discovered {len(base_dataset)} base problems")
 
-print("Restricting initial train step to 10 problems for debugging PLEASE REMOVE LATER")
-base_dataset = base_dataset[:10]
+print("Restricting initial train step to 1 problem for debugging PLEASE REMOVE LATER")
+base_dataset = base_dataset[:1]
 
 eval_trainer = lo.LadderOptimizer(Dataset.from_list(base_dataset), model, tokenizer)
 
@@ -192,7 +193,11 @@ for i, problem in enumerate(base_dataset):
     print("    --- Tree Filter Summary ---")
     de.print_filter_summary(tree)
     print()
-    tree = { "hard": tree["hard"]["kept"], "medium": tree["medium"]["kept"], "easy": tree["easy"]["kept"] }
+    tree = {
+        "hard": tree["hard"]["kept"],
+        "medium": tree["medium"]["kept"],
+        "easy": tree["easy"]["kept"],
+    }
 
     print("    Creating LadderOptimizer... ", end="")
     opt = lo.LadderOptimizer(tree, model, tokenizer)
