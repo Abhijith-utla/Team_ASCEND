@@ -1,0 +1,16 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:41:35.993496+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=```python def sol(): return \"\" ``` Here, the `sol` function returns an empty string as per the problem statement. Thi...",
+  "difficulty": "easy",
+  "problem_id": "00047_RevQuine_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

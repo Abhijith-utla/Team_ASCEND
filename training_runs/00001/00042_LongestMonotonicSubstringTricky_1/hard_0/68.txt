@@ -1,0 +1,5 @@
+def sol():
+    x = []
+    for _ in range(535):
+        x.append(random.randint(0, 52))
+    return x

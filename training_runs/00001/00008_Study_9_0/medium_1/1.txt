@@ -1,0 +1,13 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "".join(["The five boxing wizards jump quickly"[i] for i in range(len("The five boxing wizards jump quickly"))]))
+```
+
+This function uses list comprehension to generate a list of ASCII values for each character in the string "The five boxing wizards jump quickly", and then it checks if this list is equal to the original list.
+
+The `ord()` function returns the ASCII value of a character, and the `join()` method concatenates a list of strings into a string. The `range()` function generates a sequence of numbers from 0 to the length of the string, and for each number `i`, it uses the index `i` to access the character at that position in the string.

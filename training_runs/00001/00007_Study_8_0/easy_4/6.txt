@@ -1,0 +1,14 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return [3, 1, 4, 1, 5, 9]
+```
+
+In this pattern, `sat` function is checking if the first element of the list is also present in the second element of the list and if the first element is not equal to the second element. If both conditions are true, then it returns `True`, else it returns `False`.
+
+And the final checker will run:
+
+```python
+assert sat(sol())
+```

@@ -1,0 +1,12 @@
+Sure, here is the solution for the problem.
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+This function will keep incrementing the value of `i` until it finds a number that is both divisible by 5 and less than 100. It will then return this number.

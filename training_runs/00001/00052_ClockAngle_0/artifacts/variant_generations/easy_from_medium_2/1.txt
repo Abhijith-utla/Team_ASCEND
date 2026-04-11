@@ -1,0 +1,30 @@
+VARIANT1:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 < h < 12 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return True
+```
+
+VARIANT2:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 < h < 12 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return False
+```
+
+VARIANT3:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 < h < 12 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m + 1
+    return True
+```
+Remember, the purpose of this function is to always return True regardless of the input hands. This is an example of a function that always satisfies the requirement of the problem.

@@ -1,0 +1,12 @@
+Here is the solution for this problem:
+
+```python
+def sol():
+    return {i + j for i in range(11) for j in range(11)}
+
+print(sat(sol()))
+```
+
+In this program, we use two nested loops to iterate over the range of 11. For each pair of (i, j), we add them together. We then check if this sum is in the set of all possible sums, which is {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}. If the sum is in the set, the function returns True. If not, it returns False.
+
+The function `sat` is not defined by the user, but the program uses it to ensure that the solution returned by `sol` is correct. The final checker will run `assert sat(sol())`, which will pass if the solution is correct, fail if it is not.

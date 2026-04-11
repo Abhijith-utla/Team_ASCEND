@@ -1,0 +1,19 @@
+VARIANT1:
+```python
+def sat(l: list):
+    return all(i in range(1000) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)
+```
+
+VARIANT2:
+```python
+def sat(l: list):
+    return all(i in range(1000) and abs(i * i - j * j) < 10 for i in l for j in l if i != j)
+```
+
+VARIANT3:
+```python
+def sat(l: list):
+    return all(i in range(996) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)
+```
+
+In the first variant, the condition that the numbers should be in the range 1 to 999 is changed to check the numbers against a range of 1 to 995. In the second variant, the condition is changed to check against a range of 1 to 994. In the third variant, the condition is changed to check against a range of 996 (1 to 1000 exclusive) to make it more specific.

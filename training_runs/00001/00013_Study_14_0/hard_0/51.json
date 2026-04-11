@@ -1,0 +1,16 @@
+{
+  "attempt_num": 51,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:42:58.169890+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The given Python function `sat` checks whether all numbers in the given list `li` are the same. It does this by check...",
+  "difficulty": "hard",
+  "problem_id": "00013_Study_14_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

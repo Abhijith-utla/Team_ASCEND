@@ -1,0 +1,4 @@
+def sol():
+    return "br" * (2 * (1 - 1))
+
+assert sat(sol())

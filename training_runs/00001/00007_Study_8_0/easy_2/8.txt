@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return [1234] > [1235] and [1234] != [1235]
+```
+
+This code creates a list with the values `[1234]` and `[1235]`, which are two different integers, and checks if the second element of the first list is greater than the first and the first element is not equal to the second. If these conditions are met, the function returns `True`, otherwise it returns `False`.

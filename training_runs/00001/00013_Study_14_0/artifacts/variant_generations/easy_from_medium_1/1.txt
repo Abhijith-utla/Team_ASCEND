@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(li[i] < sum(li[:i]) for i in range(1, len(li)))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(li[i] < sum(li[:i+1]) for i in range(len(li)))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(li[i] < sum(li[:i-1]) if i > 0 else li[i] < sum(li) for i in range(len(li)))
+```

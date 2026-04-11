@@ -1,0 +1,23 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> bool:
+    sorted_li = sorted(li)
+    return sorted_li == list(range(len(li))) and all(li[i] == i for i in range(len(li)))
+```
+
+Here's the explanation:
+
+1. `li` is a list of integers.
+2. The function `sol` takes a list of integers as input and returns a boolean value.
+3. It first sorts the list `li` in ascending order.
+4. It then checks if the sorted list `li` is identical to a list of integers from 0 to `n-1` where `n` is the length of `li`. This is done by checking if `li` and a list of integers from 0 to `n-1` are equal.
+5. If both conditions are satisfied, it returns True. Otherwise, it returns False.
+
+Here's how you can test the function:
+
+```python
+def sat(li: List[int]) -> bool:
+    sorted_li

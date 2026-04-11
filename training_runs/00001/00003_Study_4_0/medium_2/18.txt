@@ -1,0 +1,14 @@
+def sol():
+    li = [0]*10
+    li[3] = 1
+    li[4] = 2
+    li[5] = 3
+    li[7] = 4
+    li[8] = 5
+    li[9] = 6
+    li[2] = 7
+    li[6] = 8
+    li[1] = 9
+    return li
+
+assert sat(sol())

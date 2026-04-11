@@ -1,0 +1,6 @@
+def sol():
+    li = [(2 ** x) - 1 for x in range(20)]
+    return all(x + 1 == (2 ** x) - 1 for x in range(20))
+
+# Checker
+assert sat(sol())

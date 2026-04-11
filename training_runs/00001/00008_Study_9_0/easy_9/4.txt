@@ -1,0 +1,18 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [chr(i) for i in range(ord('a'), ord('z')+1)]
+
+print(sol())
+```
+
+This function creates a list of characters from 'a' to 'z' using a list comprehension. The `range` function is used to generate a sequence of numbers representing the ASCII values of the characters 'a' to 'z'. The `chr` function is used to convert these numbers into characters.
+
+The checker can run:
+
+```python
+print(sat(sol()))
+```
+
+This will print `True` if the function `sol` returns the list `['a', 'b', 'c', ..., 'z']`, and `False` otherwise.

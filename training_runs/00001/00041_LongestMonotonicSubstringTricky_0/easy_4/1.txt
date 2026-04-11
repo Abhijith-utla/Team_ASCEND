@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# Please provide a correct Python function named sat(answer)

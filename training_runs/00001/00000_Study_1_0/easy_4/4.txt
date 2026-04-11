@@ -1,0 +1,8 @@
+Here is the Python code that constructs and returns a single answer value based on the given string.
+
+```python
+def sol():
+    return 'oo'
+```
+
+This function returns the string 'oo' as the answer. The checker will validate this by checking if the string 'oo' appears exactly once in the input string.

@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return ' '.join(s + t for s in ls for t in ls if s != t)
+
+assert sol(['berlin', 'berger', 'linber', 'gerber', 'gerlin']) == 'berlin berger linber gerber gerlin'
+```
+
+This function uses list comprehension to generate a list of pairs of words that differ from each other. It then joins the pairs together into a single string, with spaces in between each pair. This function checks the correctness of the solution by calling the assert statement.

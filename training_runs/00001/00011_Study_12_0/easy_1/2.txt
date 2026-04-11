@@ -1,0 +1,12 @@
+Sure, here's a solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1] * 1000
+
+assert sat(sol())
+```
+
+This function returns a list of 1000 elements. The length of the list is determined by the `len(li)` function. The elements of the list are all 1. The `all(i + j == 1 for i, j in zip([4] + li, li))` part is checking that each element of the list is 1 plus the corresponding element in the list `li`. The `zip([4] + li, li)` part is creating pairs of elements from `[4] + li` and `li`. If all pairs satisfy the condition, `all()` returns `True`. Otherwise, it returns `False`. The `assert` statement is used to ensure that the function `sat` returns a list of 1000 elements and all elements are 1.

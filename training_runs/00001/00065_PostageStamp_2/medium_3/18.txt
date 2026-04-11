@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Assuming the user provides a function named "sat"
+assert sat([18, 1, 43, 81], 3, 3, [18, 1, 43, 81]) == True
+assert sat([18, 1], 3, 3, [18, 1, 43, 81]) == False
+assert sat([18, 1, 43, 81, 5], 3, 3, [18, 1, 43, 81]) == False
+assert sat([18, 1, 43, 81], 5, 3, [18, 1, 43, 81]) == False
+assert sat([18, 1, 43, 81], 3, 5, [18, 1, 43, 81]) == False
+assert sat([18, 1, 43, 81], 3, 3, [18, 1, 43])

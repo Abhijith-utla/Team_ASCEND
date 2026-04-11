@@ -1,0 +1,17 @@
+def sat(s: str):
+    return str(int(8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+
+def sol():
+    answer = []
+    for i in range(1, 100000):
+        if sat(str(i)):
+            answer.append(i)
+    return answer
+
+def sat(s: str):
+    return str(int(8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+
+print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,16 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    # Your code here
+    pass
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+You need to implement the `sol` function. The `sat` function checks if the list `li` contains the same number of times 0 through 9.
+
+This implementation assumes that the list `li` will contain integers in the range 0 through 9 (inclusive). If the list can contain other types of values, you'll need to modify the `sat` function to take account of this.

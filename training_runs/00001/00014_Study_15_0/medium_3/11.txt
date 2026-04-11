@@ -1,0 +1,13 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return all(x == sum(li[:i]) for i in range(20))
+
+    return sat
+```
+
+This function returns another function that checks if the given list is a list of numbers where each number is equal to the sum of the previous numbers. The function will return True if the list satisfies the condition, and False otherwise.

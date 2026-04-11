@@ -1,0 +1,16 @@
+{
+  "attempt_num": 14,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:51:47.998164+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=31|checked=31/31|preview=def sol(): return [i for i in range(10)] print(sat(sol())) # Expected output: True def sat(li: List[int]): return sor...",
+  "difficulty": "medium",
+  "problem_id": "00008_Study_9_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

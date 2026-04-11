@@ -1,0 +1,5 @@
+def sat(x: float):
+    return str(x - 3.1416).startswith("123.456")
+
+result = sat(4.0)  # replace this value with the actual value to test
+assert result

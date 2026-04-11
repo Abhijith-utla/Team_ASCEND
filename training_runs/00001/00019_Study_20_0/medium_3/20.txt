@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+def sol():
+    return 3
+
+def sat(li: List[int]):
+    return all(j == 3 * i for i, j in enumerate(li))
+```
+
+This solution checks if all elements in the list are multiples of 3. The `sol` function returns 3, while `sat` returns True if all elements in the list are multiples of 3, and False otherwise.

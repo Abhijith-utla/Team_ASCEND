@@ -1,0 +1,17 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 6
+  },
+  "created_at": "2026-04-11T11:06:01.579491+00:00",
+  "diagnostic": "reason=top_level_sol_defs:6|parse=fence=none,preamble=0,found_sol=1,candidates=39|checked=39/39|preview=def sol(): return [] # This part is already tested and working properly. # I am just adding the assert statement. ass...",
+  "difficulty": "hard",
+  "problem_id": "00034_TowersOfHanoiArbitrary_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

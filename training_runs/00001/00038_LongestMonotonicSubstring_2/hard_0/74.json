@@ -1,0 +1,16 @@
+{
+  "attempt_num": 74,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:47:18.864925+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return [i for i in range(737) if i > 0 and i < 737] # Checker code def test_sol(): assert sol() == [1, 2, ...",
+  "difficulty": "hard",
+  "problem_id": "00038_LongestMonotonicSubstring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

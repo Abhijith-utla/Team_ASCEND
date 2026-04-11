@@ -1,0 +1,5 @@
+def sol():
+    return {"n": 0, "lace": "brbrbrbrbrbrbrb"}
+
+assert sat(sol()["n"])
+assert sat(sol()["lace"])

@@ -1,0 +1,9 @@
+def sol():
+    return [8, 0, 0]
+
+print(sat([]))
+print(sat([[0, 2]]))
+print(sat([[0, 2], [1, 1]]))
+print(sat([[0, 1], [1, 2]]))
+print(sat([[0, 0]]))
+print(sat([[2, 1]]))

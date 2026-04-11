@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'oooooooooo' and 'o' * 1000 in 'oooooooooo'

@@ -1,0 +1,8 @@
+def sol():
+    n = int(input())
+    m = int(input())
+    p = int(input())
+    assert sat(n, m, p), 'Invalid input'
+    return n + m >= p
+
+print(sol())

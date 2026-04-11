@@ -1,0 +1,6 @@
+def sol():
+    return [1, 2, 3, 4, 5], 5
+
+# Test
+coords, side = sol()
+assert sat(coords, side)

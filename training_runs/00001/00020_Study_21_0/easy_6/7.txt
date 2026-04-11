@@ -1,0 +1,9 @@
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return all(li[i] != li[i + 1] for i in range(8))
+
+    return sat
+```

@@ -1,0 +1,8 @@
+def sol():
+    return [0]
+
+# The function sat checks if the given list is a set with a single element 0.
+# If it is, it returns True; otherwise, it returns False.
+# The test asserts that the function sol returns a list with one element 0.
+# Assertions in Python are done with the following lines:
+assert sat(sol()) == True

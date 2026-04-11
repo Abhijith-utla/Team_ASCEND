@@ -1,0 +1,51 @@
+To generate the 3 simpler variants of the 'sat' function, we can modify the initial function as follows:
+
+1. Change 'state' by adding a third dimension
+2. Randomly swap 'state' values with the capacities
+3. Add an additional condition for the 'state[2]' to stay between 0 and 'capacities[2]'
+
+Here are the variants:
+
+```python
+import random
+
+def sat(moves: List[List[int]], capacities=[511, 625, 553], init=[472, 153, 127], goal=[0, 625, 30]):
+    state = tuple(init)
+
+    for [i, j] in moves:
+        assert min(i, j) >= 0, "Indices must be non-negative"
+        assert i != j, "Cannot pour from same state to itself"
+        assert min(i, j) <= capacities[j], "Cannot pour more water than it can hold"
+        n = min(capacities[j], state[i] + state[j])
+        state = state[:i] + (state[i] + state[j] - n,) + state[j+1:]
+
+    return state == tuple(goal)
+
+
+def sat_add_dimension(moves: List[List[int]], capacities=[511, 625, 553], init=[472, 153, 127], goal=[0, 625, 30]):
+    state = list(init)
+
+    for [i, j] in moves:
+        assert min(i, j) >= 0, "Indices must be non-negative"
+        assert i != j, "Cannot pour from same state to itself"
+        assert min(i, j) <= capacities[j], "Cannot pour more water than it can hold"
+        n = min(capacities[j], state[i] + state[j])
+        state[i] += n
+        state[j] -= n
+
+    return state == list(goal)
+
+
+def sat_random_swap(moves: List[List[int]], capacities=[511, 625, 553], init=[472, 153, 127], goal=[0, 625, 30]):
+    state = list(init)
+
+    for [i, j] in moves:
+        assert min(i, j) >= 0, "Indices must be non-negative"
+        assert i != j, "Cannot pour from same state to itself"
+        assert min(i, j) <= capacities[j], "Cannot pour more water than it can hold"
+        state[i], state[j] = state[j], state[i]
+
+    return state == list(goal)
+```
+
+Remember that all these variants are simple and only test the specific functionality of the 'sat' function. They do not test the corner cases, error handling, performance, or any other aspects of the 'sat' function.

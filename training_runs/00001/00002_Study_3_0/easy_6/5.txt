@@ -1,0 +1,20 @@
+Here is the correct pattern for your function:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return sorted([i for i in range(999)])
+
+assert sat(sol())
+```
+
+The function `sat` checks if a list is sorted in ascending order and if all elements in the list are equal to their index. It first creates a list with elements from 0 to 998, then sorts this list and checks if it equals to the sorted list of numbers from 0 to 998.
+
+The `assert` statement is used to test if the function `sol` returns the correct answer. If `sat(sol())` returns `True`, the program continues execution. If `sat(sol())` returns `False`, the program stops execution and raises an `AssertionError`.
+
+Please note that the function `sol` returns a list of integers, not a single integer. If you want to return a single integer, you can modify the function to return the first element of the sorted list:
+
+```python
+def sol() -> int:
+    return sorted([i for i in range(

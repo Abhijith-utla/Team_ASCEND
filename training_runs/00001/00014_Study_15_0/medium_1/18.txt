@@ -1,0 +1,14 @@
+The provided Python function `sat` is already correct. It checks if all integers in the list `li` satisfy the equation `2 ** x - 1 = x + 1` for all `x` in the range from 0 to 19. 
+
+The function `sat` takes a list of integers as input and returns `True` if all the integers in the list satisfy the given equation and `False` otherwise. 
+
+Here is the function again for reference:
+
+```python
+def sat(li: List[int]):
+    return all(x + 1 == (2 ** x) - 1 for x in range(20))
+```
+
+The function `sat` checks if all numbers in the given list `li` are equal to `2 ** x - 1` for some `x` in the range from 0 to 19. If all numbers in the list satisfy this equation, the function returns `True`, otherwise it returns `False`. 
+
+The `all` function in Python is used to return `True` if all elements in an iterable are `True`. If any element in the iterable is `False`, the `all

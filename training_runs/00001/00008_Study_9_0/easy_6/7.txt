@@ -1,0 +1,13 @@
+Here is the solution:
+
+```python
+def sol():
+    def sat(li: List[str]):
+        return all(len(i) <= 5 for i in li) and all(i.isalpha() for i in li)
+
+    return sat
+```
+
+This solution defines a function `sol` that returns another function `sat`. This is done because the question asks for a zero-argument function named `sol` that returns an answer object. This answer object is the function `sat` itself, which takes a list of strings and returns a boolean value indicating whether the list is valid according to the rules defined in the question.
+
+The final checker will run: `assert sat(sol())`.

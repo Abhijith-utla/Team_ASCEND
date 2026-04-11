@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# This line is for testing purposes only and not part of the solution.
+assert sat([])
+assert not sat([10])
+assert not sat([10, 10])
+assert sat([10, 10, 10, 10])
+assert not sat([10, 10, 11])
+assert not sat([10, 32, 8])
+assert sat([10, 32, 8, 1])
+assert not sat([10, 32, 8, 1, 1])

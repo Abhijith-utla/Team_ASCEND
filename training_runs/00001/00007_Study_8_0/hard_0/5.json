@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 1,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:42:49.843174+00:00",
+  "diagnostic": "reason=sol_has_args:1|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here is the correct pattern for the function `sol`: ```python def sol(ls: List[str]): return ls[1234] in ls[1235] and...",
+  "difficulty": "hard",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

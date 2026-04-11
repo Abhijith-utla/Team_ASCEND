@@ -1,0 +1,10 @@
+The given Python function `sat` is incorrect because it is checking if the length of the string representation of the number `i + 1000` is less than the length of the string representation of the number `i + 1001`. This comparison does not hold true because the length of the string representation of the number `i + 1001` is one more than the length of the string representation of the number `i + 1000`.
+
+So, the correct pattern should be:
+
+```python
+def sol():
+    return len(str(1000)) < len(str(1001))
+```
+
+This code checks if the length of the string representation of the number `1000` is less than the length of the string representation of the number `1001`.

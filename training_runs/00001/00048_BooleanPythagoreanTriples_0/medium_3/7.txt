@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The solution is 0 because when sum of n, m, and p is not equal to m, n and m cannot be both greater than or equal to p. So the function will always return false.

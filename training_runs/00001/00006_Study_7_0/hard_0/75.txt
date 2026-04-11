@@ -1,0 +1,15 @@
+Here is the Python solution for the problem:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This function takes a string `s` as input and checks two conditions: 
+
+1. The number `8 ** 2888` should contain `s` more than 8 times.
+2. The length of `s` should be 3.
+
+The `count()` method is used to count how many times `s` appears in `8 ** 2888`. This count should be more than 8 and the length of `s` should be 3.
+
+This function will return `True` if both conditions are met, and `False` otherwise.

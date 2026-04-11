@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+print(sat([2, 3, 4]))
+```
+
+This solution first checks if the list is sorted in ascending order and then checks if all elements in the list are not equal to their indices. If both conditions are met, the function will return `True`, otherwise `False`. The test case `[2, 3, 4]` will return `False` because it is not sorted in ascending order and some elements are equal to their indices.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 1,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:46:04.369598+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: list index out of range|parse=fence=none,preamble=0,found_sol=1,candidates=11|checked=11/11|preview=def sol(): return [1, 2, 3, 4, 5, 6, 7, 8, 9] # test case print(sat(sol())) # should return True # another test case ...",
+  "difficulty": "easy",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

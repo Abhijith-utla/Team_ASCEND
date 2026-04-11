@@ -1,0 +1,14 @@
+Here is the Python code that constructs and returns a single answer value:
+
+```python
+def sol():
+    answer = {
+        "value": 998,
+        "message": "The value of the answer is correct"
+    }
+    return answer
+```
+
+This code creates a dictionary named `answer` with two keys: `value` and `message`. The `value` key is assigned the integer `998`, and the `message` key is assigned the string `"The value of the answer is correct"`.
+
+The function `sol()` then returns this `answer` dictionary, which can be accessed and used as needed in the rest of your program.

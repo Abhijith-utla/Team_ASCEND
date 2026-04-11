@@ -1,0 +1,18 @@
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+def sol():
+    li = [4]
+    for _ in range(989):
+        li.append(sum(li[-2:]) % 10)
+    return sum(li) % 10
+
+# Testing the function with a few examples
+print(sol())  # Should return 55
+assert sat(sol())  # Check if the function returns the correct answer
+
+# Testing the function with an incorrect example
+li = [4, 7, 1, 8, 9, 0, 5, 9, 9, 8, 6, 4, 4, 1, 7, 8, 9, 0, 7, 9, 6, 5, 1, 5, 8, 9, 0, 9, 9, 7, 5, 9, 4, 4, 1, 6, 7, 8, 5, 3, 8, 9, 0, 9, 9, 9, 9, 9, 4, 5, 6,
+
+if __name__ == "__main__":
+    assert sat(sol())

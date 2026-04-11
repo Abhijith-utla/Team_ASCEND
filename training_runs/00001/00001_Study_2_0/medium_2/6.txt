@@ -1,0 +1,10 @@
+Sure, here is the Python code that constructs and returns a single answer object with the count of 'y' and 'yo' in the input string 's'.
+
+```python
+def sol(s: str):
+    return {'count_y': s.count('y'), 'count_yo': s.count('yo')}
+
+assert sat(sol())
+```
+
+The function `sol` takes an input string `s` and returns a dictionary with two keys: 'count_y' and 'count_yo'. The value for these keys is the count of 'y' and 'yo' respectively in the input string `s`. The function `sat` is used to check if the count of 'y' and 'yo' in the input string `s` is exactly 100 and 101 respectively. If these counts are exactly 100 and 101, then the function returns a dictionary with these counts. If the counts are not exactly 100 and 101, then the function raises an `AssertionError`.

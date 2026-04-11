@@ -1,0 +1,19 @@
+Here is the solution to the problem. 
+
+The function `sat` checks if all elements in the list are smaller than the sum of all elements to their left. If the condition is not satisfied, it returns False, otherwise it returns True.
+
+The pattern you provided is not correct because the `all` function does not stop at the first False value, it continues to check all the values. 
+
+Here is the correct Python solution:
+
+```python
+def sat(li: List[int]):
+    for i in range(len(li)):
+        if any(li[j] < li[i] for j in range(i)):
+            return False
+    return True
+```
+
+This function iterates over all elements in the list and checks if any of them are smaller than the current element. If there is any element that is smaller, it returns False. If it goes through the whole list without finding any smaller element, it returns True.
+
+The `any` function in the inner loop checks if there is any element in the range from `i` to `len(li)` that is smaller than the current element. If there is, `any` returns True and

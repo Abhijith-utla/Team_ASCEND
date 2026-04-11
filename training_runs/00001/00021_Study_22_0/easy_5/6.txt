@@ -1,0 +1,4 @@
+def sol():
+    return 'This is a valid answer!'
+
+assert sat(sol())

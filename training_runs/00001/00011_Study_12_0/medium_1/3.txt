@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [4] + [1]*999
+```
+
+The `sol` function returns a list of 1000 integers starting with 4, followed by 999 1s.

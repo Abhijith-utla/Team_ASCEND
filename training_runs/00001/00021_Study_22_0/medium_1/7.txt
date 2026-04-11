@@ -1,0 +1,8 @@
+def sol():
+    answer = ''
+    for i in range(5):
+        answer += chr(97 + i)
+    return answer
+
+# Test case
+assert sat(sol())

@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(737))
+```
+
+This function checks if the string `s` is a permutation of the list `x`. It does this by checking if each character in `x` is less than or equal to the next character in `s`, and if the next character in `x` is greater than the current character in `x`. If all these conditions are met, the function returns `True`, otherwise it returns `False`.
+
+The length of `x` is 737, so the function will only check the last 737 characters of `s`.
+
+The function uses a generator expression to create a sequence of boolean values, where each value is `True` if the condition is met and `False` otherwise. The `all` function then returns `True` if all values in the sequence are `True`, and `False` otherwise.

@@ -1,0 +1,12 @@
+def sat(rev_quine: str):
+    return eval(rev_quine[::-1]) == rev_quine
+
+def sol():
+    return rev_quine
+
+print(f"The function sol() should return the argument it is given, not the reverse of the argument. This leads to an infinite loop. If the function is implemented correctly, the output will be an empty string. However, if it is incorrect, the program will continue to run forever. This is due to the fact that the function sol() returns the argument it is given, not the reverse of the argument, which leads to an infinite loop. The correct implementation should be:")
+print(f"def sol():")
+print(f"    return rev_quine")
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,18 @@
+The provided code is a correct implementation of the problem statement. It checks if the state of the jugs after performing the given moves is equal to the goal state.
+
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol(moves: List[List[int]], capacities=[86, 259, 281], init=[47, 18, 35], goal=[35, 0, 65]):
+    state = init.copy()
+
+    for [i, j] in moves:
+        assert min(i, j) >= 0, "Indices must be non-negative"
+        assert i != j, "Cannot pour from same state to itself"
+        n = min(capacities[j], state[i] + state[j])
+        state[i], state[j] = state[i] + state[j] - n, n
+
+    return state == goal
+```
+
+The function `sol` takes four arguments: `moves`, `capacities`, `init`, and `goal`. It initial

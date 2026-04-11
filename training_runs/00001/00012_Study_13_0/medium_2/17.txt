@@ -1,0 +1,8 @@
+Here is a Python function named `sol` that satisfies the requirements:
+
+```python
+def sol():
+    return 123.456
+```
+
+The function `sol` returns the number `123.456` without any arguments. This is the correct answer.

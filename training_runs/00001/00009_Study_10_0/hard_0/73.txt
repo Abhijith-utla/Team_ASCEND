@@ -1,0 +1,10 @@
+Sure, here is the correct Python code:
+
+```python
+def sol():
+    return '818181818181818181'
+
+assert sat(sol())
+```
+
+This function `sol` returns the string '818181818181818181' which satisfies the conditions mentioned in the problem.

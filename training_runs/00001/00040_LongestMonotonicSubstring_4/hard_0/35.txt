@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# This is a sample solution, you may modify it as per your needs.
+
+def sat(x: List[int], length=1, s="xwV"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(length - 1))
+
+# This is a test for the solution, you may modify it as per your needs.
+
+def test_sol():
+    assert sat() == []
+    assert sat([0]) == True
+    assert sat([1, 0]) == True
+    assert sat([2, 1, 0]) == True
+    assert sat([2, 0, 1]) == True
+    assert sat([0, 1, 2]) == True
+    assert sat([2, 1, 0, 3, 4, 5, 6, 7]) == True
+    assert sat([7, 6, 5, 4, 3, 2, 1, 0]) == True
+    assert sat

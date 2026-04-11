@@ -1,0 +1,8 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return '888'
+```
+
+The Python function sol is defined to return the string '888'.

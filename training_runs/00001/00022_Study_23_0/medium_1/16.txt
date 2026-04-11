@@ -1,0 +1,8 @@
+def sol():
+    return {
+        'dee': 'doo',
+        'dah!': 'ha!'
+    }
+
+# Testing the solution
+assert sat(sol())

@@ -1,0 +1,4 @@
+def sol():
+    return (list(zip('dee', 'doo', 'dah!'))[0])
+
+assert sat(sol())

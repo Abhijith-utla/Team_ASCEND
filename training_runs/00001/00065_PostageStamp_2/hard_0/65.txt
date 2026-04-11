@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# This test should be valid
+assert sat([18, 1, 43, 81])
+
+# This test should fail
+assert not sat([18, 1, 43])
+
+# This test should fail
+assert not sat([18, 1, 44])
+
+# This test should fail
+assert not sat([18, 100, 43])
+
+# This test should fail
+assert not sat([18, 100, 44])
+
+# This test should pass
+assert sat([18, 1, 43, 81])

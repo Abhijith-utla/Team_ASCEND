@@ -1,0 +1,14 @@
+The function `sat` checks if a list `li` has exactly one instance of the number 3 and exactly two occurrences of 3. If it does, the function returns `True`, otherwise it returns `False`.
+
+The function `li.count(li[3])` counts the number of occurrences of 3 in the list `li`.
+
+The function `li.index(li[3])` returns the index of the first occurrence of 3 in the list `li`.
+
+Here is the correct code for the function `sol`:
+
+```python
+def sol():
+    return [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+```
+
+This list has exactly one instance of the number 3 and exactly two occurrences of 3.

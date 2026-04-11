@@ -1,0 +1,7 @@
+def sol(coords: List[List[int]], side=0, num_points=0):
+    def f(x):
+        return [(a, b) for a, b in coords if a * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2) == 0]
+    
+    return f(side) >= num_points
+
+print(sol([(1, 1), (2, 2), (3, 3)], 3))

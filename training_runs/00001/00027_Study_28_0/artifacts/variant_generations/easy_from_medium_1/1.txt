@@ -1,0 +1,19 @@
+Here are three simple Python functions that test the same core concept. Each function is named sat and takes a list of integers as an argument. The function checks if all the integers in the list are distinct (i.e., not in the list) and if the difference between the smallest and largest integers in the list is less than 10. If both conditions are met, the function returns True; otherwise, it returns False.
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(i not in li for i in range(1000)) and abs(min(li)-max(li)) < 10
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(i not in li for i in range(999, -1, -1)) and abs(min(li)-max(li)) < 10
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(i in li for i in range(500)) and abs(min(li)-max(li)) >= 10
+```

@@ -1,0 +1,18 @@
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x1, y1) in enumerate(coords):
+        assert 0 <= x1 < side and 0 <= y1 < side
+    return len(coords) == num_points
+
+def sol():
+    return [], 10, 20
+
+# Testing
+def test_sol():
+    assert sol() == ({}, 10, 20)
+
+# Run tests
+if __name__ == '__main__':
+    test_sol()
+
+if __name__ == "__main__":
+    assert sat(sol())

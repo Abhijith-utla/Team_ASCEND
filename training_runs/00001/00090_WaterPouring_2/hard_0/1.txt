@@ -1,0 +1,21 @@
+The provided code is a Python function that simulates a game of juggling. The function takes four lists as arguments: `moves`, `capacities`, `init`, and `goal`. The function simulates the juggling process by pouring water from one jug to another until the goal state is reached. The function returns True if the current state is equal to the goal state, and False otherwise.
+
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return <answer>
+```
+
+In this pattern, `<answer>` should be replaced with the actual code that implements the juggling process.
+
+The provided code is incorrect because it does not return a value. The function should return the final state of the juggling process, which is `state`.
+
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return state
+```
+
+In this pattern, `state` should be replaced with the actual code that implements the juggling process.

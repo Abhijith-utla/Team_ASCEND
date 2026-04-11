@@ -1,0 +1,2 @@
+def sol():
+    return {"hour": 0, "minute": 0}

@@ -1,0 +1,6 @@
+def sol():
+    return "This is a placeholder."
+
+print(sol())
+
+assert sat(sol())

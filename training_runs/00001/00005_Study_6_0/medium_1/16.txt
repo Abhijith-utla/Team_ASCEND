@@ -1,0 +1,2 @@
+def sol():
+    return 10 if sat(10) else 0

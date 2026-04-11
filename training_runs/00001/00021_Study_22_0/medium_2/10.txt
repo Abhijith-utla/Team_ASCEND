@@ -1,0 +1,4 @@
+def sol():
+    return "".join(chr(ord("a") + i) * 5 for i in range(10))
+
+assert sat(sol())

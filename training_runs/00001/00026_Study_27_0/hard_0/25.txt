@@ -1,0 +1,11 @@
+Here is the correct code:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6]
+    return li[li[0]] != li[li[1]] and li[li[li[0]]] == li[li[li[1]]]
+
+assert sat(sol())
+```
+
+This code creates a list `li` with six elements. The element at the first position is `1`, the element at the second position is `2`, the element at the third position is `3`, etc. The `assert` statement is used to validate that the function `sat(sol())` returns `True`. If `sat(sol())` returns `False`, the program will raise an `AssertionError`.

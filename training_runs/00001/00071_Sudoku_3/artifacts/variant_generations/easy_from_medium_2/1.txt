@@ -1,0 +1,22 @@
+VARIANT1:
+```python
+def sat(x: str, puz="549782631_314869275_972561483___1657924838_736542891_489765173_263514987_712894563_458731629_321978546_564129783_741952683_"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+    return True
+```
+
+VARIANT2:
+```python
+def sat(x: str, puz="972561483_489765173_263514987_458731629_361978546_712894563_623514987_782631345_1657924838_516268945_321978546_"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+    return True
+```
+
+VARIANT3:
+```python
+def sat(x: str, puz="314869275_972561483_549782631_263514987_489765173_458731629_712894563_623514987_782631345_816249735_321978546_564129783_"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+    return True
+```
+
+Please note that the puzzles and the correct answers are randomly generated and cannot be confirmed. These are just three simple variants of the original puzzle to test the core concept of checking a Sudoku puzzle.

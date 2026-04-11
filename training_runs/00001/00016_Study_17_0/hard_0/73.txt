@@ -1,0 +1,11 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+In this code, the function `sat` is defined as a predicate that checks if the length of the string representation of `i + 1000` is greater than the length of `i + 1001`. The function `sol` tries to find the smallest integer `i` such that `sat(i)` is true. If `sat(i)` is false for some `i` starting from 0, the function `sol` will keep incrementing `i` until `sat(i)` becomes true.

@@ -1,0 +1,15 @@
+Sure, here are the three simpler variants for the `sat` function.
+
+```python
+# Variant 1
+def sat(x: float):
+    return str(x - 3.1416) == "123.456"
+
+# Variant 2
+def sat(x: float):
+    return str(x - 3.1416).startswith("123.457")
+
+# Variant 3
+def sat(x: float):
+    return str(x - 3.1416).startswith("123.456789")
+```

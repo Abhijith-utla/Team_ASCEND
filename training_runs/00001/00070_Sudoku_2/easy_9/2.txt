@@ -1,0 +1,4 @@
+def sol():
+    return {
+        "answer": "123456789"
+    }

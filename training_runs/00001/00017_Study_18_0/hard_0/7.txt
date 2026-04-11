@@ -1,0 +1,12 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return ' '.join(s + t for s in ls for t in ls if s != t) == 'berlin berger linber linger gerber gerlin'.split()
+
+# Test the function
+print(sol(['berlin', 'berger', 'linber', 'gerber', 'gerlin']))
+```
+This function takes a list of strings as input and returns a boolean. It checks if the given list is a permutation of a given word. If it is, it returns True, otherwise it returns False.

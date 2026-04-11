@@ -1,0 +1,4 @@
+def sol():
+    return tuple(["do" if ch == "e" else "da" for ch in "dee"])
+
+assert sat(sol())

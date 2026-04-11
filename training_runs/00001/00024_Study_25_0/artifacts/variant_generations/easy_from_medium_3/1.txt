@@ -1,0 +1,11 @@
+VARIANT1:
+def sat(s: str) -> bool:
+    return sorted(s) == sorted('uipenmtrsA') and s == s[::-1]
+
+VARIANT2:
+def sat(s: str) -> bool:
+    return sorted(s) == sorted('ipenmtrsuA') and s == s[::-1]
+
+VARIANT3:
+def sat(s: str) -> bool:
+    return sorted(s) == sorted('Auipenmtrs') and s == s[::-1]

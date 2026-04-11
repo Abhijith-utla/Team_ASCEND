@@ -1,0 +1,13 @@
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# The function 'sat' takes two indices as inputs and checks if the element at the first index is in the second index and if it's not equal to the second index element
+# Here, the list is a simple example and you can replace it with any other list or any other python data structure
+
+# The indices are defaulted to 1234 and 1235 for simplicity, you can change them as per your requirement
+
+def sat(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+# The final checker will run:
+assert sat(sol())

@@ -1,0 +1,10 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function checks if the list `li` satisfies the condition that the sum of each pair of elements in `li` (except for the first element which is 4) is equal to 3, and if the length of `li` is 1000.

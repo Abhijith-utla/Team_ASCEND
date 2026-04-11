@@ -1,0 +1,7 @@
+def sol():
+    answer = None
+    x = 0.0
+    while not sat(x):
+        x += 1.0
+    answer = x
+    return answer

@@ -1,0 +1,4 @@
+def sol():
+    return {"answer": float(len(str(4.5)) + str(4.5))}
+
+assert sat(sol())

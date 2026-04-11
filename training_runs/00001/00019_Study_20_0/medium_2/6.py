@@ -1,0 +1,18 @@
+def sat(li: List[int]):
+    return all(j in {i} for i, j in enumerate(li))
+
+def sol():
+    li = [3, 2, 1, 4, 5]
+    if sat(li):
+        return {"answer": "Yes"}
+    else:
+        return {"answer": "No"}
+
+def sat(li: List[int]):
+    return all(j in {i} for i, j in enumerate(li))
+
+if __name__ == "__main__":
+    assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

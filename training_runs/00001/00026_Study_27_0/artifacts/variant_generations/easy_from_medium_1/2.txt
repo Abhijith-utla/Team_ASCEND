@@ -1,0 +1,17 @@
+Here are three variant solutions:
+
+```python
+# Variant 1
+def sat(li: List[int]):
+    return li[li[0]] == li[li[1]] and li[li[2]] != li[li[3]]
+
+# Variant 2
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]] and li[li[2]] == li[li[3]]
+
+# Variant 3
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]] and li[li[2]] != li[li[3]]
+```
+
+In these variant solutions, different parts of the list are swapped for different operations. For instance, if the first part is equal to the second, the third part is swapped with the fourth, and vice versa. The original code still checks to see if the first and second parts are equal, but the condition for the third and fourth parts now changes.

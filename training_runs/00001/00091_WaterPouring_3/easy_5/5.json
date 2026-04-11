@@ -1,0 +1,16 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T19:21:40.386408+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): return [472, 153, 127] # assert sat(moves) !pip install pytest !pip install pytest-check as pytest_check !...",
+  "difficulty": "easy",
+  "problem_id": "00091_WaterPouring_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 5
+}

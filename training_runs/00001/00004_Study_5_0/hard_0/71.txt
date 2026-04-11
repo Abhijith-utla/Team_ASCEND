@@ -1,0 +1,10 @@
+Sure, here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+The function `sat` checks if all elements in the list `li` are present exactly once. It does this by counting the number of occurrences of each number from 0 to 9 in the list and checking if it matches the number itself. If all elements are counted correctly, the function will return `True`; otherwise, it will return `False`.

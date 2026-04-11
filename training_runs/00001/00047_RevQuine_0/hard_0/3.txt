@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# The following lines are to make the solution executable
+if __name__ == "__main__":
+    print(sat(sol()))

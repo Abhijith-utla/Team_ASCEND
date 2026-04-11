@@ -1,0 +1,12 @@
+Here is a Python solution for the problem. This solution involves using the `sum` function and list slicing to sum all the elements up to the current index `i`. It then checks if this sum is equal to the sum of all elements up to `i` before it.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+The `all` function returns `True` if all elements in the generator expression evaluate to `True`. The generator expression is created by iterating over the range from 0 to 19, and for each `i` it sums all elements in the list `li` up to the current index `i`. If the sum is equal to the sum of all elements in the list up to `i`, the generator yields `True`, otherwise it yields `False`.
+
+The `all` function then checks if all elements in this generator are `True`. If they are, `all` returns `True`, and the function returns `True`. Otherwise, `all` returns `False`, and the

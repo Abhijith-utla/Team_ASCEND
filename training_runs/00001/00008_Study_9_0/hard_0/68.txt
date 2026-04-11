@@ -1,0 +1,2 @@
+def sol():
+    return [ord(i) for i in "The quick brown fox jumps over the lazy dog" if i in "aeiouAEIOU"]

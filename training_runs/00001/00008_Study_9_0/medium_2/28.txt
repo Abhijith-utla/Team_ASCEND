@@ -1,0 +1,8 @@
+Here is the correct code for the solution. 
+
+```python
+def sol():
+    return [i for i in [-1, -2, -3, -4, -5] if i >= 0]
+```
+
+In the solution, we iterate over a list of integers that are negative, and then return this list. If the input list is "The five boxing wizards jump quickly", it will return a list of the words that are in the same order but in reverse.

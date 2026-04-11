@@ -1,0 +1,4 @@
+def sol():
+    return 24.0
+
+assert sat(sol())

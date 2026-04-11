@@ -1,0 +1,14 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    return [sum(li[:i]) == i for i in range(20)]
+```
+
+This function will return a list of boolean values. Each boolean value represents whether the sum of the first i numbers in the list `li` is equal to i. The sum of the first i numbers in the list is calculated by the expression `sum(li[:i])`, where `:i` is a slice of the list `li` that starts at the beginning and ends at index i.
+
+For example, if `li = [1, 2, 3, 4, 5]`, the first number is 1, so `sum(li[:1])` is 1. The second number is 2, so `sum(li[:2])` is 3. The third number is 3, so `sum(li[:3])` is 6, and so on.
+
+The boolean value for each i will be `True` if the sum of the first i numbers is i, and `False` otherwise.
+
+The function uses the Python built-in `all`

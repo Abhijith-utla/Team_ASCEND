@@ -1,0 +1,17 @@
+{
+  "attempt_num": 1,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T15:49:37.214176+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): answer = \"_8_3__2_1_6_5_4_9_7_6_7_9_5_1_2_8_4_3_8_1_7_6_9_5_4_3_2_1_\" return answer print(sol())",
+  "difficulty": "easy",
+  "problem_id": "00068_Sudoku_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 4
+}

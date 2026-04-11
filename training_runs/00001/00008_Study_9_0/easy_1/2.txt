@@ -1,0 +1,2 @@
+def sol():
+    return sum([1 for i in 'sat' if ord(i) % 3 == 0]) == 0

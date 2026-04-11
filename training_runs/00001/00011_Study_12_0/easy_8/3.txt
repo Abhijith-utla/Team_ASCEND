@@ -1,0 +1,7 @@
+def sol():
+    li = [i for i in range(1000)]
+    li.insert(0, 2)
+    return li
+
+# Test case
+print(sat(sol()))

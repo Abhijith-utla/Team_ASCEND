@@ -1,0 +1,16 @@
+{
+  "attempt_num": 9,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T10:18:26.961709+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [] # Assuming that sat() is correctly defined with the given inputs assert sat([[1, 2, 3], [4, 5, 6...",
+  "difficulty": "medium",
+  "problem_id": "00031_TowersOfHanoiArbitrary_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

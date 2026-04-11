@@ -1,0 +1,16 @@
+{
+  "attempt_num": 25,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unexpected character after line continuation character",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:10:12.248021+00:00",
+  "diagnostic": "reason=ast_syntax_error:unexpected character after line continuation character|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): return [i for i in range(535) if s[i] in 'RRS S !L!eSSSS!TTT+!TTTUU!!UU!UU\\\"U\\\"\\\"\\\"VVV\\\"\\\"\\\"VK#WW##gfW##X#...",
+  "difficulty": "hard",
+  "problem_id": "00042_LongestMonotonicSubstringTricky_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

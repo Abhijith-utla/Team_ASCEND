@@ -1,0 +1,3 @@
+def sol():
+    s = '01234'
+    return s

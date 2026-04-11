@@ -1,0 +1,13 @@
+Here is the correct Python code for the solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+This function takes a list of strings as an argument. If the list is empty, it returns True, as an empty list is considered "saturated". If the list is not empty, it checks each string in the list to ensure that all characters in the string are unique. If all characters in all strings in the list are unique, it returns True, indicating that the list is "saturated". Otherwise, it returns False.

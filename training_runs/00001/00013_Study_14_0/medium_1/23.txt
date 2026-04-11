@@ -1,0 +1,18 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([i < sum(li[:i]) for i in range(20)])
+```
+
+In the given problem, the function `sat` takes a list of integers as input and returns a boolean value. The boolean value is True if all elements in the list are less than the sum of the first `i` elements for all `i` from `0` to `19`, inclusive. Otherwise, it returns False.
+
+Here is the explanation of the code:
+
+- The function `sat` takes a list of integers `li` as input.
+- The expression `all([i < sum(li[:i]) for i in range(20)])` generates a list of booleans, where each boolean is True if the `i`-th element of the list is less than the sum of the first `i` elements of the list, and False otherwise.
+- The `all` function returns True if all elements in the list are True, and False otherwise.
+
+Here is the assertion part of

@@ -1,0 +1,21 @@
+def sat(s: str):
+    return str(int(8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+
+def sol():
+    def is_divisible_by_8(n: int) -> bool:
+        return n % 8 == 0
+
+    def is_square_root_of_power_of_2888(n: int) -> bool:
+        return n == round((8 ** 2888) ** 0.5)
+
+    def count_substring(s: str, substring: str) -> int:
+        return s.count(substring)
+
+    s = '8' * 8888
+    if is_divisible_by_8(2888) and is_square_root_of_power_of_2888(2888) and count_substring(s, '8') > 8:
+        return 'YES'
+    else:
+        return 'NO'
+
+if __name__ == "__main__":
+    assert sat(sol())

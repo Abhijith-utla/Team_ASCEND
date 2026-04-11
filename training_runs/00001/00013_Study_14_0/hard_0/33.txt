@@ -1,0 +1,22 @@
+def sol():
+    return [1] * 20
+
+# This test case checks if the function 'sat' returns a list of 20 elements with all elements equal to 1
+assert sat(sol())
+
+# This test case checks if the function 'sat' returns a list of 20 elements with the first element being 1 and the rest being 0
+assert sat(sol()) == [1] * 20
+
+# This test case checks if the function 'sat' returns False when the list has any non-zero elements
+assert sat(sol()) != [1] * 20
+
+# This test case checks if the function 'sat' returns False when the sum of elements in the list is not equal to the index
+assert sat(sol()) != [i for i in range(20) for _ in range(i)]
+
+# This test case checks if the function 'sat' returns False when the list is empty
+assert sat([])
+
+# This test case checks if the function 'sat' returns False when the list has any non-zero elements
+assert sat([1] * 19)
+
+# This test case checks

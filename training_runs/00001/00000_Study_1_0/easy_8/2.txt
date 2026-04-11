@@ -1,0 +1,6 @@
+def sol():
+    s = "oo"
+    return s
+
+# Test
+print(sol())  # should return: "oo"

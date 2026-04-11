@@ -1,0 +1,8 @@
+def sat(n):
+    def inner(colors):
+        squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+        return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+    return inner
+
+if __name__ == "__main__":
+    print("Parsed sat() loaded successfully")

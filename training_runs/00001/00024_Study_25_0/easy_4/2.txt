@@ -1,0 +1,5 @@
+def sol():
+    return ''.join(sorted(input()))
+
+# This assertion will fail if 'sirnemtpuA' is not reversed or if the string is not reversed.
+assert sat(sol())

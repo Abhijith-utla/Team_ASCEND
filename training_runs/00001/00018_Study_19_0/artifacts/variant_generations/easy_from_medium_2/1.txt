@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == 1 and li[0] == 34
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == 2 and li[0] == 34 and li[1] == 34
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == 3 and li[0] == 34 and li[1] == 34 and li[2] == 34
+```

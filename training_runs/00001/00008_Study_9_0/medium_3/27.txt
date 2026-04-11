@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return [chr(i) for i in range(ord('a'), ord('z')+1)] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+
+print(sat(sol()))
+```
+
+In this solution, we first create a list of characters from 'a' to 'z'. Then we replace all spaces in the string "The quick brown fox jumps over the lazy dog" with no space and compare it with the original list. If they are the same, we return True; otherwise, we return False. The assert statement checks if this function satisfies the condition.

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 14,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:21:33.223867+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The function `sat` checks if a list `li` has a specific property: the sum of each element and its position in the lis...",
+  "difficulty": "hard",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

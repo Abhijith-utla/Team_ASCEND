@@ -1,0 +1,9 @@
+def sol():
+    s = "ho"
+    for _ in range(998):
+        s += "oo"
+    s += "o"
+    return s
+
+# test
+print(sat(sol()))

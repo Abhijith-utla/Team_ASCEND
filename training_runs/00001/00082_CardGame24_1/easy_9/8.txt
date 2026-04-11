@@ -1,0 +1,2 @@
+def sol():
+    return "The answer is {}.".format(True)

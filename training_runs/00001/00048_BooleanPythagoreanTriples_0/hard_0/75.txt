@@ -1,0 +1,22 @@
+def sol():
+    return []
+
+# Incorrect solution:
+# def sol():
+#     colors = [0] * 100
+#     return colors
+
+# Incorrect solution:
+# def sol():
+#     colors = [0, 1] * 50
+#     return colors
+
+# Correct solution:
+def sol():
+    colors = [0] * 100
+    return colors
+
+# Correct solution:
+def sol():
+    colors = [0, 1] * 50
+    return colors

@@ -1,0 +1,4 @@
+def sol():
+    if 'o' in 'python':
+        return False
+    return True

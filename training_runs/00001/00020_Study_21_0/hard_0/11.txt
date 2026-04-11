@@ -1,0 +1,9 @@
+def sol():
+    return {
+        'answer': 1
+    }
+
+# The assertion checks that the given function 'sat' returns the correct answer
+assert sat(sol()) == {
+    'answer': 1
+}

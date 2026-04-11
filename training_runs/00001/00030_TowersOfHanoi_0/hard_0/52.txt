@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The assertion will pass as per the provided solution
+assert sat(sol())

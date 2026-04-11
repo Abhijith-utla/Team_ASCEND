@@ -1,0 +1,5 @@
+Sure, here's a possible solution:
+
+```python
+def sol():
+    return "oo" in "ooo" and "o" not in "ooo" and "oo" in "oo" and "o" not in "oo" and "o" not in "ooo" and "o" not in "oo" and "oo" in "oo" and "o" not in "oo" and "o" in "oo" and "o" not in "oo" and "o" not in "ooo" and "o" in "oo" and "o" not in "oo" and "o" not in "oo" and "o" in "oo" and "ooo" in "ooo" and "o" not in "oo" and "o" not in "oo" and "o" in "oo" and "o" in "oo" and "oo" not in "oo" and "oo" not in "oo" and "ooo" in "ooo" and "oo" in "oo" and "oo" in "oo" and "oo" not in "oo" and "oo" not in "

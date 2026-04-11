@@ -1,0 +1,17 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:09:21.715236+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: argument of type 'int' is not iterable|parse=fence=none,preamble=0,found_sol=1,candidates=27|checked=27/27|preview=def sol(): x = [\"_\"] * 81 def assign(row, col, num): if num not in row and num not in col and num not in box[3 * (col...",
+  "difficulty": "easy",
+  "problem_id": "00070_Sudoku_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

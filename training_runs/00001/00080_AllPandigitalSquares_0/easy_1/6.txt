@@ -1,0 +1,5 @@
+def sol():
+    return [int(str(n) + str(n*n)) for n in range(1, 10)]
+
+# This line checks whether the solution is correct
+assert sat(sol())

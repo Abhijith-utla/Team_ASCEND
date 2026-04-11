@@ -1,0 +1,18 @@
+Here is the Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol():
+    return []
+```
+
+The function `sol` returns an empty list, which is the correct answer to the problem statement.
+
+This function takes no arguments and returns an empty list. This is the correct solution to the problem statement.
+
+The final checker will run:
+```python
+assert sat(sol())
+```
+This assertion will pass if the function `sol` returns an empty list, and will fail otherwise.

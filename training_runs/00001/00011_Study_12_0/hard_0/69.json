@@ -1,0 +1,16 @@
+{
+  "attempt_num": 69,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:24:07.605289+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here is the Python code that solves the problem: ```python def sol(): return [4, 1, 2, 7, 4, 5, 6, 4, 7, 8, 9, 3, 4, ...",
+  "difficulty": "hard",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

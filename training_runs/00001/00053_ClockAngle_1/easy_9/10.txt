@@ -1,0 +1,6 @@
+def sol():
+    for h in range(24):
+        for m in range(60):
+            if sat((h, m)):
+                return (h, m)
+    return None

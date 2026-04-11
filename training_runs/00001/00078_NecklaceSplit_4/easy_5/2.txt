@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# Checker: assert sat(sol())
+!python3 checker.py

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:48:41.046405+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return 0 # Checker: assert sat(sol()) !python3 checker.py",
+  "difficulty": "easy",
+  "problem_id": "00078_NecklaceSplit_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 5
+}

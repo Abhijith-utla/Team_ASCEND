@@ -1,0 +1,26 @@
+```python
+from typing import List
+
+def sol():
+    return [2, 4, 6, 8]
+```
+
+The solution given in the problem is:
+
+```python
+def sol():
+    return [2, 4, 6, 8]
+```
+
+This solution works as follows:
+
+1. The function `sol` returns a list of integers.
+2. The list `[2, 4, 6, 8]` is the only possible answer.
+
+The solution is correct because for any given list of integers, the list `[2, 4, 6, 8]` is the only possible answer.
+
+The function `sat`, given a list of integers, checks if the list is in the set `{i - 1, i + 1, 3 * i}` for all integers `i` and `j` in the list, with `i` being the index and `j` being the value at that index.
+
+The checker will run: `assert sat(sol())`
+
+Please note that the function `sol` returns a list of integers, but the problem statement mentions that

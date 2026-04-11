@@ -1,0 +1,4 @@
+def sol():
+    return str(len(ls))
+
+assert sat([str(len(ls)) for ls in [min(ls) for ls in [max(ls) for ls in range(10)]]])

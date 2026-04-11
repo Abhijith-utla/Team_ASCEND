@@ -1,0 +1,13 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for i in range(1, len(li)):
+        if li[i] < sum(li[:i]):
+            return False
+    return True
+```
+
+This function works by iterating over the list and checking if each element is less than the sum of the elements to its left in the list. If it finds an element that is not less than the sum of its left elements, it returns False. If it iterates over the entire list without finding such an element, it returns True, indicating that the list satisfies the condition.

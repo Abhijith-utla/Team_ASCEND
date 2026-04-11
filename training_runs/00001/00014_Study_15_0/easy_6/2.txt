@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return []
+```
+
+The function `sol` is empty because it does not return any values, it just returns an empty list.

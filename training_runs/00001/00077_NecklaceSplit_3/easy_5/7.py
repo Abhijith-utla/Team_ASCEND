@@ -1,0 +1,12 @@
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrrrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[:len(lace) // 2] == 'rb' * (2 * n)
+
+def sol():
+    return ''
+
+# The solution function should return a string of lace length which is twice the number of times the string 'rb' repeats. It should start with 'rb' and then repeat 'rb' twice more. If the lace length is not twice the number of times 'rb' repeats, the function should return an empty string.
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

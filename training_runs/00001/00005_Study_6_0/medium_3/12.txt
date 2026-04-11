@@ -1,0 +1,15 @@
+The correct solution is:
+
+```python
+def sol():
+    i = 0
+    while sat(i):
+        i += 1
+    return i
+```
+
+This function will keep incrementing the variable `i` until it is evenly divisible by 2 and less than 10^10. As soon as it finds such a number, it returns it.
+
+The `sat` function checks if `i` is less than or equal to 10^10 and if it is evenly divisible by 2. If both conditions are met, it returns `True`, otherwise it returns `False`.
+
+The `while` loop continues as long as `sat(i)` returns `True`, meaning `i` is still less than or equal to 10^10 and evenly divisible by 2. When it stops, it returns the last valid `i` that met both conditions.

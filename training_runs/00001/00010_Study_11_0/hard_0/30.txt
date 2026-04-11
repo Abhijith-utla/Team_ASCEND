@@ -1,0 +1,12 @@
+Sure, here is a Python solution for the problem.
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+The function `sat` takes a list of strings as input. It first checks if all the strings are of equal length, which means the minimum, maximum and length of the list are the same. If all conditions are met, it returns `True`, otherwise `False`.
+
+For example, if you call `sat(['abc', 'def', 'ghi'])`, it will return `True` because all strings are of the same length and they are the same as the minimum and maximum string. If you call `sat(['abc', 'def', 'jkl'])`, it will return `False` because the minimum string is 'jkl' and the maximum string is 'def', which are not the same.

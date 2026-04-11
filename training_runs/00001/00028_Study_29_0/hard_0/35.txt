@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# This function is not going to be used, it's just here to satisfy the problem requirements.

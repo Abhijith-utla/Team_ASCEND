@@ -1,0 +1,5 @@
+def sol():
+    return 'satisfactory' if sat('a') else 'unsatisfactory'
+
+# Uncomment to validate the solution
+# print(sat(sol()))

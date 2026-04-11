@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return 'oo' in 'a' * 1000
+```
+
+This function checks whether the string 'oo' appears at least once in a string of length 1000. The string 'a' is repeated 1000 times to make the length of the string 1000.

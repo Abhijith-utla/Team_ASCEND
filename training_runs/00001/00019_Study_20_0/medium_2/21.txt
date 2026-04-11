@@ -1,0 +1,11 @@
+Sure, the function `sat(li: List[int]) -> bool` is correct as per the problem statement. It returns `True` if all elements in the list are unique and sequential (i.e., the number at index `i` is exactly `i+1` for all `i`), otherwise it returns `False`. 
+
+Here's how it works:
+
+- `enumerate(li)` gives us a list of tuples, where the first element is the index and the second is the value of the element.
+- `i, j = enumerate(li)` is a simultaneous assignment that assigns the index and the value to `i` and the value to `j`.
+- `all(...)` returns `True` if all elements of the iterable are `True`.
+- `j in {i}` is a set which contains `j`. The set is an unordered collection of unique elements.
+- If there is no match, `j in {i}` will return `False`, and `all(...)` will return `False`.
+
+If there's a match, `j in {i}

@@ -1,0 +1,5 @@
+def sol():
+    s = 'abcba' if __builtins__.input__() == '__builtins__.input__' else 'abcba1'
+    while not sat(s):
+        s = 'abcba' if __builtins__.input__() == '__builtins__.input__' else 'abcba1'
+    return s

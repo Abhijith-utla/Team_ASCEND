@@ -1,0 +1,16 @@
+{
+  "attempt_num": 11,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T10:16:27.743270+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return [0, 1, 2, 3, 4, 5, 6, 7] print(sat([[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]])) !pyth...",
+  "difficulty": "easy",
+  "problem_id": "00031_TowersOfHanoiArbitrary_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

@@ -1,0 +1,11 @@
+def sol():
+    return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# The function `sat` is a helper function that checks if the string `s` contains the same character repeated less than or equal to the number of times it appears in the string `s`.
+# It takes a list of integers `x` and a length as arguments.
+# The function returns True if all characters in `s` appear at least as many times as they do in the string `s`, and False otherwise.
+# The main function `sol` returns a list of the integers from 0 to 9.
+# The function `sat` is called with `sol()` as its argument, and the return value is returned by `sol`.
+
+# Testing the solution
+assert sat(sol())

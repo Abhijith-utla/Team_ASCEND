@@ -1,0 +1,19 @@
+Here are three variants of the original puzzle, which test the same core concept.
+
+VARIANT1:
+```python
+def sat(s: str):
+    return s.count('x') == 100 and s.count('o') == 101 and s.count('xx') == 98
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return s.count('x') == 100 and s.count('o') == 111 and s.count('xx') == 98
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return s.count('x') == 110 and s.count('o') == 101 and s.count('xx') == 98
+```

@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return "sat"
+```
+
+This function always returns "sat". The function name "sol" is arbitrary and it does not necessarily have to return any value. The function also does not take any arguments. It is used to satisfy the condition defined by the user (sat).

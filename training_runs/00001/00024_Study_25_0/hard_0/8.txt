@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted(input('Enter a string: '))) == ''.join(sorted('Permute me true')) and ''.join(sorted(input('Enter a string: '))) == ''.join(sorted('Permute me true'))[::-1]
+
+assert sat(sol())

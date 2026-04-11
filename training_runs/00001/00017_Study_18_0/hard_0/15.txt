@@ -1,0 +1,12 @@
+```python
+from typing import List
+
+def sol():
+    return "berlin berger linber linger gerber gerlin"
+
+def sat(ls: List[str]):
+    return " ".join(ls) == 'berlin berger linber linger gerber gerlin'
+
+# Test the solution
+assert sat(sol())
+```

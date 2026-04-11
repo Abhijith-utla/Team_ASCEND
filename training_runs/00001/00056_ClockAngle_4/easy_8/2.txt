@@ -1,0 +1,9 @@
+def sol():
+    for hour in range(1, 13): # 12 hours, 0-11
+        for minute in range(0, 60): # 60 minutes, 0-59
+            if sat(hour, minute):
+                return {"hour": hour, "minute": minute}
+    return None
+
+# Assertion
+assert sat(sol()["hour"], sol()["minute"])

@@ -1,0 +1,23 @@
+def sat(x: List[int], length=193, s="    !!\"\"\"#$$%&&')''((()!))****X**++,,,,---...///0111114445556888::::;s;;<<==,=>>>>ABBBBBCDEEEEEEEFGHIIKKKKLMNOOPPPQQQRRRRASUUUVVVWWXXZZZ[]]]!``aEaabbbccccPcdeeeeefghjjjjkkkllmmooooKpppppqsttwt'$ww=wLwwyyyyzz{"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(length - 1))
+
+def sol():
+    def check(x: List[int]):
+        return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(len(s) - 1))
+
+    x = list(range(len(s)))
+    y = sorted(x, key=lambda i: s[i])
+
+    def shuffle(x):
+        for i in range(len(x) - 1, 0, -1):
+            j = random.randint(0, i)
+            x[i], x[j] = x[j], x[i]
+
+    for _ in range(100):
+        shuffle(x)
+        if not check(x):
+            return
+    return x
+
+if __name__ == "__main__":
+    assert sat(sol())

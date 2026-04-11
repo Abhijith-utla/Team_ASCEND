@@ -1,0 +1,6 @@
+def sol():
+    def inner_sol():
+        return [i for i in range(1000) if i not in [i * i for i in range(1000)]]
+    return [i for i in inner_sol()]
+
+assert sat(sol())

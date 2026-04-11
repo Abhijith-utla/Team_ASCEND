@@ -1,0 +1,15 @@
+The function `sat` is already defined by the user and is intended to return `True` if the input `i` is an integer such that `i` is greater than 10^10 and `i` modulo 123 is equal to 4. 
+
+Here is the function `sol` which satisfies the requirements mentioned in the problem:
+
+```python
+def sol():
+    for i in range(10**11, 10**12):
+        if sat(i):
+            return i
+    return None
+```
+
+In this code, we are looping over a large range of numbers (10^11 to 10^12). For each number in this range, we call the `sat` function and if the function returns `True`, we return that number. This will eventually return the first number in the range that satisfies the `sat` function, because we start our range from `10^11` and increment it in each loop iteration.
+
+The `None` return in the last line of the function signifies that no such number has been found in the range.

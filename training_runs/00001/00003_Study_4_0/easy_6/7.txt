@@ -1,0 +1,18 @@
+Here is a Python function that checks if the input list has exactly 10 elements:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    return True
+```
+
+You can test this function with a list of 10 elements like this:
+
+```python
+assert sat([1]*10)
+```
+
+This will pass if the list has 10 elements, and will fail otherwise.

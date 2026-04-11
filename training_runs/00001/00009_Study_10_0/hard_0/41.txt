@@ -1,0 +1,6 @@
+def sol():
+    s = "8123456789012345678"  # Assuming the required string is the reverse of "8" repeated 1818 times.
+    return s
+
+# Checker
+assert sat(sol())

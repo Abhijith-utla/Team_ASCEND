@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    i = 0
+    while True:
+        i += 1
+        if sat(i):
+            return i
+```
+
+In this solution, the function `sol()` uses a while loop to continuously increment `i` until `sat(i)` returns `True`. This is done to ensure that `i` is less than 100 and divisible by 5. As soon as `sat(i)` returns `True`, `i` is returned, and the loop ends.

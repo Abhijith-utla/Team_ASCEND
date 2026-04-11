@@ -1,0 +1,13 @@
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 2]) == 0
+
+def sol():
+    return sum([1 for i in range(100) if ord(chr(i)) % 3 == 2]) == 0
+
+# Uncomment these lines to test the function
+# print(sat(["a", "b", "c"]))  # Expected: False
+# print(sat(["d", "e", "f"]))  # Expected: True
+# print(sat(["g", "h", "i"]))  # Expected: False
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,8 @@
+Here is the solution to your problem:
+
+```python
+def sol():
+    return {}
+```
+
+The function `sol` does not take any arguments and returns an empty dictionary. This is because the `sat` function is not defined in the given context.

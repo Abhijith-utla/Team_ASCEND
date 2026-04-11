@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(1000) if all((i * i - j * j) ** 0.5 % 1 == 0 for j in range(1000) if i != j)]
+
+print(sat(sol()))

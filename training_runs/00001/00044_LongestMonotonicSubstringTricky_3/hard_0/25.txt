@@ -1,0 +1,12 @@
+Here is a correct solution:
+
+```python
+def sol():
+    x = list(range(61))
+    random.shuffle(x)
+    return x
+```
+
+This function generates a list of six integers from 0 to 60, shuffles it, and returns it as a result. The shuffle operation is to ensure that the sorted sequence of indices will be different each time the function is called.
+
+Note: This code assumes that `random.shuffle()` is available and that the `random` module is imported at the beginning of the file.

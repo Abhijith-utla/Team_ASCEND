@@ -1,0 +1,7 @@
+def sat(xy_sides):
+    assert len(xy_sides) >= 2
+    max_sum = max([x + side for x, y, side in xy_sides])
+    return sum([side ** 2 for x, y, side in xy_sides]) == max_sum ** 2
+
+if __name__ == "__main__":
+    print("Parsed sat() loaded successfully")

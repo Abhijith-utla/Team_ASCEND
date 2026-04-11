@@ -1,0 +1,13 @@
+def sol():
+    return [19, 14, 81]
+
+print(sat(sol()))  # Should print: [19, 14, 81]
+
+# Additional test cases
+assert sat([19, 14, 81]) == [19, 14, 81]
+assert sat([19, 14, 81], max_stamps=3) == True
+assert sat([19, 14, 81], target=200) == False
+assert sat([19, 14, 81], target=200, max_stamps=4) == True
+assert sat([19, 14, 81, 200], target=500, max_stamps=4) == False
+assert sat([19, 14, 81, 200], target=500) == False
+assert sat([19, 14, 81, 200, 150]) == [19, 14, 81,

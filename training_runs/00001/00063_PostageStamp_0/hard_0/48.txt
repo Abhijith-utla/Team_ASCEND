@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+assert not sat([])
+assert not sat([32])
+assert not sat([32, 32])
+assert not sat([32, 32, 32, 32])
+assert not sat([32, 32, 32, 32, 32])
+assert not sat([32, 32, 32, 32, 32, 32])
+assert sat([10])
+assert sat([10, 10])
+assert sat([10, 10, 10, 10])
+assert sat([10, 10, 10, 10, 10])
+assert not sat([10, 32])
+assert not sat([32, 10])
+assert not sat([32, 8])
+assert not sat([8, 32])
+assert not sat([8, 32, 8])
+assert not sat([8, 32, 8, 32])
+assert not sat([8, 32,

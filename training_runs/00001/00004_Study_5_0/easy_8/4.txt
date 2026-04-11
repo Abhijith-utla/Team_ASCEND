@@ -1,0 +1,8 @@
+Here's a solution:
+
+```python
+def sol():
+    return 10
+```
+
+This solution always returns 10, regardless of the input list. The function `sat` checks whether the list contains exactly one occurrence of the number 10 and the rest of the elements in the list are all equal to 0. This condition is fulfilled because the number 10 appears in the list exactly once, and all elements are zero.

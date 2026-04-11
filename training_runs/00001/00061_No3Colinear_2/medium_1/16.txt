@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This function is incorrect because the function name 'sol' is not meaningful
+# and the function also does not have any arguments. It should be 'solve'
+# and the function should return a list of coordinates.

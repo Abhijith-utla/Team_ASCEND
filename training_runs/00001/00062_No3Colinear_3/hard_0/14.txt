@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The solution to the problem doesn't have any inputs, so we can't solve it without any inputs.
+# The function 'sol' does not take any arguments and returns an empty list.

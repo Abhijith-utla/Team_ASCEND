@@ -1,0 +1,12 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return <answer>
+```
+
+In this case, the answer will depend on the implementation of `<answer>`.
+
+The function `sat` checks if all elements in the list `li` are less than the sum of all elements before it. It does this by iterating over the list and for each element at index `i`, it checks if the sum of all elements up to that index is less than the current element. If all elements satisfy this condition, the function returns `True`; otherwise, it returns `False`.
+
+The `<answer>` part of the function will depend on the specifics of the problem and the solution to the problem.

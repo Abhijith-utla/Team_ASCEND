@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# Assuming the answer is empty list as the input was not provided
+
+# Validate the answer
+assert sat(sol())

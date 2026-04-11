@@ -1,0 +1,8 @@
+Sure, here is a solution in Python:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function will return a list of all the words in the string "berlin berger linber linger gerber gerlin", split at each space. This is a trivial example to show how to construct a list from a string.

@@ -1,0 +1,6 @@
+def sol():
+    x = [0]*535
+    return x
+
+# Test the function
+# assert sat(sol())

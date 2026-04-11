@@ -1,0 +1,11 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    return li
+```
+
+In this code, we are creating a list of integers from 1 to 20. Then we just return this list. The function `sat` is not needed as the sum of the list is 105 which is the sum of the numbers from 1 to 20.

@@ -1,0 +1,7 @@
+def sol():
+    x = []
+    for i in range(19):
+        x.append(i)
+    return x
+
+assert sat(sol())

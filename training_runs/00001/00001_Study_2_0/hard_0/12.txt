@@ -1,0 +1,7 @@
+The given Python function is named 'sat' and it checks if a given string 's' contains exactly 1000 'o' characters and exactly 100 'oo' characters and 801 'ho' characters.
+
+Here is the correct function 'sol' that satisfies this condition:
+
+```python
+def sol():
+    s = 'oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

@@ -1,0 +1,2 @@
+def sol():
+    return [sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))]

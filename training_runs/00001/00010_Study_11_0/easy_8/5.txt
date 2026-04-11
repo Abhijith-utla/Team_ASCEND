@@ -1,0 +1,17 @@
+def sol():
+    return {
+        'result': True
+    } if sat([
+        'Python',
+        'Programming',
+        'Puzzle'
+    ]) else {
+        'result': False
+    }
+
+# Testing
+assert sol()['result'] == sat([
+    'Python',
+    'Programming',
+    'Puzzle'
+])

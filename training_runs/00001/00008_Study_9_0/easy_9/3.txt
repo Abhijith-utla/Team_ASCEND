@@ -1,0 +1,10 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Python is fun".replace(" ", ""))
+```
+
+In the function `sat`, we generate a list of characters by converting each integer in the list to a character using the `chr` function. We then compare this list with a list of characters generated from the string "Python is fun" by replacing all spaces with no character. If the two lists are equal, we return `True`, otherwise we return `False`.

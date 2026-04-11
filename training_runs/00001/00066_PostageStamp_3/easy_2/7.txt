@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This will ensure that the function `sol` does not actually contain any code
+assert sat(sol())

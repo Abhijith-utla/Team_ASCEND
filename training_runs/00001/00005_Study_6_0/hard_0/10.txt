@@ -1,0 +1,13 @@
+Sure, here is the solution for this problem:
+
+```python
+def sol():
+    for i in range(10**10, 10**10+123):
+        if sat(i):
+            return i
+    return None
+```
+
+The function `sol` uses a for loop to iterate over a range of numbers starting from `10**10` and increasing by 123. It checks if the number `i` satisfies the condition defined by the function `sat`. If it does, it immediately returns the number. If it goes through all the numbers in the range without finding a number that satisfies the condition, it returns `None`.
+
+The correct output of this function will be a number that is greater than `10**10` and leaves a remainder of `4` when divided by `123`. If such a number exists, it will be the correct solution to the problem. If not, it will return `None`.

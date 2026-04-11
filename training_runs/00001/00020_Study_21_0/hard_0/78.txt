@@ -1,0 +1,7 @@
+def sol():
+    li = [1, 2, 3]
+    while not sat(li):
+        li = [1, 2, 3]
+    return li
+
+assert sat(sol())

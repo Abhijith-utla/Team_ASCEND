@@ -1,0 +1,37 @@
+VARIANT1:
+```python
+def sat(moves: List[List[int]]):
+    state = [0, 1, 2, 3, 4, 5, 6, 7]
+
+    for i, j in moves:
+        state[j], state[i] = state[i], state[j]
+        assert sorted(state) == [0, 1, 2, 3, 4, 5, 6, 7]
+
+    return state == [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]]):
+    state = [0, 1, 2, 3, 4, 5, 6, 7]
+
+    for i, j in moves:
+        state[i], state[j] = state[j], state[i]
+        assert sorted(state) == [0, 1, 2, 3, 4, 5, 6, 7]
+
+    return state == [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]]):
+    state = [0, 1, 2, 3, 4, 5, 6, 7]
+
+    for i, j in moves:
+        state[j], state[i] = state[i], state[j]
+        assert sorted(state[:j+1]) + state[j+1:] == [0, 1, 2, 3, 4, 5, 6, 7]
+
+    return state == [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+In all the variants, we are simply swapping the positions of the elements in the source array and then checking if the state array is sorted. If it is, then the function returns True; otherwise, it returns False. The source array is modified in each iteration of the loop to represent the state after a move.

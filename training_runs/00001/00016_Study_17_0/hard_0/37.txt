@@ -1,0 +1,17 @@
+Here is the solution:
+
+```python
+def sol():
+    i = 1234
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+# Test the solution
+assert sat(sol())
+```
+
+In this solution, the `sol` function tries to increment `i` from 1234 to find an `i` that satisfies the `sat` function. The `sat` function checks if the length of the string representation of `i + 1000` is greater than the length of the string representation of `i + 1001`. If `i` satisfies the `sat` condition, the `sol` function returns `i`. The test at the end of the code ensures that `sol` returns a valid result.

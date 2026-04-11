@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# This function checks if the string s contains the characters from the array x, with x[i] appearing no more times than x[i + 1] appears
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(s.count(s[x[i]]) <= s.count(s[x[i + 1]]) for i in range(length - 1))
+
+assert sat([0, 1, 0])
+assert not sat([0, 2, 1])
+assert sat([0, 2, 0])
+assert not sat([0, 1, 1])
+assert not sat([0, 2, 2])

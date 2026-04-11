@@ -1,0 +1,14 @@
+The problem is asking to write a function called `sol` that takes a string `s` as an argument and returns a single answer object. The function must satisfy the following conditions:
+
+1. The string `s` is a substring of the string `'81818181818181818181'`.
+2. The string `s` is a palindrome.
+3. The length of the string `s` is greater than 11.
+
+Here is the solution to the problem:
+
+```python
+def sol(s: str) -> bool:
+    return s in '81818181818181818181' and s == s[::-1] and len(s) > 11
+```
+
+This function checks if the string `s` is a substring of the string `'81818181818181818181'`, if the string `s` is a palindrome, and if its length is greater than 11. If all the conditions are met, the

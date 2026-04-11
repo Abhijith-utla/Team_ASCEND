@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 17] if sat([17, 17, 3, 3, 3]) else [17, 3] if sat([17, 3, 3, 17, 3]) else [3, 17] if sat([3, 17, 3, 17, 3]) else [3, 3]
+```
+
+This solution uses conditional statements to check the possible combinations of 17 and 3 in the given list. It returns the first valid combination it finds or the last one it finds, if no valid combinations are found.
+
+The function `sat` is already defined by the user, so you don't need to define it again.

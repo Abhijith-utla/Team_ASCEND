@@ -1,0 +1,22 @@
+def sol():
+    return []
+
+# Example of how to use the function:
+# print(sat([4, 0]))
+# This will return True or False
+
+# If the function 'sat' returns True, it means that the hands are in the position that satisfies the condition. 
+# If the function returns False, it means that the hands are not in the position that satisfies the condition. 
+# The angles are calculated based on the position of the hour and minute hands on a clock.
+# The target angle is 138 degrees.
+
+# Please note that the hands list is a list of two elements, where the first element is the hour (from 1 to 12) and the second is the minute (from 0 to 59).
+
+# You can change the hours and minutes to test the function for different scenarios.
+
+# For example:
+# print(sat([8, 30]))
+# This will return True or False
+
+# The function will return True if the hands are in the position that satisfies the condition, and False otherwise.
+# In this case, the hands are in the position of 8:30.

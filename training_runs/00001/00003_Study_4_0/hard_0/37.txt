@@ -1,0 +1,15 @@
+Here is the solution for your problem. This Python function `sol` takes no arguments and returns an answer object. The function uses the `sat` function to ensure that the list has exactly 10 elements and that the element at index 3 appears twice in the list.
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return len(li) == 10 and li.count(li[3]) == 2
+
+    answer = {}
+    answer['valid'] = sat(list(range(10)))
+    return answer
+```
+
+The above code will return a dictionary with a key 'valid' set to True if the list satisfies the conditions defined in the `sat` function, and False otherwise.
+
+The list comprehension `list(range(10))` is used to create a list of 10 elements from 0 to 9. This list is then passed to the `sat` function to check if it satisfies the conditions. If the list satisfies the conditions, the 'valid' key is set to True, otherwise it is set to False. The answer object is then returned.

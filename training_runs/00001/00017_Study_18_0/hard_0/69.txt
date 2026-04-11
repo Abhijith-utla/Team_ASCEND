@@ -1,0 +1,6 @@
+def sol():
+    ls = ['berlin', 'berger', 'linber', 'linger', 'gerber', 'gerlin']
+    return ls
+
+# Checker
+assert sat(sol())

@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# This function checks if the string s is a permutation of the alphabet.
+# It does this by checking if each character in the string s is unique.
+# If it is, then s is a permutation of the alphabet.
+# If it isn't, then s is not a permutation of the alphabet.
+# The function returns a list of the characters in s that are not unique.
+# If s is a permutation of the alphabet, the function returns an empty list.
+
+# For example, if s = "OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx",
+# the function will return ['O', 'W', '%', 'T', 'U', '(', 'X', '+', 'Y', '-', 'Y', ']', '^', '`', '(', 'd', '/', '0', '4', '4', 'e', '5', 'e', 'k', '7', '

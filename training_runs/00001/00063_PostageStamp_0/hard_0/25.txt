@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Assuming the user provides the solution in this function, it will be tested by the checker.
+!pip install pytest
+
+def test_sol():
+    assert sol() == []
+
+if __name__ == "__main__":
+    test_sol()

@@ -1,0 +1,3 @@
+def sol():
+    li = [6] + [0]*988
+    return li

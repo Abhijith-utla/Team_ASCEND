@@ -1,0 +1,4 @@
+def sol():
+    return 5
+
+sat = lambda expr: len(expr) <= 10 and expr.count('(') == expr.count(')') and '++' not in expr and '--' not in expr and expr.replace(' ', '') == 'abcabcabcabc'

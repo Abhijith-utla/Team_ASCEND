@@ -1,0 +1,7 @@
+def sol():
+    i = 0
+    while sat(i):
+        i += 1
+    return i
+
+assert sat(sol())

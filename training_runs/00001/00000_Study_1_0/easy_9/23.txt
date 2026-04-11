@@ -1,0 +1,16 @@
+Here is the correct solution to the problem:
+
+```python
+def sol():
+    return 'ooo' not in 'ooooooooooooooooooo' and 'o' in 'ooooooooooooooooooo' and 'o' not in 'ooooooooooooooooooo'
+```
+
+The function `sol` returns `True` if the string 'ooo' does not occur in 'ooooooooooooooooooo' and 'o' occurs exactly 1000 times in this string, and `False` otherwise. 
+
+You can verify the correctness of the solution by running the following code:
+
+```python
+assert sat(sol())
+```
+
+If the function returns `True`, the assert statement will pass without raising an exception. If it returns `False`, the assert statement will raise an exception.

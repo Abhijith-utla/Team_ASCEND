@@ -1,0 +1,5 @@
+def sol():
+    return 5
+
+# The answer is 5, and it should be checked by the assert statement.
+assert sat(sol())

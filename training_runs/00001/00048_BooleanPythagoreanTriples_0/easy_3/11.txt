@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# Asserts for the given Python function
+assert sat({}, 100)

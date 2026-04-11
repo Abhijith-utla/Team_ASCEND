@@ -1,0 +1,16 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:37:21.757485+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=python,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=The provided Python function `sat` checks if two elements in the list `ls` are equal and if they are found at the sam...",
+  "difficulty": "easy",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 7
+}

@@ -1,0 +1,7 @@
+```python
+def sol():
+    for i in range(-100000, 100001):
+        if sat(i):
+            return i
+    return None
+```

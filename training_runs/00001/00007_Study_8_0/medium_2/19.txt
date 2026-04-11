@@ -1,0 +1,16 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return 1234567890
+
+# Testing the solution
+print(sat(list(map(str, [1,2,3,4,5,6,7,8,9,0]))))  # This should print: False
+print(sat(list(map(str, [1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0]))))  # This should print: True
+```
+
+The function `sat` checks if the number `1234567890` exists in the list at indices `idx1` and `idx2`. It also checks that `1234567890` is not equal to the number at `idx1` and `idx2`. 
+
+The function `map` is used to convert the integers to strings and to ensure that `sat` works with lists of any type.
+
+The `print` statements are used for testing the

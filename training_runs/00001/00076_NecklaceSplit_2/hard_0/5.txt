@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# The function sol() does not take any arguments, so it does not need any input.
+# It simply returns the integer 0, as required.

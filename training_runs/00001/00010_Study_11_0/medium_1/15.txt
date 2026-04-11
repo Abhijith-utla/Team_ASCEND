@@ -1,0 +1,16 @@
+Here's a Python solution for this problem.
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        for i in range(len(ls)):
+            if i not in ls:
+                return False
+        return True
+```
+
+This function works by checking if each index in the list is in the original list. If it finds any index that is not in the list, it returns False. If it goes through all the indices and finds none that are not in the list, it returns True. This is because the problem statement specifies that the list must contain all integers from 0 to the length of the list minus one, so an index that is not in the list means that the index is out of range.

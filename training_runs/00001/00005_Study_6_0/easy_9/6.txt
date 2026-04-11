@@ -1,0 +1,10 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return 10 ** 10 % 2 == 0
+
+assert sat(sol())
+```
+
+In the given Python function `sat`, we are checking if the number is less than or equal to 10^10 and if it's even or not. The function `sol` checks this condition and returns True or False accordingly. The `assert` statement at the end is used to verify that the function `sol` returns the correct result. If the function `sol` returns a wrong result, Python will raise an `AssertionError`.

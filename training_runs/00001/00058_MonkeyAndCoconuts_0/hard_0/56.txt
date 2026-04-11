@@ -1,0 +1,12 @@
+def sol():
+    n = 30
+    while n > 0:
+        n -= 1 + (n - 1) // 5
+        if n % 5 == 1:
+            break
+    else:
+        n += 1 + (n - 1) // 5
+    return n
+
+# Checker
+assert sat(sol())

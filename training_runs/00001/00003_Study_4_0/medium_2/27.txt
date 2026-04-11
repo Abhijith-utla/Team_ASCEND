@@ -1,0 +1,23 @@
+The correct pattern is:
+
+```python
+from typing import List
+
+def sol() -> int:
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return li.index(li[3])
+```
+
+In this solution, we create a list of 10 integers from 1 to 10. We then return the index of the third element of the list (4th index in Python).
+
+The incorrect pattern is:
+
+```python
+from typing import List
+
+def sol() -> int:
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return li.index(li[3]) + 1
+```
+
+In this solution, we return the index of the third element of the list (4th index in Python) plus one. However, this will always result in the same index as the correct answer, which is 3. This is because the index of the third element is 3, not 4.

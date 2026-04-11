@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+sat = lambda coords, side=0, num_points=0: len(coords) == len({(a, b) for a, b in coords}) >= num_points
+
+assert sat([(0, 0), (1, 1)])
+assert not sat([(0, 0), (0, 1)])
+assert sat([(0, 0), (1, 2), (2, 4)])
+assert not sat([(0, 0), (1, 1)])
+assert sat([(0, 0), (1, 1), (2, 2)], 3, 3)

@@ -1,0 +1,15 @@
+The correct pattern for the solution is:
+
+```python
+def sol():
+    return []
+```
+
+The incorrect pattern for the solution is:
+
+```python
+def sol(x):
+    ...
+```
+
+In this solution, the function `sol()` does not take any arguments and returns an empty list. The function `sol(x)` is not defined because it takes a parameter `x` which is not used in the function.

@@ -1,0 +1,14 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    li: List[int] = [int(i) for i in input().split()]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all(i + j == 4 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This Python program firstly asks the user to input a list of 1000 integers separated by spaces. It then checks if the list satisfies the condition defined by the `sat` function. If the list satisfies the condition, the program returns `True`, otherwise it returns `False`.

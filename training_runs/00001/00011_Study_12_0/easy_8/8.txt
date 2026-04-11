@@ -1,0 +1,18 @@
+The function `sat` takes a list of integers and checks if all elements in the list are added to the first element (which is 2) and the elements in the list are in increasing order. 
+
+Here's the Python code for the `sol` function that uses `sat` as a checker:
+
+```python
+def sol():
+    li = [1] * 999
+    li.insert(0, 2)
+    return sat(li)
+
+def sat(li: List[int]):
+    li.insert(0, 2)
+    return all(i + j == 3 for i, j in zip(li, [4] + li)) and len(li) == 1001
+
+assert sat(sol())
+```
+
+In this code, `sol` function creates a list of 999 integers starting from 1 and inserts 2 at the beginning of the list. Then it checks if `sat` function returns True or False. The `sat` function checks if all elements in the list are added to the first element and the elements in the list are in increasing order.

@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return tuple(answer) in zip('dee', 'doo', 'dah!')
+```
+
+In this function, `answer` is assumed to be a tuple and `sat` is a function that checks if `answer` is in the tuple `zip('dee', 'doo', 'dah!')`. The function returns `True` if `answer` is in the tuple, and `False` otherwise.

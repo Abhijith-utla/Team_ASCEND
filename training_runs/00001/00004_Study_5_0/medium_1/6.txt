@@ -1,0 +1,16 @@
+Sure, I can provide a correct solution for this problem. This solution uses Python's built-in list method `count()` to find the count of each number in the list. Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return li.count(1) == 10 and li.count(2) == 10 and li.count(3) == 10 and li.count(4) == 10 and li.count(5) == 10 and li.count(6) == 10 and li.count(7) == 10 and li.count(8) == 10 and li.count(9) == 10
+```
+
+You can use the function `sat` as follows:
+
+```python
+assert sat([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+```
+
+This will return `True` if all the numbers are the same (10 times), and `False` otherwise.

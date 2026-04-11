@@ -1,0 +1,22 @@
+Here is the Python code to construct and return a single answer value according to the given conditions.
+
+```python
+from typing import List
+
+def sol() -> bool:
+    li: List[int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return sat(li)
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) == 1:
+        return False
+    return True
+```
+
+The function `sol()` calls the function `sat()` and returns the result. The function `sat()` checks the given list `li` against the conditions given in the problem. If all conditions are met, it returns `True`; otherwise, it returns `False`.

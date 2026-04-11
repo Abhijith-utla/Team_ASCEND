@@ -1,0 +1,5 @@
+def sol():
+    return (8 ** 2888) ** 0.5 > 8 and len(str(8 ** 2888)) == 3
+
+# Checker:
+# print(sol() == (8 ** 2888) ** 0.5 > 8 and len(str(8 ** 2888)) == 3)

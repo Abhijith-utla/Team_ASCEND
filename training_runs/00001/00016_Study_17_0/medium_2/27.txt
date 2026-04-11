@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+This function iterates over positive integers, checking each one using the `sat` function. When it finds a number for which `sat` returns `True`, it returns that number.
+
+Please note that this function will keep running indefinitely, because it does not check whether `sat` is actually defined and it does not have any conditions to stop it. If you want to stop it, you could add a condition to break the loop when a certain condition is met. For example, you could add a condition to break the loop when `sat` returns `False` for all subsequent numbers.

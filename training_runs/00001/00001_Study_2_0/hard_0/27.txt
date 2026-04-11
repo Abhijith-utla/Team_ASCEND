@@ -1,0 +1,8 @@
+Here is the Python code for the function 'sol':
+
+```python
+def sol():
+    return 'oooooooooooohoooooooooooo'
+```
+
+This function will always return the string 'oooooooooooohoooooooooooo', as it counts the number of 'o' characters in it.

@@ -1,0 +1,19 @@
+def sol():
+    return [i for i in range(13) if i < 13 and (i + 1) < 13 and (i + 2) < 13 and (i + 3) < 13]
+
+print(sol())
+
+# Check if the list is not empty
+assert len(sol()) > 0
+
+# Check if the list contains at least one substring in sorted order
+s = ''.join(chr(97 + i) for i in sol())
+assert all(s[i] <= s[i + 1] for i in range(len(s) - 1))
+
+# Check if there are three or more adjacent elements which are all increasing
+assert all(sol()[i] <= sol()[i + 1] for i in range(len(sol()) - 1))
+
+# If all conditions are met, return the list
+return sol()
+
+print(sat(sol()))

@@ -1,0 +1,13 @@
+Sure, here's the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+The function `sat` checks if all elements in the list `li` are present and the number of occurrences of each element are the same as the element itself. If this is the case, the function returns `True`, otherwise it returns `False`.

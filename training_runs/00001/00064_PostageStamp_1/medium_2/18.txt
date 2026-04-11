@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# In this solution, the function sol does not take any arguments, therefore it can be called without arguments.
+# It returns an empty list, meaning that there are no stamps in the stamp bank.

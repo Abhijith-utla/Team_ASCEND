@@ -1,0 +1,12 @@
+Here is a Python solution for your problem. The function `sat` is defined to check if all elements in a given list satisfy the condition `j in {i - 1, i + 1, 3 * i}` for all `i` and `j` in the list. 
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(j in {i - 1, i + 1, 3 * i} for i, j in zip([0] + li, li + [128]))
+```
+
+This function uses the Python built-in `zip` function to pair each element in the list with its position in the list. Then, it uses a generator expression to check each pair. The generator expression generates a tuple `(i - 1, i)` and `(i, i + 1)` if `i` is not `0` or `127`. This generates the sequence `{i - 1, i + 1, 3 * i}` for all `i`. The `all` function then checks if all elements in the generator expression are True.
+
+The checker

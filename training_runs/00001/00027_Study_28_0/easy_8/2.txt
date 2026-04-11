@@ -1,0 +1,5 @@
+def sol():
+    li = list(range(-50, 51))
+    return li
+
+assert sat(sol())

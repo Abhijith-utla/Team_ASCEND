@@ -1,0 +1,9 @@
+def sol():
+    return {
+        'expression': '2 * (14 - 4)',
+        'hints': ["The expression must be in the form of `<number> <operator> <number> <operator> <number>`.",
+                  "The numbers and the operators must be from the set `{1, 2, 3, 4, 5, 6, 7, 8, 9, 0}`.",
+                  "The expression should not contain any space.",
+                  "The numbers must occur exactly once in the expression.",
+                  "The expression must evaluate to `24`."]
+    }

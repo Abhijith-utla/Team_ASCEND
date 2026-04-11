@@ -1,0 +1,10 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 3.1417
+
+assert sat(sol())
+```
+
+The function `sat` checks if the answer is a number that starts with "123.456". If the answer is a number that starts with "123.456", the function `sat` returns `True`. Otherwise, it returns `False`.

@@ -1,0 +1,5 @@
+def sol():
+    x = [4, 2, 3, 1, 5]
+    return x
+
+print(sol())

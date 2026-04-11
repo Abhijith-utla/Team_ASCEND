@@ -1,0 +1,16 @@
+Here is the Python code for your problem:
+
+```python
+from typing import List
+
+def sol():
+    return 5
+
+def sat(li: List[int]):
+    return all(i + j == 5 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+# Test the solution
+assert sat(sol())
+```
+
+In this code, the `sol` function returns the number 5, and the `sat` function returns True if the list `li` satisfies both conditions: all elements in `li` add up to 5 and the length of `li` is 1000. The `assert` statement is used to test the `sat` function with the `sol` function's result. If the `sat` function returns False, the program will raise an `AssertionError`.

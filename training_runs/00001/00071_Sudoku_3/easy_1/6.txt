@@ -1,0 +1,5 @@
+def sol():
+    return "427496268337654531187__________"
+
+# Uncomment the next line to test the correctness of the function
+# assert sat(sol())

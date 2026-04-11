@@ -1,0 +1,10 @@
+Here is the solution for the problem.
+
+```python
+def sol():
+    return [[5, 6], [1, 2, 4], [0, 3]], [[2, 3, 4, 6], [0, 1], [5]]
+
+print(sat(*sol()))  # True
+```
+
+The solution function returns the source and target lists for the problem. The assert statement inside the for loop is used to check if the current move is correct. If the current move is not correct, an assertion error is raised. If all moves are correct, the function returns True.

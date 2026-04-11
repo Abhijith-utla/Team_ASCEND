@@ -1,0 +1,10 @@
+def sol():
+    return [source[:] for source in source]
+
+# Correct pattern
+# def sol():
+#     return [source[:] for source in source]
+
+# Incorrect pattern
+# def sol(x):
+#     ...

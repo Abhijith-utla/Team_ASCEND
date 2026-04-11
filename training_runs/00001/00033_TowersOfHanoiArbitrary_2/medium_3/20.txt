@@ -1,0 +1,4 @@
+def sol():
+    return [sorted(s) for s in [x[:] for x in source]]
+
+print(sat(moves, source, target))

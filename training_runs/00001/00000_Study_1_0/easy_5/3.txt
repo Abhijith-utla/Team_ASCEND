@@ -1,0 +1,10 @@
+Here is the solution for this problem:
+
+```python
+def sol():
+    def sat(s: str):
+        return s.count('oo') >= 2
+    return sat
+```
+
+You can use the `sol()` function to check if the string contains at least two consecutive 'oo'. For example, `sol()('ooo')` will return `True` and `sol()('oo')` will return `False`.

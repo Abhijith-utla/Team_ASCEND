@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i + 1][j] for i in range(len(x) - 1) for j in range(len(x[0])))
+```
+
+VARIANT2:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i][j + 1] for i in range(len(x)) for j in range(len(x[0]) - 1))
+```
+
+VARIANT3:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i + 1][j + 1] for i in range(len(x) - 1) for j in range(len(x[0]) - 1))
+```

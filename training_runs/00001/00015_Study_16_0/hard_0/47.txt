@@ -1,0 +1,4 @@
+def sol():
+    return {"answer": float(input("Enter a number: ")) + len(input("Enter a string: "))}
+
+print(sol()["answer"])

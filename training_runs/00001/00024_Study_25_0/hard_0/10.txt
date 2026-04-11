@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return ''.join(sorted(input())) == ''.join(sorted('Permute me true')) and ''.join(input()) == ''.join(reversed(input()))
+```
+
+The function `sol` is defined to check whether the string is a palindrome and the sorted string is the same as the reverse of the sorted string. If both conditions are true, the function will return `True`, otherwise `False`.
+
+The function `input()` is used to get the input from the user, `sorted` is used to sort the characters in the string, `''.join` is used to combine the sorted characters into a string, `reversed` is used to reverse the string, and `''.join(reversed(input()))` is used to reverse the sorted string.
+
+The output will be a boolean value. If the input is a palindrome and the sorted input is the same as the reverse of the sorted input, the function will return `True`. Otherwise, it will return `False`.
+
+The assert statement will check if `sol()

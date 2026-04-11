@@ -1,0 +1,8 @@
+Sure, here is the Python code that satisfies the given conditions:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+```
+
+In the above code, `i` is an integer. The function `sat` checks if the difference between the length of the string representation of `i + 1000` and `i + 1001` is greater than the length of the string representation of `i + 1001`. The `+` operator is used to append `1000` to `i` and `1001` to `i`, and `len()` is used to get the length of the string representation of `i + 1000` and `i + 1001` respectively.

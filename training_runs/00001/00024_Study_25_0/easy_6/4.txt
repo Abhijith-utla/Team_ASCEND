@@ -1,0 +1,5 @@
+def sol():
+    return sorted('sirnemtpu') == sorted(s) and s == s[::-1]
+
+# Check the solution
+assert sat(sol())

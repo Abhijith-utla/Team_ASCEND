@@ -1,0 +1,8 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol(ls, idx1=3, idx2=4):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+This function takes a list `ls` and two indices `idx1` and `idx2` as inputs. It checks if the element at index `idx1` is in the list at index `idx2` and if the element at index `idx1` is not equal to the element at index `idx2`. If both conditions are true, it returns True, otherwise it returns False. The function assumes that the list `ls` has at least two elements and that the indices `idx1` and `idx2` are valid for the list.

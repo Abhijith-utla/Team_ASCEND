@@ -1,0 +1,5 @@
+def sol():
+    s = 'mm' * 400 + 'm' + 'mm' * 401 + 'mmm'
+    return s
+
+assert sat(sol())

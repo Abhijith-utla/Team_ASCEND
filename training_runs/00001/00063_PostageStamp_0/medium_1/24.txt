@@ -1,0 +1,22 @@
+def sol():
+    return []
+
+# Checker function
+def checker(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    assert sat(stamps, target, max_stamps, options)
+
+# Test cases
+print(checker([10, 20, 30, 40]))  # Should pass
+print(checker([10, 20, 30]))  # Should fail
+
+# Solution function
+def sol():
+    return [10, 20, 30, 40]
+
+# Checker function
+def checker(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    assert sat(stamps, target, max_stamps, options)
+
+# Test cases
+print(checker([10, 20, 30, 40]))  # Should pass
+print(checker([10, 20, 30]))

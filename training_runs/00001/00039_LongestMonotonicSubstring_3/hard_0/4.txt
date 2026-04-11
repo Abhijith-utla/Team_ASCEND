@@ -1,0 +1,10 @@
+def sol():
+    return [0]
+
+# Explanation:
+# The function sol() is defined to return a list with a single element 0. This is because we are required to return a single answer object.
+# However, as there is no input provided to the function, we cannot test the function with a specific value. 
+# Therefore, we return a list with a single element 0 to satisfy the requirement of the problem. 
+# The list [0] is the answer object that sol() returns. 
+# The function sol() does not take any arguments and returns the answer object [0]. 
+# This answer object will be returned by the checker when running assert sat(sol()).

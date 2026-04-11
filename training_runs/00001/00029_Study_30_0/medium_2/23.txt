@@ -1,0 +1,12 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all([((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] in range(1000))) for i in range(20)])
+    return sat
+```
+
+The function `sol` returns the function `sat`. The function `sat` is defined to be an ansatz for the problem's constraint, which checks whether all elements satisfy the condition `(123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] in range(1000))` for all `i` in the range `0` to `19`. If all elements satisfy the condition, then the list `li` is valid according to the problem's constraints, and the function `sol` returns `True`. Otherwise, it returns `False`.
+
+The assert statement is used to verify the correct

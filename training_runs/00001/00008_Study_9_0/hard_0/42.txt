@@ -1,0 +1,10 @@
+Sure, here is the correct code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li[i] == ord(c) for i, c in enumerate("The quick brown fox jumps over the lazy dog".lower()))
+```
+
+This function checks if each index in `li` matches the ASCII value of the corresponding character in "The quick brown fox jumps over the lazy dog". The function converts the string to lowercase to ensure the check is case-insensitive. If all characters in `li` match the ASCII values of the string, the function returns True. Otherwise, it returns False. The checker will run: assert sat(sol())

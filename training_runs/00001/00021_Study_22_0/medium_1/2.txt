@@ -1,0 +1,9 @@
+def sol():
+    s = input()
+    if sat(s):
+        return 'Valid'
+    else:
+        return 'Invalid'
+
+# This checker will run: assert sat(sol())
+!python -m doctest -v sol

@@ -1,0 +1,5 @@
+def sol():
+    return {'answer': 'r' * (2 * 0 - 1)}
+
+# checker
+assert sat(sol()['answer'])

@@ -1,0 +1,16 @@
+Here is the Python code for the function `sol`.
+
+```python
+from typing import List
+
+def sol(answer: List[str]):
+    if sat(answer):
+        return answer
+    else:
+        return []
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+In the above code, the function `sol` takes a list of strings `answer` as input and returns the same list if it satisfies the condition defined in the `sat` function. Otherwise, it returns an empty list. The function `sat` checks if the minimum, maximum, and length of the list are all equal. The function `sol` uses the `sat` function to check the condition and returns the list if it satisfies the condition, otherwise it returns an empty list.

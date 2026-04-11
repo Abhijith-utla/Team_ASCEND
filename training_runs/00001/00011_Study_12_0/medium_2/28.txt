@@ -1,0 +1,14 @@
+Here is a Python solution for your problem:
+
+```python
+from typing import List
+
+def sol():
+    return 42
+
+assert sat(sol())
+```
+
+This solution defines a function `sat` which checks if the list `li` is a valid sequence of 1000 elements where each element is equal to 4 plus the previous element. The `assert` statement at the end of the code will fail if the `sat` function does not return `True`, and will pass if it does. In this case, the answer should be 42.
+
+The `zip` function is used to pair the elements of the list with the next element (i.e., the first element of the next list), and the `all` function is used to check if all the elements of the pair satisfy the condition. If all elements do, `all` returns `True`, otherwise it returns `False`.

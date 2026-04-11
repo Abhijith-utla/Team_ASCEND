@@ -1,0 +1,10 @@
+def sol():
+    return 'satisfactory' if sat('a'*20 + 'b'*15 + 'c') else 'unsatisfactory'
+
+def sat(s: str) -> bool:
+    if len(s) > 30 or len(s) < 5:
+        return False
+    return s.count(s[0]) == s.count(s[-1])
+
+if __name__ == "__main__":
+    print(sol())

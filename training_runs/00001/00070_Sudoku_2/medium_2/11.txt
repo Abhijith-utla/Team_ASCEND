@@ -1,0 +1,15 @@
+def sol():
+    x = ["_" for _ in range(81)]
+    for i in range(9):
+        for j in range(9 * i, 9 * i + 9):
+            x[j] = str(i + 1)
+    for a in range(3):
+        for b in range(3):
+            s = {x[9 * a + b + i + 26 * (i // 3)] for i in range(9)}
+            if len(s) != 9 or not all(c in s for c in '12345678'):
+                raise Exception("Invalid sudoku")
+    return x
+
+print("".join(sol()))
+
+assert sat(sol()), "Invalid solution"

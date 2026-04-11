@@ -1,0 +1,4 @@
+def sat(s: str) -> bool:
+    return str(2888 ** 8).count(s) > 8 and len(s) == 3
+
+print(sat("8"))

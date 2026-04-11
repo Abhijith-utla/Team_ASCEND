@@ -1,0 +1,16 @@
+def sol():
+    return [0, 0]
+
+# Test cases
+assert sat(sol())
+assert sat([30, 0])
+assert not sat([30.1, 0])
+assert sat([12, 30])
+assert sat([12, 0])
+assert not sat([0, 30])
+assert not sat([15, 0])
+assert sat([12, 45])
+assert sat([12, 90])
+assert sat([12, 180])
+assert sat([12, 270])
+assert sat([12, 360])

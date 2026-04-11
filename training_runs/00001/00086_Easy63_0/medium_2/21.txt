@@ -1,0 +1,5 @@
+def sol():
+    return "8888"
+
+# Test
+assert sat(sol())

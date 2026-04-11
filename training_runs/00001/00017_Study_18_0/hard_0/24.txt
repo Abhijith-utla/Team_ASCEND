@@ -1,0 +1,16 @@
+Here is the correct Python code to solve the problem.
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return [s + t for s in ls for t in ls if s != t]
+
+print(sat(['berlin', 'berger', 'linber', 'gerber', 'gerlin']))
+```
+
+In the function `sol`, I used a list comprehension to generate all possible combinations of the elements in `ls`. For each combination, I checked if `s` and `t` are not equal. If they are not equal, I added `s` and `t` together and appended the result to a new list.
+
+The function `sat` checks if the generated list matches the expected result 'berlin berger linber linger gerber gerlin'. This is done by converting the list to a string with `str()` and comparing it to the expected string.
+
+The function `sat` is called with a list of words as an argument. The words 'berlin', 'berger', 'linber', 'gerber', 'gerlin' are concatenated and stored in a list.

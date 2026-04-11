@@ -1,0 +1,13 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    if sorted(li) == list(range(999)):
+        if all(li[i] == i for i in range(len(li))):
+            return True
+    return False
+```
+
+This code first checks if the list `li` is sorted in ascending order and is a list of numbers from 0 to 998. If both conditions are met, it checks if all elements in `li` are equal to their corresponding index. If both conditions are met, it returns `True`, otherwise `False`.

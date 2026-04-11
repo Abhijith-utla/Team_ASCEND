@@ -1,0 +1,19 @@
+Here are three simpler versions of the sat() function that test the core concept:
+
+```python
+# Variant 1
+def sat(n: int, lace="brrrbrrbrbbbbbrrbbrr"):
+    return n >= 0 and len(lace[n: n + len(lace) // 2]) > 0
+
+# Variant 2
+def sat(n: int, lace="brrrbrrbrbbbbbrrbbrr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and len(sub) > 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+
+# Variant 3
+def sat(n: int, lace="brrrbrrbrbbbbbrrbbrr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and len(sub) > 0 and lace.count("r") == sub.count("r") * 2 and lace.count("b") == sub.count("b") * 2
+```
+
+Each variant corresponds to a different approach to testing the core concept. The first version checks if n is a non-negative number and if the second half of lace starts at position n. The second version specifically checks if the second half of lace starts at position n. The third version checks if the count of "r" in the second half of lace is twice the count of "r" in the whole lace string.

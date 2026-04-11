@@ -1,0 +1,8 @@
+def sol():
+    return 'x' * 1000
+
+# Testing the function
+print(sat(sol()))  # Should return True
+
+# Checking the function with the test
+assert sat(sol())  # Should return True

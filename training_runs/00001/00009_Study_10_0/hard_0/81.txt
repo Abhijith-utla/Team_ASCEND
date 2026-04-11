@@ -1,0 +1,8 @@
+Sure, here's the solution.
+
+```python
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+```
+
+In this solution, we first check if the string is within the number 8**1818. Then, we check if the string is the same as its reverse. Lastly, we check that the string has more than 11 characters. If all these conditions are met, we return True, otherwise we return False.

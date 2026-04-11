@@ -1,0 +1,19 @@
+Your solution seems correct. The function `sat` checks if the given string `s` contains at least 8 occurrences of a sequence of 3 digits that can be computed as 8 ** 2888. If `s` contains such a sequence, it returns `True`, otherwise it returns `False`. 
+
+Here's the function definition:
+
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) > 8 and len(s) == 3
+```
+
+Please note that this function assumes that the sequence of digits is not repeating in the string. If the sequence is repeating in the string (for example, '888' in '88888888'), the function will not be able to correctly find the sequence of 3 digits. 
+
+Here's how you can test the function:
+
+```python
+print(sat('888'))  # True
+print(sat('88'))   # False
+print(sat('8'))    # False
+print(sat(''))     # False
+```

@@ -1,0 +1,10 @@
+The function `sat(i: int)` checks if the length of the string representation of the integer `i + 1000` is greater than the length of the string representation of the integer `i + 1001`.
+
+Here is the Python code for this function:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+```
+
+The `str()` function is used to convert an integer to a string. The length of the string representation of `i + 1000` is then compared to the length of the string representation of `i + 1001`. If the length of the string representation of `i + 1000` is greater, the function returns `True`, otherwise it returns `False`.

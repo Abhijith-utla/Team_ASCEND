@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This function will not return a valid answer because the problem does not specify a valid answer.
+# It will return an empty list.

@@ -1,0 +1,13 @@
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+
+def sol():
+    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
+    return s
+
+# Checker
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+
+if __name__ == "__main__":
+    assert sat(sol())

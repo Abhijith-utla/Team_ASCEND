@@ -1,0 +1,5 @@
+def sol():
+    return len(str(len(str(1234567890)) + 1000)) != len(str(len(str(1234567890)) + 1001))
+
+# Test
+print(sat(sol()))

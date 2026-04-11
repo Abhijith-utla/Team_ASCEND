@@ -1,0 +1,4 @@
+def sol():
+    return sorted(list(range(1000)))
+
+print(sat(sol()))  # This line is for checking the solution. Please ignore it.

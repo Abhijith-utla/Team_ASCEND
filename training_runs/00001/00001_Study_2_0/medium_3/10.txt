@@ -1,0 +1,23 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
+    return s
+
+# Checker
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+```
+
+This Python code first creates a string `s` that consists of 100 'z's, followed by 101 'zo's, and followed by 98 'zz's. Then it returns this string.
+
+The checker function `sat` checks if the string `s` has exactly 100 'z's, 101 'zo's, and 98 'zz's. If it does, the function returns `True`; otherwise, it returns `False`.
+
+You can run this code with the following command:
+
+```python
+assert sat(sol())
+```
+
+This command asserts that the string returned by the `sol` function is

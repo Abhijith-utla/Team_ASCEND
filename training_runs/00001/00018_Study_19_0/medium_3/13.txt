@@ -1,0 +1,14 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [0]
+
+# This is for the assertion check
+def sat(li: List[int]):
+    return set(li) == {0}
+```
+
+This solution creates a list with a single element `0`. The function `sol()` returns this list. The `sat()` function checks if the set of the list `li` is `{0}`. This means the list contains exactly one `0`.

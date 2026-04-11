@@ -1,0 +1,9 @@
+Here is the Python code for the correct pattern:
+
+```python
+def sol():
+    li = [0] * 20
+    return li
+```
+
+This code creates a list of 20 zeros and returns it as the answer. This is because the sum of all elements in the list is 2**20 - 1, which is equal to 2**19 - 1.

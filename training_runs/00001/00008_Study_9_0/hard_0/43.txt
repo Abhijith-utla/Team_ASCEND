@@ -1,0 +1,16 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return [ord(i) for i in "The quick brown fox jumps over the lazy dog"] == list(
+        "The five boxing wizards jump quickly")
+
+def sat(li: List[int]):
+    return all([chr(i) == "The quick brown fox jumps over the lazy dog"[i] for i in li])
+```
+
+The function `sol` returns a list of ASCII values corresponding to each character in the string "The quick brown fox jumps over the lazy dog".
+
+The function `sat` checks if all elements in the list `li` correspond to the same ASCII values as the corresponding characters in the string "The quick brown fox jumps over the lazy dog". If all characters match, the function returns `True`, otherwise it returns `False`.
+
+The function `sat` is incorrect because it uses `ord` function to get the ASCII value, but it doesn't check if the string "The quick brown fox jumps over the lazy dog"[i] actually corresponds to the ASCII value `i

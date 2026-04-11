@@ -1,0 +1,4 @@
+def sol():
+    return 1
+
+print(sat(sol()))  # should not raise an AssertionError

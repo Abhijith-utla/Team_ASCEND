@@ -1,0 +1,18 @@
+def sol():
+    return [source[:] for source in source]
+
+# Test case
+moves = [[0, 1], [2, 3], [1, 2]]
+assert sat(moves)
+
+moves = [[0, 1], [0, 2], [2, 0]]
+assert not sat(moves)
+
+moves = [[0, 1], [1, 0]]
+assert sat(moves)
+
+moves = [[0, 1], [1, 1]]
+assert not sat(moves)
+
+moves = [[0, 1], [1, 2], [2, 1]]
+assert not sat(moves)

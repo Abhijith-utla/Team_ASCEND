@@ -1,0 +1,13 @@
+Here is the Python code that meets the requirements of the problem.
+
+```python
+def sol():
+    return float(input()) + len(input()) == 4.5
+
+# Testing the function
+assert sat(sol)
+```
+
+This function `sol` will ask the user to input a float number and a string. It will then compare the sum of the float number and the length of the string to 4.5. If the conditions are met, the function will return `True`, otherwise `False`.
+
+The `assert` statement is used to test the correctness of the function. If the function `sat` returns `True`, nothing will happen, but if it returns `False`, a `AssertionError` will be raised. This is why it is important to test the function with a proper input to ensure it works correctly.

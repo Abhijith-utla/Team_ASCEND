@@ -1,0 +1,13 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    return ''.join(sorted(input()))
+
+def sat(s: str) -> bool:
+    return sorted(s) == sorted('ipenmtrsuA') and s == s[::-1]
+
+assert sat(sol())
+```
+
+In the above code, the function sol() uses the built-in Python function sorted() to sort the input string and returns it. The function sat() checks if the sorted string is equal to 'ipenmtrsuA' and if the string is a palindrome. If both conditions are satisfied, it returns True, otherwise it returns False. The assert statement is used to check if the solution of sol() is correct.

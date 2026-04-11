@@ -1,0 +1,21 @@
+The given Python function named sat(answer) seems to be checking if the length of the string representation of a number is greater than the length of the string representation of a number one more than that number. However, there seems to be a mistake in the function. The function should return whether the difference between the length of the string representation of a number and one more than that number is greater than the length of the string representation of a number one less than that number, not the length of the string representation of a number plus 1000. 
+
+Here is the correct pattern:
+
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 1)) > len(str(i))
+```
+
+This function checks if the length of the string representation of a number is greater than the length of the string representation of a number one more than that number. 
+
+The checker will run: `assert sat(sol())`
+
+You can use the following code as a start:
+
+```python
+def sol() -> int:
+    i = 12345
+    while not sat(i):
+        i += 1
+    return i

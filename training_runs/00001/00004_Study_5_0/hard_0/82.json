@@ -1,0 +1,16 @@
+{
+  "attempt_num": 82,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:14:18.084622+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=The function `sat` is already defined by the user, and it's a function that takes a list of integers and checks if al...",
+  "difficulty": "hard",
+  "problem_id": "00004_Study_5_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

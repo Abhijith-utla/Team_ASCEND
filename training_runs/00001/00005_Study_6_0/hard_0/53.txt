@@ -1,0 +1,23 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This solution starts with `i = 0` and increments `i` by 1 in each iteration of the loop until `sat(i)` returns `True`. This means `i` is greater than 10^10 and divisible by 123. So, `i` is a solution to the problem.
+
+The `assert` statement is used to verify that the function `sol` is working correctly.
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+
+# test the function
+assert sat(sol())
+```
+
+This `assert` statement will fail if `sol` returns a value that is not a solution to the problem.

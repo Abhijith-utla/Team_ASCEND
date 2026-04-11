@@ -1,0 +1,19 @@
+The Python function `sat` checks if a list `li` contains the pattern where each pair of numbers in the list sums to 9 and the list has a length of 1000. 
+
+The correct pattern for the function `sat` is:
+
+```python
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function should return `True` if the list `li` satisfies all the conditions given in the problem statement, and `False` otherwise.
+
+The incorrect pattern for the function `sat` is:
+
+```python
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1001
+```
+
+This function will not return `True` for the incorrect list `li` because the length of the list is 1000, not 1001. The `len(li) == 1000` condition is incorrect because it checks

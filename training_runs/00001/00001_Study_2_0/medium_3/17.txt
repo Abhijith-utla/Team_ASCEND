@@ -1,0 +1,8 @@
+```python
+def sol():
+    answer = {}
+    answer['s'] = 'za'*99 + 'zo'*100 + 'z'*98
+    return answer
+
+assert sat(sol()['s'])
+```

@@ -1,0 +1,7 @@
+def sol():
+    s = 'Python'  # Replace 'Python' with any Python string of length between 5 and 30
+    assert sat(s)
+    return s
+
+# Testing
+print(sol())

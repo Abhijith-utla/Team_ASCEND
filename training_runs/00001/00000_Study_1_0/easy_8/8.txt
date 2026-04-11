@@ -1,0 +1,15 @@
+Here is the correct solution for the given problem. The function `sat` takes a string as input and checks if it contains 'oo'. If it does, the function returns `False`, otherwise it returns `True`.
+
+```python
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True
+```
+
+Now, you can call the function with a string and it will return `True` if the string contains 'oo', and `False` otherwise. For example:
+
+```python
+print(sat("hellooo"))  # Output: False
+print(sat("hello"))    # Output: True
+```

@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# This is a bit tricky, as the function 'sol' is required to return an answer.
+# The function 'sol' is designed to return an empty list.
+# In reality, you would need to return the coordinates that violate the equation,
+# which would require more information than the function 'sol' accepts, such as the side length.
+# If you need help with that, please let me know!

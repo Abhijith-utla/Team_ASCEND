@@ -1,0 +1,12 @@
+def sol():
+    return [1, 1, 1, 1]
+
+# Testing the solution
+print(sat(sol()))  # True
+
+# Incorrect pattern
+def sol(x):
+    ...
+
+# Testing the solution with incorrect parameters
+print(sat(sol(1)))  # False

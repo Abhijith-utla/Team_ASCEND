@@ -1,0 +1,29 @@
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if s not in options:
+            return False
+    return sum(stamps) == target
+
+def sol():
+    return []
+
+# Incorrect patterns
+def sol(x):
+    pass
+
+# Correct patterns
+def sol(stamps=[10, 32, 8], target=80, max_stamps=4, options=[10, 32, 8]):
+    if len(stamps) > max_stamps or any(s not in options for s in stamps):
+        return False
+    return sum(stamps) == target
+
+# Checker
+assert sat(sol())
+assert not sat(sol([30, 32, 7]))
+assert not sat(sol([10, 32, 8], target=80, max_stamps=3, options=[10, 32, 8]))
+assert sat(sol([10, 32, 8], target=80, max_stamps=4, options=[10, 32, 8]))
+
+if __name__ == "__main__":
+    assert sat(sol())

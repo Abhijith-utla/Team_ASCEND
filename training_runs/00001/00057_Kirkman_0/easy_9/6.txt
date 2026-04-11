@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The function sol() is empty because it doesn't have any code to be executed. It is just a return statement, which means the function will return an empty list.

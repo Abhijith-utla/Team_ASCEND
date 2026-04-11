@@ -1,0 +1,10 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function `sat` takes a list of integers as an argument and returns `True` if all elements in the list occur the same number of times from 0 to 9. If any element in the list does not occur the same number of times from 0 to 9, the function returns `False`.

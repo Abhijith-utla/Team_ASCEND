@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# The following assert statement will fail the assertion if the function 'sat' is not defined correctly.
+assert sat()

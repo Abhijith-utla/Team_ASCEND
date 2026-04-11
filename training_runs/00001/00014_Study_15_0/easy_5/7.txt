@@ -1,0 +1,8 @@
+Sure, here's the correct implementation of the `sol` function:
+
+```python
+def sol():
+    return [i for i in range(20) if all(i + j == 2 ** j for j in range(i + 1))]
+```
+
+This function generates a list of integers from 0 to 19 that are powers of 2. It checks if the sum of each number and its index is equal to 2 raised to the power of the index, which is a property of the binary system. If it is, it adds it to the list.

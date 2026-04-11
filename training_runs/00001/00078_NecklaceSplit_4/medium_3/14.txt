@@ -1,0 +1,10 @@
+def sol():
+    return 0
+
+# The answer object
+def sol_answer():
+    return 0
+
+# The answer object's explanation
+def sol_explanation():
+    return "The answer object for the solution."

@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+This function `sat` checks if the list `li` has exactly 10 elements and the element at index 3 (which is the fourth element in the list) appears exactly twice. If these conditions are met, the function returns `True`; otherwise, it returns `False`.

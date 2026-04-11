@@ -1,0 +1,11 @@
+Here is a Python solution for this problem:
+
+```python
+def sol():
+    s = str(8 ** 2888)
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+
+# The checker will run: assert sol()
+```
+
+This solution works by first converting the number 8 to the power of 2888 and converting it to a string. Then it counts how many times the string s appears in the string 8 ** 2888. If the count is greater than 8 and the length of s is 3, the function returns True, otherwise it returns False.

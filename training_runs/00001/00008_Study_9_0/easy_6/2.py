@@ -1,0 +1,12 @@
+def sat(li: List[str]):
+    return all(len(i) <= 5 for i in li) and all(i.isalpha() for i in li)
+
+def sol():
+    return [i for i in input().split() if len(i) <= 5 and i.isalpha()]
+
+# Checker
+def sat(li: List[str]):
+    return all(len(i) <= 5 for i in li) and all(i.isalpha() for i in li)
+
+if __name__ == "__main__":
+    assert sat(sol())

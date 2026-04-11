@@ -1,0 +1,21 @@
+def sol():
+    return 0
+
+print(sat(0))  # True
+print(sat(39))  # True
+print(sat(40))  # False
+print(sat(30))  # True
+print(sat(59))  # True
+print(sat(60))  # False
+print(sat(120))  # True
+print(sat(180))  # True
+print(sat(23.5))  # False
+print(sat(59.9))  # False
+print(sat(60.1))  # False
+print(sat(120.2))  # False
+print(sat(180.1))  # False
+print(sat(23.4, 45))  # True
+print(sat(59.8, 45))  # True
+print(sat(60.2, 45))  # False
+print(sat(120.3, 45))  # False
+print(sat(180.2, 45))  # False

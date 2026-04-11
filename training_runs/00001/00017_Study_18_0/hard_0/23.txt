@@ -1,0 +1,4 @@
+def sol():
+    return [s + t for s in ['berlin', 'berg', 'linber', 'gerber', 'gerlin'] for t in ['berlin', 'berg', 'linber', 'gerber', 'gerlin'] if s != t]
+
+assert sat(sol())

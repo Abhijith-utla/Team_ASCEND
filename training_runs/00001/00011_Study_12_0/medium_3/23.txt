@@ -1,0 +1,12 @@
+The problem statement is not clear. It seems like the user wants to create a function named `sol` that checks if a list of integers has a specific property. However, the given code snippet appears to be part of a larger function named `sat`.
+
+Here is a corrected version of the function `sol`:
+
+```python
+def sol():
+    return [1]*1000
+```
+
+This function creates and returns a list of 1000 elements where each element is 1.
+
+Please provide more context if you need a different solution.

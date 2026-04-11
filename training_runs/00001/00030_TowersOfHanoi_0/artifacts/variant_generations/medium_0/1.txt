@@ -1,0 +1,26 @@
+Variant 1:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+    return rods[0] == rods[1] == []
+```
+
+Variant 2:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [2], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+    return rods[0] == rods[1] == []
+```
+
+Variant 3:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+    return rods[0] == rods[1] == []
+```

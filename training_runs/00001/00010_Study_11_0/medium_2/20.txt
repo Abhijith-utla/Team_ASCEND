@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# Testing
+print(sat(sol()))  # Should return True
+print(sat(sol(['a', 'aa', 'aaa'])))  # Should return False
+print(sat(sol(['ab', 'ab', 'abc'])))  # Should return True
+print(sat(sol(['', 'b', 'ccc'])))  # Should return False

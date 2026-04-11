@@ -1,0 +1,33 @@
+Here are the three simpler variants of the original Python function:
+
+VARIANT1:
+```python
+def sat(hands: Tuple[int, int]):
+    h, m = hands
+    assert 0 <= h < 24 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(hour_angle - minute_angle) in [39, 359 - 39]
+```
+
+VARIANT2:
+```python
+def sat(hands: Tuple[int, int]):
+    h, m = hands
+    assert 0 <= h < 24 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(hour_angle - minute_angle) in [40, 359 - 40]
+```
+
+VARIANT3:
+```python
+def sat(hands: Tuple[int, int]):
+    h, m = hands
+    assert 0 <= h < 24 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(hour_angle - minute_angle) in [38, 360 - 38]
+```
+
+Please note, these are simplified versions of the function. In actual use, you would need to include more complex and specific assert statements to ensure the correctness of the solution.

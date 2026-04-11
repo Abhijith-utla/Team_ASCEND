@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    li = [2 ** i - 1 for i in range(20)]
+    return li
+
+print(sol())
+```
+
+This code creates a list of 20 elements where each element is the result of 2 raised to the power of its index minus 1, and then returns this list. The assert statement in the solution is not necessary here, as the function returns the correct value.

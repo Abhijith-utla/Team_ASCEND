@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    s = 'oo' * 1000 + 'o'
+    return s
+
+print(sol())
+```
+
+In this solution, we first create a string `s` that consists of 'oo' repeated 1000 times, followed by 'o'. The string 'oo' not in `s` is ensured because the string 'oo' does not occur anywhere in `s`. Similarly, the string 'o' in `s` is ensured because 'o' appears 1000 times in `s`. Therefore, `s` contains exactly 1000 'o's.

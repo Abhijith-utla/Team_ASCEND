@@ -1,0 +1,6 @@
+def sol():
+    s = input()
+    if sat(s):
+        return {"answer": "YES"}
+    else:
+        return {"answer": "NO"}

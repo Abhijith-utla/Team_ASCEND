@@ -1,0 +1,5 @@
+def sol():
+    return lambda colors: not any(c == d == colors[i + 1] for i, c in enumerate(colors[:-1]) for d in colors[i + 2:])
+
+# Testing the solution
+assert sat(lambda colors: not any(c == d == colors[i + 1] for i, c in enumerate(colors[:-1]) for d in colors[i + 2:]))(["red", "blue", "green", "yellow", "orange", "purple"])

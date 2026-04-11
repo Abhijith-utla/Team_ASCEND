@@ -1,0 +1,9 @@
+Here is the Python code to solve this problem:
+
+```python
+def sol():
+    s = 'ooooooooooooooxxx'
+    return s.count('x') == 100 and s.count('o') == 101 and s.count('xx') == 98
+```
+
+This function `sol` constructs and returns a single answer value that checks if the string `s` contains exactly 100 'x's, 101 'o's, and 98 'xx's. The checker will run `assert sat(sol())` to verify the solution.

@@ -1,0 +1,10 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    li = list(range(998))
+    li.remove(499)
+    return li
+```
+
+This code first creates a list from 0 to 997. It then removes the number 499 from this list. Finally, it returns the modified list.

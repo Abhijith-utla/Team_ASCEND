@@ -1,0 +1,11 @@
+def sol():
+    i = 1234567890123456789
+    while not sat(i):
+        i += 1
+    return i
+
+# Checker code
+def check(sol):
+    assert sol() % 123 == 4 and sol() > 10 ** 10
+
+check(sol)

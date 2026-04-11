@@ -1,0 +1,4 @@
+def sol():
+    return {'answer': 'Hello World'}
+
+assert sat(sol()['answer'])

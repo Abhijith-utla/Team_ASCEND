@@ -1,0 +1,13 @@
+The function `sat` is a string-based assertion function that checks if the string `s` is valid according to the following conditions:
+
+- The string `s` does not contain the substring 'oo'.
+- The string `s` contains the substring 'o' exactly 1000 times.
+
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return 'oo' not in 'o' * 1000
+```
+
+The solution is valid if the string `s` contains the substring 'oo' exactly 1000 times. This is because the 'o' character is repeated 1000 times, and 'oo' is not in the string. If `s` does not contain the substring 'oo' exactly 1000 times, then `s` does not satisfy the conditions of the function `sat`.

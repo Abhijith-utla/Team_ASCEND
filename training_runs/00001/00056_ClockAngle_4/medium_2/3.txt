@@ -1,0 +1,4 @@
+def sol():
+    hour = 12
+    minute = 0
+    return hour, minute

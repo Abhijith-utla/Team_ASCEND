@@ -1,0 +1,15 @@
+Sure, here is the correct Python code for the solution.
+
+```python
+def sol():
+    s = 'ho' * 1000
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+
+The provided function `sat` takes a string `s`, replaces 'o' with 'oo' to make it equal in length to 1000 and then counts the occurrences of 'o', 'oo' and 'ho' to check if they all occur 1000 times, 100 times and 801 times respectively. If all these conditions are satisfied, the function returns `True`, else `False`.
+
+The final checker will run:
+```python
+assert sat(sol())
+```
+This will ensure that the function `sol` returns `True` when called.

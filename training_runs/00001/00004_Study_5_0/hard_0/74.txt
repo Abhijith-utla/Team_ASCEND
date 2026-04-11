@@ -1,0 +1,5 @@
+def sol():
+    return 11
+
+# You can verify the answer by running the following code:
+# assert sat(sol())

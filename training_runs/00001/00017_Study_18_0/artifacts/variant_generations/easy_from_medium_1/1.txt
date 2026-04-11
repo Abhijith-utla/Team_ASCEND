@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+VARIANT2:
+```python
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+VARIANT3:
+```python
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+```

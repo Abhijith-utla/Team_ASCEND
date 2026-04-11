@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li if i != j)
+
+assert sat(sol())

@@ -1,0 +1,10 @@
+Here is a python solution for the problem:
+
+```python
+def sol():
+    return "random string"
+```
+
+The solution is simply a string that can be whatever you like. It does not take any arguments and doesn't return anything.
+
+However, this function is incorrect because it checks if the element at index `idx1` is in the list `ls[idx2]`, which is not a valid statement in Python. The correct statement should be `ls[idx1] in ls[idx2]`.

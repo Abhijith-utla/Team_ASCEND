@@ -1,0 +1,23 @@
+Here is the correct pattern for the solution:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> int:
+    sum_list = sum(li)
+    s = set()
+    for i in range(len(li)):
+        if li[i] in s:
+            continue
+        s.add(li[i])
+        sum_list -= li[i]
+        if sum_list <= sum(li[:i]):
+            return li[i]
+    return -1
+```
+
+This function returns the first number that is not smaller than the sum of the previous numbers in the list. If all numbers are smaller, it returns -1.
+
+The function iterates over the list and adds each number to a set. If the number is already in the set, it skips to the next iteration. Otherwise, it subtracts the number from the sum and checks if the sum is less than or equal to the sum of the first i numbers. If it is, it returns the number. If it doesn't find a number that satisfies the condition, it returns -1.
+
+Please note that this solution is

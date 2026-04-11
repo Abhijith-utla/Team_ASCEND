@@ -1,0 +1,16 @@
+The function `sat` checks if the string `s` does not contain the substring 'ooo' and contains exactly 1000 'o' characters. This is the correct pattern for the function.
+
+Here's the Python code for the function:
+
+```python
+def sat(s: str):
+    return 'ooo' not in s and 'o' in s and s.count('o') == 1000
+```
+
+You can use this function as follows:
+
+```python
+assert sat(sol())
+```
+
+This will pass the assert statement if `sol()` returns a string that meets the conditions.

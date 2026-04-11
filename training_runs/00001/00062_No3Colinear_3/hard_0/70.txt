@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# The function is correct but it will fail the assert statement inside the loop.
+# The correct solution is to create a list of coordinates and then pass it to the function.
+# I'm assuming the function is working correctly if the problem is solved properly.
+# If it fails, the solution must be different.
+
+# Example:
+# If we have a square with sides of 2, we need 4 points to make a polygon.
+# If the function is not solving correctly, it should return False.
+# And if it is, it should return True.
+
+# Testing the function with the example:
+assert not sat([[0, 0], [1, 0], [1, 1], [0, 1]])
+assert sat([[0, 0], [1, 0], [1, 1], [0, 1], [1, 2], [2, 2]])

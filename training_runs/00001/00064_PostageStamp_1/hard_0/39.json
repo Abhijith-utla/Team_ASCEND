@@ -1,0 +1,16 @@
+{
+  "attempt_num": 39,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T15:20:31.361735+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=29|checked=29/29|preview=def sol(): return [] # Test Case 1 assert sat([37, 37, 12, 87, 39]) == True # Test Case 2 assert sat([37, 37, 12, 87,...",
+  "difficulty": "hard",
+  "problem_id": "00064_PostageStamp_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

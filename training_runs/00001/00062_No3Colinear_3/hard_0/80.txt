@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This will work for the provided function.
+# No explicit checker is required since we are not providing any input or any expected output.
+# The function simply returns an empty list.

@@ -1,0 +1,19 @@
+The provided code is a mathematical problem that involves calculating the area of a polygon given its vertices. The area of a polygon is calculated as the sum of the products of the coordinates of its vertices, divided by 2. The formula is:
+
+Area = |1/2 * x1(y2 - y3) + 1/2 * x2(y3 - y1) + 1/2 * x3(y1 - y2)|
+
+The code checks if the area of the polygon is non-zero, which means the polygon is a valid polygon.
+
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(coords: List[List[int]], side=10, num_points=20):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[i2]
+            for i3 in range(i2):
+                x3, y3 = co

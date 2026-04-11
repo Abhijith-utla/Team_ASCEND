@@ -1,0 +1,5 @@
+def sol():
+    x = [i for i in range(193)]
+    return x
+
+# assert sat(sol())

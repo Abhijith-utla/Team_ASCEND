@@ -1,0 +1,6 @@
+def sol():
+    ls = ["Hello", "World", "!"]
+    assert sat(ls)
+    return ls
+
+print(sol())

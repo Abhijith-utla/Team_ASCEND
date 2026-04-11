@@ -1,0 +1,8 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return []
+```
+
+This function simply returns an empty list, which is the correct answer to satisfy the given conditions. The checker will run: assert sat(sol()) which should return True.

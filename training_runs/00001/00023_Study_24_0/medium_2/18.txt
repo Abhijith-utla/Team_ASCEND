@@ -1,0 +1,14 @@
+Here is the Python solution:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 3]
+```
+
+In this solution, the function sol returns a list containing the integers 17 and 3. This list serves as the answer to the problem.
+
+The function sat is already defined by the user, so we don't need to provide it.
+
+The final checker will run: assert sat(sol())

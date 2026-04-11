@@ -1,0 +1,22 @@
+Sure, here is a Python solution for the problem.
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4, 5]
+
+assert sat(sol())
+```
+
+In the above code, we define a function named `sol` that returns a list of integers from 1 to 5. We then check the condition `sat(sol())` using the `assert` statement. This condition will return `True` if the list returned by `sol()` is a list of 1000 elements where each element is a sum of the previous two elements, else it will return `False`.
+
+Please replace `[1, 2, 3, 4, 5]` with your own list of numbers. The current list is just a placeholder.
+
+If you want to generate a list of numbers with a specific pattern, you can replace the `sol` function with the following:
+
+```python
+def sol(n=1000):
+    return [i + (i-1 if i > 0 else 0) for i in range(n)]
+
+assert sat(sol())

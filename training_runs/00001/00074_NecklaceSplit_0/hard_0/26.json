@@ -1,0 +1,16 @@
+{
+  "attempt_num": 26,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:03:52.564170+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=39|checked=39/39|preview=def sol(): return \"\" assert sat() assert not sat() assert sat(0) assert not sat(1) assert sat(2) assert not sat(3) as...",
+  "difficulty": "hard",
+  "problem_id": "00074_NecklaceSplit_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

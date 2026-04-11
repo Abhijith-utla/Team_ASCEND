@@ -1,0 +1,9 @@
+def sol():
+    return [37, 37, 12, 87, 39]
+
+print(sat(sol()))  # Should print: True
+
+# For manual testing
+assert sat(sol())
+assert not sat([37, 37, 12, 87])
+assert not sat([37, 37, 12, 87, 39, 39])

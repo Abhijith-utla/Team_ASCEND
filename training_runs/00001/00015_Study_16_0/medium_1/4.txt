@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol() -> float:
+    return 4.5
+```
+
+The function `sol` does not take any arguments and returns a float value of `4.5`.

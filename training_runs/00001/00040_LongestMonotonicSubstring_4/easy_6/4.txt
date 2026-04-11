@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Test case
+assert sat(["a", "b", "c", "d", "e"])
+assert not sat(["d", "c", "b", "a", "e"])

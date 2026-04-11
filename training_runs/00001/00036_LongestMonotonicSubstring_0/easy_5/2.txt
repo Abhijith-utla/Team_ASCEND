@@ -1,0 +1,8 @@
+Here is the correct pattern for the code:
+
+```python
+def sol():
+    return []
+```
+
+In this case, the function sol does not take any argument and always returns an empty list. This is a valid answer as per the rule provided.

@@ -1,0 +1,9 @@
+def sol():
+    return 1
+
+# Add your code here
+
+# Add test cases below this line
+if __name__ == "__main__":
+    assert sat(sol())
+    print("All tests passed")

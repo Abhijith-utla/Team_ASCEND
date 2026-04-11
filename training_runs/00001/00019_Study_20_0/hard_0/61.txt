@@ -1,0 +1,5 @@
+def sol():
+    return { 'answer': [3*i for i in range(128)] }
+
+# Test
+# assert sat(sol())

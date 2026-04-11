@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T08:46:20.635437+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=14|checked=14/14|preview=def sol(): return [] # This function should return an answer object that contains a single integer value. # In Python...",
+  "difficulty": "easy",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

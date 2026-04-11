@@ -1,0 +1,9 @@
+def sol():
+    return [i + 1 for i, j in zip([0] + [128] * 31, [128] * 31)]
+
+def main():
+    print(sol())
+    assert sat(sol())
+
+if __name__ == "__main__":
+    main()

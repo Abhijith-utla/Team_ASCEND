@@ -1,0 +1,6 @@
+Here is the correct Python code for the solution:
+
+```python
+def sol():
+    return ["a"]
+```

@@ -1,0 +1,13 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    def sat(i: int):
+        return len(str(i + 1000)) > len(str(i + 1001))
+
+    return sat
+```
+
+This code defines a function named `sol` that takes no arguments. Inside this function, it defines another function named `sat`. This `sat` function takes an integer `i` as an argument and returns `True` if the length of the string representation of `i + 1000` is greater than the length of the string representation of `i + 1001`. If the length of the string representation of `i + 1000` is not greater than the length of the string representation of `i + 1001`, the `sat` function returns `False`. The `sol` function returns the `sat` function.
+
+The function `sat` is used in the `sol` function to check the condition. The final checker will run: `assert sat(sol())`. This will ensure that the function `sol` returns the expected answer.

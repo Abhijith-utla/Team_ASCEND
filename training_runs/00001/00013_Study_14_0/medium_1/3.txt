@@ -1,0 +1,8 @@
+def sol():
+    li = [int(x) for x in input().split()]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all([i < sum(li[:i]) for i in range(20)])
+
+assert sat(sol())

@@ -1,0 +1,8 @@
+def sol():
+    answer = [3, 6, 9]
+    return answer
+
+print(sol())
+
+# Assertion check
+assert sat(sol())

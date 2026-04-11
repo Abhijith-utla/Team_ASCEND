@@ -1,0 +1,21 @@
+def sat(l: list):
+    return all(i in range(996) for i in l if abs(i * i - j * j) >= 10)
+
+def sol():
+    result = []
+    for i in range(-996, 1000):
+        for j in range(-996, 1000):
+            if abs(i * i - j * j) >= 10:
+                result.append(i * i + j * j)
+    return result
+
+# This is a test case to check if the solution is correct.
+def test():
+    answer = sol()
+    assert sat(answer)
+
+# Run the test case
+test()
+
+if __name__ == "__main__":
+    assert sat(sol())

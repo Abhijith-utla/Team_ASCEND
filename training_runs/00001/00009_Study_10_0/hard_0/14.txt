@@ -1,0 +1,16 @@
+Here is a solution for the problem:
+
+```python
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+```
+
+The function `sat` takes a string `s` as an argument and returns a boolean value based on the conditions given in the problem statement.
+
+The first condition `s in str(8 ** 1818)` checks whether the string `s` is a substring of the string representation of the number `8 ** 1818`.
+
+The second condition `s == s[::-1]` checks whether the string `s` is the same as its reverse.
+
+The last condition `len(s) > 11` checks whether the length of the string `s` is greater than 11.
+
+All these conditions must be met for the function to return `True`.

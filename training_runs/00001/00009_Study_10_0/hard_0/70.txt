@@ -1,0 +1,4 @@
+def sol():
+    return next(s for s in ["8" * i for i in range(1, 1819)] if sat(s))
+
+print(sol())

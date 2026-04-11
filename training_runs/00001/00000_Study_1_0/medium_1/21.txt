@@ -1,0 +1,6 @@
+def sol():
+    return 'oo' in 'oooooooooooo' and 'oo' in 'oooooooooooo' and 'oo' in 'oooooooooooo'
+
+# The output must be valid Python code only.
+print("assert sol()")
+assert sat(sol())

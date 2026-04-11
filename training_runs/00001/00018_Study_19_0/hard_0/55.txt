@@ -1,0 +1,9 @@
+```python
+from typing import List
+
+def sol():
+    li = [i + j for i in range(10) for j in range(10)]
+    return li
+
+print(sat(sol()))
+```

@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return 1001
+
+assert sat(sol())
+```
+
+In this case, the function `sat` checks if the length of the string representation of `i + 1000` is greater than the length of `i + 1001`. If this condition is true, the function returns `1001`, which is the correct answer. The assert statement is used to ensure that the function `sat` returns the correct answer.

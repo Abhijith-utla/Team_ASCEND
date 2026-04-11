@@ -1,0 +1,14 @@
+Here is the Python code that satisfies all the conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+This function takes a list of integers as input and returns True if the list has exactly 10 elements and the third element appears twice in the list, and False otherwise.

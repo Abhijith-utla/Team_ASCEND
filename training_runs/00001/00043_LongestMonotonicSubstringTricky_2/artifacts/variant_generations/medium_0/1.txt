@@ -1,0 +1,19 @@
+Variant 1:
+```python
+def sat(x: List[int]) -> bool:
+    length = len(x)
+    return all(x[i] <= x[i + 1] for i in range(length - 1))
+```
+
+Variant 2:
+```python
+def sat(x: List[int], s="O!A{SeKv") -> bool:
+    length = len(x)
+    return all(ord(s[x[i]]) <= ord(s[x[i + 1]]) for i in range(length - 1))
+```
+
+Variant 3:
+```python
+def sat(x: int, length=1, s="O!A{SeKv") -> bool:
+    return all(ord(s[x[i]]) <= ord(s[x[i + 1]]) for i in range(length - 1))
+```

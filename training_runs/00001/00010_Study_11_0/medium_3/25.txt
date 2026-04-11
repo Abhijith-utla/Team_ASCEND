@@ -1,0 +1,13 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+This function `sol` takes a list of strings as input, and returns True if all the strings in the list are of the same length, and all the characters in all strings are unique, otherwise it returns False. The function uses the built-in Python function `set` to get a set of all unique characters in each string. If the length of the set of characters is equal to the length of the first string, the function returns True; otherwise, it returns False.

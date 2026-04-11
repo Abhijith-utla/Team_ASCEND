@@ -1,0 +1,28 @@
+Here are three variants of the function named sat that test the same core concept:
+
+```python
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+
+VARIANT1:
+def sat(stamps, target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+
+VARIANT2:
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+
+VARIANT3:
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+```
+
+These variants only difference in the order of the function arguments.

@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return ''.join(sorted(s)) == ''.join(sorted('sirnemtpuA')) and ''.join(sorted(s)) == ''.join(reversed('sirnemtpuA'))
+```
+
+In this solution, we use the sorted() function to sort the input string, and then compare it to the sorted version of the string 'sirnemtpuA' to check if the string is a palindrome. We also check if the sorted string is the same as its reverse to ensure the string is a palindrome. If both conditions are met, the function returns True, otherwise it returns False.

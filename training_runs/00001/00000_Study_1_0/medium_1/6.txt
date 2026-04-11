@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'ooooooooooooooooooooo' and 'oo' in 'ooooooooooooooooooooo'

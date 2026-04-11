@@ -1,0 +1,8 @@
+The Python code to construct a single answer value is:
+
+```python
+def sol():
+    return 42
+```
+
+The answer is 42.

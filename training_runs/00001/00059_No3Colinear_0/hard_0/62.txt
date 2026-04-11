@@ -1,0 +1,8 @@
+def sol():
+    return {(a, b) for a, b in coords} == len(coords) >= num_points
+
+# Test cases
+assert sat([(0, 0), (5, 5), (2, 2), (7, 7)]) == True
+assert sat([(0, 0), (5, 5), (2, 2), (3, 3)]) == False
+assert sol() == True
+assert sol() == False

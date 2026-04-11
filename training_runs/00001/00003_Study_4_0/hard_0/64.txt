@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+The function `sat` checks if the length of the list is 10 and the number of occurrences of the number 5 in the list is 2. If both conditions are met, it returns `True`, otherwise it returns `False`.

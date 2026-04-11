@@ -1,0 +1,6 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return 'abc4.5'
+```

@@ -1,0 +1,15 @@
+Sure, here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return 0
+```
+
+And here is the Python code for the `sat` function:
+
+```python
+def sat(i: int) -> bool:
+    return i == 0
+```
+
+The `sat` function is used to check if the input is 0. If the input is 0, then the function returns True, else it returns False.

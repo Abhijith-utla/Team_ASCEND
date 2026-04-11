@@ -1,0 +1,4 @@
+def sol():
+    return "81-*18+"
+
+# Final checker will run: assert sat(sol())

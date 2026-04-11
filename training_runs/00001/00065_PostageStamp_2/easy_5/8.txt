@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# testing
+print(sat(sol(), 10))  # True
+print(sat(sol(), 11))  # False
+print(sat(sol(), 12))  # False
+print(sat(sol(), 43))  # True

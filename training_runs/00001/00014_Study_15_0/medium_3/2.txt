@@ -1,0 +1,10 @@
+The correct Python code for the problem is:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+This function takes a list of integers and returns True if all elements in the list are equal to the sum of the first i elements for i from 0 to 19, where the list is indexed by i. If all elements are equal, it returns True, otherwise it returns False.

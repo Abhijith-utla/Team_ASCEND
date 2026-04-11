@@ -1,0 +1,14 @@
+Here is the Python code that satisfies the requirements:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+The function `sat` checks if all elements in the list `li` occur the same number of times (excluding `0`) and exactly once. This means the list `li` should contain exactly 10 numbers (from 0 to 9), each occurring exactly once.
+
+The function `all` checks if all elements in the list `li` satisfy the condition inside the list comprehension. If all elements satisfy the condition, `all` returns `True`. If any element does not satisfy the condition, `all` returns `False`.
+
+If `li` contains exactly 10 numbers from 0 to 9 and exactly one `0`, then `li` satisfies the condition, and the function `sat` returns `True`. If `li` does not satisfy the condition, the function `sat` returns `False`.
+
+The function `li.count(i) == i`

@@ -1,0 +1,22 @@
+Sure, here is a Python function named `sol` that satisfies the given condition:
+
+```python
+from typing import List
+
+def sol():
+    li = [4] * 999 + [1]
+    return li
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function creates a list with 999 elements of the number 4 and 1 at the end. Then it returns this list. The function `sat` checks if the list satisfies the condition that each pair of elements in the list sums up to 3 and the length of the list is 1000.
+
+You can run the assert statement to check the solution:
+
+```python
+assert sat(sol())
+```
+
+This will raise an assertion error if the solution is incorrect.

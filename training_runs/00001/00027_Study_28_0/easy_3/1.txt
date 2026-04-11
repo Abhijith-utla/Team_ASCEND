@@ -1,0 +1,6 @@
+def sol():
+    import random
+    li = [random.randint(-500, 500) for _ in range(1000)]
+    return li
+
+print(sat(sol()))

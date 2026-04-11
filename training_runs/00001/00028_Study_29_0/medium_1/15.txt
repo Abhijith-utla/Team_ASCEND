@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Here is the solution to the problem. The function `sat` takes a list of numbers, and returns True if all the pairs of numbers satisfy the condition that the square of the first number is greater than or equal to the square of the second number, and the difference is at least 10. 
+# The `all` function returns True if all the conditions in the generator are True. If any condition is False, the generator will stop and return False.
+
+# Here is the code for the solution
+
+def sol():
+    return [i for i in range(1000) for j in range(i+1, 1000) if abs(i * i - j * j) >= 10]

@@ -1,0 +1,12 @@
+def sol():
+    return [str(i) for i in [1, 2, 3, 4, 5, 6, 7, 8]]
+
+# The function `sat` is already defined by the user. It checks if a list of strings is equal to the string "12345678" and all the strings in the list have the length of 8.
+
+# If both conditions are satisfied, the function returns the list of strings.
+
+# The function `sol` is defined to return a list of strings of numbers 1 to 8.
+
+# The final checker will run: assert sat(sol())
+
+# If the solution is correct, the checker will pass. If not, the checker will fail.

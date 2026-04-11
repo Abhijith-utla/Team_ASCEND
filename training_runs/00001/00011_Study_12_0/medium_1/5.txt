@@ -1,0 +1,8 @@
+def sol():
+    li = [4] + [1]*999
+    return li
+
+print(sol())
+
+# Assertion test:
+assert sat(sol())

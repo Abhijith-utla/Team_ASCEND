@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return [ord(c) for c in "The quick brown fox jumps over the lazy dog" if c in "The quick brown fox jumps over the lazy dog"] == [ord(c) for c in "The five boxing wizards jump quickly"]
+```
+
+This solution works by converting the strings to their ordinal values and comparing them. It does this by creating a list of ordinal values for each character in the strings, and comparing these lists. If the two lists are equal, then all characters in the original strings had the same ordinal values.

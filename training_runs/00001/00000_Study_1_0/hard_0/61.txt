@@ -1,0 +1,11 @@
+Here is the Python code for the solution.
+
+```python
+def sol():
+    answer = ''
+    for _ in range(1000):
+        answer += 'oo'
+    return answer
+```
+
+In this solution, we are creating a string of length 1000 with 'oo' and then returning it. This is because the count function is counting the number of 'oo' in the string, and since we are creating a string of 'oo' with length 1000, we are guaranteed to get a total of 1000 'oo'.

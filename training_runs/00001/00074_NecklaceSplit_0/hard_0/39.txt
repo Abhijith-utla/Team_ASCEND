@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# Correct pattern:
+# def sol():
+#     return "bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"

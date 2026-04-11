@@ -1,0 +1,19 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([0, 0]) == True
+assert sat([12, 0]) == True
+assert sat([12, 30]) == True
+assert sat([12, 31]) == False
+assert sat([12, 45]) == True
+assert sat([2, 0]) == True
+assert sat([11, 59]) == True
+assert sat([12, 59]) == True
+assert sat([13, 0]) == False
+assert sat([0, 59]) == False
+assert sat([23, 59]) == True
+assert sat([11, 1]) == True
+assert sat([10, 59]) == False
+assert sat([11, 0]) == False
+assert sat([15, 0]) == False

@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# The function sol() doesn't take any arguments and returns an empty string.
+# This function satisfies the condition defined in the problem.

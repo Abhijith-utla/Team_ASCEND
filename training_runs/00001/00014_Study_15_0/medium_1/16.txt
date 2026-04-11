@@ -1,0 +1,16 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return all(x + 1 == (2 ** x) - 1 for x in range(20))
+```
+
+In the correct pattern, the function `sol` returns a boolean value indicating whether all the elements in the list `li` satisfy the condition `x + 1 == (2 ** x) - 1` for each `x` in the range from 0 to 19. The `all` function in Python returns True if all elements in the given iterable (in this case, the generator expression `(2 ** x) - 1 for x in range(20)`) are True.
+
+The checker will run:
+```python
+assert sat(sol())
+```
+This will pass if `sol` returns `True`, otherwise it will fail.
+
+Note: The given function `sat` is incorrect because the condition `x + 1 == (2 ** x) - 1` is not symmetric for `x` in the range from 0 to 19. This means that `x` can be any integer, not just 0, and the condition will always be `True

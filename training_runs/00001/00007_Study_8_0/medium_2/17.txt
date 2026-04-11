@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+def sol():
+    def sat(ls, idx1=1234, idx2=1235):
+        return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+    return sat
+```
+
+In the above code, we define the function `sol` which calls the inner function `sat`. The function `sat` is a partial application of the `in` operator and the `!=` operator which checks if `ls[idx1]` is present in `ls[idx2]` and if `ls[idx1]` is not equal to `ls[idx2]`. The function `sol` returns the result of `sat`. The checker will run `assert sat(ls)`, where `ls` is an arbitrary list.
+
+The checker will look for two indices `idx1` and `idx2` in the list `ls` and expect them to be in the list and not be equal. If these conditions are met, the checker will pass, else it will fail.

@@ -1,0 +1,29 @@
+Here is the solution to the given problem:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function splits the string 'berlin berger linber linger gerber gerlin' into a list of strings and returns it.
+
+The correct pattern for the function is as follows:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+The function `sol()` returns the list of words in the string 'berlin berger linber linger gerber gerlin'. The correct pattern for this function is:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+The function `sol()` returns a list of words in the string 'berlin berger linber linger gerber gerlin'. The string 'berlin berger linber linger gerber gerlin' is split into a list of words.
+
+The correct output for this function is:
+
+```python
+['berlin

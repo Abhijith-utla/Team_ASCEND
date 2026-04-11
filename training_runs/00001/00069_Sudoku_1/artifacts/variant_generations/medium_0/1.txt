@@ -1,0 +1,34 @@
+Sure, I'll generate three variants of the same core concept. 
+
+For example, the first variant will add the number 12 to each cell in the Sudoku game.
+
+```python
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    ...
+
+VARIANT1:
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    assert all(c == "_" or c == str(i) for i, c in enumerate("123456789", start=1)), f"invalid characters: {''.join(c for c in x if not c.isdigit())}"
+    assert all(x[i] == str(i) for i in range(9)), f"invalid row: {''.join(x[i] for i in range(9))}"
+    assert all(x[i+9] == str(i+1) for i in range(9)), f"invalid column: {''.join(x[i+9] for i in range(9))}"
+    assert all(x[i+18] == str(i+9) for i in range(9)), f"invalid square: {''.join(x[i+18] for i in range(9))}"
+    return True
+```
+
+For the second variant, we'll add more numbers to fill the cells, from 1 to 10.
+
+```python
+VARIANT2:
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    ...
+```
+
+For the third variant, we'll add more numbers to fill the cells and form larger numbers.
+
+```python
+VARIANT3:
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    ...
+```
+
+Remember to replace the placeholder `...` with the actual code that meets the original puzzle's requirements.

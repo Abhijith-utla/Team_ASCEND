@@ -1,0 +1,14 @@
+The provided Python function is a solution to a puzzle described in the problem statement. The puzzle involves a list of rods, where each rod is a list of disks. The disks are numbered from 1 to 8. The function 'sat' checks if the disks are correctly stacked on each rod.
+
+Here is the Python code for the solution:
+
+```python
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+The function 'sol' returns the list of disks, which is the correct configuration of disks on each rod. 
+
+This solution is correct because the function 'sat' correctly checks if the disks are correctly stacked on each rod. The function 'sat' uses the rules of the puzzle to check if the disks are correctly stacked. 
+
+The function 'sat' assumes that the rods are initially empty. It then iterates through the list of moves, where each move is represented by two indices i and j (0-indexed), and adds the i-th disk to the j-th rod. The disk is then removed from the rod it's added to. If the

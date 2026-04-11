@@ -1,0 +1,5 @@
+def sol():
+    return [56]
+
+# assert sat([56])
+assert sat(sol())

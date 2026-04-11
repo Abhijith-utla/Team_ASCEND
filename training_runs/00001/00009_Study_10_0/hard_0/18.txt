@@ -1,0 +1,5 @@
+def sol():
+    s = str(8 ** 1818)
+    return s in s and s == s[::-1] and len(s) > 11
+
+assert sat(sol())

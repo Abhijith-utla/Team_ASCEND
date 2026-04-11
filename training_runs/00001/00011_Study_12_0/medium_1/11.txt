@@ -1,0 +1,17 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+def sol():
+    return sat([4] * 1000)
+```
+
+In this solution, the function `sol` calls the function `sat`, which checks if the list `li` is a list of 1000 elements where each element is either 4 or 1, and the sum of all elements is 1. This is done by the expression `all(i + j == 1 for i, j in zip([4] + li, li))`, which checks if each pair of elements in the list is equal to 1. The `zip` function is used to iterate over two lists simultaneously.
+
+The `and` operator is used to check both conditions simultaneously. If both conditions are true, the `sat` function returns `True`. Otherwise, it returns `False`.
+
+The `len` function is used to get the length of the

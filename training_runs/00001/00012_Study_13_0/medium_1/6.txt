@@ -1,0 +1,13 @@
+The correct pattern is:
+
+```python
+def sol():
+    return 3.1415
+```
+
+Incorrect pattern:
+
+```python
+def sol(x):
+    return str(x - 3.1415)
+```

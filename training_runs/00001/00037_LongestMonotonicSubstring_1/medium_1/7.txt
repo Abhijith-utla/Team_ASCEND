@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is just a test, it will not run the assert because the function is empty.
+# Please add your code to this function

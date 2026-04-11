@@ -1,0 +1,8 @@
+Here is a correct solution:
+
+```python
+def sat(s: str):
+    return 'o' not in s and 'oo' not in s and s.count('o') == 1000
+```
+
+This function checks if the string `s` does not contain 'o' and 'oo', and if the count of 'o' in `s` is equal to 1000. If all these conditions are met, the function returns `True`, else it returns `False`.

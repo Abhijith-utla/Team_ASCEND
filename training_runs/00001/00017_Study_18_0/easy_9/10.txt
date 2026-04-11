@@ -1,0 +1,5 @@
+def sol():
+    return "Yes" if sat(["test"]) else "No"
+
+# Testing the function
+assert sat(sol())

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:48:40.425781+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=Here is a Python solution for the problem. This solution involves using the `sum` function and list slicing to sum al...",
+  "difficulty": "medium",
+  "problem_id": "00014_Study_15_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

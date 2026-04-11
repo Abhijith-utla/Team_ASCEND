@@ -1,0 +1,17 @@
+Here is the Python code:
+
+```python
+def sol(moves):
+    def sat(state):
+        state_copy = [s[:] for s in state]
+        for move in moves:
+            state_copy[move[1]].append(state_copy[move[0]].pop())
+            state_copy[move[1]] = sorted(state_copy[move[1]])
+        return state_copy == target
+
+    return sat
+```
+
+This function `sol` takes a list of moves as input and returns a function `sat` that checks whether the given state is a valid move for the puzzle. The state is a list of lists where each list represents a stack, and the moves is a list of tuples where each tuple represents a move. The function `sat` is a helper function that checks whether the given state satisfies the condition defined in the problem statement.
+
+Please note that the function `sol` doesn't actually solve the puzzle because it doesn't have any implementation to actually move the stacks. This function is just a helper to construct a function `sat` that checks whether a given state satisfies the condition of the problem.

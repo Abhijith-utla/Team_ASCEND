@@ -1,0 +1,21 @@
+The provided function `sat` checks if a list `li` has exactly 10 elements and if there are exactly 2 occurrences of the number at index 3 in the list. If both conditions are met, the function returns `True`; otherwise, it returns `False`.
+
+Here is the Python code for this function:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+The `if __name__ == "__main__":` statement is used to run the function with a test case. Replace `<answer>` with the actual answer you want to check.
+
+```python
+if __name__ == "__main__":
+    print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # prints: True
+    print(sat([1, 2, 3, 4, 5,

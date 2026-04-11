@@ -1,0 +1,3 @@
+def sol():
+    l = [i for i in range(996)]
+    return l

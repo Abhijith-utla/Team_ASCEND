@@ -1,0 +1,4 @@
+def sol():
+    return None
+
+# Your code goes here

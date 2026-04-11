@@ -1,0 +1,7 @@
+def sol():
+    li = [4] + [i for i in range(999)]
+    return sat(li)
+
+# This line is for checking the correctness of the solution. 
+# If you want to remove this line, you can run the solution without checking.
+assert sat(sol())

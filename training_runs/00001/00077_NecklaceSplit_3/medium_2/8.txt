@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# The function should return an empty string.
+assert sat()

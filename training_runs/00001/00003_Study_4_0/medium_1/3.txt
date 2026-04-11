@@ -1,0 +1,22 @@
+The given Python function `sat` checks if a list `li` has exactly 10 elements and if the element at index 3 (representing the fourth element in zero-based indexing) appears exactly twice in the list. If these conditions are not met, the function returns `False`, otherwise it returns `True`.
+
+The function `count` is used to count the number of occurrences of a particular element in the list. The function `index` is used to find the index of the first occurrence of a particular element in the list.
+
+The function `sat` can be defined as follows:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This function will return `True` if the conditions are met and `False` otherwise. For example,

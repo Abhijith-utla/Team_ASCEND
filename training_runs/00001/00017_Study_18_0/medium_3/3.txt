@@ -1,0 +1,4 @@
+def sol():
+    return len(set(input().split())) == len(input().split())
+
+assert sat(sol)

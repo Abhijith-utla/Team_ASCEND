@@ -1,0 +1,20 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    class Answer:
+        def __init__(self, valid, idx1, idx2, value):
+            self.valid = valid
+            self.idx1 = idx1
+            self.idx2 = idx2
+            self.value = value
+    if sat.__code__.co_argcount != 0:
+        return Answer(False, -1, -1, None)
+    idx1, idx2, value = -1, -1, None
+    if sat(idx1, idx2, value):
+        return Answer(True, idx1, idx2, value)
+    else:
+        return Answer(False, idx1, idx2, value)
+```
+
+In this code, I created a class `Answer` to return multiple values from the `sat` function. If the `sat` function is called with three arguments, it will return an `Answer` object with `valid` set to `False`, `idx1` and `idx2` set to `-1`, and `value` set to `None`. Otherwise,

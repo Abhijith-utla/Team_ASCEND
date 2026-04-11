@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+```
+
+This solution checks if all elements in the list are distinct and the length of the set is 3.
+
+Please note that the function `sat` is already defined by the user. It is not part of the task. This function is a helper function for a checker to verify that the answer is valid. The checker will use this function to verify that the solution is valid.

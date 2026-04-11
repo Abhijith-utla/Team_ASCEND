@@ -1,0 +1,19 @@
+Here are the three simpler variants of the Python function sat():
+
+VARIANT1:
+```python
+def sat(nums: List[int]):
+    return sorted([int(str(n) + str(n*n)) for n in nums]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+VARIANT2:
+```python
+def sat(nums: List[int]):
+    return sorted([int(str(n) + str(n*n)) for n in nums], reverse=True) == [9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
+
+VARIANT3:
+```python
+def sat(nums: List[int]):
+    return sorted([int(str(n) + str(n*n)) for n in nums], key=str) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```

@@ -1,0 +1,24 @@
+def sat(coords, side=1, num_points=1):
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert 0 <= x < side
+        assert 0 <= y < side
+    return len({(a, b) for a, b in coords}) == len(coords) - num_points
+
+def sol():
+    return []
+
+# For the correct solution, let's say we place the points in a square with side length of 3 and we want to avoid 2 points
+# Then the correct answer would be [(0, 1), (1, 1), (2, 1)]
+print(sol([(0, 1), (1, 1), (2, 1)])) 
+
+# For the incorrect solution, let's say we place the points in a square with side length of 3 and we want to avoid 3 points
+# Then the incorrect answer would be [(0, 1), (1, 1)]
+print(sol([(0, 1), (1, 1), (2, 1)])) 
+
+# The assertion statement should be: assert sat(sol())
+# But for the incorrect solution, it will be False.
+assert sat(sol([(0, 1), (1, 1), (2, 1)]))
+
+if __name__ == "__main__":
+    assert sat(sol())

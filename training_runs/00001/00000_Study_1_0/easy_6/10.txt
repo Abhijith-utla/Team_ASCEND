@@ -1,0 +1,8 @@
+Here is the Python code for the function `sol` that satisfies the given condition.
+
+```python
+def sol():
+    return 'ooo' in 'oooooooooooo' and 'o' not in 'oooooooooooo' and 'oooooooooooo'.count('o') == 1000
+```
+
+This function checks if 'ooo' is in the string `oooooooooooo` and if there is no 'o' in the string and if the count of 'o' in the string is 1000. If all conditions are met, it returns `True`, otherwise it returns `False`.

@@ -1,0 +1,10 @@
+def sol():
+    return (hour, minute)
+
+Incorrect pattern:
+def sol(x):
+    hour, minute = x
+    assert 0 <= hour < 24 and 0 <= minute < 60
+    hour_angle = 30 * hour + minute / 2
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [38, 360 - 38]

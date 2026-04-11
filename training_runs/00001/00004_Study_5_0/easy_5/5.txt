@@ -1,0 +1,15 @@
+Here's the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10, 0, -1):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function works by iterating over the range of 10 to 0 (inclusive) in reverse order. For each value of i, it counts the number of times i appears in the list, and if this count is not equal to i, the function returns False. If the function manages to iterate over the entire range without finding any inequalities, it returns True.
+
+Please note that this solution assumes that the input list is non-empty, and contains only integers from 0 to 9. If these assumptions are not met, you may need to add additional error checking code.

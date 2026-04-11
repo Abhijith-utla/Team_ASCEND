@@ -1,0 +1,8 @@
+Sure, here's how you can construct and return a single answer object in Python:
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+This function simply returns the string '4.5abc'. The checker will verify that this is indeed the correct answer by using the function `sat`.

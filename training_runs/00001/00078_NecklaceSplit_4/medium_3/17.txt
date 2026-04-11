@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# You can use the above code as an example of how to implement your solution
+# The function sol() will always return 0 as the answer

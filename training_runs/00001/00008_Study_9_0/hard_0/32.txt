@@ -1,0 +1,6 @@
+def sat(li: List[int]):
+    return [ord(x) for x in li] == list("The quick brown fox jumps over the lazy dog".encode())
+
+# Test
+print(sat(list("The quick brown fox jumps over the lazy dog".encode())))  # True
+print(sat(list("The quick brown fox jumps over the lazy dog".encode())))  # False

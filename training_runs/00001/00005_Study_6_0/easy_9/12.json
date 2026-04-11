@@ -1,0 +1,16 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:16:41.471104+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=Here is the Python code for the problem: ```python def sat(n: int): return n <= 10 ** 10 and n % 2 == 0 ```",
+  "difficulty": "easy",
+  "problem_id": "00005_Study_6_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

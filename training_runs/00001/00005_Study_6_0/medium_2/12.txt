@@ -1,0 +1,15 @@
+def sol():
+    for i in range(100):
+        if sat(i):
+            return i
+    return None
+
+# This is for testing the correctness of the solution.
+def test_sat():
+    assert sat(0)
+    assert sat(5)
+    assert not sat(4)
+    assert sat(95)
+    assert not sat(100)
+
+test_sat()

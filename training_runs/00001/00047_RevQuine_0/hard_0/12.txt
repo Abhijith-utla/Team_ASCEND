@@ -1,0 +1,17 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return ''
+```
+
+In the above code, the function sol() does not take any arguments and returns an empty string. This is because the problem statement is asking for a function that takes no arguments and returns one answer object.
+
+The Python built-in function eval() is used to evaluate a string as Python code. However, since eval() evaluates a string as Python code, it would result in a SyntaxError if the string represents a valid Python expression. Hence, the rev_quine[::-1] would be a valid Python expression which would be equivalent to rev_quine reversed.
+
+The function sat() is already defined by the user so we can't define it again.
+
+The checker will run: assert sat(sol())
+```python
+print(sat(sol()))  # This will raise a SyntaxError
+```

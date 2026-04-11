@@ -1,0 +1,5 @@
+def sol():
+    s = 'y' * 98 + 'yo' * 101 + 'yy' * 100
+    return s
+
+assert sat(sol())

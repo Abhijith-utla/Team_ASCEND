@@ -1,0 +1,7 @@
+def sol():
+    x = "_" * 81
+    return x
+
+# This test should pass if the function 'sol' returns a string of 81 characters.
+# This string should only contain underscores, and no other characters.
+print(sat(sol()))

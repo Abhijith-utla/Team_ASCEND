@@ -1,0 +1,13 @@
+Here's how you can define the `sol` function:
+
+```python
+def sol():
+    li = [i for i in range(1000)]
+    li.remove(max(li))
+    li.remove(min(li))
+    return li
+```
+
+The above code creates a list of integers from 0 to 999. It then removes the maximum and minimum values from the list. The list `li` is returned as the answer.
+
+This function fulfills the condition stated in the problem.

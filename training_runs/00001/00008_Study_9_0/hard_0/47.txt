@@ -1,0 +1,4 @@
+def sat(li: List[int]):
+    str_list = [chr(i + 97) for i in li]
+    str2 = ''.join(str_list)
+    return str2 == "fiveboxingwizardsjumpquickly"

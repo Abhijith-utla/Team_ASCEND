@@ -1,0 +1,10 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [i for i in li if i >= 0] == list("The five boxing wizards jump quickly".split(" "))
+```
+
+This function takes a list of integers as an argument and returns a boolean value indicating whether the list contains only non-negative integers. It checks if the original list and the transformed list are equal, which means they contain exactly the same elements. If they are, the function returns True; otherwise, it returns False.

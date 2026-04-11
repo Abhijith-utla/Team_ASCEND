@@ -1,0 +1,13 @@
+def sol():
+    i = 1000
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+# Checker
+def test_sol():
+    assert sat(sol())
+
+# Checker
+test_sol()

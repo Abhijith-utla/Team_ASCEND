@@ -1,0 +1,4 @@
+def sol():
+    return tuple(chr(ord('d')+i)+chr(ord('e')+i)+chr(ord('h')+i) for i in range(3))
+
+assert sat(sol())

@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(13) if i <= 12 and i + 1 <= 12 and i + 2 <= 12]
+
+assert sat(sol())

@@ -1,0 +1,4 @@
+def sol():
+    return sorted([i for i in range(999)]) == list(range(999)) and all([i == i for i in range(999)])
+
+assert sat(sol())

@@ -1,0 +1,9 @@
+```python
+def sol():
+    return {
+        'answer': 'The string contains 1000 "o"s and 100 "oo"s and 801 "ho"s.'
+    }
+
+# Test the function
+assert sat(sol()['answer'])
+```

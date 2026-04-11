@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The answer object should be a list of the form [hours, minutes], where hours is an integer between 0 and 11 (inclusive) and minutes is an integer between 0 and 59 (inclusive).
+# For instance, the answer for the provided example would be [9, 30].

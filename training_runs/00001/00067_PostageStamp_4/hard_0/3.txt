@@ -1,0 +1,5 @@
+def sol():
+    return [56]
+
+# The function 'sat' is already defined by the user.
+# So, we don't need to define anything here.

@@ -1,0 +1,13 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+The function `sol` starts at `i = 0` and increases `i` by 1 each time it calls `sat(i)`. The `while` loop continues until `sat(i)` returns `True`, at which point the function returns `i`.
+
+The `sat` function checks if the number of digits in `i + 10` and `i + 100` are the same. If they are, `sat` returns `True`, and the `while` loop will stop.

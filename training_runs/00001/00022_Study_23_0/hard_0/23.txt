@@ -1,0 +1,16 @@
+Here is the solution for the given problem:
+
+```python
+def sol():
+    return tuple(zip('dee', 'doo', 'dah!'))
+```
+
+In this code, we use the `zip` function to combine the characters 'd', 'e', 'e', 'o', 'o', and 'a', 'h', '!' in that order into tuples. We then return these tuples.
+
+You can test this function with the following code:
+
+```python
+assert sat(sol())
+```
+
+This will pass if the function returns the expected tuple, and fail otherwise.

@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(996) if abs(i * i - (j * j) * (j * j)) >= 10 for j in range(996)]

@@ -1,0 +1,4 @@
+def sol():
+    return "3 * (12 - 4)"
+
+assert sat(sol())

@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' not in 'This is a test string. The string should contain exactly 1000 "o" characters.' and 'o' in 'This is a test string. The string should contain exactly 1000 "o" characters.' and 'o' in 'This is a test string. The string should contain exactly 1000 "o" characters.'

@@ -1,0 +1,15 @@
+Here is the solution:
+
+```python
+def sol():
+    s = 'mmm' * 401 + 'mmm' * 400
+    return s
+
+print(sat(sol()))
+```
+
+In this solution, we first create a string `s` that contains 'mmm' four times more than the string 'mm'. Then, we return the string `s`.
+
+The function `sat` checks if the string `s` contains exactly four 'm's. If it does, it returns `True`. Otherwise, it returns `False`.
+
+After defining the function `sol`, we call `sat` with the result of `sol` as an argument and print the result.

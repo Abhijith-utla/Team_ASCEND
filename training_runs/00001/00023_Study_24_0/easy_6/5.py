@@ -1,0 +1,19 @@
+def sat(li: List[int]):
+    return li.count(17) == 3 and li.count(3) == 1
+
+def sol():
+    import random
+    while True:
+        li = [random.randint(0, 2) for _ in range(10)]
+        if sat(li):
+            return li
+
+def sat(li: List[int]):
+    return li.count(17) == 3 and li.count(3) == 1
+
+# Checker
+li = sol()
+assert sat(li)
+
+if __name__ == "__main__":
+    assert sat(sol())

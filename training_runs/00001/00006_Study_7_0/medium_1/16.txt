@@ -1,0 +1,4 @@
+def sol():
+    return "1364" if sat("1364") else "136"
+
+print(sol())

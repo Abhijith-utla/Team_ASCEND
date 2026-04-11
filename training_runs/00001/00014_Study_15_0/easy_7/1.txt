@@ -1,0 +1,12 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    for i, x in enumerate(li):
+        if x != i:
+            return False
+    return True
+```
+This function iterates over the list and checks if every element is equal to its index. If any element is not equal to its index, it returns False. If it finishes the loop without finding any unequal elements, it returns True.

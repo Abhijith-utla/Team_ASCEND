@@ -1,0 +1,5 @@
+def sol():
+    li = [i % 1000 for i in range(1000)]
+    while not sat(li):
+        li = [(li[i] + li[i + 1]) % 1000 for i in range(20)]
+    return li

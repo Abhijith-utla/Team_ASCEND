@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# You may use this function to initialize your solution.
+def init_sol():
+    return [(random.randint(0, 10), random.randint(0, 10)) for _ in range(20)]
+
+# You may use this function to mutate your solution.
+def mutate_sol(coords):
+    x, y = random.randint(0, 10), random.randint(0, 10)
+    return [(x, y)] + coords[:9] if random.random() < 0.5 else coords
+
+# You may use this function to check whether your solution is valid.
+def sat(coords: List[List[int]], side=10, num_points=20):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[i2]
+            for

@@ -1,0 +1,5 @@
+def sol():
+    return '4.5abc'
+
+# Running the assert statement to check the solution
+assert sat(sol())

@@ -1,0 +1,13 @@
+Here is the correct implementation of the function `sol`:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return [ord(i) for i in li] == list("The five boxing wizards jump quickly".replace(" ", ""))
+
+    return sat
+```
+
+This function `sol` returns a boolean function `sat` which checks whether a list of characters is equal to the ASCII values of the characters in the string "The five boxing wizards jump quickly". The function `sol` then returns `sat`. The function `sat` is used to check whether the list of ASCII values is equal to the list of characters in the string. The `ord` function is used to get the ASCII value of a character.

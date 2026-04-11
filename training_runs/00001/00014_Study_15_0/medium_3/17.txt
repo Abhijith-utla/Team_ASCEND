@@ -1,0 +1,16 @@
+The given Python function `sat` checks whether a given list `li` is a list of integers where the sum of all elements in the list up to each index (excluding the index) is equal to the corresponding index. This is a common mathematical concept known as prefix sum.
+
+Let's break down the `sat` function:
+
+```python
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+The function `sat` takes a list `li` of integers as an argument. 
+
+The `all` function is a built-in Python function that returns `True` if all elements of the iterable (in this case, a generator expression) are `True`.
+
+The generator expression `(x == sum(li[:i]) for i in range(20))` generates a sequence of boolean values. For each index `i` in the range from 0 to 19, it checks if the sum of all elements in the list `li` up to index `i` is equal to `i`. 
+
+If all elements in the sequence are `True`

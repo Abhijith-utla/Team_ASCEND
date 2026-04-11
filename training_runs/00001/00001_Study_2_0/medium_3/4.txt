@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return 'zo'*100 + 'z'*101
+```
+
+In this code, the function sol returns a string of 'zo's and 'z's. The number of 'zo's is 100 and the number of 'z's is 101. The sum of all characters in this string is equal to the sum of the counts of 'z's and 'zo's. This property holds for any string of 'zo's and 'z's.
+
+For instance, sol() returns 'zo'*100 + 'z'*101 which equals 'zo'*100 + 'z'*101 which is 'zo'*100 + 'zo'*101, which equals 'zo'*100 + 'zo'*101 and so on until the string becomes too long.

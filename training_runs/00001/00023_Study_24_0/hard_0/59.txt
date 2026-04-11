@@ -1,0 +1,4 @@
+def sol():
+    return [17, 17, 3] if sat([17, 17, 17, 3, 3, 3]) else [1, 2, 3]
+
+print(sol())

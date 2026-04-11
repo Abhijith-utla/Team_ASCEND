@@ -1,0 +1,6 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(x: float):
+    return str(x - 3.1418).startswith("123.456")
+```

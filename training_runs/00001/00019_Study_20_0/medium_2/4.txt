@@ -1,0 +1,14 @@
+The given function `sat(li: List[int])` checks whether every element in the list is unique by iterating over the list and checking if each element is in the set of already seen elements. 
+
+However, the statement `return all(j in {i} for i, j in enumerate(li))` is incorrect. It's trying to check if the index `i` is in the set `{i}`, which is not correct. The correct statement is `return all(li[i] in {i} for i in range(len(li)))`. This statement checks if the element at index `i` in the list is in the set `{i}`.
+
+Here is the correct code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li[i] in {i} for i in range(len(li)))
+```
+
+This function will return True if every element in the list is unique, and False otherwise.

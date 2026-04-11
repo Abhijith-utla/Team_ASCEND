@@ -1,0 +1,9 @@
+def sol():
+    s = 'abcba' if random.randint(0, 1) == 0 else 'abcbd'
+    return sat(s)
+
+Incorrect pattern:
+def sol(x):
+    if not isinstance(x, str) or len(x) > 30 or len(x) < 5:
+        return False
+    return set(x[::2]) == set(x[1::2])

@@ -1,0 +1,11 @@
+Sure, here is the correct implementation:
+
+```python
+from typing import List
+
+def sol():
+    li: List[int] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    return li
+```
+
+The function `sol()` creates a list `li` with the numbers 1 to 9, and then returns this list. This list is a valid solution to the problem.

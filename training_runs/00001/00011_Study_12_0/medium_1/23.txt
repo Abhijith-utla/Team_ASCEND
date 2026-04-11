@@ -1,0 +1,12 @@
+The function `sat(li: List[int])` is already defined by the user and correctly checks if a list of 1000 elements satisfies the condition of the problem. The condition is that the sum of each element and the element right after it are equal to 1.
+
+Here is the Python code that defines this function:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function takes a list of integers as input and returns a boolean value. It checks if the sum of each element and the element right after it is equal to 1 for all elements in the list. If the list has 1000 elements, it returns `True`, otherwise it returns `False`.

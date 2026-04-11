@@ -1,0 +1,4 @@
+def sol():
+    return [['d', 'e', 'e'], ['d', 'o', 'o'], ['d', 'a', 'h', '!']]
+
+assert sat(sol())

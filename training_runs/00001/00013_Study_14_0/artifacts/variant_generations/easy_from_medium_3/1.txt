@@ -1,0 +1,22 @@
+Here are three simple versions of the function:
+
+VARIANT1:
+
+```python
+def sat(li: List[int]):
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+```
+
+VARIANT2:
+
+```python
+def sat(li: List[int]):
+    return all([i == li[j] + li[j+1] for i in range(len(li))])
+```
+
+VARIANT3:
+
+```python
+def sat(li: List[int]):
+    return all([i <= j for i in li for j in li if i > j])
+```

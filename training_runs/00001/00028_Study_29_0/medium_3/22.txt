@@ -1,0 +1,6 @@
+Here is the Python function that constructs and returns a single answer value.
+
+```python
+def sol():
+    return []
+```

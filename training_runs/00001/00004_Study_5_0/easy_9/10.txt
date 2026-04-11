@@ -1,0 +1,8 @@
+def sat(li: list) -> bool:
+    count_zero = li.count(0)
+    count_others = li.count(1)
+    return li.count(0) == li.count(1) == 1 and all(li.count(i) == i for i in range(10))
+
+# Testing the function
+assert sat([1, 0, 0, 0, 1, 1, 0, 0, 1, 1])
+assert not sat([1, 0, 0, 0, 1, 1, 1, 0, 0, 1])

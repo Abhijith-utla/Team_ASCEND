@@ -1,0 +1,24 @@
+Here are the three simpler variants for the original puzzle:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x])
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    for x in range(20):
+        if not (x + y == 2 ** x for y in li[:x]):
+            return False
+    return True
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+```
+
+These are variant functions with the same core concept. The first variant does not check if the sum of y with every element of the list is equal to 2 raised to the power of x, and the second variant checks if y is not in the list before calculating the sum. The third variant checks if the sum of y with every element of the list is equal to 2 raised to the power of x but increases the range of x by 1.

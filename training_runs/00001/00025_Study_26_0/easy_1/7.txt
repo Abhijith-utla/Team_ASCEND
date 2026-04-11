@@ -1,0 +1,9 @@
+def sol():
+    return "".join(str(7 ** 64.5))
+
+# Testing the function
+def test_sol():
+    assert sat(sol())
+
+# Running the test
+test_sol()

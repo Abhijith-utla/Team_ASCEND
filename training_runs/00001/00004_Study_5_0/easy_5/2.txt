@@ -1,0 +1,13 @@
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10, 0, -1):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+The function `sat` checks if all elements in the list `li` appear the same number of times. The `count` method is used to count the occurrences of each number from 10 to 1. If any number appears the same number of times as its value, the function returns `False`. If the function finishes without finding such a number, it returns `True`, indicating that all elements appear the same number of times.

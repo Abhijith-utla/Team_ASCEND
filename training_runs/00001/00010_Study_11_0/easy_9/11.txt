@@ -1,0 +1,10 @@
+def sol(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+
+# test the function
+print(sat([]))  # True
+print(sat(["a", "ab", "abc"]))  # True
+print(sat(["a", "aa", "abc"]))  # False

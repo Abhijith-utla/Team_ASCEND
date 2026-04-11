@@ -1,0 +1,16 @@
+{
+  "attempt_num": 19,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:29:13.052537+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=26|checked=26/26|preview=```python def sol(): import math def is_integer(n): return math.isclose(n, round(n), rel_tol=1e-9) def check_string(s...",
+  "difficulty": "medium",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

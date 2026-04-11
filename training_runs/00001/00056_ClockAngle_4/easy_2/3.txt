@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The given function 'sat' has no inputs and returns no output.
+# Hence, the solution function 'sol' must return an empty list.

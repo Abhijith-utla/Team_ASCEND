@@ -1,0 +1,17 @@
+Here is the solution to the problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    n = len(li)
+    for x in range(20):
+        total = 0
+        for y in li[:x]:
+            total += 2 ** y
+        if total != 2 ** x:
+            return False
+    return True
+```
+
+The `sat` function checks if all elements in the list `li` satisfy the condition `x + y == 2 ** x` for `x` in the range from 0 to 19 and `y` in the list `li`. If any element does not satisfy this condition, the function returns `False`. If all elements satisfy the condition, the function returns `True`.

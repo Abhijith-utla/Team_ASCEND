@@ -1,0 +1,4 @@
+def sol():
+    return "".join(str(8 ** 88) for _ in range(8))
+
+assert sat(sol())

@@ -1,0 +1,10 @@
+def sol():
+    for hour in range(12):
+        for minute in range(60):
+            if sat(hour, minute):
+                return hour, minute
+    return None
+
+# Testing
+hour, minute = sol()
+print(f"{hour}:{minute}")

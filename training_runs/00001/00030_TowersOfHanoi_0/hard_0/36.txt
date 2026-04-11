@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+def sol():
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for i, j in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == rods[1] == []
+```
+
+In the function `sol`, a list called `moves` is defined that contains pairs of integers. The rods are represented as lists, with the top of the rod being the last element in each list. The rods are then updated by taking each move in the `moves` list and appending the disk from the source rod to the destination rod. If the disk on the top of the smaller rod is larger than the top of the larger rod, an assertion error is raised. The function then checks if the rods are equal to an empty list, which means they are both empty. If they are, the function returns `True`, otherwise it

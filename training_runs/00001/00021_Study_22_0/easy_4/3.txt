@@ -1,0 +1,5 @@
+def sol():
+    return 'Hello World'
+
+# This test is for the correct solution
+assert sat(sol())

@@ -1,0 +1,8 @@
+Here is the Python code that implements the function 'sat':
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+This function 'sat' checks if the list 'li' contains exactly 10 numbers from 0 to 9 and exactly one number 0. If both conditions are met, the function returns True; otherwise, it returns False.

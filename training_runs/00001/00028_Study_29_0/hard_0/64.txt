@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The given function is incorrect. The logic of the program doesn't work according to the question's rules.

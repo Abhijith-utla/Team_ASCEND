@@ -1,0 +1,10 @@
+Your solution is correct and the correct Python code is as follows:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 4 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function takes a list of integers as input and returns True if all elements in the list are added together with the corresponding element in the list, and the list has a length of 1000. Otherwise, it returns False.

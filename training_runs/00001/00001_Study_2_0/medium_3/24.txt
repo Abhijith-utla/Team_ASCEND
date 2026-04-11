@@ -1,0 +1,5 @@
+def sol():
+    s = "z"*100 + "zo"*101 + "z"*98
+    return s
+
+print(sol())

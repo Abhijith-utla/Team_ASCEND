@@ -1,0 +1,8 @@
+The correct answer should be:
+
+```python
+def sol():
+    return 5
+```
+
+This function returns the number 5 because the requirement is to return a single answer value that is always the same. The checker will correctly assert that the function returns 5.

@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# This checker will fail to assert that sol() returns 0, because 0 is not True.

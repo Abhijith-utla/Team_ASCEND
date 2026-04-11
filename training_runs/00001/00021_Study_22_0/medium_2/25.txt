@@ -1,0 +1,10 @@
+def sol():
+    s = input()
+    return sat(s)
+
+# Test cases
+print(sol("abcdabcdabcd"))  # Expected output: True
+print(sol("aabbccddeeff"))  # Expected output: True
+print(sol("123456789012"))  # Expected output: False
+print(sol("abcdef"))  # Expected output: False
+print(sol("aabb"))  # Expected output: False

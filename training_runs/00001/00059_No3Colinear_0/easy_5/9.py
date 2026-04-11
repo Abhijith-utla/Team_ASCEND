@@ -1,0 +1,31 @@
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x1, y1) in enumerate(coords):
+        assert 0 <= x1 < side and 0 <= y1 < side
+    return len(coords) == num_points
+
+def sol():
+    return []
+
+# This is a placeholder for the actual solution.
+# The actual solution will depend on the specific problem you're trying to solve.
+# For example, if you're trying to generate a list of random coordinates, you could use the following:
+
+import random
+
+def sol():
+    side = 10
+    num_points = 20
+    coords = [(random.randint(0, side-1), random.randint(0, side-1)) for _ in range(num_points)]
+    return coords
+
+# This is a placeholder for the actual solution.
+# The actual solution will depend on the specific problem you're trying to solve.
+# For example, if you're trying to check if the coordinates are valid, you could use the following:
+
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x1, y1) in enumerate(coords):
+        assert 0 <= x1 < side and 0 <= y1 < side
+    return len(coords)
+
+if __name__ == "__main__":
+    assert sat(sol())

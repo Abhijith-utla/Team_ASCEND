@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Test case
+assert sat(sol())
+!pip install pytest

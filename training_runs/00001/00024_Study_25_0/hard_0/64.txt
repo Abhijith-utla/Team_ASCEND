@@ -1,0 +1,6 @@
+def sol():
+    return ''.join(sorted(''.join(sorted(input('Enter a string: ')))))
+
+# Testing the solution
+if __name__ == '__main__':
+    assert sat(sol())

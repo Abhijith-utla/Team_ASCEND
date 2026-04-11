@@ -1,0 +1,6 @@
+def sol():
+    return ''
+
+# You can use this as the initial answer
+# sol should return one answer object
+# The checker will run assert sat(sol())

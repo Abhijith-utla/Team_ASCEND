@@ -1,0 +1,35 @@
+Here are three simple variants of the `sat` function.
+
+VARIANT1:
+```python
+def sat(moves: List[List[int]], source: List[List[int]], target: List[List[int]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop(0))
+        assert sorted(state[j]) == target[i], 'State not sorted as expected'
+    return state == target
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]], source: List[List[int]], target: List[List[int]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop(0))
+        assert sorted(state[j]) == sorted(target[i]), 'Sorted and sorted target not equal'
+    return state == target
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]], source: List[List[int]], target: List[List[int]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop(0))
+        assert sorted(state[j]) == sorted(target[i]) and sorted(state[j]) == sorted(target[i]), 'Sorted and sorted target not equal'
+    return state == target
+```
+In these variants, we've changed the assertion statement, which checks whether the sorted version of the target list is equal to the sorted version of the state list. We've also added a message to the assertion to provide a more explicit error message when the assertion fails.

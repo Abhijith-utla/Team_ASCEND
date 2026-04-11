@@ -1,0 +1,4 @@
+def sol():
+    return sat('acbd', 'bacd')
+
+assert sat(sol())

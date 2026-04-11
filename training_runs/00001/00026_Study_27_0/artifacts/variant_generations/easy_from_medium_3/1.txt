@@ -1,0 +1,17 @@
+Here's the three variants for the function "sat":
+
+```
+VARIANT1:
+def sat(li):
+    return li[li[0]] != li[li[1]] and li[li[1]] != li[li[2]] and li[li[2]] == li[li[0]]
+
+VARIANT2:
+def sat(li):
+    return li[li[0]] == li[li[1]] and li[li[1]] != li[li[2]] and li[li[2]] != li[li[0]]
+
+VARIANT3:
+def sat(li):
+    return li[li[0]] != li[li[1]] and li[li[1]] == li[li[2]] and li[li[2]] != li[li[0]]
+```
+
+These are three variations of the "sat" function where the operation that is checked is different: the operation between the first element and the third element, and the operation between the second element and the third element.

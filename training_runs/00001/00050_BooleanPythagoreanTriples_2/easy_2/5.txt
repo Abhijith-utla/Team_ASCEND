@@ -1,0 +1,7 @@
+def sol():
+    return lambda colors: (lambda i: lambda j: lambda c: lambda d: not any(c(i) == d(j) == c(i + j) for i, _ in enumerate(colors) for j, _ in enumerate(colors)))()
+
+# For testing
+def test():
+    assert sat(lambda colors: (lambda i: lambda j: lambda c: lambda d: not any(c(i) == d(j) == c(i + j) for i, _ in enumerate(colors) for j, _ in enumerate(colors)))())([0, 1, 2, 2, 3, 3, 4, 4])
+    assert not sat(lambda colors: (lambda i: lambda j: lambda c: lambda d: not any(c(i) == d(j) == c(i + j) for i, _ in enumerate(colors) for j, _ in enumerate(colors)))())([0, 1, 2, 2, 3, 3, 4,

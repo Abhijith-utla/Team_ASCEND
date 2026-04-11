@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# You can use the following test cases to verify your solution.
+# If the solution is correct, no assertion will be raised.
+def test_sol():
+    assert sat(sol()) == True
+    assert sat(sol(['0'])) == True
+    assert sat(sol(['0', '1'])) == True
+    assert sat(sol(['0', '2'])) == False
+    assert sat(sol(['1', '2'])) == False
+    assert sat(sol(['3'])) == False
+
+test_sol()

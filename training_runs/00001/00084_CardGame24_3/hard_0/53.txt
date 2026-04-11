@@ -1,0 +1,2 @@
+def sol():
+    return {"expression": "", "answer": 0.0}

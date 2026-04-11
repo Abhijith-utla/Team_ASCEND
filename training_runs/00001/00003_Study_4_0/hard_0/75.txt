@@ -1,0 +1,18 @@
+Sure, here is the correct pattern for the `sol` function.
+
+```python
+def sol():
+    li = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+    return li
+```
+
+This function creates a list of integers from 1 to 10, then returns this list. The list is made such that the fourth element is repeated twice.
+
+Here is the Python code that validates this solution:
+
+```python
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+This function checks if the length of the list is 10 and the count of the fourth element is 2. If these two conditions are true, then the function returns `True`; otherwise, it returns `False`.

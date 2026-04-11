@@ -1,0 +1,8 @@
+Sure, here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 'oo' in 'ooo' and 'ooo'.count('o') == 1000
+```
+
+The function `sol` checks if the string `'oo'` is in the string `'ooo'` and if it occurs exactly 1000 times. If both conditions are true, it returns `True`, otherwise it returns `False`.

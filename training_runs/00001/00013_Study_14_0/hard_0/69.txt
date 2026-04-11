@@ -1,0 +1,10 @@
+Sure, here is the solution for the given problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+This function `sat` takes a list of integers `li` as an input. It checks if the sum of all the elements of the list up to the current index `i` is equal to the current index `i` itself. This is done by creating a list comprehension where for each index `i`, it calculates the sum of the elements in the list up to that index `i` and checks if it's equal to the index itself. The `all` function returns `True` only if all the conditions in the list comprehension are `True`, meaning that the list `li` satisfies the condition.

@@ -1,0 +1,13 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 3, 3]
+
+# Test the function
+print(sat(sol()))
+```
+
+This function will return a list with 17, 3, and 3. The count of 17 is 3 and the count of 3 is at least 2, so the function will return this list.

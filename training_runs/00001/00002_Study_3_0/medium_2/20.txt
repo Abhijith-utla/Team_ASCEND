@@ -1,0 +1,10 @@
+Here's a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    sorted_li = sorted(li)
+    return sorted_li == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```
+This function sorts the input list and checks if it is equal to a list of numbers from 0 to 998. It then checks if all elements in the sorted list are equal to their corresponding indices. If both conditions are true, it returns True, otherwise it returns False.

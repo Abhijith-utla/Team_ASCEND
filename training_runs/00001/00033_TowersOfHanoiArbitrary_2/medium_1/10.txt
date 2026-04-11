@@ -1,0 +1,15 @@
+def sol():
+    class Answer:
+        pass
+
+    answer = Answer()
+    answer.state = [[0, 1, 2], [3], [4, 5, 6]]
+
+    return answer
+
+# Checker
+def check(moves: List[List[int]], source=[[0, 1, 2], [3], [4, 5, 6]], target=[[1, 2, 3], [4, 5], [0, 6]]):
+    assert sol() == Answer()
+
+# Run checks
+check()

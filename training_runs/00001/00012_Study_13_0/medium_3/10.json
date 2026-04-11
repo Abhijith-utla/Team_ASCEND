@@ -1,0 +1,16 @@
+{
+  "attempt_num": 10,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:28:42.532020+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=The function `sat` is already defined by the user and does the following: It is a function that accepts a single argu...",
+  "difficulty": "medium",
+  "problem_id": "00012_Study_13_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

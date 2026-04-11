@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This function is incorrect because the list has only one element and the condition of the all function is False
+assert sat(sol())

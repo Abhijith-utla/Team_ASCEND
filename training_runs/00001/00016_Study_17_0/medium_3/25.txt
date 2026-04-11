@@ -1,0 +1,12 @@
+def sol():
+    i = 123456
+    while not sat(i):
+        i += 1
+    return i
+
+# Testing the function
+def test_sol():
+    assert sat(sol())
+
+# Running the test function
+test_sol()

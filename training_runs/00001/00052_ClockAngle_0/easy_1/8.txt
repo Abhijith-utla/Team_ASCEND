@@ -1,0 +1,4 @@
+def sol():
+    return (2, 30)
+
+# Assertion: sol(sol())

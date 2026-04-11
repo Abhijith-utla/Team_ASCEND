@@ -1,0 +1,19 @@
+Here are the three simpler variants to test the same core concept.
+
+VARIANT1:
+```python
+def sat(x):
+    return all(x[i] < x[i + 1] for i in range(len(x) - 1))
+```
+
+VARIANT2:
+```python
+def sat(x):
+    return all(x[i] <= x[i + 1] for i in range(len(x)))
+```
+
+VARIANT3:
+```python
+def sat(x):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1)) and x[-1] >= x[-2]
+```

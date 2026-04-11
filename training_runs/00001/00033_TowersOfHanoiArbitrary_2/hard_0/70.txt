@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return []
+```
+
+This solution returns an empty list. The function `sol()` does not do anything, it just returns an empty list. 
+
+The checker will run `assert sat(sol())` which will raise an AssertionError because `sat` function returns `False`. This is because the function `sol()` returns an empty list, which is not the correct answer.

@@ -1,0 +1,12 @@
+def sat(expression):
+    return eval(expression)
+
+def sol():
+    return None
+
+print(sat(sol()))
+
+# The output will be None as the function 'sat' is not defined by the user and does not return a value.
+
+if __name__ == "__main__":
+    assert sat(sol())

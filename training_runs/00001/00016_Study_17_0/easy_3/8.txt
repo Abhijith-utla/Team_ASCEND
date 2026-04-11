@@ -1,0 +1,10 @@
+Here is a solution to the problem:
+
+```python
+def sol():
+    return 1000
+
+assert sat(sol())
+```
+
+This code constructs a function `sol` that always returns `1000`. Then, the checker `sat` is used to verify that `sol` indeed always returns `1000`.

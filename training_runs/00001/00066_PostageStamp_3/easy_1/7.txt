@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# This function is designed to take a list of stamps and check if they are valid. It should return the number of valid stamps.
+# If no stamps are valid, it should return 0.
+
+def valid_stamps(stamps):
+    valid_count = 0
+    for stamp in stamps:
+        if stamp in [19, 14, 81]:
+            valid_count += 1
+    return valid_count
+
+# Test cases
+assert sat([]) == []
+assert sol() == []
+assert valid_stamps([19, 14, 81]) == 3
+assert valid_stamps([19, 14, 999]) == 2
+assert valid_stamps([14, 14, 14]) == 1
+assert valid_stamps([5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 1

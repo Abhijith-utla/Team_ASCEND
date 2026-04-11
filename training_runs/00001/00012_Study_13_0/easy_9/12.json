@@ -1,0 +1,17 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:27:17.071626+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return 3.1418 # Testing assert sat(sol()) == True assert sat(sol()) == False",
+  "difficulty": "easy",
+  "problem_id": "00012_Study_13_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

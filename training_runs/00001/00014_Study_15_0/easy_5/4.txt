@@ -1,0 +1,15 @@
+Here is a Python solution for the given problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for x in range(20):
+        if not (sum(y for y in li[:x]) == 2 ** x for y in li[:x]):
+            return False
+    return True
+```
+
+This function uses a generator expression to check if the sum of all elements in the list `li` up to index `x` is equal to `2 ** x`. If not, it returns `False`. If it iterates through all indices and finds no such pair, it returns `True`.
+
+Please note that this function assumes that the list `li` is a list of integers and it starts with a positive integer.

@@ -1,0 +1,6 @@
+def sol():
+    s = 'trusenipM'
+    return s == s[::-1] and sorted(s) == sorted(s)
+
+# Test
+assert sat(sol())

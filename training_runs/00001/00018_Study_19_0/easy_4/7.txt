@@ -1,0 +1,10 @@
+Sure, here is the Python code:
+
+```python
+def sol():
+    return 34
+
+assert sat(sol())
+```
+
+In this code, `sat` function checks whether the list `li` has exactly one element and if this element is 34. If it is, the function returns `True`; otherwise, it returns `False`. The `assert` statement is used to check whether the function `sol` returns the expected result.

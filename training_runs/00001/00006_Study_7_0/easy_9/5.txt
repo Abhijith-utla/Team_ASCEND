@@ -1,0 +1,9 @@
+Here is a Python function that solves the problem:
+
+```python
+def sol():
+    s = 'test'
+    return (8 ** 2888) ** 0.5 > 8 and len(s) == 3
+```
+
+This function first checks if the square root of the cubed number (which is greater than 8) is greater than 8 and the length of the string is 3. If both conditions are true, then the function returns True. Otherwise, it returns False.

@@ -1,0 +1,8 @@
+Sure, here's the correct solution:
+
+```python
+def sol():
+    return [ord(x) - ord(y) for x, y in zip("The quick brown fox jumps over the lazy dog", "The five boxing wizards jump quickly")]
+```
+
+This solution uses a list comprehension to compare each character in the first string with the corresponding character in the second string. It uses the `ord` function to convert the characters to their ASCII values, and then subtracts the ASCII value of the second string from the first. This is done for each pair of characters from the two strings.

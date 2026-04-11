@@ -1,0 +1,14 @@
+Sure, here's the Python solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in ls)
+```
+
+This function `sat` checks if all elements in the given list `ls` are not present in `ls`. It does this by iterating over `ls` and checking if each element is in `ls`. If any element is in `ls`, the function returns `False`. If all elements are not in `ls`, the function returns `True`.
+
+The function `all` returns `True` if all elements in the iterable it is given as an argument are `True`. If at least one element is not `True`, `all` returns `False`.
+
+The generator expression `(s not in ls for s in ls)` generates a sequence of `True` and `False` values, one for each element in `ls`. The `all` function then checks if all elements in this sequence are `True`, which means that all elements in `ls` are not in `ls`. If all elements are not in

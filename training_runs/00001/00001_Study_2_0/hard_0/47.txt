@@ -1,0 +1,9 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    s = 'hoooooooooooooooooooooooooo'
+    return s.count('oo') == 100 and s.count('oooo') == 1000 and s.count('o') == 800
+```
+
+This function constructs and returns a single answer value. The count function in Python is used to count the occurrences of a substring in a string. In this case, we are counting the number of 'oo' and 'ooo' in the string 's'. If the count of 'oo' is 100 and the count of 'ooo' is 1000, and the count of 'o' is 800, then this means that the string 's' is a valid string according to the given conditions.

@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(len(list(range(1, 11)))) if i not in list(range(1, 11))]
+
+# Testing the solution
+assert sat(sol())

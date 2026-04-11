@@ -1,0 +1,16 @@
+Here's the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    prefix_sum = 0
+    for i in range(20):
+        if li[i] >= prefix_sum:
+            prefix_sum += li[i]
+        else:
+            return False
+    return True
+```
+
+In this function, we iterate over the list and for each element, we check if it is less than the sum of all elements up to that index. If it is, we add it to the prefix sum. If it's not, we return False, meaning the list is not sorted in non-decreasing order. If we finish the loop without finding such an element, we return True, meaning the list is sorted in non-decreasing order.

@@ -1,0 +1,12 @@
+Sure, here is the solution for the problem:
+
+```python
+def sol():
+    return 4
+
+# This is a placeholder for the checker. If the function is defined correctly,
+# the checker will pass the test with the expected output.
+assert sat(sol())
+```
+
+In this code, the function `sol` returns the number `4`. The checker function `sat` is not required for this specific problem, but it's included for completeness. It's checking if the result of `sol` is greater than `0` and even. The checker expects the function to return `True` if the result is `4`, otherwise it will fail.

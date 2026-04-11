@@ -1,0 +1,10 @@
+Here's the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+```
+
+This function checks if the sum of all elements before an index is equal to 2 raised to the index minus 1. This is because the sum of all elements up to an index is equal to 2 raised to the index minus 1 for every index between 0 and 19. If any of these conditions are not met, the function returns False. If all conditions are met, the function returns True.

@@ -1,0 +1,9 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    s = 'ho'*1000 + 'oo'*100 + 'ho'
+    return s.count('oo') == 100 and s.count('ho') == 801 and s.count('o') == 1000
+```
+
+This code first generates a string 's' that contains 'oo' 100 times and 'ho' 801 times. Then, it checks that the count of 'oo' in 's' is 100, the count of 'ho' in 's' is 801, and the count of 'o' in 's' is 1000. If all these conditions are met, the function returns True, otherwise it returns False.

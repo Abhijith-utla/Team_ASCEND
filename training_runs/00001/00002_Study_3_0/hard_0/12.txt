@@ -1,0 +1,20 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    li = list(range(999))
+    li[444] = -1
+    return li
+```
+
+This function creates a list from 0 to 998 and then assigns the value of 444 (which is out of bounds) to -1. The result is a sorted list from 0 to 998 with one element set to -1. The function checks if this is a sorted list and all elements are unique.
+
+The final checker will run:
+```python
+def test():
+    assert sat(sol())
+
+test()
+```
+
+This test function is empty because it does not check anything but it is needed to run the function with the given Python interpreter.

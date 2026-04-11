@@ -1,0 +1,10 @@
+Here is the Python code that matches the provided pattern:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return [s + t for s in ls for t in ls if s != t] == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function uses list comprehension to generate a new list where each element is a concatenation of two elements from the input list. It also uses an additional for loop to exclude duplicates from the list. The check is made by comparing the generated list with the expected list of concatenations of the input list.

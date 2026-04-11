@@ -1,0 +1,5 @@
+def sol():
+    return {"answer": True}
+
+# Testing the solution
+assert sat(sol())

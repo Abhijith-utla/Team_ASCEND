@@ -1,0 +1,14 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(10)]) and len(set(li)) == 3
+    
+    answer = 1  # Replace with actual answer
+    return answer
+```
+
+This solution checks if all elements in the list are unique, meaning no two elements are the same. The length of the set is also 3, which is the number of unique elements in the list. The function `sat` is then used as the constraint in a different function, `sol`, to find an answer.
+
+Please note that the correct answer is 1, this is just a placeholder for the actual answer.

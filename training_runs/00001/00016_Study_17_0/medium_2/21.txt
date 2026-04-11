@@ -1,0 +1,5 @@
+def sol():
+    return len(str(1000))
+
+# Test the function
+print(sat(sol()))

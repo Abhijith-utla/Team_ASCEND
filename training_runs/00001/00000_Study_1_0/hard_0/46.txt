@@ -1,0 +1,13 @@
+Sure, here is the Python code:
+
+```python
+def sol():
+    return 'oo' * 1000
+
+# Testing the solution
+assert sat(sol())
+```
+
+In this solution, the function sol returns a string composed of 'oo' 1000 times. The count method of a string is used to count the number of occurrences of a specific character or substring in the string. In this case, it counts the number of 'o's in the string.
+
+The test case `assert sat(sol())` is used to verify that the solution returns a string of 'oo's that is exactly 1000 characters long. If the string is not exactly 1000 characters long, the program will raise an AssertionError.

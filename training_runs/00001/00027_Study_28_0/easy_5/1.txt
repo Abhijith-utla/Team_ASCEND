@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(-10, 10) if i not in [i-10 for i in range(-10, 10)]]
+
+assert sat(sol())

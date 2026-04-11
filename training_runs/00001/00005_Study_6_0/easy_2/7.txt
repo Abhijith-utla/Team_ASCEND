@@ -1,0 +1,10 @@
+The function `sat(i: int) -> bool` takes an integer `i` as input and returns a boolean value. This function checks if the input integer is even. If it is, the function returns `True`, otherwise it returns `False`.
+
+Here is the correct pattern:
+
+```python
+def sat(i: int) -> bool:
+    return i % 2 == 0
+```
+
+This function works by using the modulo operator (`%`), which returns the remainder of a division operation. So, `i % 2` will be equal to zero for even numbers, and one for odd numbers. The function `sat` therefore checks if `i % 2` equals zero and returns `True` if it does, indicating that `i` is even.

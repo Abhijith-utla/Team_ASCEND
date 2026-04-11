@@ -1,0 +1,2 @@
+def sol():
+    return 'r' * 20

@@ -1,0 +1,10 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(i != 0 for i in li)
+```
+
+This function uses the built-in `all()` function in Python, which returns True only if all elements in the given iterable (in this case, the list) satisfy the condition of the given function (in this case, the condition `i != 0`). In this case, the iterable is the list `li` and the condition is that all elements in the list are not equal to 0.

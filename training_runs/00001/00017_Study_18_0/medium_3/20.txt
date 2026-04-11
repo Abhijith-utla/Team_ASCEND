@@ -1,0 +1,17 @@
+Here is the solution for your problem.
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+
+def test():
+    assert sol(["apple", "banana", "apple"]) == False
+    assert sol(["apple", "banana", "cherry"]) == True
+    print("All tests passed")
+
+test()
+```
+
+This program checks if the length of the list is equal to the length of the set of the list. If the lengths are equal, it means that the list contains unique elements, so the function returns True. Otherwise, it returns False. The test function is used to test the function with some test cases.

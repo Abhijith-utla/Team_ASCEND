@@ -1,0 +1,14 @@
+The function `sat` is defined to determine whether a string `s` contains exactly 100 'x' characters, exactly 101 'xo' characters, and exactly 98 'xx' characters. 
+
+Here is the Python code that implements the function:
+
+```python
+def sat(s: str):
+    return s.count('x') == 100 and s.count('xo') == 101 and s.count('xx') == 98
+```
+
+This function takes a string `s` as input and returns a boolean value based on whether the string contains exactly 100 'x' characters, 101 'xo' characters, and 98 'xx' characters. 
+
+Please note that the function `sat` is not defined by the user. It is a function defined by the user, and it is used to determine whether the string `s` matches the given condition. The function is defined in such a way that it can be used to solve the problem.
+
+The checker will run `assert sat(sol())` to verify if the function `sol` returns a correct answer.

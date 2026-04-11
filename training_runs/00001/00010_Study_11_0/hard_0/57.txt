@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return str(len(ls))
+
+assert sat(sol())
+```
+
+This program takes a list of strings as an input, finds the minimum and maximum string in the list, and checks if they are the same (i.e., the list has the same length). If they are not, it raises an AssertionError.
+
+In this solution, the length of the list is returned as a string. This is because a list can contain different types of objects, and comparing them in Python can result in a TypeError. By converting the length of the list to a string, we can ensure that the string is returned by the function.

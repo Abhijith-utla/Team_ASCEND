@@ -1,0 +1,17 @@
+def sol(hands: List[int], target_angle=133):
+    h, m = hands
+    assert 0 < h <= 12 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(hour_angle - minute_angle) in [target_angle, 360 - target_angle]
+
+# Test cases
+print(sol([1, 30]))  # True
+print(sol([1, 31]))  # False
+print(sol([12, 0]))  # True
+print(sol([12, 59]))  # False
+print(sol([0, 0]))  # True
+print(sol([1, 59]))  # False
+print(sol([1, 60]))  # True
+print(sol([13, 30]))  # True
+print(sol([13, 31]))  # False

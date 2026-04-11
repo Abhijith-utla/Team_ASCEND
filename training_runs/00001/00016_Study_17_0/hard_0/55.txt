@@ -1,0 +1,22 @@
+The correct pattern for the solution is:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+```
+
+In this solution, we start with `i = 1000` and increment `i` in each iteration of the while loop until `sat(i)` returns `True`. This is because if `sat(i)` returns `False`, then `i` is not a solution for the problem and we increment `i` again.
+
+The `sat` function is defined as follows:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+```
+
+This function checks if the difference in the number of digits between `i + 1000` and `i + 1001` is greater than the difference between the numbers `1000` and `1001`. If it is, the function returns `True`; otherwise, it returns `False`. 
+
+The main function `sol` calls `sat`

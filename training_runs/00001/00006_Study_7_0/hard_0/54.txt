@@ -1,0 +1,7 @@
+def sat(s: str):
+    return (8 ** 2888).count(s) > 8 and len(s) == 3
+
+# Testing
+assert sat('123')
+assert not sat('234')
+assert not sat('124')

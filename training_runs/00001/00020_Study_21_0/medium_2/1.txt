@@ -1,0 +1,16 @@
+Here is the Python code for the `sol` function that satisfies the given conditions:
+
+```python
+def sol():
+    li = [2, 3, 5, 4, 7, 1, 3, 2]
+    return li
+```
+
+And here is the Python code for the `sat` function that checks if the list `li` is a valid permutation of the integers from 1 to 7. 
+
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(8)]) and len(set(li)) == 3
+```
+
+This function will return `True` if the list `li` is a valid permutation of the integers from 1 to 7, and `False` otherwise.

@@ -1,0 +1,15 @@
+Here is the Python solution:
+
+```python
+def sol():
+    return {'result': False}
+
+def sat(ls, idx1=1, idx2=2):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+assert sat(['a', 'b', 'c', 'd', 'e'])
+```
+
+In the above code, the `sat` function is checking if the first element of the list `ls` is present in the second element of the list `ls` and if the first element is not equal to the second element. If the condition is met, the function returns `{'result': True}`, otherwise, it returns `{'result': False}`.
+
+The `assert` statement is used to check if the function `sat` is working correctly. If `sat(['a', 'b', 'c', 'd', 'e'])` is called with arguments `['a', 'b', 'c', 'd', 'e']`, the output will be `{'result': False}`, indicating that the function is not working as expected.

@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# This checker will run assert sat(sol()) and not assert sat(sol(4)) as sol(4) is not defined.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 62,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:25:45.051431+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): return {(a, b) for a, b in coords} == len(coords) >= num_points # Test cases assert sat([(0, 0), (5, 5), (...",
+  "difficulty": "hard",
+  "problem_id": "00059_No3Colinear_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

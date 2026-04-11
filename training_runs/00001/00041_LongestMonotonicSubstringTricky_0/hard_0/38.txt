@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Explanation:
+# Since there's no solution, the function will return an empty list.
+# This makes sense because it doesn't follow any specific pattern or rules that the problem requires.

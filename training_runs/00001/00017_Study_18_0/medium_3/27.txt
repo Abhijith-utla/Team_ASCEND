@@ -1,0 +1,3 @@
+def sol():
+    ls = ["apple", "banana", "apple"]
+    return len(ls) == len(set(ls))

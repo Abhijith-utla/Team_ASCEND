@@ -1,0 +1,18 @@
+Sure, here is the solution:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+This function `sat` takes a string `s` as an argument and checks two conditions:
+
+1. The count of occurrences of `s` in the string `8 ** 2888` is greater than 8.
+2. The length of `s` is 3.
+
+Please note that this function will not work for large numbers. The calculation `8 ** 2888` will exceed the maximum recursion depth in Python. For large numbers, you can use the `pow` function instead of the exponentiation operator `**`. Here is the updated function:
+
+```python
+def sat(s: str):
+    return str(pow(8, 2888, 2 ** 1000000007)).count(s) > 8 and len(s) == 3
+```
+In this function, `pow(8, 2888, 2 ** 1000

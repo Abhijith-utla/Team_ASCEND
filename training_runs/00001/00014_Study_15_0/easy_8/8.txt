@@ -1,0 +1,19 @@
+The provided code is incorrect. The `sat` function is used to check if all elements in the list are equal, but the code provided is incorrect because it is using a generator expression inside the `all` function. This code will not work as expected because generators don't support the `all` method, causing an error. 
+
+The correct solution should be:
+
+```python
+def sol(li: List[int]):
+    return li == [li[i] for i in range(len(li))]
+```
+
+The `sol` function will return a boolean value based on whether all elements in the list are equal to the first element of the list.
+
+Here is how the function should look:
+
+```python
+def sol(li: List[int]):
+    return li == [li[i] for i in range(len(li))]
+```
+
+The `sol` function should return a boolean value that is `True` if all elements in the list are equal to the first element of the list, and `False` otherwise.

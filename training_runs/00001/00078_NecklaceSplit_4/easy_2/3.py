@@ -1,0 +1,12 @@
+def sat(n: int, lace="brrbbbrbbrrbrrbbrrbrrrbbrbbrrrbrbrrrrbbrrrbrrrbbrbbrbbbbbbbbbrbbrrrbbrbbbbbbbbrbbrrrrbbbrbrbr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n < len(lace) and n >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+
+def sol():
+    return 1
+
+assert sat(0)
+!python3 -c "print(sol())"
+
+if __name__ == "__main__":
+    assert sat(sol())

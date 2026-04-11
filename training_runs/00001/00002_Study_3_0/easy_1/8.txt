@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    li = [i+1 for i in range(1000)]
+    return li
+```
+
+Explanation:
+In this problem, we are given a list of 1000 integers from 1 to 1000. We know that the list must contain all numbers from 1 to 1000, and no number can be the same as its index (since we are counting from 1, not 0). Therefore, we create a list of the first 1000 integers from 1 to 1000. The sorted list must be the same as the original list, and the list should be all unique.

@@ -1,0 +1,10 @@
+The correct pattern for your function 'sol' is:
+
+```python
+def sol():
+    return [6] + [3] * 997
+```
+
+The function 'sol' constructs a list of 1000 elements where the first element is 6 and the rest are 3.
+
+The function 'sat' checks if the list satisfies the condition provided in the function 'sat'. The function 'sat' checks if the sum of each pair of elements in the list is 3. This is done by using a generator expression within the 'all' function. If all pairs satisfy this condition, the 'all' function returns True. If not, it returns False. The 'zip' function is used to pair elements from the first list with those from the second list, and the 'len' function is used to calculate the length of the list. If the length is 1000, the 'len' function returns True; otherwise, it returns False.

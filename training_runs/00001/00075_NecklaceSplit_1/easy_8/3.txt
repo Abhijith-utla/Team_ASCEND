@@ -1,0 +1,4 @@
+def sol():
+    return {}
+
+assert sat(0, 0, lace="rbbrrbbrbbrrbbrrbbrbrrrbbrbrrrrrrbbrrbrrbbrrbbbrbbrbbbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrrbrrbrrbrrbrbbrbbbbbbrbbbrrrrrrrrbrrrbrbbrrbbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr")

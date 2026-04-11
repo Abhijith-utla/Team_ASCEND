@@ -1,0 +1,9 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    s = 'x' * 100 + 'o' * 111 + 'xx' * 98
+    return s
+```
+
+In this function, we create a string `s` with a pattern 'x' repeated 100 times, 'o' repeated 111 times, and 'xx' repeated 98 times. The function then returns this string.

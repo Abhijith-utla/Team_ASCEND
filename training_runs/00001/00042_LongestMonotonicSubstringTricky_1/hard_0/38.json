@@ -1,0 +1,16 @@
+{
+  "attempt_num": 38,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:10:55.450914+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): return [527, 528, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553...",
+  "difficulty": "hard",
+  "problem_id": "00042_LongestMonotonicSubstringTricky_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

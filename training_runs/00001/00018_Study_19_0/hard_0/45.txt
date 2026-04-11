@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return {i + j for i in range(10) for j in range(10)}
+```
+
+The code above uses list comprehensions to generate a set of all possible sums of two integers from 0 to 9 in a single line. 
+
+Please note that the set returned by the code will not include duplicates as the set in Python does not allow duplicate elements.

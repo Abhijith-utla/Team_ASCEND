@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The solution is empty because the problem states that the source and target arrays are not modified and the solution is only valid if the source array is changed to match the target array.

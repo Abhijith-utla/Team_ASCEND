@@ -1,0 +1,17 @@
+{
+  "attempt_num": 64,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:18:52.166136+00:00",
+  "diagnostic": "reason=subprocess_error:EOFError: EOF when reading a line|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return ''.join(sorted(''.join(sorted(input('Enter a string: '))))) # Testing the solution if __name__ == '...",
+  "difficulty": "hard",
+  "problem_id": "00024_Study_25_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

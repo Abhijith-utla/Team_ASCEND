@@ -1,0 +1,4 @@
+def sol():
+    return "r" * 200
+
+assert sat(sol())

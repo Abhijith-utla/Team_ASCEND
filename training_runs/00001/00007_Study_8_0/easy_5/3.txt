@@ -1,0 +1,20 @@
+Here is the correct pattern for the Python code:
+
+```python
+def sol(ls, idx1=2, idx2=1):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+This function 'sol' takes three arguments: 'ls' which is the list and 'idx1' and 'idx2' which are optional parameters defaulting to 2 and 1 respectively. The function checks if the element at index 'idx1' is present in the list 'ls' and if not it checks if the elements at indices 'idx1' and 'idx2' are not equal and returns True if both conditions are met.
+
+The function 'sat' is used to check the given condition. The function is defined as:
+
+```python
+def sat(ls, idx1=2, idx2=1):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+The function 'sat' is used to check the given condition. The function is defined as:
+
+```python
+def sol(ls, idx1=

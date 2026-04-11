@@ -1,0 +1,16 @@
+{
+  "attempt_num": 11,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:10:54.809271+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=23|checked=23/23|preview=def sol(): n = 50 while n > 0: n -= 1 if n % 5 == 0: n -= 1 if n % 5 == 0: n -= 1 if n % 5 == 0: n -= 1 if n % 5 == 0...",
+  "difficulty": "easy",
+  "problem_id": "00058_MonkeyAndCoconuts_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

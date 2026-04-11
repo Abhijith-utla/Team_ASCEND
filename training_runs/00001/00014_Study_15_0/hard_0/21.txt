@@ -1,0 +1,10 @@
+Here is the solution for the given Python program:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+```
+
+In this solution, the function `sat` takes a list of integers `li` as input. It uses a generator expression to iterate over the range from 0 to 19. For each `i`, it checks if the sum of the first `i` elements in `li` is equal to `2 ** i - 1`. The `sum` function is used to calculate the sum of the first `i` elements in `li`, and the `all` function is used to check if all the sums are equal to `2 ** i - 1`. If all sums are equal to `2 ** i - 1`, the `all` function returns `True`, otherwise it returns `False`.

@@ -1,0 +1,10 @@
+Here is the correct solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function checks if all elements in the list `li` are present at least once and the count of each element is equal to the value of that element. It does this by using the `count` method of the list and by using a list comprehension to generate a list of booleans where each boolean is `True` if the count of the corresponding element in `li` is equal to the element itself, and `False` otherwise. The `all` function then checks if all elements in this list are `True`, returning `True` if they are all `True` and `False` if there is a `False` in the list.

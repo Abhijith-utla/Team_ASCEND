@@ -1,0 +1,8 @@
+Here is the Python code that will satisfy the provided condition:
+
+```python
+def sol():
+    li = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+    return li
+```
+This function will return a list of 10 elements, where the 4th element is repeated twice and the 4th element is not at the third position.

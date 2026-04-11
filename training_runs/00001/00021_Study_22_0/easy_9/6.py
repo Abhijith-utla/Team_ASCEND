@@ -1,0 +1,23 @@
+def sat(s: str) -> bool:
+    if len(s) > 30 or len(s) < 5:
+        return False
+    return s.count(s[0]) == s.count(s[-1])
+
+def sol():
+    answer = 'false'
+    for s in ['A', 'ABC', 'ABCABC', 'ABCABCABC', 'ABCDEF']:
+        if sat(s):
+            answer = 'true'
+            break
+    return answer
+
+def sat(s: str) -> bool:
+    if len(s) > 30 or len(s) < 5:
+        return False
+    return s.count(s[0]) == s.count(s[-1])
+
+if __name__ == "__main__":
+    print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

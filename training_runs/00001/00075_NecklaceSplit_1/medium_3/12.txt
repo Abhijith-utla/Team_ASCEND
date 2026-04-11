@@ -1,0 +1,5 @@
+def sol():
+    return {"n": 0, "m": 0}
+
+# Checker for the solution
+assert sat(sol()["n"], sol()["m"])

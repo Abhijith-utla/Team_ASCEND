@@ -1,0 +1,8 @@
+Sure, here is the solution.
+
+```python
+def sat(s: str) -> bool:
+    return s == '6.5'
+```
+
+In the function `sat`, the argument `s` is a string and the function returns a boolean value. The boolean value is `True` if the string `s` is equal to '6.5' and `False` otherwise. The function `sat` is meant to be a "solution" function.

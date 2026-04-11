@@ -1,0 +1,8 @@
+Here is a correct solution:
+
+```python
+def sol():
+    return [ord(i) for i in "The quick brown fox jumps over the lazy dog"][0] == [ord(i) for i in "The five boxing wizards jump quickly"][0]
+```
+
+This function checks whether the ASCII values of the first characters in the two strings are equal. The ASCII value of 'T' is 72, 'h' is 104, 'e' is 101, and so on. If these are equal, the function returns True; otherwise, it returns False.

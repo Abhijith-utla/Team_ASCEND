@@ -1,0 +1,11 @@
+Your function appears to be checking if a list of integers corresponds to a list of ASCII values for the characters in the string "The quick brown fox jumps over the lazy dog".
+
+Here's the correct pattern:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list(
+        "The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function takes a list of integers, converts them into corresponding ASCII characters using the `chr()` function, and compares the result to a list of characters in the string "The quick brown fox jumps over the lazy dog". The spaces are replaced with nothing to ensure that the list and the list of characters match.

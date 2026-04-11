@@ -1,0 +1,28 @@
+Here is the correct solution:
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+This solution works by incrementing the input `i` until `sat(i)` returns `True`. When `sat(i)` returns `True`, it means that the difference in length between `i + 1000` and `i + 1001` is greater than the difference in length between `i + 1001` and `i + 1002`, which is the rule provided by the problem statement. The solution then returns `i`, which is the first number for which the condition is satisfied.
+
+Here is the Python code that implements this solution:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+The function `sol` uses a while loop to keep

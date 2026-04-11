@@ -1,0 +1,8 @@
+Sure, here is a Python solution for your problem:
+
+```python
+def sat(s: str):
+    return s.count('m') == 400 and s.count('mm') == 401 and s.count('mmm') == 398
+```
+
+This function takes a string as input and checks if the string contains exactly 400 'm' characters, 401 'mm' characters, and 398 'mmm' characters respectively. The count() method is used to count the number of occurrences of a substring in a string. The function returns True if all counts are equal to the expected values and False otherwise.

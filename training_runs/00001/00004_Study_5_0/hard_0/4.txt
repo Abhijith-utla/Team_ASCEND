@@ -1,0 +1,10 @@
+Your solution looks correct, but the function `sat` has a wrong type hinting. The function `sat` should take a single argument of type `int` and return a boolean. However, in your solution, the type hinting is not correctly defined. Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(n: int) -> bool:
+    return all([n.count(i) == i for i in range(10)])
+```
+
+In the corrected solution, the function `sat` has a single argument `n` of type `int` and returns a boolean. The list comprehension inside the `all` function checks if each digit from 0 to 9 appears exactly once in the number `n`. If all digits appear exactly once, `all` returns `True`, otherwise it returns `False`.

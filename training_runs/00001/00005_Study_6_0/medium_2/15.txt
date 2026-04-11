@@ -1,0 +1,11 @@
+Sure, here is the solution for the problem:
+
+```python
+def sol():
+    for i in range(100):
+        if sat(i):
+            return i
+    return None
+```
+
+This code will return the first number that is a multiple of 5 and is less than 100. If there is no such number, it will return None.

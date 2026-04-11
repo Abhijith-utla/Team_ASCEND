@@ -1,0 +1,14 @@
+Here's a correct pattern for the Python function `sol`:
+
+```python
+def sol():
+    return [chr(i) for i in range(32, 127)]
+```
+
+This function generates a list of ASCII characters from 32 to 126. This is a correct pattern because the ASCII characters represent all printable characters. The `for i in range(32, 127)` part creates a range of integers from 32 to 126, and the `[chr(i)]` part converts each integer to its corresponding ASCII character.
+
+The `==` operator is used to compare the generated list with the expected list. The `list(...)` function is used to convert the string "The quick brown fox jumps over the lazy dog" to a list of ASCII characters, and the `replace(" ", "")` function is used to remove all spaces from the string. The `assert sat(sol())` line checks that the `sol` function returns the correct list of ASCII characters.
+
+Here's an example of how you might call and use this function:
+
+```python

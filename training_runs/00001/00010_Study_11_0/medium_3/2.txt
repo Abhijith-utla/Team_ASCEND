@@ -1,0 +1,9 @@
+def sol():
+    return True
+
+# Asserts
+assert sat([""]) == True
+assert sat(["a", "a"]) == True
+assert sat(["a", "b"]) == False
+assert sat(["a", "aa"]) == False
+assert sat(["aaa", "bbb"]) == False

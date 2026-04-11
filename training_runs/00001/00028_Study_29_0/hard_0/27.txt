@@ -1,0 +1,11 @@
+Here's a possible solution:
+
+```python
+def sol():
+    # Your solution goes here
+    return []
+```
+
+You can replace the `return []` line with your own logic. The `sat` function checks if all elements in the list are in the range 0-999 and the absolute difference between the square of the element and the square of a neighbor is at least 10. Additionally, the list should have more than 995 unique elements.
+
+The checker will run `assert sat(sol())` and it will pass if the function returns an empty list, or an error if it raises an AssertionError.

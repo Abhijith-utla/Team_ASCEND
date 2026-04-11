@@ -1,0 +1,10 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return 123.456
+
+assert sat(sol())
+```
+
+This code first defines a function `sat` that checks if the input is a float and starts with "123.456". It then defines a function `sol` that returns the float 123.456. Finally, it asserts that `sat(sol())` is True, meaning that the function `sol` returned the float 123.456.

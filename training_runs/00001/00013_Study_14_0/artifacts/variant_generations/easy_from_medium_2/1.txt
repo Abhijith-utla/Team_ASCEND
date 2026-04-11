@@ -1,0 +1,24 @@
+Here are three simple variants of the original problem, each testing a different core concept:
+
+VARIANT1:
+
+```python
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:li.index(x)]) for x in set(li))
+```
+
+VARIANT2:
+
+```python
+def sat(li: List[int]):
+    return all((li.index(x) < sum(li[:li.index(x)])) for x in set(li))
+```
+
+VARIANT3:
+
+```python
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:i]) for i in range(len(li)) for x in set(li))
+```
+
+In all variants, the program checks if each element in the list is less than the sum of the elements before it in the list. The first variant uses the index() method to get the index of the current element in the list, and then uses slicing to get the sum of all elements before the current element. The second variant uses a nested for loop to get the index and sum in each iteration. The third variant uses another nested for loop to get the index and sum in each iteration.

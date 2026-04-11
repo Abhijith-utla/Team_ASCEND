@@ -1,0 +1,13 @@
+Here is the Python code that satisfies the given condition:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list(
+        "The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+The function `sat` checks whether a list of integers `li` satisfies the condition by comparing the resulting list of characters from the string "The quick brown fox jumps over the lazy dog" with the input list `li`. If the two lists are equal, the function returns `True`; otherwise, it returns `False`.
+
+In this function, the list comprehension `[chr(i) for i in li]` converts each integer in the list `li` to a character. The `list` function is then used to convert the resulting list of characters back into a list of characters.
+
+The `replace` method is used to remove all spaces from the string "The quick brown fox jumps over the lazy dog". The result of this operation is then compared to the list `li` to determine if the two lists are equal.

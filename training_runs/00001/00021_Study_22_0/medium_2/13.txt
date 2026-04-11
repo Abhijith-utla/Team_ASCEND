@@ -1,0 +1,9 @@
+def sol():
+    s = 'abcde'  # change this to any string of length 20
+    if len(s) != 20:
+        raise ValueError('String is not of length 20')
+    return { 's': s }
+
+# Uncomment the following lines to test the function
+# print(sat(sol()))
+# assert sat(sol())

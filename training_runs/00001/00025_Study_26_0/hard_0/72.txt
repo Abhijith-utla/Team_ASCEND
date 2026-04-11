@@ -1,0 +1,5 @@
+def sol():
+    return "".join(map(str, [8 ** i for i in range(88)]))
+
+# The assertion check
+assert sat(sol())

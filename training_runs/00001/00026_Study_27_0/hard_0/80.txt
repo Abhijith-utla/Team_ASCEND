@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4, 5]
+
+assert sat(sol())
+```
+
+In the given problem, we are asked to construct a list with a pattern where the first element of the list is the second element, the second element of the list is the third element, and so on. The `sat` function checks whether the list satisfies the given conditions.

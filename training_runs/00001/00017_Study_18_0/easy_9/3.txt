@@ -1,0 +1,18 @@
+Sure, here is a Python function that returns True if the list has the same number of elements as the list itself. If the list has a different number of elements, the function returns False.
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    if len(ls) == len(ls):
+        return True
+    else:
+        return False
+```
+
+To check the function, you can use the following code:
+
+```python
+print(sat(["hello", "world"]))  # Expected output: True
+print(sat(["hello"]))  # Expected output: False
+```

@@ -1,0 +1,9 @@
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip([5] + li, li)) and len(li) == 1000
+
+def sol():
+    raise RuntimeError("No parseable sol() extracted")
+
+
+if __name__ == "__main__":
+    assert sat(sol())

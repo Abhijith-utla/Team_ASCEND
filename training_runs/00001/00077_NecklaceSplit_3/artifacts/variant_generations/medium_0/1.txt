@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(n: int):
+    return lace[n:n + len(lace) // 2] == 'r' * (2 * n)
+```
+
+VARIANT2:
+```python
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrbrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[:len(lace) // 2] == 'r' * (2 * n)
+```
+
+VARIANT3:
+```python
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrbrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[n - 1:n + len(lace) // 2] == 'r' * (2 * (n - 1))
+```

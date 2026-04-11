@@ -1,0 +1,4 @@
+def sol():
+    return int(str(10000))
+
+assert sat(sol())

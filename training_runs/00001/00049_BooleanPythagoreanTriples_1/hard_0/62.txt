@@ -1,0 +1,25 @@
+def sol():
+    return []
+
+# assert sol([])
+# assert sol([0, 1])
+# assert sol([1, 0])
+# assert sol([0, 0])
+# assert sol([1, 1])
+# assert sol([0, 1, 0])
+# assert sol([1, 0, 1])
+# assert sol([0, 1, 1])
+# assert sol([1, 0, 0])
+
+# assert not sol([0, 1])
+# assert not sol([1, 0])
+# assert not sol([0, 0])
+# assert not sol([1, 1])
+# assert not sol([0, 1, 0])
+# assert not sol([1, 0, 1])
+# assert not sol([0, 1, 1])
+# assert not sol([1, 0, 0])
+
+# assert sol(list(range(7824)))
+# assert sol(list(range(7824, 0, -1)))
+# assert sol(list(range(7823

@@ -1,0 +1,2 @@
+def sol():
+    return [56, 54, 7]

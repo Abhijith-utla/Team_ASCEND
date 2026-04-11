@@ -1,0 +1,10 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return 3
+
+assert sat(sol())
+```
+
+The function `sat` checks if all elements in the list are multiplied by 3. The function `sol` returns 3, which satisfies the condition of `sat`.

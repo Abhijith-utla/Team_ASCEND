@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(100) if i%10 in range(10)]
+
+assert sat(sol())

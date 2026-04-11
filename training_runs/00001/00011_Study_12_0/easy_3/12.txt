@@ -1,0 +1,11 @@
+The provided function `sat` checks whether all numbers in a list `li` are equal to 3 plus their previous number. The list length is also 1000. However, the function does not correctly check if the number 6 is in the list, and it doesn't return the correct answer value. Here is the corrected function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    answer = all(i + j == 3 for i, j in zip(li, li[1:])) and len(li) == 1000
+    return answer
+```
+
+This function correctly checks if all numbers in `li` are equal to 3 plus their previous number, and if the length of `li` is 1000.

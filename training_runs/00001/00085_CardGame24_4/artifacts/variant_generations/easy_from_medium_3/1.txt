@@ -1,0 +1,19 @@
+Here are three simple Python functions that use the `str.replace()` method to remove all whitespace from the string `expr`. The function `sat()` takes a string `expr` as an argument and returns `True` if the string is empty after removing all whitespace.
+
+VARIANT1:
+```python
+def sat(expr: str):
+    return expr == ""
+```
+
+VARIANT2:
+```python
+def sat(expr: str):
+    return expr == " "
+```
+
+VARIANT3:
+```python
+def sat(expr: str):
+    return expr == "  "
+```

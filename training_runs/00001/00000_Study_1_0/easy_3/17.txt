@@ -1,0 +1,18 @@
+Sure, here is a Python function that satisfies the given conditions:
+
+```python
+def sol():
+    s = input()
+    if 'oo' in s and s.count('o') <= 1000:
+        return True
+    else:
+        return False
+```
+
+This function reads a string input from the user and checks if 'oo' is in the string and if the count of 'o' is less than or equal to 1000. If both conditions are met, the function returns True, otherwise it returns False.
+
+Here is the test:
+
+```python
+assert sol() == True
+```

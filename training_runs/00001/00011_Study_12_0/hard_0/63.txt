@@ -1,0 +1,10 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function will return `True` if all elements in the list `li` are consecutive numbers from `4` and the sum of all pairs `(i, j)` in `li` is `9`, and `len(li)` is `1000`. Otherwise, it will return `False`.

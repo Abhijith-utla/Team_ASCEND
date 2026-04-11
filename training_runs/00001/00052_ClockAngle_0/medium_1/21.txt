@@ -1,0 +1,12 @@
+Here is the solution to the problem.
+
+```python
+from typing import Tuple
+
+def sol():
+    return ()
+
+assert sat(sol())
+```
+
+The function `sat` checks if the hands provided by the user match the target angle. The target angle is 180 degrees for an analog clock. The function `sol` returns an empty tuple as the answer. The assert statement checks if the function `sat` returns a truthy value when called with the argument `sol()`.

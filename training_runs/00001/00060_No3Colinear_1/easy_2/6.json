@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:31:22.444238+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): side = 5 num_points = 9 coords = [(2, 3), (4, 6), (1, 2)] return sat(coords, side, num_points) if __name__...",
+  "difficulty": "easy",
+  "problem_id": "00060_No3Colinear_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

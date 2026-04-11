@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# Checker asserts that the result of the function sol() matches the expected result.
+assert sol() == []

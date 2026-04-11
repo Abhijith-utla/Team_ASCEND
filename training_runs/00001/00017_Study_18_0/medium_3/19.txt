@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+This function `sol` takes a list of strings `ls` as input and returns a boolean value. The boolean value will be `True` if the length of the list `ls` and the set of the list `ls` are equal (which means that there are no duplicate elements), and `False` otherwise.
+
+The `set(ls)` function is used to convert the list `ls` into a set, which automatically removes any duplicate elements. The length of the set is then compared to the length of the list, and the result is returned.

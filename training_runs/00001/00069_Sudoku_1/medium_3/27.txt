@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# Validate that the function "sol" passes the test using the provided pattern for "sat".
+assert sat(sol())

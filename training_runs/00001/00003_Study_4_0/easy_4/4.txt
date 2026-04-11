@@ -1,0 +1,21 @@
+def sol():
+    li = [int(i) for i in input().split()]
+    return sat(li)
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    return True
+
+# Testing
+assert sat(list(range(10)))
+assert not sat(list(range(10)) + [3]*8)
+assert not sat(list(range(10)) + [9] + [3]*8)
+assert not sat([3]*10)
+assert not sat([3]*9 + [9])
+assert not sat([3]*9 + [9] + [3]*8)
+assert sat([3, 9, 9, 3, 3, 3, 9, 9, 9, 9])

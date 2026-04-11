@@ -1,0 +1,10 @@
+def sol():
+    def sat(li: List[int]):
+        return all(x >= 0 and 2 ** x - 1 == (2 ** x) - 1 for x in li)
+    assert sat([0, 1, 2, 3, 4, 5])
+    assert not sat([0, 1, 2, 3, 4, -1])
+    assert sat([0, 1, 2, 3, 16, 255])
+    assert not sat([0, 1, 2, 3, 32, 255])
+    assert sat([0, 1, 2, 3, 64, 255])
+    assert not sat([0, 1, 2, 3, 128, 255])
+    return 'OK'

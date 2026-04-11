@@ -1,0 +1,8 @@
+def sol():
+    hand_position = [0, 0]
+    while not sat(hand_position):
+        hand_position[0] += 0.1
+        hand_position[1] += 0.1
+    return hand_position
+
+print(sol())

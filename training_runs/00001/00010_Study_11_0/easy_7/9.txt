@@ -1,0 +1,5 @@
+def sol():
+    return [{'answer': 'Yes' if sat([i.lower() for i in input().split()]) else 'No'}]
+
+# Test cases
+print(sol())

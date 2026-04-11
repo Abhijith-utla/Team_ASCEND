@@ -1,0 +1,13 @@
+The function `sat` checks if a list of integers `li` matches the string "The five boxing wizards jump quickly" by comparing each element of the list with the corresponding character in the string. If the characters do not match, the function returns `False`. If the function completes its execution without finding any discrepancies, it returns `True`.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The five boxing wizards jump quickly")
+```
+
+This function is correct for a list of integers that corresponds to the indices of characters in "The quick brown fox jumps over the lazy dog" when interpreted as a string.
+
+However, if the list of integers does not correspond to the indices of characters in "The quick brown fox jumps over the lazy dog", the function will return `False`. For example, if the list is `[0, 1, 2, 3, 4]`, the function will return `False` because the characters at indices 0,

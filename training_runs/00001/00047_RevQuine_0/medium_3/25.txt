@@ -1,0 +1,4 @@
+def sol():
+    return "dneurf"
+
+print(sat(sol()))

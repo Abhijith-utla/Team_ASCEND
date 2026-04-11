@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(expr):
+    return eval(expr)
+```
+
+VARIANT2:
+```python
+def sat(expr):
+    return eval(expr, {}, {})
+```
+
+VARIANT3:
+```python
+def sat(expr):
+    return eval(expr, {}, {"__builtins__" : None})
+```

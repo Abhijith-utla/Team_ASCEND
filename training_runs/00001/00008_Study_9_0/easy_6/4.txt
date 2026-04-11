@@ -1,0 +1,6 @@
+def sol():
+    li = input().split()
+    assert sat(li)
+    return max(li, key=len)
+
+print(sol())

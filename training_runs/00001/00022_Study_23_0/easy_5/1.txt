@@ -1,0 +1,8 @@
+Here is the Python code that sol() function should return to satisfy the 'sat' function:
+
+```python
+def sol():
+    return 'd'
+```
+
+The 'sat' function checks if all characters in the 'answer' string are 'd'. If they are, it returns True, else False.

@@ -1,0 +1,5 @@
+def sol():
+    stamps = [10, 32, 8]
+    return stamps
+
+assert sat(sol())

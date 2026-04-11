@@ -1,0 +1,5 @@
+def sol():
+    return 'x' * 1000 + 'o'
+
+# Test
+assert sat(sol())

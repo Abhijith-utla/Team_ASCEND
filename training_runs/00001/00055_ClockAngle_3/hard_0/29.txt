@@ -1,0 +1,23 @@
+def sol():
+    return [], 0
+
+# We can test this function with a small set of test cases
+def test():
+    assert sat([0, 0])
+    assert not sat([12, 0])
+    assert sat([12, 30])
+    assert not sat([12, 45])
+    assert sat([12, 30])
+    assert not sat([11, 59])
+    assert sat([11, 1])
+    assert not sat([23, 59])
+    assert sat([23, 1])
+    assert not sat([12, 60])
+    assert sat([12, 60])
+    assert not sat([1, 1])
+    assert not sat([0, 60])
+    assert sat([0, 60])
+    assert not sat([13, 45])
+    assert sat([13, 45])
+
+test()

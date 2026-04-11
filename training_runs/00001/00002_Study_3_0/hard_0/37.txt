@@ -1,0 +1,4 @@
+def sol():
+    return sorted(range(999))
+
+assert sat(sol())

@@ -1,0 +1,5 @@
+def sol():
+    l = [i for i in range(1000)]
+    return l
+
+assert sat(sol())

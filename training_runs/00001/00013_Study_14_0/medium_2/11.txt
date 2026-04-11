@@ -1,0 +1,14 @@
+The Python function `sat` is to check if the list `li` is sorted in ascending order. Here is a correct solution for it:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i < li.index(x) + sum(li[:li.index(x)]) for x in set(li))
+```
+
+In this solution, we use `set(li)` to get a set of unique elements in `li`, then we loop over these unique elements `x`. For each `x`, we calculate the sum of the elements before `x` in `li` using `sum(li[:li.index(x)])`, and check if `i` is less than this sum plus the index of `x` in `li`. If all conditions are true, `all` will return `True`, otherwise it will return `False`.
+
+The checker will run: `assert sat([2, 5, 3, 4, 1, 6, 7, 8])`
+
+Please note that this solution assumes that `li` contains only integers.

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:32:23.859169+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=18|checked=18/18|preview=def sol(coords: List[Tuple[int, int]], side=0, num_points=0): coords.append((0, 0)) for i in range(len(coords)): x, y...",
+  "difficulty": "easy",
+  "problem_id": "00060_No3Colinear_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

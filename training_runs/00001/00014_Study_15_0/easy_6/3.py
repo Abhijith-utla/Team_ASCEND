@@ -1,0 +1,12 @@
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+
+def sol():
+    li = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 150, 242, 377, 610, 987, 1441, 2000, 2661, 3432]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+
+if __name__ == "__main__":
+    assert sat(sol())

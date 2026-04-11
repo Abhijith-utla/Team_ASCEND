@@ -1,0 +1,24 @@
+def sat(s: str):
+    return 'ooo' in s and 'o' not in s and s.count('o') == 1000
+
+def sol():
+    s = 'ooo' * 1000
+    return s
+
+# Test cases
+print(sat(sol()))  # Output: 'ooo'
+print(sat(sol()+'o'))  # Output: 'ooooo'
+print(sat(sol()+'oo'))  # Output: 'oooooooo'
+print(sat(sol()+'ooo'))  # Output: 'ooooooooo'
+print(sat(sol()+'oooo'))  # Output: 'oooooooooo'
+print(sat(sol()+'ooooo'))  # Output: 'ooooooooooo'
+
+assert sat(sol())  # No output, the condition is False
+assert sat(sol()+'o')  # No output, the condition is False
+assert sat(sol()+'oo')  # No output, the condition is False
+assert sat(sol()+'ooo')  # No output, the condition is False
+assert sat(sol()+'oooo')  # No output, the condition is False
+assert sat(sol()+'oo
+
+if __name__ == "__main__":
+    assert sat(sol())

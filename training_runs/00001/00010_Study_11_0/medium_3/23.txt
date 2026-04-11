@@ -1,0 +1,20 @@
+The code you provided is correct for the provided problem. It checks if all strings in a list are of the same length. If they are, it returns True. If not, it returns False.
+
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+You can use this function to check if a list of strings is all of the same length. For example:
+
+```python
+print(sat(["abc", "def", "ghi"]))  # Returns True
+print(sat(["abc", "de", "ghi"]))  # Returns False
+```

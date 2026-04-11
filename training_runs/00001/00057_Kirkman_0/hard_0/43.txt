@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# Test the function
+assert sat(sol())
+
+# If the function works as expected, this will not be called
+print("The function works")

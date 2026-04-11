@@ -1,0 +1,12 @@
+Sure, here is the Python solution for your problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(i >= 0 for i in li)
+```
+
+In the function `sat`, we use a generator expression within the `all` function to check if all elements in the list `li` are non-negative. The generator expression iterates over each element in `li` and checks if it is non-negative. If all elements are non-negative, the `all` function returns `True`, otherwise it returns `False`.
+
+The assertion `assert sat(sol())` will pass if the `sol` function returns a list of non-negative integers, and fail otherwise.

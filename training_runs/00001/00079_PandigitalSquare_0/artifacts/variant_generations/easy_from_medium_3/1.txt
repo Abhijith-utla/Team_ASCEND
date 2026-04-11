@@ -1,0 +1,20 @@
+VARIANT1:
+```python
+def sat(n: int) -> bool:
+    s = str(n)
+    return len(s) == len(set(s))
+```
+
+VARIANT2:
+```python
+def sat(n: int) -> bool:
+    s = str(n * n)
+    return len(s) == len(set(s))
+```
+
+VARIANT3:
+```python
+def sat(n: int) -> bool:
+    s = str(n)
+    return len(s) == len(set(s)) and s.isdigit()
+```

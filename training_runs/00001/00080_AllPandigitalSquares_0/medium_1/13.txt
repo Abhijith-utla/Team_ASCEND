@@ -1,0 +1,12 @@
+def sol():
+    return [1, 4, 9]
+
+# Correct pattern:
+# def sol():
+#     return [1, 4, 9]
+
+# Incorrect pattern:
+# def sol(x):
+#     ...
+
+# assert sat(sol())

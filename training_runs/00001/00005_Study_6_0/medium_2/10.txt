@@ -1,0 +1,7 @@
+def sol():
+    for i in range(100):
+        if sat(i):
+            return i
+    return None
+
+print(sol())

@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# As the problem requires us to return an empty list, the solution returned by the function sol() is an empty list.

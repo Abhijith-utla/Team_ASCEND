@@ -1,0 +1,10 @@
+Here's the correct Python code for the problem statement.
+
+```python
+def sat(li: List[int]):
+    return "".join([chr(i) for i in li]) == "The five boxing wizards jump quickly"
+```
+
+In this function, we generate a string from the list of integers by converting each integer to its corresponding ASCII character, and then joining them together to form the string. The function then checks if this generated string is equal to the expected string "The five boxing wizards jump quickly". If they are equal, the function returns True, indicating that the solution is correct. If not, the function returns False, indicating that the solution is incorrect.
+
+The list of integers is generated using a list comprehension, where each integer in the list is converted to its corresponding ASCII character using the `chr` function. The `join` method is used to join all the characters together to form the final string.

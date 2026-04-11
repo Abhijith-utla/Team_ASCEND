@@ -1,0 +1,16 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return 'berlin berger linber linger gerber gerlin'.split() == [s + t for s in ls for t in ls if s != t]
+```
+
+This function `sat` takes a list of strings `ls` as input. It returns `True` if the list of strings is equal to the list of strings `'berlin berger linber linger gerber gerlin'.split()`, and `False` otherwise.
+
+The list comprehension `[s + t for s in ls for t in ls if s != t]` generates a new list by concatenating each string `s` in `ls` with each string `t` in `ls`, but only if `s` is not equal to `t`.
+
+The `split` function is used to split the string `'berlin berger linber linger gerber gerlin'` into a list of strings.
+
+The `==` operator is used to compare the generated list with the original list of strings. If the two

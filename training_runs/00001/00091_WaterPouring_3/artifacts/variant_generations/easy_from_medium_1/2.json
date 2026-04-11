@@ -1,0 +1,13 @@
+{
+  "attempt_num": 2,
+  "created_at": "2026-04-11T19:18:07.607497+00:00",
+  "parsed_variant_count": 3,
+  "parsed_variant_nums": [
+    1,
+    2,
+    3
+  ],
+  "problem_id": "00091_WaterPouring_3",
+  "source_variant_num": 1,
+  "stage": "easy_from_medium"
+}

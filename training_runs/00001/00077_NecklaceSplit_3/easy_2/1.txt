@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The output must be valid Python code only.

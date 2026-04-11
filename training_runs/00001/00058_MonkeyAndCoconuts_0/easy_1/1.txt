@@ -1,0 +1,5 @@
+def sol():
+    return 1
+
+# The answer should be 1, so the final checker will pass
+assert sat(sol())

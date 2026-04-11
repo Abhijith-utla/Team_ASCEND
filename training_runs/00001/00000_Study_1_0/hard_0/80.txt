@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 0
+```
+
+The function `sat` takes a string `s` as input. The string is first counted to see if there are exactly 1000 'o' characters and no 'oo' characters. If both conditions are met, the function returns `True`, otherwise it returns `False`.

@@ -1,0 +1,12 @@
+The given Python function `sat` checks whether all numbers in the given list `li` are the same. It does this by checking the sum of all numbers up to the current index `i`. If all sums are equal to `i`, then all numbers in the list are the same. This is done using a list comprehension that generates a list of sums for all `i` from `0` to `19`. If the sum of all numbers in `li` is equal to the sum of all `i` in the list, the function returns `True`, indicating that all numbers in `li` are the same. If the sum of all numbers in `li` is not equal to the sum of all `i` in the list, the function returns `False`, indicating that not all numbers in `li` are the same.
+
+Here's the Python code for the `sat` function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+You can use this function to check whether all numbers in a list are the same

@@ -1,0 +1,13 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+```
+
+This function checks if all elements in the list have the same length. If the list is empty, it returns `True`, since an empty list satisfies the condition. Otherwise, it checks if all elements in the list have the same length as the first element. If they do, the function returns `True`, otherwise it returns `False`.

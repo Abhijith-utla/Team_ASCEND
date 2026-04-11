@@ -1,0 +1,16 @@
+{
+  "attempt_num": 37,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T15:30:19.387164+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=20|checked=20/20|preview=def sol(): return [] # This is a simple test to verify that the function returns an empty list assert sat([]) # This ...",
+  "difficulty": "hard",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

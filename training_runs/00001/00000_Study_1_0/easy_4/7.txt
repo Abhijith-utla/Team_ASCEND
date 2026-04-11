@@ -1,0 +1,8 @@
+def sol():
+    return 'oo'
+
+# The function 'sat' checks if the string 'oo' appears exactly once in the string
+# The function 'sol' returns 'oo' if 'sat' returns True
+# This means the string 'oo' should appear exactly once in the string
+
+assert sat(sol())

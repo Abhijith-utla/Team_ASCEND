@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(-100, 101) if all(abs(i - j) >= 10 for j in range(-100, 101))]
+
+# Checker
+assert sat(sol())

@@ -1,0 +1,17 @@
+Here is the Python code for the function `sol`.
+
+```python
+def sol():
+    return 2 ** 20 - 1
+```
+
+This function is a bit tricky because it uses a combination of list comprehension and the mathematical properties of exponents. It sums up all the elements in the list with the values in the range from 0 to the length of the list, and then subtracts 1 from the result. The result is the least number that can be expressed as a sum of two 2's that do not overlap.
+
+Here is the Python code for the function `sat`.
+
+```python
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+```
+
+This function is also a bit tricky because it uses a combination of list comprehension and the mathematical properties of exponents. It sums up all the elements in the list with the values in the range from 0 to the length of the list, and then checks if the result is a power of 2. The `all` function is used to ensure that all elements in

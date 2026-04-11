@@ -1,0 +1,6 @@
+def sol():
+    return [1, 2, 3]
+
+print(sat(sol()))  # This should pass
+
+print(sat(sol() + [4]))  # This should fail

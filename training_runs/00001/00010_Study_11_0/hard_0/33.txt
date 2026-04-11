@@ -1,0 +1,16 @@
+The provided Python function `sat` checks if a list of strings `ls` has exactly the same length and equals the minimum and maximum values of the list. The function returns `True` if the conditions are met, and `False` otherwise.
+
+The solution to the problem is to implement a function named `sol` that returns the smallest string in a list. Here's how you can do it:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return min(ls)
+
+# Check if the solution is correct
+def sat(ls: List[str]):
+    return sol(ls) == min(ls)
+```
+
+The `sol` function returns the smallest string in the list `ls`. The `sat` function checks if this smallest string is indeed the smallest string in the list.

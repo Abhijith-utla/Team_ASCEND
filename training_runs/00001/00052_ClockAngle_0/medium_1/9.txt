@@ -1,0 +1,7 @@
+def sol():
+    return ()
+
+# Explanation:
+# The problem requires a solution in Python.
+# Here, we don't have any inputs or outputs, so the function returns an empty tuple.
+# The assert statement is not required as the problem doesn't require it.

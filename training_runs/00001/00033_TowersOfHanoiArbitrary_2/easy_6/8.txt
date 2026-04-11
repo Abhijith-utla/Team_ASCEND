@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return []
+```
+
+This function simply returns an empty list.

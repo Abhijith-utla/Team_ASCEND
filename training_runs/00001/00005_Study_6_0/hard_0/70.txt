@@ -1,0 +1,14 @@
+The function `sat` takes an integer as an argument and checks if it is greater than 10^10 and if it is divisible by 123 with a remainder of 4. The function will return `True` if both conditions are met, and `False` otherwise.
+
+Here's the correct solution:
+
+```python
+def sol():
+    i = 0
+    while True:
+        i += 1
+        if i % 123 == 4 and i > 10 ** 10:
+            return i
+```
+
+The function `sol` uses a while loop to keep incrementing the variable `i` until it satisfies the conditions `i % 123 == 4` and `i > 10 ** 10`. When it finds a number that satisfies both conditions, it returns that number.

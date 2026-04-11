@@ -1,0 +1,10 @@
+Here is a solution to the problem using Python:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return str(len(ls)) == min(ls) == max(ls)
+```
+
+The `sat` function checks if the minimum, maximum, and length of the list are all equal. The function `min(ls)` finds the minimum value in the list, `max(ls)` finds the maximum value in the list, and `str(len(ls))` converts the length of the list to a string. If all three are equal, the function returns `True`, otherwise it returns `False`.

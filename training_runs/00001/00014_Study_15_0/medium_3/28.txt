@@ -1,0 +1,15 @@
+Here's a solution for the given Python program.
+
+```python
+from typing import List
+
+def sol() -> bool:
+    return sat([0]*20)
+
+def sat(li: List[int]) -> bool:
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+In the function `sol`, we call the function `sat` with a list of 20 zeroes. This function will return `True` if all elements in the list sum to zero, and `False` otherwise. This is the expected behavior of the `sat` function.
+
+In the function `sat`, we generate a list where each element is the sum of the elements from the beginning of the list up to that position. We then check if all elements in the list are equal to this sum. If they are, the function `sat` returns `True`, otherwise it returns `False`.

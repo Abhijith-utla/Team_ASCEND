@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+assert sat([])
+assert not sat([1, 1, 1])
+assert not sat([1, 1, 2], max_stamps=2)
+assert not sat([1, 1, 2], target=4)
+assert not sat([1, 1, 2], max_stamps=2, target=4)
+assert sat([18, 1, 43, 81])
+assert not sat([18, 1, 43, 81], max_stamps=3)
+assert not sat([18, 1, 43, 81], target=3, max_stamps=3)

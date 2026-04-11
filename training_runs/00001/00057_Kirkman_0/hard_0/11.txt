@@ -1,0 +1,6 @@
+def sol():
+    daygroups = [[[0]*3 for _ in range(5)] for _ in range(7)]
+    return daygroups
+
+# test
+print(sat(sol()))  # True

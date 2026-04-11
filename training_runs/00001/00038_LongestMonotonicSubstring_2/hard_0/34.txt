@@ -1,0 +1,8 @@
+Here is the Python code that constructs and returns a single answer value.
+
+```python
+def sol():
+    return 0
+```
+
+This function will always return 0. The returned answer object is a single integer value 0.

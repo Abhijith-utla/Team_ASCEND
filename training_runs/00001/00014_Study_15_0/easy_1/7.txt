@@ -1,0 +1,8 @@
+Sure, here is the correct pattern for the Python function:
+
+```python
+def sol(li: List[int]):
+    return all(x >= 0 and 2 ** x - 1 == (2 ** x) - 1 for x in li)
+```
+
+In this function, we iterate over the list of integers `li` and check if each integer `x` is non-negative and satisfies the equation `2 ** x - 1 == (2 ** x) - 1`. The `all` function returns `True` if all elements in the iterable are `True`, and `False` otherwise.

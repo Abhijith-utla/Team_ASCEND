@@ -1,0 +1,5 @@
+def sol():
+    return 'oooooooooooo'
+
+# test
+print(sat(sol()))

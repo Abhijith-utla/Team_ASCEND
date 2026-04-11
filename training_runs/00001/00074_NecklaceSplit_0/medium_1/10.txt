@@ -1,0 +1,15 @@
+def sol():
+    return ""
+
+assert sat()
+assert not sat()
+assert not sat()
+assert not sat()
+assert sat("")
+assert not sat("")
+assert sat("brbrbrbrbr")
+assert not sat("brbrbrbrbr")
+assert not sat("brbrbrbrbrbrbrbrbrbrbrbrbrbr")
+assert not sat("br")
+assert not sat("brbrbrbrbrbr")
+assert not sat("brbrbrbrbrbrbrbrbrbrbrbrbrbr")

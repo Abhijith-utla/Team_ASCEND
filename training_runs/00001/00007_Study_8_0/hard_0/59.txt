@@ -1,0 +1,5 @@
+def sol():
+    return [1234, 1235]
+
+# The function `sat` is incorrect because it uses `in` operator that does not exist in python. `in` operator is used to check whether a certain value is in a list.
+# In the provided function, it is checking if the value in index `1234` is in the list `ls[1235]`, which is incorrect.

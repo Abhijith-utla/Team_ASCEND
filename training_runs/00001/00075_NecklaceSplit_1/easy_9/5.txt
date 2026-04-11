@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# Assert the solution satisfies the problem's constraints
+assert sat(0, 0, "rbbrrbbrrbbrrbbrrbbrrrbbrrrrrrrrbbrrrrbbrrbbrrbbbbbbbbbbbbbbbbrbbbbbbbbbbbbbbbbbbbbbbbbbbrrrrbbbbrrrrbbbbrbbbbbbbbbbbbrbbbbbbbbbbbbbrrrrbbbbrbbbbrrbbbbrrbbrrbbrrbbrbbrrbbrrbbrrbbrrbbrrbbrbbbbrrbbbbrrrrrrbbrrbbrbbrrbbbbr")

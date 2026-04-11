@@ -1,0 +1,10 @@
+Here is the solution for the given problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all((li.index(x) < sum(li[:li.index(x)])) for x in set(li))
+```
+
+This solution uses the concept of list indices and sums to solve the problem. The function `sat` takes a list of integers as an input and returns `True` if the list is sorted in non-decreasing order and `False` otherwise. The main idea is to iterate over each unique element in the list, and for each element, check if its index is less than the sum of all elements before it in the list. If it is, then the list is sorted in non-decreasing order, and we return `True`. If not, we return `False`.

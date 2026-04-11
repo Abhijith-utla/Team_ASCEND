@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# If sat(sol()) returns True, this means sol() returns 0. If it returns False, this means there's an error in the solution.
+assert sat(sol())

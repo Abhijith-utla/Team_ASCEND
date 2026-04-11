@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+print(sol())
+
+# The code provided in the problem statement is incorrect. The answer should be an empty string, not a single answer object.

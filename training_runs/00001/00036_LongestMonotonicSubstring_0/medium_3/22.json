@@ -1,0 +1,17 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T11:27:02.933327+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: string indices must be integers, not 'str'|parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): x = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65] length = 13 s = \"Dynamic programming solves this p...",
+  "difficulty": "medium",
+  "problem_id": "00036_LongestMonotonicSubstring_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

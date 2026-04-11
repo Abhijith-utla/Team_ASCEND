@@ -1,0 +1,16 @@
+Here is a Python solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for x in range(20):
+        for y in li[:x]:
+            if x + y != 2 ** x:
+                return False
+    return True
+```
+
+This function iterates over x from 0 to 19, and for each x, it iterates over the list `li[:x]`. If any y does not satisfy the equation `x + y == 2 ** x`, it returns False. If it finishes the iteration without finding such y, it returns True.
+
+Please note that this function assumes that the list `li` is sorted in ascending order and does not contain duplicates. If these conditions are not met, the function may not return the correct result.

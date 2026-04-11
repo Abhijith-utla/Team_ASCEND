@@ -1,0 +1,5 @@
+def sol():
+    return eval('2+3*4')
+
+# Run the assertion
+assert sat(str(sol()))

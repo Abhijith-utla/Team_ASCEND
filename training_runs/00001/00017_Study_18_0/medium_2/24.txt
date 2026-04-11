@@ -1,0 +1,27 @@
+def sol():
+    return {
+        "answer": bool(sat([
+            "abcdefg", 
+            "bcdefgh", 
+            "cdefghi", 
+            "defghij", 
+            "efghijk", 
+            "fghijkl", 
+            "ghijklm", 
+            "hijklmn", 
+            "ijklmno", 
+            "jklmnop", 
+            "klmnopq", 
+            "lmnopqr", 
+            "mnopqrs", 
+            "nopqrst", 
+            "opqrstu", 
+            "pqrstuv", 
+            "qrstuvw", 
+            "rstuvwx", 
+            "stuvwxy", 
+            "tuvwxyz"
+        ]))
+    }
+
+print(sol())

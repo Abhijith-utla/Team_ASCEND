@@ -1,0 +1,14 @@
+The given Python function is:
+
+```python
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function checks if a list `li` has a condition that every number in the list is the sum of its index plus 4 and the number itself. It also checks if the length of the list is 1000.
+
+The condition `i + j == 9` is checked for every pair of numbers in the list (except for the first number which is 4, as the sum of its index and 4 is always 9). The `zip([4] + li, li)` creates a list of pairs of numbers from the first number and the rest of the list.
+
+The function `all()` returns `True` if all elements in an iterable (like the list created by `zip()`) are `True`. In this case, it checks if all numbers in `li` are the sum of their index plus 4 and the number itself.
+
+The `len(li) == 10

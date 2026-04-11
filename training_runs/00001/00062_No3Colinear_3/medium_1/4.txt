@@ -1,0 +1,28 @@
+Here is the solution:
+
+```python
+def sol():
+    return []
+```
+
+This solution does not take any arguments and returns an empty list. 
+
+The function `sol()` is supposed to return a list of answers, but since there is no input, we return an empty list. 
+
+The checker will fail for any input that is not an empty list. 
+
+The correct pattern should be:
+
+```python
+def sol():
+    return [<answer>]
+```
+
+Incorrect patterns should not compile:
+
+```python
+def sol(x):
+    ...
+```
+
+This pattern does not take any arguments and should return a list, but it does not return any answer.

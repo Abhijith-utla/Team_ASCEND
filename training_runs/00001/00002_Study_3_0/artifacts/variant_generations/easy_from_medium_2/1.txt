@@ -1,0 +1,19 @@
+Here are three simpler Python functions that test the same core concept:
+
+VARIANT1:
+```python
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(len(li))) and all(li[i] == i for i in range(len(li)))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(1, len(li) + 1)) and all(li[i] == i for i in range(len(li)))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```

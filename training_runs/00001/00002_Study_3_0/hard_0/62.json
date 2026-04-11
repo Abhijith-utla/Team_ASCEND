@@ -1,0 +1,16 @@
+{
+  "attempt_num": 62,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:51:22.945413+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The provided code is incorrect because it doesn't guarantee the sorted list to be a permutation of the list [0, 1, 2,...",
+  "difficulty": "hard",
+  "problem_id": "00002_Study_3_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

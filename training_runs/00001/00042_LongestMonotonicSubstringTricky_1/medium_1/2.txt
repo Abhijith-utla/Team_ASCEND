@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function sat(x) checks if all elements in the list x are less than or equal to the next element in the list.
+# If all elements are less than or equal to the next element, it returns True. Otherwise, it returns False.
+# The function sol() does not take any arguments and returns an empty list.

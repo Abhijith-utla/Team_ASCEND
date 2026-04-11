@@ -1,0 +1,14 @@
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+def sol():
+    return [i for i in range(999) if i not in [li[i] for li in [[j for j in range(999)] if i != j]]]
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+# test the function
+print(sol()) # should return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 3
+
+if __name__ == "__main__":
+    assert sat(sol())

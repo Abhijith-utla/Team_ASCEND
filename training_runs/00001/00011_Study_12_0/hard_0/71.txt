@@ -1,0 +1,16 @@
+Here is a Python solution:
+
+```python
+from typing import List
+
+def sol():
+    return [1]*1000
+
+# Run the function
+ans = sol()
+print(ans)
+```
+
+This solution creates a list with 1000 elements and all elements are 1. The final checker will run: assert sat(sol())
+
+Please note that the function `sol` is returning a list of 1000 elements, all of which are 1. This is because the list is being created by simply repeating the number 1 for 1000 times.

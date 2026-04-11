@@ -1,0 +1,8 @@
+Here is a Python solution for the problem. The solution involves checking if the second index is in the list and if they are not equal. If both conditions are met, the function returns True, otherwise, it returns False.
+
+```python
+def sat(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+The function takes a list and two indexes as arguments. It returns a boolean value. The boolean value is True if the second index is in the list and the second index is not equal to the first index, otherwise, it returns False.

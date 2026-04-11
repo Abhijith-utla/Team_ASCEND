@@ -1,0 +1,8 @@
+The correct pattern for the 'sol' function is as follows:
+
+```python
+def sol():
+    return 42  # return the answer here
+```
+
+The `sat` function provided by the user checks whether an input number 'i' is a multiple of 123 and is greater than 10^10. If this condition is met, it returns True, else False. This function is therefore also correct.

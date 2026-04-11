@@ -1,0 +1,4 @@
+def sol():
+    return {1: "right", 2: "wrong", 3: "wrong"}
+
+assert sat(sol())

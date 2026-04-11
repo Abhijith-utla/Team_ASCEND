@@ -1,0 +1,10 @@
+Here is the correct code for the function `sol`:
+
+```python
+from typing import List
+
+def sol():
+    return 5
+```
+
+The function `sol` returns a single answer value `5`, and the final checker will run: assert sat(sol())

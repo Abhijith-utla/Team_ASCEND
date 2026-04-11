@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# This function should return an empty list if the input satisfies the condition.
+
+# Test
+assert sat(sol())

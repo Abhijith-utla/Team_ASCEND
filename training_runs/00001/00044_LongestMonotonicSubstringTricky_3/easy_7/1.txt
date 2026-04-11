@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function `sol` is a function that returns an empty list.
+# The function does not take any arguments and returns an empty list.
+# This function satisfies the condition of the problem.

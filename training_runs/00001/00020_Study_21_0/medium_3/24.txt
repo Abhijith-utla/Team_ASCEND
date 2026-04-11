@@ -1,0 +1,10 @@
+Here's the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7]
+```
+
+This function returns a list of integers from 1 to 7.
+
+The checker will pass if `sol` returns a list that satisfies the `sat` function's condition.

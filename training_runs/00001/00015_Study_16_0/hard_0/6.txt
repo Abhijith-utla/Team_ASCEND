@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return float(input("Please enter a number: ")) + len(input("Please enter a string: ")) == 4.5
+```
+
+This function will ask the user to enter a number and a string. It then adds the number and the length of the string, and checks if the result is equal to 4.5. If it is, the function returns True; otherwise, it returns False.

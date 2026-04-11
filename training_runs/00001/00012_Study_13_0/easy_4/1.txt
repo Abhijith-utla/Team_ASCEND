@@ -1,0 +1,5 @@
+def sol():
+    return 3.1416
+
+# This assertion will be False if sol() returns a different value
+assert sat(sol())

@@ -1,0 +1,8 @@
+Sure, here's a correct solution:
+
+```python
+def sol():
+    return 'hello'
+```
+
+This code will return the string 'hello' because the sum of the characters 'h', 'e', 'l', 'l', 'o' and the length of the string 'hello' is 4.5 which is not equal to 4.5.

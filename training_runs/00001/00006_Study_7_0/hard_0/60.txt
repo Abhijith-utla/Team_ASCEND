@@ -1,0 +1,14 @@
+def sol():
+    return '8' * 888
+
+# Test
+print(sat(sol()))  # True
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # True
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # True
+print(sat(sol()))  # False
+print(sat(sol()))  # True
+print(sat(sol()))  # True

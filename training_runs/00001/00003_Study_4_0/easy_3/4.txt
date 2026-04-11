@@ -1,0 +1,19 @@
+Here is the solution for the problem. The correct pattern for the function is as follows:
+
+```python
+from typing import List
+
+def sol() -> int:
+    return 42
+```
+
+In this solution, the function `sol` returns the integer `42`. The function `sat` takes a list of integers `li` as an argument and returns `True` if the length of the list is `10` and if the fourth element in the list is the same as the fourth element, else it returns `False`.
+
+The function `sol` can be tested like this:
+
+```python
+def test_sol():
+    assert sol() == 42
+```
+
+If `sol` returns the correct result, the test will pass. If it returns a different result, the test will fail.

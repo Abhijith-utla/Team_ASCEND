@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The solution is an empty list, because the condition is always true.

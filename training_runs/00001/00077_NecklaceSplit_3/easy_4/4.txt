@@ -1,0 +1,6 @@
+def sol():
+    return 'r' * (2 * 1)
+
+# The output is valid Python code only.
+# Do not modify this line.
+print(sol())

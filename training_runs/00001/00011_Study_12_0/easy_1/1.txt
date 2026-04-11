@@ -1,0 +1,19 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return [4] + [1] * 999
+```
+
+This function constructs and returns a list of 1000 elements, the first element is 4, and the rest are 1s. The length of this list is defined by the user.
+
+The function `sat` is provided by the user. It checks if all elements in the list are added together and the result is 1, and if the length of the list is 1000. If both conditions are met, the function returns the list. Otherwise, it returns an empty list.
+
+The checker will run:
+
+```python
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function `sat` takes a list of integers as input and returns `True` if the list satisfies the conditions, and `False` otherwise. In this case, the function returns `True` if the length of the list is 1000 and

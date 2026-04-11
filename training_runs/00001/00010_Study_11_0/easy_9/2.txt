@@ -1,0 +1,17 @@
+Here is the solution to the given problem.
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    # If the list is empty, the function returns True
+    if len(ls) == 0:
+        return True
+    else:
+        # For each string in the list, if the length of the set of characters is not equal to the length of the first string in the list, the function returns False
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+This function checks if all strings in the given list have the same number of unique characters. If the list is empty, it returns True as an empty list satisfies the condition. If the list is not empty, it checks the condition for each string in the list. The 'all' function returns True only if all conditions are met. If any condition is not met, the function returns False.
+
+The 'set(i)' part of the function converts the string 'i' into a set, which removes any duplicate characters. The 'len(set(i))' part of the function then computes the length of this set, which represents

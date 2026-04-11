@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# The function is not defined and it does not return a single answer object.
+# This is because the function doesn't return any value that can be assigned to a variable,
+# it is an example of a function that does not return any value.
+# In Python, a function does not return a value by default, it returns None.
+# So, if you want to return something you need to explicitly define it.

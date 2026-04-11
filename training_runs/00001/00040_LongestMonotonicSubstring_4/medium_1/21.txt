@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# test cases
+print(sat(sol()))
+print(sat(sol([1,2,3,4,5])))
+print(sat(sol([5,4,3,2,1])))

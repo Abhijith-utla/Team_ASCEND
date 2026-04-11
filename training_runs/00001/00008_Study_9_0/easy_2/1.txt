@@ -1,0 +1,12 @@
+Here's the solution for the problem:
+
+```python
+def sol():
+    return sum([1 for i in range(10) if ord(chr(i + 97)) % 3 == 1]) == 0
+```
+
+This solution assumes that the input list `li` contains strings of length 10, where each string contains a lowercase English letter. The `ord()` function is used to get the Unicode code point of a character, and then the `chr()` function is used to convert this Unicode code point back into a character. 
+
+The expression `ord(chr(i + 97)) % 3 == 1` will return `True` for the first character ('a'), 'second character ('b'), and so on until the tenth character ('z'). 
+
+The list comprehension `[1 for i in range(10) if ord(chr(i + 97)) % 3 == 1]` will create a list of `1`s for all characters that meet the condition. The sum function will then add up all these `1`s to get the total number of characters that meet the condition. If this total

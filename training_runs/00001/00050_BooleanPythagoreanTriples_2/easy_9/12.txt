@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Test cases
+assert sat(sol(), 5) == [1, 0, 0, 0, 1]
+assert sat(sol(), 6) == [1, 1, 1, 0, 0, 0]
+assert sat(sol(), 7) == [1, 0, 1, 0, 0, 0, 0]
+assert sat(sol(), 8) == [1, 1, 0, 1, 0, 0, 0, 0]
+assert sat(sol(), 9) == [1, 0, 1, 0, 1, 0, 0, 0, 0]
+assert sat(sol(), 10) == [1, 1, 0, 1, 0, 1, 0, 0, 0, 0]

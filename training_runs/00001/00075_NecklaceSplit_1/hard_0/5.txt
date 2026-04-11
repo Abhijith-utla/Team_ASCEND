@@ -1,0 +1,5 @@
+def sol():
+    return "rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrbrrrbrrbrbrbbrrbbrrbrrbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr"
+
+# Run the assert statement
+assert sat(len(sol()))

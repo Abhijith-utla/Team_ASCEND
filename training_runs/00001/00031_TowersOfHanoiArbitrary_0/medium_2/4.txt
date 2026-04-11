@@ -1,0 +1,11 @@
+The provided function `sat` is designed to check whether a list of moves from one state to another is possible. The moves are represented as a list of pairs of indices `(i, j)`, where `i` is the source location and `j` is the destination location. 
+
+The function `sat` takes two arguments:
+
+- `moves: List[List[int]]`: a list of moves to be made, where each move is represented as a pair of indices `(i, j)`.
+
+- `source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[6, 7], [0, 1, 2, 3], [4, 5]]`: these are the initial and final states respectively.
+
+The function `sat` checks whether the provided moves can be performed from the initial state to the final state. 
+
+The `assert` statement is used to check that the final state is equal to the target state after all moves are applied. If the final state is not equal to the target state, the `assert` statement will raise an `

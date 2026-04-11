@@ -1,0 +1,12 @@
+The function `sat` checks if the given list of integers `li` is a permutation of the alphabetical order of "The quick brown fox jumps over the lazy dog".
+
+Here is the Python code that solves this problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return list(li) == sorted(li)
+```
+
+This function uses list comprehension to create a list from the integers `li`. The `sorted()` function is then used to sort the list and compare it with the original list `li` to ensure it is a permutation of the alphabetical order of "The quick brown fox jumps over the lazy dog".

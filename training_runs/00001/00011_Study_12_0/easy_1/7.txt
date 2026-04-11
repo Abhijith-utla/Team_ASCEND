@@ -1,0 +1,9 @@
+The function `sat` is already defined by the user. It checks if all elements in the list `li` are either `4` or summed with the corresponding element in the list `li`. The length of the list `li` is also 1000. Therefore, the condition `all(i + j == 1 for i, j in zip([4] + li, li))` is true if and only if all elements in `li` are either `4` or summed with the corresponding element in `li` and `len(li) == 1000`.
+
+Here is the correct pattern:
+```python
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+In this pattern, the function `sat` is defined to take a list of integers `li` as an argument. It then checks if all elements in `li` are either `4` or summed with the corresponding element in `li`. If all elements satisfy this condition and the length of `li` is 1000

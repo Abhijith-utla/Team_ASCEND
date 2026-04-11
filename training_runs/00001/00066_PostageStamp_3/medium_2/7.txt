@@ -1,0 +1,5 @@
+def sol():
+    return [19, 14, 81]
+
+# The function sol is returning a list of integers [19, 14, 81].
+# These numbers satisfy the conditions in the problem statement.

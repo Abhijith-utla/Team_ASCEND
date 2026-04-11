@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li[i] == sum(li[:i]) for i in range(20)])
+```
+
+This function checks if all elements in the list `li` are equal to their corresponding sums in the list. It works by iterating over the list from 0 to 19 and checking if each element is equal to its corresponding sum. If all elements are equal to their sums, the function returns True, otherwise it returns False.

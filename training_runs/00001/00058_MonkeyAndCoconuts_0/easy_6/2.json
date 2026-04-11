@@ -1,0 +1,17 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:09:35.999016+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=14|checked=14/14|preview=def sol(): n = 100 while n > 0: if sat(n): return n n -= 1 def sat(n: int): for _ in range(7): assert n % 5 != 0 n -=...",
+  "difficulty": "easy",
+  "problem_id": "00058_MonkeyAndCoconuts_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

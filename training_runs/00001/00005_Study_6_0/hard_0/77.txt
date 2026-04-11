@@ -1,0 +1,15 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    i = 10 ** 11
+    while i % 123 != 4 or i <= 10 ** 10:
+        i += 1
+    return i
+```
+This function uses a while loop to increment the value of `i` until it satisfies the condition `i % 123 == 4` and `i > 10 ** 10`. The loop continues until `i` is greater than `10 ** 10` and its last digit is `4`, which is the required condition. After finding the first such number, the function returns it.
+
+The checker will run:
+```python
+assert sat(sol())
+```

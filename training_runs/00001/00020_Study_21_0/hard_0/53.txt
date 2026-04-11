@@ -1,0 +1,22 @@
+def sol():
+    def get_num(li: List[int]):
+        n1 = li[0]
+        n2 = li[1]
+        n3 = li[2]
+        return [n1, n2, n3]
+
+    def check_repeat(li: List[int]):
+        return len(set(li)) == 3
+
+    def check_inc_dec(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(10)]) and len(li) == 10
+
+    num_list = get_num(list(range(10)))
+
+    if check_repeat(num_list) and check_inc_dec(num_list):
+        return num_list
+    else:
+        return []
+
+# Test case
+# assert sat(sol())

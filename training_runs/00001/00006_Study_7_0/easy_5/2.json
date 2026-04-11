@@ -1,0 +1,16 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:23:39.455482+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=11|checked=11/11|preview=```python def sol(): return str(2888 ** int(8)) == '6504000000000' ``` In the provided Python function `sat`, the tas...",
+  "difficulty": "easy",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 5
+}

@@ -1,0 +1,28 @@
+VARIANT1:
+```python
+def sat(n: int, m: int):
+    assert n >= 0, 'n must be greater than or equal to 0'
+    assert m >= 0, 'm must be greater than or equal to 0'
+    assert n + m >= 0, 'Sum of n and m must be greater than or equal to 0'
+    return n + m >= 0
+```
+
+VARIANT2:
+```python
+def sat(n: int, m: int, p: int):
+    assert n >= 0, 'n must be greater than or equal to 0'
+    assert m >= 0, 'm must be greater than or equal to 0'
+    assert p >= 0, 'p must be greater than or equal to 0'
+    assert n + m + p == m, 'Sum of n, m, and p must equal m'
+    return n + m >= p
+```
+
+VARIANT3:
+```python
+def sat(n: int, m: int, p: int) -> bool:
+    assert n >= 0, 'n must be greater than or equal to 0'
+    assert m >= 0, 'm must be greater than or equal to 0'
+    assert p >= 0, 'p must be greater than or equal to 0'
+    assert n + m + p == m, 'Sum of n, m, and p must equal m'
+    return n + m >= p
+```

@@ -1,0 +1,9 @@
+def sol():
+    return ""
+
+# You can insert your function here
+# Make sure to implement the function correctly
+# As the function is not provided by the user, I'm assuming it's empty
+# Please replace the following lines with your function
+# def sat(x):
+#     return all(ord(x[i]) <= ord(x[i + 1]) for i in range(len(x) - 1))

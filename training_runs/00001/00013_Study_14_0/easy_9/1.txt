@@ -1,0 +1,11 @@
+The given Python function `sat(li: List[int])` is not valid. It's incorrect because it uses two nested loops to check if all elements in the list `li` are less than or equal to the next element in the list. But the requirement is to check if all elements in the list `li` are less than or equal to the next element in the list.
+
+Here's the correct pattern:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5]
+    return all([i <= j for i in li for j in li if i > j])
+```
+
+This function `sol()` will return `True` if all elements in `li` are less than or equal to the next element in `li`. If `li` contains any elements that are not less than or equal to the next element, then `all()` will return `False` and `sol()` will return `False`.

@@ -1,0 +1,7 @@
+def sol():
+    x = ["_" for _ in range(36)]
+    assert sat(x), "Invalid Sudoku"
+    return x
+
+# Run the test
+assert sat(sol()), "Invalid Sudoku"

@@ -1,0 +1,17 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    def is_even(s: str) -> bool:
+        return s[::2] == s[1::2]
+
+    def is_valid(s: str) -> bool:
+        return len(s) < 5 or len(s) > 30
+
+    while True:
+        s = input()
+        if is_valid(s) and is_even(s):
+            return s
+```
+
+This solution prompts the user to input a string. It checks if the string is valid (length between 5 and 30) and if it is evenly divisible by two. If both conditions are met, the program returns the string. If not, it prompts the user to input another string. This process continues until a valid and evenly divisible string is returned.

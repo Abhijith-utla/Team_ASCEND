@@ -1,0 +1,4 @@
+def sol():
+    return "".join(map(str, [7 ** 64.5]))
+
+assert sat(sol())

@@ -1,0 +1,8 @@
+def sol():
+    return {
+        "n": 0,
+        "m": 0,
+        "lace": "rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrrrrrrrrbrrbrbbrrbbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr"
+    }
+
+assert sat(sol()["n"], sol()["m"], sol()["lace"])

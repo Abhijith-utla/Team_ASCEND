@@ -1,0 +1,5 @@
+def sol():
+    return tuple(["d", "e", "e", "o", "o", "a", "h", "!"])
+
+# Check
+assert sat(sol())

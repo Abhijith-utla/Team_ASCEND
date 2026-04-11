@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 'o' * 1000 + 'oo' * 100 + 'ho' * 801
+```
+
+This function concatenates 'o' 1000 times, 'oo' 100 times, and 'ho' 801 times to form a string. The total length of the string is 1000 + 100 + 801 = 1101.
+
+The assert statement will check if the function returns a string of exactly 1101 characters, and if it satisfies the conditions defined by the sat function.

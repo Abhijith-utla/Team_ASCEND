@@ -1,0 +1,30 @@
+Here are three simple variants of the sat() function that test the same core concept.
+
+VARIANT1:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and all(i in g for g in groups) == set(range(1, 15)) for groups in daygroups)
+    assert all(len(g) == 3 for groups in daygroups)
+    return len({(i, j) for groups in daygroups for g in groups for i in g for j in g}) == 32
+```
+
+VARIANT2:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and all(i in g for g in groups) == set(range(1, 15)) for groups in daygroups)
+    assert all(len(g) == 4 for groups in daygroups)
+    return len({(i, j) for groups in daygroups for g in groups for i in g for j in g}) == 48
+```
+
+VARIANT3:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and all(i in g for g in groups) == set(range(1, 15)) for groups in daygroups)
+    assert all(len(g) == 5 for groups in daygroups)
+    return len({(i, j) for groups in daygroups for g in groups for i in g for j in g}) == 64
+```
+
+In all three variants, the function is asserting different conditions for the daygroups to make sure they are correctly formed and satisfy the problem constraints.

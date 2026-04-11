@@ -1,0 +1,21 @@
+def sol():
+    return []
+
+# Example usage
+# print(sat([12, 30]))  # Returns True
+# print(sat([12, 35]))  # Returns False
+# print(sat([1, 30]))   # Returns False
+# print(sat([11, 55]))  # Returns True
+
+# Test cases
+# assert sat([12, 30])   # Returns True
+# assert sat([12, 35])   # Returns False
+# assert sat([1, 30])    # Returns False
+# assert sat([11, 55])   # Returns True
+# assert sat([12, 60])   # Returns True
+# assert sat([13, 0])    # Returns False
+# assert sat([13, 30])   # Returns True
+# assert sat([13, 45])   # Returns True
+# assert sat([13, 60])   # Returns False
+# assert sat([0, 30])    # Returns True
+# assert sat([24, 0])    # Returns False

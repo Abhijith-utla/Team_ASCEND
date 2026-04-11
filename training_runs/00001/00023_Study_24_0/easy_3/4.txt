@@ -1,0 +1,4 @@
+def sol():
+    return [17, 3] if 17 not in [17, 3] and 3 not in [17, 3] else [3, 17]
+
+print(sat(sol()))

@@ -1,0 +1,8 @@
+Here is the Python code that constructs and returns a single answer value.
+
+```python
+def sol():
+    return [4] + [1] * 999
+```
+
+This function constructs a list with the first element as 4 and the rest as 1s of length 999. This satisfies the condition given in the problem.

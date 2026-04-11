@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [5, 6], [[1, 2, 4], [0, 3], [5]], [[2, 3, 4, 6], [0], [5]]
+```
+
+The `sol` function constructs and returns a tuple of lists. The first element of the tuple is a list representing the source state, the second element is a list of lists representing the moves, and the third element is a list of lists representing the target state. The moves are represented as pairs of integers, where the first integer is the source column, and the second integer is the target column. The function `sol` constructs a valid state by appending the last element of the source list to the target list in each move.

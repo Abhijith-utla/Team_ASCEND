@@ -1,0 +1,9 @@
+Here is the Python code for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i < sum(li[:i]) for i in range(20)])
+```
+This function `sat` checks if all elements in the input list `li` are less than the sum of the first `i` elements of `li` for all `i` in the range from 0 to 19. If all elements in `li` are less than the sum of the first `i` elements of `li` for all `i` in the range from 0 to 19, then `sat` returns `True`; otherwise, it returns `False`. The `all` function returns `True` only if all elements in the iterable are `True`.

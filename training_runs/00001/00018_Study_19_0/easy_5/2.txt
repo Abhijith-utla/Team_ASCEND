@@ -1,0 +1,10 @@
+Sure, here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return len(li) == 2 and li[0] == 34 and li[1] == 34
+```
+
+The function `sat` takes a list of integers as input and returns a boolean indicating whether the list has exactly two elements and both elements are equal to 34.

@@ -1,0 +1,13 @@
+The Python function 'sat' should return True if 'i + 1000' is longer than 'i + 1001', and False otherwise. Here's how you can implement 'sol' function:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts with 'i' equal to 1000, and then increment 'i' by 1 until 'sat(i)' returns True. The function returns 'i' once 'sat(i)' returns True, which means 'i' is the largest integer not less than 1000 that satisfies the condition in the 'sat' function.
+
+Please note that this function might not always return the correct result. The 'sat' function you provided is incorrect. It checks if 'i + 1000' is longer than 'i + 1001', which means it is checking if 'i' is greater than '1001' when 'i' is increased by 1. However, in this case, it should be checking if 'i' is greater than '1001',

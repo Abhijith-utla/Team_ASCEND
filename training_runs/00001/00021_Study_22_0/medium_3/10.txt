@@ -1,0 +1,4 @@
+def sol():
+    return "zabcd" if sat("zabcd") else "not a valid string"
+
+assert sat(sol())

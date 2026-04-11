@@ -1,0 +1,2 @@
+def sol():
+    return tuple(answer) in zip('dee', 'doo', 'dah!')

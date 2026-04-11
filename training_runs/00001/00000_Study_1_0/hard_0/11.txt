@@ -1,0 +1,9 @@
+Here is the solution:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+This function creates a string of length 1000 containing two 'oo' characters and returns it.

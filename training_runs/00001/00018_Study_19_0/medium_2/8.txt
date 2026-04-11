@@ -1,0 +1,12 @@
+Here is a possible implementation for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [34]
+
+assert sat(sol())
+```
+
+In this case, the function `sol` returns a list with the number `34`. The function `sat` checks if the list provided as an argument is a set with one element `34`. The assertion `assert sat(sol())` will raise an `AssertionError` if the condition `sat(li: List[int]) -> bool` is not satisfied. If the condition is satisfied, then no exception will be raised.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:56:40.787325+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return [] # This function solves the puzzle. It uses the fact that if a given point lies on a line, all ot...",
+  "difficulty": "medium",
+  "problem_id": "00062_No3Colinear_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

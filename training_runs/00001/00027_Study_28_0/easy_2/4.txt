@@ -1,0 +1,8 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return [i for i in range(999, -1, -1) if i not in li]
+```
+
+Please make sure to define `li` before this function. If you are not sure what `li` is, you can use the function `sat` to check if the function is correct or not.

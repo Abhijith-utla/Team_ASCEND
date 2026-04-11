@@ -1,0 +1,11 @@
+Sure, here's how you can implement the solution:
+
+```python
+def sol():
+    return 20 // 5
+
+# Check the solution
+assert sat(sol())
+```
+
+This function should return the quotient when 20 is divided by 5, which is 4. The function `sat(i: int)` checks if `i` is divisible by 5.

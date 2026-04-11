@@ -1,0 +1,3 @@
+def sol():
+    daygroups = [[[5, 9, 14], [10, 11, 13], [12, 14, 15], [1, 2, 3], [4, 5]] for _ in range(7)]
+    return daygroups

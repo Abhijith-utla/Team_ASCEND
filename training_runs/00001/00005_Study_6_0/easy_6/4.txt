@@ -1,0 +1,12 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    for i in range(100):
+        if i % 5 == 0:
+            return i
+```
+
+The function `sol()` will return the first number that is divisible by 5 and less than 100. If no such number exists, it will return None.
+
+The function `sat` is not a solution to the problem because it's a custom function that you're creating, not checking if a number satisfies a condition. The problem statement asks for a function `sol` that checks if a number satisfies a condition.

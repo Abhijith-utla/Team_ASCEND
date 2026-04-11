@@ -1,0 +1,14 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i < sum(li[:j]) + li[j] for j, i in enumerate(li)])
+```
+
+This function is checking if all the elements in the list are less than the sum of all the elements before it and the element itself. The list is enumerated to provide the index and value of each element in the list, and the sum of all the elements before the current element is calculated. This is done for each element in the list. If all these conditions are met, the function returns True; otherwise, it returns False.
+
+The function uses the `enumerate` function to get the index and value of each element in the list. The `sum(li[:j])` part is calculating the sum of all the elements before the current element, and `li[j]` is the current element itself.
+
+The function `sum(li[:j])` is using Python's list slicing feature to get the sum of all the elements before the current element. This is done to avoid calculating the sum of all the elements in the list.

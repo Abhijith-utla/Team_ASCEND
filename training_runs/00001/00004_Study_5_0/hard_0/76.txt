@@ -1,0 +1,21 @@
+Sure, here is the correct Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function will return True if all elements in the list li are unique and their corresponding elements in the list li are equal to the element itself. Otherwise, it will return False.
+
+The use of the all() function with a list comprehension is a way to check if all elements in the list li satisfy the condition (i.e., they are unique and their corresponding elements in the list li are equal to the element itself). If all elements satisfy the condition, all() will return True, otherwise it will return False.
+
+The count() method in Python returns the number of times a specified value appears in a list.
+
+The count function is used to get the number of times the element i is present in the list li.
+
+The for loop in the function checks if the count of an element is equal to its own value. If it is, it means that the element is unique. If not,

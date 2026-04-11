@@ -1,0 +1,12 @@
+```python
+def sol():
+    return {
+        "answer1": True,
+        "answer2": True,
+        "answer3": True,
+        "answer4": True,
+        "answer5": True
+    }
+
+assert sat(sol())
+```

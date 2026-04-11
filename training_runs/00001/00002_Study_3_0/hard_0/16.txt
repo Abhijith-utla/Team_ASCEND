@@ -1,0 +1,10 @@
+Sure, here is the correct Python code for your requirement.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+In this function, we first check if the list is sorted and then checks if all elements in the list are unique. The sorted list should be [0, 1, 2, ..., 998, 999] and each element should be unique.

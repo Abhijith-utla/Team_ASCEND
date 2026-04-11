@@ -1,0 +1,11 @@
+def sol():
+    return [37, 37, 12, 87, 39]
+
+print(sat(sol()))  # True
+print(sat())  # False
+print(sat([37, 37, 12, 87]))  # False
+print(sat([37, 37, 12, 87], max_stamps=10))  # True
+print(sat([37, 37, 12, 87, 39, 39], target=280))  # False
+print(sat([37, 37, 12, 87, 39, 39], target=271, max_stamps=8))  # False
+print(sat([37, 37, 12, 87, 39, 39], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]))  # False
+print(sat([37, 3

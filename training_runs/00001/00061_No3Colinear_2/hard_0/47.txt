@@ -1,0 +1,10 @@
+def sol():
+    return {}
+
+if __name__ == "__main__":
+    assert sat([])
+    assert not sat([(0, 0)])
+    assert sat([(0, 0), (1, 1)])
+    assert not sat([(0, 0), (2, 2)])
+    assert sat([(0, 0), (1, 1), (2, 2)])
+    assert not sat([(0, 0), (1, 1), (3, 3)])

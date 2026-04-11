@@ -1,0 +1,9 @@
+Here's the Python code for the `sol` function:
+
+```python
+def sol():
+    s = '8' * 10**9
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This code first creates a string `s` that is 10^9 characters long, and then checks if the number `8**2888` contains at least 8 occurrences of `s`, and also checks if the length of `s` is exactly 3. It returns `True` if both conditions are met, and `False` otherwise.

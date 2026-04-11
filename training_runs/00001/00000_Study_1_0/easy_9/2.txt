@@ -1,0 +1,26 @@
+Your code appears to be correct. The function `sat` takes a string as an argument and checks if the string contains 'o'. If it does, the function returns `False`. If it doesn't, the function returns `True`. The function name is `sat` and the variable type is `str`.
+
+Here is the correct code:
+
+```python
+def sat(s: str):
+    if s.count('o') != 0:
+        return False
+    return True
+```
+
+You can test this function with the following code:
+
+```python
+def test_sat():
+    assert sat("") == False
+    assert sat("o") == False
+    assert sat("oo") == False
+    assert sat("a") == True
+    assert sat("ao") == True
+    print("All test cases pass")
+
+test_sat()
+```
+
+The function `test_sat` tests the `sat` function with several test cases. The function `assert` is used to check if the function `sat` is working as expected. If the function is not working as expected, `assert` will raise an `AssertionError`. If none

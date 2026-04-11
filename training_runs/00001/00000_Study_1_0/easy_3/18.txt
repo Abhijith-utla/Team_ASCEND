@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'Your long string here' and 'Your long string here'.count('o') <= 1000

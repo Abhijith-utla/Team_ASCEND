@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# This checks whether the function sat returns a list
+assert isinstance(sol(), list)
+
+# This checks whether the function sat returns a list of integers
+assert all(isinstance(i, int) for i in sol())
+
+# This checks whether the function sat returns a list where all elements are greater than or equal to the next element
+assert sat(sol())

@@ -1,0 +1,10 @@
+def sat(x: List[int], length=61, s=" OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] for i in range(length - 1))
+
+def sol():
+    return [13, 22, 15, 0, 11, 1, 16, 19, 5, 20, 3, 24, 25, 10, 6, 21, 4, 23, 17, 7, 8, 2, 18, 12, 14, 9, 25, 26]
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

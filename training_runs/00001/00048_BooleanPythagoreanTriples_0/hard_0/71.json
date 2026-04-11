@@ -1,0 +1,16 @@
+{
+  "attempt_num": 71,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:52:13.008798+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return {} # Test the function with multiple test cases print(sat([0, 0, 0, 1, 0, 1, 0, 1])) # Should retur...",
+  "difficulty": "hard",
+  "problem_id": "00048_BooleanPythagoreanTriples_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

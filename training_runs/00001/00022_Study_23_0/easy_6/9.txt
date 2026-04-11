@@ -1,0 +1,4 @@
+def sol():
+    return 'ee'
+
+assert sat(sol())

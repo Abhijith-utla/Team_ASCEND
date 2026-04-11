@@ -1,0 +1,8 @@
+def sol():
+    return {}
+
+# Assuming answer function is provided by the user
+# def answer():
+#     return {}
+
+# assert sat(answer())

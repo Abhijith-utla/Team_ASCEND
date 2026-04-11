@@ -1,0 +1,2 @@
+def sol():
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in range(len("The quick brown fox jumps over the lazy dog"))] == list("The quick brown fox jumps over the lazy dog")

@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 5
+```
+
+This solution assumes that the function `sat` is supposed to return the integer `5`. The function `sol` returns this value. The function `sat` is already defined by the user and it checks if the sum of two integers is equal to `5`.

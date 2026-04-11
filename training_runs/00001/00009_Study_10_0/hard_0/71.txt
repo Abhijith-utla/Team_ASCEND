@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+```
+
+This function checks if a string `s` is a palindrome of a number that is a power of 8 raised to 1818 and if its length is greater than 11. The string is considered a palindrome if it reads the same forwards and backwards.

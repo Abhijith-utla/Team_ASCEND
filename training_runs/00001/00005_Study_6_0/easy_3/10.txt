@@ -1,0 +1,16 @@
+Sure, here is the Python code that defines the `sol` function:
+
+```python
+def sol():
+    return 0
+```
+
+And here is the Python code that validates the `sol` function using the `assert` statement:
+
+```python
+def sat(i: int) -> bool:
+    return i == 0
+
+# Test the function
+assert sat(sol())
+```

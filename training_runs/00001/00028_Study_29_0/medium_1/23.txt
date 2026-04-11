@@ -1,0 +1,10 @@
+Here is the correct pattern for your problem:
+
+```python
+def sol():
+    return []
+```
+
+The correct solution must be an empty list. This is because the given condition in the problem statement is incorrect. It seems like there's some confusion or misunderstanding. The function `sat` checks if every element in the list `l` satisfies a condition: `i * i - j * j >= 10` where `i` and `j` are elements in `l`. This condition is not always true for all elements in `l`. Therefore, the `all` function in Python will return `False`, and the function `sol` will return an empty list.
+
+If the condition is correct and we still need to return a list, we can return the list `[1, 2, 3, ..., 997, 997]` which are the numbers from `0` to `997`. But since we are given the incorrect condition, we can't find a solution that satisfies the condition.

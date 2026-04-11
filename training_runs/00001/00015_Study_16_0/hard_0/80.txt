@@ -1,0 +1,4 @@
+def sol():
+    return float(len(str(int(123.456))))
+
+print(sol())

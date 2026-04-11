@@ -1,0 +1,10 @@
+Here is the correct pattern for your solution:
+
+```python
+def sol():
+    return sorted([i for i in range(999)])
+```
+
+This function returns a list of integers from 0 to 998. The list is sorted in ascending order and returned as the answer.
+
+The function `sat` is already defined by the user, and it's used to validate the solution. It checks whether the sorted list is the same as the expected list of integers from 0 to 998, and whether all elements in the list are unique. If both conditions are met, the function returns `True`; otherwise, it returns `False`.

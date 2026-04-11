@@ -1,0 +1,5 @@
+def sol():
+    return ['a', 'b', 'c']
+
+# Assertion check
+assert sat(sol())

@@ -1,0 +1,4 @@
+def sol():
+    return {
+        "answer": "I am a python function, sol, defined to satisfy the problem's condition."
+    }

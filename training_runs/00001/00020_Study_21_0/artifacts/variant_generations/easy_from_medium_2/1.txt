@@ -1,0 +1,17 @@
+Here are the three simpler Python puzzles:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(8)] and len(set(li)) == 3)
+```
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(li[i] != li[i + 1] for i in range(8) and len(set(li)) == 3)
+```
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(li[i] != li[i + 1] for i in range(8) if len(set(li)) == 3)
+```

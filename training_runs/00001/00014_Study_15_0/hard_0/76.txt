@@ -1,0 +1,10 @@
+The given function `sat` is incorrect. It checks if the sum of the first `i` elements is `2**i - 1` for `i` in the range 20. However, the sum of the first `i` elements is always `2**i - 1` for `i` in the range 1 to 20. Hence, it's not correct to check if the sum of the first `i` elements is `2**i - 1` for `i` in the range 20.
+
+The correct function should be:
+
+```python
+def sol():
+    return 16  # return the answer as an integer
+```
+
+The checker will run: `assert sat(sol())`.

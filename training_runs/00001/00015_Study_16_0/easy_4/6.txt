@@ -1,0 +1,9 @@
+def sol():
+    return '4.5abc'
+
+# The function `sat` is a function that checks if a string is equal to '4.5abc'. 
+# The function `sol` is defined to return the string '4.5abc'. 
+# The function `sol` is a valid Python function that meets the requirements.
+
+# Testing the function
+assert sat(sol())

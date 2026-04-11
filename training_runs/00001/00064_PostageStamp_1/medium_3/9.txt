@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+# Test cases
+print(sol([3, 3, 3, 3, 3], 271, 8, [3, 3, 3, 3, 3]))  # True
+print(sol([3, 3, 3, 3, 2], 271, 8, [3, 3, 3, 3, 3]))  # False
+print(sol([3, 3, 3, 3, 3], 272, 8, [3, 3, 3, 3, 3]))  # False
+print(sol([3, 3, 3, 3, 3], 271, 9, [3, 3, 3, 3, 3]))  # False
+
+# Checker code
+assert sat([3, 3, 3, 3, 3])  # True
+assert not sat([3, 3, 3, 3, 2])  # False
+assert not sat([3, 3, 3, 3

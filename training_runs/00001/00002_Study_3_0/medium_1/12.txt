@@ -1,0 +1,16 @@
+The function `sat(li: List[int])` checks if a list `li` is sorted in ascending order and contains no duplicates. The function `list(range(999))` creates a list of the numbers 0 to 998. If `li` is sorted in ascending order and does not contain any duplicates, then `li` will equal `list(range(999))`, and `sat(li)` will return `True`. Otherwise, `sat(li)` will return `False`.
+
+Here is the Python code for the function `sol()`:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+    return sat
+```
+
+The function `sol()` returns a function `sat` that checks whether a list `li` satisfies the conditions specified in the problem.
+
+Please note that the function `sol()` doesn't actually call the function `sat()`. You need

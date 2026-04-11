@@ -1,0 +1,16 @@
+{
+  "attempt_num": 40,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T08:01:16.638357+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=Sure, here is the solution for the problem. ```python def sat(s: str) -> float: return float(s) + len(s) == 4.5 # Tes...",
+  "difficulty": "hard",
+  "problem_id": "00015_Study_16_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

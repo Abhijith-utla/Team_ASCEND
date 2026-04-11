@@ -1,0 +1,10 @@
+The given Python function `sat` takes a string `s` as input and checks if the string `s` contains 400 'm's, 401 'mm's, and 398 'mmm's. If all these counts are equal to each other, the function returns `True`, otherwise it returns `False`.
+
+Here is the solution for the problem:
+
+```python
+def sol():
+    return not sat('m' * 400 + 'mm' * 401 + 'mmm' * 398)
+```
+
+This code defines a function `sol` which calls `sat` with a string formed from repeated 'mmm' 398 times, followed by repeated 'mm' 401 times, and followed by 'm' 400 times. The `not` operator is used to negate the result of `sat`, so `sol` will return `True` if `sat` returns `False` (i.e., all counts are equal) and `False` otherwise.

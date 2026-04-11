@@ -1,0 +1,14 @@
+def sol():
+    return sat
+
+# test case
+assert sat([]) == True
+assert sat([1]) == True
+assert sat([1, 1]) == True
+assert sat([1, 2]) == False
+assert sat([1, 2, 3]) == False
+assert sat([1, 2, 3, 6]) == True
+
+# checker
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(1, len(li) + 1))

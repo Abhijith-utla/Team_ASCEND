@@ -1,0 +1,12 @@
+def sol():
+    return {}
+
+# Checker function
+def check(colors: List[int], n=0) -> bool:
+    if len(colors) < n:
+        return False
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == squares.get(i + j) for i, c in squares.items())
+
+# Run the checker
+assert sat(check(sol()))

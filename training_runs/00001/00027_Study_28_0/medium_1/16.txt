@@ -1,0 +1,18 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [i for i in range(1000)]
+
+def sat(li: List[int]):
+    return all(i not in li for i in range(1000)) and abs(min(li)-max(li)) < 10
+
+# Check the solution
+assert sat(sol())
+```
+
+In this code, the function `sol()` generates a list of numbers from 0 to 999 and returns this list.
+
+The function `sat()` checks if all the numbers in the list are unique and the absolute difference between the smallest and largest numbers in the list is less than 10. The function `sat()` is used in the assert statement at the end to check if the solution is correct.

@@ -1,0 +1,9 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    s = 'yyyyyyyyyyyoyo'
+    return s.count('y') == 100 and s.count('yo') == 101 and s.count('yy') == 98
+```
+
+This solution assumes that the string 's' contains 'y' exactly 100 times, 'yo' exactly 101 times, and 'yy' exactly 98 times.

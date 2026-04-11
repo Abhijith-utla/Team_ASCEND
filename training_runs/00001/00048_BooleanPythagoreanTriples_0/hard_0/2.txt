@@ -1,0 +1,5 @@
+def sol():
+    return {0, 1}
+
+# The function 'sat' is already defined by the user.
+# We can't redefine it, so we can't solve this problem.

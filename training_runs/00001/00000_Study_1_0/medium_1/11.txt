@@ -1,0 +1,9 @@
+The function `sat` is defined correctly. It checks if the string `s` contains exactly one 'o' and has exactly 1000 occurrences of 'o'. Here's the python code for `sol` function:
+
+```python
+def sol():
+    return 'oo' in 'oooooooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooooooo'
+```
+This function will return `True` if the string 'oo' is in the string 'oooooooooooooooooooooooooooo' and `False` otherwise.
+
+The checker will run `assert sat(sol())` and it will pass if `sol()` returns `True`, otherwise it will fail.

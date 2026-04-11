@@ -1,0 +1,12 @@
+def sol():
+    return [56]
+
+# Testing the solution with the provided function
+assert sat(sol())
+
+# Adding additional stamps to the solution
+def sol_additional_stamps():
+    return [56] + [25, 22, 8, 84, 60]
+
+# Testing the solution with the provided additional stamps function
+assert sat(sol_additional_stamps())

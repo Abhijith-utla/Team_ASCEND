@@ -1,0 +1,8 @@
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```

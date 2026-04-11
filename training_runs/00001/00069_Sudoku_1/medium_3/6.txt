@@ -1,0 +1,6 @@
+def sol():
+    answer = ''.join('_' * 81)
+    assert sat(answer), "no solution"
+    return answer
+
+assert sat(sol())

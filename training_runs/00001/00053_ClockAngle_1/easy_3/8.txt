@@ -1,0 +1,9 @@
+def sol():
+    return [0, 0]
+
+# Testing the function
+assert sat(sol())
+!pip install sympy
+!pip install numpy
+!pip install scipy
+!pip install matplotlib

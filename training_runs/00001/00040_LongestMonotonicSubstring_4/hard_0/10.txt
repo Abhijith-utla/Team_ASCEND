@@ -1,0 +1,26 @@
+def sol():
+    return []
+
+# This is a helper function to find the index of the maximum element in the list
+def find_max_index(lst, start):
+    max_index = start
+    for i in range(start + 1, len(lst)):
+        if lst[i] > lst[max_index]:
+            max_index = i
+    return max_index
+
+# This is the main function which uses the helper function to find the index of the maximum element in the list
+def sol_main(lst):
+    # If the list is empty, return an empty list
+    if len(lst) == 0:
+        return []
+
+    # Find the index of the maximum element in the list
+    max_index = find_max_index(lst, 0)
+
+    # If the maximum element is at the end of the list, return the list
+    if max_index == len(lst) - 1:
+        return lst[max_index]
+
+    # Otherwise, move the maximum element to the end of the list
+    lst[max_index], l

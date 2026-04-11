@@ -1,0 +1,5 @@
+def sol():
+    ls = ["1" * 8] * 88
+    return "".join(ls)
+
+assert sat(sol())

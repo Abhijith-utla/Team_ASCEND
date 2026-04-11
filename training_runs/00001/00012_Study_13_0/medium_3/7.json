@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:28:24.819014+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=python,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=The function `sat` is defined to check if a number `x` is approximately equal to `3.1417`. The difference between the...",
+  "difficulty": "medium",
+  "problem_id": "00012_Study_13_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

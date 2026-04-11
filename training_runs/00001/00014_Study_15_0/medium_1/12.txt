@@ -1,0 +1,11 @@
+Here is the Python code that constructs and returns a single answer value.
+
+```python
+def sol():
+    answer = [(2 ** x) - 1 for x in range(20)]
+    return answer
+```
+
+This function calculates the values (2 ** x - 1) for all x in the range from 0 to 19, and returns the list of these values. The checker will assert that all these values are equal to 2 ** x - 1 for all x in the range from 0 to 19.
+
+Please note that the range of x in the expression (2 ** x) - 1 might be larger than 19 depending on the values of x in the list comprehension. If you want to limit the range to be from 0 to 19, you can modify the range to (0, 20).

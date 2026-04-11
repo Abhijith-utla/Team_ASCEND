@@ -1,0 +1,14 @@
+def sol():
+    return 0
+
+# The function should return an answer object
+class Answer:
+    pass
+
+# The answer object should contain a single attribute, n
+answer = Answer()
+answer.n = 0
+
+return answer
+
+# The final checker will run: assert sat(answer.n)

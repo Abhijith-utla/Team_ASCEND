@@ -1,0 +1,5 @@
+def sol():
+    return [[] for _ in range(7)]
+
+# Checker
+assert sat(sol())

@@ -1,0 +1,21 @@
+Here are three versions of the `sat` function that test a similar core concept by verifying if the given list of integers is increasing with respect to some string:
+
+```python
+# VARIANT1
+def sat(x: List[int], length=1, s="xwV"):
+    return all(s[x[i]] < s[x[i + 1]] for i in range(length - 1))
+
+# VARIANT2
+def sat(x: List[int], length=1, s="xwV"):
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length - 1))
+
+# VARIANT3
+def sat(x: List[int], length=1, s="xwV"):
+    return all(s[x[i]] < s[x[i + 1]] and x[i + 1] > x[i] for i in range(length - 1))
+```
+
+In the first variant, we are checking if the characters at each position in the string 's' are less than the characters at the next position. In this problem, this is checking if the list of integers is increasing.
+
+In the second variant, we are checking if the characters at each position in the string 's' are less than or equal to the characters at the next position. This is checking if the list of integers is non-decreasing.
+
+In the third variant, we are checking if the characters at each position in the string 's' are less than the characters at the next position, and the next position is greater than the current position. This is checking if the list of integers is strictly increasing.

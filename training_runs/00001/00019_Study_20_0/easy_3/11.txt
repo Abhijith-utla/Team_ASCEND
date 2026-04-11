@@ -1,0 +1,6 @@
+def sol():
+    # A list with all elements being multiples of 2, 3, and 4
+    answer = [4, 6, 8, 12, 15, 18, 21, 24]
+    return answer
+
+assert sat(sol())

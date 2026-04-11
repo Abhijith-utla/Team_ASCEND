@@ -1,0 +1,8 @@
+Here is the correct pattern for your code.
+
+```python
+def sol():
+    return None
+```
+
+In this case, the answer is None because the given function `sat` returns `False`. The function `sat` checks if there are two numbers `i` and `j` such that the square of `i` is the square of `j` minus 10. However, no such numbers exist in the given list `l`, so the function `sat` returns `False`.

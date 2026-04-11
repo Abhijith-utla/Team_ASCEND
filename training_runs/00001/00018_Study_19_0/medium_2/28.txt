@@ -1,0 +1,7 @@
+def sol():
+    return [34]
+
+# This code checks whether the list is equal to [34] and if it is, the function returns True. Otherwise, it returns False.
+
+# The checker will run:
+assert sat(sol())

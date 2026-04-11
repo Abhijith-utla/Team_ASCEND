@@ -1,0 +1,8 @@
+Here's the solution:
+
+```python
+def sol():
+    return [128]
+```
+
+This function returns a list with the number 128. The function `sat` checks if the list `li` is a valid sequence according to the conditions provided in the problem. The condition is that for each index `i`, `li[i]` should be either `i - 1`, `i + 1`, or `3 * i`. The function `zip` is used to pair each element of `li` with the corresponding index from 0 to len(li) - 1. The condition is tested for each pair using the `all` function, which returns `True` if and only if all elements in the iterable (the list of pairs) are `True`. The function `sol` then returns the list `[128]`.

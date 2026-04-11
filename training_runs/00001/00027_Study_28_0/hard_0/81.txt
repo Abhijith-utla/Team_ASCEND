@@ -1,0 +1,5 @@
+def sol():
+    li = [i for i in range(100) if i%2 == 0 or i%3 == 0 or i%5 == 0]
+    return li
+
+assert sat(sol())

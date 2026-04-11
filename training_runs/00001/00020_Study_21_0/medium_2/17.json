@@ -1,0 +1,17 @@
+{
+  "attempt_num": 17,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:50:06.928647+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: list index out of range|parse=fence=python,preamble=1,found_sol=1,candidates=3|checked=3/3|preview=The provided code checks if all elements in the list are distinct and the length of the list is 3. The correct Python...",
+  "difficulty": "medium",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

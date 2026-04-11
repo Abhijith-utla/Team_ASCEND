@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+
+print(sol(['1', '2', '3']))
+```
+
+In the above solution, the function sol takes a list of strings as an argument. The list is first converted to a string using the str() function. The min(), max(), and len() functions are then used to find the minimum, maximum, and length of the list, respectively. If all these values are equal to the length of the list (i.e., they are all the same), then the function returns True. Otherwise, it returns False.

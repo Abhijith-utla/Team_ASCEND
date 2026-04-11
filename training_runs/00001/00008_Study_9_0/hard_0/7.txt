@@ -1,0 +1,18 @@
+The function `sat` is already defined by the user. It's a function that checks if the given list of integers `li` matches the given string "The five boxing wizards jump quickly". If they match, it returns `True`; otherwise, it returns `False`.
+
+Here's the function:
+
+```python
+def sat(li: List[int]) -> bool:
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The five boxing wizards jump quickly")
+```
+
+The function `sat` takes a list of integers `li` as input. It then checks if the list `li` contains the same elements as the string "The five boxing wizards jump quickly". If it does, the function returns `True`; otherwise, it returns `False`.
+
+You can check the function with the following code:
+
+```python
+print(sat([0, 1, 2, 3, 4]))  # False
+print(sat([0, 3, 5, 1, 4]))  # True
+```

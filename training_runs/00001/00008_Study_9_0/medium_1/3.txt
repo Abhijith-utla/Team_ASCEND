@@ -1,0 +1,9 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [ord(i) for i in "The five boxing wizards jump quickly"] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+The function `ord(i)` returns the ASCII value of the character `i`. The function `list(...)` is used to convert the result to a list. The `==` operator is used to compare the two lists. The `sat` function is a predefined function by the user that checks if the function `sol` returns the expected result.

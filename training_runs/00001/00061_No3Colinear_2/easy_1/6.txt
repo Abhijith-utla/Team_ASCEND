@@ -1,0 +1,12 @@
+def sol():
+    return [(0, 0)]
+
+# Correct pattern
+def sol(coords: List[Tuple[int, int]]):
+    side = len(coords)
+    assert len({coord for coord in coords}) == len(coords)
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert x >= 0 and x < side
+        assert y >= 0 and y < side
+    return len({(a, b) for a, b in coords}) == len(coords)

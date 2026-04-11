@@ -1,0 +1,32 @@
+Here are the three simpler variants for the original function:
+
+```python
+VARIANT1:
+def sat(ls: List[str]):
+    # If the list is empty, the function returns True
+    if len(ls) == 0:
+        return True
+    else:
+        # For each string in the list, if the length of the set of characters is not equal to the length of the string, the function returns False
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+
+VARIANT2:
+def sat(ls: List[str]):
+    # If the list is empty, the function returns True
+    if len(ls) == 0:
+        return True
+    else:
+        # For each string in the list, if the length of the set of characters is not the same as the length of the string, the function returns False
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+
+VARIANT3:
+def sat(ls: List[str]):
+    # If the list is empty, the function returns True
+    if len(ls) == 0:
+        return True
+    else:
+        # For each string in the list, if the length of the set of characters is not equal to the length of the first string in the list, the function returns False
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+These three variants test the same core concept of checking if all strings in a list have the same number of unique characters.

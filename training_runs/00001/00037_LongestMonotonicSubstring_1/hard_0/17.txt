@@ -1,0 +1,7 @@
+def sol():
+    x = [0]*193
+    for i in range(193):
+        x[i] = i
+    return x
+
+print(sol())

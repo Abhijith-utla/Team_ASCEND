@@ -1,0 +1,15 @@
+The provided Python function `sat` checks if a given integer `i` is less than or equal to 10^10 and even. It returns `True` if `i` meets the conditions and `False` otherwise. The function assumes that `i` is an integer.
+
+Here's the correct pattern:
+```python
+def sol():
+    return <answer>
+```
+
+Incorrect pattern:
+```python
+def sol(x):
+    ...
+```
+
+The `...` is a placeholder for the incorrect code, which should be filled in with the correct logic for your solution.

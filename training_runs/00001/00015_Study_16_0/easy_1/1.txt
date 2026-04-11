@@ -1,0 +1,4 @@
+def sol():
+    return '4.5'
+
+# The checker will run: assert sat(sol())

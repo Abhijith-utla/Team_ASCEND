@@ -1,0 +1,5 @@
+def sol():
+    return ''.join(str(int(i) % 10) for i in str(8 ** 1818))
+
+# Testing
+assert sat(sol())

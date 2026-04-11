@@ -1,0 +1,7 @@
+def sol():
+    from random import shuffle
+    li = [i for i in range(10)]
+    shuffle(li)
+    return li
+
+assert sat(sol())

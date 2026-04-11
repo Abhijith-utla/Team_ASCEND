@@ -1,0 +1,18 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> List[str]:
+    result = []
+    for s in ls:
+        for t in ls:
+            if s != t:
+                result.append(s + t)
+    return result
+
+def sat(ls: List[str]):
+    return sol(ls) == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function `sol` takes a list of strings as an argument and returns a new list of strings where each string is constructed by concatenating two elements of the input list. The function `sat` is a simple assertion that checks if the result of `sol` is a list of words in the sentence 'berlin berger linber linger gerber gerlin' split into a list, in the same order as the words.

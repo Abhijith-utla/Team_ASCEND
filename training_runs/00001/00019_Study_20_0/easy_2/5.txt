@@ -1,0 +1,11 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    # Check if all elements in the list are either 1, 2, or 3 times their position
+    return all(j in {i - 1, i + 1, 3 * i} for i, j in enumerate(li, start=1))
+```
+
+This function works by checking if each element in the list is either one, two, or three times its position in the list. It does this by checking if the element is in the set of all elements that could be at any of the three positions (i - 1, i + 1, or 3 * i). If all elements satisfy this condition, the function returns True; otherwise, it returns False.

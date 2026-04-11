@@ -1,0 +1,6 @@
+def sol():
+    return hour, minute
+
+# This assert statement is used to test the correctness of your solution.
+# It will pass if your solution is correct, and fail otherwise.
+assert sat(hour, minute)

@@ -1,0 +1,15 @@
+Sure, here's the Python code that meets the conditions:
+
+```python
+from typing import List
+
+def sol():
+    return sorted([i for i in range(1000)])
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(1000))
+```
+
+The `sol` function generates a list of integers from 0 to 999 and returns it.
+
+The `sat` function checks if a given list is sorted in ascending order and it's equal to the list of integers from 0 to 999.

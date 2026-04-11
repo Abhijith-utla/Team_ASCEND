@@ -1,0 +1,19 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 3, 3]
+```
+
+In this solution, `sol` function returns a list with three elements: `17`, `3`, and `3`. The function `sat` checks if the count of `17` in the list is 3 and the count of `3` in the list is at least 2. If these conditions are met, it returns `True`, otherwise `False`. The function `sol` is used to construct and return the answer.
+
+The checker will run:
+
+```python
+def sat(li: List[int]):
+    return li.count(17) == 3 and li.count(3) >= 2
+```
+
+This code checks if the count of `17` in the list is 3 and the count of `3` in the list is at least 2.

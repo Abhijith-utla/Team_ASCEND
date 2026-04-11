@@ -1,0 +1,21 @@
+Here are three simpler variants of the original problem:
+
+VARIANT1:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == len(set(li))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]) -> bool:
+    return all(li[i] <= li[i + 1] for i in range(len(li) - 1)) and li[0] <= li[-1]
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]) -> bool:
+    return all(li[i] != li[i + 1] for i in range(len(li) - 1)) and (li[0] < li[-1]) or (li[0] > li[-1])
+```
+
+These variants all test if a list is sorted in ascending order, that is, for each element in the list, the element is less than or equal to the next element, and the first element is less than or equal to the last element. They also check that the list contains no consecutive duplicates, and either the list starts or ends with a smaller or larger element.

@@ -1,0 +1,9 @@
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+# Checker
+assert sat(sol())

@@ -1,0 +1,8 @@
+Here is the Python code that satisfies the condition:
+
+```python
+def sat(s: str):
+    return len(s) == 1000 and s.count('o') == 1000
+```
+
+This function takes a string as input and returns a boolean value that determines whether the string's length is 1000 and the number of 'o' characters in the string is also 1000. The function will return True if the conditions are met, and False otherwise.

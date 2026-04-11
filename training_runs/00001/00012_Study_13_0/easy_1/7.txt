@@ -1,0 +1,8 @@
+The function `sat` should return `True` if the provided argument `x` is equal to `123.456` (minus `3.1415`), and `False` otherwise. Here is the correct solution:
+
+```python
+def sat(x: float):
+    return x - 3.1415 == 123.456
+```
+
+Now, the function `sat` can be used to check whether a given number `x` is approximately equal to `123.456` (minus `3.1415`). The final checker will run: `assert sat(sol())`.

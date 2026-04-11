@@ -1,0 +1,16 @@
+Here is a Python function that checks if a list of integers contains each digit from 0 to 9 exactly once:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function works by iterating over the range of 10 (0 to 9) and checking if the count of each digit in the list `li` is equal to the digit itself. It does this by using the `count` method of the list, which counts the number of occurrences of an element in the list. If all counts are equal to the digit, the function returns `True`, meaning the list `li` satisfies the condition. If any count is not equal to the digit, the function returns `False`, indicating that the list `li` does not satisfy the condition.
+
+Here is an example of how you can use this function:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))  # True
+print(sat([

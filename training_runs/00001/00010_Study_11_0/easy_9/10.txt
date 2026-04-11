@@ -1,0 +1,15 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+In this pattern, the function `sol` takes a list of strings as input. If the list is empty, the function returns `True`. Otherwise, it checks if all the strings in the list have the same length. If not, the function returns `False`.
+
+The expression `len(set(i)) == len(ls[0]) for i in ls` is a generator that computes the length of the set of characters in each string `i` of the list `ls` and compares it to the length of the first string in the list. The function `all` returns `True` only if all of these comparisons are `True`. If any comparison is `False`, `all` returns `False`.

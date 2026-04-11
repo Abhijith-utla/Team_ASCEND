@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:47:25.222454+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=```python from typing import List def sol(): def sat(li: List[int]): return all(li[i] != li[i + 1] for i in range(8))...",
+  "difficulty": "easy",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

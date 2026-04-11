@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# Test case
+assert sat([])
+assert not sat([(0, 0)])
+assert sat([(0, 0), (1, 1)])
+assert not sat([(0, 0), (1, 1), (2, 2)])
+assert sat([(0, 0), (1, 1), (2, 2), (3, 3)])
+assert not sat([(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)])
+
+# Random test case
+import random
+coords = [(random.randint(0, 10), random.randint(0, 10)) for _ in range(10)]
+assert sat(coords) or sat(coords, num_points=random.randint(1, 11))

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:26:20.276027+00:00",
+  "diagnostic": "reason=subprocess_error:OverflowError: int too large to convert to float|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=The given Python function `sat` is incorrect as it is not a correct pattern for a function named `sol`. The function ...",
+  "difficulty": "easy",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

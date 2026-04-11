@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This function is not used in the provided solution, 
+# it's just a placeholder because the problem requires a function named 'sol'

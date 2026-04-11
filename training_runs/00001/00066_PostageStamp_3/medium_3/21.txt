@@ -1,0 +1,13 @@
+def sol():
+    return [19, 19, 19]
+
+print(sat([19, 19, 19]))  # False
+print(sat([19, 14, 81]))  # False
+print(sat([19]))  # True
+print(sat([19, 14, 80]))  # False
+
+# This should pass if the function is correctly implemented
+assert sat([19, 19, 19]) == False
+assert sat([19, 14, 81]) == False
+assert sat([19]) == True
+assert sat([19, 14, 80]) == False

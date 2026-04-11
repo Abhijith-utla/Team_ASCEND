@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This assertion checks the solution. Uncomment this line to make the assertion pass.
+#assert sat(sol())

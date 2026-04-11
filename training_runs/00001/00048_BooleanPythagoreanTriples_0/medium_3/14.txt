@@ -1,0 +1,9 @@
+def sol():
+    return {}
+
+assert sat(1, 2, 3) == False
+assert sat(2, 2, 3) == True
+assert sat(0, 0, 0) == True
+assert sat(1, 0, 1) == False
+assert sat(0, 1, 1) == True
+assert sat(0, 1, 2) == False

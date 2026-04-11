@@ -1,0 +1,7 @@
+def sol():
+    import math
+    result = (math.pow(8, 2888)) ** 0.5
+    return str(result).count('8') > 8 and len('8') == 3
+
+# Test
+assert sol() == True

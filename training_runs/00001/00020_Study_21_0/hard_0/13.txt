@@ -1,0 +1,9 @@
+Sure, here is the correct pattern for your Python function:
+
+```python
+def sol():
+    li = [1, 2, 3]
+    return li
+```
+
+In this case, the function `sol` will return the list `[1, 2, 3]`.

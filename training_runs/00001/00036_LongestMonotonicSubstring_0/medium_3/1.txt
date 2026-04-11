@@ -1,0 +1,14 @@
+def sol():
+    return [i for i in range(13) if i > 0 and s[x[i]] <= s[x[i - 1]]]
+
+# Check if the list is not empty
+assert len(sol()) > 0
+
+# Check if the list contains at least one substring in sorted order
+assert all(s[x[i]] <= s[x[i + 1]] for i in range(len(sol()) - 1))
+
+# Check if there are three or more adjacent elements which are all increasing
+assert all(x[i] <= x[i + 1] for i in range(len(sol()) - 2))
+
+# Check if the function `sat` is correctly defined
+assert sat(sol())

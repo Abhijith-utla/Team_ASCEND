@@ -1,0 +1,15 @@
+Here is the Python code that meets the given conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+In this code, we iterate over the range from 0 to 9 and check if the count of each number in the list `li` is equal to that number itself. If any count is not equal to the number, we return False. If we finish the loop without returning False, it means all counts are equal to their respective numbers, so we return True.
+
+Please note that this solution has a time complexity of O(n^2), where n is the length of the list. This is because the `count()` function has a time complexity of O(n) for each number in the list. If you have a list of very large size, this might not be ideal for performance.

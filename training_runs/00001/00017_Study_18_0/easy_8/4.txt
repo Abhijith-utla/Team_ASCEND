@@ -1,0 +1,4 @@
+def sol():
+    return len(set(input("Enter a list of strings separated by commas: ").split(','))) > 0
+
+assert sat(sol())

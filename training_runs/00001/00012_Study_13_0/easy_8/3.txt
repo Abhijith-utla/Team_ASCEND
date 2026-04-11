@@ -1,0 +1,6 @@
+def sat(x: float):
+    return str(x - 3.1417).startswith("123.4567")
+
+# Testing the function
+assert sat(3.1417) == False
+assert sat(4.0) == True

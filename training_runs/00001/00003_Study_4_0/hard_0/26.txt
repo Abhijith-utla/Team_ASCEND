@@ -1,0 +1,8 @@
+Here's the correct pattern:
+
+```python
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+This function `sat` takes a list of integers `li` as an argument. It returns `True` if the list has exactly 10 elements and the number 3 occurs twice in the list, and `False` otherwise.

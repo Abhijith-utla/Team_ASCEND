@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(996) if i in range(996) and abs(i * i - 996 * 996) >= 10 for j in range(996) if i != j]
+
+print(sol())

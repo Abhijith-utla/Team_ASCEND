@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Assuming this is the solution function, you can use it as follows:
+answer = sol()
+assert sat(answer)

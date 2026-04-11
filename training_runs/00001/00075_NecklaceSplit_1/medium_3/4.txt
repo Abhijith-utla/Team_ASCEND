@@ -1,0 +1,6 @@
+def sol():
+    return {}
+
+assert sat(0, 0)
+assert not sat(1, 1)
+assert sat(2, 3, lace="rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrrrrrrrrrbbrbrrbbbrbbrrbrrbrrrbbrbbrrbbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr")

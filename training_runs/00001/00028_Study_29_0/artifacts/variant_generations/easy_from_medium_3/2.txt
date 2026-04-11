@@ -1,0 +1,20 @@
+Here are three simple variants of the original puzzle:
+
+VARIANT1:
+```python
+def sat(l: list):
+    return all(i in range(996) for i in l if abs(i * i - j * j) >= 10 for j in l)
+```
+
+VARIANT2:
+```python
+def sat(l: list):
+    return all(i in range(996) for i in l if abs(i * i - j * j) >= 10)
+```
+
+VARIANT3:
+```python
+def sat(l: list):
+    return all(i in range(996) for i in l for j in l if abs(i * i - j * j) >= 10)
+```
+These variants only test the condition that every element in the input list is within the range [0, 995] and is not the same element of the list. The absolute difference between the square of the number and the square of another number is greater than or equal to 10.

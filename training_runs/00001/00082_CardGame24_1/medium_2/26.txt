@@ -1,0 +1,2 @@
+def sol():
+    return "1 7 - 5 13 *"

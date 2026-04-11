@@ -1,0 +1,2 @@
+def sol():
+    return eval(str(id(sat))[::-1]) == sat(id(sat))

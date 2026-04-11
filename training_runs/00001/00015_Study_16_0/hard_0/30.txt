@@ -1,0 +1,2 @@
+def sol():
+    return float(len(str(len(str(len(str(len(str(len(str(len(str(str(len(str(len(str(str(len(str(str(len(str(str(len(str(str(len(str(str(str(len(str(str(str(len(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(

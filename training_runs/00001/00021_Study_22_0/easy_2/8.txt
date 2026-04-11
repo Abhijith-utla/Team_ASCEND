@@ -1,0 +1,5 @@
+def sol():
+    s = input("Enter a string of 10 alphabetic characters: ")
+    while not sat(s):
+        s = input("Invalid input. Please enter a string of 10 alphabetic characters: ")
+    return s

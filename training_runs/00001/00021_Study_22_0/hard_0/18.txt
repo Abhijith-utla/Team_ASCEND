@@ -1,0 +1,4 @@
+def sol():
+    return "True" if sat("babad") else "False"
+
+print(sol())

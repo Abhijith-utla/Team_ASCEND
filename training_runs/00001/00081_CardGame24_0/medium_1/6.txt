@@ -1,0 +1,9 @@
+def sol():
+    return {"expr": "1*2+3-4/5", "nums": [1, 2, 3, 4], "answer": 2.0}
+
+if __name__ == "__main__":
+    result = sol()
+    print(f"Expression: {result['expr']}")
+    print(f"Numbers: {result['nums']}")
+    print(f"Solution: {result['answer']}")
+    assert sat(result['expr'], result['nums'])

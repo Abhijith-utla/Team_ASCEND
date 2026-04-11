@@ -1,0 +1,22 @@
+def sat(moves: List[int], start=[[5, 0, 2, 3], [1, 9, 6, 7], [4, 14, 8, 11], [12, 13, 10, 15]]):
+
+    locs = {i: [x, y] for y, row in enumerate(start) for x, i in enumerate(row)}  # locations, 0 stands for blank
+    for i in moves:
+        assert abs(locs[0][0] - locs[i][0]) + abs(locs[0][1] - locs[i][1]) == 1
+        locs[0], locs[i] = locs[i], locs[0]
+    return all(locs[i] == [i % len(start[0]), i // len(start)] for i in locs)
+
+def sol(moves: List[int], start=[[5, 0, 2, 3], [1, 9, 6, 7], [4, 14, 8, 11], [12, 13, 10, 15]]):
+
+    locs = {i: [x, y] for y, row in enumerate(start) for x, i in enumerate(row)}  # locations, 0 stands for blank
+    for i in moves:
+        assert abs(locs[0][0] - locs[i][0]) + abs(locs[0][1] - locs[i][1]) == 1
+        locs[0], locs[i] = locs[i], locs[0]
+    return all(locs[i] == [i % len(start[0]), i // len(start)] for i in locs)
+
+# Test cases
+print(sol([1, 3, 0, 2]))  # True
+print(sol([1, 3, 2, 0]))  # False
+
+if __name__ == "__main__":
+    assert sat(sol())

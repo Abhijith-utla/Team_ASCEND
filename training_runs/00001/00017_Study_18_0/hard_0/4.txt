@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return [s + t for s in ls for t in ls if s != t] == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+In this solution, we are using a nested list comprehension to generate all possible combinations of `s` and `t` from `ls` where `s` is not equal to `t`. We then check if this list is equal to a list of words split from a string. If they are equal, the function returns `True`. Otherwise, it returns `False`.

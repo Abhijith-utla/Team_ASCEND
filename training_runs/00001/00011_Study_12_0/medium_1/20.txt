@@ -1,0 +1,16 @@
+Here's how you could implement the `sol` function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+The `zip` function is used to create pairs of elements from `li`. For instance, the first pair is (4, 4), the second pair is (4, 5), and so on. The `zip` function takes two iterables and returns an iterator that produces tuples, where the first element in each passed iterator is paired together, and then the second element in each passed iterator are paired together.
+
+The `all` function is used to return `True` if all elements in an iterable are true. In this case, it checks if all pairs in the `zip` iterator have a sum of 1.
+
+The `len` function is used to get the length of a list in Python.
+
+The `assert` statement is used to verify the correctness of the function.

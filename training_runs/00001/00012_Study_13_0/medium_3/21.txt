@@ -1,0 +1,6 @@
+```python
+def sat(x: float):
+    return str(x - 3.1417).startswith("123.456")
+
+assert sat(0)
+```

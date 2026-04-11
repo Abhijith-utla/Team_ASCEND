@@ -1,0 +1,13 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return [1, 2, 3, 4]
+
+# Calling the assert statement with the solution function as the argument
+assert sat(sol())
+```
+
+This program first defines the function `sat` which checks if all elements in the list are unique. It does this by creating a set for each element in the list and checking if it's equal to the size of the list.
+
+The `sol` function is then called and its return value is passed to `sat` as an argument. The `assert` statement checks that `sat` returns `True`, which is the assertion that verifies that the solution is correct. If `sat` returns `False`, the program will raise an `AssertionError`.

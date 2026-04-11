@@ -1,0 +1,44 @@
+def sat(coords: List[List[int]], side=1, num_points=1):
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert 0 <= x < side
+        assert 0 <= y < side
+    return len({(a, b) for a, b in coords}) == len(coords) >= num_points
+
+def sol():
+    return []
+
+# Adding first square
+assert sat([[0, 0], [0, 1]])
+
+# Adding second square
+assert sat([[0, 1], [0, 2]])
+
+# Adding third square
+assert sat([[0, 2], [0, 3]])
+
+# Adding fourth square
+assert sat([[0, 3], [0, 4]])
+
+# Adding fifth square
+assert sat([[0, 4], [0, 5]])
+
+# Adding sixth square
+assert sat([[0, 5], [0, 6]])
+
+# Adding seventh square
+assert sat([[0, 6], [0, 7]])
+
+# Adding eighth square
+assert sat([[0, 7], [0, 8]])
+
+# Adding ninth square
+assert sat([[0, 8], [0, 9]])
+
+# Adding tenth square
+assert sat([[0, 9], [0, 10]])
+
+# Adding
+
+if __name__ == "__main__":
+    assert sat(sol())

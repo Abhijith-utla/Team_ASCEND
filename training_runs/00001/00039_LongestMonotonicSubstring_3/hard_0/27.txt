@@ -1,0 +1,11 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    x = [2, 0, 1, 3]
+    return x
+
+print(sat(sol()))
+```
+
+This program will output: `True`. This is because the string `s` is sorted in the given list `x`.

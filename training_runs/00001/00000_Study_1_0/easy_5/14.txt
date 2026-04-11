@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'Hello World' and 'o' not in 'Hello World' and 'Hello World'.count('o') == 1000

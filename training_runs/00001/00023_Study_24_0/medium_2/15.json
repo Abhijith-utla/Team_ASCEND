@@ -1,0 +1,17 @@
+{
+  "attempt_num": 15,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:10:11.642208+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=11|checked=11/11|preview=def sol(): answer = [] for i in range(10): answer.append(17) if len(answer) == 2: break answer.append(3) return answe...",
+  "difficulty": "medium",
+  "problem_id": "00023_Study_24_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

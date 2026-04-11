@@ -1,0 +1,19 @@
+Here are three simpler Python function variants that test the same core concept:
+
+```python
+def sat_var1(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 1
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+
+def sat_var2(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 100
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+
+def sat_var3(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 1000
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+In all of these variants, we are changing the number 1000 in the assert statement and the len() function call so that they can be passed different numbers of colors.

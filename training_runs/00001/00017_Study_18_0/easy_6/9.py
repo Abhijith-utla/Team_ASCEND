@@ -1,0 +1,17 @@
+def sat(a: int, b: float) -> bool:
+    return a - b == math.sqrt(a**2 + b**2)
+
+def sol():
+    a = 10
+    b = 10
+    return sat(a, b)
+
+def sat(a: int, b: float) -> bool:
+    return a - b == math.sqrt(a**2 + b**2)
+
+# Test
+assert sat(10, 10)
+assert not sat(10, 9)
+
+if __name__ == "__main__":
+    assert sat(sol())

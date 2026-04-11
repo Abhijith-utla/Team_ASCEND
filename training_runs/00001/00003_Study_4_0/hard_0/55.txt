@@ -1,0 +1,18 @@
+Sure, here is a Python solution for this problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+This function checks if the length of the list is 10 and the count of the number at index 3 is 2.
+
+Here is the assertion that will run this function:
+
+```python
+assert sat([1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10])
+```
+
+This assertion will pass if the function `sat` returns `True`, otherwise it will fail.

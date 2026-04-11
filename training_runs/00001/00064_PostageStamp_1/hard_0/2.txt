@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+```
+
+This function takes a list of stamps, a target sum, a maximum number of stamps, and a list of options as input. It checks that each stamp is in the options list and that the number of stamps does not exceed the maximum. It also checks that the sum of the stamps equals the target. If all these conditions are met, it returns True, otherwise it returns False.
+
+The function is named `sol` because it is the solution to the problem. The function takes four arguments: `stamps`, `target`, `max_stamps`, and `options`. The `assert` statement is used to ensure that each stamp is in the options list. The function then checks if the number of stamps

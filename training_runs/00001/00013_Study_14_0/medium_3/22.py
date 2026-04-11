@@ -1,0 +1,13 @@
+def sat(li: List[int]):
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+def sol():
+    def sat(li: List[int]):
+        return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+    answer = sat([1, 2, 3, 4, 5])
+
+    return answer
+
+if __name__ == "__main__":
+    assert sat(sol())

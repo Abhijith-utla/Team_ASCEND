@@ -1,0 +1,4 @@
+def sol():
+    return 'abcdcba' if sat('abcdcba') else 'not a solution'
+
+assert sat(sol())

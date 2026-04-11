@@ -1,0 +1,5 @@
+def sol():
+    return "1-8*+/6"
+
+# The above code meets all the conditions mentioned in the problem
+assert sat(sol())

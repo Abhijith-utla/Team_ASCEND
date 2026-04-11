@@ -1,0 +1,13 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    for i in range(100):
+        if sat(i):
+            return i
+    return None
+```
+
+This function will return the first integer less than 100 that is divisible by 5, or None if no such number exists.
+
+The `sat` function checks whether a number is divisible by 5 and less than 100. The `for` loop is used to iterate over the numbers from 0 to 99. When a number satisfies both conditions, it is returned by the function. If no such number is found, None is returned.

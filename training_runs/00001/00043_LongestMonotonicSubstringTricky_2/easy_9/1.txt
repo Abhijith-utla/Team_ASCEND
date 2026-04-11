@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This function checks if the given string (s) has the same number of each character
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(s.count(s[x[i]]) == s.count(s[x[i + 1]]) for i in range(length - 1))

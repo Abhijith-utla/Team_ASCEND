@@ -1,0 +1,10 @@
+Here's the correct Python code for the solution.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list("The five boxing wizards jump quickly")
+```
+
+The function `sat` takes a list of integers as an argument and returns `True` if the list of characters in the string "The quick brown fox jumps over the lazy dog" corresponding to the indices in the list `li` is the same as the list of characters in the string "The five boxing wizards jump quickly". If the two lists are not the same, the function returns `False`.

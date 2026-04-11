@@ -1,0 +1,27 @@
+def sol():
+    return {
+        "answer": 19,
+        "stamps": [19, 14, 81],
+        "max_stamps": 2,
+        "options": [19, 14, 81]
+    }
+
+# Correct pattern:
+# def sol():
+#     return {
+#         "answer": 19,
+#         "stamps": [19, 14, 81],
+#         "max_stamps": 2,
+#         "options": [19, 14, 81]
+#     }
+
+# Incorrect pattern:
+# def sol(x):
+#     return {
+#         "answer": 19,
+#         "stamps": [19, 14, 81],
+#         "max_stamps": 2,
+#         "options": [19, 14, 81]
+#     }
+
+print(sol())

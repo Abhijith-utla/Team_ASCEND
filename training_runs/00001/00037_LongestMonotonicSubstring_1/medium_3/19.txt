@@ -1,0 +1,4 @@
+def sol():
+    return [int(i != len(x)-1) for x in [[3, 2, 1, 5, 4], [6, 7, 8, 9, 10]]]
+
+print(sol())

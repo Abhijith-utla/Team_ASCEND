@@ -1,0 +1,9 @@
+The function `sat` is already defined by the user. It checks if a given list of moves and capacities, initial state, and goal state results in the goal state. The function `sat` takes four arguments: `moves`, `capacities`, `init`, and `goal`.
+
+The function `sat` first creates a copy of the initial state and then iterates over the list of moves. For each move, it checks if the indices `i` and `j` are non-negative and if `i` and `j` are not the same. It then calculates the minimum of the capacities of the jug `j` and the amount of water in the jug `i` plus the amount of water in the jug `j`. This is the amount of water that can be poured into the jug.
+
+The function then updates the amount of water in the jug `i` and `j` by subtracting the amount of water that was poured from the total amount of water in the jug `i` and `j`.
+
+Finally, the function returns a boolean value indicating whether the current state of the jugs is equal to the goal state.
+
+The function `

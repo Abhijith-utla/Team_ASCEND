@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 10)) == len(str(i + 100))
+```
+
+In the above code, the function `sat` checks if the length of the string representation of `i + 10` and `i + 100` is equal. It does this by converting `i + 10` and `i + 100` to strings and then comparing the lengths of the two strings. If they are equal, the function returns `True`, indicating that the condition is satisfied.

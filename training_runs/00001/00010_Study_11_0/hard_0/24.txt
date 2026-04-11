@@ -1,0 +1,21 @@
+Sure, here is the Python solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return str(len(ls)) == min(ls) == max(ls)
+
+def sol():
+    return sat([str(i) for i in range(10)])
+```
+
+This function `sat` checks whether the list `ls` has all elements equal to each other and has the same length. This is done by converting all elements in the list to string and then comparing the length, minimum and maximum values.
+
+The function `sol` calls the `sat` function and returns the result.
+
+The final checker will run:
+
+```python
+assert sat(sol())
+```

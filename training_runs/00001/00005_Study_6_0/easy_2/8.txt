@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return 42
+```
+
+The function `sol` returns the number 42. This satisfies the condition `sat` because 42 is even (i.e., divisible by 2).

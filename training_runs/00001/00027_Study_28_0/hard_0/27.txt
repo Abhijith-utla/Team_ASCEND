@@ -1,0 +1,22 @@
+def sol():
+    return []
+
+# This function checks if the provided list (li) is a valid solution for the problem
+# It returns an empty list if the list is valid, otherwise it returns a list of error messages
+def sat(li: List[int]):
+    if len(li) != 100:
+        return ["List must have exactly 100 elements"]
+    if not all(i in range(1000) and abs(i - j) >= 10 for i in li for j in li if i != j):
+        return ["All elements must be distinct and distance between them must be at least 10"]
+    if len(set(li)) != 100:
+        return ["List must contain exactly 100 unique elements"]
+    return []
+
+# This function checks if the provided list (li) is valid
+# It returns True if the list is valid, otherwise it returns False
+def valid(li: List[int]):
+    return sat(li) == []
+
+# The main function
+def main():
+    li = [i for i in range(100)]

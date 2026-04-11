@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted(set('Auipenmtrs'))).lower() == ''.join(sorted(set('Auipenmtrs'))).lower()[::-1]
+
+assert sat(sol())

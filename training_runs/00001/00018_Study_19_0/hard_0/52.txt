@@ -1,0 +1,8 @@
+def sol():
+    return set()
+
+# The answer object is a set that is empty.
+# This means that the function sol() returned a set that is an empty set.
+
+# The checker will run: assert sat(sol())
+assert sat(sol())

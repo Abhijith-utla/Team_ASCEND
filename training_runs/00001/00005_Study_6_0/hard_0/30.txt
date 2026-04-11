@@ -1,0 +1,4 @@
+def sol():
+    return 4 + 7
+
+assert sat(sol())

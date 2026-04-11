@@ -1,0 +1,4 @@
+def sol():
+    return {"h": 1, "m": 15}
+
+assert sat(sol())

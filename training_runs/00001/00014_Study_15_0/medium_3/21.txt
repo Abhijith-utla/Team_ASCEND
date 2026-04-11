@@ -1,0 +1,15 @@
+Here is a Python solution for the problem. The function `sat` checks if all numbers in the list `li` are equal to the sum of the first `i` numbers of the list, where `i` ranges from 0 to 19. The `all` function is used to check if all numbers in the list satisfy the condition. If all numbers in the list satisfy the condition, the `all` function returns `True`, otherwise it returns `False`.
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+This function takes a list of integers as input and returns a boolean value. If all numbers in the list are equal to the sum of the first `i` numbers of the list for `i` in the range 0 to 19, then the function returns `True`. Otherwise, it returns `False`.
+
+Here is how you can use this function:
+
+```python
+print(sat([1, 1, 1, 1, 1, 1, 1, 1

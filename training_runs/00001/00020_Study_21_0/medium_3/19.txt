@@ -1,0 +1,18 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(7)]) and len(set(li)) == 3
+```
+
+The function `sat` checks if all elements in the list are distinct and the length of the set is 3. 
+
+The condition `li[i] != li[i + 1]` checks if there is any two consecutive elements in the list which are the same. 
+
+The condition `len(set(li)) == 3` checks if the number of distinct elements in the list is equal to 3.
+
+The function `all` returns `True` if all the elements in the list satisfy the conditions, otherwise it returns `False`.
+
+The `assert sat(li)` is used to validate the solution. If `li` satisfies the conditions, this statement will not raise an AssertionError.

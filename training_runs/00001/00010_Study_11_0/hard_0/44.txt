@@ -1,0 +1,4 @@
+def sol():
+    return len(min(ls)) == len(max(ls)) == len(ls)
+
+assert sat(sol())

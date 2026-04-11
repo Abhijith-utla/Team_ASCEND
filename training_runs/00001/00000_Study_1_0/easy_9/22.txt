@@ -1,0 +1,18 @@
+Here is a Python solution for your problem. This function checks if the string 'ooo' is not in the string s and if 'o' appears exactly 1000 times in the string s.
+
+```python
+def sat(s: str):
+    return 'ooo' not in s and 'o' in s and s.count('o') == 1000
+```
+
+Here is how you can use this function:
+
+```python
+def sol():
+    s = 'oooooooooooooooooooooooo'  # Replace this with your string
+    return sat(s)
+
+print(sol())  # This will print True if the string satisfies the conditions, else it will print False.
+```
+
+Please replace the string 'oooooooooooooooooooooooo' with your actual string.

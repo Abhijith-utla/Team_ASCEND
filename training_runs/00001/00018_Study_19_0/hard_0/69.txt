@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return {i + j for i in range(11) for j in range(11)} == {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}
+```
+
+This Python function uses a generator expression to generate a set of all possible sums of pairs of elements in a list of the first ten positive integers (i.e., `{0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20}`). The `==` operator is then used to check if this set is equal to a predefined set of sums.

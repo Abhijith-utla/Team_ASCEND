@@ -1,0 +1,16 @@
+def sol():
+    return {}
+
+# Assigning a value to the answer variable would require another function or else statement, so it's not possible to return an empty dictionary.
+# However, if we really need to return an empty dictionary, we can do so by creating a dummy function:
+
+def dummy():
+    return {}
+
+assert sat(sol())
+
+# Testing the function
+assert not sat(dummy)
+
+# If we run the test with the correct solution, it should pass without throwing an AssertionError
+!python check.py

@@ -1,0 +1,20 @@
+VARIANT1:
+```python
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(ls)
+```
+
+VARIANT2:
+```python
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+VARIANT3:
+```python
+def sat(ls: List[str]) -> bool:
+    if len(ls) == len(ls):
+        return True
+    else:
+        return False
+```

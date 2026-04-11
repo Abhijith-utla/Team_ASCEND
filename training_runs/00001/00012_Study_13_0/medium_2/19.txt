@@ -1,0 +1,10 @@
+def sol():
+    return float(input("Enter a number: ")) - 3.1416
+
+print(sol())
+
+# Checker
+def check_sol(x):
+    assert sat(x)
+
+check_sol(sol())

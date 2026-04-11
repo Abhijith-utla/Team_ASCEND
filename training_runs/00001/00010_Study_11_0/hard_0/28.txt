@@ -1,0 +1,10 @@
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+
+# Test case
+print(sat(["cat", "dog", "elephant", "bat"]))  # Should return True
+print(sat(["cat", "dog", "ant", "bat"]))  # Should return False
+```

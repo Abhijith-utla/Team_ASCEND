@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(-100, 100) if sat([i])]
+
+# This line is to make sure the solution is correct
+assert sat(sol())

@@ -1,0 +1,13 @@
+Sure, the following Python code defines a function named sat which checks if a given number is even.
+
+```python
+def sat(n: int):
+    return n % 2 == 0
+```
+
+You can use this function as follows:
+
+```python
+print(sat(4))  # Returns: True
+print(sat(3))  # Returns: False
+```

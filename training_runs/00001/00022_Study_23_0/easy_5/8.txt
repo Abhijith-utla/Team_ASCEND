@@ -1,0 +1,4 @@
+def sol():
+    return 'd' * len('d')
+
+assert sat(sol())

@@ -1,0 +1,8 @@
+The correct solution for the given problem is as follows:
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+```
+
+This function is called `sat` and it takes one argument `i` of type `int`. It returns a boolean value that is `True` if the `i` value is greater than `10**10` and its remainder when divided by `123` is `4`.

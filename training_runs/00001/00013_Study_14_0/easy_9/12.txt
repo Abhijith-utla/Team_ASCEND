@@ -1,0 +1,6 @@
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([i <= j for i in li for j in li])
+```

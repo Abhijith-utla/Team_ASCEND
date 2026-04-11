@@ -1,0 +1,9 @@
+def sol():
+    return {}
+
+# Test cases to validate the solution
+def test_sol():
+    assert sol() == {}
+
+# Run the test cases
+test_sol()

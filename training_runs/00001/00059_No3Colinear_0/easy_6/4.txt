@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Example usage:
+print(sat([(5, 5), (10, 10), (15, 15)], 20, 20))  # True
+print(sat([(5, 5), (10, 10), (15, 15)], 20, 19))  # False

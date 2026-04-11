@@ -1,0 +1,8 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    return 128
+```
+
+This function does not take any arguments and always returns the number 128. The checker will verify this by running `assert sat(sol())`.

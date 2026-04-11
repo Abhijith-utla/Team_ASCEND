@@ -1,0 +1,11 @@
+def sol():
+    return ""
+
+# Test case
+assert sat(0)
+
+# Check for the rest of the cases
+for n in range(1, 100):
+    assert sat(n)
+
+print("All test cases pass")

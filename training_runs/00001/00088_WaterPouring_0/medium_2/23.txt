@@ -1,0 +1,12 @@
+def sol():
+    return [8, 0, 0]
+
+# Uncomment this if you want to test your function
+# assert sat([])
+# assert not sat([[0, 1, 0], [1, 0, 0], [2, 0, 0]])
+# assert not sat([[0, 1, 0], [0, 0, 0], [2, 0, 0]])
+# assert not sat([[0, 1, 0], [1, 0, 1], [2, 0, 0]])
+# assert not sat([[0, 0, 0], [1, 0, 0], [2, 0, 0]])
+# assert not sat([[0, 0, 0], [1, 0, 0], [1, 1, 0]])
+# assert not sat([[0, 0, 0], [0, 1, 1], [2, 0, 0]])
+# assert not sat([[0, 0, 0], [0

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:03:53.985836+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=Here is the Python code that satisfies the provided conditions: ```python from typing import List def sat(ls: List[st...",
+  "difficulty": "easy",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

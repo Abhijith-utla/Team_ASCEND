@@ -1,0 +1,4 @@
+def sol():
+    return 3 + 7 * 3 / 2
+
+print(sat(str(sol())))

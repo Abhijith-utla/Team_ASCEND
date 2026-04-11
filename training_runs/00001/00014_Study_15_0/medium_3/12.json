@@ -1,0 +1,16 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:49:40.489256+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=```python def sat(li: List[int]): for i in range(20): if sum(li[:i]) != sum(li[:i+1]): return False return True ```",
+  "difficulty": "medium",
+  "problem_id": "00014_Study_15_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

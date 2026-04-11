@@ -1,0 +1,6 @@
+def sol():
+    return 1
+
+# This assert statement does not work, as we cannot test a Python function. 
+# We can only test the code. If the function `sol` works as expected, this assert statement will not raise an error.
+assert sat(1)

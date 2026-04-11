@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# Assuming that the function `sat` is defined correctly and returns a list of the coordinates
+# The empty list would be the correct answer

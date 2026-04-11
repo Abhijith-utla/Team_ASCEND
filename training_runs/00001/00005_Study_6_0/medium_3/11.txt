@@ -1,0 +1,8 @@
+Here is the Python function 'sol' that satisfies the condition provided in the problem statement:
+
+```python
+def sol():
+    return 10 ** 10
+```
+
+The function 'sol' returns a value that is greater than or equal to 10 ** 10. This value is an even number as it is a multiple of 2.

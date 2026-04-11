@@ -1,0 +1,4 @@
+def sol():
+    return 'abcdcba' if sat('abcdcba') else 'abccba'
+
+assert sat(sol())

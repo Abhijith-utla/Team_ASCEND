@@ -1,0 +1,10 @@
+Here is the solution for the given problem:
+
+```python
+def sol():
+    return []
+```
+
+In this solution, the function `sol` does not take any arguments, so it doesn't need any input. It doesn't return any answer, so we return an empty list.
+
+The `sat` function is not defined and is not needed in this solution.

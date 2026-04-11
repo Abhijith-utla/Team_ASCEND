@@ -1,0 +1,15 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return [1]*1000
+
+# Test the solution
+print(sat(sol()))
+```
+
+In this solution, the function `sol()` returns a list of 1000 elements, all of which are 1. The function `sat()` checks if this list satisfies the conditions provided in the problem statement. 
+
+The test at the end of the code will pass if the function `sol()` returns a list of 1000 elements, all of which are 1, and fails otherwise.

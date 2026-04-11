@@ -1,0 +1,7 @@
+Here's the correct solution:
+
+```python
+def sol():
+    return {}, 0
+```
+This function does not take any arguments and returns an empty dictionary and 0.

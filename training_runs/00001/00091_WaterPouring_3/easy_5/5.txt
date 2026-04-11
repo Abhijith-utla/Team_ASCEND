@@ -1,0 +1,7 @@
+def sol():
+    return [472, 153, 127]
+
+# assert sat(moves)
+!pip install pytest
+!pip install pytest-check as pytest_check
+!pytest-check

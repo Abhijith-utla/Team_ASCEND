@@ -1,0 +1,6 @@
+def sol():
+    s = 'aaaaaaaaaa'*200 + 'a'*201 + 'aaa'*198
+    return s
+
+# Test
+assert sat(sol())

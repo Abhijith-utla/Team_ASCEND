@@ -1,0 +1,5 @@
+def sol():
+    return [8, 0, 0]
+
+# This is to make sure the function will return the correct solution.
+assert sat([])

@@ -1,0 +1,4 @@
+def sol():
+    return "13 1 2 11 - * / -2 4 1"
+
+print(sol())

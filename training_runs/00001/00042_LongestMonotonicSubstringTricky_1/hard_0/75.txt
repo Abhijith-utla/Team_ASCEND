@@ -1,0 +1,12 @@
+def sol():
+    answer = ''
+    for i in range(535):
+        if i % 4 == 0:
+            answer += 'U'
+        elif i % 4 == 1:
+            answer += 'D'
+        elif i % 4 == 2:
+            answer += 'R'
+        elif i % 4 == 3:
+            answer += 'L'
+    return answer

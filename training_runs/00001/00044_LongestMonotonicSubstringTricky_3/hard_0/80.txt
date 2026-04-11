@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return []
+```
+
+In this pattern, the function sol does not take any arguments and returns an empty list. The function does not perform any operations and does not produce any output.
+
+The assert sat(sol()) will pass if the function sol returns an empty list, and fail if it returns anything else.

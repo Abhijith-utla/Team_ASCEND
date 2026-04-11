@@ -1,0 +1,5 @@
+def sol():
+    return tuple(zip('dee', 'doo', 'dah!'))
+
+# Checker code
+assert sat(sol()) == True

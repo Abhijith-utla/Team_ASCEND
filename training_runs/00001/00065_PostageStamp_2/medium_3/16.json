@@ -1,0 +1,16 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T15:26:39.277562+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=37|checked=37/37|preview=def sol(): return [] # Adding stamps to the list def sol(stamps=[]): return stamps # Adding more stamps to the list d...",
+  "difficulty": "medium",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

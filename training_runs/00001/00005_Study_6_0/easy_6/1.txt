@@ -1,0 +1,16 @@
+The Python function `sat` is already defined by the user and it checks if a number is a multiple of 5 and less than 100. Here's the correct pattern for the solution function:
+
+```python
+def sol():
+    return 10
+```
+
+This function will always return `10` because 10 is the smallest number that is both a multiple of 5 and less than 100.
+
+Here's a test to confirm that `sol` returns the correct answer:
+
+```python
+assert sat(sol()) == 10
+```
+
+If `sol` returns the correct answer, the test will pass.

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 18)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:16:52.565667+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 18)|parse=fence=none,preamble=0,found_sol=1,candidates=18|checked=18/18|preview=def sol(): return 15 # Test cases assert sat(sol()) assert not sat(\"1+2*3-4/1\") assert not sat(\"1+2*3-4/2\") assert no...",
+  "difficulty": "hard",
+  "problem_id": "00082_CardGame24_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

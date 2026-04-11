@@ -1,0 +1,5 @@
+def sol():
+    li = list(range(1001))
+    return sorted(li) == li
+
+print(sol())

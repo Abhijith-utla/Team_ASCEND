@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' not in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooo

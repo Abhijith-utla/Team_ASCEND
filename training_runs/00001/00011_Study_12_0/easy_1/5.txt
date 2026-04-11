@@ -1,0 +1,25 @@
+Here is the correct Python code for the function `sol`. The function takes a list of integers as an argument and returns the first element of the list.
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    # Check if the list length is 1000
+    if len(li) != 1000:
+        raise ValueError("The length of the list should be 1000.")
+
+    # Check if the sum of each element and its index is equal to 1
+    if not all(i + j == 1 for i, j in enumerate(li)):
+        raise ValueError("The sum of each element and its index should be 1.")
+
+    # Return the first element of the list
+    return li[0]
+```
+
+This function checks the length of the list and the sum of each element and its index. If either condition is not met, it raises a ValueError. If both conditions are met, it returns the first element of the list.
+
+You can test the function using the following code:
+
+```python
+def test_sol():
+    assert sol([1

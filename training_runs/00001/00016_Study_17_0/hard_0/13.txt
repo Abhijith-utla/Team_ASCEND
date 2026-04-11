@@ -1,0 +1,13 @@
+The function `sat` is defined to check if the string length of `i + 1000` is greater than `i + 1001`. The function takes one argument, `i`, and returns a boolean value. 
+
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    i = 1000
+    return len(str(i + 1000)) > len(str(i + 1001))
+```
+
+This function starts with `i` as `1000` and checks if the length of the string representation of `i + 1000` is greater than the length of the string representation of `i + 1001`. It then returns the result of this comparison.
+
+The function call `assert sat(sol())` will pass if `sol` returns `True`, and will fail if it returns `False`.

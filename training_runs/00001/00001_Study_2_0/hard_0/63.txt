@@ -1,0 +1,6 @@
+def sol():
+    s = "hoooooooooooooooooooooooooooo"
+    return s
+
+# Testing the function
+print(sol())

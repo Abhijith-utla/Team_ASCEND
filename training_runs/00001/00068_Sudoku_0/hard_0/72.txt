@@ -1,0 +1,11 @@
+def sol():
+    answer = ""
+
+    for i in range(9):
+        for j in range(9):
+            for k in range(3):
+                answer += str(i // 3 * 3 + j // 3 + k)
+
+    return answer
+
+print(sol())

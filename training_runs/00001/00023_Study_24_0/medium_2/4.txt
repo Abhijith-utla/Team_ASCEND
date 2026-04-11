@@ -1,0 +1,10 @@
+Here is a possible solution to the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return li.count(17) == 2 and li.count(3) == 1
+    return [17, 3] if sat([]) else [3, 17]
+```
+
+This solution consists of a nested function `sat` that checks if the list `li` contains exactly two 17s and one 3. The outer function `sol` returns a list with exactly one 17 and one 3 if `sat` returns True, or a list with exactly one 3 and one 17 if `sat` returns False.

@@ -1,0 +1,17 @@
+def sol():
+    return [(i, j) for i in range(2) for j in range(2)]
+
+# Checker
+def checker(coords: List[List[int]], side=2, num_points=4):
+    assert sat(coords, side, num_points)
+
+# Testing
+def test_sol():
+    assert checker(sol())
+    assert not checker([(0, 0), (1, 1)])
+    assert not checker([(0, 0), (1, 0), (2, 0)])
+    assert not checker([(0, 0), (0, 1), (0, 2)])
+    assert checker([(0, 0), (1, 1), (2, 2)])
+
+# Run tests
+test_sol()

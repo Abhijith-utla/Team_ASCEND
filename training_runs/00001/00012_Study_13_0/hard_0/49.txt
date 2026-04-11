@@ -1,0 +1,8 @@
+The correct Python code for the problem is as follows:
+
+```python
+def sol():
+    return 3.1415
+```
+
+This function returns a float number that is approximately equal to 3.1415. The function `sat` is an assertion function that checks if a float number is equal to 3.1415, rounded to 6 decimal places.

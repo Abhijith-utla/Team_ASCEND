@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# This function sol() does not return anything, so its return value is None.

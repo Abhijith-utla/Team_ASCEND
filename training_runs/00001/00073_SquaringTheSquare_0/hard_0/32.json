@@ -1,0 +1,16 @@
+{
+  "attempt_num": 32,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:45:35.869019+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return [1, 1, 1] # assert sat(sol()) !pytest -q sol()",
+  "difficulty": "hard",
+  "problem_id": "00073_SquaringTheSquare_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

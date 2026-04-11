@@ -1,0 +1,10 @@
+Here is the correct solution for this problem:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 0]) == 0
+```
+
+In this solution, we are using a list comprehension to iterate over the list of strings. For each string, we are checking if the ASCII value of the character is divisible by 3 (i.e., if the character's ASCII value is a multiple of 3). If it is, we add 1 to the sum. If the sum is 0, that means all the characters are not divisible by 3, so we return False. If the sum is not 0, it means some characters are divisible by 3, so we return True.

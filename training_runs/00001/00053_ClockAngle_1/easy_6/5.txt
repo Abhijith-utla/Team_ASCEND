@@ -1,0 +1,13 @@
+def sol():
+    return 12
+
+assert sat(12)
+assert not sat(23)
+assert not sat((30, 30))
+assert sat((30, 0))
+assert not sat((9, 0))
+assert sat((15, 0))
+assert not sat((11, 60))
+assert sat((11, 30))
+assert not sat(39)
+assert not sat((45, 0))

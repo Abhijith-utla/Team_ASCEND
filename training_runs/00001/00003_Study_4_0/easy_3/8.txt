@@ -1,0 +1,14 @@
+The function `sat` checks if a list `li` has exactly 10 elements and the fourth element is the same as the fifth element. If both conditions are true, the function returns `True`; otherwise, it returns `False`.
+
+Here's the correct code:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li[3] != li[4]:
+        return False
+    return True
+```

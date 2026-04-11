@@ -1,0 +1,8 @@
+def sol():
+    for hour in range(1, 12):  # 0 to 11 in hour
+        for minute in range(0, 60):  # 0 to 59 in minute
+            if sat(hour, minute):
+                return hour, minute
+    return None
+
+print(sol())

@@ -1,0 +1,12 @@
+Here's a solution to your problem. The function `sat` checks if the string `ls[1234]` is in `ls[1235]` and if it's not equal to `ls[1235]`.
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+This function takes a list of strings as an argument, checks if the string at index 1234 is in the list at index 1235, and if it's not equal to the string at index 1235. If both conditions are met, it returns `True`; otherwise, it returns `False`.
+
+For example, if `ls = ["hello", "world", "python", "is", "awesome"]`, then `sat(ls)` would return `True` because `ls[1234]`, which is "world", is in `ls[1235]`, and

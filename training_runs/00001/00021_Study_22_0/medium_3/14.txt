@@ -1,0 +1,18 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    s = input()
+    if not sat(s):
+        return sol()
+    return s
+
+def sat(s: str) -> bool:
+    if len(s) < 5 or len(s) > 30:
+        return False
+    return len(set(s)) == 5 and s[::2] == s[1::2]
+
+print(sol())
+```
+
+The program gets the user input and calls the `sat` function until it returns a valid string. The `sat` function checks if the length of the string is between 5 and 30, and if the characters at even and odd indices are the same. If these conditions are met, the `sat` function returns True. If not, it returns False. The `sol` function calls `sat` and keeps asking for input until it returns a valid string.

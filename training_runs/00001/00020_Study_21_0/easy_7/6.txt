@@ -1,0 +1,16 @@
+Here is the solution for the Python problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([li[i] != li[i + 1] for i in range(len(li) - 1)])
+```
+
+This function `sat` checks if all elements in the list `li` are distinct. It does this by comparing each element in the list with the next one. If any two consecutive elements are the same, the function returns `False`. If the function gets through all the elements without finding any pairs of consecutive elements that are the same, it returns `True`. The function uses the built-in `all` function to ensure that it returns `True` as soon as it finds a pair of elements that are the same, rather than checking all pairs.
+
+Here's how you can use this function:
+
+```python
+print(sat([1, 2, 3, 4, 4, 5, 6]))  # Returns: True
+print(sat([1, 2, 3, 4, 4, 5, 5]))  # Returns

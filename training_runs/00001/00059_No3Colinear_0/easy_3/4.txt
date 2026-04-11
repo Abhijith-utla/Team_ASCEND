@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# Assert the solution satisfies the problem constraints
+assert sat(sol())

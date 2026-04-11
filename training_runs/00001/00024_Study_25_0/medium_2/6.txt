@@ -1,0 +1,6 @@
+def sol():
+    s = 'sirnemtpuA'
+    return s == ''.join(reversed(s)) and sorted(s) == sorted(s)
+
+# Test the function
+assert sat(sol())

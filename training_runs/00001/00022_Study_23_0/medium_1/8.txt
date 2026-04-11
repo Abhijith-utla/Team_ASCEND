@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return [x for x in zip('dee', 'doo', 'dah!')]
+```
+
+The `zip` function in Python returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together etc. So, we can use this object to pair each character in the string with the corresponding character in the tuple, and finally convert the pairs into a list.

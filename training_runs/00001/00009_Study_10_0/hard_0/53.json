@@ -1,0 +1,17 @@
+{
+  "attempt_num": 53,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:00:47.095602+00:00",
+  "diagnostic": "reason=subprocess_error:ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit|parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): def is_palindrome(s: str) -> bool: return s == s[::-1] def is_even(n: int) -> bool: return n % 2 == 0 def ...",
+  "difficulty": "hard",
+  "problem_id": "00009_Study_10_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,10 @@
+Here is the correct code to implement the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+The function `sat` takes a list of integers `li` as input and returns `True` if all elements in the list are equal to the sum of their preceding elements (starting from the first element) and `False` otherwise. This is done in a nested list comprehension, where `x` is the current element in `li` and `i` is the index. The `sum(li[:i])` expression calculates the sum of the first `i` elements in `li`. The `all` function is then used to check that all elements in `li` satisfy the condition (i.e., their value is equal to the sum of their preceding elements).

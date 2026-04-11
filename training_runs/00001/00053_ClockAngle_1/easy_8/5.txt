@@ -1,0 +1,2 @@
+def sol():
+    return 180, 30

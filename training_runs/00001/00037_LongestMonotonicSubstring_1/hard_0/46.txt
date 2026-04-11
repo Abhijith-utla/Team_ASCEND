@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return [0]
+```
+
+In this pattern, we are simply returning a list with one element, which will be the index of the first element in the string. This is because the string is in lexicographically increasing order, and the first element of this order is the index 0.

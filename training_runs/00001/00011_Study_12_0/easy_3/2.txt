@@ -1,0 +1,5 @@
+def sol():
+    return [6] + [0]*999
+
+# Test
+assert sat(sol())

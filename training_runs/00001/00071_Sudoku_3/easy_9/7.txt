@@ -1,0 +1,7 @@
+def sol():
+    answer = "123456789"
+    puz = "_____42_____7_____4_____9__49____626_8__3___3_7__65_4_5_3__1__1__8_7__________"
+    assert sat(answer, puz)
+    return answer
+
+print(sol())

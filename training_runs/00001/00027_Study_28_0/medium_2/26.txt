@@ -1,0 +1,5 @@
+def sol():
+    li = [i for i in range(10)]
+    while not sat(li):
+        li = [i for i in range(10)]
+    return li

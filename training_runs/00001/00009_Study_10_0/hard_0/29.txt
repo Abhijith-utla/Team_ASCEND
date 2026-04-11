@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(filter(sat, 'abcdefghijklmnopqrstuvwxyz'))
+
+print(sol())

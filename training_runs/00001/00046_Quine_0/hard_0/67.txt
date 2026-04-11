@@ -1,0 +1,6 @@
+def sol():
+    return {}
+
+# Tests
+assert sat(str(sol()))
+!python -c "print('sol()')"

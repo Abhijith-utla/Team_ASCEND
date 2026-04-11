@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [1234, 1235]
+```
+
+This function returns a list containing the indices of the elements to be compared in the `sat` function.

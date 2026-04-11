@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:57:54.281615+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] return li # Checker def sat(li: List[int]) -> bool: if len(li) != 10:...",
+  "difficulty": "medium",
+  "problem_id": "00003_Study_4_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

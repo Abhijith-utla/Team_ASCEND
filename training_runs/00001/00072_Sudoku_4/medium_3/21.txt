@@ -1,0 +1,6 @@
+def sol():
+    x = '123456789' * 10
+    assert sat(x)
+    return x
+
+print(sol())

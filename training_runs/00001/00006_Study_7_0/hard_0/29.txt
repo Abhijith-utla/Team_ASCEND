@@ -1,0 +1,17 @@
+The function `sat` is defined to check if a string `s` contains exactly 3 characters and the number 8 is in the power of 2888. The function `sat` returns `True` if the condition is met, and `False` otherwise.
+
+Here is the solution for `sol` function:
+
+```python
+def sol():
+    def sat(s: str):
+        return str(8 ** 2888).count(s) > 8 and len(s) == 3
+
+    n = 0
+    while not sat(str(n)):
+        n += 1
+
+    return n
+```
+
+This function uses a while loop to keep incrementing a number `n` until `sat(str(n))` returns `True`. The `sat` function checks if the number `n` contains exactly 3 characters and the number 8 is in the power of 2888. The function `sol` returns the number `n`.

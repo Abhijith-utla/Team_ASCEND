@@ -1,0 +1,14 @@
+Here's the correct pattern:
+
+```python
+def sol():
+    return "123.456"
+```
+
+You can run the code using:
+
+```python
+print(sat(float(sol())))
+```
+
+Please note that the result will be True or False. If the result is True, the input "123.456" matches the expression "x - 3.1415". If the result is False, the input does not match the expression.

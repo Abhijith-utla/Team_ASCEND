@@ -1,0 +1,17 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:59:00.516846+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=17|checked=17/17|preview=def sol(): return [] def sat(coords: List[List[int]], side=2, num_points=4): for i1 in range(len(coords)): x1, y1 = c...",
+  "difficulty": "hard",
+  "problem_id": "00062_No3Colinear_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

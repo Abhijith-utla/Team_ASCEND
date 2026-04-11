@@ -1,0 +1,11 @@
+def sat(li: List[int]) -> bool:
+    return len(li) == len(set(li))
+
+def sol():
+    li = [1, 2, 3, 4, 5, 5, 5]
+    return sat(li)
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 31,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 2)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:44:58.084847+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 2)|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): return \" _ !m!!!!!!!!!!!V!\\\"=\\\"\\\"\\\"\\\"\\\"l#####$$r$$$$$$$$$%%%%%&&&&&&y&''''''@'''''<(((())))))******+++++++...",
+  "difficulty": "hard",
+  "problem_id": "00038_LongestMonotonicSubstring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

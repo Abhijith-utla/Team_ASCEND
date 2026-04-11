@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted(input())) == ''.join(sorted('Auipenmtrs')) and ''.join(input()) == ''.join(reversed(input()))
+
+print(sol())

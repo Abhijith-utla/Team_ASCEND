@@ -1,0 +1,8 @@
+def sol():
+    return 5
+
+# To pass the test, you can change the value of `n`
+# For example, if you want to test the function with `n=4`, you can do it like this:
+# assert sat(4)
+# assert sat(5)
+# assert not sat(6)

@@ -1,0 +1,10 @@
+Here's the correct Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:li.index(x)]) for x in set(li))
+```
+
+This function checks if all elements in the list are in ascending order based on their index in the list. It does this by checking if the index of each element is less than the sum of all elements in the list before that element.

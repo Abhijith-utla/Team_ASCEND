@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+def test():
+    assert sat(sol())
+
+def main():
+    test()
+
+if __name__ == "__main__":
+    main()

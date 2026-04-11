@@ -1,0 +1,5 @@
+def sol():
+    return 24
+
+print(sat(sol()))  # True
+print(sat(sol()))  # False

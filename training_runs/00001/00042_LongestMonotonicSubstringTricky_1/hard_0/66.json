@@ -1,0 +1,16 @@
+{
+  "attempt_num": 66,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:12:31.035060+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): x = [68, 17, 35, 27, 40, 17, 20, 17, 2, 7, 12, 17, 17, 17, 17, 17, 35, 27, 24, 17, 17, 17, 17, 17, 17, 17,...",
+  "difficulty": "hard",
+  "problem_id": "00042_LongestMonotonicSubstringTricky_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

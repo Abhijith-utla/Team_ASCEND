@@ -1,0 +1,35 @@
+VARIANT1:
+```python
+def sat(moves):
+    state = [724, 43, 611]
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = state[move[0]] + state[move[1]] - n, n
+    return state == goal
+```
+
+VARIANT2:
+```python
+def sat(moves):
+    state = [72, 2, 269]
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = state[move[0]] + state[move[1]] - n, n
+    return state == goal
+```
+
+VARIANT3:
+```python
+def sat(moves):
+    state = [56, 0, 287]
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = state[move[0]] + state[move[1]] - n, n
+    return state == goal
+```

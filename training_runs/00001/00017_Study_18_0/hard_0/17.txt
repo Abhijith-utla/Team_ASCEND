@@ -1,0 +1,2 @@
+def sol():
+    return [s + t for s in ['berlin', 'berlin', 'linber', 'gerber', 'gerlin'] for t in ['berlin', 'berlin', 'linber', 'gerber', 'gerlin'] if s != t]

@@ -1,0 +1,8 @@
+def sol():
+    return tuple(answer)
+
+def sat(answer):
+    return tuple(answer) in zip('dee', 'doo', 'dah!')
+
+answer = ['d', 'e', 'e']
+assert sat(answer)

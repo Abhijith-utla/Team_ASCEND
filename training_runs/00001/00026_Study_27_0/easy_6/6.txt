@@ -1,0 +1,10 @@
+def sol():
+    li = [1, 2, 3, 4, 5]
+    return li
+
+# Checker
+def check(li):
+    return sat(li) == True
+
+# Run the checker
+check(sol())

@@ -1,0 +1,12 @@
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+# Testing the function
+assert sat(123)
+assert not sat(102)
+assert sat(100)
+assert not sat(999)

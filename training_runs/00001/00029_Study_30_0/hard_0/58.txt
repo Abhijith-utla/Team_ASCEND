@@ -1,0 +1,5 @@
+def sol():
+    li = [123 * i % 1000 for i in range(20)]
+    return li
+
+assert sat(sol())

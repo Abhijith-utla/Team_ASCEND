@@ -1,0 +1,17 @@
+{
+  "attempt_num": 73,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T13:24:31.594111+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=19|checked=19/19|preview=def sol(): return [] # Test cases to ensure the correctness of the solution def test_sol(): assert sat([0, 0]) assert...",
+  "difficulty": "hard",
+  "problem_id": "00053_ClockAngle_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

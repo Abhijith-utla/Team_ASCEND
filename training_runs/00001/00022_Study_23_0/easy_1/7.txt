@@ -1,0 +1,12 @@
+Here is a solution for your question. The answer is 'dee'.
+
+```python
+def sol():
+    return 'dee'
+```
+
+To check the correctness of this solution, you can use the following code:
+
+```python
+assert sat(sol())
+```

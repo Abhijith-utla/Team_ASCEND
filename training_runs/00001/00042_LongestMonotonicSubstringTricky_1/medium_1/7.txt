@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The function sat() is already defined by the user. It checks whether a list of integers is strictly increasing.
+# So, we don't need to write our own function to check this.

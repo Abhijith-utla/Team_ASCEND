@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# Answer:
+def sol(side=1, num_points=1):
+    coords = [(i, i) for i in range(side)]
+    return coords

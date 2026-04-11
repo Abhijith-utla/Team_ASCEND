@@ -1,0 +1,9 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+def sol():
+    s = 'y'*100 + 'yo'*101 + 'yy'*98
+    return s
+```
+
+The function `sol` concatenates a string `s` with `y`, `yo`, and `yy` in such a way that the total length of `s` is 100, 101, and 98 respectively. Then it returns `s`. This satisfies the condition provided by the user.

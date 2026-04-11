@@ -1,0 +1,17 @@
+The provided function `sat` checks if the sum of the first `i` numbers for all `i` in the range from 0 to 19 is equal to `i` for all `i` in the range from 0 to 19.
+
+The incorrect pattern is as follows:
+
+```python
+def sol():
+    return <answer>
+```
+
+The correct pattern is:
+
+```python
+def sol():
+    return sum(range(20))
+```
+
+This function will return the sum of the first 20 numbers.

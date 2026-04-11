@@ -1,0 +1,14 @@
+The function `sat` checks if a list `li` is sorted in ascending order and all elements in `li` are unique. 
+
+The provided `sat` function looks correct. It first sorts the list `li` and checks if it is equal to the list `[0, 1, 2, ..., 988, 997, 998]`. Then it checks if all elements in `li` are not equal to their indices.
+
+Here's how the `sat` function works:
+
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+The function `sat` takes a list of integers as its argument. It first checks if the sorted version of the list is equal to the list `[0, 1, 2, ..., 988, 997, 998]`. This is done by the line `return sorted(li) == list(range(999))`. 
+
+The `

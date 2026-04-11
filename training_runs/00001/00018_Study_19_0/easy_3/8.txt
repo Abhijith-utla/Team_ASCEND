@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return [34]
+```
+
+The function `sol` returns a list with one element 34. The checker `sat` will pass if `max(li) == 34` is true for any list `li`.

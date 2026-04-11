@@ -1,0 +1,15 @@
+def sol():
+    return [8, 0, 0]
+
+# You can run the code with the following lines
+if __name__ == "__main__":
+    assert sat([])
+    assert sat([[0, 0]])
+    assert not sat([[1, 0]])
+    assert not sat([[1, 1]])
+    assert not sat([[0, 1]])
+    assert sat([[0, 0], [1, 0], [1, 1]])
+    assert not sat([[0, 0], [1, 0]])
+    assert not sat([[0, 0], [0, 1]])
+    assert sat([[0, 0], [1, 0], [1, 1], [2, 2]])
+    assert not sat([[0, 0], [1, 0], [1, 1], [2, 3]])

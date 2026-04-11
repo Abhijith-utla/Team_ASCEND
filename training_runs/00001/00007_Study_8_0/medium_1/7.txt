@@ -1,0 +1,10 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    # Assuming the list ls[1234] and ls[1235] are already defined
+    # and have the same length and are valid for the problem statement
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+Please replace the assumption with actual values or variables as per your requirement.

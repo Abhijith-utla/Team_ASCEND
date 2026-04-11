@@ -1,0 +1,19 @@
+Here is the correct pattern for the solution.
+
+```python
+def sol():
+    li = [i for i in range(999)]
+    li.remove(0)
+    li.sort()
+    return li
+```
+
+In this code, we first create a list with numbers from 0 to 998. Then we remove the 0 from the list to satisfy the condition of the problem. After that, we sort the list and return it.
+
+The function `sat` checks if the sorted list is equal to the list `[0, 1, 2, ..., 998]` and if all elements in the list are unique. If both conditions are satisfied, the function returns the sorted list.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```

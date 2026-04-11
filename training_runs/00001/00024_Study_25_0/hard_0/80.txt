@@ -1,0 +1,5 @@
+def sol():
+    return "".join(sorted(input())) == "".join(sorted('Permute me true')) and "".join(input()) == "".join(reversed(input()))
+
+# test case
+print(sat(sol()))

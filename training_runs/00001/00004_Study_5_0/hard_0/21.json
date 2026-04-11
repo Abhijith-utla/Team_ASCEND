@@ -1,0 +1,16 @@
+{
+  "attempt_num": 21,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:11:46.608664+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=def sat(li: List[int]): return all([li.count(i) == i for i in range(10)]) # Test assert sat([1, 2, 2, 3, 3, 3, 4, 4, ...",
+  "difficulty": "hard",
+  "problem_id": "00004_Study_5_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

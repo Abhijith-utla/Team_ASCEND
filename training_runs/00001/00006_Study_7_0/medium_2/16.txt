@@ -1,0 +1,12 @@
+The provided Python function `sat` takes a string as an input and returns a boolean value indicating whether the string contains the exact number of occurrences of the character '8' when raised to the power of 2888 and the length of the string is equal to 3. 
+
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return str(8 ** 2888)[-3:] == '888'
+```
+
+The `sol` function returns a boolean value indicating whether the last three characters of the string representation of 8 raised to the power of 2888 are '888'. 
+
+The function `sol` is correctly implemented and the provided assertion `assert sat(sol())` will pass if the function `sol` returns `True`.

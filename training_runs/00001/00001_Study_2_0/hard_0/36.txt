@@ -1,0 +1,9 @@
+Here is a Python solution for the given problem:
+
+```python
+def sol():
+    s = "ho" * 1000 + "oo" * 100 + "ho"
+    return s.count('oo') == 100 and s.count('ho') == 801
+```
+
+This solution creates a string `s` that consists of 1000 'ho's followed by 100 'oo's and another 801 'ho's. Then, it checks if the count of 'oo's equals to 100 and the count of 'ho's equals to 801. If both conditions are true, the function returns `True`, otherwise, it returns `False`.

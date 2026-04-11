@@ -1,0 +1,9 @@
+def sol():
+    return [34]
+
+# The function sat checks if the list [34] is a single element in a set.
+# If it is, it returns True, otherwise it returns False.
+# The final checker will run: assert sat(sol())
+
+# The correct answer should be:
+# assert sat([34])

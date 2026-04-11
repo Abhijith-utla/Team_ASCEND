@@ -1,0 +1,5 @@
+def sol():
+    s = 'ababababababababab'
+    return sat(s)
+
+print(sol())

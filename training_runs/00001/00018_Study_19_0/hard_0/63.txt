@@ -1,0 +1,8 @@
+Here is the correct Python code to solve the problem.
+
+```python
+def sol():
+    return set(range(21))
+```
+
+The function `sol()` returns a set containing all integers from 0 to 20. The `set()` function is used to create a set from a sequence of numbers, which automatically removes any duplicate values. The set `{0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}` is used to validate the correctness of the solution.

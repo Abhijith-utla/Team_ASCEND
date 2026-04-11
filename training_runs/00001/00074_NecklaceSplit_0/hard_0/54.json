@@ -1,0 +1,16 @@
+{
+  "attempt_num": 54,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:05:35.871588+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return 0 print(sat(0)) print(sol()) !python3 sol.py",
+  "difficulty": "hard",
+  "problem_id": "00074_NecklaceSplit_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

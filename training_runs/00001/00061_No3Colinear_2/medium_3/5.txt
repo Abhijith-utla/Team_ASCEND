@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# To ensure the function `sol` returns a list, it needs to be called with some arguments.
+# But since `sol` doesn't take any arguments, it will return an empty list.

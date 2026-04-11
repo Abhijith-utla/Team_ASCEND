@@ -1,0 +1,12 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([li.count(i) == i for i in range(1, 11)])
+```
+
+The `sat` function checks if all elements in the list `li` are present exactly once in the range from 1 to 10 (both inclusive). The `all` function returns `True` if all elements in the iterable (the list comprehension) are `True`, else it returns `False`. The list comprehension generates a list of boolean values where each element is `True` if the count of an element `i` in the list `li` is equal to `i`, else it is `False`.
+
+The `sat` function returns `True` if all elements are present exactly once in the range from 1 to 10 (both inclusive), else it returns `False`.

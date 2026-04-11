@@ -1,0 +1,10 @@
+def sol():
+    return [], 0
+
+# Calling the function with an example of hands and target angle
+# hands = [h, m]
+# assert sat(hands, target_angle) will raise an assertion error
+
+# If the function returns True, it means the angles are equal
+# If the function returns False, it means the angles are not equal
+assert sat(sol())

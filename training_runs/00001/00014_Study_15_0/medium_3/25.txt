@@ -1,0 +1,19 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return 20
+```
+
+The function `sol` simply returns 20 as the answer.
+
+And here is the Python code for the `sat` function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+
+This function is correct. It checks if all elements in the list `li` are equal to the sum of the first `i` elements of `li` for `i` in the range of 0 to 19. If any element does not meet this condition, the function returns `False`, otherwise it returns `True`.

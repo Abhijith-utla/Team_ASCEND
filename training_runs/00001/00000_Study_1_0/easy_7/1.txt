@@ -1,0 +1,8 @@
+Sure, here is the correct code:
+
+```python
+def sol():
+    return 'Hello, world!'
+```
+
+The function `sol` returns a string 'Hello, world!'. This is a valid solution as the given condition in the problem statement is fulfilled.

@@ -1,0 +1,28 @@
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x, y) in enumerate(coords):
+        assert 0 <= x < side and 0 <= y < side
+    return len(coords) == num_points+1
+
+def sol():
+    return []
+
+print(sat([]))
+print(sat([(0, 0)]))
+print(sat([(5, 5)]))
+print(sat([(3, 4), (5, 6)]))
+print(sat([(3, 4), (5, 6)], side=10, num_points=20))
+
+# This will not return True because the first point is not within the side boundaries
+print(sat([(5, 5)], side=10, num_points=20)) 
+
+# This will return True because the second point is within the side boundaries
+print(sat([(0, 0)], side=10, num_points=20)) 
+
+# This will not return True because the number of points does not match the specified number
+print(sat([(0, 0), (1, 1)], side=10, num_points=20)) 
+
+# This will return True because all points are within the side boundaries
+print(sat([(i, i) for i in range(10)], side
+
+if __name__ == "__main__":
+    assert sat(sol())

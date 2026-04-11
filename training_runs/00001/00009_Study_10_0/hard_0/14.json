@@ -1,0 +1,16 @@
+{
+  "attempt_num": 14,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:58:39.465534+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=Here is a solution for the problem: ```python def sat(s: str): return s in str(8 ** 1818) and s == s[::-1] and len(s)...",
+  "difficulty": "hard",
+  "problem_id": "00009_Study_10_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

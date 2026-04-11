@@ -1,0 +1,15 @@
+Here is the solution:
+
+```python
+def sat(li: List[int]):
+    return all(x >= 0 and 2 ** x - 1 == (2 ** (x + 1)) - 1 for x in li)
+```
+
+This function checks if all elements in the list `li` are non-negative integers such that 2 raised to the power of the integer equals (2 raised to the power of one more than the integer) minus 1. The function returns `True` if all conditions are met, and `False` otherwise.
+
+Here's how it works:
+
+- It uses a generator expression to iterate over each element in the list `li`.
+- For each element, it checks if the element is non-negative (`x >= 0`) and if the bitwise XOR of 2 raised to the power of the element equals (2 raised to the power of one more than the element) minus 1 (`2 ** x - 1 == (2 ** (x + 1)) - 1`).
+- If all conditions are met, the generator expression returns `True`; if not, it returns `False`.
+-

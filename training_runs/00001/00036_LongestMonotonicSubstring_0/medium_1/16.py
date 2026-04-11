@@ -1,0 +1,22 @@
+def sat(x: List[int], length=13, s="Dynamic programming solves this puzzle!!!"):
+    # Check if all the elements in the list are between 0 and length-1
+    # Also check if increasing order is followed by decreasing order
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(length - 1))
+
+def sol():
+    return [1, 0, 2, 3, 2, 5, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print True
+
+def sol():
+    return [1, 0, 2, 3, 2, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print False
+
+def sol():
+    return [1, 0, 2, 3, 2, 5, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print True
+
+if __name__ == "__main__":
+    assert sat(sol())

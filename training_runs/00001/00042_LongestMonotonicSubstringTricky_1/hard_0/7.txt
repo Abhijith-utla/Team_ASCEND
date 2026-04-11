@@ -1,0 +1,20 @@
+def sol():
+    answer = ""
+    for i in range(535):
+        if i % 2 == 0:
+            answer += chr(ord('A') + i // 2)
+        else:
+            answer += chr(ord('a') + i // 2)
+    return answer
+
+# The above function constructs a string of uppercase and lowercase letters.
+# The string has 535 characters, where each character is either an uppercase or lowercase letter.
+# The string is constructed such that every second character is an uppercase letter,
+# and every other character is a lowercase letter.
+# The function returns this string.
+
+# Here is the function that checks whether the string constructed by the function sol() is a permutation of the string given in the problem.
+# This function checks whether every second character in the string is an uppercase letter,
+# and every other character is a lowercase letter.
+def sat(x):
+    return x == "AAAAAAA...AAAA...AAAA...AAAA...AAAa...AAAa...AAAa...AAAa...AAAa...AAAa...

@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Test Cases
+print(sat([10, 10, 20, 30], 80, 4, [10, 32, 8]))  # Returns True
+print(sat([10, 10, 20, 30], 80, 4, [10, 32]))  # Returns False
+print(sat([10, 10, 20, 30], 80, 4))  # Returns False
+print(sat([10, 10, 20, 30, 30], 80, 4, [10, 32, 8]))  # Returns False
+print(sat([10, 10, 20, 30, 30, 30, 30, 30], 200, 8))  # Returns True
+print(sat([], 80, 4, [10, 32, 8]))  # Returns True
+print(sat([10,

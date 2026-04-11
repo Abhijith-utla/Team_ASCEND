@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    s = 'abcde'
+    return s[::2]
+
+# Test the function
+assert sat(sol()) == 'ace'
+```
+
+In this solution, the function `sol` returns the second character of the string 'abcde'. The condition `s[::2] in s` checks if the string 'ace' is a substring of 'abcde'. The `len(set(s)) == 5` checks if the length of the unique characters in the string is 5. If both conditions are True, the function returns 'ace'. If not, the function returns an empty string.

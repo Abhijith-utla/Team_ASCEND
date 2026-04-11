@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# Assuming that the 'coords' variable is a list of tuples (x, y)
+# for example: coords = [(0, 0), (1, 1), (2, 2)]
+
+assert sat(coords)

@@ -1,0 +1,5 @@
+def sol():
+    answer = [i for i in range(193)]
+    return answer
+
+print(sol())

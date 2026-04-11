@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Correct answer
+# An array with one element [153] indicating that the function was successful and it correctly identified the target angle for the hour and minute hands
+assert sat([153])
+
+# Incorrect answer
+# An array with two elements [152, 65] indicating that the function was unsuccessful and it did not correctly identify the target angle for the hour and minute hands
+assert not sat([152, 65])

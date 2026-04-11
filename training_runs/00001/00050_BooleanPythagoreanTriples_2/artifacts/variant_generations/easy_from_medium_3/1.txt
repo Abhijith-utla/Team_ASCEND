@@ -1,0 +1,23 @@
+VARIANT1:
+```python
+def sat(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 1
+    squares = {i ** 2: colors[i] for i in range(len(colors))}
+    return not any(c == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+
+VARIANT2:
+```python
+def sat(colors, n):
+    assert set(colors) <= {0, 1} and len(colors) >= n
+    squares = {i ** 2: colors[i] for i in range(n, len(colors))}
+    return not any(c == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+
+VARIANT3:
+```python
+def sat(colors, m):
+    assert set(colors) <= {0, 1} and len(colors) >= m
+    squares = {i: colors[i] for i in range(m)}
+    return not any(c == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```

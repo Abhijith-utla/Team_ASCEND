@@ -1,0 +1,24 @@
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+
+# Test cases
+print(sat([]))
+print(sat([1]))
+print(sat([1, 1]))
+print(sat([1, 1, 1]))
+print(sat([1, 1, 1, 1]))
+print(sat([1, 1, 1, 1, 1]))
+print(sat([1, 2, 3, 4, 5]))
+
+# Correct answer
+assert sat([1]*20)
+assert not sat([1, 2, 3, 4, 5])
+
+if __name__ == "__main__":
+    assert sat(sol())

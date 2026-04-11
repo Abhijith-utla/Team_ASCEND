@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Alternate the solution with a list of tuples as the answer
+def sol():
+    return [(i, i**2) for i in range(5)]

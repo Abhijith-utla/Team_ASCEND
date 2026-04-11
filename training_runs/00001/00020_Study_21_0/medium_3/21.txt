@@ -1,0 +1,13 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3]
+
+# Test
+assert sat(sol())
+```
+
+In this code, we first define a function `sol` which returns a list of integers. We then test this function with the `sat` function which checks if the list contains exactly three unique numbers and the numbers are in ascending order. The function `sat` uses a list comprehension to check if the numbers are unique, and then uses the `len` function to check if there are three unique numbers.

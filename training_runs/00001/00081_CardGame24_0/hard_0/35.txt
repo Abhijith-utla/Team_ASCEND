@@ -1,0 +1,9 @@
+def sol():
+    return 3 + 7 * 3 / 7 - 13
+
+# Do not remove the following lines, they are used for grading and testing.
+# You can add more tests if you want to.
+
+# Note: The solution to this problem requires understanding of recursive descent parsers and the concept of operator precedence.
+
+print(sat(str(sol())))

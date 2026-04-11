@@ -1,0 +1,21 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(1, len(li) + 1)) and all(li[i] == i for i in range(len(li)))
+```
+This function takes a list of integers as input and returns True if the list is sorted and contains each element from 1 to the length of the list + 1.
+
+The function `sorted(li)` sorts the list in ascending order.
+
+The `list(range(1, len(li) + 1))` creates a list of integers from 1 to the length of the list + 1.
+
+The `and` operator is used to check if both conditions are true.
+
+The first condition is that the sorted list is equal to this list of integers, which means that the list is sorted in ascending order.
+
+The second condition is that the list of integers is equal to the original list, which means that the list contains each element from 1 to the length of the list + 1.
+
+If both conditions are true, the function returns True;

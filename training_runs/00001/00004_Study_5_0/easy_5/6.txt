@@ -1,0 +1,14 @@
+Here is the correct pattern for the sol function:
+
+```python
+def sol():
+    li = list(map(int, input().split()))
+    if sat(li):
+        return 'Yes'
+    else:
+        return 'No'
+```
+
+This function receives a list of integers separated by spaces as input and returns 'Yes' if the list is a valid sequence of digits from 9 to 0 (both inclusive), 'No' otherwise.
+
+The sat function checks if all elements in the list li appear exactly once. It does this by counting the occurrences of each number in the range from 9 to 0, and checking if they all match the number.

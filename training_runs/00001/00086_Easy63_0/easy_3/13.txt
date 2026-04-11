@@ -1,0 +1,5 @@
+def sol():
+    return "81818181-+*/"
+
+# Testing the function
+assert sat(sol())

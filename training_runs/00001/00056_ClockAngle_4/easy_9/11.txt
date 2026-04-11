@@ -1,0 +1,4 @@
+def sol():
+    return {"hour": 0, "minute": 0}
+
+assert sat(sol()["hour"], sol()["minute"])

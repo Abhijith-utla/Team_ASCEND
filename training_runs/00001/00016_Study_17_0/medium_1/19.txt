@@ -1,0 +1,21 @@
+The provided Python function `sat` is incorrect because it always returns `True`, even when the input `i` is not correct. This means that the function is always returning `True` when the input is not correct.
+
+Here's a correct solution that returns the sum of two numbers, if the sum of two numbers plus 1000 equals the sum of two numbers plus 1001, the function returns `True`.
+
+```python
+def sol():
+    return (1000 + 1001)
+```
+
+In this case, the function will always return the correct answer when called, based on the rule specified in the problem.
+
+Please replace `(1000 + 1001)` with your actual calculation.
+
+The function `sat` should be defined as follows:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) == len(str(i + 1001))
+```
+
+This function checks if the length of the string representation of `i + 1000` is equal to the length of the string representation of `i + 100

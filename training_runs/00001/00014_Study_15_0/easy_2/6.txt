@@ -1,0 +1,6 @@
+def sol():
+    li = [i for i in range(20)]
+    return li
+
+# Check
+assert sat(sol())

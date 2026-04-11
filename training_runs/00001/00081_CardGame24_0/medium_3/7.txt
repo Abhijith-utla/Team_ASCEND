@@ -1,0 +1,8 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    return 1
+```
+
+In this case, the function `sol()` always returns `1`, which satisfies the requirement of the problem.

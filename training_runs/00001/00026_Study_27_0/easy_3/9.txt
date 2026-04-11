@@ -1,0 +1,8 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return [1, 2, 3, 4, 5]
+```
+
+This function returns a list with the elements [1, 2, 3, 4, 5]. The elements at the indices 0 and 1 of the list are compared, and the result is used as the answer. The function `sat` checks if the element at the first index is less than the element at the second index.

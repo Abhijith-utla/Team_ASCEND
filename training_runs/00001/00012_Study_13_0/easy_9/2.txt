@@ -1,0 +1,5 @@
+def sol():
+    return float(sat)
+
+sat = lambda x: str(x - 3.1418).startswith("123.456")
+sol = lambda: sat(sol())

@@ -1,0 +1,12 @@
+Your function is correct. It checks if all elements in the list are the sum of the corresponding elements in two lists, starting from an empty list. The first element in the first list is 4 and the rest of the list is 1000 elements long.
+
+Here is the Python code for the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+The function `sat` takes a list of integers as input and returns `True` if the list satisfies the conditions and `False` otherwise. The conditions are that the first element of the list is 4 and the rest of the list is 1000 elements long.

@@ -1,0 +1,15 @@
+Here is the correct pattern for `sol` function:
+
+```python
+def sol():
+    i = 10 ** 11
+    while not sat(i):
+        i += 1
+    return i
+```
+
+In the above code, we start with a large number (`10**11`) and increment it until the `sat` function returns `True`. This will ensure that we eventually find a number that satisfies the conditions of the `sat` function.
+
+The `sat` function checks if `i` modulo 123 is 4 and `i` is greater than 10**10. If `i` is greater than 10**10, it means `i` is a multiple of 123 and 4.
+
+Please note that this code will only return a valid answer if the conditions of the `sat` function are met. If the conditions are not met, this code may not return a valid answer.

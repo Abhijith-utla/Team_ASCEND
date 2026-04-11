@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(x: float):
+    return x - 3.1415 == 123.456
+```
+
+VARIANT2:
+```python
+def sat(x: float):
+    return x - 3.1415 == 123.456000001
+```
+
+VARIANT3:
+```python
+def sat(x: float):
+    return x - 3.1415 == 123.456789
+```

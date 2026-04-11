@@ -1,0 +1,8 @@
+Here is the Python code to construct and return a single answer value.
+
+```python
+def sol():
+    return [2] + [4]*999
+```
+
+This code constructs and returns a list with a length of 1001 that starts with the number 2 and then repeats the number 4 999 times. The final checker will run: assert sat(sol())

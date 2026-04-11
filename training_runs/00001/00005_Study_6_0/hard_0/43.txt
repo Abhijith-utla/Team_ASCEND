@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+def sol():
+    i = 0
+    while True:
+        i += 1
+        if sat(i):
+            return i
+```
+
+This function starts with i = 0 and increments i by 1 in each iteration until it satisfies the condition defined by the `sat` function.

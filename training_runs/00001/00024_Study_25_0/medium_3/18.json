@@ -1,0 +1,17 @@
+{
+  "attempt_num": 18,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:17:02.533191+00:00",
+  "diagnostic": "reason=subprocess_error:EOFError: EOF when reading a line|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return ''.join(sorted(input())) # Testing print(sat(sol())) # Expected: 'A' print(sat(sol())) # Expected: ...",
+  "difficulty": "medium",
+  "problem_id": "00024_Study_25_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

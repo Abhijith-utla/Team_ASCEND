@@ -1,0 +1,19 @@
+Here are the three simpler Python functions for testing the same core concept:
+
+VARIANT1:
+```python
+def sat(answer):
+    return tuple(answer) in zip('dee', 'doo', 'dah!')
+```
+
+VARIANT2:
+```python
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'dee'))
+```
+
+VARIANT3:
+```python
+def sat(answer):
+    return all(answer[i] == 'dee'[i] for i in range(len(answer)))
+```

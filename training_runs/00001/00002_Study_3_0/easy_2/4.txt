@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(999)) and len(li) == 1000
+
+    answer = [i for i in range(999) if not sat([i]*1000)]
+    return answer[0]
+```
+This solution constructs a list of numbers from 0 to 998, and then returns the first number in that list that is not the same as its index. This number is then returned by the sol function. The `sat` function is a test function that checks if a list is a permutation of the list `[i for i in range(999)]` and if it's a permutation of the list `[i for i in range(999)]`, and if its length is 1000. The `answer` list comprehension is used to find the first number in the permutation that is not the same as its index.

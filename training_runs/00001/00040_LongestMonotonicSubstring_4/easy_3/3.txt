@@ -1,0 +1,6 @@
+def sol():
+    return [1, 2, 3, 4]
+
+# The solution must satisfy the inequality condition
+# For example, [1, 2, 3, 4] should return False because 4 > 3
+assert sat(sol())

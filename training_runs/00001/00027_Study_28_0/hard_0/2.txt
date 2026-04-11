@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i in range(1000) and abs(i - j) >= 10 for i in li for j in li if i != j) and len(set(li)) == 100
+```
+
+This function checks if all elements in the list are in the range [0, 999] and the absolute difference between any two elements is at least 10. It also checks that the length of the set of the list is 100.

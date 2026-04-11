@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The above function will return an empty list, as the problem does not provide any input.
+# If you want to use a specific coordinate list to test the solution, replace the last line with:
+# return [(5, 5), (3, 4), (6, 6), (2, 2), (4, 5)]

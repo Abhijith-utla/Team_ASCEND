@@ -1,0 +1,2 @@
+def sol():
+    return sorted([i for i in range(999)])

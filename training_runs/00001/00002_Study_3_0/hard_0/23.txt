@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function takes a list of integers `li` as an argument and returns a boolean value indicating whether the list is sorted in ascending order and all elements are unique. The function uses Python's built-in `sorted` function to compare the sorted list with the expected list `list(range(999))`. The `all` function then checks if all elements in the list are unique by comparing each element to every other element in the list using a generator expression `li[i] != i for i in range(len(li))`.

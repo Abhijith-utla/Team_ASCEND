@@ -1,0 +1,4 @@
+def sol():
+    return max_sum, sum_squares
+
+assert sat(sol())

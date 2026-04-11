@@ -1,0 +1,4 @@
+def sol():
+    return [60, 25, 22, 8, 84, 56]
+
+assert sat(sol())

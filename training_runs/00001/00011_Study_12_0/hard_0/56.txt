@@ -1,0 +1,17 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol() -> int:
+    li = [4]
+    for _ in range(987):
+        li.append(sum(li[-2:]))
+    return sum(li)
+
+print(sol())
+```
+
+This code first creates a list `li` with the first element 4. Then it adds to `li` the sum of the last two elements of `li` in a loop until `li` has 1000 elements. Finally, it returns the sum of all elements in `li`.
+
+Please note that the sum of the last two elements is calculated using the `sum(li[-2:])` syntax, which means "sum of the last two elements of `li`". The `[-2:]` syntax is a slice that starts at the second last element and goes all the way to the end of `li`. The `sum()` function then adds up all these elements.

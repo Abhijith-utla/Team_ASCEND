@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return li.count(17) == 1
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return li.count(3) == 2
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return li.count(17) == 0 or li.count(3) == 0
+```

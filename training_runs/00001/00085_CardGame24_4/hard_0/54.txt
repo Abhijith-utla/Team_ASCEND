@@ -1,0 +1,10 @@
+def sol():
+    return "0 0 0 0"
+
+assert sat("2 3 5 7")
+assert not sat("0 0 0 0")
+assert not sat("1 2 3 4")
+assert not sat("2 3 5 9")
+assert not sat("10 12 1 7")
+assert not sat("1 2 3 5 7")
+assert not sat("1 2 3 4 8")

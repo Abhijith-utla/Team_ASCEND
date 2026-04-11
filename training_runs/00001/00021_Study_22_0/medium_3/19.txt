@@ -1,0 +1,15 @@
+def sol():
+    answer = ""
+    while len(answer) < 15:
+        answer += "a"
+        if len(answer) < 15:
+            answer += "b"
+        if len(answer) < 15:
+            answer += "c"
+        if len(answer) < 15:
+            answer += "d"
+        if len(answer) < 15:
+            answer += "e"
+    return answer
+
+assert sat(sol())

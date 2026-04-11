@@ -1,0 +1,21 @@
+def sol():
+    return {"answer": "r" * 20}
+
+assert sat(1, "bbbbrr")
+assert not sat(2, "bbbbrr")
+assert not sat(3, "bbbbrr")
+assert sat(4, "bbbbrr")
+assert not sat(5, "bbbbrr")
+assert not sat(6, "bbbbrr")
+assert sat(7, "bbbbrr")
+assert not sat(8, "bbbbrr")
+assert not sat(9, "bbbbrr")
+assert not sat(10, "bbbbrr")
+assert sat(11, "bbbbrr")
+assert not sat(12, "bbbbrr")
+assert not sat(13, "bbbbrr")
+assert sat(14, "bbbbrr")
+assert not sat(15, "bbbbrr")
+assert not sat(16, "bbbbrr")
+assert sat(17, "bbbbrr")
+assert not sat(18, "bbbbrr")

@@ -1,0 +1,10 @@
+Sure, here is a solution for the problem. The function `sat` checks if all elements in the list `li` satisfy the condition `x + y == 2 ** x`.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x])
+```
+
+This function takes a list of integers as an argument. It uses a nested for loop to check if all elements in the list satisfy the condition `x + y == 2 ** x` for all possible values of `x` from 0 to 19. If all elements satisfy the condition, it returns `True`, otherwise it returns `False`.

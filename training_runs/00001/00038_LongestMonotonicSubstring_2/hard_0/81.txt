@@ -1,0 +1,8 @@
+def sol():
+    x = [0]*737
+    for i in range(736):
+        x[i] = i
+    x[-1] = 736
+    return x
+
+assert sat(sol())

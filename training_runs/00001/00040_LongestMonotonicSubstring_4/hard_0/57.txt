@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# solution checks if the given list satisfies the condition
+def solution_check(x: List[int], length=1, s="xwV"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(length - 1))
+
+# test cases
+assert sol() == []
+assert solution_check([0, 1, 2]) == True
+assert solution_check([1, 0, 2]) == True
+assert solution_check([2, 0, 1]) == True
+assert solution_check([1, 2, 0]) == False
+assert solution_check([2, 1, 0]) == False
+assert solution_check([0, 1]) == True
+assert solution_check([1]) == True
+assert solution_check([]) == True

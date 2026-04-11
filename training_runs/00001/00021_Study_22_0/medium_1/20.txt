@@ -1,0 +1,8 @@
+Here is the correct Python solution:
+
+```python
+def sol():
+    return "ilovepython"
+```
+
+The function `sol` simply returns the string "ilovepython" as an answer.

@@ -1,0 +1,4 @@
+def sol():
+    return "A string of length 20"
+
+assert sat(sol())

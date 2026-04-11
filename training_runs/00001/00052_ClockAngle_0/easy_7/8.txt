@@ -1,0 +1,6 @@
+def sol():
+    return (12, 30)
+
+# Test case
+assert sat(sol())
+!python -m doctest -v test.py

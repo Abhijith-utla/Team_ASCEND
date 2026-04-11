@@ -1,0 +1,5 @@
+def sol():
+    return [int(s) for s in sorted(str(n * n))]
+
+# Checker:
+assert sat([int(s) for s in sorted(str(n * n))] for n in range(10))

@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Test case
+assert sat([[0, 1, 2], [3], [4, 5, 6]], [[1, 2, 3], [4, 5], [0, 6]], [[1, 2, 3], [4, 5], [0, 6]])
+assert not sat([[0, 1, 2], [3], [4, 5, 6]], [[1, 2, 3], [4, 5], [0, 6]], [[1, 2, 3], [4, 5], [7, 6, 0]])
+
+def sat(moves: List[List[int]], source=[[0, 1, 2], [3], [4, 5, 6]], target=[[1, 2, 3], [4, 5], [0, 6]]):
+    state = [s[:] for s in source]
+
+    for [i, j] in moves:
+        state[i].append(state[j].

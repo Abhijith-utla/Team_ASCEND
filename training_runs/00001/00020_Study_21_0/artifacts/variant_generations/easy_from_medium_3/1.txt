@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(7)])
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(6)])
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(5)])
+```

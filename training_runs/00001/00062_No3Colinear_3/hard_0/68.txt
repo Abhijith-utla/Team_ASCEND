@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# The function `sol` is empty and therefore does not return anything.
+# However, the assertion `assert 0 <= x1 < side and 0 <= y1 < side` is always true,
+# so the function does not return any answer object.
+
+# The function `sat` is already defined by the user. 
+# This function checks if there are at least `num_points` points on the board with distinct coordinates.
+# But, the function `sol` does not have any arguments, so it does not take any arguments.
+# Therefore, the function `sol` does not return any answer object.

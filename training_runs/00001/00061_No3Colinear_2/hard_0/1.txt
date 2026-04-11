@@ -1,0 +1,15 @@
+The provided code is incorrect because it uses a nested loop to check the condition for the slope of the line formed by the three points. The slope of a line is calculated as the product of the differences in x and y coordinates divided by the product of the differences in y. If the slope is zero, it means the points are on the same line, which is not possible in a valid configuration.
+
+Here is the correct code:
+
+```python
+from typing import List, Tuple
+
+def sat(coords: List[Tuple[int, int]], side=1, num_points=1) -> bool:
+    for i1, (x1, y1) in enumerate(coords):
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2, (x2, y2) in enumerate(coords):
+            if i1 != i2:
+                for i3, (x3, y3) in enumerate(coords):
+                    if i2 != i3 and i1 != i3:
+                        slope1 = (y2 - y3) / (x2 - x3

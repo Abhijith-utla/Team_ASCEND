@@ -1,0 +1,8 @@
+Here is the Python code for the function "sol":
+
+```python
+def sol():
+    return "true" if sat("abcde") else "false"
+```
+
+This function checks if the string "abcde" is a substring of a string that contains all unique characters (i.e., a string of length 5), and if the string contains an even-indexed character. If both conditions are met, it returns "true"; otherwise, it returns "false".

@@ -1,0 +1,17 @@
+def sol():
+    return {}
+
+# Check if colors length is greater than or equal to n
+# Check if numbers in the list are 0 or 1
+# Check if there is any key in the squares dictionary where the sum is a key and the corresponding value is equal to the square of the sum.
+# If so, return False, else return True
+assert sat([0]*50, 50)
+assert not sat([1]*50, 50)
+assert not sat([0, 1]*50, 50)
+assert sat([0]*25 + [1]*25, 50)
+assert not sat([0]*50, 100)
+assert not sat([1]*50, 100)
+assert not sat([0, 1]*50, 100)
+assert sat([0]*25 + [1]*25, 25)
+assert sat([0]*50 + [1]*50, 50)
+assert not sat([0, 1]*50 + [1,

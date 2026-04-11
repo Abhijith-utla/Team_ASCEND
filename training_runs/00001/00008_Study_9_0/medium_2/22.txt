@@ -1,0 +1,2 @@
+def sat(li: List[str]):
+    return "".join(li) == "The five boxing wizards jump quickly"

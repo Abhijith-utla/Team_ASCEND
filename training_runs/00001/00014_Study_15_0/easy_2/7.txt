@@ -1,0 +1,12 @@
+Here is the Python code for the solution.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x >= 0 and x <= 19 for x in li)
+```
+
+This function checks if all elements in the given list are non-negative and less than or equal to 19. 
+
+The function uses the all() function and a generator expression to check if all elements in the list satisfy the condition. The generator expression generates a boolean for each element in the list, where True is returned if the element is non-negative and less than or equal to 19, and False otherwise. The all() function then checks if all elements in the list are True. If all elements are True, the function returns True; otherwise, it returns False.

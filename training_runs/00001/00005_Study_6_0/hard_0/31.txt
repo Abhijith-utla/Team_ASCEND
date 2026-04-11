@@ -1,0 +1,11 @@
+Sure, here is the Python code for your problem:
+
+```python
+def sol():
+    for i in range(10**10, 10**15):
+        if sat(i):
+            return i
+    return None
+```
+
+This code will return the smallest positive integer that satisfies the condition in the problem. If there is no such integer, it will return None.

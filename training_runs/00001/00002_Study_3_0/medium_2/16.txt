@@ -1,0 +1,16 @@
+Here is a possible solution to the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+
+    assert sat(list(range(999)))
+    return None
+```
+
+This function `sat` takes a list of integers as input. It first checks if the list is sorted in ascending order and starts from 0 to 998. If both conditions are satisfied, it returns `True`. Otherwise, it returns `False`.
+
+The function `sol` then asserts that `sat` function returns `True` and returns `None`. If the function does not return `None`, it means that the function `sat` has returned `False`, which is an incorrect answer. 
+
+Please note that this solution assumes that the input list does not contain any negative numbers or zero.

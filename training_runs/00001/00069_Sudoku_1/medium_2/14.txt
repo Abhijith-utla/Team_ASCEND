@@ -1,0 +1,8 @@
+def sol():
+    return ["_"] * 81
+
+# The answer to the puzzle
+ans = sol()
+
+# The checker will run: assert sat(ans)
+assert sat(ans)

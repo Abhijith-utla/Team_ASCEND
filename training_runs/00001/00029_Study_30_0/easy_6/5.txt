@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function `sat` is already defined by the user, we are not redefining it.
+
+assert sat(sol())

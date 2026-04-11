@@ -1,0 +1,4 @@
+def sol():
+    return "12345678+-*/"
+
+# This checker will run: assert sat(sol())

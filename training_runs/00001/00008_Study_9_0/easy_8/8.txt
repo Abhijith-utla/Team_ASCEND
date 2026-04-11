@@ -1,0 +1,4 @@
+def sol():
+    return [chr(i) for i in range(72, 101)]
+
+assert sat(sol())

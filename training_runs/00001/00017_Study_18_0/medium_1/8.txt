@@ -1,0 +1,10 @@
+Here is a correct solution in Python:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in ls)
+```
+
+This function takes a list of strings `ls` and checks if every string in the list is not present in the list. If all strings are not present, it returns True, otherwise it returns False. The `all` function is used here to check if all elements in the list are True.

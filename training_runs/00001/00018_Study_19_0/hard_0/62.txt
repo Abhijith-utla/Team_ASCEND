@@ -1,0 +1,12 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return {i + j for i in range(10) for j in range(10)}
+
+print(sol())
+```
+
+The above code will return the set `{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34}`. This set represents the sum of all possible pairs of elements from `{0, 1, 2, ..., 9}`.

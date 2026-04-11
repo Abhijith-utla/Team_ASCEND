@@ -1,0 +1,42 @@
+Here are the three simpler variants that test the same core concept:
+
+VARIANT1:
+```python
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if not isinstance(s, int):
+            return False
+        if s not in options:
+            return False
+    return sum(stamps) == target
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if not isinstance(s, int):
+            return False
+        if s not in options:
+            return False
+    if sum(stamps) != target:
+        return False
+    return True
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if not isinstance(s, int):
+            return False
+    if sum(stamps) != target:
+        return False
+    return True
+```

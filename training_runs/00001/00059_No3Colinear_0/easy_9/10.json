@@ -1,0 +1,16 @@
+{
+  "attempt_num": 10,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:18:55.120782+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return [] # This function is not necessary to be used because it's not used anywhere else !python",
+  "difficulty": "easy",
+  "problem_id": "00059_No3Colinear_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

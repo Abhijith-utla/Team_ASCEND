@@ -1,0 +1,22 @@
+Here is a solution for the problem. The function `sat` checks if the string `s` contains the string 'oo' exactly once, and the count of 'o' in the string is 1000.
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') == 1000
+```
+
+This function takes a string `s` as an argument and checks if it contains the string 'oo' exactly once and the count of 'o' in the string is 1000. If both conditions are met, the function returns `True`, otherwise it returns `False`.
+
+The `assert` statement is used here to ensure that the function `sat` is correct. The function `sat` is used in a `try/except` block to catch any assertion errors.
+
+Here is how you can use it:
+
+```python
+def test_sat():
+    try:
+        assert sat('oooooo')
+        print('Function `sat` is working correctly.')
+    except AssertionError:
+        print('Function `sat` is not working correctly.')
+
+test_sat

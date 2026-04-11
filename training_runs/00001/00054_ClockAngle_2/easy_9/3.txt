@@ -1,0 +1,4 @@
+def sol():
+    return (12, 30)
+
+print(sat(sol()))

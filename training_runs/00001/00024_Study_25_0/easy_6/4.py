@@ -1,0 +1,11 @@
+def sat(s: str):
+    return sorted(s) == sorted('sirnemtpu') and s == s[::-1]
+
+def sol():
+    return sorted('sirnemtpu') == sorted(s) and s == s[::-1]
+
+# Check the solution
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

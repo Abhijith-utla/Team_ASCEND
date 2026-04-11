@@ -1,0 +1,8 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return '123'
+```
+
+In this code, the function `sol` returns the string '123'. The checker will assert that the string '123' is in the string `8 ** 2888`.

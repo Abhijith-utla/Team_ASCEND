@@ -1,0 +1,21 @@
+Here are the three simpler Python function variations:
+
+VARIANT1:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 100
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 4 and s.count("1") == 0 and eval(s) == 99
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 5 and s.count("1") == 0 and eval(s) == 98
+```
+
+These functions test the same core concept: the set of characters in the string must contain the same characters as "18-+*/" and the count of "8" and "1" must match the given conditions. The evaluation of the string must return a specific value. The functions adjust the conditions based on the specific parameters defined in the problem.

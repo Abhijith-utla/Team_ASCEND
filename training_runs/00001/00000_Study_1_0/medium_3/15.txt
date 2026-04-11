@@ -1,0 +1,7 @@
+Here is a Python solution that uses the 'in' keyword to check if the string 'oo' is not in the string 's' and 'o' is in 's', and uses the 'count' method to check if the number of 'o' in the string is exactly 1000. 
+
+```python
+def sat(s: str):
+    return 'oo' not in s and 'o' in s and s.count('o') == 1000
+```
+This function takes a string 's' as input and returns True if 'oo' is not in 's', 'o' is in 's' and the number of 'o' in 's' is exactly 1000, and False otherwise.

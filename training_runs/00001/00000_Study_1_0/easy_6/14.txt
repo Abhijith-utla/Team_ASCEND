@@ -1,0 +1,4 @@
+def sol():
+    return 'ooo' in 'This string has exactly 1000 o''s.' and 'o' not in 'This string has exactly 1000 o''s.' and 'o' not in 'This string has exactly 1000 o''s.'
+
+assert sat(sol())

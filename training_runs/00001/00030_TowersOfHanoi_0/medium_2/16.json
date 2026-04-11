@@ -1,0 +1,17 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T10:05:08.826043+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: can only concatenate list (not \"int\") to list|parse=fence=none,preamble=0,found_sol=1,candidates=10|checked=10/10|preview=def sol(): moves = [[0, 6], [1, 5], [0, 4], [3, 2], [2, 1]] rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1], 0) for [i, j] i...",
+  "difficulty": "medium",
+  "problem_id": "00030_TowersOfHanoi_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

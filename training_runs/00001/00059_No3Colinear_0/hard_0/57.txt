@@ -1,0 +1,2 @@
+def sol():
+    return {(a, b): [(c, d) for c, d in coords if (a * (d - b) + b * (c - a) + c * (d - b)) != 0] for a, b in coords for c, d in coords if (a * (d - b) + b * (c - a) + c * (d - b)) == 0}

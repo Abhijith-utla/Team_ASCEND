@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# You can replace the comment in the function with your code here

@@ -1,0 +1,7 @@
+def sol():
+    li = [1, 2, 2, 3, 4, 4, 4, 5]
+    while not sat(li):
+        li[random.randint(0, 7)] = random.randint(1, 5)
+    return li
+
+In the solution provided, a list called 'li' is created with some elements having the same value. The while loop in the 'sol' function calls the 'sat' function until it returns a list that satisfies the conditions. Inside the 'sat' function, a list comprehension is used to create a list of numbers that do not match the next number. A set is also created from the list to ensure all elements are unique. If the list is not satisfied the while loop continues to reassign a random number.

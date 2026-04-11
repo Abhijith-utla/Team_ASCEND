@@ -1,0 +1,15 @@
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    return li
+
+print(sat(sol()))
+```
+
+The function `sat` checks if the list `li` contains only one of the numbers from 1 to 9. If it does, it returns `li`; otherwise, it returns an empty list.
+
+The function `sol` creates the list `li` with the numbers 1 to 9 and then returns `li`.
+
+The function `sat` is then called with the result of `sol` as its argument. If `sat` returns `li`, the assert statement will be true, indicating that `sol` is correct. If `sat` returns an empty list, the assert statement will be false, indicating that `sol` is incorrect.

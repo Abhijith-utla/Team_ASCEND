@@ -1,0 +1,5 @@
+def sol():
+    return '4.5'
+
+# This is the final checker. It will run: assert sat(sol())
+assert sat(sol())

@@ -1,0 +1,3 @@
+def sol():
+    s = 'hoooooooo' * 1000
+    return s.count('ooo') == 100 and s.count('oo') == 1000 and s.count('o') == 801

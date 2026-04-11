@@ -1,0 +1,4 @@
+def sol():
+    return sorted([1, 2, 3, 4, 5]) == list(range(1, 6))
+
+assert sat(sol())

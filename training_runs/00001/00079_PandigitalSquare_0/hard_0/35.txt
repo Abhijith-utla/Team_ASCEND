@@ -1,0 +1,8 @@
+def sol():
+    return 1
+
+# This assertion should fail because the square of 10 should yield 100, which is not a single number.
+assert sat(sol())
+
+# This assertion should pass because the square of 1 should yield 1, which is a single number.
+assert sat(sol())

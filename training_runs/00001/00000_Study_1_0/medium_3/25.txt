@@ -1,0 +1,5 @@
+def sol():
+    return 'oo' not in 'oooooooooooooo' and 'o' in 'oooooooooooooo' and 'oooooooooooooo'.count('o') == 1000
+
+# Check the solution
+assert sat(sol())

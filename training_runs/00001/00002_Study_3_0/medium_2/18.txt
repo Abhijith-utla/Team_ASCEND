@@ -1,0 +1,10 @@
+Sure, here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```
+
+This function checks if the list is sorted in ascending order and if all elements in the list are equal to their indices.

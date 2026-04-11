@@ -1,0 +1,17 @@
+{
+  "attempt_num": 33,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:56:10.575869+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: list index out of range|parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): li = [0]*20 return li",
+  "difficulty": "hard",
+  "problem_id": "00029_Study_30_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

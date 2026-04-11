@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return 'oo' not in 'oooooooooooo' and 'o' in 'oooooooooooo' and 'o' not in 'oooooooooooo' and 1000 == sum([i for i in 'oooooooooooo' if i == 'o'])
+```
+
+This solution involves checking if 'oo' is not in the string, if 'o' is in the string, and if the count of 'o' is exactly 1000.

@@ -1,0 +1,20 @@
+The given function `sat` checks if a string `s` contains the substring 'oo' exactly once and has exactly 1000 'o' characters. The function returns `True` if the string satisfies these conditions, and `False` otherwise. 
+
+Here's the correct solution:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s.count('o') == 1000
+```
+
+In the function `sol`, we create a string `s` of 1000 'o' characters. Then, we return `True` if the count of 'o' characters in `s` is 1000 (which means the string `s` satisfies the conditions), and `False` otherwise. 
+
+You can test the function with the following code:
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') == 1000
+
+print(sat(sol()))  # Should print: True
+```

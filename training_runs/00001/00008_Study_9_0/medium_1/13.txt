@@ -1,0 +1,27 @@
+The given Python function named `sat` is defined as follows:
+
+```python
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+This function takes a list of integers as input and returns a boolean value. It checks whether the list of integers corresponds to the ASCII values of the characters in the string "The five boxing wizards jump quickly" by replacing all spaces with no space.
+
+This is the correct pattern for the function definition:
+
+```python
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+And this is the incorrect pattern for the function definition:
+
+```python
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+The correct pattern should be:

@@ -1,0 +1,14 @@
+Here is a correct solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+
+# Testing
+print(sat([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946]))
+```
+This solution checks the condition for each index from 0 to 19 in the list. It checks if the sum of all numbers up to that index is equal to the current index. If the condition is not satisfied for any index, the `all` function returns `False`, otherwise it returns `True`.
+
+The test case `[1, 1, 2, 3, 5, 8, 13, 21,

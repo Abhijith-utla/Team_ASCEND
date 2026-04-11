@@ -1,0 +1,19 @@
+Below are the three simple variants of the original puzzle:
+
+VARIANT1:
+```python
+def sat(ls):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+VARIANT2:
+```python
+def sat(ls):
+    return ls[1234] > ls[1235] and ls[1234] != ls[1235]
+```
+
+VARIANT3:
+```python
+def sat(ls):
+    return ls[1234] < ls[1235] and ls[1234] != ls[1235]
+```

@@ -1,0 +1,19 @@
+Here are the three simple Python function variants:
+
+VARIANT1:
+```python
+def sat(answer):
+    return answer == 'dee'
+```
+
+VARIANT2:
+```python
+def sat(answer):
+    return answer.startswith('dee')
+```
+
+VARIANT3:
+```python
+def sat(answer):
+    return answer.lower() == 'dee'.lower()
+```

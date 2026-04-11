@@ -1,0 +1,10 @@
+def sol():
+    return {}
+
+# Test the function with some input
+assert sat({0} * 9999 + {1} * 1)
+assert not sat({0} * 9999 + {1} * 10001)
+
+# Test the function with some other input
+assert not sat({0} * 9999 + {0} * 10000)
+assert sat({0} * 9999 + {1} * 9999)

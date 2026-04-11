@@ -1,0 +1,7 @@
+def sol():
+    li = [i for i in range(1000)]
+    while not sat(li):
+        li = [i for i in range(999)] + [i+1 for i in range(1000)]
+    return li
+
+print(sol())

@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(737) if i % 2 != 0]

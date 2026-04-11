@@ -1,0 +1,12 @@
+Here's a Python solution using a dictionary to count the occurrences of each number from 1 to 9 in the list:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    count = {i: li.count(i) for i in range(1, 10)}
+    return count[1] == 5 and count[2] == 5 and count[3] == 5 and count[4] == 5 and count[5] == 5 and count[6] == 5 and count[7] == 5 and count[8] == 5 and count[9] == 5
+```
+This function creates a dictionary with the counts of each number in the list and then checks if the counts are exactly 5. The function `count` counts the occurrences of each number in the list `li`. If all counts are 5, it returns `True`; otherwise, it returns `False`.
+
+The `from typing import List` line is optional and is used to ensure that the function `sat` has the correct argument type. It allows the function to be used with a list of integers.

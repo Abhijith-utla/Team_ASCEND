@@ -1,0 +1,19 @@
+The code you provided is not a solution. It seems to be trying to create a list of strings where each string is a combination of two different strings, but it doesn't check if these combinations are the same as the given string. 
+
+The correct code should look like this:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function will return a list of words in the string 'berlin berger linber linger gerber gerlin'. The function does not take any arguments and simply returns the list of words in the string.
+
+The checker should run:
+
+```python
+def test():
+    assert sat(sol()) == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+Please note that the provided solution will work assuming the strings in the list are separated by spaces. If the strings are separated by any other characters, the code will need to be modified accordingly.

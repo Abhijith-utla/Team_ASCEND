@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return 'oo' not in 'ooooooooooo' and 'o' in 'ooooooooooo' and 'ooooooooooo'.count('o') == 1000
+```
+
+This function checks if 'oo' is not in 'ooooooooooo', 'o' is in 'ooooooooooo', and the count of 'o' in 'ooooooooooo' is 1000.

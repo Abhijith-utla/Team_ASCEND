@@ -1,0 +1,24 @@
+Here are three variants of the same Python function. 
+
+VARIANT1:
+
+```python
+def sat(li: List[int]) -> bool:
+    return all(j == 3 * i for i, j in enumerate(li))
+```
+
+VARIANT2:
+
+```python
+def sat(li: List[int]) -> bool:
+    return all([j == 3 * i for j, i in enumerate(li)])
+```
+
+VARIANT3:
+
+```python
+def sat(li: List[int]) -> bool:
+    return all(i == 3 * j for j, i in enumerate(li))
+```
+
+Please note that the second variant is a little bit more verbose than the first variant because it uses list comprehension, which is more explicit in code. The third variant is very similar to the first variant, but it uses the enumerate function to get the index and value of each item in the list.

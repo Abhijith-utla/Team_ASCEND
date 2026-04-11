@@ -1,0 +1,17 @@
+The function `sat` takes a string as input and checks if it contains the substring 'oo'. If it does, it returns `False`; otherwise, it returns `True`. Here is the correct implementation of the function:
+
+```python
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True
+```
+
+The `count` method counts the number of occurrences of a substring in a string. If it finds any occurrence of 'oo', it returns `0`, which is considered false. If it doesn't find any occurrence, it returns `1`, which is considered true.
+
+You can test the function using the following code:
+
+```python
+print(sat('hello'))  # Should print: True
+print(sat('hellooo'))  # Should print: False
+```

@@ -1,0 +1,36 @@
+def sat(li: List[int]):
+    return all([((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] >= 0 and li[i] <= 1000)) for i in range(20)])
+
+def sol():
+    return [0]*20
+
+# Checker for the solution
+def is_solution(li: List[int]):
+    return sat(li)
+
+# Checker for the given input
+def check(li: List[int]):
+    return is_solution(li)
+
+# Testing
+assert check([0]*20)
+assert not check([1]*20)
+assert check([2]*20)
+assert check([3]*20)
+assert check([4]*20)
+assert check([5]*20)
+assert check([6]*20)
+assert check([7]*20)
+assert check([8]*20)
+assert check([9]*20)
+assert check([10]*20)
+assert check([11]*20)
+assert check([12]*20)
+assert check([13]*20)
+assert check([14]*20)
+assert check([15]*20)
+assert check([16]*20)
+assert
+
+if __name__ == "__main__":
+    assert sat(sol())

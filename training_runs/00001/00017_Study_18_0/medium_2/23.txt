@@ -1,0 +1,5 @@
+def sol():
+    return [len(set(s)) == len(s) for s in ls]
+
+# Assuming that the user has defined 'ls'
+assert sat(ls)

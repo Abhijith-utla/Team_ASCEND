@@ -1,0 +1,14 @@
+Sure, here's a solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+This function `sat` takes a list of strings `ls` as input. It returns `True` if all strings in the list have the same length, and each character in the string is unique, else it returns `False`.
+
+The `set(s)` part is used to remove duplicates from each string `s`, then `len(set(s))` is used to get the length of the set which is the number of unique characters in the string. Since the length of the set is the same as the length of the string, this means all strings in the list have the same length. 
+
+The `all` function is used to check if all elements in the iterable (in this case, the list of strings) satisfy the condition (`len(set(s)) == len(s)`). If all elements satisfy the condition, `all` returns `True`; otherwise, it returns `False`.

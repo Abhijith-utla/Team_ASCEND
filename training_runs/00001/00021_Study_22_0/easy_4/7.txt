@@ -1,0 +1,2 @@
+def sol():
+    return "This function doesn't accept any input."

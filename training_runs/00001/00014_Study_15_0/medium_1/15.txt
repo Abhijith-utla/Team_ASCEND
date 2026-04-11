@@ -1,0 +1,11 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all(x + 1 == (2 ** x) - 1 for x in range(20))
+
+    return sat
+```
+
+This code defines a function named `sol` that checks if all elements in the list satisfy the condition `x + 1 == (2 ** x) - 1` for all `x` in the range from 0 to 19. The function `sat` returns a boolean value (`True` or `False`) based on the condition. The `sol` function returns the `sat` function.

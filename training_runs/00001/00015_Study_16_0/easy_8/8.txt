@@ -1,0 +1,4 @@
+def sol():
+    return 'abc4.5'
+
+# The function sat(answer) checks if the answer is 'abc4.5'. If it is, it returns True, otherwise it returns False.

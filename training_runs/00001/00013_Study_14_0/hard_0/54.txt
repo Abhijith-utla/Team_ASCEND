@@ -1,0 +1,12 @@
+The function `sat` checks if a list of integers `li` is a list of sums of the first `i` numbers for `i` from 0 to 19. If `li` is a list of sums of the first `i` numbers for `i` from 0 to 19, the function returns `True`, otherwise it returns `False`.
+
+Here is the correct Python code for `sol` function:
+
+```python
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+In the function `sat`, a list comprehension is used to generate a list of boolean values. Each boolean value is `True` if the sum of the first `i` numbers in `li` is equal to `i`, and `False` otherwise. The function `all` is used to check if all boolean values are `True`. If all boolean values are `True`, the function returns `True`; otherwise, it returns `False`.
+
+The function `sat` takes a list of integers `li` as an argument, and it returns a boolean

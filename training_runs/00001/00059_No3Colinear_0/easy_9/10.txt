@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This function is not necessary to be used because it's not used anywhere else
+!python

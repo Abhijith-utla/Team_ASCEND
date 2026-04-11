@@ -1,0 +1,7 @@
+def sol():
+    class Answer:
+        def __init__(self, state):
+            self.state = state
+
+    moves = [(i, j) for i in range(5) for j in range(len(i))]
+    return Answer(source) if sat(moves) else Answer(target)

@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return set(s) <= set("12345678+-*/") and s.count("8") == 4 and s.count("1") == 1 and eval(s) == 197
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return set(s) <= set("18+*") and s.count("8") == 4 and s.count("1") == 1 and eval(s) == 197
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return set(s) <= set("1-*") and s.count("8") == 4 and s.count("1") == 1 and eval(s) == 197
+```

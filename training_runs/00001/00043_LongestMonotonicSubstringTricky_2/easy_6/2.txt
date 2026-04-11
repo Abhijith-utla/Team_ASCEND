@@ -1,0 +1,4 @@
+def sol():
+    x = [0]
+    s = "O!A{SeKv"
+    return sat(x, s)

@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(stamps=[25]):
+    return len(stamps) == 1 and stamps[0] == 25
+```
+
+VARIANT2:
+```python
+def sat(stamps=[22]):
+    return len(stamps) == 1 and stamps[0] == 22
+```
+
+VARIANT3:
+```python
+def sat(stamps=[8]):
+    return len(stamps) == 1 and stamps[0] == 8
+```

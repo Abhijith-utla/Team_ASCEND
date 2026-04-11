@@ -1,0 +1,18 @@
+Here is the correct solution:
+
+```python
+def sol():
+    def sat(i: int):
+        return len(str(i + 1000)) < len(str(i + 1001))
+    
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function uses a while loop to increment `i` until `sat(i)` returns True. This is a solution to the problem as long as `i` is a non-negative integer and `i` is not greater than 999. 
+
+The code returns `i` as the answer. 
+
+Please note that this solution assumes that `i` is a non-negative integer and that `i` is not greater than 999. If these conditions are not met, the program may not behave as expected.

@@ -1,0 +1,5 @@
+def sol():
+    s = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    return s
+
+print(sol())

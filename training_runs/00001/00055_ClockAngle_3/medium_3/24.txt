@@ -1,0 +1,9 @@
+def sol():
+    return 10, 30
+
+# The correct answer for the example provided:
+# assert sat(sol())
+# print("Test passed")
+
+# In this case, the answer is (10, 30) because the angle difference between the hands is 360 - 138 = 182 degrees.
+# Hence, the angles of the hour hand and minute hand are 10 degrees (for the hour hand) and 30 degrees (for the minute hand).

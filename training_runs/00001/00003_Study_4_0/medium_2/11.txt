@@ -1,0 +1,14 @@
+Here is the solution to your problem:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    answer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return answer
+
+# Check the solution
+assert sat(sol())
+```
+
+The `sat` function checks if a list of integers `li` has exactly 10 elements and if the element at index 3 (counting from 0) appears twice. If all conditions are met, the function returns `True`; otherwise, it returns `False`.

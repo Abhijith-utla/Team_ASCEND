@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# The function `sat` will check if all numbers in the list are in non-decreasing order.
+# If all numbers are in non-decreasing order, the function will return `True`. Otherwise, it will return `False`.
+# The function `sol` does not take any arguments, so it does not need to check any input.
+# Therefore, the answer to the problem is an empty list.

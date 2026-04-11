@@ -1,0 +1,19 @@
+Here is the Python code to solve the problem. The function `sat` takes a list of integers as input and checks if the list is equal to the list of ASCII values of the characters in the string "The five boxing wizards jump quickly" but with spaces removed. 
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return li == [ord(i) for i in "The five boxing wizards jump quickly".replace(" ", "")]
+```
+
+This function uses list comprehension to create a new list of ASCII values, and then checks if this list is equal to the input list `li`. 
+
+The `ord` function returns the ASCII value of a character. The `replace` method is a built-in Python function that replaces a specified phrase with another specified phrase.
+
+The function `sat` is expected to be defined by the user and will return a boolean value indicating whether the input list is valid.
+
+You can test this function with the following code:
+
+```python
+print(sat([ord(i) for i in "The five boxing wizards jump quickly".replace(" ",

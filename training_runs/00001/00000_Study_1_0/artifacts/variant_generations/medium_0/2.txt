@@ -1,0 +1,19 @@
+Here are three simple Python functions that test the same core concept.
+
+VARIANT1:
+```python
+def sat(s: str):
+    return s.count('o') == 1000
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return s.count('oo') == 0
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 0
+```

@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# Test case 1: Normal case
+# coords = [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)]
+# assert sat(coords)
+
+# Test case 2: Side case
+# coords = [(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (3, 4), (4, 3), (4, 4)]
+# assert sat(coords, side=5)
+
+# Test case 3: Multiple points case
+# coords = [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6), (7, 7), (8, 8), (9, 9), (10, 10)]
+# assert sat(coords, num_points=10)
+
+# Test case 4: Case where there is no solution
+# coords = [(1,

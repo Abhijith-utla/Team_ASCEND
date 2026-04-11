@@ -1,0 +1,10 @@
+The provided code is incorrect because it tries to count each number in the list `li` using the count method of a list, but `li` is not a list of integers, but a list of floating point numbers. This leads to a TypeError.
+
+The correct pattern should be:
+
+```python
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+Here, `li` is a list of integers, and each element in `li` is counted to see if it is equal to its index. The `all` function is used to check if all elements in the list satisfy the condition (i.e., their count equals the index). If all elements satisfy the condition, the `all` function returns `True`; otherwise, it returns `False`.

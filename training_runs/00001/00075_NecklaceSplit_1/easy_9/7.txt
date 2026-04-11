@@ -1,0 +1,4 @@
+def sol():
+    return 1
+
+print(f"The solution to the problem is: {sol()}")

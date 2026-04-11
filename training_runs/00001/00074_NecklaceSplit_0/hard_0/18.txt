@@ -1,0 +1,9 @@
+def sol():
+    return {}
+
+# Checker for correctness of solution
+def check_sol(n: int, lace="bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"):
+    assert sat(n)
+
+# Run the checker
+check_sol()

@@ -1,0 +1,10 @@
+The given Python function named 'sat' is incorrect because it's checking if the length of the string 's' is equal to 3, and the string 's' contains the number 8. However, the problem statement asks for the function to find whether the string 's' has any part of the number 8 in it, and the number of times this occurs is more than 8. 
+
+However, the correct function should be:
+
+```python
+def sat(s: str):
+    return str(8 ** int(2888)).count(s) > 8
+```
+
+This function will check if the string 's' contains the number 8 in it more than 8 times.

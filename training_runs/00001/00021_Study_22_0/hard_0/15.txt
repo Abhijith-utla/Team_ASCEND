@@ -1,0 +1,9 @@
+def sol():
+    return ''.join(s[::2] for s in str(int(input())))
+
+# Checker code
+def check_sol(s: str):
+    return sat(s)
+
+# Testing the sol function
+print(check_sol(sol()))

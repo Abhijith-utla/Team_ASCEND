@@ -1,0 +1,6 @@
+def sol():
+    return {"answer": 4.5 + len("answer")}
+
+# Test
+answer = sol()["answer"]
+assert sat(str(answer))

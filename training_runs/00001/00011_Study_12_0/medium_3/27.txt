@@ -1,0 +1,12 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function `sat` checks if all elements in the list `li` are the sum of the elements in the list with an offset of 4 (since `li` starts with 4 and 3 elements after that) and the current element itself. It also checks that the length of the list `li` is 1000. If both conditions are met, the function returns `True`; otherwise, it returns `False`.
+
+The `zip` function is used to iterate over two lists at the same time. The first list is the list `li` with an offset of 4 and the second list is `li` itself. The `all` function is used to check that all elements satisfy the condition `i + j == 3` for each pair `(i, j)`. If all elements do, `all` returns `True`; otherwise, it returns `False

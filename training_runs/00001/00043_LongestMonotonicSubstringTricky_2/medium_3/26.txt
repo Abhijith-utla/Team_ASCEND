@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Here is the correct Python code
+def sol():
+    return [1, 0, 2, 3, 4]
+
+# Here is the incorrect Python code
+def sol(x):
+    return [1, 0, 2, 3, 4]

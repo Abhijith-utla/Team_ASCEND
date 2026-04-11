@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# This function doesn't really make sense here, it's just an empty list.
+# You can fill in your solution here, for example:
+# def sol():
+#     return [1, 2, 3, 4, 5]

@@ -1,0 +1,12 @@
+Here is the Python code for your function:
+
+```python
+def sol(ls, idx1=-1, idx2=-1, value=None):
+    if idx1 < 0 or idx2 < 0 or value is None:
+        return False
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+This function `sol` takes a list `ls`, two indices `idx1` and `idx2`, and a value `value` as input. It first checks if any of the indices or the value is invalid (negative or `None`). If so, it returns `False`. 
+
+Then it checks if the value at `idx1` is in the list at `idx2` and if the value at `idx1` is not equal to `value`. If both conditions are true, it returns `True`. Otherwise, it returns `False`.

@@ -1,0 +1,7 @@
+def sol():
+    length = 535
+    x = [0] * length
+    for i in range(length - 1):
+        x[i] = ord(s[i]) - ord(s[i + 1])
+    x[-1] = ord(s[-1])
+    return x

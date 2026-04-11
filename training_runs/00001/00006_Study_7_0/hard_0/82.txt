@@ -1,0 +1,4 @@
+def sol():
+    return '888'
+
+# This function will always return '888' as the answer.

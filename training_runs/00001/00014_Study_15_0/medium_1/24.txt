@@ -1,0 +1,14 @@
+The Python function `sat(li: List[int])` is defined and it checks whether all elements in a given list are equal to the sum of the power of 2 minus 1.
+
+Here is the correct pattern for the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(2 ** x - 1 == x + 1 for x in li)
+```
+
+This function checks if all elements in the list are equal to the sum of the power of 2 minus 1. If they are, it returns `True`. Otherwise, it returns `False`.
+
+Please note that this function assumes that the list `li` contains integers and that it's not empty. If these assumptions don't hold, you may need to add appropriate error checking code.

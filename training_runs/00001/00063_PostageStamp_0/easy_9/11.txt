@@ -1,0 +1,2 @@
+def sol():
+    return [40, 32, 8]

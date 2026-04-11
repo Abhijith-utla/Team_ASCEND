@@ -1,0 +1,19 @@
+Here are three simple variants of the sat() function:
+
+VARIANT1:
+```python
+def sat(answer):
+    return answer == 'dee'
+```
+
+VARIANT2:
+```python
+def sat(answer):
+    return answer == 'doo'
+```
+
+VARIANT3:
+```python
+def sat(answer):
+    return answer == 'dah!'
+```

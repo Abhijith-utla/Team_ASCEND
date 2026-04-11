@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# Checker
+def checker(sol):
+    assert sat(sol())
+
+checker(sol)

@@ -1,0 +1,13 @@
+Sure, I'll create the solution function. The solution function will take one argument and return the result of the statement `len(str(i + 1000)) > len(str(i + 1001))`.
+
+```python
+def sol(i):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+print(sol(1))  # False
+print(sol(2))  # True
+print(sol(3))  # True
+print(sol(4))  # False
+```
+
+This function will return `False` if the difference in the length of the string representation of `i + 1000` and `i + 1001` is greater than the length of the string representation of `i + 1001` and `i + 1002`. If `i` is 1, for example, `1000` is `1000`, and `1001` is `1001`, the function will return `False` because `1000` is not longer than `100

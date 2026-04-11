@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([]) == False
+assert sat([1]) == False
+assert sat([0] * 99) == False
+assert sat([0] * 100 + [1]) == False
+assert sat([0] * 101) == False
+assert sat([0] * 99 + [1]) == False
+assert sat([0] * 99 + [1] * 100) == False
+assert sat([1] * 100) == False
+assert sat([0] * 99 + [1] * 100 + [0]) == True

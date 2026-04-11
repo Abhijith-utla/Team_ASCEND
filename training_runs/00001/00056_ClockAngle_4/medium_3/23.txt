@@ -1,0 +1,9 @@
+def sol():
+    for hour in range(12):
+        for minute in range(60):
+            if sat(hour, minute):
+                return hour, minute
+
+# You can call the solution function and print the result
+hour, minute = sol()
+print(f"The solution is {hour}:{minute:02d}")

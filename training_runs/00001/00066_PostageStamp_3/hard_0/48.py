@@ -1,0 +1,16 @@
+def sat(stamps: List[int], target=19, max_stamps=2, options=[19, 14, 81]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+
+def sol():
+    return [81, 81]
+
+# Testing
+assert sat([81, 81])
+assert not sat([81])
+assert not sat([])
+assert not sat([1, 2, 3])
+
+if __name__ == "__main__":
+    assert sat(sol())

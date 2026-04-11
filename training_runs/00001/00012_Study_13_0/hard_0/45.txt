@@ -1,0 +1,4 @@
+def sol():
+    return "123.456"
+
+print(sat(float("123.456")))

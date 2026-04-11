@@ -1,0 +1,19 @@
+Here is the Python code that solves the problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for x in li:
+        if x < 0 or 2 ** x - 1 != (2 ** (x + 1)) - 1:
+            return False
+    return True
+```
+
+This function iterates over the list `li` and checks if each element is non-negative and a perfect power of two. If it finds any element that fails the condition, it returns `False`. If it iterates over the entire list without finding any such element, it returns `True`.
+
+The function `sat` is defined to take a list of integers as its argument and return a boolean value. The boolean value will be `True` if the list satisfies the conditions of the function and `False` otherwise.
+
+The `assert` statement is used to check the correctness of the solution. If `sat` returns `True`, the `assert` statement will not cause any error. If it returns `False`, the `assert` statement will raise an AssertionError.
+
+Please note that the problem statement explicitly mentions that

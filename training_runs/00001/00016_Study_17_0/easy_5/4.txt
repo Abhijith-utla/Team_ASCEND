@@ -1,0 +1,16 @@
+The function `sat(i: int) -> bool` should return True if the length of the string representation of `i + 10` is equal to the length of the string representation of `i + 100`, otherwise it should return False. However, the provided function `sat(i: int) -> bool` has a logical error.
+
+The `len()` function in Python returns the number of characters in a string. In the context of this problem, we're assuming that `i` is a positive integer. So, the string representation of `i + 10` and `i + 100` should be the same length. 
+
+Therefore, the function should be:
+
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 10)) == len(str(i + 100))
+```
+
+This function will return True if the length of the string representation of `i + 10` is equal to the length of the string representation of `i + 100`, otherwise it will return False. For example:
+
+```python
+assert sat(0)  # True
+assert not sat

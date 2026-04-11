@@ -1,0 +1,9 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    i = 1000
+    return i + 1000
+```
+
+In this function, `i` is the first number in a series of numbers that are equal in length after incrementing by 1000. This function will return the next number in the series when called.

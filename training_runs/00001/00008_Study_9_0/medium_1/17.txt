@@ -1,0 +1,15 @@
+The problem is to create a function that checks if a list of integers, where each integer corresponds to the ASCII value of a character in the string "The five boxing wizards jump quickly", is a permutation of the ASCII values of the string, i.e., all characters in the string appear exactly once in the list.
+
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    s = "The five boxing wizards jump quickly"
+    return all(s.count(chr(i)) == li.count(i) for i in range(ord('a'), ord('z') + 1))
+```
+
+This function works by counting the number of occurrences of each character in the string and list, and comparing them. It returns `True` if all counts are equal for all characters, and `False` otherwise.
+
+The `all()` function is used to check if all elements of the generator expression in the parentheses are `True`. If all counts are equal for all characters, the generator expression will yield a generator that generates `True` for all indices,

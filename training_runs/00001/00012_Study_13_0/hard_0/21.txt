@@ -1,0 +1,4 @@
+def sol():
+    return float(sat(3.1415))
+
+assert sat(sol())

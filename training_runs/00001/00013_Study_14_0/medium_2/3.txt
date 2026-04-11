@@ -1,0 +1,20 @@
+Sure, here is a Python solution:
+
+```python
+def sat(li: List[int]):
+    for i in range(len(li)):
+        for x in set(li):
+            if li.index(x) < i + sum(li[:li.index(x)]):
+                return False
+    return True
+```
+
+The function `sat` takes a list of integers `li` as an argument. It checks for each element `x` in the set of elements in `li`, if the index of `x` is less than the index of the element plus the sum of the elements before `x` in the list. If it finds such an element, it returns `False`. If it doesn't find any such element, it returns `True`.
+
+Please note that this function might not be the best solution for all cases, because it has a time complexity of O(n^2), where n is the length of the list. This could be improved by using a dictionary to store the sum of the elements before each element.
+
+Here is an improved version:
+
+```python
+def sat(li: List[int]):
+    sum

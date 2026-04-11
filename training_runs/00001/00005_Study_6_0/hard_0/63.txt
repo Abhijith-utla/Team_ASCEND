@@ -1,0 +1,13 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    for i in range(10 ** 10, 10 ** 12):
+        if sat(i):
+            return i
+    return None
+
+print(sol())
+```
+
+This code will loop through all integers between 10^10 and 10^12 (100,000,000 to 100,000,000,000) and return the first integer for which the function sat(i) returns True. If no such integer exists, the function will return None.

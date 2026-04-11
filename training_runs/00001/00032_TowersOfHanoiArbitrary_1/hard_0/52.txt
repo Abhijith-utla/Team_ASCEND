@@ -1,0 +1,4 @@
+def sol():
+    return [source, target]
+
+assert sat(sol())

@@ -1,0 +1,10 @@
+Here is the correct pattern for your function:
+
+```python
+def sol():
+    return None
+```
+
+In this case, the function doesn't take any argument and does not return any value. The checker will pass if `sat(sol())` is executed successfully. The function `sat` takes a list of integers as an argument and returns a boolean value. It uses a generator expression to check if all numbers in the list are either -1, 0, or 1 more than the previous number or are 3 times the previous number. This is done by using the `zip` function to pair up the numbers in the list with their previous numbers. If all numbers are in this range, the `all` function returns `True`, otherwise it returns `False`. If the list is empty, `all` will return `True`, which satisfies the condition.
+
+The checker will fail if `sol()` is not `None`.

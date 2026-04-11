@@ -1,0 +1,16 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function checks if the list of integers `li` is equal to the list of characters that are equivalent to the string "The quick brown fox jumps over the lazy dog". It removes all spaces from the string and then checks if the two lists are equal. If they are, the function returns `True`; otherwise, it returns `False`.
+
+This function will return `True` if the input list is equal to the list of characters that are equivalent to the string "The quick brown fox jumps over the lazy dog". If the input list is not equal to the list of characters, the function will return `False`.
+
+For example:
+
+```python
+print(sat([35, 36, 37, 38, 39, 40, 41]))  # returns True
+print(sat([35, 36, 3

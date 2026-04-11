@@ -1,0 +1,9 @@
+Sure, here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+This function `sat` takes a list of integers as input. It checks if the list of integers corresponds to a list of characters by converting each integer to a character using the `chr` function and comparing the lists. If the two lists are equal, it returns `True`, otherwise it returns `False`.

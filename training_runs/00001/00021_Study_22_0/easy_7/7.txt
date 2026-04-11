@@ -1,0 +1,6 @@
+```python
+def sol():
+    return "This string is not acceptable because it's longer than 30 characters or less than 5 characters."
+
+print(sat(sol()))
+```

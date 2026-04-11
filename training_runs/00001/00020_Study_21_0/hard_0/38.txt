@@ -1,0 +1,9 @@
+Here is a possible solution for the problem:
+
+```python
+def sol():
+    li = [1, 2, 3]
+    assert sat(li)
+    return li
+```
+This solution creates a list `li` with three elements, both different from each other and the same as the next element. The function `sat` then checks if this list fulfills the conditions provided in the problem. If it does, the function returns `li`; otherwise, it raises an `AssertionError`. The checker will run `assert sat(sol())` and confirm that `li` fulfills the conditions.

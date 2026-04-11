@@ -1,0 +1,15 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    prefix_sum = 0
+    for i in range(20):
+        if li[i] < prefix_sum:
+            return False
+        prefix_sum += li[i]
+    return True
+```
+
+This solution works by iterating through the list and checking if the current element is less than the sum of all the elements before it. If it is, it returns `False`, otherwise it adds the current element to the prefix sum. If the function finishes iterating and it has not returned `False`, it means all elements in the list are smaller or equal to their prefix sum, so it returns `True`.

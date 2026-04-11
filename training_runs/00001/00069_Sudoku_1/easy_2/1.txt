@@ -1,0 +1,5 @@
+def sol():
+    return "_" * 20 + "123975865" + "_" * 15 + "184725"
+
+# Testing
+print(sat(sol()))  # Output: True

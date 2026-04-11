@@ -1,0 +1,13 @@
+Here's the correct pattern for the code:
+
+```python
+from typing import List
+
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all(i + j == 5 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+The function `sol` returns an empty list, which satisfies the condition of the problem. The function `sat` checks if the list `li` satisfies the conditions: each element `i` in the list is summed with the corresponding element `j` in the list (starting from index 1), and `i` and `j` are both equal to 5. The function also checks if the length of the list `li` is equal to 1000.

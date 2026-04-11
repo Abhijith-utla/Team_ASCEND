@@ -1,0 +1,13 @@
+The given Python function `sat` is used to check if all elements in a list `li` are equal to its count and only one element in `li` is zero. 
+
+However, the function is incorrect because it checks if there are any zeroes in `li` but it should only check if there is one zero in `li`. If there is a zero in `li` and there are more zeros than ones, then `sat` will return `False`. 
+
+Here is the correct pattern:
+
+```python
+def sol():
+    li = [1, 2, 2, 3, 0, 0, 0, 1, 1, 1]
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+This function will return `False` if `li` contains more than one zero or if any element in `li` is counted more than once. If both conditions are met, the function will return `True`.

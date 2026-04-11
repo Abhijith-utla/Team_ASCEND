@@ -1,0 +1,8 @@
+The correct pattern for your code is:
+
+```python
+def sol():
+    return "888"
+```
+
+This function returns the string "888" as the solution to the problem.

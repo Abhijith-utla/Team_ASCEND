@@ -1,0 +1,2 @@
+def sol():
+    return "Yes" if sat("888") else "No"

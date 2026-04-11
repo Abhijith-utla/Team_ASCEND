@@ -1,0 +1,17 @@
+{
+  "attempt_num": 72,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:55:14.028606+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=3|checked=3/3|preview=Here is the Python code for the correct pattern: ```python def sol(): li = [0] * 20 return li ``` This code creates a...",
+  "difficulty": "hard",
+  "problem_id": "00014_Study_15_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

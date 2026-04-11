@@ -1,0 +1,17 @@
+Here is the correct pattern for the solution.
+
+```python
+def sol():
+    return 0 if sat(0) else 1
+
+def sat(n: int):
+    return n % 2 == 0
+```
+
+In the solution, if the number is even (i.e., the remainder when divided by 2 is 0), then the function `sat` returns `True`, otherwise it returns `False`. The function `sol` then returns `0` if `sat` returns `True` and `1` if `sat` returns `False`.
+
+The final checker will run:
+
+```python
+print(sol())  # Output: 0
+```

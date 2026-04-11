@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(100) if not sat([i]*100)]
+
+# checker
+assert sat(sol())

@@ -1,0 +1,16 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [i for i in range(999) if i not in range(999)]
+```
+
+The code creates a list of integers from 0 to 898, then filters out the integers that are already in the list. The result is a list of integers from 999 to 0, in descending order.
+
+This code satisfies the conditions stated in the problem. It constructs a list of integers from 999 to 0, then removes all integers that are already in the list. The list is then returned.
+
+The final checker will run:
+
+```python
+assert sat(sol())
+```

@@ -1,0 +1,13 @@
+def sol():
+    li = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+
+print(sat(li))  # Should print: True

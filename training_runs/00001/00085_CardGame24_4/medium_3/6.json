@@ -1,0 +1,16 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T18:33:09.193657+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): return \"1234\" if __name__ == \"__main__\": assert sat(sol()) This function returns the string \"1234\", which ...",
+  "difficulty": "medium",
+  "problem_id": "00085_CardGame24_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

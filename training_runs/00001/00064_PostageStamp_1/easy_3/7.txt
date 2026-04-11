@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([37, 37, 12, 87, 39]) == True
+assert sat([37, 37, 12]) == False
+assert sat([37, 37, 12, 90]) == False
+assert sat([37, 37, 12, 87, 39, 100]) == False
+assert sat([]) == False
+
+# Final checker will run the test cases
+assert sat(sol()) == True

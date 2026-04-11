@@ -1,0 +1,22 @@
+def sat(stamps: List[int], target=80, max_stamps=4):
+    if len(stamps) > max_stamps:
+        return False
+    return sum(stamps) == target
+
+def sol():
+    return []
+
+# Testing the solution
+assert sat([]) == False
+assert sat([20]) == False
+assert sat([20, 20]) == True
+assert sat([20, 20, 20]) == True
+assert sat([20, 20, 20, 20]) == False
+assert sat([20, 20, 20, 20, 20]) == False
+
+# Check the function with some random inputs
+assert sat([20, 30, 40, 50]) == False  # sum is 100, not 80
+assert sat([20, 30, 30, 30]) == True  # sum is 100, target is 80
+
+if __name__ == "__main__":
+    assert sat(sol())

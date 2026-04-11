@@ -1,0 +1,6 @@
+def sol():
+    return [34]
+
+# The function `sat` is already defined by the user. Here, it checks if the list `li` is a list with a single element `[34]`. If it is, the function returns `True`. Otherwise, it returns `False`.
+
+assert sat(sol())  # This will pass if the function returns `[34]`, otherwise it will raise an AssertionError.

@@ -1,0 +1,2 @@
+def sol():
+    return len(set(str(i) for i in range(10))) == 1

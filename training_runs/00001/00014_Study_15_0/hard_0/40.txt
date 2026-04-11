@@ -1,0 +1,10 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+```
+
+This function checks if the sum of all elements up to the ith position is 2 raised to the power of the ith position minus 1. The function uses a generator expression to calculate the sums, and the built-in all function to check if all sums are equal to the expected values.

@@ -1,0 +1,12 @@
+Here are three simple variant functions for the `sat` function:
+
+```python
+def sat(numbers: List[int]):
+    return all(numbers[i] < numbers[i+1] for i in range(len(numbers)-1))
+
+def sat(numbers: List[int]):
+    return all(numbers[i] <= numbers[i+1] for i in range(len(numbers)))
+
+def sat(numbers: List[int]):
+    return all(numbers[i] >= numbers[i+1] for i in range(len(numbers)-1))
+```

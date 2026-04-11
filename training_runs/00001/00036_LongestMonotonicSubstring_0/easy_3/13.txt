@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user.
+# It checks if all elements in the list are less than or equal to the next element.
+# If all elements are less than or equal to the next, it returns True.
+# If not, it returns False.
+# The function 'sol' does not take any arguments and returns an empty list.
+
+# The final checker will run: assert sat(sol())

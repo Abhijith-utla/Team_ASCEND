@@ -1,0 +1,17 @@
+{
+  "attempt_num": 18,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:24:13.939222+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: argument of type 'bool' is not iterable|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): return 'oo' in 'x' * 1000 and 'o' * 1000",
+  "difficulty": "medium",
+  "problem_id": "00000_Study_1_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

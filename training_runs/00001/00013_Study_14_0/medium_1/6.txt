@@ -1,0 +1,7 @@
+def sat(li: List[int]):
+    total = 0
+    for i in range(len(li)):
+        total += li[i]
+        if total > sum(li[:i]):
+            return False
+    return True

@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return [4] + [9-i for i in range(999)]
+```
+
+This function constructs and returns a list of 1000 integers such that the sum of each pair of integers equals 9. The first integer in the list is 4 and the rest are integers from 4 to 8 (exclusive). This satisfies the given condition and the function returns the list.

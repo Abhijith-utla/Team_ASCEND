@@ -1,0 +1,12 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    class Answer:
+        def __init__(self, state):
+            self.state = state
+
+    return Answer(None)
+```
+
+This solution creates a class named Answer with a constructor that initializes its state. The final answer is returned as an instance of this class.

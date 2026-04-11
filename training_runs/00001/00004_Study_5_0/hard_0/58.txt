@@ -1,0 +1,10 @@
+Sure, here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This solution uses a list comprehension to create a list of booleans. Each boolean represents whether the count of an integer in the list matches the integer itself. If all integers match their counts, the list comprehension will return a list of True values. If any integer does not match its count, the list comprehension will return a list of False values. The `all` function then checks if all values in the list are True, returning True if they are and False otherwise. This means that the list has all unique numbers from 0 to 9, inclusive.

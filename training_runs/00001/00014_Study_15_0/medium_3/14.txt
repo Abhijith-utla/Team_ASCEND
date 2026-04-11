@@ -1,0 +1,18 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return [sum(li[:i]) for i in range(20)]
+```
+
+This function constructs a list of integers by summing the first i elements of the input list li. It follows the pattern provided in the problem statement.
+
+Please note that the function `sol` doesn't return a single answer object, but a list of answers.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```
+
+This will assert that the function `sol` returns a list of 20 elements, where each element is the sum of the first i elements of the input list li (for i from 0 to 19).

@@ -1,0 +1,19 @@
+def sol():
+    return []
+
+# Test cases to ensure the correctness of the solution
+
+def test_sol():
+    assert sat([0, 0])
+    assert not sat([12, 0])
+    assert sat([6, 30])
+    assert sat([12, 30])
+    assert sat([12, 45])
+    assert sat([1, 59])
+    assert not sat([13, 0])
+    assert not sat([1, 60])
+    assert not sat([0, 61])
+    assert not sat([14, 0])
+    assert not sat([23, 59])
+
+test_sol()

@@ -1,0 +1,4 @@
+def sol():
+    return ["_"] * 9 * 9
+
+assert sat(sol())

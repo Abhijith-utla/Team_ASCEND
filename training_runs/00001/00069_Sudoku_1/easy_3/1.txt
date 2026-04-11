@@ -1,0 +1,5 @@
+def sol():
+    return "_______8_6___5_______12____2____3_68________9_1_8__4____7____25"
+
+# Asserting that the function sol satisfies the property of being a solution
+assert sat(sol())

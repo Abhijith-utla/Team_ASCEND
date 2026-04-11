@@ -1,0 +1,6 @@
+def sol():
+    li = [1] * 999 + [2]
+    li.insert(0, 4)
+    return li
+
+print(sol())

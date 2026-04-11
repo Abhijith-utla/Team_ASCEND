@@ -1,0 +1,13 @@
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+def sat(i: int) -> bool:
+    return i < (i + 1)
+
+# Testing
+assert sol() == 0
+assert sol() == 1

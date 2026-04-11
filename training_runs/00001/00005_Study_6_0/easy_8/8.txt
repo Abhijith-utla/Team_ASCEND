@@ -1,0 +1,6 @@
+def sol():
+    return 0 if sat(0) else 1
+
+# The function "sat" checks if a number is even. 
+# In the case of 0, it is even (returns True), so the function returns 0.
+# Otherwise, it's not even (returns False), so the function returns 1.

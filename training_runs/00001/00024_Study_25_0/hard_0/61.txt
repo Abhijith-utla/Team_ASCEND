@@ -1,0 +1,5 @@
+def sol():
+    return ''.join(sorted(input()))
+
+# Test
+assert sat(sol())

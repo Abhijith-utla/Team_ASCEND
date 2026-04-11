@@ -1,0 +1,6 @@
+def sol():
+    return len(set(input().split()))
+
+# Testing
+assert sat(sol(['apple', 'banana', 'apple']))
+assert not sat(sol(['apple', 'banana', 'grape']))

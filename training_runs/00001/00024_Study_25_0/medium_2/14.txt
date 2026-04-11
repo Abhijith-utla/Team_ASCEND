@@ -1,0 +1,14 @@
+Here is the solution for this problem.
+
+```python
+def sol():
+    return "".join(sorted(input()))
+```
+
+The function `sol` takes an input string and returns a string that is the sorted version of the input string. The sorted version is obtained by sorting the input string using the `sorted` function and then joining the sorted string back into a string.
+
+The function `sat` is already defined by the user and checks whether the sorted and reversed versions of the input string are equal to the 'sirnemtpuA' string.
+
+The checker will run: `assert sat(sol())`
+
+Please note that the checker will pass if the function `sol` and `sat` are correctly defined and the test case will pass.

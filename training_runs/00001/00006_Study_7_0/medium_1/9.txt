@@ -1,0 +1,12 @@
+The function `sat` is defined to check if the string `s` contains exactly 3 digits and the number 8 appears as a power of 8 at least 8 times in `s`. 
+
+The power of 8 is calculated as `8 ** 2888` which is a very large number. The count of `s` in this large number is then checked to be greater than 8 and the length of `s` is also 3.
+
+Here's the correct implementation of `sol` function:
+
+```python
+def sol():
+    return 8 ** 2888
+```
+
+The checker will verify this by running `assert sat(sol())`. If `sol()` returns the correct result, the checker will pass. If not, the checker will fail.

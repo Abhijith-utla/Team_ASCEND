@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# If the list is not sorted in ascending order, this will return False.
+# If the list is sorted in ascending order, this will return True.
+
+assert sat(sol())

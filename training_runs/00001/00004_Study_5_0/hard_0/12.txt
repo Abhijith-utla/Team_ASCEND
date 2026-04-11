@@ -1,0 +1,14 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [i for i in range(10) if 10 <= sum([li.count(i) for li in [list(range(10)) for _ in range(5)]])]
+```
+
+This solution uses list comprehension to generate a list of numbers that satisfy the conditions defined in the problem. The list comprehension counts the number of occurrences of each number in the list using the `count` method of the list object, and then checks if the sum of these counts is equal to the number itself. If it is, the number is added to the list. This process is repeated 5 times to generate 5 lists of numbers, and then the sum of these lists is computed. If the sum is greater than or equal to 10, the number is added to the list of answers.
+
+The final answer is a list of all numbers from 0 to 9 that are in the answer list.
+
+The function `sat` is already defined by the user, and its purpose is to check if the given list `li` satisfies the conditions defined in the problem. The function `

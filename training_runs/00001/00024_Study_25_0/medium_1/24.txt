@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted('trusenipM'))
+
+assert sat(sol())

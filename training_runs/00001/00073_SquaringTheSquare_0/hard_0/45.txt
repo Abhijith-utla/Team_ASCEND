@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# Test the function
+assert sat([])
+assert not sat([[0, 0, 1], [0, 0, 2], [2, 5, 1]])
+assert not sat([[0, 0, 1], [0, 0, 2], [1, 3, 2]])
+assert not sat([[0, 0, 1], [0, 0, 2], [2, 5, 2]])
+
+# Check the function with some test inputs
+assert sat([[0, 0, 1], [0, 0, 2], [1, 1, 1]])  # Valid triangle
+assert not sat([[0, 0, 1], [0, 0, 2], [2, 4, 1]])  # Invalid triangle (incorrect y-coordinate)
+assert not sat([[0, 0, 1], [0, 0, 2], [1, 3, 3]])  # Invalid triangle (side lengths are not distinct)
+assert

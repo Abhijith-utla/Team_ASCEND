@@ -1,0 +1,5 @@
+def sol():
+    s = str(int(8 ** 2888))
+    return s.count('8') == 8 and len(s) == 5
+
+print(sat(sol()))

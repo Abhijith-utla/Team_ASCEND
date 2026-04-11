@@ -1,0 +1,6 @@
+def sol():
+    return 3.1416
+
+# Test the solution
+print(sat(sol()))  # Should return True
+print(sat(sol()))  # Should return False

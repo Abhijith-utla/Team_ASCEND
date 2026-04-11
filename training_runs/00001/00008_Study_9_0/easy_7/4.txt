@@ -1,0 +1,7 @@
+def sol():
+    return "".join(chr(i) for i in range(32, 127)) == "The quick brown fox jumps over the lazy dog"
+
+def main():
+    assert sat(sol)
+
+main()

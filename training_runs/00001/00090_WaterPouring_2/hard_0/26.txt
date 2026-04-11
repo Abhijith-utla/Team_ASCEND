@@ -1,0 +1,22 @@
+def sol():
+    return [0, 0, 364]
+
+# Test cases
+def test_sol():
+    assert sol() == [0, 0, 364]
+    assert not sat([[1, 0]])
+    assert not sat([[0, 1]])
+    assert not sat([[0, 0]])
+    assert sat([[1, 1]])
+    assert sat([[2, 2]])
+    assert not sat([[3, 3]])
+    assert sat([[0, 3]])
+    assert not sat([[2, 0]])
+    assert not sat([[0, 2]])
+    assert not sat([[1, 2]])
+    assert not sat([[0, 1]])
+    assert sat([[1, 0], [1, 1]])
+    assert not sat([[0, 0]])
+    assert not sat([[2, 3]])
+    assert sat([[0, 2], [1, 0]])
+    assert not sat([[0,

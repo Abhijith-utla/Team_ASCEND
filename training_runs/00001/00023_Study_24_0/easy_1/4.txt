@@ -1,0 +1,8 @@
+def sol():
+    return [17]
+
+def test_sat():
+    assert sat(sol())
+
+if __name__ == "__main__":
+    test_sat()

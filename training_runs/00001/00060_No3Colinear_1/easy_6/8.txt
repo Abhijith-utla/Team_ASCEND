@@ -1,0 +1,4 @@
+def sol(coords: List[List[int]], side=0, num_points=0):
+    return [x1, y1]
+
+assert sat(sol(coords=[[0, 0], [1, 1], [2, 2]], side=3, num_points=2))

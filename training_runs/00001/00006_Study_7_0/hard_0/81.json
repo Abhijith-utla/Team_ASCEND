@@ -1,0 +1,16 @@
+{
+  "attempt_num": 81,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:33:55.279122+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=Your Python function definition is incorrect because it's trying to count the occurrence of a string in a number, whi...",
+  "difficulty": "hard",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

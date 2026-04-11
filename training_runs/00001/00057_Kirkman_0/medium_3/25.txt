@@ -1,0 +1,9 @@
+def sol():
+    return [[(i, j) for j in range(15)] for i in range(7)]
+
+# Testing the solution
+def test_sol():
+    assert sat(sol())
+
+# Run the tests
+test_sol()

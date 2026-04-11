@@ -1,0 +1,11 @@
+def sol():
+    answer = ["_" for _ in range(81)]
+    for i in range(9):
+        for j in range(9):
+            if i == 3 or i == 6:
+                if j == 3 or j == 6:
+                    continue
+            answer[i * 9 + j] = str(i + 1 + j // 3 * 3)
+    return answer
+
+print(sol())

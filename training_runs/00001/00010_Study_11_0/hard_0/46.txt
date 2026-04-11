@@ -1,0 +1,9 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return len(min([input() for _ in range(int(input()))])) == int(input()) == int(max([input() for _ in range(int(input()))]))
+```
+
+Explanation:
+In this solution, we first get the size of the list from the input. Then, we use a list comprehension to get the minimum, maximum and length of the list from the user. We convert all these values to strings and compare them to each other. If all values are equal and the length is also the length of the list, then it means the list is sorted in ascending order.

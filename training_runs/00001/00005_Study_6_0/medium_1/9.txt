@@ -1,0 +1,15 @@
+Here's the correct solution:
+
+```python
+def sol():
+    return 42
+
+assert sat(sol())
+```
+
+Explanation:
+The function `sat` checks if the input `i` is greater than 0 and even. In Python, we can check if a number is even by using the modulus operator (`%`). If a number is even, then `i % 2` will be 0. So, `i % 2 == 0` is true when `i` is even.
+
+The function `sol` returns the number 42.
+
+The `assert` statement is used to test if the function `sat` is correct. If it's not, the program will raise an `AssertionError`. In this case, because `sol` returns 42, the checker will pass and the program will continue to run.

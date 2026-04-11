@@ -1,0 +1,12 @@
+def sol():
+    s = input()
+    if sat(s):
+        return s
+    else:
+        return "No solution"
+
+# Test cases
+print(sol("abcdabcd"))  # "No solution"
+print(sol("abcdeabcd"))  # "No solution"
+print(sol("abcdeabc"))   # "abcdeabc"
+print(sol("abcde"))      # "abcde"

@@ -1,0 +1,4 @@
+def sol():
+    li = [random.randint(1, 10) for _ in range(11)]  # randomly generated list
+    assert sat(li)
+    return li

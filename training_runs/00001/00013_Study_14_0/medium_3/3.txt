@@ -1,0 +1,6 @@
+def sol():
+    return {
+        "answer": sum([i for i in range(10)])
+    }
+
+assert sat(sol())

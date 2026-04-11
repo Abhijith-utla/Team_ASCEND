@@ -1,0 +1,5 @@
+def sol():
+    return "not_a_string" in [1, 2, 3, 4, 5] and "not_a_string" != 1
+
+# Testing the solution
+assert sat(sol())

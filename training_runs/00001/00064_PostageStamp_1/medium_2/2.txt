@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The solution function will be implemented inside the 'sol' function
+# The solution function takes no arguments
+# The solution function returns an empty list

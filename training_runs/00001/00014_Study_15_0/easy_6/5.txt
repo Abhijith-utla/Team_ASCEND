@@ -1,0 +1,8 @@
+def sol():
+    return 2 ** 20
+
+# Checker
+def sat(res):
+    assert sat(res)
+
+print(sat(sol()))

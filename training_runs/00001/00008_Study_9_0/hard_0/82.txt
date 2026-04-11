@@ -1,0 +1,9 @@
+Sure, here is the correct code:
+
+```python
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The five boxing wizards jump quickly")
+```
+
+This code snippet checks if the first list contains the same characters as the string "The five boxing wizards jump quickly" in the same order. If it does, it returns True; otherwise, it returns False. The list `li` is a list of integers representing the positions of the characters in the string "The five boxing wizards jump quickly".

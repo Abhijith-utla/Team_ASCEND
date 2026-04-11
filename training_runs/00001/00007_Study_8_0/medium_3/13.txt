@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+def sol(ls):
+    idx1 = 1234
+    idx2 = 1235
+    value = ls[idx1]
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+This solution is based on the fact that `idx1` and `idx2` are hardcoded. If the problem statement mentions any other indices, you would need to replace `idx1` and `idx2` with those. If the `ls` array is not sorted, this solution might not work as expected.

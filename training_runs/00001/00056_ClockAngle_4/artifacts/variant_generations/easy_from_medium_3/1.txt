@@ -1,0 +1,39 @@
+The following are three different versions of the Python function "sat()" that test the core concept of rotating the clock and then calculating the angles at that point. The function takes 'hour' and 'minute' as input and returns True whether the calculated angles are 180 degrees or an angle of 360 degrees minus 180 degrees.
+
+```python
+def sat(hour: int, minute: int):
+    hour_angle = 30 * hour + minute / 2
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [180, 360 - 180]
+
+VARIANT1 = """
+def sat(hour: int, minute: int):
+    hour_angle = 30 * hour + minute / 2
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [180, 360 - 180]
+"""
+
+VARIANT2 = """
+def sat(hour: int, minute: int):
+    hour_angle = 30 * hour + minute / 1.5
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [180, 360 - 180]
+"""
+
+VARIANT3 = """
+def sat(hour: int, minute: int):
+    hour_angle = 28 * hour + minute / 1.3
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [180, 360 - 180]
+"""
+```
+
+Please note it is assumed that the `hour_angle` and `minute_angle` forms the same pattern as in the original `hour:int, minute:int` pair. 
+
+Test the code using the function like this:
+```python
+print(sat(12, 0))  # True
+print(sat(12, 30))  # True
+print(sat(12, 45))  # False
+print(sat(2, 45))  # False
+```

@@ -1,0 +1,10 @@
+Here is the Python code to solve this problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([6] + li, li)) and len(li) == 1000
+```
+
+This function checks if all the elements in the list are summed up to three and if the length of the list is 1000. If both conditions are met, the function returns True, otherwise it returns False.

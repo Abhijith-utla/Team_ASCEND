@@ -1,0 +1,19 @@
+Sure, here are the three simpler variations of the function.
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(len(li))) and all(li[i] != i for i in range(len(li))) and len(li) == 1000
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(999)) and len(li) == 1000
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(998)) and all(li[i] != i for i in range(998)) and len(li) == 999
+```

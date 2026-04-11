@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# This assertion checks that the function 'sol' returns an empty string.
+assert sat(sol())

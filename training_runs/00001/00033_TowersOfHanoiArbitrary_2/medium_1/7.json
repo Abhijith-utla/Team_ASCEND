@@ -1,0 +1,16 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T10:47:10.747874+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [] # Test case assert sat([[0, 1, 2], [3], [4, 5, 6]], [[1, 2, 3], [4, 5], [0, 6]], [[1, 2, 3], [4,...",
+  "difficulty": "medium",
+  "problem_id": "00033_TowersOfHanoiArbitrary_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

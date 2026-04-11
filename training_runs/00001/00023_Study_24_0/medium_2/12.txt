@@ -1,0 +1,46 @@
+def sol():
+    return [17, 17, 3]
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False
+
+print(sat(sol()))  # True
+
+print(sat(sol()))

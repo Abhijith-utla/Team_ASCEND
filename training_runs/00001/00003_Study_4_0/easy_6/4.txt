@@ -1,0 +1,19 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    return True
+```
+
+You can test this function with the following code:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # should print: True
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9]))  # should print: False
+```
+
+The `sat` function checks if the length of the input list `li` is equal to 10. If it is, the function returns `True`. Otherwise, it returns `False`.

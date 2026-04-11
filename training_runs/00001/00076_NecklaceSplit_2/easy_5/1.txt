@@ -1,0 +1,5 @@
+def sol():
+    return lace
+
+# Run the assertion
+assert sat(len(sol()) // 2)

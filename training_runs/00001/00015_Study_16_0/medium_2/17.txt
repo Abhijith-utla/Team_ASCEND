@@ -1,0 +1,10 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+The function `sol` returns the string '4.5abc'.
+
+The function `sat` checks if the string is '4.5abc'. It returns True if the string is '4.5abc', and False otherwise.

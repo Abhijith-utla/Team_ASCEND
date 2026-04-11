@@ -1,0 +1,24 @@
+Sure, here are three simple Python functions that use the `sat` function to test whether given expressions result in the number 24.
+
+```python
+# Variant 1
+def sat1(expr: str):
+    return sat(expr)
+
+# Variant 2
+def sat2(expr: str, nums=[3, 7, 3, 7]):
+    return sat(expr, nums)
+
+# Variant 3
+def sat3(nums=[3, 7, 3, 7]):
+    expr = "7 * (3 + 3 / 7)"
+    return sat(expr, nums)
+```
+
+You can test them with the following code:
+
+```python
+print(sat1("7 * (3 + 3 / 7)"))  # should return True
+print(sat2("7 * (3 + 3 / 7)", [3, 7, 3, 7]))  # should return True
+print(sat3([3, 7, 3, 7]))  # should return True
+```

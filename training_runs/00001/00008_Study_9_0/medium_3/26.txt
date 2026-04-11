@@ -1,0 +1,12 @@
+Your provided function `sat` has a clear mistake. 
+
+The line `return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))` is trying to compare the output of your list comprehension with the string "The quick brown fox jumps over the lazy dog".replace(" ", ""), which is the reversed order of the characters. 
+
+Here is the correct Python code:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("zygolotfjumj ercxuwb vhg oreltdq pofuqj")
+```
+
+This function `sat` takes a list of integers as input, converts each integer to a character using the `chr` function, and then checks if the resulting list is equal to the list of characters "zygolotfjumj ercxuwb vhg oreltdq pofuqj". This list is in reverse order, so it should return `True` for the input `[10

@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# Incorrect
+assert not sat([1, 2, 3, 4, 5])
+assert not sat([-2, -1, 0, 1, 2])
+assert not sat([-1, -1, -1, -1, -1])
+assert not sat([500, 499, 498, 497, 496])
+assert not sat([995, 994, 993, 992, 991])
+
+# Correct
+assert sat([1, 2, 3, 4, 5])
+assert sat([-2, -1, 0, 1, 2])
+assert sat([-1, -1, -1, -1, -1])
+assert sat([500, 499, 498, 497, 496])
+assert sat([995, 994, 993, 992, 991])

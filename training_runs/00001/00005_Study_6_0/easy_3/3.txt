@@ -1,0 +1,8 @@
+The correct pattern is:
+
+```python
+def sol():
+    return 0
+```
+
+In the above pattern, we defined a function `sol` that returns the integer `0`. The function `sat` is already defined by the user and it checks if the input is `0`. Therefore, the output of the function `sol` is `0`.

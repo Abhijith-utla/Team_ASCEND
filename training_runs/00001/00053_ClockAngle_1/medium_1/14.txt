@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The answer object is empty because we're just returning an empty list.
+# If you want to return an object, you can do something like this:
+# return {'hours': h, 'minutes': m, 'angle': abs(hour_angle - minute_angle)}

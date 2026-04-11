@@ -1,0 +1,6 @@
+def sol():
+    li = [i for i in range(999)]
+    return li
+
+# Testing the function
+assert sat(sol())

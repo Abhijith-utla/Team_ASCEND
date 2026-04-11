@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    li = [random.randint(1, 100) for _ in range(10)]  # Generate a random list of 10 integers between 1 and 100
+    li[0], li[-1] = li[-1], li[0]  # Swap the first and last elements
+    return li
+```
+
+In this solution, we generate a random list of 10 integers between 1 and 100. Then, we swap the first and last elements of the list. This ensures that the list is not strictly increasing and decreasing, but can still be sorted in ascending or descending order.

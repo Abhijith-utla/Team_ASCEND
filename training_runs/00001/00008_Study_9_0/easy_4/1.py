@@ -1,0 +1,16 @@
+def sat(li: List[str]):
+    return all(i.isdigit() for i in li)
+
+def sol():
+    return {'answer': 42}
+
+def test_sat():
+    assert sat(['1', '2', '3'])
+    assert not sat(['1', 'a', '3'])
+    assert sat([])
+    assert not sat(['1', '2'])
+
+test_sat()
+
+if __name__ == "__main__":
+    assert sat(sol())

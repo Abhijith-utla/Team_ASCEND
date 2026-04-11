@@ -1,0 +1,8 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return 'oo' in 'Hello, World!'
+```
+
+This solution returns True if there is at most one occurrence of 'oo' in the string 'Hello, World!', and False otherwise. The function `sol` checks whether 'oo' is in the string 'Hello, World!'. If it is, the function returns True, otherwise it returns False.

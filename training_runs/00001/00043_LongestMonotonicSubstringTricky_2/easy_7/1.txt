@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# The function checks if the list x satisfies the condition provided by sat
+# The condition is that the count of each character in the string s is the same for all characters in the list x, 
+# and the index of the character in the list x is greater than or equal to the index of the character in the list x + 1.
+# If these conditions are satisfied for all indices in the range from 0 to length - 2, the function returns True.
+# If these conditions are not satisfied for any indices, the function returns False.
+
+assert sat(sol())

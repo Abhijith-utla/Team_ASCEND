@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+def sol(x):
+    if sat(x):
+        return True
+    else:
+        return False
+
+assert sol() is None
+assert sol([1, 2, 3, 4]) is True
+assert sol([1, 2, 3, 5]) is False

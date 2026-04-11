@@ -1,0 +1,12 @@
+The function `sat` takes a list of strings (`ls`) as an argument and checks if the string at index 1234 is in the list at index 1235 and if it's not equal to the string at index 1235. If the condition is satisfied, the function returns `True`, otherwise it returns `False`.
+
+Here is the Python code that implements the `sat` function:
+
+```python
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+This function assumes that the list `ls` contains at least 1234 elements at index 1234 and 1235 elements at index 1235. If the lists `ls` have a different size, the function could raise an `IndexError`.
+
+Please note that the usage of `in` operator in Python is case-sensitive. Therefore, if your strings are in a case-sensitive manner, you need to ensure that the case of the strings matches in both

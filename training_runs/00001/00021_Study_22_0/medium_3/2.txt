@@ -1,0 +1,5 @@
+def sol():
+    s = 'abcde'
+    while not sat(s):
+        s = 'abcde' + chr(97 + ord('a') % 5)
+    return s

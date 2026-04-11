@@ -1,0 +1,12 @@
+Sure, the function 'sat' is defined as a test to check if a list contains 999 elements, where all elements are distinct and are in ascending order. Here is the function 'sol':
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return sorted(list(range(998)))
+
+assert sat(sol())
+```
+
+This function 'sol' simply returns a list of 998 distinct integers in ascending order. The 'assert' statement checks if the function 'sat' returns the correct result.

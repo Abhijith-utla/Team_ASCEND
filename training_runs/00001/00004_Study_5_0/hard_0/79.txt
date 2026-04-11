@@ -1,0 +1,13 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+The function `sat` takes a list of integers as input. It counts the occurrence of each integer from 0 to 9 in the list and checks if all counts are equal to the integer itself. If any count is not equal to the integer, the function returns `False`. If all counts are equal to the integer, the function returns `True`.

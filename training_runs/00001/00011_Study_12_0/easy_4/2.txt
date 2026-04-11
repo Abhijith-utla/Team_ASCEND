@@ -1,0 +1,20 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+    li = [2] * 998 + [3]
+    answer = None
+
+    while not sat(li):
+        if answer is not None:
+            raise AssertionError(f"Previous answer: {answer}, Current answer: {li}")
+        answer = li[:]
+        li[0] += 1
+
+    return answer
+```
+
+This code generates a list `li` with a length of 1000, where every element is 2 except the first one, which is 3. The `sol` function uses a while loop to increment the first element of `li` until `sat(li)` is True. If `sat(li)` is not True, the function keeps incrementing the first element of `li` until `sat(li)` becomes True. The first element that makes `sat(li)

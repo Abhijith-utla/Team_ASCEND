@@ -1,0 +1,13 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> int:
+    for i in range(20):
+        if not ((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] >= 0 and li[i] < 1000)):
+            return 0
+    return 1
+```
+
+This function checks if the list satisfies the condition for each element in the list. If any of the conditions are not met, it returns 0. Otherwise, it returns 1.

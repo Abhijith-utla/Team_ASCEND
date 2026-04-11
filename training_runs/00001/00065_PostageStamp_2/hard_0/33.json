@@ -1,0 +1,16 @@
+{
+  "attempt_num": 33,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 15)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T15:30:04.428755+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 15)|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return [] assert sat([]) assert not sat([1]) assert not sat([1, 2]) assert not sat([1, 2, 3]) assert not s...",
+  "difficulty": "hard",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

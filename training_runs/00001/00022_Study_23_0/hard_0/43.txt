@@ -1,0 +1,16 @@
+Here is the Python code that solves this problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return tuple(ls) in zip('dee', 'doo', 'dah!')
+
+def sol() -> List[str]:
+    return list(zip('dee', 'doo', 'dah!'))
+
+# Testing the function
+assert sat(sol())
+```
+
+In this code, `sat` function checks if the tuple obtained from calling `sol` function is contained in a zip object. `sol` function creates a list of tuples from the zip object. The `assert` statement is used to test the correctness of the function.

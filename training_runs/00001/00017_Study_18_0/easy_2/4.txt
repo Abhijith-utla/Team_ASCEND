@@ -1,0 +1,9 @@
+def sol():
+    return sat
+
+# You can call the function with a list of strings to validate it
+# For example:
+# print(sat(["abc", "def", "ghi"])) # returns: True
+# print(sat(["abc", "def", "ghi", "jkl"])) # returns: False
+
+# The function `sat` takes a list of strings, and returns `True` if all the strings in the list are of the same length, and have unique characters. Otherwise, it returns `False`.

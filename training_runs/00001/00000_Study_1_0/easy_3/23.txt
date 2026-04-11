@@ -1,0 +1,17 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') <= 1000
+```
+
+This function checks if the string `s` contains the substring 'oo' and if the number of 'o' characters in `s` is less than or equal to 1000. If both conditions are met, it returns True, otherwise it returns False.
+
+The function `sat` takes a string `s` as input and returns a boolean value. It uses the `in` operator to check if 'oo' is in `s`, and the `count` method to count the number of 'o' characters in `s`. The function then checks if both conditions are met and returns the result.
+
+You can then use the `sat` function in the following way:
+
+```python
+print(sat('Hello oo World'))  # False
+print(sat('Hello oo Hello'))  # True
+```

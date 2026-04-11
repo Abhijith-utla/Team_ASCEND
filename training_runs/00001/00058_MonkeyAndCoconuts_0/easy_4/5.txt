@@ -1,0 +1,15 @@
+def sol():
+    n = 99
+    while n > 0:
+        if sat(n):
+            return n
+        n -= 1
+
+# Checker
+def test():
+    assert sol() == 45
+    assert sol() == 30
+    assert sol() == 15
+    assert sol() == 0
+
+test()

@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This will not return anything since the function does not take any arguments.
+# This is valid Python code.

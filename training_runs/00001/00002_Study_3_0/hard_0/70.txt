@@ -1,0 +1,4 @@
+def sol():
+    return sorted(list(range(999)))
+
+print(sol())

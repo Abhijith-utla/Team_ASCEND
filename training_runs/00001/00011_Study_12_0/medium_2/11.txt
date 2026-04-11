@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return [4] + [0]*999
+```
+
+In this solution, we create a list starting with 4 and then append 999 0's. This is because the sum of the first element (4) and the second element (0) is 4, and the sum of the first 999 elements is 999. This creates a pattern that the remaining elements in the list add up to 1000.
+
+The function `sat` checks whether this pattern holds and returns whether it does. The final checker will run: `assert sat(sol())`.

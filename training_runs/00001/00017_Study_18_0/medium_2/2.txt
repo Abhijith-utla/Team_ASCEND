@@ -1,0 +1,10 @@
+Here is the Python code for the function sat:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+This function takes a list of strings as input, and checks if every string in the list contains unique characters. If a string contains duplicate characters, the function returns False. If all strings in the list contain unique characters, the function returns True.

@@ -1,0 +1,22 @@
+Here are three simple Python functions that test the same core concept.
+
+Variant 1:
+
+```python
+def sat(l: list):
+    return all(i in range(996) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)
+```
+
+Variant 2:
+
+```python
+def sat(l: list):
+    return all(i in range(1000) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)
+```
+
+Variant 3:
+
+```python
+def sat(l: list):
+    return all(i in range(10000) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)
+```

@@ -1,0 +1,11 @@
+def sol():
+    return len(str(1000 + 1000)) == len(str(1001 + 1000))
+
+# Test case
+assert sat(1000) == False
+assert sat(1001) == False
+assert sat(1002) == True
+assert sat(1003) == False
+
+# Checker
+assert sol()

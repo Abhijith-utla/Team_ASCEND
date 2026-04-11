@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(filter(sat, ''.join(str(8 ** i) for i in range(1819))))
+
+assert sat(sol())

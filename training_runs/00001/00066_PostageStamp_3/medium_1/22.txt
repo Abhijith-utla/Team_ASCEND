@@ -1,0 +1,12 @@
+def sol():
+    return [19]
+
+print(sat([19]))  # True
+print(sat([19, 19]))  # False
+print(sat([19, 14]))  # False
+print(sat([19, 14, 14]))  # False
+print(sat([19, 14, 14, 81]))  # False
+print(sat([19, 14, 81, 1]))  # False
+print(sat([19, 14, 81]))  # True
+print(sat([19, 14, 81, 1, 1]))  # False
+print(sat([19, 14, 81, 1, 1, 1]))  # False

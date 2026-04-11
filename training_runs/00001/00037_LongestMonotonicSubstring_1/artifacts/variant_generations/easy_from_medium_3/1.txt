@@ -1,0 +1,19 @@
+Here are three variants that test the same core concept:
+
+VARIANT1:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i+1][j] for j in range(len(x[0])) for i in range(len(x)-1))
+```
+
+VARIANT2:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i][j + 1] for j in range(len(x[0]) - 1) for i in range(len(x)))
+```
+
+VARIANT3:
+```python
+def sat(x):
+    return all(x[i][j] <= x[i][(j+1)%len(x[0])] for j in range(len(x[0])) for i in range(len(x)))
+```

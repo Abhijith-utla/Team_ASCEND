@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:18:28.276801+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: can only concatenate list (not \"bool\") to list|parse=fence=python,preamble=1,found_sol=1,candidates=3|checked=3/3|preview=Your function `sat` should return a single answer object. If the list `li` is not a list with length 1000 or if it do...",
+  "difficulty": "medium",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

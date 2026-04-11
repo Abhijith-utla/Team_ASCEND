@@ -1,0 +1,5 @@
+def sol():
+    return "123.456"
+
+# The function 'sat' checks if the string '123.456' is equal to the result of subtracting 3.1415 from the given number. If it is, the function returns 'True', otherwise it returns 'False'.
+# The function 'sol' returns the string '123.456' as the result.

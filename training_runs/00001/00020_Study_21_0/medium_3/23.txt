@@ -1,0 +1,14 @@
+Here is the solution for the Python problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+```
+
+Explanation:
+
+The `sat` function is a function that checks whether a list contains exactly three unique elements. The `sol` function returns a list with three unique elements. The `assert` statement is used to check if `sat(sol())` is True, meaning that the list `sol()` is a valid solution to the problem.

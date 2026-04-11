@@ -1,0 +1,33 @@
+Here's a simple programming puzzle with three variants that test the same core concept:
+
+VARIANT1:
+```python
+def sat(stamps: List[int], target=19, max_stamps=2, options=[19, 14, 81]):
+    unique_stamps = set(stamps)
+    for s in unique_stamps:
+        if s not in options:
+            return False
+    return len(unique_stamps) <= max_stamps and sum(stamps) == target
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], target=19):
+    unique_stamps = set(stamps)
+    for s in unique_stamps:
+        if s not in [19, 14, 81]:
+            return False
+    return len(unique_stamps) <= 2 and sum(stamps) == target
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=19):
+    unique_stamps = set(stamps)
+    for s in unique_stamps:
+        if (s not in [19, 14, 81] and s != target):
+            return False
+    return len(unique_stamps) <= 1 and sum(stamps) == target
+```
+
+Each function takes a list of stamps, a target sum, a maximum number of unique stamps, and a list of options. It returns True if the list of stamps contains no elements not in the options list and if the number of unique stamps is less than or equal to the maximum and if the sum of the stamps equals the target. The second and third variants modify the second function to not allow stamps that are not either 19, 14, or 81.

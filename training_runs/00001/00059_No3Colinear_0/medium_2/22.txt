@@ -1,0 +1,19 @@
+Here is the solution:
+
+```python
+from typing import List, Tuple
+
+def sol():
+    return [], 10, 20
+
+if __name__ == "__main__":
+    coords: List[Tuple[int, int]] = []
+    side, num_points = 10, 20
+    assert sat(coords, side, num_points)
+```
+
+In the code above, we first define a function `sol` that doesn't take any arguments. This function does not return anything, so the answer is `()`. We then assign `side` as `10` and `num_points` as `20` to these variables. Finally, we assert that the function `sat` is correct with `coords`, `side`, and `num_points`.
+
+Please note that this is an incorrect solution. The function `sat` has a logical error in the if condition. In the given problem, the function `sat` should return True if the number of coordinates is greater than or equal to `num_points`. However, the function `sat` is returning `False`.
+
+Here is

@@ -1,0 +1,4 @@
+def sol():
+    return "print(\"Hello, world!\")"
+
+assert sat(sol())

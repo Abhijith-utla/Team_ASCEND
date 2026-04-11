@@ -1,0 +1,15 @@
+The correct pattern for the solution to this problem is as follows:
+
+```python
+def sol(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "".join(e for e in "The five boxing wizards jump quickly" if e.isalnum()))
+```
+
+In this solution, we use the `isalnum()` method which returns `True` if all characters in the string are alphanumeric (either alphabets or numbers). This method returns `False` if any character is not alphanumeric.
+
+The `join()` method combines all the elements of an iterable into a string. In this case, we use it to filter out all the non-alphanumeric characters from the string "The five boxing wizards jump quickly".
+
+Then, we use `ord()` to get the ASCII value of a character.
+
+The function `sol(li: List[int])` will return `True` if `li` is a list of ASCII values of the alphanumeric characters of "The five boxing wizards jump quickly", and `False

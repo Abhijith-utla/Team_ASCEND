@@ -1,0 +1,18 @@
+VARIANT1:
+```python
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrrrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[:len(lace) // 2] == 'r' * (2 * n)
+```
+
+VARIANT2:
+```python
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrrrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[:len(lace) // 2] == 'rb' * (2 * n)
+```
+
+VARIANT3:
+```python
+def sat(n: int, lace="bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrbrrrrbbbbbbrbrrrrbbrbbbbbrrrbrbbr"):
+    return lace[:len(lace) // 2] == 'b' * (2 * n)
+```
+The `lace` parameter in the function takes a string as input and checks if the first half of the string is equal to the string 'r' repeated twice the value of `n`. The function is designed to return `True` if the first half matches 'r' repeated twice `n` times, and `False` otherwise.

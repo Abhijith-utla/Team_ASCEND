@@ -1,0 +1,19 @@
+VARIANT1:
+```python
+def sat(stamps: List[int]):
+    return len(stamps) <= 3 and sum(stamps) == 18
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], max_stamps=3):
+    return len(stamps) <= max_stamps and sum(stamps) == 43
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=3, max_stamps=3, options=[18, 1, 43, 81]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+```

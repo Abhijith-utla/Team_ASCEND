@@ -1,0 +1,5 @@
+def sol():
+    li = [random.randint(0, 1000) for _ in range(20)]
+    while not sat(li):
+        li = [random.randint(0, 1000) for _ in range(20)]
+    return li

@@ -1,0 +1,5 @@
+def sol():
+    li = [1, 2, 3, 4]
+    return li[0] == li[1] and li[2] != li[3]
+
+assert sat(sol())

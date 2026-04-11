@@ -1,0 +1,14 @@
+def sol():
+    return [1, 0, 2, 3, 2, 5, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print True
+
+def sol():
+    return [1, 0, 2, 3, 2, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print False
+
+def sol():
+    return [1, 0, 2, 3, 2, 5, 6, 7, 6, 9, 8, 7, 4, 4]
+
+print(sat(sol()))  # Should print True

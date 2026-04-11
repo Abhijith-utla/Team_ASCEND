@@ -1,0 +1,28 @@
+Here is a solution to the given problem.
+
+```python
+def sol():
+    def sat(ls, idx1=None, idx2=None, value=None):
+        if idx1 is None or idx2 is None or value is None:
+            return False  # If any of the indices or value is None, it cannot be correct
+        return ls[idx1] in ls[idx2] and ls[idx1] != value
+    return sat
+```
+
+You can use the function by calling `sol()`, which returns a function that you can use to construct an answer. For example, if you call `sol()`, you get back a function that you can use to create an answer:
+
+```python
+answer_func = sol()
+```
+
+You can then use this answer function to create an answer:
+
+```python
+answer = answer_func()
+```
+
+After that, you can check whether the answer is correct with the `assert` statement:
+
+```python
+assert answer(1, 2, 3)  # This will assert that answer() returns True
+```

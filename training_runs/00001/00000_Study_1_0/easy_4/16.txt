@@ -1,0 +1,20 @@
+Here is the Python code for the function `sol` that satisfies the conditions:
+
+```python
+def sol():
+    s = 'oooooooooo'
+    return s
+```
+
+The function `sol` constructs a string `s` that contains exactly ten 'o's. It then returns the constructed string.
+
+To test this function, you can use the following code:
+
+```python
+def test_sol():
+    assert sat(sol())
+
+test_sol()
+```
+
+This test function `test_sol` uses the Python built-in `assert` statement to verify that the string `s` returned by `sol` satisfies the conditions specified in `sat`. If `s` does not satisfy the conditions, the `assert` statement will raise an `AssertionError`.

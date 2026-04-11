@@ -1,0 +1,13 @@
+Here is the correct Python code for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for i in range(len(li)):
+        if sum(li[j] for j in range(i+1, len(li))) != li[i]:
+            return False
+    return True
+```
+
+This function works by iterating over the list `li` and checking if each element `li[i]` is equal to the sum of the elements in the list `li[j]` for `j` in the range `(i+1, len(li))`. If it finds any pair of `i` and `j` that does not meet this condition, it returns `False`. If it goes through the entire list without finding any issues, it returns `True`.

@@ -1,0 +1,16 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    i = 1234567890
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) < len(str(i + 1001))
+
+print(sol())
+```
+
+This code creates a loop that increments the input `i` until `sat(i)` is true. The `sat(i)` function checks if the length of the string representation of `i + 1000` is less than the length of `i + 1001`. The `sol()` function demonstrates the correct usage of this function.

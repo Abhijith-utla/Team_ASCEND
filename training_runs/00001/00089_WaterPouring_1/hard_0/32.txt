@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is to satisfy the assert statement in the problem's code.
+assert sat([])

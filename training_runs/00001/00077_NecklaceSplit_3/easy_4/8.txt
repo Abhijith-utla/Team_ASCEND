@@ -1,0 +1,9 @@
+def sol():
+    return {"n": 0, "lace": "bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrrrrrrbbbbbbrrrrbbrbbbbbbbbbr" * 2}
+
+# Test case
+assert sat(sol()["n"])
+assert sat(sol()["lace"])
+!python
+assert sol()["n"] == 0
+assert sol()["lace"] == "bbbbrrbbbbrrbbrrrbbrrbbrrrrrrrbrbrbbbrrbrrrbbbbbbbbbrbrbrbbbbbbbrrbbrbbrbrrbrrbbbrrrrrbrrbbrrrbbrbrrrbbbbrbbbrrrrbrbrrbbrbrbrbbrrbrrrrrrrrbbbbbbrrrrbbrbbbbbbbbbr" * 2

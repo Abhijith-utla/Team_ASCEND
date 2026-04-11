@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# You can then use the sol function with the correct values to assert the correctness of the program.
+assert sat(sol())

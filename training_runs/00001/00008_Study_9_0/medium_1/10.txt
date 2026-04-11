@@ -1,0 +1,8 @@
+The code you provided is incorrect because it's comparing two lists of characters, but it should be comparing two lists of integers. Here is the correct code:
+
+```python
+def sat(li: List[int]):
+    return sum(1 for x, y in zip(li, [ord(i) for i in "The five boxing wizards jump quickly"]) if x != y) == 0
+```
+
+This function takes a list of integers as input. It first converts the string "The five boxing wizards jump quickly" to a list of integers by using the `ord` function. Then, it compares the list `li` with the list of integers. If the lists are the same, the function returns `True`; otherwise, it returns `False`. The `zip` function is used to iterate over the two lists simultaneously. The `sum` function is used to count the number of differences between the two lists. If all the differences are 0, the function returns `True`; otherwise, it returns `False`.

@@ -1,0 +1,10 @@
+Here is the solution for the given problem:
+
+```python
+def sol():
+    return "8388388"
+```
+
+This function returns the string "8388388" as the solution.
+
+This solution is based on the fact that the number 8 raised to the power of 2888 is 8388388. The square root of this number is also 8388388. Therefore, if we count the number of occurrences of the string "8388388" in the string "8388388", the result should be greater than 8. This is because the string "8388388" is repeated exactly 8 times in the string "8388388". The length of the string is also 3, as the string "838" repeated 3 times equals "8383838".

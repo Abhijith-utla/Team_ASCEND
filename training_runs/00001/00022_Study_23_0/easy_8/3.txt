@@ -1,0 +1,10 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    return 'dee'
+
+assert sat(sol())
+```
+
+This program defines a function named `sat` which takes an answer as input and checks if the answer starts with 'dee'. If the answer is 'dee', the function returns `True`, otherwise it returns `False`. The `assert` statement is used to check if the function `sat` is working correctly.

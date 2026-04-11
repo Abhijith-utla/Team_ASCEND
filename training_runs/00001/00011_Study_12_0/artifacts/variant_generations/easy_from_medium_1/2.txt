@@ -1,0 +1,21 @@
+Below are the three simple variants of the given Python function named 'sat':
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip([5] + li, li)) and len(li) == 1000
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([6] + li, li)) and len(li) == 1000
+```
+
+In each variant, the function checks if the sum of each element in the list is 1, 2, or 3. Additionally, it checks that the list contains exactly 1000 elements. The `zip` function is used to pair each element with its corresponding element in the list, and the `all` function checks if all pairs satisfy the condition.

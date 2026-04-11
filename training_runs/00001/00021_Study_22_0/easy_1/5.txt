@@ -1,0 +1,11 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    s = input()
+    while not sat(s):
+        s = input()
+    return s
+```
+
+This function will prompt the user to input a string and keep asking for input until the string is of length 10 and contains only alphabetic characters. The input string is then returned.

@@ -1,0 +1,5 @@
+def sol():
+    return "1-8*+/6"
+
+# Testing the function
+assert sat(sol())

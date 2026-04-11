@@ -1,0 +1,6 @@
+def sol():
+    l = [x for x in range(996)]
+    return l
+
+# Checker
+assert sat(sol())

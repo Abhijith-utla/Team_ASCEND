@@ -1,0 +1,5 @@
+def sol():
+    return sorted(s) == sorted('uipenmtrsA') and s == s[::-1]
+
+# Test the function
+assert sat(sol())

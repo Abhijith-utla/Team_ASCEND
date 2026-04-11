@@ -1,0 +1,8 @@
+def sol():
+    arr = [1, 2, 3, 4]
+    arr[arr[0]] = arr[arr[1]]
+    arr[arr[2]] = arr[arr[3]]
+    return arr
+
+# Testing the solution
+assert sat(sol())

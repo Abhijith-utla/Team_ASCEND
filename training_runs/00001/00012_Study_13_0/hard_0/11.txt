@@ -1,0 +1,4 @@
+def sol():
+    return {"answer": 3.1415}
+
+# Checker will run: assert sat(sol()["answer"])

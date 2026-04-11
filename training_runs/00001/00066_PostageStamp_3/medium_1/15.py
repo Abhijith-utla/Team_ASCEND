@@ -1,0 +1,23 @@
+def sat(stamps: List[int], target=19, max_stamps=2, options=[19, 14, 81]):
+    for s in stamps:
+        if s not in options:
+            return False
+    return (len(stamps) <= max_stamps and sum(stamps) == target)
+
+def sol():
+    return []
+
+# Test cases
+print(sat([19]))  # False, as the stamps list does not contain 19
+print(sat([19, 19]))  # False, as the stamps list contains more than one 19 stamp
+print(sat([19, 19, 14]))  # False, as the stamps sum to 33, not 22
+print(sat([19, 19, 14, 81]))  # False, as the stamps list is not of max length 2
+print(sat([19, 19, 14, 81], max_stamps=1))  # False, as the stamps list is not of max length 1
+print(sat([19, 19, 14, 81], options=[14, 81]))  # False, as the stamps list contains 14 and 81
+
+# Correct answer
+def sol():
+    return [19, 19, 14, 81]
+
+if __name__ == "__main__":
+    assert sat(sol())

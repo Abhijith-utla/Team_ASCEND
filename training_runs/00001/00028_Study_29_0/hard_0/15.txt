@@ -1,0 +1,8 @@
+Here is the Python code for the function sol that constructs and returns a single answer value.
+
+```python
+def sol():
+    return [i*i for i in range(1000) if abs(i * i - (995 - 2*i)**2) >= 10]
+```
+
+In this function, we generate a list of squares of integers less than 1000. We then iterate over each i in this list. For each i, we calculate the corresponding j (which is 995 - 2*i) and check if the difference of squares is greater than or equal to 10. If so, we add i*i to the list. The function then returns this list.

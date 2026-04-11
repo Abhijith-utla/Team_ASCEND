@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 'x' * 100 + 'o' * 101 + 'xx' * 98
+```
+
+This function creates a string with 'x's, 'o's, and 'xx's alternating. The condition is that the total number of 'x's and 'o's must be 100 and 101 respectively and the total number of 'xx's must be 98.

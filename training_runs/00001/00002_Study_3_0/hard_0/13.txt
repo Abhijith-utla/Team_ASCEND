@@ -1,0 +1,14 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+    return sat
+```
+
+The `sol` function returns the `sat` function. The `sat` function checks if a list is sorted in ascending order and all elements are unique.
+
+Please note that the `sat` function is not an actual answer, but it is designed to be a function that the checker can use to assert whether the input satisfies certain conditions. The checker then runs `sat` on the output of the `sol` function, which is expected to return a function that performs the same checks as the `sat` function.

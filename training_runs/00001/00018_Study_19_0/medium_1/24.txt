@@ -1,0 +1,8 @@
+Here's the correct pattern:
+
+```python
+def sol():
+    return 10  # This is a placeholder, replace it with your actual solution
+```
+
+This function should return the number 10. If you replace the placeholder with your actual solution, it should return the correct answer.

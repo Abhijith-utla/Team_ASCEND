@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return 3.1416
+```
+
+This function will always return the number 3.1416, which satisfies the condition defined in the sat function.

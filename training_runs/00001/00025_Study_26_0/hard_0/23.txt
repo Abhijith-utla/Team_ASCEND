@@ -1,0 +1,5 @@
+def sol():
+    return [str(i) for i in range(10)]
+
+# Testing the solution
+assert sat(sol())

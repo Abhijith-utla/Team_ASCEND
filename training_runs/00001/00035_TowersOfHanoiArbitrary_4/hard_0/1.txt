@@ -1,0 +1,16 @@
+The provided Python function `sat` is a correct solution to the puzzle. It takes two lists of lists as input, where each inner list represents a stack of numbers and the function checks if the state of the stacks after each move is the same as the target state.
+
+Here is the correct Python code for the function `sol`:
+
+```python
+def sol(moves: List[List[int]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 6], [0, 1], [5]]):
+    state = [s[:] for s in source]
+
+    for [i, j] in moves:
+        state[j].append(state[i].pop())
+        assert state[j] == sorted(state[j])
+
+    return state == target
+```
+
+The function `sol` takes two lists of lists as input, where each inner list represents a stack of numbers. It then creates a copy of the source state and performs the moves. After all moves have been made, it checks if the state of the stacks is the same

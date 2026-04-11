@@ -1,0 +1,14 @@
+Sure, I'll provide a solution for this. Here is the correct pattern:
+
+```python
+def sol():
+    return [chr(i) for i in range(32, 127)] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function will return True if the list of ASCII characters from 32 to 126 (inclusive) is equal to the list of characters in "The quick brown fox jumps over the lazy dog" without spaces, and False otherwise.
+
+The reason we're using `range(32, 127)` instead of `range(ord('A'), ord('~'))` is because the last character in the ASCII table is '~', not 'Z'. The ASCII table is ASCII, and '~' is the last character.
+
+Note that `ord` is a built-in function in Python that returns the ASCII value of a character. In this case, we're using it to get the ASCII values for all the characters in the ASCII table, including the last character.
+
+And finally, remember that we

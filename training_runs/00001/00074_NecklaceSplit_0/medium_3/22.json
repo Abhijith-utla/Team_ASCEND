@@ -1,0 +1,17 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 4
+  },
+  "created_at": "2026-04-11T17:00:36.726203+00:00",
+  "diagnostic": "reason=top_level_sol_defs:4|parse=fence=none,preamble=0,found_sol=1,candidates=17|checked=17/17|preview=def sol(): return \"\" # Incorrect patterns def sol(n): lace = \"bbbbbbbbbbbbbbbbb\" sub = lace[n: n + len(lace) // 2] re...",
+  "difficulty": "medium",
+  "problem_id": "00074_NecklaceSplit_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

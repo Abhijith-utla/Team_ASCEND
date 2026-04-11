@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return "<answer>"
+```
+
+In the incorrect pattern, the function "sat" is incorrect because it does not return anything. It also doesn't accept any arguments and only uses the default arguments which are set to 1234 and 1235.
+
+This function is used to check if a given list contains a substring and is not the same as the substring. If it does, it returns True. Otherwise, it returns False.

@@ -1,0 +1,8 @@
+Here is a Python function named "sol" that returns an answer object:
+
+```python
+def sol():
+    return '0123456789ABCDEF'
+```
+
+This function returns a string that consists of the characters 0-9 and A-F, which are the ASCII characters used in printable characters. The answer object is a string that contains the sequence of characters that could be printed by the printer.

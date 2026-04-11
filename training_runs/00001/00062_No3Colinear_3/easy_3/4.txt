@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This code will always return an empty list because the function sat(coords) never returns True.
+# The checker will fail due to an assertion error.

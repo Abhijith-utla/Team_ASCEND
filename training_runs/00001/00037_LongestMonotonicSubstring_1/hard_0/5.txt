@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(193) if i % 2 == 0 and (i + 1) % 2 == 1 and ord(s[i]) > ord(s[i + 1])]
+
+print(sol())

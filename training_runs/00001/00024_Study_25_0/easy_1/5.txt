@@ -1,0 +1,2 @@
+def sol():
+    return ''.join(sorted(str(s))) == ''.join(sorted('trusenipM')) and str(s) == str(s)[::-1]

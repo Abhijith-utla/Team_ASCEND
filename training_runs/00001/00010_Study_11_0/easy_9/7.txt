@@ -1,0 +1,23 @@
+The function `sat` checks if all strings in a list have the same number of unique characters. If the list is empty, the function returns `True`. Otherwise, it checks if all strings in the list have the same number of unique characters by converting each string to a set (which removes any duplicate characters) and comparing the length of the set to the length of the first string in the list. If all strings have the same number of unique characters, the function returns `True`; otherwise, it returns `False`.
+
+Here is the Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+To test this function, you can use the following code:
+
+```python
+def test_sol():
+    assert sol([])
+    assert sol(["abc"])
+    assert not sol(["abc", "abcd"])
+    assert sol(["abc", "bcd"])
+    assert

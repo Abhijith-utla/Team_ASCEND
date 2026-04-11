@@ -1,0 +1,6 @@
+def sol():
+    return {"hands": [0, 0]}
+
+# Test case
+assert sat(sol()["hands"])
+assert not sat(sol()["hands"])

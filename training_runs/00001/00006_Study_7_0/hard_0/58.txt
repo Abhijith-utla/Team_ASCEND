@@ -1,0 +1,6 @@
+Sure, here is the Python code to solve this problem.
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```

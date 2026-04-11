@@ -1,0 +1,5 @@
+```python
+def sat(s: str) -> bool:
+    return str(2888 ** 8).count(s) > 8 and len(s) == 3
+```
+This Python function named sat takes a string as an argument and returns True if the string can be found at least 9 times in the decimal representation of 2888 raised to the power of 8 and the length of the string is 3.

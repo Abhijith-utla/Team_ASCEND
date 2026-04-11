@@ -1,0 +1,7 @@
+def sol():
+    def sat(li: List[int]):
+        for i in range(len(li)):
+            if li[i] != li[0]:
+                return False
+        return True
+    return sat

@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+```
+
+This function counts the frequency of each number from 0 to 9 in the list and checks if all frequencies are equal to the count of 0 and the count of 1. If all conditions are met, the function returns True, otherwise it returns False.

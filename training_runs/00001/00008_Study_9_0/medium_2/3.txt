@@ -1,0 +1,12 @@
+Here's the correct pattern for the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list("The five boxing wizards jump quickly".split(" "))
+```
+
+In this function, we first convert the list to a sorted list and then compare it with the list of words. If the two lists are equal, it means that the original list was sorted correctly. If they are not equal, it means that the original list was not sorted correctly.
+
+The function `sorted` creates a new list that is a sorted version of the original list. The `split` function is used to split the string "The five boxing wizards jump quickly" into a list of words. The `list` function is used to convert this list of words into a list of integers.

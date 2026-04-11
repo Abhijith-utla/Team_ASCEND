@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user.
+# We need to define the 'sol' function to satisfy the given condition.
+# Since the 'sol' function does not take any arguments, we can return an empty list.

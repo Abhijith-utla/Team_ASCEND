@@ -1,0 +1,6 @@
+def sol():
+    return [i for i in range(1000) if all(abs(i * i - j * j) < 10 for j in range(1000) if i != j)]
+
+# This is the function that the checker will use to verify the solution.
+def sat(l: List[int]):
+    return all(i in range(1000) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j) and len(set(l)) > 995

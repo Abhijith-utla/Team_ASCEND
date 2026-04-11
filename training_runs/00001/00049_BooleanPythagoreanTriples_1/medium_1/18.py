@@ -1,0 +1,20 @@
+def sat(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 7824
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+
+def sol():
+    return []
+
+# Add your code here to generate a list of 7824 colors from set {0,1}.
+# The colors can be represented as a list of 1s and 0s.
+# For instance, you could randomly generate the list as:
+# colors = [random.randint(0, 1) for _ in range(7824)]
+# Then call the function sat and pass the colors list as an argument.
+# The function will return True if the colors satisfy the condition and False otherwise.
+# For example, you could print the result like this:
+# print(sat(colors))
+# Note that you need to add the code to generate the list of colors in the sol function.
+
+if __name__ == "__main__":
+    assert sat(sol())

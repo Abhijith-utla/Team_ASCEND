@@ -1,0 +1,36 @@
+def sol():
+    return []
+
+# Test case 1
+# Single point on the edge
+coords = [(0, 0)]
+assert sat(coords)
+
+# Multiple points on the edge
+coords = [(0, 0), (0, 1), (1, 0)]
+assert sat(coords)
+
+# Single point outside
+coords = [(1, 1)]
+assert not sat(coords)
+
+# Multiple points outside
+coords = [(1, 1), (2, 2)]
+assert not sat(coords)
+
+# Single point inside
+coords = [(1, 0)]
+assert not sat(coords)
+
+# Multiple points inside
+coords = [(1, 0), (0, 1)]
+assert not sat(coords)
+
+# Test case 2
+# Complex shape
+coords = [(0, 0), (1, 0), (1, 1), (0, 1)]
+assert sat(coords)
+
+# Test case 3
+# Single point on the center
+co

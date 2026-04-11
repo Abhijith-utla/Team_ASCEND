@@ -1,0 +1,10 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return ''.join(list(filter(lambda x: x % 2 == 0, range(26))))
+
+assert sat(sol())
+```
+
+In this code, the function `sol` is defined to return the first half of the lowercase alphabet. The `filter` function is used to select the characters of the string that are even-numbered (i.e., characters at even indices in the string), and the `range(26)` function generates the indices of the alphabet. The `lambda` function is used to select only the even-numbered indices and the `join` function is used to combine the selected characters into a string. The `assert` statement is used to check that the string `sol` returns is a valid solution to the problem.

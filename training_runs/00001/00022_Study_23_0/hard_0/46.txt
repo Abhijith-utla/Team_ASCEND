@@ -1,0 +1,5 @@
+def sol():
+    return tuple(["dee", "doo", "dah!"])
+
+# Testing the function
+assert sat(sol())

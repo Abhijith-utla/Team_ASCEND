@@ -1,0 +1,10 @@
+def sol():
+    return {
+        'answer': [i for i in range(10)]
+    }
+
+# The function 'sat' checks if all numbers in the list 'li' are 10 units apart.
+# The solution is a list of numbers from 0 to 9.
+
+# To run the assertions, you can uncomment the following lines:
+# assert sat(sol()['answer'])

@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return 'yyyyyyyyyyy'
+```
+
+In the incorrect pattern, the function `sol` is trying to return a string with a total count of 'yy' equal to 100, 'y' equal to 101, and 'yo' equal to 98, but the total count is incorrect.

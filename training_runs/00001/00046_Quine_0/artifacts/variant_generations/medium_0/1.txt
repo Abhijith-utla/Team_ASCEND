@@ -1,0 +1,19 @@
+Here are the three simpler variants of the original puzzle:
+
+VARIANT1:
+```python
+def sat(quine):
+    return eval(quine) == quine
+```
+
+VARIANT2:
+```python
+def sat(quine):
+    return eval("print(" + quine + ")")
+```
+
+VARIANT3:
+```python
+def sat(quine):
+    return eval(quine + "()")
+```

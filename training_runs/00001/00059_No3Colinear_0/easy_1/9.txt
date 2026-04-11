@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is a placeholder for the solution. Replace it with the actual solution.
+!python

@@ -1,0 +1,6 @@
+def sol():
+    li = [4] + [0]*998
+    return li
+
+# This will make sure the function sat(li) returns a list of length 1000 and all elements are equal to 4
+assert sat(li)

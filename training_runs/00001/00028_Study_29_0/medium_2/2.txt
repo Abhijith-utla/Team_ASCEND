@@ -1,0 +1,10 @@
+Here is a Python function that uses a list comprehension to construct and return a single answer object. This function checks if all elements in the list are squares of integers with a difference less than 10.
+
+```python
+def sol():
+    return {
+        "answer": [i for i in range(1000) for j in range(i)]
+    }
+```
+
+This code generates a list of all integers between 0 and 999 (inclusive). The outer loop selects an element from this list, and the inner loop selects a different element from the same list. Then it checks if the square of the first element is the square of the second element minus some small amount. If this condition is true for all pairs of elements, the function returns a list containing the numbers 0 to 999.

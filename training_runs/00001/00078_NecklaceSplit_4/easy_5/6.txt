@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The function is always returning 0 because the requirement of the problem is not clear. The initial condition in the function definition can't be solved without more information.

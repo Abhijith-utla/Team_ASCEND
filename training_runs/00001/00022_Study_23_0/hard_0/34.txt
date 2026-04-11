@@ -1,0 +1,8 @@
+Here is the correct Python code for the solution:
+
+```python
+def sol():
+    return tuple(ls) == ('do', 'ea', 'dah')
+```
+
+In this solution, `ls` is a list of strings, and we're checking if this list is a valid answer to the problem. The function `sat` checks if the input list is a valid answer to the problem by checking if the list is the same as a tuple of strings 'do', 'ea', 'dah'. If it is, the function returns `True`; otherwise, it returns `False`.

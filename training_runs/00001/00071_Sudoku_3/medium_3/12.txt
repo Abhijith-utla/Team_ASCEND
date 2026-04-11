@@ -1,0 +1,6 @@
+def sol():
+    answer = "42_7_4_9__49_626_8_3_3_7_65_4_5_3_1_1_8_7_7_____7_____"
+    assert sat(answer)
+    return answer
+
+print(sol())

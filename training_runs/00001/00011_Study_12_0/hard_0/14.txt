@@ -1,0 +1,18 @@
+The function `sat` checks if a list `li` has a specific property: the sum of each element and its position in the list is 9. This property is verified by a generator expression `(i + j == 9 for i, j in zip([4] + li, li))`, which returns a generator that yields True for pairs of elements in the list `li` if their sum is 9, and False otherwise. The function `all` then checks that all these pairs are True.
+
+If the length of the list `li` is not 1000, the function `sat` returns False.
+
+Here is the Python code that implements this:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+You can test the function `sat` with a few examples:
+
+```python
+print(sat([4] + [i for i in range(999)]))  # Expected: False
+print(sat([4] + [i for

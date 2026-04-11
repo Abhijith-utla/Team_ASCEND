@@ -1,0 +1,8 @@
+The correct pattern is:
+
+```python
+def sol():
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+This function `sol` takes a list of strings `ls` as an argument, checks if all elements in the list are the same length (`len(ls)`), and returns `True` if they are, `False` otherwise. The `min` and `max` functions are used to find the smallest and largest elements in the list, respectively. If the smallest and largest elements are the same, `True` is returned, otherwise `False` is returned.

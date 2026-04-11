@@ -1,0 +1,20 @@
+Here is the correct Python solution:
+
+```python
+def sat(s: str):
+    return 'oo' not in s and 'o' in s and s.count('o') == 1000
+```
+
+This function checks if the string `s` satisfies the conditions:
+1. 'oo' is not in `s`
+2. 'o' is in `s`
+3. The number of 'o's in `s` is exactly 1000
+
+You can use this function like so:
+
+```python
+def sol():
+    return sat('ooo' * 1000)
+```
+
+This function will return True if the string satisfies the conditions and False otherwise.

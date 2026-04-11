@@ -1,0 +1,21 @@
+Here is the solution:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+The `sat` function checks if the sum of `i` and 1000 is greater than the sum of `i` and 1001. If not, the function continues to increment `i` until it satisfies the condition.
+
+The final answer is returned by the `sol` function.
+
+Here is the assert statement to verify the solution:
+
+```python
+assert sat(sol())
+```
+
+This will pass if `sol` returns the correct answer, and fail if it returns a different answer.

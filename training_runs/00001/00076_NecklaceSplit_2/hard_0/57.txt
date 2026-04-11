@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The correct answer is 0, as there are no substrings of length 0 in the lace string.

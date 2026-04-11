@@ -1,0 +1,10 @@
+The correct Python code to solve this problem is:
+
+```python
+def sol():
+    return sorted([i+1 for i in range(998)])
+```
+
+This function creates a list of integers from 1 to 998 and sorts it, then returns the sorted list. This ensures that the list is in ascending order and each element is unique.
+
+The checker will test the correctness of the solution by running the code and comparing the result with the expected answer.

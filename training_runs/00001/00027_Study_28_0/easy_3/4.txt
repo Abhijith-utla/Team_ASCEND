@@ -1,0 +1,4 @@
+def sol():
+    import random
+    li = [random.randint(1, 500) for _ in range(500)]
+    return li

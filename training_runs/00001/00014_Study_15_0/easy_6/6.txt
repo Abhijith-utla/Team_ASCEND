@@ -1,0 +1,9 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    li = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288]
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+```
+
+This code defines a function `sol` which generates a list `li` of 20 integers and checks if the sum of every pair `(x, y)` where `x` is an integer between 0 and 19 and `y` is in the first `x + 1` elements of `li` is equal to 2 raised to the power of `x` for all `x`. If the condition is not met for any `x`

@@ -1,0 +1,14 @@
+Here is the Python code to solve the problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function `sat` takes a list of integers `li` as an argument and checks if all elements in the list occur exactly once. It does this by creating a list comprehension where for each element `i` in the range from 0 to 9, it counts the number of occurrences of `i` in the list `li` and compares this count to `i`. If all elements in the list occur exactly once, the function returns `True`; otherwise, it returns `False`.
+
+The function `all` returns `True` only if all the elements in the iterable (in this case, the list comprehension) are `True`. If there are any elements in the list that are not `True` (i.e., if any element occurs more than once), the `all` function will return `False` and the function `sat` will return `False`.
+
+The `assert sat(li

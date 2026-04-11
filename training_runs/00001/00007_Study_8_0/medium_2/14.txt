@@ -1,0 +1,5 @@
+def sol(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+# Testing the solution
+assert sat(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"])

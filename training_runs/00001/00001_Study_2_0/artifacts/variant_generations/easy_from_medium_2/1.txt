@@ -1,0 +1,17 @@
+Here are the three variants of the function:
+
+```python
+VARIANT1:
+def sat(s: str):
+    return s.count('y') == 100 and s.count('yo') == 101 and s.count('yy') == 98
+
+VARIANT2:
+def sat(s: str):
+    return s.count('yy') == 100 and s.count('y') == 101 and s.count('yo') == 98
+
+VARIANT3:
+def sat(s: str):
+    return s.count('yy') == 100 and s.count('yo') == 101 and s.count('y') == 98
+```
+
+Please note that in the third variant, the order of `'y'`, `'yo'`, and `'yy'` is swapped to ensure each condition meets exactly once. The count of `'yo'` and `'yy'` is also adjusted for the new order.

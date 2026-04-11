@@ -1,0 +1,16 @@
+Here is a possible solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for x in set(li):
+        if x < sum(li[:li.index(x)]):
+            return False
+    return True
+```
+This function takes a list of integers as input and returns `True` if every element in the list is smaller than the sum of elements to its left in the list, else `False`. The function uses the set to eliminate duplicate elements in the list and then iterates over the unique elements. If any element is found to be smaller than the sum of elements to its left in the list, it returns `False`. If no such element is found, it returns `True`.
+
+The reason why the sum is taken from the index of the current element in the list to the start of the list is because we need to sum elements to its left for each element in the list. The index of the current element is the position of the current element in the list, and summing from the beginning of the list to this position will give us the sum of elements to its left in the list.
+
+The

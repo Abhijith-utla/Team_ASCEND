@@ -1,0 +1,6 @@
+def sol():
+    return [i for i in range(13) if i % 2 == 0]
+
+print(sol())
+
+# The final checker will run: assert sat(sol())

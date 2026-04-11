@@ -1,0 +1,16 @@
+def sol():
+    return "888"
+
+print(sat(sol()))  # Should print: True
+
+print(sat(sol()))  # Should print: False
+
+print(sat(sol()))  # Should print: False
+
+print(sat(sol()))  # Should print: False
+
+print(sat(sol()))  # Should print: False
+
+print(sat(sol()))  # Should print: False
+
+print(sat(sol()))  # Should print: False

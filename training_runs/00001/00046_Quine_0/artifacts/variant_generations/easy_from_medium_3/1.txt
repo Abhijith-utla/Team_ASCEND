@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(expression):
+    return eval(expression)
+```
+
+VARIANT2:
+```python
+def sat(quine):
+    return eval(quine + "()")
+```
+
+VARIANT3:
+```python
+def sat(quine):
+    return eval(quine + "()")()
+```

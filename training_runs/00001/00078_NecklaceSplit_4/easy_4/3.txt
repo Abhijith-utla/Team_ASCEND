@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+assert sat(0)
+!python
+!python sol()

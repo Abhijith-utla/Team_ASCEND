@@ -1,0 +1,17 @@
+{
+  "attempt_num": 24,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:29:46.936605+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: must be str, not function|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): def check(s: str): return str(int(8 ** 2888)).count(s) > 8 and len(s) == 3 return check",
+  "difficulty": "medium",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

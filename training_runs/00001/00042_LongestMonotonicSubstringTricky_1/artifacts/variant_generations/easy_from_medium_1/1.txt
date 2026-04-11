@@ -1,0 +1,28 @@
+Sure, here are three simpler Python functions that test the same core concept.
+
+VARIANT1:
+
+```python
+def sat(x):
+    return all(x[i] <= x[i+1] for i in range(len(x)-1))
+```
+
+In this variant, we are simply transforming the problem into a boolean check, i.e., all elements are less than or equal to the next one.
+
+VARIANT2:
+
+```python
+def sat(x):
+    return all(x[i] < x[i+1] for i in range(len(x)-1))
+```
+
+In this variant, we are transforming the problem into a boolean check, i.e., all elements are less than the next one.
+
+VARIANT3:
+
+```python
+def sat(x):
+    return all(x[i] >= x[i+1] for i in range(len(x)-1))
+```
+
+In this variant, we are transforming the problem into a boolean check, i.e., all elements are greater than or equal to the next one.

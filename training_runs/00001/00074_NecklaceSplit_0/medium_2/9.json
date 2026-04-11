@@ -1,0 +1,16 @@
+{
+  "attempt_num": 9,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 15)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:57:50.818181+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 15)|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return {\"n\": 0, \"lace\": \"bbbrrrbbbbrrrbbbbrr\"} # The above function will return an object with \"n\" as 0 an...",
+  "difficulty": "medium",
+  "problem_id": "00074_NecklaceSplit_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

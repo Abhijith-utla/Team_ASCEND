@@ -1,0 +1,10 @@
+The function `sat` is incorrect because the return statement should not be used in a conditional expression like this. A conditional expression like `return str(x - 3.1415) == "123.456"` will always be false, not because `x - 3.1415` is not equal to "123.456".
+
+Here is the correct code:
+
+```python
+def sat(x: float):
+    return str(x - 3.1415).startswith("123.456")
+```
+
+This function will return `True` if `x - 3.1415` starts with "123.456", and `False` otherwise.

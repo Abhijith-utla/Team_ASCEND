@@ -1,0 +1,8 @@
+def sol():
+    answer = "_" * 36
+    answer[18] = "1"
+    answer[27] = "2"
+    answer[36-1] = "9"
+    return answer
+
+assert sat(sol())

@@ -1,0 +1,19 @@
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+
+def sol():
+    return not sat(["apple", "banana", "cherry"])
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+
+# Testing the solution
+def test_sat():
+    assert sat(["apple", "banana", "cherry"]) == False
+    assert sat(["banana", "apple", "cherry"]) == False
+    assert sat(["apple", "apple", "cherry"]) == True
+
+test_sat()
+
+if __name__ == "__main__":
+    assert sat(sol())

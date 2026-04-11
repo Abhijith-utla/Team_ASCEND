@@ -1,0 +1,14 @@
+The function `sat` checks if all elements in the given list `li` are less than the index of the current element plus the sum of all elements before it in the list. If a number is not less than the sum of all numbers before it, the function returns `False`. If all numbers are less than their sum, the function returns `True`.
+
+Here is the Python code for the `sol` function that uses this function:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([i < li.index(x) + sum(li[:li.index(x)]) for x in set(li)])
+```
+
+The function `sat` takes a list of integers as input and returns a boolean value. If all elements in the list are less than the index of the current element plus the sum of all elements before it in the list, it returns `True`. Otherwise, it returns `False`.
+
+This function assumes that the list `li` is a sorted list.

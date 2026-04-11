@@ -1,0 +1,19 @@
+Here is the correct Python code that fulfills the given conditions:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(10)]) and len(set(li)) == 3
+
+    return sat
+```
+
+This code defines a function `sol()` that returns the function `sat()`. The function `sat()` checks if the list `li` satisfies the conditions provided in the problem statement. The `sat()` function is defined inside `sol()`, ensuring that it can be called independently of the main program.
+
+The checker will run:
+
+```python
+assert sol()() == True
+```
+
+Note: The problem statement states that the function `sat()` needs to take NO arguments, so `sol()` does not actually take any arguments.

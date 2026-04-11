@@ -1,0 +1,8 @@
+def sol():
+    x = [i for i in range(193)]
+    random.shuffle(x)
+    x = [str(i) for i in x]
+    result = "".join(x)
+    return result
+
+assert sat(sol())

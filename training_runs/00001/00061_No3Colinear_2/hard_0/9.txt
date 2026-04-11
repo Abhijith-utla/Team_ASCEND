@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+if __name__ == "__main__":
+    print(sat([[1,1],[2,2],[3,3]], 3, 3))

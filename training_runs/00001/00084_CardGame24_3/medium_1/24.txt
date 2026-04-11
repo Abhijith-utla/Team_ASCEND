@@ -1,0 +1,4 @@
+def sol():
+    return eval("2 + 3 * 4")
+
+print(sol())

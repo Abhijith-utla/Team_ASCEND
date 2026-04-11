@@ -1,0 +1,16 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated triple-quoted string literal (detected at line 11)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:22:44.106674+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated triple-quoted string literal (detected at line 11)|parse=fence=none,preamble=0,found_sol=1,candidates=11|checked=11/11|preview=def sol(): return \"\"\" [1, 2, 3, 4, 5, 6, 7, 8, 9] [4, 5, 6, 7, 8, 9, 1, 2, 3] [7, 8, 9, 1, 2, 3, 4, 5, 6] [6, 7, 8, 1...",
+  "difficulty": "hard",
+  "problem_id": "00071_Sudoku_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,4 @@
+def sol():
+    return [tuple(x) for x in zip('dee', 'doo', 'dah!')]
+
+print(sat(sol()))

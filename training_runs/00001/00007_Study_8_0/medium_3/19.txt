@@ -1,0 +1,10 @@
+Here's a correct solution:
+
+```python
+def sat(ls, idx1=1234, idx2=1235, value=ls[idx1]):
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+This function checks if `ls[idx1]` is in `ls[idx2]` and if `ls[idx1]` is not equal to `value`. If both conditions are met, it returns `True`, otherwise it returns `False`.
+
+To use this function, you can call it with a list as the first argument, and optionally the indices of elements to check as the second and third arguments. If you don't provide any arguments, it will use the default values `1234` and `1235` for `idx1` and `idx2`, respectively, and the value of the first element in `ls` as `value`.

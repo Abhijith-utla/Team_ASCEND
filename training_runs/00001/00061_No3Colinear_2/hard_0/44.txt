@@ -1,0 +1,26 @@
+def sol():
+    return []
+
+# This function will never be called because the input coords array is empty
+assert sat([])
+
+# Test with a single point
+assert not sat([(0, 0)])
+
+# Test with two points on the same line
+assert not sat([(0, 0), (1, 1)])
+
+# Test with three points in different order
+assert sat([(1, 1), (0, 0), (2, 2)])
+
+# Test with a line with two points
+assert sat([(0, 0), (2, 2)])
+
+# Test with a line with three points
+assert sat([(0, 0), (2, 2), (3, 3)])
+
+# Test with a line with four points
+assert not sat([(0, 0), (2, 2), (3, 3), (1, 1)])
+
+# Test with a line with five points
+assert not sat([(0, 0), (2, 2), (3, 3), (1, 1), (4, 4

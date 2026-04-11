@@ -1,0 +1,6 @@
+def sol():
+    s = input("Enter a string: ")
+    if sat(s):
+        return "Valid string"
+    else:
+        return "Invalid string"

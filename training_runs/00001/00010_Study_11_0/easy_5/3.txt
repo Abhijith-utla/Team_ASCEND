@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(10) if len(str(i)) > len(str(1))]
+
+assert sat(sol())

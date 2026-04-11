@@ -1,0 +1,3 @@
+def sol():
+    s = "oooooooooooo"
+    return s

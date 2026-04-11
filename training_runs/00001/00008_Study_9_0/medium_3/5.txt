@@ -1,0 +1,11 @@
+Sure, here's the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list(
+        "The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function works by converting each integer in the given list to its corresponding ASCII character and comparing this list to a list of the characters in the string "The quick brown fox jumps over the lazy dog". The string is first replaced with an empty string to make sure there are no spaces in it. The function then returns True if the two lists are equal, and False otherwise.

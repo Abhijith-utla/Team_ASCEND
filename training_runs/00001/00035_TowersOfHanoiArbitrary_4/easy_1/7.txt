@@ -1,0 +1,22 @@
+def sol():
+    return [[5, 6], [1, 2, 4], [0, 3]], [[2, 3, 4, 6], [0, 1], [5]]
+
+# Test case 1
+moves = [[0, 0], [1, 2], [2, 1]]
+assert sat(moves)
+
+# Test case 2
+moves = [[1, 2], [0, 2], [2, 0]]
+assert not sat(moves)
+
+# Test case 3
+moves = [[2, 0], [2, 1], [0, 1]]
+assert sat(moves)
+
+# Test case 4
+moves = [[1, 1], [0, 0], [1, 0]]
+assert not sat(moves)
+
+# Test case 5
+moves = [[1, 1], [2, 0], [0, 0]]
+assert not sat(moves)

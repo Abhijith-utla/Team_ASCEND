@@ -1,0 +1,11 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
+    return s
+
+assert sat(sol())
+```
+
+This code first creates a string `s` that contains 'z' 100 times, 'zo' 101 times, and 'zz' 98 times. Then it returns this string. The assertion `sat(sol())` checks that the function `sol` returns a string that contains exactly 100 'z', 101 'zo', and 98 'zz' characters. If the string does not meet these conditions, the assertion will fail and raise an AssertionError.

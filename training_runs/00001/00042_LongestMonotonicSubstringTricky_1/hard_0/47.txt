@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(535) if not any(s[i] <= s[i + 1] and x[i + 1] > x[i] for i in range(534))]

@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return {
+        "answer": 12345
+    }
+```
+
+Explanation:
+This solution constructs a dictionary with a key "answer" and its value is 12345.

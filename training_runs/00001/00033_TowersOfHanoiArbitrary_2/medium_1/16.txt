@@ -1,0 +1,14 @@
+def sol():
+    class Answer:
+        def __init__(self, moves):
+            self.moves = moves
+
+        def get_moves(self):
+            return self.moves
+
+    return Answer(moves=[])
+
+
+if __name__ == "__main__":
+    answer = sol()
+    assert answer.get_moves() == []

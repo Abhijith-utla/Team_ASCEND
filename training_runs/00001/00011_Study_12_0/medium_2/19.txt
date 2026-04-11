@@ -1,0 +1,21 @@
+Sure, I will create a function named `sol` which checks if a list of 1000 elements is valid as per the given condition.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    if len(li) != 1000:
+        return False
+    for i in range(len(li) - 1):
+        if li[i] + li[i+1] != 2:
+            return False
+    return True
+```
+
+You can test this function using the following code:
+
+```python
+assert sat([4] + [2]*996)
+```
+
+This will return True if the list is valid, and False otherwise. The list is valid if each pair of consecutive elements in the list adds up to 2.

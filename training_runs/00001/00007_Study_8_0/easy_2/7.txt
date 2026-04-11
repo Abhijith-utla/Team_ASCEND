@@ -1,0 +1,13 @@
+Here is the solution:
+
+```python
+def sol():
+    return {'result': 'Correct'} if sat([1234]*1000 + [1235]*1000) else {'result': 'Incorrect'}
+
+def sat(ls):
+    return ls[1234] > ls[1235] and ls[1234] != ls[1235]
+
+print(sat(sol()))
+```
+
+This program constructs a list with 2000 elements that are both 1234 and 1235. It then checks if the first 1234 elements are greater than the next 1235 elements and if they are not equal. If the first 1234 elements are greater than the next 1235 elements and if they are not equal, the function `sat` returns True, otherwise it returns False. The checker will run `assert sat(sol())` to confirm the correctness of the `sol` function.

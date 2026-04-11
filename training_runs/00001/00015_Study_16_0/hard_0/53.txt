@@ -1,0 +1,5 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    return float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len

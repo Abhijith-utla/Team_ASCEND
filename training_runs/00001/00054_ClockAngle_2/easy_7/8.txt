@@ -1,0 +1,4 @@
+def sol():
+    return ()
+
+# This is an empty tuple. The function 'sol' does not return a value.

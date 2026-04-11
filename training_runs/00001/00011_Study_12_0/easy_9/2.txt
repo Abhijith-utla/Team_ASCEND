@@ -1,0 +1,13 @@
+def sol():
+    return 5
+
+# Checking if the function sat satisfies the condition
+assert sat([])
+!pip install numpy
+!pip install sympy
+!pip install matplotlib
+!pip install scipy
+!pip install pandas
+!pip install sklearn
+!pip install tensorflow
+!pip install keras

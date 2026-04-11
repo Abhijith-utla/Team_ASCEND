@@ -1,0 +1,29 @@
+Here are three simple Python functions to test the core concept of the Boolean Pythagorean Triples Problem:
+
+VARIANT1:
+```python
+def sat(numbers: List[int], n=100):
+    assert set(numbers) <= {0, 1}, 'Numbers must be in {0, 1}'
+    assert len(numbers) >= n, 'Length of numbers must be greater than or equal to n'
+    squares = {i ** 2: numbers[i] for i in range(1, len(numbers))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+
+VARIANT2:
+```python
+def sat(colors: List[int], n=100):
+    assert set(colors) <= {0, 1}, 'Colors must be in {0, 1}'
+    assert len(colors) >= n, 'Length of colors must be greater than or equal to n'
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+
+VARIANT3:
+```python
+def sat(n: int, m: int, p: int):
+    assert n >= 0, 'n must be greater than or equal to 0'
+    assert m >= 0, 'm must be greater than or equal to 0'
+    assert p >= 0, 'p must be greater than or equal to 0'
+    assert n + m + p == m, 'Sum of n, m, and p must equal m'
+    return n + m >= p
+```

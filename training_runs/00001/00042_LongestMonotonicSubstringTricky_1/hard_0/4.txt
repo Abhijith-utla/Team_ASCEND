@@ -1,0 +1,8 @@
+def sol():
+    x = [0]*535
+    for i in range(535):
+        x[i] = i
+    return x
+
+# Test
+print(sat(sol()))

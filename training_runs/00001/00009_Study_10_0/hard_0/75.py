@@ -1,0 +1,35 @@
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+
+def sol():
+    def is_palindrome(s: str) -> bool:
+        return s == s[::-1]
+
+    def check_length(s: str) -> bool:
+        return len(s) > 11
+
+    def check_power(s: str) -> bool:
+        return s in str(8 ** 1818)
+
+    result = []
+
+    for num in range(10):
+        for digit in range(10):
+            for base in range(2, 16):
+                for symbol in '01':
+                    s = str(num) + str(digit) + str(base) + str(symbol)
+                    if check_power(s) and check_length(s) and is_palindrome(s):
+                        result.append(s)
+
+    return result
+
+print(sol())
+```
+
+The solution provided is a list of all the strings that satisfy the conditions specified in the problem. The conditions are:
+
+- The string is a palindrome.
+- The string is longer than 11
+
+if __name__ == "__main__":
+    assert sat(sol())

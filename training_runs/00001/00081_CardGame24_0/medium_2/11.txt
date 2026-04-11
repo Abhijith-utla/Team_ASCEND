@@ -1,0 +1,5 @@
+def sol():
+    return {"result": 24}
+
+# test the function
+assert sat(sol()["result"])

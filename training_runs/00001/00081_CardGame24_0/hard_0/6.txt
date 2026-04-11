@@ -1,0 +1,5 @@
+def sol():
+    return {
+        "expression": "4 + 4",
+        "result": 0
+    }

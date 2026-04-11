@@ -1,0 +1,13 @@
+Here is a Python solution for the problem.
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return sorted(range(999))
+
+# Testing the solution
+assert sat(sol())
+```
+
+The function `sol` returns a sorted list of integers from 0 to 998. The assertion `sat(sol())` checks if this is indeed a valid solution to the problem.

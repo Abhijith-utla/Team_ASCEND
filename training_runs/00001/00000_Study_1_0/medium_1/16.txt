@@ -1,0 +1,18 @@
+Here is the correct Python code for your problem.
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') == 1000
+
+def sol():
+    answer = sat('oo' * 1000)
+    return answer
+
+print(sol())
+```
+
+This code defines a function `sat` that checks if a string `s` contains exactly one 'o' and exactly 1000 'o's. It uses the `count` method to count the number of 'o's in the string.
+
+The function `sol` calls `sat` with a string `'oo' * 1000` as an argument and returns the result.
+
+The `sol` function is called at the end and the result is printed.

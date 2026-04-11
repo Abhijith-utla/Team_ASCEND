@@ -1,0 +1,9 @@
+def sol():
+    return {}
+
+# The function `sol` is defined to take no arguments but does not have any implementation.
+# Since `sat` is a predefined function by the user, we can't directly invoke it.
+# Instead, we can call the `sat` function with no arguments and return the result.
+# This result is an empty dictionary.
+
+assert sat(sol())

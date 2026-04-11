@@ -1,0 +1,4 @@
+def sol():
+    return [str(7 ** 64.6)]
+
+assert sat(sol())

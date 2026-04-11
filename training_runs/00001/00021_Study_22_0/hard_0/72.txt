@@ -1,0 +1,7 @@
+def sol():
+    return {
+        'result': str(sum(ord(i) % 2 == 0 for i in 'abcde'))
+    }
+
+# Test Case
+print(sol())

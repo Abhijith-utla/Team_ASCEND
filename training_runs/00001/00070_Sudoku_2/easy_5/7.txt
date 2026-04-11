@@ -1,0 +1,4 @@
+def sol():
+    return ["_"] * 36
+
+assert sat(sol())

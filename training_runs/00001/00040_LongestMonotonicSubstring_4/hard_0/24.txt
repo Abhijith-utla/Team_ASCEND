@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# Assuming the 'x' is the list of integers
+x = [2, 3, 1, 0]
+assert sat(x)
+
+x = [0, 1, 2, 3]
+assert not sat(x)
+
+x = [3, 2, 1, 0]
+assert not sat(x)
+
+x = [0, 0, 0, 0]
+assert sat(x)

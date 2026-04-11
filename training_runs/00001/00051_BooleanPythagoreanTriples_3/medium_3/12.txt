@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Correct pattern
+def sol(numbers):
+    assert sat(numbers)
+    return numbers
+
+# Incorrect pattern
+def sol(numbers):
+    assert sat(numbers, n=5)
+    return numbers

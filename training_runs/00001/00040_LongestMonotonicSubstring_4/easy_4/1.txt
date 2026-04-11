@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+def main():
+    assert sat(sol())
+
+main()

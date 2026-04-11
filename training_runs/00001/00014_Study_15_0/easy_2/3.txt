@@ -1,0 +1,6 @@
+def sol():
+    li = [10, 20, 15]
+    assert sat(li)
+    return li
+
+print(sol())

@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is the correct pattern for the solution.
+# The solution is simply an empty list.

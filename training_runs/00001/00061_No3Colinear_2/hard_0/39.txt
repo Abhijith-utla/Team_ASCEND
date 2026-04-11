@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# I am assuming that the function sol is defined by the user and that it takes an argument.
+# The user provided a Python function named sat that checks whether a given set of coordinates lies inside a square with a given side. 
+# The function takes three parameters: coords (a list of tuples, where each tuple represents a point), side (the side length of the square), and num_points (the number of points expected to lie within the square).
+# The function returns True if the given set of coordinates lies inside the square, and False otherwise.
+# The function uses a method called 'len' to get the number of unique points in the list. 
+# This function is not defined by the user and is not provided by the user, hence it cannot be tested by the checker.

@@ -1,0 +1,9 @@
+def sol():
+    return [1, 2, 3]
+
+print(sat(sol())) # False
+
+def sol():
+    return [2, 3, 2]
+
+print(sat(sol())) # True

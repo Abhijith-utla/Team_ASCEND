@@ -1,0 +1,4 @@
+def sol():
+    return 'a' + 'b' * 25 + 'c'
+
+assert sat(sol())

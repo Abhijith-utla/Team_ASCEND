@@ -1,0 +1,16 @@
+def sol():
+    return {}
+
+# Incorrect cases
+# For wrong lace
+assert not sat(0, "brbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbr")
+# For wrong lace length
+assert not sat(0, "brrrbrrbrbbbbbrrbrrrbr")
+# For wrong lace count of r and b
+assert not sat(0, "brrrbrrrrbrrrbrrbrrbrr")
+# For wrong lace count of r and b in middle of lace
+assert not sat(1, "brrrbrrrrrbrrrbrrbrrbrr")
+# For correct cases
+assert sat(0, "brrrbrrbrbbbbbrrbrrr")
+assert sat(1, "brrrbrrrrrbrrrbrrbrrbr")
+assert sat(2, "brrrbrrrrrbrrrbrrbrrr")

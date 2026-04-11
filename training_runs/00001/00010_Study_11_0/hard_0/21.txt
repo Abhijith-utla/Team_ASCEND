@@ -1,0 +1,17 @@
+Here is the Python code to construct and return a single answer object:
+
+```python
+class Answer:
+    def __init__(self, result):
+        self.result = result
+
+def sol():
+    return Answer(sat(["1", "2", "3", "4", "5"]))
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+In this solution, an Answer class is defined to hold the result of the `sat` function. The `sol` function creates an instance of this class with the result of calling the `sat` function with a list of strings. The `sat` function checks if the minimum, maximum, and length of the list are all the same. If they are, it returns True, else it returns False.
+
+Please replace the list ["1", "2", "3", "4", "5"] with your actual list to test the solution.

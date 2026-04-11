@@ -1,0 +1,29 @@
+Here are three simpler variants of the given puzzle:
+
+```python
+def sat(moves):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        if rods[j][-1] > rods[j][-2]:
+            return False
+    return rods[0] == rods[1] == rods[2] == []
+
+def sat(moves):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        if len(rods[j]) > 2:
+            return False
+    return rods[0] == rods[1] == rods[2] == []
+
+def sat(moves):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        if len(rods[j]) == 7:
+            return False
+    return rods[0] == rods[1] == rods[2] == []
+```
+
+All of these functions perform the same core operation of moving disks around the pegs of a Tower of Hanoi. The key difference is the condition used to check whether all disks are on the third peg. In these variants, we are checking whether there are more than 2 disks on the third peg and return False as soon as we find such a condition. If all disks are on the third peg, we similarly return False.

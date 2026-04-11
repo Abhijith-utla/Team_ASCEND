@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# You may place your implementation here

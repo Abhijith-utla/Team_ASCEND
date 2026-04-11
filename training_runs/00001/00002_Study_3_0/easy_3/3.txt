@@ -1,0 +1,11 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    li = sorted(li)
+    return li == list(range(998)) and all(li[i] != i for i in range(998)) and len(li) == 999
+```
+
+In this solution, the function `sat` takes a list of integers `li` as input. It first checks if the list is sorted and contains all numbers from 0 to 997, and if the length of the list is 999. The function returns a boolean value indicating whether the list satisfies all these conditions.

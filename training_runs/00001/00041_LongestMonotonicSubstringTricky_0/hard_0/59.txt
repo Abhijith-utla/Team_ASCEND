@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Checker Code:
+def sat(x):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] for i in range(len(x)))

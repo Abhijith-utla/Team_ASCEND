@@ -1,0 +1,21 @@
+Here is a possible solution for the problem:
+
+```python
+def sol():
+    li = [4] + [i for i in range(981)]
+    return li
+```
+
+This code creates a list `li` of 1001 elements, where the first element is `4` and the remaining elements are `0` to `980`. Then it returns the list `li`.
+
+The reason we start with `4` instead of `0` and then fill the rest with `0` to `980` is because in mathematical terms, `4` is the sum of the first `350` numbers, so we need to ensure that the sum of all elements in the list is `350` (which is `4 + 499`).
+
+The function `sat` checks if the sum of all elements in the list is `350` and if the length of the list is `1001`. If both conditions are satisfied, it returns `True`, otherwise it returns `False`.
+
+The checker will run:
+
+```python
+print(sat(sol()))
+```
+
+If

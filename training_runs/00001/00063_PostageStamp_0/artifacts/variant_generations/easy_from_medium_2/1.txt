@@ -1,0 +1,31 @@
+VARIANT1:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4):
+    if len(stamps) > max_stamps:
+        return False
+    return sum(stamps) == target
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if s not in options:
+            return False
+    return sum(stamps) == target
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=None):
+    if options is None:
+        options = [10, 32, 8]
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if s not in options:
+            return False
+    return sum(stamps) == target
+```

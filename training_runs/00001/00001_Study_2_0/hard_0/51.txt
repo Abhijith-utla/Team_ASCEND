@@ -1,0 +1,16 @@
+The provided Python function `sat` checks if a string `s` contains exactly 1000 'o's, exactly 100 'oo's, and exactly 801 'ho's. If all these conditions are met, the function returns `True`, otherwise it returns `False`.
+
+Here is the code for the function `sol`:
+
+```python
+def sol():
+    s = "ho" * 801 + "oo" * 100 + "o" * 1000
+    return sat(s)
+```
+
+This function constructs a string `s` that meets all the conditions of the `sat` function. Then it returns the result of the `sat` function on `s`.
+
+The final checker will run:
+```python
+assert sat(sol())
+```

@@ -1,0 +1,8 @@
+def sol():
+    return {"ls": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], "idx1": 5, "idx2": 10, "value": 6}
+
+# The function 'sat' checks if the value exists in the list at index 'idx1' and is not equal to the value.
+# It returns a dictionary that contains the list, index1, index2, and value.
+# The final checker will run: assert sat(sol())
+
+print(sat(sol()["ls"], sol()["idx1"], sol()["idx2"], sol()["value"]))  # True

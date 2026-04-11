@@ -1,0 +1,9 @@
+Here is the Python code:
+
+```python
+def sol():
+    li = [i for i in range(500)]
+    return li
+```
+
+The function `sol` creates a list of integers from 0 to 499. The check `sat` ensures that all elements in the list are in the range from 0 to 499 and that the difference between the minimum and maximum values is at least 10.

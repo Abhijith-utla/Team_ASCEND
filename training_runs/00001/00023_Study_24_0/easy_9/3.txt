@@ -1,0 +1,10 @@
+Here is the solution for the given Python code:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 3]
+```
+
+This solution returns a list with the number 17 and 3 as the two elements. This list satisfies the condition defined in the problem. The checker will confirm that the list has exactly one 17 and one 3.

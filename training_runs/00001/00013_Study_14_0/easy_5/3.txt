@@ -1,0 +1,21 @@
+Here is the correct Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(1, len(li)):
+        if li[i] < li[i-1]:
+            return False
+    return True
+```
+
+This solution iterates through the list from the second element to the end. For each element, it checks if it is smaller than the previous element. If it finds such an element, it immediately returns False. If it doesn't find any such element in the list, it returns True, indicating that the list is sorted in ascending order.
+
+The function `sat` assumes that the input list `li` is sorted in ascending order and returns True. If it finds such an element in the list, it returns False.
+
+The checker will run:
+```python
+assert sat([1, 2, 3, 4, 5])
+assert not sat([1, 2, 4, 3, 5])
+```

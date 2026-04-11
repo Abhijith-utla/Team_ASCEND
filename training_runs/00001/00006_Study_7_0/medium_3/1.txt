@@ -1,0 +1,9 @@
+Here is the correct solution for the problem:
+
+```python
+def sol():
+    s = str((8 ** 2888) ** 0.5)
+    return str(s).count('e') > 8 and len(s) == 3
+```
+
+The function `sol` computes the square root of 8**2888 and takes the count of 'e' in the resulting string. It checks whether this count is greater than 8 and the length of the string is 3. If both conditions are met, it returns True, otherwise it returns False.

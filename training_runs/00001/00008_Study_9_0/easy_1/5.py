@@ -1,0 +1,14 @@
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 0]) == 0
+
+def sol():
+    return sum([1 for i in input().split() if ord(i) % 3 == 0]) == 0
+
+# Test cases
+print(sol("abcdefghijklmnopqrstuvwxyz")) # False
+print(sol("abcdefghijklmnopqrstuvwxyziiii")) # False
+print(sol("abcdefghijklmnopqrstuvwxyzi")) # True
+print(sol("abcdefghijklmnopqrstuvwxyziiii")) # True
+
+if __name__ == "__main__":
+    assert sat(sol())

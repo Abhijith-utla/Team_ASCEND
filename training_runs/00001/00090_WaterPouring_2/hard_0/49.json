@@ -1,0 +1,16 @@
+{
+  "attempt_num": 49,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T19:15:51.977202+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=20|checked=20/20|preview=def sol(): return [] # test cases assert sat([]) assert not sat([[0, 0]]) assert not sat([[0, 1]]) assert not sat([[1...",
+  "difficulty": "hard",
+  "problem_id": "00090_WaterPouring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

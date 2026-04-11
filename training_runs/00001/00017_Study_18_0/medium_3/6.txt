@@ -1,0 +1,10 @@
+Here is the correct Python solution for the problem. 
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+This function takes a list of strings as an input and returns True if the list contains all unique elements and False otherwise. The len function is used to count the number of elements in the list and the set function is used to convert the list to a set, which removes any duplicate elements. The set length is compared to the original list length to determine if all elements in the list were unique.

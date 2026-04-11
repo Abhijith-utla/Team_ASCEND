@@ -1,0 +1,10 @@
+Here is a Python solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function `sat` takes a list of integers as input and checks if the sum of each pair of integers in the list is 2. The `zip` function is used to pair each element with its previous element in the list. The function `all` is used to check if all pairs pass the condition. The length of the list is also checked and returned as a result.

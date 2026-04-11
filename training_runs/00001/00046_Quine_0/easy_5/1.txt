@@ -1,0 +1,5 @@
+def sol():
+    return eval("print('Hello, World!')")
+
+# Ensure the solution runs without errors
+assert sat(str(sol()))

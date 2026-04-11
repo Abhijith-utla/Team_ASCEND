@@ -1,0 +1,8 @@
+The correct pattern is as follows:
+
+```python
+def sol():
+    return {}
+```
+
+In the incorrect pattern, there's no return statement. This pattern will result in an error because the function `sol` does not return any value.

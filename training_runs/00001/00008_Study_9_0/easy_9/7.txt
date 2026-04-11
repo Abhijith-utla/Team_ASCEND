@@ -1,0 +1,10 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Python is fun".replace(" ", ""))
+```
+
+This function `sat` takes a list of integers as an argument and returns a boolean value based on whether the list of integers corresponds to a string that is equal to the string "Python is fun" after replacing all the spaces in the string with no characters. The list comprehension converts the list of integers into a list of characters, and the comparison checks if these two lists are equal. If they are, the function returns `True`, indicating that the input list is valid. Otherwise, it returns `False`.

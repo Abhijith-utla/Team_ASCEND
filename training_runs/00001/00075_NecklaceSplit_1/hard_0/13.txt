@@ -1,0 +1,11 @@
+def sol():
+    return {"answer": "False"}
+
+# Test
+assert sat(0)
+assert sat(1)
+assert not sat(2)
+assert not sat(3)
+
+# Final check
+assert sat(sol())

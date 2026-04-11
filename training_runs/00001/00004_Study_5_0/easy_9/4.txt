@@ -1,0 +1,18 @@
+Here is the solution:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+```
+
+In the above code, the function `sat` takes a list `li` as input and returns a boolean value. The boolean value is `True` if the list `li` satisfies all the conditions defined in the problem statement, otherwise it returns `False`.
+
+The conditions are:
+1. The count of all numbers in the list is equal to the number itself.
+2. The count of zero in the list is equal to 1.
+
+The `all` function in Python returns `True` only if all the elements in an iterable (like a list) are `True`. The `count` method of list returns the number of times a specified value appears in the list. The `==` operator checks for equality between two values.
+
+The condition `li.count(0) == 1` is checking if the number zero is present exactly once in the list.
+
+The function `sat` will return `True` if the

@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The function 'sol' does not take any argument.
+# Therefore, the solution is an empty list.

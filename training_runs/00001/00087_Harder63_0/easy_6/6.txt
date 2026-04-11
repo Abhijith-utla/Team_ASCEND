@@ -1,0 +1,6 @@
+def sol():
+    return "1-8*+3"
+
+# The assert statement is used to test the correctness of a piece of code.
+# It's used to make sure that the code is working as expected.
+assert sat(sol())

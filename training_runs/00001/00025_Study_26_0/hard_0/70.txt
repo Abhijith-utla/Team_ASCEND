@@ -1,0 +1,5 @@
+def sol():
+    return ''.join(str(8 ** 88).split('.'))
+
+# Testing
+assert sat(sol())

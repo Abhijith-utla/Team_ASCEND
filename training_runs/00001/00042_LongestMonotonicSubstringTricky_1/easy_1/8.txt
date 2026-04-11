@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+def test_sat():
+    assert sat([])
+    assert sat([1])
+    assert not sat([1, 2])
+    assert sat([1, 2, 3])
+    assert not sat([3, 2, 1])
+    assert sat([1, 1, 1, 1, 1])
+    assert not sat([1, 2, 3, 4, 5])
+    assert sat([5, 4, 3, 2, 1])
+
+test_sat()

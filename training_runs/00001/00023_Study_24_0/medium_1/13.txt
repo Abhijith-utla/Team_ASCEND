@@ -1,0 +1,6 @@
+def sol():
+    li = [17, 3, 17, 1, 3, 3, 17, 1]
+    return li
+
+# Test the solution
+print(sat(sol()))

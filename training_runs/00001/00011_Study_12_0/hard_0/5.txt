@@ -1,0 +1,12 @@
+Sure, here is a Python solution that uses the given Python function `sat`.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+def sol():
+    return sat([1]*999)
+```
+This function checks if the list `li` is a valid list that satisfies the condition `all(i + j == 9 for i, j in zip([4] + li, li))`. If the list satisfies this condition, it will return `True`, otherwise `False`. If the list `li` is valid, the function will return `True`. Otherwise, it will return `False`.

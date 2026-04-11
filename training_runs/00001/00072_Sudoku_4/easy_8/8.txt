@@ -1,0 +1,20 @@
+def sol():
+    return "1234567892957814361234567897654321897654321987123456789654321897654321897654321897654321897654321897654321897654321897654321897654321"
+
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print(sat(sol()))
+print

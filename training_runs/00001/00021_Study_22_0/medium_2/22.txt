@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return "".join(c * 5 for c in "abcdefghijklmnopqrstuvwxyz")
+```
+
+In this code, we are creating a string of 5's and a string of each letter of the alphabet (abcdefghijklmnopqrstuvwxyz) in order, then concatenating them together to form a string of 20 characters. This string is the answer to the problem.

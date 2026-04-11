@@ -1,0 +1,10 @@
+def sol():
+    return {
+        'answer': 'String contains 1000 occurrences of "o" and 100 occurrences of "oo" and 801 occurrences of "ho".'
+    }
+
+# Test the function
+def test_sat():
+    assert sat(sol()['answer'])
+
+test_sat()

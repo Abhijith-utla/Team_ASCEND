@@ -1,0 +1,7 @@
+def sol():
+    return [5, 6], [1, 2, 4, 0, 3], [[2, 3, 4, 6], [0, 1], [5]]
+
+# Testing the solution
+assert sat(moves=[[0, 1]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 6], [0, 1], [5]])
+assert not sat(moves=[[0, 1]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 5], [0, 1], [5]])
+assert sat(moves=[[0, 1], [1, 2], [2, 0], [0, 2]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 6], [0, 1],

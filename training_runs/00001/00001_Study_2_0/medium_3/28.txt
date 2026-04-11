@@ -1,0 +1,12 @@
+The Python code for the solution is:
+
+```python
+def sol():
+    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
+    return s
+
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+
+assert sat(sol())
+```

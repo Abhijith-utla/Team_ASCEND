@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(stamps):
+    return len(stamps) <= 3 and sum(stamps) == 43
+```
+
+VARIANT2:
+```python
+def sat(stamps, max_stamps):
+    return len(stamps) == max_stamps and sum(stamps) == 43
+```
+
+VARIANT3:
+```python
+def sat(stamps, max_stamps=3):
+    return len(stamps) == max_stamps and sum(stamps) == 43
+```

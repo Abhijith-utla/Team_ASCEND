@@ -1,0 +1,14 @@
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3
+
+def sol():
+    def sat(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3
+    
+    while True:
+        li = [randint(1, 9) for _ in range(10)]
+        if sat(li):
+            return li
+
+if __name__ == "__main__":
+    assert sat(sol())

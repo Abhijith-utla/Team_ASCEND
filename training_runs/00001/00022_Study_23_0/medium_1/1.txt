@@ -1,0 +1,5 @@
+def sol():
+    return {"result": "correct"}
+
+def sat(answer):
+    return tuple(answer) in zip('dee', 'doo', 'dah!')

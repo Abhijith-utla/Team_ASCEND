@@ -1,0 +1,10 @@
+Here is the Python code that satisfies the requirements:
+
+```python
+def sol():
+    return 'oo'*1000
+
+print(sat(sol()))
+```
+
+The function `sol` returns a string that consists of 'oo' repeated 1000 times. The function `sat` checks if this string contains exactly 1000 occurrences of 'oo' and 0 occurrences of 'o'. The function call `print(sat(sol()))` checks if the solution satisfies the conditions and prints the answer.

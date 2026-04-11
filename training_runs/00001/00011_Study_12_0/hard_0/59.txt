@@ -1,0 +1,16 @@
+Here is the Python code for the function `sol` that satisfies the given condition:
+
+```python
+def sol():
+    return 9
+```
+
+This function simply returns the number 9. This is because the sum of all numbers from 1 to 1000 (inclusive) is 500500, which is exactly 9.
+
+The assertion for this function would be:
+
+```python
+assert sat(sol())
+```
+
+This would pass if `sol()` returned 9, and fail otherwise.

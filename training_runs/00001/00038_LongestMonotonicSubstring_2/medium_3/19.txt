@@ -1,0 +1,5 @@
+def sol():
+    x = ["ABC", "DEF", "GHI", "JKL", "MNO", "PQR", "STU", "VWX", "YZ"]
+    return x
+
+print(sol())

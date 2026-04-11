@@ -1,0 +1,12 @@
+def sol():
+    return [2, 3, 4]
+
+# We will construct an answer object with the properties x, y, and sides.
+# You can adjust this as per your needs.
+answer_object = {
+    'x': 2,
+    'y': 3,
+    'sides': [4, 5, 6]
+}
+
+return answer_object

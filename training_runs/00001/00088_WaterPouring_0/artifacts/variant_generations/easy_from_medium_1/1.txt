@@ -1,0 +1,26 @@
+Here are three simpler Python functions that test the same core concept as the original puzzle:
+
+VARIANT1:
+```python
+def sat(moves, capacities=[8, 5, 3], init=[8, 0, 0], goal=[4, 4, 0]):
+    state = init
+    return state == goal
+```
+
+VARIANT2:
+```python
+def sat(moves, capacities=[8, 5, 3], init=[8, 0, 0], goal=[4, 4, 0]):
+    state = init.copy()
+    return state == goal
+```
+
+VARIANT3:
+```python
+def sat(moves, capacities=[8, 5, 3], init=[8, 0, 0], goal=[4, 4, 0]):
+    state = init
+    for move in moves:
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = state[move[0]] + state[move[1]] - n, n
+    return state == goal
+```
+These versions of `sat` function do not modify the `state` variable outside their function scope, thus, the changes made in one function are not reflected in the other.

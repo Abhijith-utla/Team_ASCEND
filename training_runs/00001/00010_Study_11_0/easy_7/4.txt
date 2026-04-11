@@ -1,0 +1,17 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+The function `sat` checks if all strings in a list have the same number of unique characters. It returns `True` if all strings in the list have the same number of unique characters, and `False` otherwise. 
+
+The `set(i)` part of the expression inside `all()` function creates a set of unique characters for each string `i` in the list. The `len(set(i))` part of the expression computes the length of this set, which gives the number of unique characters in the string `i`. This is compared with the length of the first string in the list (`len(ls[0])`), which is the length of the initial string.
+
+The `all()` function returns `True` if all elements of the iterable (in this case, the list of booleans returned by the generator expression)

@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return "I am a robot, I can't solve problems!"
+```
+
+In this solution, the function `sol` returns a string that indicates that it's not possible to solve problems using a robot.

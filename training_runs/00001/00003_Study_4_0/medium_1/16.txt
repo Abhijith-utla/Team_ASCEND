@@ -1,0 +1,18 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This code defines a function `sat` that takes a list of integers `li` as an argument and returns `True` if the list satisfies all the conditions specified in the problem statement. It checks the conditions for the fourth element (at index 3), which must appear exactly twice, and must be at the third position in the list. If any of these conditions are not met, the function returns `False`.

@@ -1,0 +1,5 @@
+def sol():
+    li = [ord(i) - ord('a') for i in "The quick brown fox jumps over the lazy dog"]
+    return li
+
+print(sat(sol()))

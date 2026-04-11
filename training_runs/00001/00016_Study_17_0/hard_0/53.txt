@@ -1,0 +1,9 @@
+def sol():
+    for i in range(-10000, 10000):
+        if sat(i):
+            return i
+
+    return None
+
+# Test
+assert sat(sol())

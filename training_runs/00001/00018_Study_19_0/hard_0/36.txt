@@ -1,0 +1,8 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return {i + j for i in range(12) for j in range(12)}
+```
+
+This function returns a set with all possible combinations of numbers from 0 to 20.

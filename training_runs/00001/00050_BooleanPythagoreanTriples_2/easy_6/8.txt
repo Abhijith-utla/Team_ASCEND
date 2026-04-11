@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# This function is not correct because the problem statement does not provide a correct solution
+# However, the function `sol()` does not take any argument and returns an empty dictionary. This is because the problem statement does not specify any input or output.

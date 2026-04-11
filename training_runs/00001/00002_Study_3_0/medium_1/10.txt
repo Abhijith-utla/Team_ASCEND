@@ -1,0 +1,11 @@
+Here is the solution for your problem.
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+    return sat
+```
+This solution creates a function `sat` that takes a list of integers and returns True if the list is sorted in ascending order and all elements are distinct. If these conditions are not met, the function returns False. The returned function is the solution to the problem.

@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+This solution doesn't make sense because the function `sat` is not defined by the problem but only a placeholder. The solution does not contain any code to satisfy the problem's conditions.

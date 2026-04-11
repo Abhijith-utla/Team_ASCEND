@@ -1,0 +1,8 @@
+Here is the Python code for the solution:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This function `sat` takes a string `s` as input. It then checks if the string `s` is present at least 8 times in the decimal number `8 ** 2888`, and if the length of the string is equal to 3. If both conditions are satisfied, the function returns `True`; otherwise, it returns `False`.

@@ -1,0 +1,10 @@
+Here is the Python solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li[i] != li[i + 1] for i in range(8)) and len(set(li)) == 3
+```
+
+This function works by first checking if all elements in the list are distinct by converting the list to a set. If there are duplicates, the set will not contain the same elements, and the length of the set will not be 3. Then it checks if all elements are distinct by comparing each element to all other elements. If there are any two consecutive elements that are the same, the function will return False. If all elements pass this condition, the function will return True.

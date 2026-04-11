@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 4.5
+```
+
+This function will always return the float value 4.5. It's because the question asks for a single answer object (which is a float value of 4.5).

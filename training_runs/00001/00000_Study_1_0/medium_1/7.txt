@@ -1,0 +1,8 @@
+The Python function `sat(s: str)` is defined with the type hint `s: str`. The function checks if the string 'oo' exists in `s` and the count of 'o' in `s` is 1000. 
+
+```python
+def sat(s: str) -> bool:
+    return 'oo' in s and s.count('o') == 1000
+```
+
+The function will return `True` if the string 'oo' exists in `s` and `s.count('o') == 1000`, otherwise it will return `False`.

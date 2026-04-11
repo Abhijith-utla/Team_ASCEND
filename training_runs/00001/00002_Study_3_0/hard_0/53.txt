@@ -1,0 +1,9 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+This function checks if a list of integers is sorted, all elements are distinct, and all elements are in the range 0-998. The function `sorted(li)` sorts the list and `list(range(999))` creates a list of integers from 0 to 998. The `all()` function returns `True` if all elements in the list satisfy the condition (the element is not equal to its index).

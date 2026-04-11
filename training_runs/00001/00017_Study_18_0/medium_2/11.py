@@ -1,0 +1,18 @@
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+
+def sol():
+    def sat(ls: List[str]) -> bool:
+        return all(len(set(s)) == len(s) for s in ls)
+
+    assert sat(["abcd", "abce", "efgh"]) == True
+    assert sat(["abc", "abcd", "efgh"]) == False
+    assert sat(["aaa", "bbb", "ccc"]) == True
+    assert sat(["abc", "bcd", "def"]) == False
+
+    return "valid"
+
+print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

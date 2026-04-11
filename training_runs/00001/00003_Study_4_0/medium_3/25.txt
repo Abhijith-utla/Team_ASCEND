@@ -1,0 +1,12 @@
+def sol():
+    li = [0] * 10
+    li[3] = 1
+    li[4] = 1
+    li[5] = 1
+    li[6] = 1
+    li[7] = 1
+    li[8] = 1
+    li[9] = 1
+    return li
+
+print(sat(sol()))

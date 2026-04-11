@@ -1,0 +1,12 @@
+Here is the solution to your problem:
+
+```python
+def sol():
+    return 10, 30
+```
+
+This function will return a pair of angles (hour and minute) that satisfy the condition given in the problem statement.
+
+The function `sol` returns a pair of values (10, 30) which are both less than or equal to 360. This is because the sum of the angles of a hand is always less than or equal to 360. 
+
+The hour and minute angles are both less than or equal to 360 because the hour hand moves 30 degrees per hour and the minute hand moves 6 degrees per minute. Therefore, if the sum of the hour and minute angles is less than or equal to 360, both angles must be less than or equal to 360.

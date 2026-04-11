@@ -1,0 +1,11 @@
+Here's the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return 42
+
+# Testing the solution
+assert sat(sol())
+```

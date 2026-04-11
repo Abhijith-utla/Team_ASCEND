@@ -1,0 +1,7 @@
+def sol():
+    n = int(input("Enter a number n: "))
+    m = int(input("Enter a number m: "))
+    p = int(input("Enter a number p: "))
+    return n, m, p
+
+print("The sum of n, m, and p is:", sol())

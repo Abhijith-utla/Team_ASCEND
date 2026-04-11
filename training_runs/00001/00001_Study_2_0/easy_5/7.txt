@@ -1,0 +1,5 @@
+def sol():
+    s = "yyyyyyyyyyyyyyyyyyyyyyyyy"
+    return s
+
+assert sat(sol())

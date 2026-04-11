@@ -1,0 +1,15 @@
+Here is a Python solution for the problem.
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+
+print(sat("888"))  # True
+print(sat("88"))   # False
+print(sat("8"))    # False
+print(sat(""))     # False
+```
+
+In the function `sat(s: str)`, we count the number of times `s` appears in the decimal number `8 ** 2888`. If `s` appears more than 8 times and `s` is of length 3, then the function returns `True`. Otherwise, it returns `False`.
+
+Note: The function `sat` assumes that `s` is a string that can be an integer in base 10 or a binary string. If `s` can be a float or any other type, the function may not work as expected. Also, the function `count` counts the number of times a character appears in a string, not the number of occurrences of `s`.

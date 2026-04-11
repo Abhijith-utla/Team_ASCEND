@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(1, 11) if [li.count(i) for li in range(1, 11)] == i]
+
+# Test
+assert sat(sol())

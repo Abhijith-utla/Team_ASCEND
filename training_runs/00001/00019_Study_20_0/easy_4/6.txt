@@ -1,0 +1,10 @@
+Here is the Python code to solve the problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return len(li) == len(set(li))
+```
+
+This function `sat` checks if the length of the list `li` is equal to the length of the set created from `li`. In Python, a set is a collection type that is iterable (can be looped over) and unindexed (cannot be accessed by a key). By converting the list to a set, all duplicates are removed, and then comparing the lengths of the list and the set, we can determine if all elements in the list are unique. If all elements in the list are unique, then the length of the list and the set will be equal, indicating that the list is a set of unique elements.

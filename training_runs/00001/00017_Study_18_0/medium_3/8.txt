@@ -1,0 +1,10 @@
+Here is the Python code for the `sol` function:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+This function takes a list of strings as input and returns `True` if the list has unique elements and `False` otherwise. The concept used here is that the length of a list and the length of a set are the same, indicating that all elements in the list are unique.

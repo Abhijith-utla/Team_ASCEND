@@ -1,0 +1,8 @@
+Here is a Python code snippet that solves the problem:
+
+```python
+def sat(s: str) -> bool:
+    return str(2888 ** 8).count(s) > 8 and len(s) == 3
+```
+
+In the above code, we are checking if the string `s` appears more than 8 times in the base 10 representation of the number 2888 raised to the power of 8. We also check that the length of the string `s` is 3.

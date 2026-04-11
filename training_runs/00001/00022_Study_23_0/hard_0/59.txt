@@ -1,0 +1,10 @@
+Here is the solution to your problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return tuple(ls) in zip('dee', 'doo', 'dah!')
+```
+
+The `sat` function takes a list of strings as input and checks if the list is the same as the tuple ('dee', 'doo', 'dah!') in order. If it is, the function returns `True`; otherwise, it returns `False`. This means that the function will return `True` if the input list is correct, and `False` otherwise.

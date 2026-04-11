@@ -1,0 +1,10 @@
+The function `sat` is already defined by the user, and it takes two optional arguments `idx1` and `idx2`. It checks if the element at index `idx1` is in the list `ls` and is not equal to the element at index `idx2`.
+
+Here is the correct pattern:
+
+```python
+def sol():
+    return <answer>
+```
+
+This function does not take any arguments and returns a single answer object. The checker will run `assert sat(sol())`. The function `sol` is not expected to print anything. It is only designed to return a single answer object.

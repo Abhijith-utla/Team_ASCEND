@@ -1,0 +1,20 @@
+def sol():
+    return '4.5'
+
+# This will be ignored by the checker
+def incorrect_sol():
+    return 'incorrect'
+
+# This will not compile because the expected answer is '4.5'
+def incorrect_sol2():
+    x = 5
+    return x
+
+# This will not compile because the expected answer is '4.5'
+def incorrect_sol3():
+    x = '4.5'
+    return x
+
+# This will compile and return '4.5'
+def correct_sol():
+    return '4.5'

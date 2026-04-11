@@ -1,0 +1,16 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 4567
+```
+
+This function does not take any arguments and always returns the number `4567`.
+
+You can call this function and assert the result using the following code:
+
+```python
+assert sat(sol())
+```
+
+This code will assert that the `sat` function returns `4567`, which is the expected result.

@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The assertion checks that the function `sat` returns a dictionary when called with the argument `n`.
+assert sat({})

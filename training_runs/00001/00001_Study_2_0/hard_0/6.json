@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:37:30.814056+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: sol() failed|parse=fence=none,preamble=0,found_sol=1,candidates=10|checked=10/10|preview=def sol(): s = \"ho\"*801 + \"oo\"*100 + \"o\"*1000 return s # Checker code def check(solution): assert sat(solution), \"sol...",
+  "difficulty": "hard",
+  "problem_id": "00001_Study_2_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,14 @@
+Here is the Python code to solve the problem. The function `sol` constructs and returns a single answer value.
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    if len(li) == 0 or li[0] != 4:
+        return False
+    return sum(li) == 4005 and len(li) == 1000
+
+print(sol([4]*1000))
+```
+
+This code checks if the input list `li` is a list of exactly 1000 integers and if the first integer is 4 and the sum of all integers is 4005. If these conditions are met, the function returns `True`. Otherwise, it returns `False`.

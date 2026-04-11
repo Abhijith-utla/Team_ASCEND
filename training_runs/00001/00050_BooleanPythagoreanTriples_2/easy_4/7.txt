@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Testing the function
+print(sat([1, 0, 0, 0, 0], 5))  # False
+print(sat([0, 0, 0, 0, 1], 5))  # False
+print(sat([0, 0, 0, 1, 0], 5))  # False
+print(sat([0, 1, 0, 1, 0], 5))  # True
+print(sat([1, 1, 0, 1, 1], 5))  # False
+print(sat([0, 1, 1, 0, 0], 5))  # True

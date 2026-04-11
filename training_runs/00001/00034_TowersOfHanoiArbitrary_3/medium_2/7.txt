@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This line is to check the implementation by the checker
+assert sat([])

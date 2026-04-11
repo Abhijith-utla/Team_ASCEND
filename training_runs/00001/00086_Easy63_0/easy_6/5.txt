@@ -1,0 +1,5 @@
+def sol():
+    return "18-2"
+
+# The result of the evaluation should be 197
+assert sat(sol())

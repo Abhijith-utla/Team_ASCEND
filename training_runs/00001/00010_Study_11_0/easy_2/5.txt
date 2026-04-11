@@ -1,0 +1,18 @@
+Here is the solution for the problem.
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+
+print(sat([]))
+print(sat(["0"]))
+print(sat(["0", "1"]))
+print(sat(["0", "1", "2"]))
+```
+
+This solution works by checking if the length of the input list is zero. If it is, it returns True because an empty list is always considered "sorted". If the length of the list is greater than zero, it then checks if all elements in the list are in the range of the list's length. If all elements are in the range, it returns True; otherwise, it returns False. The `all` function in Python returns True if all elements in the iterable it is given are true. In this case, the iterable is the generator expression `i in ls for i in range(len(ls))` which generates a sequence of true and false values depending on whether the index `

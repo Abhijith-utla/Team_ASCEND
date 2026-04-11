@@ -1,0 +1,6 @@
+def sol():
+    return [4] + [9 - i for i in range(1, 1000)]
+
+print(sol())
+
+assert sat(sol())

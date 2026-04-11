@@ -1,0 +1,7 @@
+def sol():
+    def check(n):
+        li = [False]*1000
+        for i in n:
+            li[i] = True
+        return all(i not in li for i in range(1000)) and abs(min(n)-max(n)) < 10
+    return check

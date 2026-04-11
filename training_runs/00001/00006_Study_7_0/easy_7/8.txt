@@ -1,0 +1,8 @@
+Here is the correct Python solution for the given problem. The function `sat` takes a string `s` as input and returns a boolean value. The string `s` is checked if it contains at least 8 occurrences of the substring `"8"` and the length of the string is 3.
+
+```python
+def sat(s: str):
+    return str(int(8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+```
+
+The checker will run `assert sat(sol())` which will pass if the function `sol` returns a valid answer, else it will raise an AssertionError.

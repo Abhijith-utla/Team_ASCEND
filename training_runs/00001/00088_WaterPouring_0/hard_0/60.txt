@@ -1,0 +1,12 @@
+def sol():
+    return [8, 0, 0]
+
+assert sat(moves=[[2, 3], [1, 2], [0, 1]])
+assert not sat(moves=[[2, 2], [1, 1], [0, 0]])
+assert not sat(moves=[[3, 2], [1, 2], [0, 1]])
+assert not sat(moves=[[1, 1], [1, 2], [0, 1]])
+assert not sat(moves=[[1, 1], [0, 1], [0, 2]])
+assert not sat(moves=[[1, 0], [0, 1], [0, 2]])
+assert sat(moves=[[1, 0], [0, 2], [0, 3]])
+assert not sat(moves=[[0, 0], [0, 1], [0, 2]])
+assert sat(moves=[[0, 0], [0, 1], [1, 1]])

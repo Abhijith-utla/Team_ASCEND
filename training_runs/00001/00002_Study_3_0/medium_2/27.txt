@@ -1,0 +1,11 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    li = [i for i in range(999)]
+    return li
+
+assert sat(sol())
+```
+
+In this solution, we first create a list `li` that contains the numbers from 0 to 998. Then we return this list. The assertion `assert sat(sol())` checks whether the solution is correct. If it is, the program will continue to run without any issues, but if not, it will raise an `AssertionError` with a message indicating that the solution is incorrect.

@@ -1,0 +1,8 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return [[1, 2, 3], [4, 5, 6]]
+```
+
+This function returns a 2D array with the elements `[1, 2, 3]`, `[4, 5, 6]`.

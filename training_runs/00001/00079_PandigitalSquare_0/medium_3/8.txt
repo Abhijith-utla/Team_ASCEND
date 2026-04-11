@@ -1,0 +1,5 @@
+def sol():
+    return 123
+
+print(sat(sol()))  # prints: True
+print(sat(sol()))  # prints: False

@@ -1,0 +1,16 @@
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    sum_so_far = 0
+    for i in range(len(li)):
+        if i == 0:
+            sum_so_far += li[i]
+        else:
+            if li[i] < sum_so_far:
+                return False
+            sum_so_far += li[i]
+    return True
+```
+
+The function `sat` checks if all elements in the list `li` are less than the sum of all elements before it in the list. This is achieved by iterating over the list, summing the elements before each element and checking if the current element is less than this sum. If any element is not less than the sum, the function returns False. If the function finishes iterating without finding a less than sum, it returns True.

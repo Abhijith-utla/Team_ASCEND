@@ -1,0 +1,6 @@
+def sol():
+    return 'ee'
+
+# Checker Code
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'ee'))

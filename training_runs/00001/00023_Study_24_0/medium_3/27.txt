@@ -1,0 +1,5 @@
+def sol():
+    return [17]*3
+
+# Checking the solution
+assert sat(sol())

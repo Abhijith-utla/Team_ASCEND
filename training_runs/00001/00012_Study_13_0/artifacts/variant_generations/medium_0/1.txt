@@ -1,0 +1,15 @@
+Here are the simpler versions of the original puzzle:
+
+```python
+# Variant 1: Test with float x
+def sat(x: float):
+    return str(x).startswith("3.1415")
+
+# Variant 2: Test with int x
+def sat(x: int):
+    return str(x).startswith("3")
+
+# Variant 3: Test when the answer is not a float, but a string that starts with "3.1415"
+def sat(x: str):
+    return x.startswith("3.1415")
+```

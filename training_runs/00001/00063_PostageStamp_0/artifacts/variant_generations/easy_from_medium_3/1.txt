@@ -1,0 +1,27 @@
+Here are the three simpler versions of the given problem:
+
+VARIANT1:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    return sum(stamps) == target
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[20, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    return sum(stamps) == target
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[40, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    return sum(stamps) == target
+```
+
+In these variants, the parameters for stamps, target, max_stamps, and options have been changed to simulate the problem with different amounts, targets, and options. The function still checks whether the stamps are not in options, and whether the sum of the stamps equals the target.

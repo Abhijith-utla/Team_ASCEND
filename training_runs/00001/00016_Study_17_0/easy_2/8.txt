@@ -1,0 +1,19 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) != len(str(i + 1001))
+
+# Test the solution
+print(sol())
+```
+
+In this code, the function `sol()` is defined to find the smallest integer `i` such that `sat(i)` is False. `sat(i)` is a function that checks if the length of the string representation of `i + 1000` is not equal to the length of `i + 1001`. If `sat(i)` is False for any `i`, then `sol(i)` is the smallest such `i`.
+
+The `while` loop in `sol()` ensures that `sat(i)` is False for all `i` from 0 to 1000 (inclusive). If `sat(i)` is False for all `i`, then `i` is the smallest

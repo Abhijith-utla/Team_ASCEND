@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# It seems like your code is trying to solve a geometric problem, however, there's no actual implementation of the code.
+# In the provided code, it's checking if points are collinear or not. 
+# I'm going to assume that the function sol() is supposed to return an empty list. 
+# But without the actual implementation, I can only give you a general solution.
+
+# Suppose we have a list of points in 2D space, we can check if they are collinear.
+# A point is collinear if and only if all the lines formed by the point and its neighbors are parallel.
+# This can be done by checking if the slope between the point and its neighbor is the same.
+
+# Here's how you can implement the function:
+
+def sat(coords: List[List[int]], side=0, num_points=0):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side
+        for i2 in range(i1):
+            x2,

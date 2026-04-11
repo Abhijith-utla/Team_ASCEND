@@ -1,0 +1,5 @@
+def sol():
+    return "818"
+
+# The function 'sat' is already defined by the user.
+# So, there is no need to define it again.

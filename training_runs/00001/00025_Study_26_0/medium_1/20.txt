@@ -1,0 +1,19 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return [chr(int(str(12345678) * 4.5, 16)) * 2 for _ in range(7)]
+```
+
+This function works by converting the integer 12345678 to the base 16 and repeating it four times and converting it back to an integer. The `chr` function is used to convert the integer back to a character, and the `*` operator is used to repeat the character for each byte. The `all` function is used to ensure all elements in the list are of length 8.
+
+The test for this solution is:
+
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(7 ** 64.5) and all(len(s) == 8 for s in ls)
+
+print(sat(sol()))
+```
+
+This will output True if the function `sol` works as expected, and False otherwise.

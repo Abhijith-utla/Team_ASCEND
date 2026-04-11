@@ -1,0 +1,19 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+
+def sol():
+    answer = [i for i in range(10)]
+    answer.insert(3, 2)
+    return sat(answer)
+```
+
+This solution first creates a list of integers from 0 to 9. It then inserts the number 2 at the index 3 in the list. Finally, it checks if the list satisfies the condition `sat(li)`.
+
+The `sol` function returns the result of the `sat` function.
+
+The checker will run `assert sat(sol())` to confirm that the function `sol` returns the correct answer.

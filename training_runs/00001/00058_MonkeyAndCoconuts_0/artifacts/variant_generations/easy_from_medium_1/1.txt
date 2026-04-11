@@ -1,0 +1,31 @@
+Here are the three variant functions:
+
+VARIANT1:
+```python
+def sat(n: int):
+    for _ in range(5):
+        assert n % 5 == 0
+        n -= 1
+    return n > 0
+```
+This variant checks if the input number `n` is divisible by 5 in a loop of 5 times, which means that the number `n` is capable of being divided by 5 in a total of 5 times.
+
+VARIANT2:
+```python
+def sat(n: int):
+    for _ in range(n):
+        assert n % 5 == 0
+        n -= 1
+    return n > 0
+```
+This variant checks if the input number `n` is divisible by 5 in a loop of `n` times, which means that the number `n` is capable of being divided by 5 in a total of `n` times.
+
+VARIANT3:
+```python
+def sat(n: int):
+    for _ in range(100):
+        assert n % 5 == 0
+        n -= 1
+    return n > 0
+```
+This variant checks if the input number `n` is divisible by 5 in a loop of 100 times, which means that the number `n` is capable of being divided by 5 in a total of 100 times.

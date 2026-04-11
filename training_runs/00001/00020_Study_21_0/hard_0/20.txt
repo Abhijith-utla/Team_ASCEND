@@ -1,0 +1,5 @@
+def sol():
+    return [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+# The following assert statements ensure that the answer is correct
+assert sat(sol())

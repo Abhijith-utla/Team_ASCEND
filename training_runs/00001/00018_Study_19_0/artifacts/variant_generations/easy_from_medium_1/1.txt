@@ -1,0 +1,19 @@
+Here are the three simpler variations of the original puzzle:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return len(li) == 30
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return sum(li) == 105
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return max(li) == 34
+```

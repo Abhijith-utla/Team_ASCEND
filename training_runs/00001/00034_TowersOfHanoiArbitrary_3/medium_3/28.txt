@@ -1,0 +1,5 @@
+def sol():
+    return [sorted(s) for s in [source[:] for source in source]]
+
+# Testing the solution
+assert sat(sol())

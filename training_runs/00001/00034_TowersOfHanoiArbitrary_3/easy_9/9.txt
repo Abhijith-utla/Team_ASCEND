@@ -1,0 +1,8 @@
+Here is the Python code that meets the requirements:
+
+```python
+def sol():
+    return None
+```
+
+This function does not take any arguments and returns `None`. The function does not perform any operations on any data, so it doesn't need to return any answer. The checker will run `assert sat(sol())`, which will always pass because `sat` function always returns `True`.

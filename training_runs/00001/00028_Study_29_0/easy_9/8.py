@@ -1,0 +1,14 @@
+def sat(l: list):
+    return all(i in range(996) for i in l for j in l if abs(i * i - j * j) >= 10)
+
+def sol():
+    for i in range(996):
+        for j in range(996):
+            if abs(i * i - j * j) >= 10:
+                return False
+    return True
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

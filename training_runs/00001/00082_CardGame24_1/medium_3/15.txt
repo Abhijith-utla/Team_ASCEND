@@ -1,0 +1,6 @@
+def sol():
+    return {
+        'is_prime': lambda x: all(x % i != 0 for i in range(2, int(x**0.5) + 1)),
+        'is_even': lambda x: x % 2 == 0,
+        'is_divisible_by_3_or_5': lambda x: x % 3 == 0 or x % 5 == 0
+    }

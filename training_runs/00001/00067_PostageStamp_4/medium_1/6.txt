@@ -1,0 +1,14 @@
+def sol():
+    return [56]
+
+# assert sat([56])
+# assert sat([56, 56])
+# assert not sat([56, 55])
+# assert sat([25, 22, 8, 84, 60, 56, 54, 7, 8])
+# assert not sat([56, 55])
+# assert not sat([25, 22, 8, 84, 60, 56, 54])
+# assert not sat([25, 22, 8, 84, 60, 56, 54, 7])
+# assert not sat([25, 22, 8, 84, 60, 56, 54, 7, 100])
+# assert not sat([25, 22, 8, 84, 60, 56, 54, 7, 8, 100])
+# assert not sat([100])
+#

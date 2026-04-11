@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Test Case:
+assert sat([10, 20, 30, 40]) == True
+assert sat([10, 20, 30]) == False
+
+# Check for the exception case
+try:
+    sat([10, 20, 30, 40, 50])
+except Exception as e:
+    assert type(e) == ValueError

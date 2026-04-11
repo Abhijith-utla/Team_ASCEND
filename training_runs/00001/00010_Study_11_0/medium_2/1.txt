@@ -1,0 +1,18 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user.
+# This function checks if the length of all elements in a list is equal.
+# If the list is empty, it returns True, else it returns False.
+# The function 'sol' does not take any arguments.
+# The function 'sol' returns a list.
+
+# The function 'sat' is defined as:
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+
+# The final checker will run: assert sat(sol())
+assert sat(sol())

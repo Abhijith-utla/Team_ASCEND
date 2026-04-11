@@ -1,0 +1,6 @@
+def sol():
+    return 2.0
+
+# The function 'sat' is already defined by the user.
+# We just need to return a value that satisfies the condition.
+# In this case, we return 2.0.

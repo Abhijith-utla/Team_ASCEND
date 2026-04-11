@@ -1,0 +1,16 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    def sat(s: str) -> bool:
+        if len(s) > 30 or len(s) < 5:
+            return False
+        return len(set(s)) == len(s)
+
+    answer = "example_string"
+    assert sat(answer)
+
+    return answer
+```
+
+This code defines the function `sol`, which is a part of the solution. It uses a nested function `sat` to satisfy the condition. The `answer` variable is then assigned the string "example_string" and asserted to satisfy the condition. If the assertion fails, the program will raise an AssertionError. If the assertion succeeds, the function returns the `answer` string.

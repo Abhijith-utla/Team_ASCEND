@@ -1,0 +1,16 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 3)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:02:00.811592+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 3)|parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): puz = \"__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25\" x = \"__________8...",
+  "difficulty": "medium",
+  "problem_id": "00069_Sudoku_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

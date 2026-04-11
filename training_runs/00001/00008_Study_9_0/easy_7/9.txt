@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [chr(i) for i in range(32, 127)] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function will return `True` if the list of ASCII characters from 32 to 126 (inclusive) is equal to the list of characters in the string "The quick brown fox jumps over the lazy dog". The `replace` function is used to remove all spaces from the string. Otherwise, it will return `False`.

@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(x: float):
+    return str(x - 3.1417).startswith("123.456")
+```
+
+VARIANT2:
+```python
+def sat(x: float):
+    return str(x - 3.1417).startswith("123.4567")
+```
+
+VARIANT3:
+```python
+def sat(x: float):
+    return str(x - 3.1418).startswith("123.456")
+```

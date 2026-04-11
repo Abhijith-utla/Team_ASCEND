@@ -1,0 +1,5 @@
+def sol():
+    return 'Hello, World!'
+
+# Test
+print(sol())  # Output: Hello, World!

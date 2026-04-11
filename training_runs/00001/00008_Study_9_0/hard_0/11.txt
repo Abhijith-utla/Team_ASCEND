@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(ord(c) == ord(s[i]) for i, c in enumerate(li) for s in ("The quick brown fox jumps over the lazy dog", "The five boxing wizards jump quickly"))
+```
+
+This function checks if the characters at the given indices are the same in both strings. The `ord()` function returns the Unicode code point of a specified character.
+
+The `all()` function returns `True` if all elements of the iterable (in this case, a generator expression) are `True`. In this case, the generator expression generates tuples of whether each character in the given list and string is the same.

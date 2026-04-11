@@ -1,0 +1,7 @@
+def sol():
+    rev_quine = """
+    def sol():
+        return \"""
+        return eval(rev_quine) == rev_quine.strip()
+        """
+    return eval(rev_quine) == rev_quine.strip()

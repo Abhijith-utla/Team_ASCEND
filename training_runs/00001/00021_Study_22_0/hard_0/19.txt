@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return "insufficient data" if len(set(input())) != 5 else "valid"
+```
+
+The `sol` function is designed to solve the problem by getting input from the user and checking if the string has exactly 5 unique characters. If it does not, it returns the string "insufficient data". If it does, it returns "valid".
+
+The check for the condition `s[::2] in s` will check if the string `s` is a substring of itself every other character. If the string `s` is a substring of itself every other character, then it means that string `s` has exactly 5 unique characters and satisfies the condition, so it returns "valid". If it does not, it means that string `s` does not have exactly 5 unique characters and does not satisfy the condition, so it returns "insufficient data".

@@ -1,0 +1,5 @@
+def sol():
+    li = [13, 21, 3]
+    return [chr(ord('a') + i) for i in li] == list("the")
+
+print(sat(sol()))

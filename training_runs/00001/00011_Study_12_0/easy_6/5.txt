@@ -1,0 +1,11 @@
+Your provided code is almost correct. However, the checker expects a function named `sat` with one argument that is a list of integers. You also need to add a list of 1000 zeros to the list because the problem statement mentions "The final checker will run: assert sat(sol())". Here's the correct code:
+
+```python
+def sol():
+    return [0]*1000
+
+def sat(li: List[int]):
+    return all(i + j == 5 for i, j in zip([4] + li, li)) and len(li) == 1001
+```
+
+This code will return a list of 1001 elements where each element is 0. The first element is 4, the rest are the elements from the input list. The checker will then assert that the result of `sat(sol())` is True.

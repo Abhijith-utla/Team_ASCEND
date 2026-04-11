@@ -1,0 +1,8 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return 'doo'
+```
+
+In this code, 'sol' function always returns the string 'doo'.

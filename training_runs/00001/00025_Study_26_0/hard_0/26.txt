@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return "".join(["A" * 8] * 8)
+
+assert sat([sol()[i:i+8] for i in range(0, len(sol()), 8)])
+```
+
+This function works by creating a list of strings of length 8, joined together with the "A" character repeated 8 times, then selecting every 8th character in this joined string. The result is a string of length 88, and since 8 ** 88 equals 6561, the function will return this string if the assertion is true.

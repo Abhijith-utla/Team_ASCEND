@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# We can use this as a test case to check the correctness of the function
+def test_sat():
+    assert sat([0, 1, 2, 3, 2])
+    assert not sat([0, 2, 1, 3, 2])
+    assert sat([3, 2, 1, 0, 4])
+    assert not sat([4, 0, 2, 3, 1])
+    assert sat([1, 2, 3, 4, 5])
+    assert not sat([5, 4, 3, 2, 1])
+test_sat()

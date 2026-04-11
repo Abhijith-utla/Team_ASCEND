@@ -1,0 +1,4 @@
+def sol():
+    return "4/2*3-12"
+
+print(sat(sol()))

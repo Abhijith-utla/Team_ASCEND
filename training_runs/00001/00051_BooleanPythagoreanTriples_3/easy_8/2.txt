@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# The function `sol` should return an empty list, as all numbers are either equal or not in ascending order.
+
+# To validate the function `sol`, run the following assert statement:
+assert sat(sol())

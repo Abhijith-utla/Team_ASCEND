@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The solution will be an empty list since we cannot get any stamp.

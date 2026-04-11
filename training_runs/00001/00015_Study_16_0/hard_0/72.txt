@@ -1,0 +1,5 @@
+def sol():
+    return float(input("Enter a number: ")) + len(input("Enter a string: ")) == 4.5
+
+# Testing the function
+assert sat(sol())

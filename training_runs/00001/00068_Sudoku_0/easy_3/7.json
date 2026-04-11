@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T15:50:15.494801+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): answer = \"___________9_2___7__________1_8_4____2_7_8____4_____1____69_2_8__5_6__3_7___49______\" assert sat...",
+  "difficulty": "easy",
+  "problem_id": "00068_Sudoku_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

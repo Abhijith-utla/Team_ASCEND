@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 12
+```
+
+This function returns the number 12 because it satisfies the conditions defined in the `sat` function.

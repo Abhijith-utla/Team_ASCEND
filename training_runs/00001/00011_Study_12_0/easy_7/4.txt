@@ -1,0 +1,12 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    li = [i for i in range(1000)]
+    li.insert(0, 4)
+    return all(i + j == 3 for i, j in zip(li, [4] + li)) and len(li) == 1001
+```
+
+This function creates a list of integers from 0 to 999, then inserts 4 at the beginning of the list. It then checks if each pair of elements in the list and the rest of the list add up to 3 and if the list has 1001 elements. If these conditions are met, it returns True; otherwise, it returns False.

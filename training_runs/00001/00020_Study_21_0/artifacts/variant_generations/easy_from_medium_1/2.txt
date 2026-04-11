@@ -1,0 +1,24 @@
+Sure, I can provide three simplified versions of your original function.
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(8)]) and len(set(li)) == 3
+```
+In this variant, I have reduced the range to `range(8)` because the original function only checks the next element after the last one.
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3
+```
+In this variant, I have added an extra condition to check after the last element.
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 2] for i in range(len(li) - 1)]) and len(set(li)) == 3
+```
+In this variant, the condition is changed to compare the next two elements instead of one. This is because the original function only compares one pair of consecutive elements.
+
+Please note that these are simplified versions. The original function is a correct and complete solution, it checks if the list is in non-decreasing, has exactly 3 unique elements, and does not check the last element.

@@ -1,0 +1,15 @@
+Here is the correct pattern for the sol function:
+
+```python
+def sol():
+    return {(a, b) for a, b in coords} == num_points
+```
+
+In this function, we generate a set of all tuples (a, b) where a and b are coordinates in the coords list, and then compare this set with num_points to check if the number of unique points is equal to num_points.
+
+This function takes three arguments:
+1. coords: a list of tuples representing the coordinates of the points.
+2. side: an integer representing the side of the square grid.
+3. num_points: an integer representing the number of points on the grid.
+
+The function returns True if the number of unique points is equal to num_points and False otherwise.

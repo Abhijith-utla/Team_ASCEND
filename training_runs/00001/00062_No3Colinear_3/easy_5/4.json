@@ -1,0 +1,17 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T14:52:41.662226+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): return {} # This is an example of a valid solution. # Replace the return value with your actual solution. ...",
+  "difficulty": "easy",
+  "problem_id": "00062_No3Colinear_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 5
+}

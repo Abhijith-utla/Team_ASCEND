@@ -1,0 +1,17 @@
+def sol():
+    return (12, 0)
+
+# Test Case 1
+assert sat(sol()) == False
+
+# Test Case 2
+assert sat((12, 30)) == False
+
+# Test Case 3
+assert sat((12, 0)) == True
+
+# Test Case 4
+assert sat((23, 59)) == False
+
+# Test Case 5
+assert sat((0, 0)) == True

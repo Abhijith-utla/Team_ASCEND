@@ -1,0 +1,6 @@
+def sol():
+    s = 'oooooooooooooooooooooooo'
+    return s
+
+# Test the solution
+assert sat(sol())

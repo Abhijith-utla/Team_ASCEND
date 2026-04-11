@@ -1,0 +1,20 @@
+Here is the solution for the problem.
+
+The function `sat` checks if all the elements in the list `li` are equal to 2 raised to the power of the index minus one. This is a mathematical property of a geometric series.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x == 2 ** i - 1 for i, x in enumerate(li))
+```
+
+This function works by enumerating over the list `li` and checking if each element is equal to 2 raised to the power of its index minus one. The `enumerate` function provides a convenient way to access both the index and the value of each element in the list.
+
+The `all` function is a built-in Python function that returns `True` if all elements of an iterable are true. In this case, it returns `True` if all elements in `li` are equal to 2 raised to the power of their index minus one, and `False` otherwise.
+
+The final checker will run:
+
+```python
+assert sat([2 ** i - 1 for i in range(20)])
+```

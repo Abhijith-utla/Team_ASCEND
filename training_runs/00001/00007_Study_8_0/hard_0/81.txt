@@ -1,0 +1,23 @@
+Your pattern is almost correct. You just need to return a boolean value from the function. Here is the correct Python code:
+
+```python
+def sol():
+    return [1234] in [1235] and [1234] != [1235]
+```
+
+This code will return `True` if the index 1234 exists in the list 1235, and the elements at these indexes are not equal, else it will return `False`.
+
+Please note that this is a Python code, not a Markdown code block. If you want to write it in Markdown, you would need to escape special characters like `[`, `]`, `(`, `)`, and `{`, `}`. Here is the Markdown code:
+
+```markdown
+```python
+def sol():
+    return [[1234]] in [[1235]] and [[1234]] != [[1235]]
+```
+```
+
+This will render as:
+
+```python
+def sol():
+    return [1234] in [1235

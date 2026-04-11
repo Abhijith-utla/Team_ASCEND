@@ -1,0 +1,8 @@
+def sol():
+    x = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65]
+    length = 13
+    s = "Dynamic programming solves this puzzle!!!"
+    return [length, s]
+
+# Check if the solution is correct
+assert sat(sol())

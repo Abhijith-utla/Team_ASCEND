@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo'

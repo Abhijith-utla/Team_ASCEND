@@ -1,0 +1,8 @@
+The correct pattern for solving this problem is:
+
+```python
+def sol():
+    return float(str(len("str"))) + len("str") == 4.5
+```
+
+This function takes a string, converts it into a float, adds the length of the string to it and then checks if the result is equal to 4.5. If it is, the function returns the float. Otherwise, it returns None.

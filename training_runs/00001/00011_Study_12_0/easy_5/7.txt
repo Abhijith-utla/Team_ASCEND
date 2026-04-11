@@ -1,0 +1,18 @@
+The given Python function named `sat` is already defined by the user. The function `sat` is designed to determine if a list `li` of 1000 elements contains only integers and their sum is 4.
+
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return 4
+```
+
+The function `sol` simply returns the number 4, which is the required answer for the problem.
+
+You can verify the correctness of the function by running the code:
+
+```python
+assert sat(sol())
+```
+
+This code will pass if `sol` returns 4 and will fail otherwise. The final checker will run: `assert sat(sol())`, if the function `sat` returns 4, then the function `sol` is correct, else it's not correct.

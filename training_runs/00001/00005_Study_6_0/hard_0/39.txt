@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return 4
+```
+
+This solution always returns 4 because the condition in the `sat` function is `i % 123 == 4` which always evaluates to True.

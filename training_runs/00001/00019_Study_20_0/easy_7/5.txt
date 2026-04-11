@@ -1,0 +1,11 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    def sat(li: List[int]) -> bool:
+        return all(j == 3 * i for i, j in enumerate(li))
+
+    return sat
+```
+
+In this pattern, `sol()` function returns another function `sat` that takes a list of integers and returns `True` if all elements in the list satisfy the condition `j == 3 * i`, and `False` otherwise. This function is defined inside `sol()` and is used as a reference for the checker.

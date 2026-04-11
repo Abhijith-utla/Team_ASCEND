@@ -1,0 +1,2 @@
+def sol():
+    return rev_quine == rev_quine[::-1]

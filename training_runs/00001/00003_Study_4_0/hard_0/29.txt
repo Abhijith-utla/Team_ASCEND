@@ -1,0 +1,13 @@
+The provided function `sat` is incorrect because it returns `li.count(li[3]) == 2` which will return `True` if the count of element at the 3rd index is 2 and it is not equal to 10. The correct way to check if the list has 10 elements and if the element at the 3rd index is 2 is `return len(li) == 10 and li[3] == 2`.
+
+Correct pattern:
+```python
+def sat(li: List[int]):
+    return len(li) == 10 and li[3] == 2
+```
+
+Incorrect pattern:
+```python
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```

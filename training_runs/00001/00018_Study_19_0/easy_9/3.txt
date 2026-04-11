@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return [1]
+
+assert sat(sol())
+```
+
+This solution will return a list with one element that is not zero.

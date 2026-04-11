@@ -1,0 +1,18 @@
+The function `sat` checks if a list has exactly 10 elements and the maximum element in the list is 12. To solve this problem, we can create a list of 10 elements between 0 and 12, and check if the list satisfies the given conditions. Here is the Python code for it:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    if len(li) != 10:
+        return False
+    max_element = max(li)
+    return max_element == 12
+```
+
+You can run the test with:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))  # True
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]))  # False
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 1

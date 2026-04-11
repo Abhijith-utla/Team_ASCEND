@@ -1,0 +1,10 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return "oo" * 1000
+
+assert sat(sol())
+```
+
+In this solution, the function `sol` is defined to return a string of "oo" repeated 1000 times. The function `sat` then checks if this string contains exactly 1000 'o's and 0 'oo's. If it does, the function returns `True`, otherwise it returns `False`. The checker will run `assert sat(sol())` to assert that the function returns the correct string.

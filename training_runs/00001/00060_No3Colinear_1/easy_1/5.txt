@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return []
+```
+
+This solution is incorrect because the function `sat` is not supposed to return anything. It should return the final answer object. The function `sol` should return an empty list, not the answer object.

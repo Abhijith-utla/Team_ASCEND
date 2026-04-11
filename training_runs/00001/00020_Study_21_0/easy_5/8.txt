@@ -1,0 +1,8 @@
+def sol():
+    answer = []
+    for i in range(10):
+        answer.append(i)
+    return answer
+
+# This assertion test checks if the solution function works correctly
+assert sat(sol())

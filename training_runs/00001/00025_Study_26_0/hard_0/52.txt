@@ -1,0 +1,4 @@
+def sol():
+    return [str(8 ** i) for i in range(88)]
+
+assert sat(sol())

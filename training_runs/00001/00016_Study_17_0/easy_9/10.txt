@@ -1,0 +1,8 @@
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+# Test
+assert sat(sol())

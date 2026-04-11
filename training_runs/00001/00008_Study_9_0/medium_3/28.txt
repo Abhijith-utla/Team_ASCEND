@@ -1,0 +1,16 @@
+The function `sat` is already defined by the user. It checks if the input list `li` is equal to a list of ASCII values of the characters in the string "The quick brown fox jumps over the lazy dog". The function returns `True` if the input list `li` is equal to this list, and `False` otherwise. 
+
+Here is a Python function that does the same:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+The `List[int]` in the function definition is a type annotation that means that the function expects a list of integers as input. The `chr(i)` part of the function is creating a list of characters from the integers in the input list. The `==` operator is comparing this list to the list of characters in the string "The quick brown fox jumps over the lazy dog", but this time without spaces.
+
+Here is the checker for this function:
+
+```python
+def test_sat():
+    assert sat([

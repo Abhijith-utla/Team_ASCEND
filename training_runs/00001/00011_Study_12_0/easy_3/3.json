@@ -1,0 +1,16 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:14:46.355357+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The given Python function `sat` is incorrect because it checks if the sum of two numbers is 3, but it does not provid...",
+  "difficulty": "easy",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

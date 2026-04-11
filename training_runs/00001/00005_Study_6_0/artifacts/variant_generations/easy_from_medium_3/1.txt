@@ -1,0 +1,21 @@
+Solution:
+
+Here are the three simpler variants of the problem.
+
+VARIANT1:
+```python
+def sat(n: int):
+    return n <= 10 ** 10
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    return n % 2 == 0
+```
+
+VARIANT3:
+```python
+def sat(n: int):
+    return n <= 10 ** 10 and n % 2 == 0
+```

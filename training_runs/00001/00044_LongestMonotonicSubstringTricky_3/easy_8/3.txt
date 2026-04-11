@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+# This function checks if the string 's' is a permutation of the given string 'x'. 
+# It does this by checking if 'x' contains the same characters as 's' and in the correct order.
+# If 'x' is a permutation of 's', the function returns True, otherwise it returns False.
+# The permutation is considered valid if each character 'c' in 'x' appears exactly once and its position is correct.
+def sat(x: List[int], s=" OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx"):
+    length = len(x)
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length - 1))
+
+# This function tests the 'sat' function by asserting that the output of 'sol' is a permutation of 's'.
+# If 'sat' returns True, the test passes; otherwise, it fails

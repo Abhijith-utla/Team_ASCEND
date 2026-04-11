@@ -1,0 +1,9 @@
+The correct pattern for the `sol` function is:
+
+```python
+def sol():
+    s = 'ho' * 1000
+    return s
+```
+
+This function constructs a string `s` that consists of 1000 characters 'ho'. The checker will then verify if the string contains 100 'oo' and 801 'o' characters.

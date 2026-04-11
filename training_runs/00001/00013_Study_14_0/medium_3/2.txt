@@ -1,0 +1,10 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+```
+
+This function checks if all elements in the list are equal to the sum of all elements to their right in the list. If all elements are equal to the sum of their right hand neighbors, it returns True. If not, it returns False.

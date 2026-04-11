@@ -1,0 +1,9 @@
+The correct answer is:
+
+```python
+def sol():
+    li = [1] * 999 + [2]
+    return li
+```
+
+In the provided function, the list has 999 elements with the first element being 2 and the last element being 1. The provided function correctly returns this list as the answer.

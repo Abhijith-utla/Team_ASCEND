@@ -1,0 +1,19 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    if not li:
+        return True
+    if len(li) == 1:
+        return True
+    if li[-1] >= sum(li[:-1]):
+        return False
+    return True
+```
+This function checks if the list `li` satisfies the condition in the problem statement. The function starts by checking if the list is empty or has only one element. Then, it checks if the last element of the list is less than the sum of all elements before it. If the last element is less than the sum, the function returns `False`. Otherwise, it returns `True`.
+
+You can use this function to check the correctness of a solution by calling `assert sat(li)`, where `li` is a list of integers.
+
+Please replace `li` with your actual input.

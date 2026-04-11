@@ -1,0 +1,17 @@
+{
+  "attempt_num": 18,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T12:55:12.715113+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [] # Add your code here to generate a list of 7824 colors from set {0,1}. # The colors can be repre...",
+  "difficulty": "medium",
+  "problem_id": "00049_BooleanPythagoreanTriples_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

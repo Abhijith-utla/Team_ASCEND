@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# This function will always return an empty list because all elements in the list are less than or equal to zero.

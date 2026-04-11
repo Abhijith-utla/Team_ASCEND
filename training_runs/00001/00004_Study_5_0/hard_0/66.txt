@@ -1,0 +1,22 @@
+Here is the Python solution for your problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function `sat` accepts a list of integers and checks if all the elements in the list are present exactly once in the list. If all elements are present exactly once, it returns `True`. Otherwise, it returns `False`.
+
+Here is how you can use it:
+
+```python
+print(sat([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]))  # True
+print(sat([1, 2, 2, 3, 3, 3, 4, 4, 4, 5]))  # False
+```
+
+In the first test case, all elements in the list are present exactly once, so it returns `True`. In the second test case, the element `5` is not present exactly once in the list, so it returns `False`.

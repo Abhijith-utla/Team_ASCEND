@@ -1,0 +1,6 @@
+def sol():
+    return True
+
+# Testing the function
+assert sat(["dog", "cat", "bat"])
+assert not sat(["dog", "cat", "bat", "ant"])

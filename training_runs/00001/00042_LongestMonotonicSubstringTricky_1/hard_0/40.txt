@@ -1,0 +1,7 @@
+def sol():
+    x = []
+    for _ in range(535):
+        x.append(ord(x[-1]))
+    return x
+
+assert sat(sol())

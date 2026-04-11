@@ -1,0 +1,9 @@
+Here is the correct pattern for the Python solution:
+
+```python
+def sol():
+    li = [0]*10000
+    return li
+```
+
+This function will return a list of 10000 elements all set to 0. The count of elements in this list is 10000, which is the required count. The count of 0 elements is also 1. The function is also correct according to the provided condition.

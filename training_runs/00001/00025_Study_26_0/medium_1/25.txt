@@ -1,0 +1,4 @@
+def sol():
+    return [str(7 ** 64.5).split('.')[0]]
+
+assert sat(sol())

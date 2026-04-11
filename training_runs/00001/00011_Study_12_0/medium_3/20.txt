@@ -1,0 +1,6 @@
+def sol():
+    return {
+        'answer': 3,
+    }
+
+assert sat(sol())

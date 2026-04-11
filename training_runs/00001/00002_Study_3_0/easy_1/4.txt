@@ -1,0 +1,10 @@
+Sure, here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(len(li))) and all(li[i] != i for i in range(len(li))) and len(li) == 1000
+```
+
+This function `sat` checks if the list `li` is sorted, contains no duplicates, and has a length of 1000. The function returns `True` if all conditions are met, and `False` otherwise.

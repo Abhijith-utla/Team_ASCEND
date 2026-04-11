@@ -1,0 +1,10 @@
+Here is the correct solution to the problem.
+
+```python
+def sol():
+    def sat(s: str):
+        return s.count('oo') >= 2
+    return sat
+```
+
+The `sol` function returns the `sat` function. The `sat` function takes a string `s` as an argument and checks if the string contains at least two 'oo' characters. If it does, the `sat` function returns `True`, otherwise it returns `False`. The `sol` function returns the `sat` function.

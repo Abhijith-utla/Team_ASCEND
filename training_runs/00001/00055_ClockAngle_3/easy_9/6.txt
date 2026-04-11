@@ -1,0 +1,4 @@
+def sol():
+    return [0, 0]
+
+# The function 'sol' has no arguments and returns a list [0, 0] which satisfies the condition of the problem.

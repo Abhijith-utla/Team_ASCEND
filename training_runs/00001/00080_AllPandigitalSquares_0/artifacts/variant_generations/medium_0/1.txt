@@ -1,0 +1,17 @@
+Here are three simple variations of the `sat` function:
+
+```python
+# Variant 1
+def sat(nums: List[int]):
+    return [sorted([int(s) for s in str(n * n * n)]) for n in set(nums)] == [list(range(10))]
+
+# Variant 2
+def sat(nums: List[int]):
+    return [sorted([int(s) for s in str(n * n * n * n)]) for n in set(nums)] == [list(range(10))]
+
+# Variant 3
+def sat(nums: List[int]):
+    return [sorted([int(s) for s in str(n * n * n * n * n)]) for n in set(nums)] == [list(range(10))]
+```
+
+In these variants, each number in the output is sorted digit by digit, and each square of each unique number is taken into account. If the output is the same as the identity list of integers from 0 to 9, then the square of each unique number equals to its own square. Thus, the function returns True when the input numbers are all perfect squares.

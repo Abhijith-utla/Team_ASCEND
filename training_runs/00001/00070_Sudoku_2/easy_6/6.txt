@@ -1,0 +1,8 @@
+def sol():
+    return "_" * 35
+
+def sat(x):
+    assert all(c == "_" or c in set('123456780') for c in x)
+    assert len(set(x)) == 10
+
+assert sat(sol())

@@ -1,0 +1,10 @@
+Here's the correct pattern for the code:
+
+```python
+def sol():
+    li = [1] * 999
+    li[0] = 5
+    return li
+```
+
+In the code above, a list with ten thousand elements starting from index 0 is created. At index 0, the value is changed to 5. This fulfills the conditions defined in the problem statement.

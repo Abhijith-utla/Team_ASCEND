@@ -1,0 +1,19 @@
+The function `sat` is defined to check if a string `s` contains exactly 10 occurrences of the digit 8 within a length of 3. 
+
+The function `sat` takes a string `s` as an argument and returns a boolean value. 
+
+The string `s` is first converted to an integer and then to a string. The count of `s` in this converted string is compared with 10. If the count is 10, the function returns True, else it returns False.
+
+The length of the string `s` is also checked. If it's 3, the function returns True, else it returns False. 
+
+The string `s` must contain exactly 10 occurrences of the digit 8 within a length of 3, otherwise the function returns False. 
+
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    def sat(s: str):
+        return str(int(8 ** 2888)).count(s) == 10 and len(s) == 3
+
+    s = '8' * 100
+    while

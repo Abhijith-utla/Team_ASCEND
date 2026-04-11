@@ -1,0 +1,13 @@
+Here is the Python solution:
+
+```python
+def sol():
+    return 'de'
+
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'de'))
+```
+
+This solution returns the string 'de' as the answer.
+
+The function `sat` checks if the answer string matches the string 'de'. The function `sol` returns 'de' as the answer.

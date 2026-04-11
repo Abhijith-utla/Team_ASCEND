@@ -1,0 +1,11 @@
+{
+  "attempt_num": 2,
+  "created_at": "2026-04-11T10:27:03.949939+00:00",
+  "parsed_variant_count": 1,
+  "parsed_variant_nums": [
+    1
+  ],
+  "problem_id": "00032_TowersOfHanoiArbitrary_1",
+  "source_variant_num": 3,
+  "stage": "easy_from_medium"
+}

@@ -1,0 +1,19 @@
+def sol():
+    moves = [
+        [0, 1],
+        [3, 1],
+        [0, 2],
+        [1, 0],
+        [2, 3],
+        [0, 0]
+    ]
+    source = [[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]]
+    target = [[1, 2, 3, 8, 9], [4], [5]]
+
+    if sat(moves, source, target):
+        return "valid"
+    else:
+        return "invalid"
+
+# Uncomment this block to run the code and verify the solution
+# print(sat(moves, source, target))

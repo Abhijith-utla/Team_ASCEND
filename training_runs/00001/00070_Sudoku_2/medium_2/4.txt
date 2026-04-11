@@ -1,0 +1,3 @@
+def sol():
+    x = ["_"] * 81
+    return x

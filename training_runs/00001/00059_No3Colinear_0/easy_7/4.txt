@@ -1,0 +1,4 @@
+def sol():
+    return {}
+
+# The solution is empty because the problem doesn't provide any initial coordinates

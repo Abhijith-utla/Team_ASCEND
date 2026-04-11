@@ -1,0 +1,22 @@
+Here are three simple variants of the original `sat` function:
+
+1. Changing the value of `n` to 200:
+
+```python
+def sat(colors: List[int], n=200):
+    ...
+```
+
+2. Adding a condition to check if the length of the `colors` list is equal to 200:
+
+```python
+def sat(colors: List[int], n=100):
+    ...
+```
+
+3. Modifying the `assert` statement to check if the elements in the `colors` list are greater than or equal to 0 and less than or equal to 1:
+
+```python
+def sat(colors: List[int], n=100):
+    ...
+```

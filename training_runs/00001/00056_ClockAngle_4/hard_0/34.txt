@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# Test cases
+print(sat([0, 0]))  # False
+print(sat([12, 0]))  # False
+print(sat([12, 30]))  # True
+print(sat([12, 35]))  # False
+print(sat([3, 0]))  # False
+print(sat([3, 30]))  # False
+print(sat([3, 45]))  # False
+print(sat([11, 55]))  # True
+print(sat([11, 30]))  # False
+
+# Checker
+assert sat(sol())

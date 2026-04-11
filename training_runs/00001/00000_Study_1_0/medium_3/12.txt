@@ -1,0 +1,11 @@
+Here is the solution for your problem:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+
+assert sat(sol())
+```
+
+In the code above, we create a string `s` that contains 'oo' repeated 1000 times. Then we return `s`. The assertion check will pass if `s` is equal to 'oo' repeated 1000 times and 'o' in the middle.

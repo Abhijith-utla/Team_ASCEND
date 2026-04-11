@@ -1,0 +1,11 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    i = 0
+    while sat(i):
+        i += 1
+    return i
+```
+
+This code generates and returns the first even positive integer. If there is no even positive integer, it returns 0.

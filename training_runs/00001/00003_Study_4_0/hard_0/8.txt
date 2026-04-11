@@ -1,0 +1,17 @@
+Sure, the function `sat` checks if the list `li` has exactly 10 elements and the element at index 3 (which is at the fourth position in Python indexing) appears exactly twice in the list. If both conditions are met, it returns `True`, otherwise `False`.
+
+Here is the Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+You can test this function using the following code:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # True
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9]))  # False
+```

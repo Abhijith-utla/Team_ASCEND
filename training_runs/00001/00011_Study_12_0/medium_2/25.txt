@@ -1,0 +1,4 @@
+def sol():
+    return [1, 2, 3, 4] + [5]*997 + [6]
+
+print(sat(sol())) # True

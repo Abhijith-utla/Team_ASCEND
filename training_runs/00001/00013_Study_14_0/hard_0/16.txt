@@ -1,0 +1,20 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    total_sum = sum(li)
+    for i in range(20):
+        if sum(li[:i]) != i:
+            return False
+    return total_sum == sum(li)
+
+# test the function
+li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+assert sat(li)
+```
+
+This function `sat` checks whether the list `li` satisfies the condition that the sum of the first `i` elements is equal to `i` for `i` from 0 to 19. It also checks whether the total sum of the list equals the sum of the elements in the list. The function `sat` returns `True` if both conditions are satisfied and `False` otherwise.
+
+In the test

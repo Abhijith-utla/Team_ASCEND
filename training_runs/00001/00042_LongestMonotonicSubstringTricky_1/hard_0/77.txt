@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(26) if 'A' <= chr(ord('A') + i) <= 'I']

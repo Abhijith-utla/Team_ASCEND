@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(999) if i not in [li[i] for li in [[j for j in range(999)] for i in range(999)]]]
+
+# Testing
+assert sat(sol())

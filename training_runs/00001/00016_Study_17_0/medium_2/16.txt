@@ -1,0 +1,7 @@
+def sol():
+    for i in range(10000):
+        if len(str(i + 1000)) != len(str(i + 1001)):
+            return False
+    return True
+
+print(sat(sol()))  # assert: True

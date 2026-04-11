@@ -1,0 +1,10 @@
+def sol():
+    n = 100
+    while n > 0:
+        if sat(n):
+            return n
+        n -= 1
+    return None
+
+# Test
+assert sat(sol())

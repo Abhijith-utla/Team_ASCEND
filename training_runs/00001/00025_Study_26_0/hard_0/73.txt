@@ -1,0 +1,5 @@
+def sol():
+    return "".join(["8" * 8] * 8)
+
+# Testing the function
+assert sat(sol())

@@ -1,0 +1,21 @@
+def sat(moves: List[List[int]]):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == [8, 7, 6, 5, 4, 3, 2, 1]
+
+def sol():
+    return [8, 7, 6, 5, 4, 3, 2, 1]
+
+# The function sat() is defined in the problem statement. It checks if the rod configuration is correct according to the moves provided.
+# The rod configuration is represented as a list of lists. Each sublist contains the disks on a rod, starting from the top disk.
+# The moves are represented as pairs of indices, where the index of the rod to which a disk is moved is the first element of the pair, and the index of the rod from which a disk is taken is the second element of the pair.
+# The function returns True if the configuration is correct, and False otherwise.
+# The function assumes that the rod configuration is correct, and does not check if the disks are moved from a rod that is empty or smaller than the top disk on any rod.
+
+# Test case
+moves = [[0, 7], [1, 6], [0, 6], [2, 7], [1, 7], [0, 2], [1, 2], [0, 4], [2, 4], [3
+
+if __name__ == "__main__":
+    assert sat(sol())

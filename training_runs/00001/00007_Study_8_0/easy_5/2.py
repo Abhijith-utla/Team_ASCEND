@@ -1,0 +1,16 @@
+def sat(ls, idx1=2, idx2=1):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+def sol():
+    return {}
+
+def sat(ls, idx1=2, idx2=1):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+assert sat([1,2,3,4,5])
+assert not sat([1,2,3,4,5])
+assert sat([1,2,3,5,5])
+assert not sat([1,2,3,5,4])
+
+if __name__ == "__main__":
+    assert sat(sol())

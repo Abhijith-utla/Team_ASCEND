@@ -1,0 +1,21 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(x + 1 == (2 ** x) - 1 for x in range(20))
+```
+This variant checks if `li` is a list of increasing integers where `li[i] = 2 ** i - 1` for `0 <= i < 20`.
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x])
+```
+This variant checks if `li` is a list of increasing integers where `li[x] = li[:x]` for `0 <= x < 20`.
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```
+This variant checks if `li` is a list of integers where `li[i] = sum(li[:i])` for `0 <= i < 20`.
+```

@@ -1,0 +1,7 @@
+def sol():
+    n = 50
+    while n > 0:
+        if sat(n):
+            return n
+        n -= 1
+    return -1

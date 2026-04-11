@@ -1,0 +1,16 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+This function `sat` is defined to check if all elements in the list are the same. It does this by comparing the minimum element in the list, the maximum element in the list, and the length of the list. If all elements are the same, it returns `True`, otherwise `False`.
+
+The function `min` and `max` are built-in Python functions that return the minimum and maximum values in a list, respectively. The `str` function is used to convert the list length to a string, which is then compared to the minimum and maximum values.
+
+The function `sat` is considered valid if the list `ls` is a list of strings, and the list `ls` contains at least one element. This is because the function is designed to handle a list of any length, and the list `ls` can contain any type of data, not just strings.
+
+The assertion `assert sat(<list_of_strings>)` will

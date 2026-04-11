@@ -1,0 +1,13 @@
+Here is a solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function checks whether all elements in the given list `li` are equal to their corresponding index. The function uses the `count()` method to count the occurrences of each index in the list and compares it with the index itself. If any of the counts do not match the index, the function returns `False` indicating that the list does not satisfy the condition. If the function finishes without finding any mismatches, it returns `True` indicating that the list does satisfy the condition.

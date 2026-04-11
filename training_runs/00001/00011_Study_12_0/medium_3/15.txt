@@ -1,0 +1,17 @@
+Here is a Python solution for your problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [1]*999 + [3]
+    return li
+
+print(sol())
+```
+
+In this solution, we first generate a list `li` with 1000 elements and the last element is 3. The rest are 1's.
+
+The function `sol` returns the list `li`.
+
+The checker will run `assert sat(sol())` to check if the function `sol` returns a list with 1000 elements and the last element is 3.

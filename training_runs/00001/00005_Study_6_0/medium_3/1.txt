@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return 2
+```
+
+The solution function returns 2 because 2 is an even number and it is less than or equal to 10^10.

@@ -1,0 +1,26 @@
+def sol():
+    return []
+
+assert sat([])
+assert sat([7])
+assert sat([7, 7])
+assert sat([7, 7, 7])
+assert not sat([7, 7, 8])
+assert sat([7, 7, 8])
+assert sat([7, 8])
+assert sat([8])
+assert not sat([9])
+assert sat([9])
+assert not sat([7, 8, 9, 9])
+assert sat([7, 8, 9, 10])
+assert not sat([7, 8, 9, 11])
+assert sat([7, 8, 9, 9])
+assert sat([7, 8, 9, 8])
+assert not sat([7, 8, 9, 7])
+assert sat([7, 8, 8])
+assert sat([8, 8])
+assert not sat([9, 9])
+assert sat([9, 10])
+assert not sat([9, 11])
+assert sat([9, 9])
+assert sat([9,

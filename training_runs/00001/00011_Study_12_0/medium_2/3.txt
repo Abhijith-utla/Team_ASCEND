@@ -1,0 +1,7 @@
+def sol():
+    return [1, 0, 0]
+
+# print(sol())
+
+# This assertion will pass if sol() returns [1, 0, 0]
+assert sat(sol())

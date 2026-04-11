@@ -1,0 +1,21 @@
+def sol():
+    return []
+
+# This function is not used because the problem does not specify any input. 
+# It just returns an empty list. 
+# If we assume the input is a list of 2D points on a side of a square, then we can create a list of points and check if the function `sat` returns True. 
+# Let's create a list of points and then check the function `sat`.
+
+def test_sol():
+    # Test case 1:
+    # A square with side of 5
+    side = 5
+    num_points = 4
+    coords = [(0, 0), (0, side-1), (side-1, side-1), (side-1, 0)]
+    assert sat(coords, side, num_points)
+    
+    # Test case 2:
+    # A square with side of 10
+    side = 10
+    num_points = 6
+    coords = [(5, 5), (5, 10), (10, 10), (10, 5), (7, 7

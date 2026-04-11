@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# This function is always True because the first condition of the all function is always True
+# and all elements in the list are equal. Therefore, the entire condition is True.
+
+# Testing
+assert sat(sol())

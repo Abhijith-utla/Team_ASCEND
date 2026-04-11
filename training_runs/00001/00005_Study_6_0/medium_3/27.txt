@@ -1,0 +1,8 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    return 10 ** 10
+```
+
+The function `sat` checks if the input `i` is less than or equal to 10 ** 10 and is even. The `assert` statement is not needed in this case as the function is already checking the condition.

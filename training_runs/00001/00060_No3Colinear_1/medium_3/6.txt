@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# In the function sol, we are not providing any arguments
+# So the inputs are not needed to construct a solution to the problem
+# The return value is an empty list

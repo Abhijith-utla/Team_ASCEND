@@ -1,0 +1,8 @@
+def sol():
+    return "".join(str(int(x, 8)) for x in "8**88")
+
+# To check the solution
+def test_sol():
+    assert sat(sol())
+
+test_sol()

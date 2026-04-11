@@ -1,0 +1,5 @@
+def sol():
+    return 123.456789
+
+# To check the solution
+assert sat(sol())

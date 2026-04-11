@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return [i for i in range(1000) if all(abs(i * i - j * j) >= 10 for j in range(1000) if i != j)]
+```
+
+The problem lies in the usage of the `all()` function which returns `True` if all elements in the generator expression are `True`. In the provided code, `all()` is used to check if all elements in `l` satisfy the condition `abs(i * i - j * j) >= 10`, which can be simplified to `abs(i * i - j * j)`.
+
+In the original code, `all()` is used to check if all elements in `l` satisfy the condition `i in range(1000) and abs(i * i - j * j) >= 10`. This condition is incorrect because `abs(i * i - j * j)` will always be greater than or equal to 10 if `i != j`. This can be simplified to `abs(i * i - j * j) >= 1

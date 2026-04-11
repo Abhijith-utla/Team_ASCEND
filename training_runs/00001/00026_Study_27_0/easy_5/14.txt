@@ -1,0 +1,11 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    li = [0, 1, 2]
+    return li[li[0]] == li[li[1]] and li[li[1]] != li[li[2]] and li[li[2]] != li[li[0]]
+
+assert sat(sol())
+```
+
+This code first defines the list `li` with the values 0, 1, 2. Then it checks if the list satisfies the conditions defined by `sat` function, where the third element of the list is not the same as the first and the second elements are not the same as the third, and the first element is not the same as the second. If the list satisfies all these conditions, the function `sol` returns `True`, otherwise it returns `False`. Finally, the `assert` statement checks if the function `sol` returns `True`, if it doesn't, an `AssertionError` is raised.

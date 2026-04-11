@@ -1,0 +1,14 @@
+Here's a solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+assert sat(sol())
+```
+
+In the solution, the list `sol()` returns a list of 10 elements, all of which are 4. The third element (at index 2) is also 4, so the function `sat()` returns `True`.
+
+You can run this code in a Python environment to see the result.

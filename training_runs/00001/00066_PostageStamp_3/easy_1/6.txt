@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is a placeholder because the problem does not provide a solution.
+# You need to provide a solution to make the problem valid.

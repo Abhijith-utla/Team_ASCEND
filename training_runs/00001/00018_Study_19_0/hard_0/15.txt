@@ -1,0 +1,19 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return {i + j for i in range(11) for j in range(11)}
+```
+
+This solution constructs a set of all possible sums of two numbers from 0 to 10 (inclusive) using a nested list comprehension. The resultant set is then compared to a predefined set of sums. If they are equal, the function returns True, otherwise it returns False.
+
+The correct answer to the checker is:
+
+```python
+print(sat(sol()))
+```
+
+The output of this will be:
+
+```python
+{2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,

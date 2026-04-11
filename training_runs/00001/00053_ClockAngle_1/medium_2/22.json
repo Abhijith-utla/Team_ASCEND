@@ -1,0 +1,16 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "expected 'else' after 'if' expression",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T13:21:04.691271+00:00",
+  "diagnostic": "reason=ast_syntax_error:expected 'else' after 'if' expression|parse=fence=none,preamble=0,found_sol=1,candidates=19|checked=19/19|preview=def sol(): return [0, 0] # The assert statement in the given code is not used in the solution code. # Therefore, we d...",
+  "difficulty": "medium",
+  "problem_id": "00053_ClockAngle_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

@@ -1,0 +1,19 @@
+Here are three simpler variants of the original problem that test the same core concept. 
+
+VARIANT1:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == '12345678' and all(len(s) == 8 for s in ls)
+```
+
+VARIANT2:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == '87654321' and all(len(s) == 8 for s in ls)
+```
+
+VARIANT3:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == '123456789' and all(len(s) == 9 for s in ls)
+```

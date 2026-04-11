@@ -1,0 +1,10 @@
+The function `sat` checks if the length of the input integer is less than the length of the integer after adding one. If the length of the input integer is less than the length of the integer after adding one, the function returns `True`. Otherwise, it returns `False`. This means that the length of the input integer is strictly less than the length of the input integer plus one.
+
+Here is the corrected code:
+
+```python
+def sat(i: int) -> bool:
+    return len(str(i)) < len(str(i + 1))
+```
+
+The function `sat` checks if the length of the input integer is less than the length of the integer after adding one. If the length of the input integer is less than the length of the integer after adding one, the function returns `True`. Otherwise, it returns `False`. This means that the length of the input integer is strictly less than the length of the input integer plus one.

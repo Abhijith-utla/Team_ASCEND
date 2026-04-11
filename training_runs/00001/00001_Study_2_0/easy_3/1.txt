@@ -1,0 +1,9 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    s = "ooooooooxxxoooxxoooxxxxoooxxooooxo"
+    return s.count('x') == 110 and s.count('o') == 101 and s.count('xx') == 98
+```
+
+This code will return `True` if the string `s` contains exactly 110 'x' characters, 101 'o' characters and 98 'xx' characters. Otherwise, it will return `False`.

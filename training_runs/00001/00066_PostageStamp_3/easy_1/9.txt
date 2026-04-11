@@ -1,0 +1,24 @@
+def sol():
+    return []
+
+# The function sol() returns an empty list because there are no stamps.
+# The checker will assert that the function sol() returns an empty list.
+assert sol() == []
+
+# Test with a valid stamps
+assert sol([19]) == []
+assert sol([19, 14]) == []
+assert sol([19, 14, 81]) == []
+
+# Test with an invalid stamp
+assert sol([19, 20]) == False
+assert sol([19, 15, 81]) == False
+assert sol([19, 15, 80]) == True
+
+# Test with a target stamp
+assert sol([19, 14, 81, 18]) == True
+assert sol([19, 14, 81, 19]) == False
+assert sol([19, 14, 80, 18]) == False
+
+# Test with a max_stamps
+assert sol([19, 14, 81, 18], max_stamps=

@@ -1,0 +1,31 @@
+The given Python function `sat` checks if a list of strings `ls` has the maximum length, the minimum length, and is a list of the same length. The function returns `True` if all conditions are met and `False` otherwise.
+
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    def sat(ls: List[str]):
+        return min(ls) == max(ls) == str(len(ls))
+
+    ls = ["test", "example", "python", "programming"]
+
+    assert sat(ls)
+
+    ls = ["a", "b", "c"]
+    assert not sat(ls)
+
+    ls = ["short", "medium", "long", "verylongstring"]
+    assert not sat(ls)
+
+    ls = []
+    assert not sat(ls)
+
+    ls = ["a"]
+    assert sat(ls)
+
+    print("All tests passed")
+
+sol()
+```
+
+In this code, we first define the function `sat` inside the function `sol`. Inside `sat`, we call `min(ls)

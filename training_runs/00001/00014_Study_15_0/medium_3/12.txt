@@ -1,0 +1,7 @@
+```python
+def sat(li: List[int]):
+    for i in range(20):
+        if sum(li[:i]) != sum(li[:i+1]):
+            return False
+    return True
+```

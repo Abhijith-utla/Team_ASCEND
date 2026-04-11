@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return ''.join([s[i] for i in range(0, len(s), 2)])
+```
+
+This function takes a string `s` as input, and returns a new string that contains every second character from `s`. The characters are arranged in the order they are in `s`.
+
+The `range(0, len(s), 2)` part of the list comprehension generates a sequence of indices that correspond to every second character in the string `s`. The `[s[i] for i in range(0, len(s), 2)]` part of the list comprehension then selects the characters at these indices from the string `s` and joins them into a new string.
+
+For example, if `s = "hello"`, `sol(s)` would return `"hle"`.

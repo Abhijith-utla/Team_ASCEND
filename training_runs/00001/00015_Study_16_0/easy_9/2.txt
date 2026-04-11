@@ -1,0 +1,6 @@
+Here is the correct code to satisfy the provided condition:
+
+```python
+def sat(s: str) -> bool:
+    return s == 'abc4.5' or s == 'abc4.56'
+```

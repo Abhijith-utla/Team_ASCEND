@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The function does not take any arguments, so sol() will return an empty list
+assert sat(sol())

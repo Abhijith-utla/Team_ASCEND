@@ -1,0 +1,30 @@
+VARIANT1:
+```python
+def sat(moves: List[List[int]], source=[[0, 1, 2], [3], [4, 5, 6]], target=[[1, 2, 3], [4, 5], [0, 6]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop())
+        state[i] = sorted(state[i])
+    return state == target
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]], source=[[0, 1, 2], [3], [4, 5, 6]], target=[[1, 2, 3], [4, 5], [0, 6]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].insert(min(j, len(state[i])), state[j].pop(0))
+    return state == target
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]], source=[[0, 1, 2], [3], [4, 5, 6]], target=[[1, 2, 3], [4, 5], [0, 6]]):
+    state = [s[:] for s in source]
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].insert(j, state[j].pop(0))
+    return state == target
+```

@@ -1,0 +1,27 @@
+Here are three simple variations of the sat() function.
+
+VARIANT1:
+```python
+def sat(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 5000
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+```
+
+VARIANT2:
+```python
+def sat(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 5000
+    squares = [(i ** 2, colors[i]) for i in range(1, len(colors))]
+    return not any(c == d for a, c in squares for b, d in squares if a != b and c == d)
+```
+
+VARIANT3:
+```python
+def sat(colors):
+    assert set(colors) <= {0, 1} and len(colors) >= 5000
+    squares = {i: colors[i] for i in range(1, len(colors))}
+    return not any(c == d for a, c in squares.items() for b, d in squares.items() if a != b)
+```
+
+In all these variations, the core concept of the original function remains the same: checking for any pair in the square dictionary that has the same color for both i and j, j. However, the structure of the input list or set or dictionary is different, which creates different output conditions under the same input.

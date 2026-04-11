@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# The test case
+print(sat([[0,0],[1,1],[2,2]])) # should return True
+print(sat([[0,0],[1,1],[2,2]], side=3)) # should return True
+print(sat([[0,0],[1,1],[2,2]], num_points=2)) # should return False
+print(sat([[0,0],[1,1],[2,2]], side=3, num_points=2)) # should return False

@@ -1,0 +1,4 @@
+def sol():
+    return 'b' * (2 * len(lace) // 2)
+
+assert sat(sol())

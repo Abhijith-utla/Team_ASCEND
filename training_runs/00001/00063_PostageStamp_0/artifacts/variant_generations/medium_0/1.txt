@@ -1,0 +1,29 @@
+Here are the three simple variants of the Python function sat():
+
+VARIANT1:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    for s in stamps:
+        if s not in options:
+            return False
+    return len(stamps) <= max_stamps
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int], target=80, max_stamps=4, options=[10, 32, 8]):
+    if len(stamps) > max_stamps:
+        return False
+    for s in stamps:
+        if s not in options:
+            return False
+    return sum(stamps) == target
+```

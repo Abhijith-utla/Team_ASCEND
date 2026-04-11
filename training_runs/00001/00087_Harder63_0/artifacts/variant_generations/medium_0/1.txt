@@ -1,0 +1,21 @@
+Sure, here are three variants of the original puzzle:
+
+VARIANT1:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/321") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 63
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return set(s) <= set("1-8*+/3") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 63
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return set(s) <= set("1-8*+/6") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 63
+```
+
+In these variants, the allowed characters in the string are changed to allow for the numbers 3, and an eval operation is used to evaluate the result. The original puzzle's tests remain the same.

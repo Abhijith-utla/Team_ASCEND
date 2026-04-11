@@ -1,0 +1,5 @@
+def sol():
+    ls = ["123456789"]
+    return "".join(ls)
+
+assert sat(sol())

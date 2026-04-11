@@ -1,0 +1,13 @@
+def sol():
+    def sat(li: List[int]):
+        return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+    assert sat([5, 5, 5, 5, 5, 5, 5, 5, 5])
+    assert not sat([5, 4, 3, 2, 1])
+    assert sat([1, 2, 3, 4, 5])
+    assert not sat([5, 4, 3, 3, 2])
+    assert not sat([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+    assert sat([1, 2, 3, 4, 4, 3, 2, 1])
+
+# Run the test cases
+sol()

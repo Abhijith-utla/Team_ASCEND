@@ -1,0 +1,4 @@
+def sol():
+    return {"n": 100, "lace": "rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrbrrbrbbrbrrbbrrbrrbrrbrrbrrbrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr"}
+
+print(sol())

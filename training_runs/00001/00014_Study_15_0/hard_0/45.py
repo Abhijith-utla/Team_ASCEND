@@ -1,0 +1,10 @@
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+
+def sol():
+    return sum(2 ** i - 1 for i in range(20))
+
+print(sat(sol()))  # will return True
+
+if __name__ == "__main__":
+    assert sat(sol())

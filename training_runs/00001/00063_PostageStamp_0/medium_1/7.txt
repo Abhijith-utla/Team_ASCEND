@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+print(sat([], 80, 4, [10, 32, 8]))  # Returns False
+print(sat([10], 80, 4, [10, 32, 8]))  # Returns False
+print(sat([10, 32, 8], 80, 4, [10, 32, 8]))  # Returns True
+print(sat([10, 32, 8, 7, 5, 2], 80, 4, [10, 32, 8]))  # Returns False
+print(sat([10, 32, 8, 7, 5], 80, 4, [10, 32, 8]))  # Returns True
+print(sat([10, 32, 8, 7, 5, 2, 1, 4, 6], 80, 4, [10, 32, 8]))  # Returns False

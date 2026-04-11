@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Assuming that the user provides a valid function named 'sat' for checking the solution
+assert sat([18, 1, 43, 81]) == True
+assert sol() == []

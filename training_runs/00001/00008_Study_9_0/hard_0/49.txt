@@ -1,0 +1,4 @@
+def sat(li: List[int]):
+    return [chr(li[i]+97) for i in range(len(li))] == list("thequickbrownfoxjumpsoverthelazydo")
+
+print(sat([105, 101, 108, 108, 111, 32, 119, 101, 67, 114, 114, 101, 32, 115, 111, 114, 108, 100]))

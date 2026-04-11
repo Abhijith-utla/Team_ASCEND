@@ -1,0 +1,21 @@
+Here are three variants of the provided function that test the same core concept:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+```
+
+In the first variant, we ensure that the list is sorted in non-decreasing order and that there are no duplicates. In the second variant, any element in the list is equal to its index, validating that the list does not repeat any values. In the third variant, the condition is that no element is equal to its index in the list.

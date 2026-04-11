@@ -1,0 +1,12 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in ls)
+```
+
+This function `sat` takes a list of strings as input and returns `True` if all strings in the list are not in the list and `False` otherwise.
+
+The function uses the `all` function in combination with a generator expression to check for all strings in the list that are not in the list. The `all` function returns `True` if all elements in the iterable are `True`, and `False` otherwise. The generator expression `(s not in ls for s in ls)` generates a sequence of `True` or `False` values, depending on whether `s` is not in `ls`.

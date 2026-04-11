@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# The function `sol` is defined but it's not yet complete.
+# It needs to be completed so that it returns a list of integers where all elements are less than the next element in the same position in the input list.
+# For example, for input ['1', '2', '3', '4'], the output should be ['1', '2', '3', '4'] because all elements in the list are less than the next element.
+
+# For example, let's take the first element in the list, which is '1', and compare it with the next element, which is '2'. 
+# Since '1' is not less than '2', the output of the function for this case should be ['1', '2'].
+
+# Let's repeat the same process for the second, third and fourth elements.
+# Thus, the output for the input ['1', '2', '3', '4'] will be ['1', '2', '3', '4']
+
+# Test this function with the example given in the problem
+assert sat(sol(['1', '2', '3', '4']))

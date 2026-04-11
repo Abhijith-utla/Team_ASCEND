@@ -1,0 +1,4 @@
+def sol():
+    return ""
+
+# This function will always return an empty string because the pattern in the problem does not match with an empty string.

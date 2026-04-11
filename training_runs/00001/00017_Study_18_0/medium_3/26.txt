@@ -1,0 +1,12 @@
+The function `sat(ls: List[str]) -> bool` checks if the input list `ls` has a length equal to the length of a set that contains the elements of `ls`. A set is a collection of unique elements. In Python, this is done by converting the list to a set. If the lengths are equal, this means that all elements of `ls` are unique, so the function returns `True`. Otherwise, it returns `False`.
+
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+This code defines a function named `sat` that takes a list of strings `ls` as input. It then checks if the length of `ls` is equal to the length of a set that contains all the elements of `ls`. If they are equal, it means that all elements of `ls` are unique, so the function returns `True`. Otherwise, it returns `False`.

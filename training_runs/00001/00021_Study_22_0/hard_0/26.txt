@@ -1,0 +1,4 @@
+def sol():
+    return "".join(s[::2] for s in set(s[::2] for s in 'abcdefghijklmnopqrstuvwxyz' if len(set(s)) == 5))
+
+print(sol())

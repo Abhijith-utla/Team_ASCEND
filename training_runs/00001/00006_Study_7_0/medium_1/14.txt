@@ -1,0 +1,12 @@
+Here is the solution for the problem:
+
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) > 8 and len(s) == 3
+
+# test the function
+print(sat("888"))  # should return True
+print(sat("999"))  # should return False
+```
+
+This function checks if a string `s` is present in the decimal representation of 8 raised to the power of 2888. It then checks if the count of `s` is more than 8 and the length of `s` is 3. If both conditions are met, it returns True, otherwise it returns False.

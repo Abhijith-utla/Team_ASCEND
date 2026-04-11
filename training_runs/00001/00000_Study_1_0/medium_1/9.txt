@@ -1,0 +1,8 @@
+Here's the Python solution for the problem:
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') == 1000
+```
+
+This function takes a string as input, and returns `True` if the string contains exactly one 'o' and 'oo' are in the string in any order. If the string contains more 'o's or 'oo's, or doesn't contain exactly one 'o', the function returns `False`.

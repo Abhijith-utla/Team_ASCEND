@@ -1,0 +1,4 @@
+def sol():
+    return "adventurer"
+
+assert sat(sol())

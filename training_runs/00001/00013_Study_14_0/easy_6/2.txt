@@ -1,0 +1,4 @@
+The Python function sat(answer) is already defined by the user.
+
+def sol():
+    return <answer>

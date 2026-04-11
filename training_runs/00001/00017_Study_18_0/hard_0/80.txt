@@ -1,0 +1,23 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return ' '.join(ls[i] + ls[-i-1] for i in range(len(ls)))
+
+def sat(ls: List[str]):
+    return sol(ls) == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This code first defines the `sol` function, which takes a list of strings and returns a new list where each element is the concatenation of the corresponding elements from the original list. Then it defines the `sat` function, which checks whether the result of `sol` matches the expected output.
+
+You can use the `assert` statement to verify the solution. For example:
+
+```python
+assert sat(['berlin', 'berger', 'linber', 'linger', 'gerber', 'gerlin'])
+```
+
+This will pass the test if `sol` returns the expected output, and raise an assertion error if it does not.
+
+Please note that the output of `sol` function is not the same as the expected output due to

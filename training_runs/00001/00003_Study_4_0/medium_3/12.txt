@@ -1,0 +1,18 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) == 1:
+        return False
+    return True
+```
+
+In this code, we first check if the length of the list is 10. If not, we return False. Then we count the number of times the third element appears in the list and check if it appears twice. If it doesn't appear twice, we return False. Next, we find the index of the third element in the list and check if it's at index 3. If it's not at index 3, we return False. Lastly, we check if the third element appears exactly once in the list. If it does, we return False. If none of these conditions are met, we return True, indicating that the list satisfies the condition.

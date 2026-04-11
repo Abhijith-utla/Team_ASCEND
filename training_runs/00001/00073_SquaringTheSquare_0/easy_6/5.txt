@@ -1,0 +1,2 @@
+def sol():
+    return max_sum, sum_of_squares

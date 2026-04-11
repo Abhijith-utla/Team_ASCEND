@@ -1,0 +1,5 @@
+def sol():
+    return float(str(3.1415 - 123.456).replace('.', ''))
+
+# Test
+assert sat(sol()) == 0.0

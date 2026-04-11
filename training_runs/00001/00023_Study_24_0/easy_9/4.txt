@@ -1,0 +1,5 @@
+def sol():
+    return [17, 3]
+
+# The function 'sat' checks if the list contains exactly 1 occurrence of number 17 and 1 occurrence of number 3. 
+# If these two occurrences are found, the function returns the list [17, 3].

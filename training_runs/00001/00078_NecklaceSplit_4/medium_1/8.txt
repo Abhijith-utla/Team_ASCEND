@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# This will not work as the function 'sat' has not been defined by the user.
+# It's an arbitrary number that will be returned by 'sol', but it's not what the user might expect.

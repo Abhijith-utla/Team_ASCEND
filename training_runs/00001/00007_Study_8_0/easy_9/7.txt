@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol(ls):
+    return ls[1234] in ls[1235] and ls[1234] != None
+```
+
+This function sol(ls) will return True if the element at index 1234 is in the list ls and is not equal to None, else it will return False. The index is 0-based so 1234 refers to the fourth element (2nd element starting from 0).

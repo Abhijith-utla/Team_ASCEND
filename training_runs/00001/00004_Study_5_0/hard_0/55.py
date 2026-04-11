@@ -1,0 +1,15 @@
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+
+def sol():
+    def sat(li: List[int]):
+        return all([li.count(i) == i for i in range(10)])
+
+    # run the test case
+    assert sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+    assert not sat([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    return "Validated"
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Uncomment the following lines to run the checker and test the function:
+
+# print(sat(list(range(5)))) # should return True
+# print(sat(list(range(6)))) # should return False
+# print(sat(list(range(7)))) # should return True
+# print(sat(list(range(10)))) # should return False
+# print(sat(list(range(11)))) # should return True
+# print(sat(list(range(20)))) # should return False

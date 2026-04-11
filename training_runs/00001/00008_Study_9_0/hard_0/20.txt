@@ -1,0 +1,9 @@
+The provided Python function is incorrect as it's trying to compare a string with a list of integers. The correct function should be:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [ord(chr(i)) for i in li] == [79, 101, 115, 116, 32, 97, 114, 114, 101, 32, 105, 110, 103, 115, 32, 111, 117, 101, 32, 97, 114, 114, 101, 32, 116, 101, 114, 115, 111, 111, 108, 108, 33]
+```
+This function takes a list of integers and returns a boolean indicating whether the string "The quick brown fox jumps over the lazy dog" matches the list of

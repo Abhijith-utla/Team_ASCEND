@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Test cases
+print(sat([]))  # True
+print(sat([1]))  # False
+print(sat([1, 2]))  # True
+print(sat([2, 1]))  # False
+print(sat([1, 2, 3]))  # True
+print(sat([3, 2, 1]))  # False
+print(sat([1, 2, 3, 4]))  # False
+print(sat([5, 4, 3, 2, 1]))  # True

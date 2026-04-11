@@ -1,0 +1,8 @@
+def sol():
+    return [0, 0]
+
+# Testing the solution
+print(sat(sol()))  # This should return [0, 0]
+
+# You can manually test the solution by changing the parameters
+print(sat([h, m]))  # Replace h and m with different values

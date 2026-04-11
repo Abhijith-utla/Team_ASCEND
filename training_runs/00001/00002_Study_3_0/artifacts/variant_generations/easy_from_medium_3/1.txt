@@ -1,0 +1,21 @@
+Here are three simple Python functions named `sat1()`, `sat2()`, and `sat3()` that test the same core concept:
+
+```python
+def sat1(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+
+def sat2(li: List[int]) -> bool:
+    return sorted(li) != list(range(999)) and all(li[i] == i for i in range(len(li)-1))
+
+def sat3(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)-1))
+```
+Please note that these are the basic variations of the `sat()` function. The function checks whether a given list is sorted, and for all elements in the list, they are distinct from their indices. The function also checks that the list contains all elements not equal to their indices.
+
+You can test these functions by creating lists and calling them like this:
+
+```python
+print(sat1([0, 1, 2, 998, 5, 6]))  # Outputs: True
+print(sat2([0, 1, 2, 998, 5, 6]))  # Outputs: False
+print(sat3([1, 2, 998, 5, 6, 0]))  # Outputs: True
+```

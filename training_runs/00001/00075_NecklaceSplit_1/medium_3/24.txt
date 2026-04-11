@@ -1,0 +1,22 @@
+def sol():
+    return {}
+
+print(sat(0, 0))  # True
+print(sat(0, 1))  # False
+print(sat(0, 2))  # False
+print(sat(0, 3))  # False
+print(sat(0, 4))  # False
+print(sat(0, 5))  # False
+print(sat(0, 6))  # False
+print(sat(0, 7))  # False
+print(sat(0, 8))  # False
+print(sat(0, 9))  # False
+print(sat(0, 10))  # False
+print(sat(0, 11))  # False
+print(sat(0, 12))  # False
+print(sat(0, 13))  # False
+print(sat(0, 14))  # False
+print(sat(0, 15))  # False
+print(sat(0, 16))  # False
+print(sat(0, 17))  # False
+print(sat(0

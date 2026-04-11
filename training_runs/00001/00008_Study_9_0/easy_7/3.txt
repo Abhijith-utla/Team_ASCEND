@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [chr(i) for i in range(32, 126)] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function checks if the list of ASCII characters from 32 to 126 corresponds to the string "The quick brown fox jumps over the lazy dog". It replaces all spaces in the string with no space.

@@ -1,0 +1,4 @@
+def sol():
+    return int(str(1) * 100)
+
+# assert sat(sol())

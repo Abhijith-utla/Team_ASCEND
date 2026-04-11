@@ -1,0 +1,8 @@
+def sol():
+    return 123.456789
+
+# This is a test to validate the solution
+def test_sol():
+    result = sol()
+    assert sat(result)
+test_sol()

@@ -1,0 +1,15 @@
+Here is a correct solution in Python:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+The function `sat` is designed to check whether all elements in a given list `li` are present at least once. The function uses a list comprehension to generate a list of boolean values, where each boolean value is `True` if the count of an element `i` in `li` is equal to `i`, and `False` otherwise. The `all` function then returns `True` if all boolean values are `True`, and `False` otherwise.
+
+Here is how it works:
+
+- The list comprehension `[li.count(i) == i for i in range(10)]` generates a list of boolean values.
+- For each integer `i` from 0 to 9, the count of `i` in `li` is checked. If `i` is not in `li`, the count is 0. So, the value of the corresponding boolean value is `True` if the count

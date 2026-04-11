@@ -1,0 +1,16 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [i for i in 'Hello World' if ord(i) % 3 == 2]
+
+print(sol())
+```
+
+The function `sol` returns a list of characters from the string `'Hello World'` that have ASCII values that are multiples of 3. The ASCII value of 'H' is 72, 'W' is 87, and 'l' is 108. Therefore, the list of characters that meet the criteria are 'H', 'l', and 'l'.
+
+The function `sat` checks whether the given list of characters has no characters with ASCII values that are multiples of 3. If there are no characters with ASCII values that are multiples of 3, it returns `True`, otherwise it returns `False`.
+
+The `ord` function returns the number representing the unicode character. In the provided code, it's used to get the ASCII value of the characters in the list.
+
+The `sum` function is used to count the number of characters in the list that have ASCII values that are multiples of

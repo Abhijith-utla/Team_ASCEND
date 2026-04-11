@@ -1,0 +1,5 @@
+def sol():
+    return sat
+
+# The assertion will pass if the function sol is defined correctly.
+assert sat(sol())

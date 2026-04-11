@@ -1,0 +1,10 @@
+Here is the correct solution to the problem:
+
+```python
+def sat(li: List[int]):
+    return all(ch == "The quick brown fox jumps over the lazy dog"[i] for i in li) == "The five boxing wizards jump quickly"
+```
+
+The `sat` function will return `True` if and only if the list `li` contains the exact same characters in the same order as the string "The five boxing wizards jump quickly". The function uses a generator expression to iterate over the list `li` and compare each index `i` with the character at index `i` in the string "The quick brown fox jumps over the lazy dog". The `all` function is used to ensure that all the comparisons are true, i.e., the list `li` must contain the exact same characters in the same order as the string. If any comparison is not true, the function will return `False`.
+
+The `==` operator is used to compare the string "The five boxing wizards jump quickly" with the list `li`. The `all` function is used to ensure that all the comparisons

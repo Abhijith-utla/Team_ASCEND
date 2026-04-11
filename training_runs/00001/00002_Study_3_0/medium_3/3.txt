@@ -1,0 +1,10 @@
+Here is the Python code that constructs and returns a single answer value.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+```
+
+This function checks if the input list is sorted, if all elements in the list are different and if the length of the list is 999. The sorted function returns a sorted version of the input list. The list function is used to convert the input list into a list of integers from 0 to 998. The all function is used to check if all elements in the list are different. The inequality operator (!=) is used to check if the elements are not equal to their indices.

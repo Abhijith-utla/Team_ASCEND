@@ -1,0 +1,58 @@
+# Variant 1: Modify the function to check if there is a segment of a line that is not visible from one point.
+
+```python
+def sat(coords: List[List[int]], side=1, num_points=1):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[i2]
+            for i3 in range(i2):
+                x3, y3 = coords[i3]
+                # Check if a segment of the line from point i1 to point i2 is not visible from point i3
+                denominator = x2 - x1
+                numerator = y3 * (x2 - x1) - y1 * (x2 - x1)
+                denominator2 = x3 - x2
+                numerator2 = y1 * (x3 - x2) - y2 * (x3 - x2)
+                if denominator * numerator2 == numerator * denominator2:
+                    return False
+    return len({(a, b) for a, b in coords}) == len(coords) >= num_points
+```
+
+# Variant 2: Add a condition to check if a point is not on the same line as another point.
+
+```python
+def sat(coords: List[List[int]], side=1, num_points=1):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[i2]
+            for i3 in range(i2):
+                x3, y3 = coords[i3]
+                # Check if a point is not on the same line as another point
+                denominator = x2 - x1
+                numerator = y3 * (x2 - x1) - y1 * (x2 - x1)
+                if denominator * numerator == 0:
+                    return False
+        # Check if a point is not on the same line as another point
+        denominator = x1 - x0
+        numerator = y2 * (x1 - x0) - y0 * (x1 - x0)
+        if denominator * numerator == 0:
+            return False
+    return len({(a, b) for a, b in coords}) == len(coords) >= num_points
+```
+
+# Variant 3: Modify the function to check if there is a segment of a line that is visible from one point to another.
+
+```python
+def sat(coords: List[List[int]], side=1, num_points=1):
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[i2]
+            for i3 in range(i2):
+                x3, y3 = coords[i3]
+                # Check if a segment of the line from point i1 to point i2 is visible from point i3
+                denominator =

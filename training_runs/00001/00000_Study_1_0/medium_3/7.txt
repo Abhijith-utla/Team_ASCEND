@@ -1,0 +1,16 @@
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    s = 'oo' * 1000 + 'o'
+    return s
+
+# Testing
+assert sat(sol())
+```
+
+In this function, we first create a string `s` that contains 1000 occurrences of 'oo' and one 'o'. We then return this string.
+
+The function `sat` checks if 'oo' not in `s` and 'o' in `s` and s.count('o') == 1000. If all these conditions are met, `sat` returns `True`; otherwise, it returns `False`.
+
+For testing purposes, we assert `sat(sol())` which should return `True`.

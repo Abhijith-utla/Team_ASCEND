@@ -1,0 +1,10 @@
+Sure, here is the Python code for the function `sol` that satisfies the problem constraints:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```
+
+This function `sat` takes a list of integers as an input and returns `True` if the list is sorted in ascending order and all elements in the list are equal to their indices, and `False` otherwise.

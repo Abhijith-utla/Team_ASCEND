@@ -1,0 +1,5 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return float(len(str(int(len(str(len(str(len(str(len(str(len(str(len(str(str(len(str(str(len(str(str(len(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str(str

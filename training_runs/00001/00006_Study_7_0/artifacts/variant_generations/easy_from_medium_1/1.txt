@@ -1,0 +1,18 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) == 8 and len(s) == 3
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) == 8 and len(s) == 5
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) == 10 and len(s) == 3
+```
+All of these variants return True when the input string, after being converted to an integer, contains the specified string and the length of the string is 3 or 5. However, they differentiate on the count of digits in the integer. The first variant (VARIANT1) has 8 digits, the second has 10 digits, and the third has 8 digits.

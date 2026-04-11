@@ -1,0 +1,19 @@
+Here are the three simpler variations to solve the problem:
+
+VARIANT1:
+```python
+def sat(s: str) -> bool:
+    return s == '4.5'
+```
+
+VARIANT2:
+```python
+def sat(s: str) -> bool:
+    return s == '6.5'
+```
+
+VARIANT3:
+```python
+def sat(s: str) -> bool:
+    return s == '5.5'
+```

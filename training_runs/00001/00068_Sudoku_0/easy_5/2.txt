@@ -1,0 +1,11 @@
+def sol():
+    answer = ""
+    for i in range(9):
+        answer += "_" * 80
+        if i in [0, 3, 6] and i != 6:
+            answer += "_" * 3
+        else:
+            answer += " " * 3
+    return answer
+
+print(sol())

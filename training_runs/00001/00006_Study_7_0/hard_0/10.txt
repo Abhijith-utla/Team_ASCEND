@@ -1,0 +1,14 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return "88888888"
+```
+
+In this function, we return a string of 3 identical characters, which is the answer to the problem. The function `sat` is already defined by the user, so we do not need to define it.
+
+The final checker will run:
+```python
+assert sat(sol())
+```
+This code will pass if the output of `sol()` is a string of 3 identical characters, and will fail otherwise.

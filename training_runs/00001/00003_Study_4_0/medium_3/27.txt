@@ -1,0 +1,23 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return li
+
+assert sat(sol())
+```
+
+The function `sol` creates a list of 10 integers from 1 to 10. The list is returned from the function.
+
+The function `sat` checks if the list `li` meets the conditions specified in the problem. 
+
+The condition `len(li) != 10` checks if the length of the list is not 10.
+
+The condition `li.count(li[3]) != 2` checks if the count of the number 3 in the list is not 2.
+
+The condition `li.index(li[3]) != 3` checks if the index of the number 3 in the list is not 3.
+
+The condition `li.count(li[3]) == 1` checks if the count of the number 3 in the list is 1.

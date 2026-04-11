@@ -1,0 +1,5 @@
+def sol():
+    return ["_"*9]*9
+
+# This is to make the checker run. Remove it after you have solved the puzzle.
+assert sat(sol())

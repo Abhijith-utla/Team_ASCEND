@@ -1,0 +1,18 @@
+Sure, here is the solution to this problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return [s + t for s in ls for t in ls if s != t] == 'berlin berger linber linger gerber gerlin'.split()
+
+# Test case
+print(sat(["berlin", "berg"]))  # should return True
+print(sat(["berlin", "lining"]))  # should return False
+
+# Checker
+assert sol(["berlin", "berg"]) == True
+assert sol(["berlin", "lining"]) == False
+```
+
+This solution uses list comprehension to create a list of all possible strings by concatenating every pair of elements in the input list. It then checks if this list matches the expected result.

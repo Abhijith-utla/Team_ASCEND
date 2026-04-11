@@ -1,0 +1,6 @@
+def sol():
+    li = [i % 10 for i in range(100)]
+    return li
+
+# This line checks that the function sol is correct
+assert sat(sol())

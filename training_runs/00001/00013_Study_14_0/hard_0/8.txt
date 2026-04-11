@@ -1,0 +1,8 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+def sol():
+    return None
+```
+
+The function `sol` does not take any arguments and returns `None`. This is the correct output you should provide to the checker.

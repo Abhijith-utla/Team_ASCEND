@@ -1,0 +1,5 @@
+def sol():
+    return [source, target]
+
+# The following lines are for the checker to execute the code.
+assert sat(moves)

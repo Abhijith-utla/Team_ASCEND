@@ -1,0 +1,19 @@
+Your function is correct. It checks if an integer i is greater than 10^10 and i is divisible by 123 with a remainder of 4. If both conditions are met, it returns True, otherwise it returns False.
+
+Here is the correct pattern for your function:
+
+```python
+def sol():
+    return <answer>
+```
+
+In this pattern, replace <answer> with the actual value that should be returned by the function.
+
+The final checker will run: assert sat(sol())
+
+This is your function:
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+```

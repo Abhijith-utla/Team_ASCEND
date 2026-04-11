@@ -1,0 +1,10 @@
+def sol():
+    result = []
+    while True:
+        s = "{:08b}".format(len(result))
+        if len(s) == 8 and len(result) > 0 and "".join(result) != s:
+            break
+        result.append(s)
+    return result
+
+print("".join(sol()))

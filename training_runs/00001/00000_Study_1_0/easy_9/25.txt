@@ -1,0 +1,4 @@
+```python
+def sol():
+    return 'ooo' not in 'ooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooooooooooooo' and 1000 == sum(c == 'o' for c in 'ooooooooooooooooooooo')
+```

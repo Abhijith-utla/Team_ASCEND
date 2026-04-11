@@ -1,0 +1,18 @@
+The function `sat` is defined to check if a list `ls` contains the same element twice at different positions, and if the first element is not the same as the second element. Here's how you could define the `sol` function to solve this problem:
+
+```python
+def sol():
+    def sat(ls, idx1=1, idx2=2):
+        return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+    ls = [1, 2, 3, 4, 5]
+    for i in range(len(ls)):
+        for j in range(i + 1, len(ls)):
+            if sat(ls, i, j):
+                return [i, j]
+    return None
+```
+
+This code first checks all possible pairs of distinct indices in the list, and returns the pair if `sat` function returns True for that pair. If no such pair is found, it returns None.
+
+Please note that this function will only find the first pair that satisfies the condition. If you want to find all such pairs, you would need to modify the function

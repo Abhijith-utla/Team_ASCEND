@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(reversed(str(8 ** 1818)))
+
+assert sat(sol())

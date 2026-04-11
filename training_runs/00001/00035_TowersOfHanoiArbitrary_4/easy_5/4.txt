@@ -1,0 +1,8 @@
+def sol():
+    class Answer:
+        def __init__(self, moves, source, target):
+            self.moves = moves
+            self.source = source
+            self.target = target
+
+    return Answer([[5, 6], [1, 2, 4], [0, 3]], [[2, 3, 4, 6], [0, 1], [5]], [[2, 3, 4, 6], [0, 1], [5]])

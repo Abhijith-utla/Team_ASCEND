@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# For the sake of testing, we can use Python's built-in function all()
+# This function returns True if all elements of the iterable (list, tuple, etc.) are true.
+# If not, it returns False.
+
+assert all(sat(stamps) for stamps in [
+    [],
+    [3],
+    [3, 3],
+    [3, 3, 3, 3, 3, 3, 3, 3],
+    [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+    [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]])

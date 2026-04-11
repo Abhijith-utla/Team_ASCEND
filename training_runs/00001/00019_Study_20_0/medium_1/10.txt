@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+# The function sat is already defined by the user. Here is the solution for the problem
+def sol():
+    return 0

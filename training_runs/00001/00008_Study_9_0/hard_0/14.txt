@@ -1,0 +1,4 @@
+def sol():
+    return "".join(chr(ord("A") + i) for i in range(5)) == "THEDOG"
+
+print(sat(sol()))

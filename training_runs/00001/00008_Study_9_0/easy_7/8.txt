@@ -1,0 +1,15 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return "".join([chr(i) for i in range(ord('a'), ord('z')+1)])
+```
+
+This function sol() will return a string of all lowercase letters from 'a' to 'z'. The character corresponding to each number in the range from 97 (ord('a')) to 122 (ord('z')+1) is converted to its corresponding character using the chr() function. The characters are then joined into a string using the join() method.
+
+The checker will run:
+
+```python
+def sat(li: List[int]):
+    return "".join([chr(i) for i in range(ord('a'), ord('z')+1)]) == "Thequickbrownfoxjumpsoverthelazydog"
+```

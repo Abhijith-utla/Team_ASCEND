@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is a python code to solve the problem.
+# In this code, the problem is not solved as it is not clearly stated what to return as the solution.
+# We return an empty list in this case, as we do not have any solution to the problem.

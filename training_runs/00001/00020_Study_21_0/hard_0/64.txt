@@ -1,0 +1,23 @@
+Here is a Python function named `sol` that solves the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> List[int]:
+    answer = []
+    
+    for i in range(len(li)):
+        if li[i] != li[i + 1]:
+            answer.append(li[i])
+    
+    return answer
+```
+
+The function `sol` takes a list of integers as input and returns a new list that contains the elements from the original list that are not equal to the next element in the list. The function does not return any values, it modifies the list in-place to achieve this.
+
+Here is how you can check this solution:
+
+```python
+def test_sol():
+    assert sol([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    assert sol([1, 1, 2, 3, 4,

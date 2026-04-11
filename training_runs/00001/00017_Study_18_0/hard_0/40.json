@@ -1,0 +1,17 @@
+{
+  "attempt_num": 40,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:23:41.416778+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Sure, here is the correct pattern for the function `sol`: ```python def sol(): return 'berlin berger linber linger ge...",
+  "difficulty": "hard",
+  "problem_id": "00017_Study_18_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

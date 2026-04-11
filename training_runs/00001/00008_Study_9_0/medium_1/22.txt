@@ -1,0 +1,8 @@
+Sure, here is a Python function named `sol` which satisfies the given conditions:
+
+```python
+def sol():
+    return [ord(i) for i in "The five boxing wizards jump quickly"] == list("The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+This function checks if the ordinal value of each character in the string "The five boxing wizards jump quickly" is the same as the ordinal value of that character in the same position in the same string. If so, it returns True, otherwise it returns False.

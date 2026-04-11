@@ -1,0 +1,21 @@
+def sol():
+    return {"hands": [0, 0]}
+
+assert sat(sol()["hands"])
+
+# test with different hands
+assert not sat(sol()["hands"])
+assert not sat(sol()["hands"])
+assert sat(sol()["hands"])
+
+# test with different minutes
+assert not sat(sol()["hands"])
+assert not sat(sol()["hands"])
+assert not sat(sol()["hands"])
+assert sat(sol()["hands"])
+
+# test with different hours
+assert not sat(sol()["hands"])
+assert not sat(sol()["hands"])
+assert not sat(sol()["hands"])
+assert sat(sol()["hands"])

@@ -1,0 +1,8 @@
+def sol():
+    return {}
+
+assert sat(0)
+assert not sat(1)
+assert sat(2)
+assert not sat(3)
+assert not sat(4)

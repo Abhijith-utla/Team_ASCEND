@@ -1,0 +1,10 @@
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+
+# Test cases
+assert sat([1, 2, 3, 4, 5])  # True
+assert not sat([1, 2, 3, 4])  # False
+```

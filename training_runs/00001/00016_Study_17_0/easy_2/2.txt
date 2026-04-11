@@ -1,0 +1,6 @@
+def sol():
+    i = 1000
+    while True:
+        if sat(i):
+            return i
+        i += 1

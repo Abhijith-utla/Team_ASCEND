@@ -1,0 +1,11 @@
+def sol():
+    def sat(li: List[int]):
+        return all([((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] >= 0) and (li[i] < 1000)) for i in range(20)])
+
+    return []
+
+print(sat([0]*20))  # False
+print(sat([100]*20))  # False
+print(sat([99]*20))  # True
+
+assert sat(sol())

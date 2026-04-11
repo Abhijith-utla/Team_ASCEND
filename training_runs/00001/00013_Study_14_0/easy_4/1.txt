@@ -1,0 +1,10 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:li.index(x)]) for x in set(li))
+```
+
+The function `sat` checks if all elements in the list `li` are less than the sum of all elements before the current index for each unique element in the list `li`. If the condition is not satisfied for any element, the function returns `False`. If the condition is satisfied for all elements, the function returns `True`.

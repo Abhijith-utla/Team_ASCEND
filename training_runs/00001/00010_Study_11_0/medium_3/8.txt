@@ -1,0 +1,7 @@
+def sol():
+    return {"answer": True}
+
+# Testing
+assert sat(["abc", "def", "ghi"])
+assert not sat(["abc", "bcd", "ghi"])
+assert not sat([])

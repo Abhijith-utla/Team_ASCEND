@@ -1,0 +1,5 @@
+def sol():
+    moves = [[0, 1], [1, 0], [2, 1], [1, 2], [2, 3], [3, 2], [2, 1]]
+    return moves
+
+print(sat(sol()))

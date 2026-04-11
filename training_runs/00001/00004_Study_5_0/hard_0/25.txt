@@ -1,0 +1,17 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    li = [0] * 10  # Create a list of 10 zeros
+    return li
+```
+
+This function creates and returns a list of 10 zeros. The count method of a list is used to count the number of occurrences of each number from 0 to 9 in the list. If any number is counted more than its own value, the all function will return False. If all numbers are counted the same number, the all function will return True.
+
+To validate the solution, you can run the following code:
+
+```python
+assert sat(sol())
+```
+
+This will assert that the function sol returns a list of 10 zeros.

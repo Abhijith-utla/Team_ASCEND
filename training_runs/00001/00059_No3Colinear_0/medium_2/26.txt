@@ -1,0 +1,5 @@
+def sol():
+    return [], 10, 20
+
+# Checker
+assert sat(*sol())

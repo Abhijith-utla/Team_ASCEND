@@ -1,0 +1,11 @@
+```python
+from typing import List
+
+def sol():
+    li = [4]
+    for _ in range(989):  # Populate the list with 989 numbers from 1 to 1000
+        li.append(li[-1] + 1)
+    return li
+
+assert sat(sol())
+```

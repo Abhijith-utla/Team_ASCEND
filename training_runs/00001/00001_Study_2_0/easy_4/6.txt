@@ -1,0 +1,16 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    count_y = lambda s: s.count('y')
+    count_yo = lambda s: s.count('yo')
+    count_yy = lambda s: s.count('yy')
+    
+    s = 'yyyyyyyyyyyyyyyyyyyyy'  # Define the string here
+    
+    return count_y(s) == 100 and count_yo(s) == 101 and count_yy(s) == 98
+```
+
+This solution creates three lambda functions for counting 'y', 'yo', and 'yy' respectively. Then it defines a string `s` and returns whether the count of 'y' is 100, the count of 'yo' is 101, and the count of 'yy' is 98. 
+
+Please note that this code assumes that the count of 'y', 'yo', and 'yy' are independent and that there are at least 100 'y', 101 'yo', and 98 'yy' in the string. If this

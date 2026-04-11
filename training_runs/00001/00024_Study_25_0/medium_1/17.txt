@@ -1,0 +1,5 @@
+def sol():
+    s = 'trusenipM'
+    return sorted(s) == sorted(s) and s == s[::-1]
+
+print(sol())

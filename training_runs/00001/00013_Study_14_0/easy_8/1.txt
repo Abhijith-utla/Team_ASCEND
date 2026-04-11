@@ -1,0 +1,8 @@
+def sol():
+    li = [1, 2, 3, 4, 5]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all([i == li[j] + li[j+1] for i in range(len(li))])
+
+print(sat(sol()))  # Expected output: True

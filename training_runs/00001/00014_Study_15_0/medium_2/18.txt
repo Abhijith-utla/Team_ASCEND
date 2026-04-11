@@ -1,0 +1,15 @@
+The problem is about finding a solution to a system of linear equations where each equation is defined by the sum of two numbers in a list. Here is a Python solution that uses the sympy library to solve the system of linear equations:
+
+```python
+from sympy import symbols, Eq, solve
+from typing import List
+
+def sol():
+    x, y = symbols('x y')
+    li = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]
+    eqns = [Eq(x + y, li[i]) for i in range(len(li)) for x in range(20)]
+    solutions = solve(eqns)
+    return solutions
+```
+
+This function first defines the symbols x and y, then it generates a list of equations

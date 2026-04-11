@@ -1,0 +1,17 @@
+Here are the three simpler Python function variants test the same core concept:
+
+```python
+# Variant 1
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length))
+
+# Variant 2
+def sat(x: List[int], length=1, s="O!A{SeKu"):
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length))
+
+# Variant 3
+def sat(x: List[int], length=1, s="O!A{SeKt"):
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length))
+```
+
+Each variant checks whether the characters at a certain position in the string `s` are lexicographically less or equal to the characters at the next position.

@@ -1,0 +1,4 @@
+def sol():
+    return sorted(input()) == sorted('sirnemtpuA') and input() == input()[::-1]
+
+assert sat(sol())

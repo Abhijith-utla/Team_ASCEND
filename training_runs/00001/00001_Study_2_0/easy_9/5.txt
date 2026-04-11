@@ -1,0 +1,11 @@
+Here is the Python code for the problem:
+
+```python
+def sol():
+    s = 'mmm' * 400 + 'mm' * 401
+    return s
+```
+
+This function constructs and returns a string of length 1200 that contains exactly 400 'm's and 401 'mm's. The rest of the string is 'mmm', 398 times.
+
+The checker will run: `assert sat(sol())`. This will check if `sol()` returns a string that contains exactly 400 'm's, 401 'mm's, and 398 'mmm's.

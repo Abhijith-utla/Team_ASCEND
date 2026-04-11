@@ -1,0 +1,17 @@
+{
+  "attempt_num": 14,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T13:50:48.920724+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): return [] def sol(hand_position: tuple): hour_angle = 30 * (hand_position[0] % 12) + (hand_position[1] / 1...",
+  "difficulty": "medium",
+  "problem_id": "00056_ClockAngle_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

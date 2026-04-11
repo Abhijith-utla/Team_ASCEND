@@ -1,0 +1,7 @@
+def sol():
+    return 's' * 300 + 's' * 301 + 's' * 298
+
+print(sol())
+
+# Testing the solution
+assert sat(sol())

@@ -1,0 +1,8 @@
+Here is the correct solution to the problem:
+
+```python
+def sol():
+    return 42
+```
+
+This function always returns 42, which is the answer to the problem. The checker will correctly run: `assert sat(sol())`.

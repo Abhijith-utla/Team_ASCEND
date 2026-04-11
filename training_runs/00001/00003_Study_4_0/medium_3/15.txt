@@ -1,0 +1,18 @@
+Here is the Python code for the `sol` function which uses the `sat` function to check if the input list `li` meets the given conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) == 1:
+        return False
+    return True
+```
+
+The `sat` function takes a list of integers as input and returns a boolean value indicating whether the list meets the conditions specified in the problem statement.

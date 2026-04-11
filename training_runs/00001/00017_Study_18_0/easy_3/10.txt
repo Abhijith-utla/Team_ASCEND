@@ -1,0 +1,12 @@
+Here is a Python solution for your problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+```
+
+The function `sat` checks if all elements in the list `ls` are distinct. It does this by converting the list to a set. Since sets cannot contain duplicate elements, any element that occurs more than once in the list will be removed. Then, it checks if the list `ls` is empty. If it is, the function returns `True`; otherwise, it returns `False`. 
+
+This function should satisfy the problem's statement because it checks if all elements in the list `ls` are distinct, and the check is performed in constant time.

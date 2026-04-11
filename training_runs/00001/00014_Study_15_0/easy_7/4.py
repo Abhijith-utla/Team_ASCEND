@@ -1,0 +1,13 @@
+def sat(li: List[int]):
+    return all(x == i for i, x in enumerate(li))
+
+def sol():
+    return 1 if sat([1, 2, 3, 1]) else 0
+
+def sat(li: List[int]):
+    return all(x == i for i, x in enumerate(li))
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

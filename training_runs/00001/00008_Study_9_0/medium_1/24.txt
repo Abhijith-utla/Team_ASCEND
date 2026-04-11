@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list("The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+The `ord()` function in Python returns an integer representing the Unicode character. So, we can use this function to get the ASCII value of each character in the string.
+
+The list comprehension `[ord(i) for i in li]` generates a list of ASCII values for each character in the input list `li`.
+
+The `==` operator is used to compare the two lists. The function `sat` returns `True` if the two lists are equal and `False` otherwise.

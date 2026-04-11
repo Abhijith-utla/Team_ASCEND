@@ -1,0 +1,5 @@
+def sol():
+    return 'x' * 1000
+
+# Test
+print(sat(sol()))

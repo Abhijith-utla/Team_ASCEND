@@ -1,0 +1,5 @@
+def sol():
+    return "".join([chr(i) for i in range(ord('a'), ord('z')+1)])
+
+# Testing the solution
+assert sat(sol())

@@ -1,0 +1,14 @@
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    total = 0
+    for i in range(len(li)):
+        if i > 0:
+            total += li[i-1]
+        total += li[i]
+        if total > sum(li[:i]):
+            return False
+    return True
+```
+This function checks if all elements in the list are less than the sum of all elements up to that point. It does this by summing up the elements until the current one and checking if it's greater than the total sum until then. If it's not, it returns False, else True.

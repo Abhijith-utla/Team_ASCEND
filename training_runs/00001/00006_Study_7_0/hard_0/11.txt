@@ -1,0 +1,5 @@
+def sol():
+    result = ""
+    for _ in range(8 ** 2888):
+        result += "8"
+    return result.count("888") > 8 and len(result) == 3

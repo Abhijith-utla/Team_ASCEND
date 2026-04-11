@@ -1,0 +1,22 @@
+The provided function `sat` checks if the sum of the list `li` up to the current index `i` equals `i`. If it doesn't, the function returns `False`. If the function goes through all indices and doesn't find any where the condition is not met, it returns `True`.
+
+This means that the function will only return `True` if the list is a permutation of numbers from 0 to 19.
+
+Here's how you can implement `sol` function:
+
+```python
+def sol():
+    return sum(range(20))
+```
+
+This function will return `45`, which is the sum of numbers from 0 to 19.
+
+Please note that the `sat` function doesn't return anything, it just checks if the list is a permutation of numbers from 0 to 19. If you want to return a value, you can modify the function like this:
+
+```python
+def sol():
+    li = list(range(20))
+    return li
+```
+
+This will return the list `[0, 1, 2, ..., 19

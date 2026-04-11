@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The output must be valid Python code only.
+# Do not modify the code above this line.

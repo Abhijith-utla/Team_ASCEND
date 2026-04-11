@@ -1,0 +1,16 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 20)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:09:15.269118+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 20)|parse=fence=none,preamble=0,found_sol=1,candidates=20|checked=20/20|preview=def sol(): answer = \"\" for i in range(535): if i % 2 == 0: answer += chr(ord('A') + i // 2) else: answer += chr(ord('...",
+  "difficulty": "hard",
+  "problem_id": "00042_LongestMonotonicSubstringTricky_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

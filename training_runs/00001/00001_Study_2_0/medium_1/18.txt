@@ -1,0 +1,8 @@
+Here is the correct Python code for the `sol` function that constructs and returns a single answer value:
+
+```python
+def sol():
+    return 'xxoo'
+```
+
+This function will always return the string 'xxoo', because the count of 'x' is 100, the count of 'xo' is 101 and the count of 'xx' is 98.

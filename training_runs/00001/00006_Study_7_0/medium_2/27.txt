@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+The function `sat` checks if the string `s` is a substring of the string `"8**2888"` and is repeated more than 8 times. It also checks if the length of `s` is 3. If both these conditions are satisfied, the function returns `True`, otherwise it returns `False`.

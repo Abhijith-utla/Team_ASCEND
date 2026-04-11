@@ -1,0 +1,8 @@
+Here's the correct pattern for the solution function:
+
+```python
+def sol():
+    return [1234, 1235]
+```
+
+This function returns a list containing the indices 1234 and 1235. The checker will then check if 1234 is in 1235 and if it's not equal to 1235.

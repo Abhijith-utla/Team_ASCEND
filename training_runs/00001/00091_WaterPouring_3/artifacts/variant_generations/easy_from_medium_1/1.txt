@@ -1,0 +1,22 @@
+Variant 1:
+
+```python
+def sat(moves: List[List[int]], capacities=[511, 625, 553], init=[472, 153, 127], goal=[97, 625, 30]):
+    return False
+```
+
+Variant 2:
+
+```python
+def sat(moves: List[List[int]], capacities=[511, 625, 553], init=[472, -1, 127], goal=[97, 625, 30]):
+    return False
+```
+Changes in Variant 2 include changing the negative index to a non-negative number, which is not allowed in the problem, thus causing the function to return False.
+
+Variant 3:
+
+```python
+def sat(moves: List[List[int]], capacities=[511, 625, 553], init=[472, 153, 127], goal=[97, None, 30]):
+    return False
+```
+Changes in Variant 3 include changing the None value to a valid index, which causes the function to return False.

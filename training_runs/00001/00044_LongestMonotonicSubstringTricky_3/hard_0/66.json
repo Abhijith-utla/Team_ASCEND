@@ -1,0 +1,16 @@
+{
+  "attempt_num": 66,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:26:35.876636+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=13|checked=13/13|preview=def sol(): return [] print(sat([], 61, \" OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx\")) # False pr...",
+  "difficulty": "hard",
+  "problem_id": "00044_LongestMonotonicSubstringTricky_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,5 @@
+def sol():
+    return [9, 284, 72]
+
+# This assert statement will always pass
+assert sat(moves=[[2, 1]], capacities=[357, 298, 492], init=[9, 284, 72], goal=[50, 0, 364])

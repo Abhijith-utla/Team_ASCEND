@@ -1,0 +1,20 @@
+Here's the correct pattern:
+
+```python
+def sol():
+    return [0]
+```
+
+This function returns a list with a single element 0.
+
+In the test, you can check whether the function works as expected by calling it and checking if it returns a list with a single element 0.
+
+Correct solution:
+
+```python
+def sol():
+    return [0]
+
+def test_sol():
+    assert sat(sol())
+```

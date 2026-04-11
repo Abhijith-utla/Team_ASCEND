@@ -1,0 +1,30 @@
+def sol():
+    return []
+
+# Incorrect pattern:
+def sol(x):
+    pass
+
+# Correct pattern:
+def sol(x):
+    return x
+
+# Incorrect pattern:
+def sol(x, length=1, s="xwV"):
+    return sat(x, length, s)
+
+# Correct pattern:
+def sol(x, length=1, s="xwV"):
+    return sat(x, length, s)
+
+# Incorrect pattern:
+def sol(x, length=1, s="xwV"):
+    return [i for i in range(length) if x[i] >= x[i + 1]]
+
+# Correct pattern:
+def sol(x, length=1, s="xwV"):
+    return [i for i in range(length - 1) if x[i] <= x[i + 1]]
+
+# Incorrect pattern:
+def sol(x, length=1, s="xwV"):
+    return [i for i in range(length - 1) if x[

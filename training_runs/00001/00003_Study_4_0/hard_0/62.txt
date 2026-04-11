@@ -1,0 +1,10 @@
+Here is the Python code that meets all the conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+This function takes a list of integers as an argument and checks if the length of the list is 10 and the count of the value at index 3 in the list is 2. If both conditions are met, it returns True, otherwise it returns False.

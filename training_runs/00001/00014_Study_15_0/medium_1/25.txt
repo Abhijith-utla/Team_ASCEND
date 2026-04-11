@@ -1,0 +1,5 @@
+def sol():
+    return [x for x in range(20) if (2 ** x) - 1 != (2 ** (x + 1)) - 1]
+
+# Test
+assert sat(sol())

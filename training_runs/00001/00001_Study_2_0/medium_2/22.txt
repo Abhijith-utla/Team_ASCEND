@@ -1,0 +1,8 @@
+def sol():
+    s = 'yo' * 100 + 'y' * 101 + 'yy' * 98
+    return s
+
+print(sol())
+
+# The output of the function sol() should be:
+# 'yoyooyoyooyoyo'

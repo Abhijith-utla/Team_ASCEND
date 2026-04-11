@@ -1,0 +1,11 @@
+def sol():
+    i = 1
+    while not sat(i):
+        i += 1
+    return i
+
+# The function `sat` is already defined by the user.
+# You must define exactly one function named `sol`.
+# sol must take NO arguments.
+# sol must return one answer object.
+assert sat(sol())

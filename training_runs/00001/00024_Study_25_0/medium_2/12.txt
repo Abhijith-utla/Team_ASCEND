@@ -1,0 +1,2 @@
+def sol():
+    return "".join(sorted(input())) == "".join(sorted('sirnemtpuA')) and "".join(input()) == "".join(reversed(input()))

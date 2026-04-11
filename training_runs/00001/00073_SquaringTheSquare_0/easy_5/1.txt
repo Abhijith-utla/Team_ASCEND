@@ -1,0 +1,7 @@
+def sol():
+    return {
+        "x": 0,
+        "y": 0,
+        "sum_of_sides": 0,
+        "sum_of_squares": 0,
+    }

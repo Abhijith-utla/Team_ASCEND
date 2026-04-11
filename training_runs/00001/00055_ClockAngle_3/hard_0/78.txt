@@ -1,0 +1,4 @@
+def sol():
+    return {"hands": [12, 0]}
+
+assert sat(sol()["hands"])

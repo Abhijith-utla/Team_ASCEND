@@ -1,0 +1,18 @@
+The function `sat` checks if the provided list of integers (representing ASCII values) corresponds to a string. The string is a simple sentence, where each digit corresponds to a character in the English alphabet. The function returns `True` if the list represents the correct string, and `False` otherwise.
+
+Here is the implementation of the function `sol`:
+
+```python
+def sol():
+    return [ord(ch) for ch in "The quick brown fox jumps over the lazy dog"]
+```
+
+This function uses list comprehension to generate a list of ASCII values for the characters in the string. The `ord` function is used to get the ASCII value of a character, and the list comprehension generates a list of these values. The final list is then returned by the function.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```
+
+This assertion will pass if the function `sol` returns the correct list of ASCII values for the string, and fail otherwise.

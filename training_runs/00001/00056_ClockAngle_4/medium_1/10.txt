@@ -1,0 +1,6 @@
+def sol():
+    return ([0, 0])
+
+# The solution function is correct if the hand_position is exactly (0,0)
+# The solution function is incorrect otherwise
+assert sat(sol())

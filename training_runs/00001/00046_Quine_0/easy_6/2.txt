@@ -1,0 +1,8 @@
+Here is the correct Python code for the problem:
+
+```python
+def sol():
+    return "Hello, World!"
+```
+
+This function will return the string "Hello, World!" as an answer.

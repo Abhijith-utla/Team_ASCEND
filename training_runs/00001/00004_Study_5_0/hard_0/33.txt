@@ -1,0 +1,17 @@
+Here's the Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol():
+    return 10
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+
+assert sat(sol())
+```
+
+This Python function `sol` always returns the number `10`. The function `sat` checks whether all elements in the list `li` have the same count, which is `10`.
+
+The function `sat` is an example of a correct pattern for the problem. It defines a function `sol` that returns a single answer object, and then defines a function `sat` that checks whether all elements in a list have the same count. This is a correct usage of the pattern.

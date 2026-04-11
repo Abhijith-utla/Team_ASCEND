@@ -1,0 +1,19 @@
+Sure, here is the Python code that satisfies the condition:
+
+```python
+def sol():
+    return 'x' * 100 + 'o' * 101 + 'xx' * 98
+```
+
+The function `sol` returns a string that contains 'x' exactly 100 times, 'o' exactly 101 times, and 'xx' exactly 98 times.
+
+To validate this solution, you can use the following code:
+
+```python
+def sat(s: str):
+    return s.count('x') == 100 and s.count('o') == 101 and s.count('xx') == 98
+
+print(sat(sol()))
+```
+
+This will print `True` if the function `sol` returns a valid string and `False` otherwise.

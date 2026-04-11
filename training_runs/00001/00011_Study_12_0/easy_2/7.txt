@@ -1,0 +1,8 @@
+def sol():
+    return 1000
+
+# Testing the solution
+assert sat([5] + list(range(1, 999)))
+assert not sat([5] + list(range(1, 998)))
+assert sat([5])
+assert not sat([6] + list(range(1, 999)))

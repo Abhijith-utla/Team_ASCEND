@@ -1,0 +1,4 @@
+def sol():
+    return [4, 2, 5]
+
+print(sat(sol())) # True

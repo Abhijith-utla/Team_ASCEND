@@ -1,0 +1,4 @@
+def sol():
+    return [str(int(i ** 64.6)) for i in range(10)]
+
+assert sat(sol())

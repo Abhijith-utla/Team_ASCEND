@@ -1,0 +1,12 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sol() -> int:
+    return 42
+
+assert sat(sol())
+```
+
+This code defines a function `sat` that returns the answer to the problem. The function takes a list of integers and checks if the length of the list is 10. If it is not, it returns False. It also checks if the count of the number 42 in the list is 2. If it is not, it returns False. If both conditions are met, it returns True. The `assert` statement is used to ensure that the function is working correctly.

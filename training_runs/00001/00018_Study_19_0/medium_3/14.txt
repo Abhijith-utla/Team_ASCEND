@@ -1,0 +1,17 @@
+Here is a Python solution for your problem. The solution consists of two steps:
+
+1. First, it checks if the list `li` contains any element other than `0`. This can be done using a set comparison.
+2. If `li` does not contain any other elements than `0`, it returns `False`. Otherwise, it returns `True`.
+
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(set(li)) == 1
+```
+
+This function works correctly only if the list contains exactly one element `0`. Otherwise, it will return `False`. The function returns `True` if and only if the list `li` contains exactly one element `0`.
+
+For example, calling `sat([0, 1, 1])` will return `False`, and calling `sat([0])` will return `True`.

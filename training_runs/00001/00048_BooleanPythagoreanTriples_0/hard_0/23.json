@@ -1,0 +1,17 @@
+{
+  "attempt_num": 23,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T12:51:02.629764+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=17|checked=17/17|preview=def sol(): return [] # Testing the function with several test cases print(sat([0, 1, 0, 1, 0, 1, 0, 1, 0, 1])) # shou...",
+  "difficulty": "hard",
+  "problem_id": "00048_BooleanPythagoreanTriples_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

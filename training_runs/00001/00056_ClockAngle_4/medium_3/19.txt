@@ -1,0 +1,12 @@
+def sol():
+    hour = 0
+    minute = 0
+    while True:
+        if sat(hour, minute):
+            return hour, minute
+        minute += 1
+        if minute == 60:
+            minute = 0
+            hour += 1
+            if hour == 12:
+                hour = 0

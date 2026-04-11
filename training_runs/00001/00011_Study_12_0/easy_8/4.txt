@@ -1,0 +1,10 @@
+Here is the solution for the problem. The given function 'sat' checks whether the given list 'li' is a sequence that satisfies the condition mentioned in the problem statement. The list starts with 2 and the sequence is 3, then 4, then the rest of the sequence.
+
+```python
+def sol():
+    li = [0]*1000 + [2] + [0]*1000
+    return li
+
+assert sat(sol())
+```
+This solution works by first creating a list 'li' of size 1001 with the elements 2, then appending 4, then repeating the sequence 999 times. The function 'sat' then checks if the list 'li' satisfies the condition in the problem statement. The assertion at the end checks this condition. If the list 'li' satisfies the condition, the assertion will pass without any error. If not, it will raise an AssertionError.

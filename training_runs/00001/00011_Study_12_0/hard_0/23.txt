@@ -1,0 +1,16 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> List[int]:
+    answer = [0]*1000
+    for i in range(1000):
+        if i < len(li):
+            answer[i] = li[i]
+    return answer
+```
+
+This function `sol` accepts a list `li` of length 1000. It creates a new list `answer` of length 1000. It then fills `answer` with the elements of `li` from positions 0 to 999, effectively reversing the order of `li`. The function then returns `answer`.
+
+The `assert` statement in the provided code checks that `sol(li)` equals `[0, 0, 0, ..., 0]` for any `li` of length 1000. If `li` is not a permutation of the integers from 0 to 999, the `assert` statement will fail.

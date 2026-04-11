@@ -1,0 +1,10 @@
+Here is the solution to the problem.
+
+```python
+def sol():
+    return []
+```
+
+This function returns an empty list because there are no valid coordinates.
+
+The function `sol` is not needed in the question, because the task requires the function `sat` to return a value.

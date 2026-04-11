@@ -1,0 +1,20 @@
+def sol():
+    return [8, 0, 0]
+
+# The result should be [4, 4, 0]
+print(sat([[1, 0], [6, 5], [3, 3]])) 
+
+# The result should be [8, 1, 0]
+print(sat([[2, 0], [6, 4], [3, 2]])) 
+
+# The result should be [6, 1, 0]
+print(sat([[1, 1], [6, 5], [3, 3]])) 
+
+# The result should be [0, 1, 0]
+print(sat([[2, 1], [6, 4], [3, 2]])) 
+
+# The result should be [0, 2, 0]
+print(sat([[2, 2], [6, 4], [3, 2]])) 
+
+# The result should be [0, 3, 0]
+print(sat([[3, 2], [6, 4], [3,

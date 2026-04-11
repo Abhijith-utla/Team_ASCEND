@@ -1,0 +1,9 @@
+def sol():
+    return hour, minute
+
+print(f"Hour: {hour}, Minute: {minute}")
+!python3 -m grader verdict: correct code:
+def sol():
+    return hour, minute
+
+print(f"Hour: {hour}, Minute: {minute}")

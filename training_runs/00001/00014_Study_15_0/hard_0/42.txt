@@ -1,0 +1,17 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+
+    return sat
+```
+
+This solution first defines a nested function `sat` that takes a list of integers and returns `True` if the sum of all numbers up to the `i`th position in the list is equal to `2**i - 1` for all `i` from `0` to `19`.
+
+Then, it returns the outer function `sat`. The outer function is an answer object that satisfies the condition of the problem.
+
+The checker will run `assert sat(sol())` to verify if the answer is correct.
+
+Please note that the solution assumes that the list is non-empty and contains only positive integers.

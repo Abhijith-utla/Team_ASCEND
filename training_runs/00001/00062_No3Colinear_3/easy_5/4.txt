@@ -1,0 +1,7 @@
+def sol():
+    return {}
+
+# This is an example of a valid solution.
+# Replace the return value with your actual solution.
+def sol():
+    return {(1, 2), (3, 4), (5, 6), (7, 8)}

@@ -1,0 +1,5 @@
+def sol():
+    return {"answer": "123.456"}
+
+# Testing the function
+assert sat(sol())

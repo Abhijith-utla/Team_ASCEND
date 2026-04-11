@@ -1,0 +1,13 @@
+The function `sat` checks if a list `li` satisfies a certain condition. The condition is as follows: for each pair of adjacent elements in the list, at least one of their values is one less than, one more than, or is a multiple of the other. 
+
+The function `zip` is used to pair up the elements in the list. The first element of the pair is the element at index `0`, and the second element is the element at index `1`. The second element of the pair is the element at index `1`, and the first element of the pair is the element at index `0`.
+
+The condition is checked for each pair by using the `in` keyword to check if the second element of the pair is in the set {i - 1, i + 1, 3 * i}. The answer is `True` if the condition is met for all pairs, and `False` otherwise.
+
+Here is the Python code for the `sol` function:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    return all(j in {i - 1, i + 1, 3 * i}

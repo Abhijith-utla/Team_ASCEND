@@ -1,0 +1,26 @@
+Here are three simpler versions of the `sat` function:
+
+VARIANT1:
+```python
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x, y) in enumerate(coords):
+        assert 0 <= x < side and 0 <= y < side
+    return len(coords) == num_points
+```
+
+VARIANT2:
+```python
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x, y) in enumerate(coords):
+        assert 0 <= x < side and 0 <= y < side
+    return len(coords) == num_points-1
+```
+
+VARIANT3:
+```python
+def sat(coords: List[Tuple[int, int]], side=10, num_points=20):
+    for i, (x, y) in enumerate(coords):
+        assert 0 <= x < side and 0 <= y < side
+    return len(coords) == num_points+1
+```
+These functions are simple variations of the original `sat` function, with the numbers of points and sides being a bit different.

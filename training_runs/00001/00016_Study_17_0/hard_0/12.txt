@@ -1,0 +1,18 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+print(sol())
+```
+
+This program first tries to find an integer `i` such that `len(str(i + 1000)) > len(str(i + 1001))` is true. It does this by incrementing `i` until the condition is met. The function `sol()` then returns this value.
+
+The condition `len(str(i + 1000)) > len(str(i + 1001))` is a simplified version of the problem statement, but it is assumed that the `sat(i)` function is defined in the same way as the one given in the problem.

@@ -1,0 +1,10 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return all([li.count(i) == i for i in range(10)])
+```
+
+In this solution, `li` is a list of integers. The function `sol` will return `True` if all elements in the list `li` are present exactly once, and `False` otherwise.
+
+The list comprehension `[li.count(i) == i for i in range(10)]` will create a list of booleans where each boolean represents whether the number `i` is present exactly once in the list `li`. The `all` function will return `True` if all booleans in the list are `True`, and `False` otherwise.

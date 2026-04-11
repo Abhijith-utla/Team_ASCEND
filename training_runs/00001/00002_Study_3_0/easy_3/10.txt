@@ -1,0 +1,6 @@
+def sol():
+    li = list(range(998))
+    li[0] = 0
+    return li
+
+print(sol())

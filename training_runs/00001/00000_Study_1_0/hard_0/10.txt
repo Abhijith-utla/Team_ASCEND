@@ -1,0 +1,11 @@
+Here is the Python code for the function `sol` that meets the constraints:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+
+assert sat(sol())
+```
+
+This code constructs a string of length 1000 (`'oo' * 1000`), then returns this string. The `assert sat(sol())` line checks that the function `sol` returns a string of length 1000 that only contains 'oo', which satisfies the conditions specified in the problem.

@@ -1,0 +1,21 @@
+def sol():
+    return []
+
+# Assuming that sat function is correct
+# It checks the arrangement of points on a square grid with a side of length 'side',
+# with a certain number of points (default is 4) and returns True if the points are well-ordered on the grid, else False.
+# The assertion is made that the sum of the cross products of the vectors from any two consecutive points is zero.
+# Note that this assertion may not hold if the points are not well-ordered.
+
+# Testing the function
+# Creating a list of points on a square grid
+points = [(0, 0), (1, 1), (2, 2), (3, 3)]
+assert sat(points)
+
+# Creating a list with fewer than num_points points
+points = [(0, 0), (1, 1)]
+assert not sat(points)
+
+# Creating a list with more than num_points points
+points = [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)]
+assert not sat(points)

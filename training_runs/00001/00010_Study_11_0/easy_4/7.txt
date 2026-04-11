@@ -1,0 +1,5 @@
+def sol():
+    return ["Python", "is", "awesome"]
+
+# Check
+assert sat(sol())

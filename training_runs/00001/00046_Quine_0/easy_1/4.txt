@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# You can call the function sol() and assert that it returns a string
+assert sat(sol)

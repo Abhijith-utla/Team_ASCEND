@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(ls, idx1=1, idx2=2):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+VARIANT2:
+```python
+def sat(ls, idx1=2, idx2=1):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+VARIANT3:
+```python
+def sat(ls, idx1=3, idx2=4):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```

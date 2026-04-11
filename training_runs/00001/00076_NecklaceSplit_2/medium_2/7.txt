@@ -1,0 +1,7 @@
+def sol():
+    return 0
+
+# In this solution, we are simply returning 0, as required by the problem statement.
+
+# Run the assertion to verify the solution
+assert sat(0)

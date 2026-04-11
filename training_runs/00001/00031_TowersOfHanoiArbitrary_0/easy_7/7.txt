@@ -1,0 +1,6 @@
+def sol():
+    return [0, 1, 2, 3, 4, 5, 6, 7]
+
+# To use the function, uncomment the following lines:
+# moves = [[0, 1], [2, 3], [4, 5], [6, 7]]
+# assert sat(moves)

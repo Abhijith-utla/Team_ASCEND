@@ -1,0 +1,5 @@
+def sol():
+    return float(str(len('your_string_here')))
+
+# Test
+assert sat(sol())

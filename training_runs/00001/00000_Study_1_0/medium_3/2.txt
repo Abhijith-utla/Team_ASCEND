@@ -1,0 +1,8 @@
+Here is a possible solution for this problem:
+
+```python
+def sol():
+    return 'oo' not in 'oooooooooo' and 'o' in 'oooooooooo' and 'oooooooooo'.count('o') == 1000
+```
+
+This solution is correct because the condition 'oo' not in 'oooooooooo' checks if the string 'oo' is not in the string 'oooooooooo', while 'o' in 'oooooooooo' checks if 'o' is present in the string 'oooooooooo'. The count('o') function is used to count the number of 'o' characters in the string 'oooooooooo'. It's expected that this count will be equal to 1000.

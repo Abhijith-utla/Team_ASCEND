@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all(j in {i} for i, j in enumerate(li))
+
+assert sat(sol())

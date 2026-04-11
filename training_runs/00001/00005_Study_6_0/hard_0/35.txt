@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 4
+```
+
+The `sol` function always returns the number `4`. The `sat` function is provided by the user and is used to evaluate whether a given integer satisfies the condition defined in the problem.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:54:33.708239+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=21|checked=21/21|preview=def sol(): li = [int(i) for i in input().split()] return sat(li) def sat(li: List[int]) -> bool: if len(li) != 10: re...",
+  "difficulty": "easy",
+  "problem_id": "00003_Study_4_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 4
+}

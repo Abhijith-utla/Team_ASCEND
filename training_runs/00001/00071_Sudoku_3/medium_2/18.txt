@@ -1,0 +1,6 @@
+def sol():
+    answer = "_" * 81
+    answer = answer[:42] + "4" + answer[43:81]
+    return answer
+
+print(sol())

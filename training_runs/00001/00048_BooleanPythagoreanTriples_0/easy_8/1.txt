@@ -1,0 +1,7 @@
+def sol():
+    return None
+
+assert sat(1, 1, 1)
+assert not sat(1, 1, 2)
+assert not sat(2, 2, 2)
+assert not sat(2, 3, 2)

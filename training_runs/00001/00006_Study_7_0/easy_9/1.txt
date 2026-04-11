@@ -1,0 +1,9 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    result = (8 ** 2888) ** 0.5 > 8 and len("your string here") == 3
+    return result
+```
+
+You should replace "your string here" with the actual string that you want to check. The function `sol` will return `True` if the result is `True` and `False` otherwise.

@@ -1,0 +1,8 @@
+Here is the correct Python code:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 0
+```
+
+This function takes a string `s` as input and returns `True` if the number of 'o' characters in the string equals 1000 and the number of 'oo' characters in the string is 0. If the string does not satisfy these conditions, the function returns `False`.

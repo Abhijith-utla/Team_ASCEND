@@ -1,0 +1,5 @@
+def sol():
+    x = ["_" for _ in range(45)]
+    return x
+
+assert sat(sol())

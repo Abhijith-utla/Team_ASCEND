@@ -1,0 +1,17 @@
+{
+  "attempt_num": 67,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T18:19:47.430840+00:00",
+  "diagnostic": "reason=subprocess_error:AttributeError: 'dict' object has no attribute 'replace'|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): return { \"expr1\": \"2 + 3 * 4\", \"expr2\": \"13 - 13 / 1\", \"expr3\": \"1 * 1 * 1 * 13\", \"expr4\": \"10 + 12 - 4 / ...",
+  "difficulty": "hard",
+  "problem_id": "00082_CardGame24_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

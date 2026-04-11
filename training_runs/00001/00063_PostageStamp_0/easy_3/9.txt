@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# This will check if the function sat(stamps, max_stamps=4, options=[10, 32, 8]) works correctly.
+assert sat([10, 32, 8], max_stamps=4, options=[10, 32, 8])
+
+# This will fail the check since 5 is not in the options list.
+assert not sat([10, 32, 8, 5], max_stamps=4, options=[10, 32, 8])
+
+# This will fail the check because the list has more than the allowed number of stamps.
+assert not sat([10, 32, 8, 5, 10, 32, 8, 5], max_stamps=4, options=[10, 32, 8])
+
+# This will pass the check because the list has fewer than the allowed number of stamps.
+assert sat([10, 32, 8], max_stamps=4, options=[10,

@@ -1,0 +1,11 @@
+Here is the solution for the problem:
+
+```python
+def sat(s: str):
+    return s.count('oo') <= 1
+
+def sol():
+    return sat(s)
+```
+
+Here, `s` is the input string that contains the 'oo'. The `sat` function checks if the string contains at most one 'oo'. The `sol` function is the function that calls `sat` with a string as an argument.

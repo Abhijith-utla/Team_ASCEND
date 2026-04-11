@@ -1,0 +1,12 @@
+Your provided code is almost correct, but the count of elements 0 in the list should be counted not only in the list itself, but also in its sublists (if any), not just in the main list. Here's the corrected code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    counts = {i: li.count(i) for i in range(10)}
+    zeroes = li.count(0)
+    return all(counts.values()) and zeroes == 1
+```
+
+This function works by creating a dictionary with counts of each number from 0 to 9 in the list. Then it checks if all counts are equal to the count of the number itself (which means that the number is present in the list) and if there's exactly one count of the number zero in the list. If all these conditions are met, the function returns True, otherwise it returns False.

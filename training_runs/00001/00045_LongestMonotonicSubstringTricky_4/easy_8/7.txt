@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# This test case demonstrates that the function does not take any input,
+# and thus, it must always return an empty list.
+assert sat(sol())
+
+# This test case demonstrates that the function correctly handles the case when the list is decreasing.
+assert sat(sol([1.2, 2.3, 3.4, 2.3, 1.2]))
+
+# This test case demonstrates that the function correctly handles the case when the list is not decreasing.
+assert not sat(sol([1.2, 2.3, 3.4, 2.3, 4.5]))
+
+# This test case demonstrates that the function correctly handles the case when the list is an increasing and decreasing sequences.
+assert sat(sol([1.2, 2.3, 3.4, 2.3, 1.1]))
+
+# This test case demonstrates that the function correctly handles the case when the list is a non-decreasing sequence.
+assert sat(sol([1.2, 2.3, 3.4, 2.3]))
+
+# This test case demonstrates

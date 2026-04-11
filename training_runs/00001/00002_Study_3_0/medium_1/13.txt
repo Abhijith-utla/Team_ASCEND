@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return sorted(range(999))
+```
+
+This function returns a list of integers from 0 to 998, sorted in ascending order. The checker will pass if this list is the same as the list of integers from 0 to 998.

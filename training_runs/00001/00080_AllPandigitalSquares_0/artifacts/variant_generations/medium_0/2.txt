@@ -1,0 +1,21 @@
+Here are the three simple Python functions for the All [Pandigital](https://en.wikipedia.org/wiki/Pandigital_number) Squares problem:
+
+VARIANT1:
+```python
+def sat(nums: List[int]):
+    return sorted([int(str(n) + str(n*n)) for n in nums]) == list(range(1, 10))
+```
+
+VARIANT2:
+```python
+def sat(nums: List[int]):
+    return sorted([int(str(n)*3) for n in nums]) == list(range(1, 10))
+```
+
+VARIANT3:
+```python
+def sat(nums: List[int]):
+    return all(int(str(n) + str(n*n)) % 10 == int(str(n)*3) % 10 for n in nums)
+```
+
+Note that in the first variant, we just concatenate the number and its square to achieve pandigital numbers. In the second variant, we multiply the number and the square by 3 and then take the last digit of each result. In the third variant, we check if the last digit of the number squared is the same as the last digit of the number multiplied by 3.

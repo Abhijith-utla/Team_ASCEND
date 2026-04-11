@@ -1,0 +1,6 @@
+def sol():
+    return [0, 0, 0, 0, 0]
+
+# The solution checks if the string is a valid sequence or not
+def sat(x: List[int], length=0, s=""):
+    return all(s[x[i]] <= s[x[i]] for i in range(length - 1))

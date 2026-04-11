@@ -1,0 +1,13 @@
+def sol():
+    hour = 12
+    minute = 0
+    while not sat(hour, minute):
+        if minute == 59:
+            hour += 1
+            minute = 0
+        else:
+            minute += 1
+    return {'hour': hour, 'minute': minute}
+
+# checker
+assert sat(sol()['hour'], sol()['minute'])

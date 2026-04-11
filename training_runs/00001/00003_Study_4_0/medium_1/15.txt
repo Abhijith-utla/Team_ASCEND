@@ -1,0 +1,18 @@
+The function `sat` checks if a list `li` of length 10 satisfies certain conditions. The list must contain exactly one instance of the element `li[3]` exactly twice and at index `3`. Here's how it can be implemented:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This function first checks if the length of the list is 10, if not, it returns `False`. Then it checks if there are exactly two instances of `li[3]`, if not, it returns `False`. After that, it checks if `li[3]` is at index `3`, if not, it returns `False`. Finally, it checks if there's only one instance of `li[3]`

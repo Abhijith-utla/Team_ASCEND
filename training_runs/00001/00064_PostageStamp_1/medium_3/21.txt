@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This checker asserts that the solution function satisfies the condition defined in the problem.
+assert sat(sol())

@@ -1,0 +1,11 @@
+Sure, here is the solution for the problem:
+
+```python
+def sol():
+    i = 12345
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts with `i` equal to `12345` and increments `i` by one in each iteration until `sat(i)` returns `True`. This means `i` is an integer that is not equal to `12345 + 1000` and `12345 + 1001`.

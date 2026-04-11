@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# This is to check the correctness of our solution
+assert sat(sol())

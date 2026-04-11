@@ -1,0 +1,7 @@
+def sol():
+    return "1234"
+
+if __name__ == "__main__":
+    assert sat(sol())
+
+This function returns the string "1234", which is a valid representation of the list [10, 12, 1, 7]. The provided function `sat` is correct because it correctly replaces all the spaces in the given string.

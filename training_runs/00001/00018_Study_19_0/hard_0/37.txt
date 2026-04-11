@@ -1,0 +1,14 @@
+The Python code to construct and return a single answer value that satisfies the condition is as follows:
+
+```python
+def sol():
+    return set(range(21))
+```
+
+This function constructs and returns a set that contains all integers from 0 to 20.
+
+The final checker will run:
+
+```python
+assert set(range(21)) == {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21}
+```

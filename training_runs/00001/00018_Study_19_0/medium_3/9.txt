@@ -1,0 +1,10 @@
+The function `sat` checks whether the list `li` contains the number 0 or not. If it contains 0, the function returns `True`, otherwise it returns `False`. Here's how you can implement this in Python:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return 0 in li
+```
+
+This function uses the `in` operator to check if the number 0 is in the list `li`. If it is, the function returns `True`, otherwise it returns `False`.

@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return (8 ** 2888) ** 0.5 > 8 and len('Python') == 3
+```
+
+This function will return `True` if the square of 8 ** 2888 is greater than 8 and the length of the string 'Python' is 3. Otherwise, it will return `False`.

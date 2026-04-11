@@ -1,0 +1,4 @@
+def sol():
+    return {'count_of_y': 100, 'count_of_yo': 101, 'count_of_yy': 98}
+
+print(sol())

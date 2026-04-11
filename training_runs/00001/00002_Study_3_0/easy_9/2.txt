@@ -1,0 +1,10 @@
+Here's the correct Python solution for the problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(1001))
+```
+
+In this solution, we first import the List type from the typing module to make the function type-safe. Then, we define the `sat` function which takes a list of integers `li` as an argument. Inside this function, we check if the sorted version of the list is equal to the list of integers from 1 to 1000. If they are equal, the function returns True, otherwise it returns False.

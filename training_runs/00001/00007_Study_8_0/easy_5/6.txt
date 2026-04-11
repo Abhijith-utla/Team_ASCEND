@@ -1,0 +1,14 @@
+Sure, here is a Python function named `sol` that takes a list `ls` as a parameter and returns a single answer object:
+
+```python
+def sol(ls):
+    return ls[2] in ls[1] and ls[2] != ls[1]
+```
+
+You can test the function with the following code:
+
+```python
+assert sol([1, 2, 3, 2, 1])
+```
+
+This will pass the test if the function returns `True`, otherwise it will fail.

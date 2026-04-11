@@ -1,0 +1,5 @@
+def sol():
+    return 'z' * 100 + 'zo' * 101 + 'zz' * 98
+
+# Test case
+assert sat(sol())

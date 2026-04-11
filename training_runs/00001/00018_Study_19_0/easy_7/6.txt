@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return [0]
+```
+
+The function `sol()` returns a list with a single element, which is 0. This is a correct solution to the problem.

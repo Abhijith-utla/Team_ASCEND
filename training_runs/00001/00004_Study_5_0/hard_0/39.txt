@@ -1,0 +1,13 @@
+The function `sat` is defined to check if all elements in the list `li` are equal to each number from 0 to 9. Here is how you could write the `sol` function to satisfy this requirement.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function iterates over the numbers from 0 to 9, and for each number, it counts the number of times it appears in the list. If the count is not equal to the number itself, it returns `False`. If it iterates through all numbers without finding any inequalities, it returns `True`.

@@ -1,0 +1,18 @@
+def sol():
+    return [19]
+
+# The function 'sat' checks if the list 'stamps' contains only unique values less than or equal to 'target', 
+# the length of the list is less than or equal to 'max_stamps' and the sum of all stamps is equal to 'target'.
+# If these conditions are met, the function returns True. Otherwise, it returns False.
+
+# In the case of [19], the sum of the list is 19, less than or equal to the maximum stamps allowed is 2 and exactly equal to the target.
+# So, the function returns [19].
+
+# Testing the function with some test cases:
+
+print(sat([19])) # True
+print(sat([19, 19])) # False
+print(sat([19, 14])) # False
+print(sat([19, 14, 81])) # False
+print(sat([19, 14, 81, 19])) # False
+print(sat([19, 14, 81, 19, 14

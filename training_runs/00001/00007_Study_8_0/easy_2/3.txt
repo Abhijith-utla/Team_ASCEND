@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sat(ls):
+    return ls[1234] > ls[1235] and ls[1234] != ls[1235]
+```
+
+The function `sat` takes a list `ls` as an argument and checks if the element at index 1234 is greater than the element at index 1235 and if they are not equal. This is a simple comparison operation which can be used to determine if a given list is "sorted" or not.

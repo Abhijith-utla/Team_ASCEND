@@ -1,0 +1,30 @@
+Sure, this is a simple mathematical formula that checks if a given number is less than the next number. We can use this to define a function `sol()`.
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+This function will continue to return the smallest possible integer `i` such that `sat(i)` returns `True`.
+
+For the checker, we can use the following Python code:
+
+```python
+def sat(i: int) -> bool:
+    return i < (i + 1)
+
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+print(sol())
+```
+
+This will output the smallest possible integer `i` such that `sat(i)` returns `True`.

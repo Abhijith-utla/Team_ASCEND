@@ -1,0 +1,8 @@
+Here's a Python function named sol that constructs and returns a single answer value.
+
+```python
+def sol():
+    return [s + t for s in ['berlin', 'berg', 'linber', 'gerber', 'gerlin'] for t in ['berlin', 'berg', 'linber', 'gerber', 'gerlin'] if s != t]
+```
+
+This function uses list comprehension to generate a list of all possible pairs of words from the given lists, ignoring any pair that is the same word. The final checker will run: assert sat(sol())

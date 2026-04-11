@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' in 'a' * 1000 and 'o' not in 'a' * 1000 and 'a' * 1000.count('o') == 1000

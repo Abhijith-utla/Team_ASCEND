@@ -1,0 +1,8 @@
+Here is the Python code that satisfies the given conditions.
+
+```python
+def sol():
+    return [[1, 2, 3, 4], [1, 2, 3, 5]]
+```
+
+In this solution, the list `sol()` returns a list of lists. Each inner list contains four elements, and the first two elements are the same and the third and fourth elements are different. This satisfies the given conditions as `sat(sol())` will return True.

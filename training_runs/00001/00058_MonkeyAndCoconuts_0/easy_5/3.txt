@@ -1,0 +1,30 @@
+def sol():
+    n = 100
+    while n > 0:
+        if sat(n):
+            return n
+        n -= 1
+    return None
+
+print(sat(sol()))  # True
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))  # False
+print(sat(sol()))

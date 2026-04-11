@@ -1,0 +1,10 @@
+The correct pattern is:
+
+```python
+def sol():
+    return 3.1416
+```
+
+In this pattern, the function sol() is defined and returns the number 3.1416. The number is a float, so it should be surrounded by quotes to be treated as a number.
+
+The function sat(x: float) is also defined, but it's not actually used. The function is used to check the given argument x - 3.1416 and returns a boolean value, which is True if the result starts with "123.456" and False otherwise.

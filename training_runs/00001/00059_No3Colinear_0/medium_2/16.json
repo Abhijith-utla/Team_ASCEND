@@ -1,0 +1,17 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T14:21:23.682403+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return [] # Alternate the solution with a list of tuples as the answer def sol(): return [(i, i**2) for i ...",
+  "difficulty": "medium",
+  "problem_id": "00059_No3Colinear_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

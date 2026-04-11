@@ -1,0 +1,17 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return len(str(1000)) == len(str(1001))
+```
+
+The provided function `sat` is incorrect because the input is expected to be an integer but it's being used with a string. The function `sat` is supposed to return whether the length of the string representation of `i + 1000` and `i + 1001` is equal. However, this comparison will always be false because `len(str(i + 1000))` is not equal to `len(str(i + 1001))`. 
+
+This is the corrected pattern:
+
+```python
+def sol():
+    return len(str(1000)) == len(str(1001))
+```
+
+The assertion `assert sat(sol())` will pass because `sol()` returns `True`.

@@ -1,0 +1,7 @@
+def sol():
+    moves = [(i, j) for i in range(8) for j in range(i+1, 8)]
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for i, j in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == rods[1] == []

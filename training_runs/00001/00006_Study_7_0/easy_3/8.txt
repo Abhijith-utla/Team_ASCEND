@@ -1,0 +1,9 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return "888"
+
+print(sat(sol()))
+```
+This function `sol` returns the string "888". The checker will assert that the string "888" occurs exactly 10 times in the provided string and that the length of the string is also 3.

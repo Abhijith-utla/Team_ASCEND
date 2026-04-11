@@ -1,0 +1,29 @@
+def sat(s: str, r: str) -> bool:
+    return sorted(s) == sorted(r) and s == r
+
+def sol():
+    return ""
+
+def test_sol():
+    assert sat("", "")
+    assert not sat("a", "")
+    assert not sat("", "a")
+    assert sat("aaa", "aaa")
+    assert not sat("aaa", "aab")
+    assert sat("abc", "bac")
+    assert not sat("abc", "bad")
+    assert sat("abc", "cba")
+    assert not sat("abc", "abcd")
+    assert sat("abc", "cba")
+    assert not sat("abcdef", "fedcba")
+    assert not sat("abcdef", "fedcba")
+    assert sat("abcdef", "abcdef")
+    assert not sat("abcdef", "abcdefg")
+
+if __name__ == "__main__":
+    test_sol()
+
+In this solution, the function "sol" returns an empty string. The function "test_sol" tests the "sat" function with several different inputs. The function "sat" checks if two strings are anagrams of each other. The function "test_sol" checks
+
+if __name__ == "__main__":
+    assert sat(sol())

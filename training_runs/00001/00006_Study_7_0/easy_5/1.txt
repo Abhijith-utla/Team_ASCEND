@@ -1,0 +1,12 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return '888'
+```
+
+This function returns the string '888' when called.
+
+The function `sat` is a function that checks if a string `s` can be found in the base-10 representation of 2888 raised to the power of 8, and if the length of the string `s` is equal to 3.
+
+The checker is designed to pass if `sat(sol())` returns `True`.

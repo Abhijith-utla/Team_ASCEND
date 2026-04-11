@@ -1,0 +1,26 @@
+def sol():
+    return []
+
+# This checks if the function 'sat' is defined correctly
+assert sat([]) == False
+
+# This tests the function with an empty list of coordinates
+assert sat([(0, 0)]) == False
+
+# This tests the function with a list of one point
+assert sat([(5, 5)]) == False
+
+# This tests the function with a list of two distinct points
+assert sat([(1, 1), (2, 2)]) == False
+
+# This tests the function with a list of two equal points
+assert sat([(1, 1), (1, 1)]) == False
+
+# This tests the function with a list of two equal points and one more point
+assert sat([(1, 1), (1, 1), (3, 3)]) == False
+
+# This tests the function with a list of two equal points and one more point on the same line
+assert sat([(1, 1), (2, 2)]) == False
+
+# This tests the function with a list of three distinct points
+assert sat([(1, 1), (

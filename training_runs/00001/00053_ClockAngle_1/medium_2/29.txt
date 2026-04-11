@@ -1,0 +1,27 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([])
+assert not sat([0, 0])
+assert not sat([12, 0])
+assert sat([12, 30])
+assert not sat([12, 45])
+assert sat([12, 30])
+assert not sat([23, 0])
+assert sat([23, 30])
+assert not sat([23, 45])
+assert not sat([0, 60])
+assert not sat([1, 60])
+assert not sat([0, 0])
+assert not sat([23, 60])
+assert not sat([24, 0])
+assert not sat([24, 1])
+assert not sat([24, 60])
+assert not sat([25, 0])
+assert not sat([25, 1])
+assert not sat([25, 60])
+assert not sat([30, 0])
+assert not sat([30, 1])
+assert not sat([30, 60])
+assert not

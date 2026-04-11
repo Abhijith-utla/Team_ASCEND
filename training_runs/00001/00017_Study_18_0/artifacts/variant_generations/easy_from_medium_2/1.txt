@@ -1,0 +1,20 @@
+Here are three variations of the original `sat` function:
+
+VARIANT1:
+```Python
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+VARIANT2:
+```Python
+def sat(a: int, b: int) -> bool:
+    return a + b == 5
+```
+
+VARIANT3:
+```Python
+import math
+def sat(a: int, b: float) -> bool:
+    return a - b == math.sqrt(a**2 + b**2)
+```

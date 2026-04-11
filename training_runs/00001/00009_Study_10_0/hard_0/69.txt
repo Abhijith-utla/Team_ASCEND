@@ -1,0 +1,6 @@
+Here is the Python code that meets the constraints of the problem:
+
+```python
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+```

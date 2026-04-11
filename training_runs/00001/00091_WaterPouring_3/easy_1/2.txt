@@ -1,0 +1,10 @@
+def sol():
+    return [472, 153, 127]
+
+print(sat([[0, 2], [1, 1], [0, 1], [1, 0]]))  # prints: True
+print(sat([[0, 1], [2, 1], [0, 2]]))  # prints: False
+print(sat([[0, 0], [1, 1], [2, 2]]))  # prints: True
+print(sat([[2, 0], [1, 1], [0, 2]]))  # prints: False
+print(sat([[2, 1], [1, 1], [0, 2]]))  # prints: False
+print(sat([[0, 0], [2, 0], [1, 1]]))  # prints: False
+print(sat([[0, 2], [0, 1], [1, 0]]))  # prints: True

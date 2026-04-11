@@ -1,0 +1,6 @@
+Here is the correct pattern for the Python code:
+
+```python
+def sol():
+    return 17 in [17, 3]
+```

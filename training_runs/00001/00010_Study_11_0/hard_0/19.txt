@@ -1,0 +1,17 @@
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+You can test this function with the following code:
+
+```python
+assert sol(["a", "b", "c"])
+assert not sol(["a", "b"])
+assert not sol(["a", "a", "a"])
+assert sol(["1", "2", "3"])
+```

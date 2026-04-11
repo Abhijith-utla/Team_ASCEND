@@ -1,0 +1,4 @@
+def sol():
+    return { 'answer': [i for i in range(999, -1, -1)] }
+
+assert sat(sol()['answer'])

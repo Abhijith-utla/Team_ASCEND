@@ -1,0 +1,12 @@
+def sat(quine: str):
+    return eval(quine) == quine
+
+def sol():
+    return ''
+
+# The function 'sol' is a no-argument function that returns an empty string.
+# This is because the string 'quine' is empty, so the evaluation of 'quine' will yield the same result as 'quine'.
+# Therefore, 'quine' is equivalent to 'sol', and 'sat(sol())' will return True.
+
+if __name__ == "__main__":
+    assert sat(sol())

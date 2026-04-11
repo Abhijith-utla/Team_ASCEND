@@ -1,0 +1,25 @@
+Here are the three simple variants to test the core concept of the original `sat` function:
+
+VARIANT1:
+```python
+def sat(l: list):
+    return all(i in range(1000) and abs(i * i - j * j) < 10 for i in l for j in l if i != j)
+```
+
+VARIANT2:
+```python
+def sat(l: list):
+    return all(i in range(1000) and abs(i * i - j * j) < 10 for i in l for j in l if i == j)
+```
+
+VARIANT3:
+```python
+def sat(l: list):
+    return all(i in range(1000) for i in l if i not in range(1000))
+```
+
+In the first variant, we are testing if every element in the list `l` can be calculated by squaring twice and finding the difference. The `abs` function is used to ensure that the difference is less than 10, and the `all()` function is used to ensure that all conditions are met.
+
+In the second variant, we are testing if every element in the list `l` can be calculated by squaring twice and finding the difference. The `abs` function is used to ensure that the difference is less than 10, but we are also testing to ensure that `i != j` for all `i` and `j` in the list.
+
+In the third variant, we are testing if every element in the list `l` is not a number in the range from 0 to 999. The `all()` function is used to ensure that all conditions are met.

@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return sorted(s) == sorted('sirnemtpuA') and s == s[::-1]
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return sorted(s) == sorted('sirnemtpuAa') and s == s[::-1]
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return sorted(s) == sorted('sirnemtpu') and s == s[::-1]
+```

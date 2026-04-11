@@ -1,0 +1,11 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    s = 'zzz' * 100 + 'zo' * 101
+    return s
+
+assert sat(sol())
+```
+
+This solution creates a string 'zzz' repeated 100 times followed by 'zo' repeated 101 times. The assertion check will pass if the string meets the conditions provided in the `sat` function.

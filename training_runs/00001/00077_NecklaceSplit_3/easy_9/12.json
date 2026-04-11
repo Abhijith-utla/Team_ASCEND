@@ -1,0 +1,17 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T17:41:12.485741+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): return 12 # Checker function def check(n: int, lace=\"bbbbrrbbrrbbrrbbrrbbb\"): return sat(n, lace) assert c...",
+  "difficulty": "easy",
+  "problem_id": "00077_NecklaceSplit_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

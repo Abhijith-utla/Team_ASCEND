@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(lst: List[str]):
+    return all(int(lst[i]) <= int(lst[i+1]) for i in range(len(lst)-1))
+```
+
+VARIANT2:
+```python
+def sat(lst: List[str]):
+    return all(lst[i] <= lst[i+1] for i in range(len(lst)))
+```
+
+VARIANT3:
+```python
+def sat(lst: List[str]):
+    return all(int(lst[i]) < int(lst[i+1]) for i in range(len(lst)-1))
+```

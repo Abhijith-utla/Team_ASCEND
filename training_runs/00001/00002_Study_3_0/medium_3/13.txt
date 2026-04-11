@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return sorted([i for i in range(1, 1000)])
+
+assert sat(sol())
+```
+
+This function `sol` returns a list of numbers from 1 to 998. The `sorted` function is used to sort the list in ascending order. The list `[i for i in range(1, 1000)]` is the equivalent of `range(999)` in Python. The `assert` statement is used to check if the function `sol` returns the expected output. The `sat` function checks if the list is sorted in ascending order and no element is repeated. If both conditions are met, the program does not raise an AssertionError.

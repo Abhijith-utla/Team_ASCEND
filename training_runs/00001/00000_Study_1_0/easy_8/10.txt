@@ -1,0 +1,17 @@
+The function `sat` checks if a string `s` satisfies the condition described in the problem statement. The string `s` must contain 'o' exactly 1000 times and must not contain 'oo'. 
+
+Here is the correct implementation of the function `sol`:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+You can test this function by using the `assert` statement. If the function `sol` returns the string `s`, then the `sat` function will return `True`. Otherwise, it will return `False`.
+
+```python
+assert sat(sol())
+```
+
+If `sol` returns the correct string `s`, then the output of the `assert` statement will be `True`. If not, it will raise an `AssertionError`.

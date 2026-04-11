@@ -1,0 +1,13 @@
+def sat(quine: str):
+    return eval(quine) == quine
+
+def sol():
+    return {}
+
+# The function sat(quine: str) checks if the given string is a valid Python code.
+# The function eval(quine: str) evaluates the given string as Python code and compares the result to the original string.
+# If they are equal, it means the string is a valid Python code.
+# The function sol() returns an empty dictionary, which is the correct output of this function.
+
+if __name__ == "__main__":
+    assert sat(sol())

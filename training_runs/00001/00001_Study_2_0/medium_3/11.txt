@@ -1,0 +1,13 @@
+Here is the Python code to solve this problem:
+
+```python
+def sol():
+    return 'z' * 100 + 'zo' * 101 + 'zz' * 98
+
+# Check if the function sol works correctly
+assert sat(sol())
+```
+
+In this code, we define a function `sol` that concatenates three strings of length 100, 101, and 98 respectively. The string `z` (of length 100) is repeated 100 times, the string `zo` (of length 101) is repeated 101 times, and the string `zz` (of length 98) is repeated 98 times. These concatenations form a string of length 100 + 101 + 98 = 297 which is equal to 100 * 3 + 101 * 3 + 98 * 3 = 363. This means that the function `sol` returns a string of 297 characters.
+
+The `assert sat(sol())` line checks that the function `sol` returns a string of 2

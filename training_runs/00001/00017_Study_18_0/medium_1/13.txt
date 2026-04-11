@@ -1,0 +1,18 @@
+def sol():
+    return []
+
+# If the list is empty, it's a valid solution
+if sat(sol()):
+    pass
+
+# If the list contains any elements, it's not a valid solution
+if not sat(sol()):
+    pass
+
+# If the list contains duplicates, it's not a valid solution
+if sat(sol(['a', 'a'])):
+    pass
+
+# If the list contains non-unique elements, it's a valid solution
+if not sat(sol(['a', 'b', 'c'])):
+    pass

@@ -1,0 +1,15 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+from typing import List
+
+def sol():
+    return [4] + [i+1 for i in range(999)]
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+The first function `sol` returns a list of 1000 numbers where the first number is 4 and all the rest are numbers from 1 to 999. The second function `sat` is a function that checks if a list of numbers satisfies two conditions:
+1. The sum of each pair of numbers in the list is equal to 9.
+2. The length of the list is 1000.

@@ -1,0 +1,10 @@
+def sol():
+    return ""
+
+# Correct pattern
+def sol(s: str):
+    return s[::-1]
+
+# Incorrect pattern
+def sol(s: str):
+    return s

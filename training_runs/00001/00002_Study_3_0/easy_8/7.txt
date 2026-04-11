@@ -1,0 +1,8 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    return sorted(range(1000))
+```
+
+This function returns a sorted version of the list [0, 1, 2, ..., 999]. The `sorted` function in Python is used to sort the elements in a list.

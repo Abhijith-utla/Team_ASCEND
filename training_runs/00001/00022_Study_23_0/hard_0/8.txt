@@ -1,0 +1,2 @@
+def sol():
+    return tuple(('dee', 'doo', 'dah!'))

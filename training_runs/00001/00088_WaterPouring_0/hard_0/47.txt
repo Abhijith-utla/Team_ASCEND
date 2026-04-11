@@ -1,0 +1,15 @@
+def sol():
+    return [8, 0, 0]
+
+assert sat([])
+assert not sat([[0, 0]])
+assert not sat([[0, 0], [0, 1]])
+assert not sat([[0, 0], [1, 1]])
+assert not sat([[0, 0], [1, 1], [1, 0]])
+assert not sat([[0, 0], [1, 1], [2, 0]])
+assert not sat([[0, 0], [1, 1], [3, 0]])
+assert not sat([[0, 0], [1, 1], [4, 0]])
+assert sat([[0, 0], [1, 1], [4, 0]])
+assert not sat([[0, 0], [1, 1], [4, 1]])
+assert not sat([[0, 0], [1, 1], [4, 2]])
+assert not sat([[0, 0], [1, 1], [4

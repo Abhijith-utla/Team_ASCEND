@@ -1,0 +1,17 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(moves: List[List[int]], source=[[0, 1, 6, 7, 8, 9, 14, 16], [5, 15], [2, 3, 4, 10, 11, 12, 13]], target=[[1, 2, 4, 5, 13], [3, 6, 11, 12, 14], [0, 7, 8, 9, 10, 15, 16]]):
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move
+        state[j].append(state[i].pop(0))
+        assert state[j] == sorted(state[j])
+
+    return state == target
+```
+
+This Python function sol(moves, source, target) takes a list of moves and two lists of source and target states as inputs. It then constructs

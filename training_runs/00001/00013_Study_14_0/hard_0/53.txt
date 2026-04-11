@@ -1,0 +1,19 @@
+Here is the correct solution:
+
+```python
+def sol():
+    def sat(li: List[int]) -> bool:
+        return all([sum(li[:i]) == i for i in range(20)])
+
+    return sat([])
+```
+
+In this solution, we define a helper function `sat` that takes a list of integers and returns a boolean. This function uses a list comprehension to generate a list of booleans where each boolean is true if the sum of the first `i` elements of the list equals `i`. The main function then returns the result of this helper function with an empty list as an argument.
+
+Here is the result of the checker:
+
+```python
+assert sol() == True
+```
+
+This code will pass if `sol` returns `True`, otherwise it will raise an `AssertionError`.

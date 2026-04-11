@@ -1,0 +1,16 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+This solution creates a list with the numbers 1 to 10. This list is returned as the answer.
+
+The function `sol` is defined as a function that takes no arguments and returns a list of integers from 1 to 10.
+
+The function `sat` is defined as a function that takes a list of integers as input and returns a boolean value. This function checks if the count of all numbers from 1 to 10 in the input list is equal to 10. If it is, the function returns `True`, otherwise it returns `False`.
+
+The function `sol` is used as the answer for the problem and the checker will run `assert sat(sol())`, which will pass if the answer is correct, fail if it's incorrect.

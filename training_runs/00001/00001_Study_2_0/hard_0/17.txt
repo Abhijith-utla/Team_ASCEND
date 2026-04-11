@@ -1,0 +1,8 @@
+def sol():
+    s = 'ho' * 1000
+    s += 'oo' * 100
+    s += 'o' * 801
+    return s
+
+# Testing
+assert sat(sol())

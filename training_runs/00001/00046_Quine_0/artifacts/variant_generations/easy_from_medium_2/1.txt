@@ -1,0 +1,15 @@
+Here are three simpler variants for the sat() function:
+
+VARIANT1:
+def sat(quine):
+    return eval("print(" + quine + ")")
+
+VARIANT2:
+def sat(quine):
+    return eval("print(" + quine + "); print('Hello, World!')")
+
+VARIANT3:
+def sat(quine):
+    return eval("print((" + quine + "))")
+
+In the first variant, the function simply prints the input quine. In the second variant, it prints the input quine and also a simple 'Hello, World!' message. In the third variant, it evaluates the input quine and prints the result.

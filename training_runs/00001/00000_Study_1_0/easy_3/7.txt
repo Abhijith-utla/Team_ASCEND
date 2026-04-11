@@ -1,0 +1,8 @@
+Here's a Python solution:
+
+```python
+def sol():
+    return ''.join('o' for _ in range(1000))
+```
+
+The function `sol` returns a string of 1000 'o' characters. This string is guaranteed to satisfy the condition `len(s) == 1000 and sum(c == 'o' for c in s) == 1000`, where `s` is the output of `sol`.

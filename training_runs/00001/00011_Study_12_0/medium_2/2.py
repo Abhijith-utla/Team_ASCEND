@@ -1,0 +1,24 @@
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+def sol():
+    return 5
+
+print(sat([4]*1000))
+print(sat([4]*999 + [5]))
+print(sat([4]*999 + [4]))
+print(sat([4]*998 + [5, 1]))
+print(sat([4]*997 + [5, 2]))
+print(sat([4]*996 + [5, 3]))
+print(sat([4]*995 + [5, 4]))
+print(sat([4]*994 + [5, 5]))
+print(sat([4]*993 + [5, 6]))
+print(sat([4]*992 + [5, 7]))
+print(sat([4]*991 + [5, 8]))
+print(sat([4]*990 + [5, 9]))
+print(sat([4]*989 + [5, 10]))
+print(sat([4]*988 + [5, 11]))
+print(sat
+
+if __name__ == "__main__":
+    assert sat(sol())

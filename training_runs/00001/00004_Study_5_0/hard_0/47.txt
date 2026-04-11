@@ -1,0 +1,14 @@
+Here's a Python solution for your problem. 
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+This function `sat` checks if all elements in the list `li` are the same, i.e., they are all integers from 0 to 9. It does this by using the `count` method of the list to count how many times each number appears in the list. Then it checks if all counts are equal to the number itself, which would mean that all numbers in the list are the same. 
+
+Here's how this function works:
+
+- `li.count(i) == i` is a condition that checks if the number `i` is present `i` times in the list.
+- `all([li.count(i) == i for i in range(10)])` is a generator expression that applies the `count` method to each number from 0 to 9 and checks if it's equal to the number itself. If all conditions are met, `all` returns `True`,

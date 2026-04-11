@@ -1,0 +1,5 @@
+def sol():
+    return 10 ** 10 * 2
+
+print(sat(sol())) # Asserts: True
+print(sat(sol()-1)) # Asserts: False

@@ -1,0 +1,22 @@
+Here are the three variations of the given Python function:
+
+VARIANT1:
+```python
+def sat(s: str) -> bool:
+    return sorted(s) == sorted('trusenipM') and s == s[::-1]
+```
+This function sorts the characters in the string and checks if the sorted string is equal to 'trusenipM' and if the string is its reverse. The function returns True if both conditions are met, False otherwise.
+
+VARIANT2:
+```python
+def sat(s: str, t: str) -> bool:
+    return sorted(s) == sorted(t) and s == t[::-1]
+```
+This variant sorts the characters in the strings and checks if the sorted strings are equal. The function returns True if both conditions are met, False otherwise.
+
+VARIANT3:
+```python
+def sat(s: str, r: str) -> bool:
+    return sorted(s) == sorted(r) and s == r
+```
+This variant sorts the characters in the strings and checks if the sorted strings are equal. The function returns True if the sorted strings are equal and the original strings are equal, False otherwise.

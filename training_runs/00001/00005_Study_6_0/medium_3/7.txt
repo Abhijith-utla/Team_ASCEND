@@ -1,0 +1,8 @@
+The solution for the problem is as follows:
+
+```python
+def sol():
+    return 12  # This value must be provided by the checker.
+```
+
+In this case, the value to be returned is 12. This value is guaranteed to satisfy the condition `i <= 10 ** 10 and i % 2 == 0`. The checker will assert that `sat(sol())` will return True.

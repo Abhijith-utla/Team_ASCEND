@@ -1,0 +1,14 @@
+def sol():
+    return {}
+
+# Test cases
+assert sat(sol())
+assert sat(sol())
+assert not sat(sol())
+assert sat(sol())
+assert sat(sol())
+assert not sat(sol())
+assert sat(sol())
+assert sat(sol())
+assert not sat(sol())
+assert not sat(sol())

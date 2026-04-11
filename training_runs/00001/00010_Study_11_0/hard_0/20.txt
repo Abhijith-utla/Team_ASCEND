@@ -1,0 +1,23 @@
+Here is the correct solution to this problem. 
+
+The function `sat` is a predefined function provided by the user. It checks whether all elements in the list are the same length and whether the minimum and maximum elements are the same. If all conditions are met, the function returns `True`, otherwise it returns `False`.
+
+Here is the code for the `sol` function:
+
+```python
+def sol():
+    def sat(ls: List[str]):
+        return min(ls) == max(ls) == str(len(ls))
+
+    def gen():
+        while True:
+            yield [next(gen) for _ in range(10)]
+
+    gen = gen()
+    while True:
+        ls = next(gen)
+        if sat(ls):
+            return ls
+```
+
+The `sol` function uses a generator to generate a list of 10 random strings of length 10. It checks each generated list to see if it satisfies the `sat` function. Once it finds a list that satisfies the `sat` function, it returns that list. This ensures that the `sol` function always returns a list that

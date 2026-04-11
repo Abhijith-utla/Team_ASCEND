@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all([(li[i] % 1000 % 2 == 0) for i in range(20)])
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all([(li[i] > li[i + 1]) for i in range(19)])
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all([(li[i] + li[i + 1] > 1000) for i in range(19)])
+```

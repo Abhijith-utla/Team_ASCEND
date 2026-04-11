@@ -1,0 +1,10 @@
+def sol():
+    return [0]
+
+# The function sat checks if the list contains only the number 0.
+# If it does, the function returns True, otherwise it returns False.
+# The checker will run: assert sat(sol())
+
+# The function sol constructs and returns a single answer value.
+# The answer is a list containing the number 0.
+# The final checker will run: assert sol() == [0]

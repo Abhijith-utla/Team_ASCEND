@@ -1,0 +1,4 @@
+def sol():
+    return tuple(list('dee'))
+
+assert sat(sol())

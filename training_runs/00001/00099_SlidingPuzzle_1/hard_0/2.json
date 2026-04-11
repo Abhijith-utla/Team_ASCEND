@@ -1,0 +1,16 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:17:46.912133+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=13|checked=13/13|preview=def sol(moves: List[int], start=[[1, 5, 0], [3, 2, 8], [6, 4, 7]]): locs = {i: [x, y] for y, row in enumerate(start) ...",
+  "difficulty": "hard",
+  "problem_id": "00099_SlidingPuzzle_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

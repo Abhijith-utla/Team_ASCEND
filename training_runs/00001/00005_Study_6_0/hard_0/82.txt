@@ -1,0 +1,12 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    i = 0
+    while True:
+        i += 1
+        if sat(i):
+            return i
+```
+
+This function uses a while loop to keep incrementing the variable i until it satisfies the condition provided by the sat function. When it does, it returns the value of i. This is the answer to the problem.

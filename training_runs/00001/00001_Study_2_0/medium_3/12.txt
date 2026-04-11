@@ -1,0 +1,9 @@
+Here's the solution:
+
+```python
+def sol():
+    s = "z" * 100 + "zo" * 101 + "zz" * 98
+    return s
+```
+
+This code will create a string `s` that contains 100 'z', 101 'zo' and 98 'zz'. The function `sat` will return `s` when `s.count('z') == 100`, `s.count('zo') == 101` and `s.count('zz') == 98`.

@@ -1,0 +1,10 @@
+The pattern you've provided is incorrect because it's impossible for an integer to have a length greater than its successor. The length of an integer is always one less than the number of digits it represents, hence the length of the number should always be less than its successor.
+
+However, the correct pattern would be:
+
+```python
+def sol():
+    return 999
+```
+
+In this case, we just need to find the next smallest integer that is not in the range of 999 to 1000. If it was in the range, we could increment it by 1 until we find a number that is not in the range.

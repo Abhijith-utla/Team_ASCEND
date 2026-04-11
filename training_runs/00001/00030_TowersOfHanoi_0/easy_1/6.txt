@@ -1,0 +1,21 @@
+The problem here is a puzzle game where we have multiple disks stacked on a rod. We move the disks in such a way that the rod with the smallest disk is on the top. The rule is that the smaller disk cannot be on top of the larger one. We move the disks by giving indices.
+
+In the provided code, the function `sat` is expected to return a boolean value indicating whether the state of the rods is correct or not. Here is the correct solution for the problem:
+
+```python
+def sol():
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    moves = [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [4, 5],
+        [5, 6],
+        [6, 7],
+        [7, 0]
+    ]
+
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop(0))
+        assert rods[j][-1]

@@ -1,0 +1,19 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return [ord(i) for i in "The five boxing wizards jump quickly"] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+The function `sol` returns `True` if the ASCII values of all the characters in the string "The five boxing wizards jump quickly" are the same as their respective positions in the string, and `False` otherwise. The ASCII values are calculated by using the `ord` function, which returns the number representing the Unicode character.
+
+The list comprehension `[ord(i) for i in "The five boxing wizards jump quickly"]` generates a list of ASCII values for each character in the string.
+
+The `replace` method is used to replace all the spaces in the string with no space.
+
+The `list` function is then used to convert the string into a list of characters.
+
+The function `sat` checks if the two lists are the same. If they are, the function returns `True`; otherwise, it returns `False`.
+
+The

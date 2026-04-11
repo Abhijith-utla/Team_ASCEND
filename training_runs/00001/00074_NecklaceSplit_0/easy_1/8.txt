@@ -1,0 +1,2 @@
+def sol():
+    return {"count": 0, "lace": ""}

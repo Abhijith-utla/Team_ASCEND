@@ -1,0 +1,2 @@
+def sol():
+    return [{'name': 'John', 'age': 28}, {'name': 'Jane', 'age': 30}, {'name': 'Alice', 'age': 26}]

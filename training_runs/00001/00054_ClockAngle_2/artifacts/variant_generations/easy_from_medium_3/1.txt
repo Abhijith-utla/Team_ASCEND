@@ -1,0 +1,31 @@
+Sure, here are the three simpler Python programming puzzles that test the same core concept:
+
+VARIANT1:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 <= h < 24 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(abs(hour_angle - minute_angle) - 133) == 0
+```
+
+VARIANT2:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 <= h < 12 and 0 <= m < 60
+    hour_angle = 30 * h + m / 2
+    minute_angle = 6 * m
+    return abs(abs(hour_angle - minute_angle) - 133) == 0
+```
+
+VARIANT3:
+```python
+def sat(hands):
+    h, m = hands
+    assert 0 <= h < 24 and 0 <= m < 60
+    hour_angle = 30 * h + m / 6
+    minute_angle = 6 * m
+    return abs(abs(hour_angle - minute_angle) - 133) == 0
+```

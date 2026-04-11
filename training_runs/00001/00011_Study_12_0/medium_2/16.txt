@@ -1,0 +1,9 @@
+```python
+from typing import List
+
+def sol():
+    li = [4] + [0]*998
+    return li
+
+assert sat(sol())
+```

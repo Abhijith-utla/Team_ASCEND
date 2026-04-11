@@ -1,0 +1,45 @@
+Here are three simple variants of the original `sat` function with different scenarios for the input `moves`.
+
+VARIANT1:
+```python
+def sat(moves: List[List[int]], capacities=[357, 298, 492], init=[9, 284, 72], goal=[0, 0, 364]):
+    state = init.copy()
+
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = n, state[move[1]]
+
+    return state == goal
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]], capacities=[357, 298, 492], init=[9, 284, 72], goal=[50, 0, 364]):
+    state = init.copy()
+
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = n, state[move[1]]
+
+    return state == goal
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]], capacities=[357, 298, 492], init=[9, 284, 72], goal=[0, 50, 364]):
+    state = init.copy()
+
+    for move in moves:
+        assert min(move[0], move[1]) >= 0, "Indices must be non-negative"
+        assert move[0] != move[1], "Cannot pour from same state to itself"
+        n = min(capacities[move[1]], state[move[0]] + state[move[1]])
+        state[move[0]], state[move[1]] = n, state[move[1]]
+
+    return state == goal
+```
+
+In all of these variants, the `moves` list is altered in multiple ways to test the function with different scenarios.

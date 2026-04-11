@@ -1,0 +1,2 @@
+def sol():
+    return {"result": [1234, 1235]}

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:34:54.223394+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=```python from typing import List def sat(li: List[int]) -> bool: sum_so_far = 0 for i in range(len(li)): if i == 0: ...",
+  "difficulty": "easy",
+  "problem_id": "00013_Study_14_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

@@ -1,0 +1,14 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+This function `sat` checks if the list `li` has exactly 10 elements. If not, it returns `False`. Then it checks if the count of the element at index 3 (which is the fourth element in the list) is 2. If not, it returns `False`. If both conditions are met, it returns `True`.

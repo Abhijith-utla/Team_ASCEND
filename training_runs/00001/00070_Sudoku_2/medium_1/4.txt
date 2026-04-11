@@ -1,0 +1,8 @@
+def sol():
+    answer = ['_'] * 81
+    for i in range(9):
+        for j in range(9):
+            answer[9 * i + j] = str(i + 1)
+    return answer
+
+assert sat(sol())

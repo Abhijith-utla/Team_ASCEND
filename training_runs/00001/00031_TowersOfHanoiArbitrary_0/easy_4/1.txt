@@ -1,0 +1,24 @@
+def sol():
+    return []
+
+# The solution to the problem is to make an empty list as the initial state of the puzzle.
+# This means there are no blocks in the puzzle initially.
+# We then generate a solution by moving blocks from source to target, and finally verify if the current state is the correct solution.
+# Here is the solution implementation:
+def sol():
+    state = []
+    for i in range(len(source[0])):
+        state.append(source[0][i])
+        state.append(source[1][i])
+        state.append(source[2][i])
+        state.append(source[3][i])
+    return state
+
+# The solution to the problem is to make an empty list as the initial state of the puzzle.
+# This means there are no blocks in the puzzle initially.
+# We then generate a solution by moving blocks from source to target, and finally verify if the current state is the correct solution.
+# Here is the solution implementation:
+def sol():
+    state = []
+    for i in range(len(source[0])):
+        state.append(source[0][i

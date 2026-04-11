@@ -1,0 +1,5 @@
+def sol():
+    return [chr(i) for i in range(32, 127)] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+
+# Testing the function
+assert sat(sol())

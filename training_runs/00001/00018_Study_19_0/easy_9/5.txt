@@ -1,0 +1,11 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [0]
+
+# Checker:
+assert sat(sol())
+```

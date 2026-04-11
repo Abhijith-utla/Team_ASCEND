@@ -1,0 +1,5 @@
+def sol():
+    return [0, 0]
+
+# Test case
+print(sat(sol())) # False

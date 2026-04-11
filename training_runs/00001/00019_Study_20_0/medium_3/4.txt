@@ -1,0 +1,5 @@
+def sol():
+    return 3
+
+# Checker should pass this solution
+assert sat(sol())

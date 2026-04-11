@@ -1,0 +1,16 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    for i in range(10):
+        for j in range(10):
+            for k in range(10):
+                s = str(i) + str(j) + str(k) + str(8) + str(1) + str(j) + str(k) + str(8)
+                if set(s) <= set("18-+*/") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 63:
+                    return s
+    return None
+```
+
+This function generates a string `s` by concatenating the digits `i`, `j`, `k`, `8`, `1`, `j`, `k`, `8` in that order. It then checks if `s` is a valid string according to the given conditions. If it is, it returns `s`. If no such string is found, it returns `None`.
+
+The function uses a nested loop to generate all possible combinations of digits `i

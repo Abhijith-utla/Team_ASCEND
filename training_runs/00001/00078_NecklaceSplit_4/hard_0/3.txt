@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+# Please provide a Python function named sat(answer).
+# The function should take no arguments and return an answer object.
+# The final checker will run: assert sat(sol())

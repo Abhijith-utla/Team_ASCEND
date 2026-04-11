@@ -1,0 +1,8 @@
+The incorrect pattern mentioned in the question seems to be a typo. The correct pattern is:
+
+```python
+def sol():
+    return "The quick brown fox jumps over the lazy dog" == "The five boxing wizards jump quickly"
+```
+
+This function will return `True` if the string "The quick brown fox jumps over the lazy dog" equals the string "The five boxing wizards jump quickly", and `False` otherwise.

@@ -1,0 +1,8 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+def sol():
+    return 'x' * 100 + 'o' * 101 + 'x' * 98
+```
+
+The `sat` function checks if the string `s` contains exactly 100 'x's, 101 'xo's, and 98 'xx's. The `count` method is used to count the occurrences of a specific character in the string.

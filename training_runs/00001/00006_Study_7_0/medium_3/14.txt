@@ -1,0 +1,5 @@
+def sol():
+    import math
+    return math.sqrt(8**2888) == int(math.sqrt(8**2888))
+
+print(sol())

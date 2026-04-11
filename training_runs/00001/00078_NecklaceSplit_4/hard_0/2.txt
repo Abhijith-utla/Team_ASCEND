@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    lace = "brrbbbrbbrrbrrbbrrbrrrbbrbbrrrbrbrbrrrrbbrrrbrrbbbbrbbbrrbbrrrbbrbrbbbbbrrbrrbbr"
+    n = len(lace) // 2
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+```
+
+This function first calculates the middle index `n` of the `lace` string. Then it extracts a substring from `lace` from index `n` to `n + len(lace) // 2`. The function then checks if `n` is a non-negative integer, if the number of 'r's in `lace` is twice the number of 'r's in `sub`, and if the number of 'b's in `lace` is twice the number of 'b's in `sub`. If all these conditions are

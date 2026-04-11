@@ -1,0 +1,13 @@
+Here is the correct pattern for the code:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+The function `sat` takes a list of strings `ls` as input. If the list is empty, it returns `True` as there are no elements to check. If the list is not empty, it checks whether all the strings in the list have the same length. It does this by converting each string into a set (which removes duplicates), and comparing the length of this set to the length of the first string in the list. If all strings have the same length, the function returns `True`; otherwise, it returns `False`.

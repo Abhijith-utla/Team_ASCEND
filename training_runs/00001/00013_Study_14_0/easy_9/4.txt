@@ -1,0 +1,21 @@
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i <= j for i in li for j in li if i > j])
+```
+
+The function `sat` checks whether all elements in the list `li` are less than or equal to each other. This means that if `li` has any two elements `i` and `j` where `i` > `j`, then `i` must be less than or equal to `j`. The `all` function in Python returns `True` if all the elements in the iterable `li` are true.
+
+Here is the incorrect pattern:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i > j for i in li for j in li])
+```
+
+This code will fail to satisfy the condition of `sat`. The inner list comprehension `[i > j for i in li for j in li]` will always return a list where every element is `True`. So, the `all` function will return `True`, but the problem statement

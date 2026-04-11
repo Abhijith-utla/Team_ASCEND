@@ -1,0 +1,21 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    class Answer:
+        def __init__(self, state):
+            self.state = state
+
+    def sat(moves: list[list[int]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[6, 7], [0, 1, 2, 3], [4, 5]]):
+        state = [s[:] for s in source]
+
+        for i, j in moves:
+            state[j].append(state[i].pop())
+            assert sorted(state[j]) == target[j]
+
+        return Answer(state)
+
+    return sol()
+```
+
+This solution creates an Answer class to return the final state. The function `sat` accepts the moves and source and target states as input, and returns an Answer object. The `Answer` object is an instance of the Answer class, which contains the final state. The function `sol` is the main function that calls `sat` and returns

@@ -1,0 +1,8 @@
+Here is the Python code:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+```
+
+The function `sat` takes a list `li` as an argument and returns `True` if all the elements in the list occur the same number of times (`li.count(i) == i for i in range(10)`) and if the count of the number `0` also occurs in the list (`li.count(0) == 1`), else it returns `False`.

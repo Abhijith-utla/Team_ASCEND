@@ -1,0 +1,6 @@
+def sol():
+    return [max_sum, max_x, max_y, max_sum_squared]
+
+# max_sum, max_x, max_y, max_sum_squared = max(xy_sides, key=lambda xy_side: xy_side[2] + sum(x + side for x, y, side in xy_sides))
+# max_sum = max_x + max_y + max_sum_squared
+# assert sat([max_sum, max_x, max_y, max_sum_squared])

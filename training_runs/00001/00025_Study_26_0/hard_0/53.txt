@@ -1,0 +1,4 @@
+def sol():
+    return "".join(["9" * 8] * 8)
+
+print(sol())

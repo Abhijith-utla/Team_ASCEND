@@ -1,0 +1,6 @@
+def sol():
+    return 'dee'
+
+# Testing the function
+answer = sol()
+assert sat(answer)

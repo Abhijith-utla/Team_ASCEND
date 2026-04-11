@@ -1,0 +1,6 @@
+def sol():
+    return 34
+
+# This assert statement is used to test the correctness of our solution.
+# It will pass if the solution is correct, fail otherwise.
+assert sat(sol())

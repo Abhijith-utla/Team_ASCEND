@@ -1,0 +1,28 @@
+Here is the solution to the given problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) == 1:
+        return False
+    return True
+```
+
+This function `sat` checks if the given list `li` meets the conditions given in the problem statement. 
+
+The function first checks if the length of the list is 10, if not, it returns False. 
+
+Then it checks if the count of the number `li[3]` is 2, if not, it returns False.
+
+It also checks if the index of `li[3]` is 3, if not, it returns False.
+
+Finally, it checks if the count of `li[3]` is 1, if yes, it returns False.
+
+If all these conditions are met, it returns True, indicating

@@ -1,0 +1,9 @@
+Sure, here's the Python code for the function `sol` that satisfies the conditions:
+
+```python
+def sol():
+    return 17 in [17, 13, 21, 14, 56, 89, 17]
+```
+This function returns `True` if the number `17` is present in the provided list, and `False` otherwise.
+
+The function `sat` checks if the list `li` contains exactly one occurrence of the number `17`.

@@ -1,0 +1,5 @@
+def sol():
+    return {
+        "result": True,
+        "hint": "You can assume that there are 5 digits, ranging from 0-9, and the sum of the digits should be 15."
+    }

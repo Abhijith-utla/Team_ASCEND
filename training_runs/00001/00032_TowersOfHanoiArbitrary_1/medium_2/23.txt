@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+if __name__ == "__main__":
+    assert sat([])
+    assert sat([[1, 2, 3]])
+    assert sat([[1, 2], [0, 3, 4, 5]])
+    assert not sat([[1, 2], [3, 0, 4, 5]])
+    assert sat([[1, 2], [0, 3, 4, 5]])
+    print("All tests passed.")

@@ -1,0 +1,12 @@
+Sure, here is the correct solution:
+
+```python
+def sol():
+    return {
+        "idx1": 1234,
+        "idx2": 1235,
+        "value": None
+    }
+```
+
+The function `sol` returns a dictionary containing the indices `idx1` and `idx2` and the `value` to be checked. The dictionary is the correct answer to the problem.

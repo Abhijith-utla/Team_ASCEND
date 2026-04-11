@@ -1,0 +1,4 @@
+def sol():
+    return "".join([str(i) for i in sorted(str(8 ** 1818), reverse=True) if i != "0"])[-11:-7:-1]
+
+print(sol())

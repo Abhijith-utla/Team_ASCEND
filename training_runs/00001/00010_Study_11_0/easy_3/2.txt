@@ -1,0 +1,13 @@
+Here's the solution for the given pattern:
+
+```python
+from typing import List
+
+def sat(ls: List[float]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+```
+
+This function is defined to check if all elements in the given list are within the range from 0 to the length of the list minus 1. If all elements in the list are within the range, it returns True. Otherwise, it returns False.

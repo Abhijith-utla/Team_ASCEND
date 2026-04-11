@@ -1,0 +1,6 @@
+def sol():
+    while True:
+        i = int(input("Please enter an integer: "))
+        if sat(i):
+            return i
+!

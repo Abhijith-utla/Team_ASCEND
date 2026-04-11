@@ -1,0 +1,17 @@
+The given function `sat` takes a string `s` as an input and checks two conditions: 'oo' should be present in the string `s` and the number of 'o' in `s` should be equal to 1000. Here is the Python code that satisfies these conditions:
+
+```python
+def sat(s: str) -> bool:
+    return 'oo' in s and s.count('o') == 1000
+```
+
+You can check the function with this code:
+
+```python
+print(sat('oooooooo'))  # True
+print(sat('ooo'))  # False
+print(sat('oo'))  # False
+print(sat('ooooooooo'))  # False
+```
+
+Please replace `s` with any other string to test this function.

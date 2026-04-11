@@ -1,0 +1,22 @@
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(10)]) and len(set(li)) == 3
+
+def sol():
+    from random import randint
+    from itertools import permutations
+
+    def sat(li: List[int]):
+        perms = list(permutations(li))
+        for perm in perms:
+            if len(set(perm)) == 3:
+                return perm
+        return None
+
+    li = [randint(1, 10) for _ in range(10)]
+    assert sat(li) != None
+
+    # If the function passes the test, it will return a valid permutation
+    return sat(li)
+
+if __name__ == "__main__":
+    assert sat(sol())

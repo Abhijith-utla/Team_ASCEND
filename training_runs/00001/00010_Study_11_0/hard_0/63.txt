@@ -1,0 +1,17 @@
+The function `sat(ls: List[str])` checks if the list `ls` has the same length, and also if it has the minimum and maximum value.
+
+The correct pattern for defining `sol` function would be:
+
+```python
+def sol(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+The incorrect pattern could be:
+
+```python
+def sol(x):
+    ...
+```
+
+Here, `sol` is not defined and its argument `x` is not used anywhere in the function.

@@ -1,0 +1,11 @@
+Here is a correct solution in Python:
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3]
+    return li
+```
+
+In the solution, the function `sol` creates a list with three elements and returns it. The list is [1, 2, 3]. The checker will assert that the function returns the correct answer.

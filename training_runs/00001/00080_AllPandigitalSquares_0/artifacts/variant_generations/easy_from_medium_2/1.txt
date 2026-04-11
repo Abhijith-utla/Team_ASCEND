@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(nums):
+    return sorted([int(str(n)*2) for n in nums]) == list(range(1, 10))
+```
+
+VARIANT2:
+```python
+def sat(nums):
+    return sorted([int(str(n)*3) for n in nums]) == list(range(1, 10))
+```
+
+VARIANT3:
+```python
+def sat(nums):
+    return sorted([int(str(n)*4) for n in nums]) == list(range(1, 10))
+```

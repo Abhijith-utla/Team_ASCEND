@@ -1,0 +1,7 @@
+Here is a Python solution to the problem:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+This solution uses the built-in Python string method `count()` to count the occurrences of the characters 'o', 'oo', and 'ho' in the string `s`. The count function returns the number of occurrences of the given element, and the given condition is used to check if the counts are as expected.

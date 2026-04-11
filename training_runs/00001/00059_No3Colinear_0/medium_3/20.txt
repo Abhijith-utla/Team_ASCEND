@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+assert sat([])
+assert not sat([(5, 10), (10, 20)])
+assert not sat([(1, 1), (2, 2)])
+assert sat([(1, 1), (2, 3)])
+assert not sat([(3, 6), (4, 8)])

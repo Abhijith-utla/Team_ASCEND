@@ -1,0 +1,7 @@
+def sol():
+    answer = []
+    for i in range(100):
+        answer.append(17 if i < 50 else 3)
+    return answer
+
+assert sat(sol())

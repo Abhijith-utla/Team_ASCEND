@@ -1,0 +1,13 @@
+Sure, this function `sat` checks if all elements in a list are in the range of the length of the list. If all elements are in the range, it returns `True`, otherwise it returns `False`.
+
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+```

@@ -1,0 +1,9 @@
+Here is the correct solution:
+
+```python
+def sol():
+    li = [17, 17, 3, 17, 17, 3]
+    return li
+```
+
+The code above creates a list with 6 items, where the first two items are 17 and the last two items are 3. The function `sol()` returns the list.

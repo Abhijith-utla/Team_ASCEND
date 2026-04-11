@@ -1,0 +1,10 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function `sat` takes a list of integers as input and checks whether the list satisfies the given conditions. The function first checks if the sum of consecutive elements in the list is 1, and then checks if the length of the list is 1000. If both conditions are satisfied, the function returns `True`, otherwise it returns `False`.

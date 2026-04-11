@@ -1,0 +1,7 @@
+def sol():
+    return 0
+
+# The function 'sat' is already defined by the user. 
+# Therefore, we don't need to define it again in the solution.
+
+# The checker will run: assert sat(sol())

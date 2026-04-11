@@ -1,0 +1,22 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [5] + [i + 1 for i in range(999)]
+
+# Testing the solution
+assert sat(sol())
+```
+
+This code first creates a list of 1000 elements starting from 5. Then it adds 1 to every element in the list to satisfy the condition `i + j == 2` for all `i, j` in the zip of the first element of the list and the rest of the list.
+
+Here's the test:
+
+```python
+# Testing the solution
+assert sat(sol())
+```
+
+This will pass if the solution works correctly.

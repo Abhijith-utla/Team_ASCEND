@@ -1,0 +1,14 @@
+The given Python function is incorrect because it uses the set data structure which will not maintain the order of the elements. As a result, if the strings in the list are not the same length, the function will return False.
+
+The correct function should use the length of the string to determine the length of the set of characters. Here is the correct version:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(ls[0]) == len(i) for i in ls)
+```
+This function will return True if all strings in the list have the same length, and False otherwise. It uses list comprehension to iterate over each string in the list, and checks if the length of the string is equal to the length of the first string in the list. If all strings have the same length, it returns True, otherwise it returns False.

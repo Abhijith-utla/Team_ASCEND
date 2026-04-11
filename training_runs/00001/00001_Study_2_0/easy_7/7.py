@@ -1,0 +1,26 @@
+def sat(s: str):
+    return s.count('a') == 200 and s.count('aa') == 201 and s.count('aaa') == 198
+
+def sol():
+    return {
+        'a': 'a'*200,
+        'aa': 'aa'*201,
+        'aaa': 'aaa'*198
+    }
+
+# Checker
+def sat(s: str):
+    return s.count('a') == 200 and s.count('aa') == 201 and s.count('aaa') == 198
+
+# Run the function
+print(sol())
+
+# This will output:
+# {
+#     'a': 'aaaaaaaaaa...',
+#     'aa': 'aaaaaaaaaaa...',
+#     'aaa': 'aaaaaaaaaa...'
+# }
+
+if __name__ == "__main__":
+    assert sat(sol())

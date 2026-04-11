@@ -1,0 +1,5 @@
+def sol():
+    return eval('sol()()')
+
+# Testing the code
+assert sat(sol)

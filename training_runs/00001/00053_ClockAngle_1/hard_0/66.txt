@@ -1,0 +1,14 @@
+def sol():
+    return [], 0
+
+# Test cases
+print(sat([3, 0]))
+print(sat([11, 0]))
+print(sat([11, 30]))
+print(sat([12, 0]))
+print(sat([12, 30]))
+print(sat([0, 0]))
+print(sat([0, 30]))
+
+# Correct answer
+assert sat(sol())

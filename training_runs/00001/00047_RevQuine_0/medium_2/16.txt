@@ -1,0 +1,5 @@
+def sol():
+    return rev_quine[::-1]
+
+# Testing the solution
+assert sat(sol())

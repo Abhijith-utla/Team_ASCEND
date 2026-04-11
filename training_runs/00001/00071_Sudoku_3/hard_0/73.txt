@@ -1,0 +1,7 @@
+def sol():
+    puz = "_____42______7_____4______9__49___626_8__3___3_7__65_4_5_3__1__1____8_7__________"
+    x = "".join([puz[i] for i in range(81) if puz[i] != "_"])
+    return x
+
+# Run the function and assert that it returns the correct answer
+assert sat(sol())

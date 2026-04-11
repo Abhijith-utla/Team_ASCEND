@@ -1,0 +1,5 @@
+def sol():
+    return 10 if sat(10) else 0
+
+# The assert statement is used to test if the function returns the correct answer
+assert sat(sol())

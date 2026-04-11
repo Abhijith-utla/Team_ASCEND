@@ -1,0 +1,16 @@
+The problem statement seems to be a misunderstanding. It's not clear what the problem is supposed to be solved.
+
+The `moves` argument can be a list of tuples, where each tuple represents a move. The `source` and `target` arguments can be lists of lists, where each sublist represents a level of the pyramid. The `sat` function should return `True` if the pyramid is in a valid configuration, and `False` otherwise.
+
+Here is a potential solution:
+
+```python
+def sol():
+    def sat(moves: List[List[int]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 1, 2, 3, 8], [4, 5], [6, 7]]):
+        state = [s[:] for s in source]
+
+        for [i, j] in moves:
+            state[j].append(state[i].pop())
+            assert state[j] == sorted(state[j])
+
+        return state == target

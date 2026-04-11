@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The code won't run. The function sat(x) checks if all elements of the list x are of the same length, which is not true when the list has duplicate lengths.

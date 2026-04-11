@@ -1,0 +1,18 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    li = [0]*1000
+    li.insert(0, 5)
+    return li
+```
+
+This function constructs and returns a list of length 1001 with the number 5 inserted at the beginning.
+
+To verify this solution, you can run:
+
+```python
+print(sol())
+```
+
+This should output: `[5, 0, 0, 0, ..., 0]` (make sure to have 1000 zeros in the list)

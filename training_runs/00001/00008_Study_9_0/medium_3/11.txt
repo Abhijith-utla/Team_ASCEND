@@ -1,0 +1,11 @@
+Your solution is almost correct, but it seems that you want to convert the list of integers to a list of characters. In Python, you can convert an integer to a character using the chr() function. However, in your case, you want to replace the space character with an empty string, and then convert the list of integers to a list of characters. Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    s = ''.join(chr(i) for i in li)
+    return s == "The quick brown fox jumps over the lazy dog"
+```
+
+The ''.join(chr(i) for i in li) part is using a generator expression to convert each integer to a character, and then joining them into a string. This should give you the correct answer.

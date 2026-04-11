@@ -1,0 +1,17 @@
+Here's a correct implementation for the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [i for i in range(10)] + [12]
+    return li
+
+# Testing the function
+def test_sol():
+    assert sat(sol())
+
+test_sol()
+```
+
+In this implementation, we first generate a list `li` with 10 elements and 12 as its maximum element. Then, we return this list. We also write a test function `test_sol` to validate that the function `sol` returns a list with 10 elements and the maximum element is 12. If the test passes, the function `sat(sol())` will return `True`, otherwise it will raise an AssertionError.

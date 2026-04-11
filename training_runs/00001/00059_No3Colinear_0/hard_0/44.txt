@@ -1,0 +1,6 @@
+def sol():
+    return [(i, i) for i in range(10)]
+
+# This is an incorrect pattern, because the assertion in the inner loop checks for the same points.
+# The same point will be checked against itself in the inner loop, which will result in an assertion error.
+# This is not a valid solution.

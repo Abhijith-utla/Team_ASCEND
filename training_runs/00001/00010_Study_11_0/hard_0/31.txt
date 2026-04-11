@@ -1,0 +1,15 @@
+The function `sat` is already defined by the user. It checks if the list `ls` is a permutation of its length and its minimum and maximum values are equal. The user's function `sat` is already correct.
+
+In your task, you asked to write a function `sol` that:
+
+- constructs and returns a list of length `n` where the maximum value is `n` and the minimum value is `0`, and the value of each element is equal to its index.
+
+Here is the Python code for `sol`:
+
+```python
+def sol():
+    n = len(ls)
+    return [i for i in range(n)]
+```
+
+This function constructs and returns a list of length `n` where the maximum value is `n` and the minimum value is `0`, and the value of each element is equal to its index. The final checker will run: `assert sat(sol())`.

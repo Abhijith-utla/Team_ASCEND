@@ -1,0 +1,17 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(ls: List[float]) -> bool:
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+
+print(sat([0.0, 1.0, 2.0, 3.0, 4.0]))
+```
+
+The function `sat` checks if all elements in the list `ls` are positive numbers. It returns `True` if all elements are positive and `False` otherwise. The function takes a list of floats as input and returns a boolean.
+
+The condition in the `if` statement checks if the length of the list `ls` is zero. If it is, the function returns `True` because an empty list can satisfy the condition. If the length of the list `ls` is not zero, the function uses a generator expression inside the `all()` function to check if all elements in `ls` are in the range of their indices. The `range(len(ls))` expression generates a sequence of numbers from 0 to the length of `

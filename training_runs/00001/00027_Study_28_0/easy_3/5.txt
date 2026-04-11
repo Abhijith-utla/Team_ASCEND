@@ -1,0 +1,8 @@
+def sol():
+    import random
+    li = [random.randint(-500, 500) for _ in range(500)]
+    while not sat(li):
+        li = [random.randint(-500, 500) for _ in range(500)]
+    return li
+
+print(sol())

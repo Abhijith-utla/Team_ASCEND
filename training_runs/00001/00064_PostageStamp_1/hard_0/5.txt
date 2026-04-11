@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user.
+# The function 'sol' is to construct and return a single answer value.
+# The final checker will run: assert sat(sol())

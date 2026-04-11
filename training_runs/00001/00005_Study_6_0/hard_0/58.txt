@@ -1,0 +1,11 @@
+def sol():
+    for i in range(10 ** 10, 10 ** 13):
+        if sat(i):
+            return i
+    return None
+
+# You can test the solution with the following code
+def test_sol():
+    assert sat(sol())
+
+test_sol()

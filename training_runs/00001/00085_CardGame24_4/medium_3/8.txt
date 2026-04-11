@@ -1,0 +1,7 @@
+def sol():
+    return {
+        "nums": [10, 12, 1, 7]
+    }
+
+# Testing the function
+assert sat(str(sol()))

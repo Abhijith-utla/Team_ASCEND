@@ -1,0 +1,11 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    def sat(s: str):
+        return str(8 ** 2888).count(s) > 8 and len(s) == 3
+
+    return sat("123")
+```
+
+In the function `sol()`, the inner function `sat()` is defined. This function checks if the number `8 ** 2888` contains `s` more than 8 times and `s` is of length 3. If this condition is satisfied, the function returns `True`, otherwise it returns `False`. The function `sol()` returns the result of calling `sat()` with the string `"123"`.

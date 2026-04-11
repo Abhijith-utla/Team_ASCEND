@@ -1,0 +1,20 @@
+The given Python function `sat` takes a string `s` as an argument and checks if the string contains exactly 100 'x', 101 'xo' and 98 'xx'. If these conditions are satisfied, the function returns `True`. Otherwise, it returns `False`.
+
+Here is the correct pattern for `sol` function:
+
+```python
+def sol():
+    s = "xxxxxxxxxxxo" * 100 + "x" * 101
+    return sat(s)
+```
+
+This function generates a string `s` with 100 'x' at the beginning, 101 'xo' and 98 'xx' at the end. Then, it checks if `s` satisfies the conditions defined by the `sat` function.
+
+Here is the `sat` function:
+
+```python
+def sat(s: str):
+    return s.count('x') == 100 and s.count('xo') == 101 and s.count('xx') == 98
+```
+
+The `sat` function checks if the string `s` contains exactly

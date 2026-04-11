@@ -1,0 +1,4 @@
+def sol():
+    return rev_quine[::-1]
+
+print(sat(sol()))

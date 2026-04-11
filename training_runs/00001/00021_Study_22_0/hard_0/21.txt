@@ -1,0 +1,5 @@
+def sol():
+    s = 'abcdf'
+    return s[::2] in s and len(set(s)) == 5
+
+assert sat(sol())

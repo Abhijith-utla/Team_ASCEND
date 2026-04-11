@@ -1,0 +1,12 @@
+def sol():
+    return {}
+
+# Checker code
+def check_sat(coords: List[List[int]], side=10, num_points=20):
+    result = sat(coords, side, num_points)
+    assert result, f"Invalid coordinates: {coords}"
+    return result
+
+# Run the sol function
+check_sat([])
+!

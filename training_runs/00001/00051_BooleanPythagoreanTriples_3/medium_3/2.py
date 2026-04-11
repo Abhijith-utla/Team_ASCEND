@@ -1,0 +1,27 @@
+def sat(numbers: List[int], n=2):
+    assert len(numbers) >= n
+    return all(numbers[i] <= numbers[i+1] for i in range(len(numbers)-n))
+
+def sol():
+    return []
+
+# This checker tests the function with a single, valid input
+assert sat([1, 2, 3, 4, 5])
+
+# This checker tests the function with an empty list
+assert not sat([])
+
+# This checker tests the function with a list of less than two elements
+assert not sat([1])
+
+# This checker tests the function with a list of two elements, where one is not less than the next
+assert not sat([1, 2])
+
+# This checker tests the function with a list of more than two elements, where one is not less than the next
+assert sat([1, 2, 3, 4, 5])
+
+# This checker tests the function with a list of two elements, where one is less than the next
+assert not sat([1, 2, 3, 5])
+
+if __name__ == "__main__":
+    assert sat(sol())

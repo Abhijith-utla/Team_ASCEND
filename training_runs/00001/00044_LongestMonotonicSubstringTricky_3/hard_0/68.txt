@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The answer should be a list of numbers. Since we cannot select the numbers randomly and check if they are sorted, 
+# we can assume that the answer is not correct.

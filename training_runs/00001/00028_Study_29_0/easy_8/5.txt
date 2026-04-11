@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return [i for i in range(996) if all(abs(i * i - j * j) >= 10 for j in range(i))]
+```
+
+This solution uses list comprehension to generate a list of numbers that satisfy the condition. The condition is checked for each number `i` in the range from 0 to 995. If the condition is true, the number `i` is included in the list.

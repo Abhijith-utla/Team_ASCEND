@@ -1,0 +1,10 @@
+The function `sat(i: int)` is already defined by the user. It checks whether a number `i` is divisible by 5 and is less than 100. The function takes one argument `i` and returns True if `i` meets these conditions, and False otherwise.
+
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 5 in range(100)
+```
+
+This function checks if 5 is in the range of numbers from 0 to 99. If 5 is in the range, it means 5 is divisible by 5 and is less than 100. So, the function returns True.

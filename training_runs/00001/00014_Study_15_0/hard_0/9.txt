@@ -1,0 +1,5 @@
+def sol():
+    return sum(2 ** i - 1 for i in range(20))
+
+# Test case
+assert sat(list(range(1, 21)))

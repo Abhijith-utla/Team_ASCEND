@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+def test_sol():
+    assert sat([]) == False
+    assert sat([[0, 0]]) == False
+    assert sat([[1, 1]]) == False
+    assert sat([[1, 0]]) == True
+    assert sat([[0, 1]]) == True
+    assert sat([[0, 0], [1, 1]]) == True
+    assert sat([[0, 0], [1, 0]]) == False
+    assert sat([[0, 0], [0, 1]]) == True
+    assert sat([[0, 0], [1, 0], [0, 1]]) == True
+    assert sat([[0, 0], [1, 1], [0, 1]]) == True
+    assert sat([[0, 0], [1, 0], [1, 1]]) == False
+    assert sat([[0, 0], [0, 1], [1, 1]]) == True
+    assert sat([[0, 0], [0

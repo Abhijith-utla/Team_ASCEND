@@ -1,0 +1,18 @@
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+
+def sol():
+    li = [i for i in range(20)]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+
+def main():
+    assert sat(sol())
+
+if __name__ == "__main__":
+    main()
+
+if __name__ == "__main__":
+    assert sat(sol())

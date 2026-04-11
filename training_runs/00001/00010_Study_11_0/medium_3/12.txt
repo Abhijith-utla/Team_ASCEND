@@ -1,0 +1,17 @@
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol(ls: List[str]) -> List[str]:
+    if len(ls) == 0:
+        return []
+    else:
+        return [''.join(sorted(i)) for i in ls]
+```
+
+The function `sol` takes a list of strings as input and returns a new list of strings where each string is the sorted version of the corresponding string in the input list.
+
+The `sorted` function is used to sort the characters in each string in lexicographic order. The `''.join` method is used to concatenate the sorted characters into a single string.
+
+The function `sat` is already defined by the user, so you do not need to define it again.
+
+The function `sol` and `sat` satisfy the problem constraints.

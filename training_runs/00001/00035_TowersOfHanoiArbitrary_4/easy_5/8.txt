@@ -1,0 +1,18 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(moves: List[List[int]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 6], [0, 1], [5]]):
+    state = [s[:] for s in source]
+    for i, j in moves:
+        state[i].append(state[j].pop(0))
+        assert sorted(state[i]) == target[i], f'{state[i]} is not equal to {target[i]}'
+
+    return sorted(state) == sorted(target)
+```
+
+You can call the function with the moves as a list of pairs of integers representing the moves:
+
+```python
+print(sol([[0, 0], [1, 1], [0, 1], [2, 2]], [[0, 5, 6], [1, 2, 4, 0], [2, 3]], [[0, 1,

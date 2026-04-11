@@ -1,0 +1,4 @@
+def sol():
+    return 9
+
+# This function returns 9 because it is the only answer that satisfies the condition in the problem statement.

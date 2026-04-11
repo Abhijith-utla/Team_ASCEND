@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+
+print(sat([1, 2, 2, 3, 0, 0, 1, 1, 2, 2]))
+```
+This function `sat` takes a list of integers as input and returns `True` if all elements in the list occur exactly once and `0` occurs exactly once. If the list does not satisfy this condition, the function returns `False`.

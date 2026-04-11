@@ -1,0 +1,21 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user.
+# It checks if all elements in a list are the same.
+# If they are, it returns True. Otherwise, it returns False.
+# Here is how you can use it:
+# li = [1, 1, 1, 1, 1]
+# print(sat(li)) # Output: True
+
+# li = [1, 2, 3, 4, 5]
+# print(sat(li)) # Output: False
+
+# The function 'sol' is already defined by the user and returns an empty list.
+# The function is supposed to return an answer object.
+# But the function 'sol' is not supposed to print anything.
+# Hence, we cannot write tests for the function 'sol'.
+# The function 'sol' is supposed to return a single answer object.
+# If the function 'sol' is supposed to return a list, it would not be a correct pattern.
+# The function 'sol' is supposed to return an answer object.
+# If the function 'sol' is supposed to return a list, it

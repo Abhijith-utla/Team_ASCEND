@@ -1,0 +1,22 @@
+def sol():
+    return [0, 0]
+
+# Testing the solution
+assert sat(sol())
+
+# Checking for a solution that doesn't meet the conditions
+assert not sat([12, 30])
+assert not sat([12, 31])
+assert not sat([13, 0])
+assert not sat([13, 30])
+assert not sat([14, 0])
+assert not sat([23, 59])
+
+# Checking for a solution that meets the conditions
+assert sat([12, 0])
+assert sat([12, 30])
+assert sat([12, 45])
+assert sat([13, 30])
+assert sat([15, 0])
+assert sat([23, 30])
+assert sat([23, 45])

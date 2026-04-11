@@ -1,0 +1,9 @@
+def sol():
+    x = list(range(193))
+    random.shuffle(x)
+    return x
+
+# Testing the solution
+answer = sol()
+print(answer)
+assert sat(answer)

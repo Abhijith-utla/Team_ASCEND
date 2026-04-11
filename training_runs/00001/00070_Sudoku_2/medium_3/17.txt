@@ -1,0 +1,4 @@
+def sol():
+    return "_" * 23
+
+assert sat(sol())

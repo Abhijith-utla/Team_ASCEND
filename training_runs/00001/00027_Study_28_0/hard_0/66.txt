@@ -1,0 +1,21 @@
+Here's the correct implementation of the function `sol` that makes use of the function `sat` to ensure that the list `li` contains no duplicates and that each number is in the range [0, 999].
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i in range(1000) and abs(i - j) >= 10 for i in li for j in li if i != j) and len(set(li)) == 100
+
+def sol():
+    li = [i for i in range(100)] * 10
+    li[0] = 0
+    li[-1] = 99
+    return li
+```
+
+The solution creates a list `li` of length 100 and initializes it with the numbers from 0 to 99. The first and the last elements are set to 0 and 99 respectively. The function `sat` is used to check this list to ensure that it meets the conditions.
+
+You can check the correctness of the solution by running the following code:
+
+```python
+print

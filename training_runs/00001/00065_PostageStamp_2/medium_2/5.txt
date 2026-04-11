@@ -1,0 +1,23 @@
+def sol():
+    return []
+
+# Testing the solution with a valid scenario
+assert sat([])
+
+# Testing the solution with a scenario with less than the maximum number of stamps
+assert not sat([20, 10])
+
+# Testing the solution with a scenario with exactly the maximum number of stamps
+assert sat([20, 20, 20])
+
+# Testing the solution with a scenario with more than the maximum number of stamps
+assert not sat([20, 20, 20, 20])
+
+# Testing the solution with a scenario with a total sum of less than the maximum number of stamps
+assert not sat([10, 10])
+
+# Testing the solution with a scenario with a total sum of exactly the maximum number of stamps
+assert sat([20, 20, 20, 20])
+
+# Testing the solution with a scenario with a total sum of more than the maximum number of stamps
+assert not sat([20, 20, 20, 20, 10])

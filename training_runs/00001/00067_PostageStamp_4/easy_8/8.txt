@@ -1,0 +1,13 @@
+def sol():
+    return [60, 25, 22, 8, 84, 56]
+
+# Test the function with a solution
+print(sat(sol()))  # This should return True
+
+# Test the function with an incorrect solution
+print(sat([60]*6))  # This should return False
+print(sat([60]*5))  # This should return False
+print(sat([60]*7))  # This should return False
+print(sat([50]*6))  # This should return False
+print(sat([60]*5 + [20]*1))  # This should return False
+print(sat([60]*5 + [50]*1))  # This should return True

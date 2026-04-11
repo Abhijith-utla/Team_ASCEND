@@ -1,0 +1,2 @@
+def sol():
+    return 'correctanswer' if sat('correctanswer') else 'incorrectanswer'

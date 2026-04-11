@@ -1,0 +1,5 @@
+def sol():
+    return [[5,6],[1,2,4],[0,3]]
+
+# The test case for the solution
+assert sat(sol())

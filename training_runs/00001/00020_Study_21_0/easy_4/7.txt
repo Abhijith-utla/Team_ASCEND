@@ -1,0 +1,16 @@
+Here is the solution for this problem.
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8]
+    return sat(li)
+
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(8)] and len(set(li)) == 3)
+
+print(sat(sol()))
+```
+
+This program first defines a function named `sol` that returns a list of 8 integers. Then, it defines another function named `sat` that takes a list of integers as an argument. The function returns `True` if the list has no two consecutive elements and all elements are unique. If the list satisfies these conditions, the function returns `True`; otherwise, it returns `False`. The last line of the program calls `sat` on the output of `sol` and prints the result.

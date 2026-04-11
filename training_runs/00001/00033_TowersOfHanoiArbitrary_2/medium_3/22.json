@@ -1,0 +1,17 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T10:49:27.174566+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=14|checked=14/14|preview=def sol(): return [] # This solution is incorrect because the target array is not sorted after the moves. # The probl...",
+  "difficulty": "medium",
+  "problem_id": "00033_TowersOfHanoiArbitrary_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

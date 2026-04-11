@@ -1,0 +1,18 @@
+The problem is asking to write a function named `sol` that takes a list of integers as an argument and returns a boolean value. The function should:
+
+1. Have exactly 10 elements in the list.
+2. The fourth element should appear twice in the list.
+
+Here is a Python solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+This function uses the `count` method to count the occurrence of the fourth element in the list, and then compares it to 2. If the count is not 2, it returns False, meaning the fourth element should appear twice in the list. If the list has 10 elements and the fourth element is present twice in the list, the function returns True.

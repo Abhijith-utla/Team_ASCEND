@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> str:
+    return ','.join(['dee', 'doo', 'dah!'])
+
+assert sat(sol().split(','))
+```
+
+This solution assumes that the input is a comma-separated string that must be equal to the string 'dee,doo,dah!'. The `split` method is used to convert the string into a list of strings, and then `zip` is used to compare this list with the correct string. If the list is indeed equal to the correct string, the `assert` statement will be true, indicating that the solution is correct.

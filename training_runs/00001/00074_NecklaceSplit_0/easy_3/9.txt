@@ -1,0 +1,25 @@
+def sol():
+    return {}
+
+# Add your function definition here
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python
+!python

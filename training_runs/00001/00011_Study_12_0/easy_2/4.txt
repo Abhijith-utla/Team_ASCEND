@@ -1,0 +1,12 @@
+You can solve this problem using Python. The task is to find whether a list of integers is a valid solution to a system of linear equations where the sum of the elements equals 2.
+
+Here is a Python solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    sum_of_elements = sum(li)
+    return sum_of_elements == 2 and len(li) == 1000
+```
+This function first calculates the sum of the elements in the list, and then checks if the sum is 2 and the length of the list is 1000. If both conditions are true, the function returns True; otherwise, it returns False.

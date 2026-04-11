@@ -1,0 +1,16 @@
+{
+  "attempt_num": 44,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:54:00.891267+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=The provided function `sat` checks if the sum of the first `i` elements of the list `li` is equal to `2 ** i - 1` for...",
+  "difficulty": "hard",
+  "problem_id": "00014_Study_15_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,16 @@
+The function `sat` checks if a list `li` is a permutation of the list `range(999)`, and no number appears more than once. 
+
+The Python code for the function `sat` is as follows:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+The `sorted(li)` part of the function checks if the list is a permutation of the list `range(999)`. If it is, the function returns `True`. 
+
+The `list(range(999))` part of the function creates a list of the first 999 numbers, and `sorted(li)` checks if `li` is a permutation of this list. If `li` is a permutation of `range(999)`, the function returns `True`.
+
+The `all(li[i] != i for i in range(len(li)))` part of

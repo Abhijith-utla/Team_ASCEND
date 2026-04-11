@@ -1,0 +1,17 @@
+```python
+from typing import List
+
+def sol():
+    return {"answer": 42}
+```
+
+This solution is incorrect because the range of possible values for i is not in the set {0, 1, 2, 3, ..., 128} and the condition for j is not correct. It should be in the set {-1, 0, 1, 2, 3, ..., 126}. The correct solution would be:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i in {-1, 0, 1, 2, 3, ..., 126} and 3 * i in {-1, 0, 1, 2, 3, ..., 126} for i, j in zip([0] + li, li + [128]))
+```
+
+Note: The checker will fail if the range of possible values for i is not in the set {-1, 0, 1, 2, 3, ..., 126}, as it is not

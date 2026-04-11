@@ -1,0 +1,12 @@
+Here is the Python code that satisfies the constraints:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i - 1 in {j, i + 1, 3 * i} for i, j in zip([0] + li, li + [128]))
+```
+
+This function `sat` checks if every element in the list is in the set {i - 1, i + 1, 3 * i} for some index `i` and value `j` in the zip object. The `zip` object is created by concatenating the list with [0] and then slicing the resulting list to skip the first element.
+
+The function `all` returns True if all elements in the iterable (in this case the generator) are True, otherwise it returns False. The generator is created by the list comprehension. The list comprehension checks if the current value `j` is in the set {i - 1, i + 1, 3 * i} for some index `i` in the `zip` object. The `zip` object is created by the generator expression `{j, i + 1,

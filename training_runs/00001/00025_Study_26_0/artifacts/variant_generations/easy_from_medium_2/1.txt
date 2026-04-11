@@ -1,0 +1,15 @@
+VARIANT1:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(12345678)
+```
+VARIANT2:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(123456789)
+```
+VARIANT3:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(1234567890)
+```

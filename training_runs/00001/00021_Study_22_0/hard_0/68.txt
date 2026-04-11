@@ -1,0 +1,16 @@
+def sol():
+    s = input()
+    return sat(s)
+
+def sat(s: str):
+    return s[::2] in s and len(set(s)) == 5
+
+# Test cases
+print(sol("aabbccdd"))  # True
+print(sol("aaaabb"))  # False
+print(sol("abcde"))  # False
+print(sol("aabbcc"))  # False
+print(sol("abcdef"))  # True
+
+# Checker
+assert sat(sol())

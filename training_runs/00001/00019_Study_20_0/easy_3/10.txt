@@ -1,0 +1,5 @@
+def sol():
+    li = [4, 4, 4, 2, 3, 3, 4, 3, 2, 2]
+    return li
+
+print(sol())

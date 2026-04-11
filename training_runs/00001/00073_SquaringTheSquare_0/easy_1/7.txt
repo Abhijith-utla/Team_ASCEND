@@ -1,0 +1,4 @@
+def sol():
+    return max_sum, sum(side ** 2 for x, y, side in xy_sides)
+
+assert sat(sol())

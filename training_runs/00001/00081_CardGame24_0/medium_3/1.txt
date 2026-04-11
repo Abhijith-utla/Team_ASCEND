@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The function 'sat' is not defined in the problem, so we need to define it. 
+# The 'sol' function should return an empty dictionary as the answer.

@@ -1,0 +1,18 @@
+The function `sat` is designed to check if a list `li` has exactly one occurrence of the number 3 and the number 3 occurs twice in the list. Here is the implementation of the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+The function `sat` takes a list `li` of integers as an argument. It first checks if the length of the list is 10. If not, it returns `False`. Then, it checks if the number 3 occurs twice in the list. If it doesn't, it returns `False`. Next, it checks if the index of the number 3 in the list is 3. If it's not, it returns `False`. Finally, it checks if the number 3 occurs

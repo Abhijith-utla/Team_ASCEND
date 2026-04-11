@@ -1,0 +1,14 @@
+Here is a Python solution:
+
+```python
+from typing import List
+
+def sol() -> int:
+    return 12
+
+def sat(li: List[int]):
+    return len(li) == 10 and max(li) == 12
+
+# Test
+assert sat(sol())
+```

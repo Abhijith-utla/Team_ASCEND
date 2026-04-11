@@ -1,0 +1,26 @@
+def sat(x: List[int], length=61, s=" OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] for i in range(length - 1))
+
+def sol():
+    return []
+
+# Test Cases
+# assert sat([])
+# assert sat([0])
+# assert not sat([0, 1])
+# assert sat([0, 2])
+# assert not sat([0, 2, 3])
+# assert sat([0, 1, 2, 3])
+# assert not sat([0, 2, 3, 4])
+# assert sat([0, 1, 3, 2])
+# assert not sat([0, 2, 4, 3])
+# assert sat([0, 1, 2, 4])
+# assert not sat([0, 2, 4, 3, 5])
+# assert sat([0, 1, 2, 4, 5])
+# assert not sat([0, 2, 4, 3, 6])
+# assert sat([0, 1, 2, 3, 6])
+# assert not sat([0, 2, 4, 3, 7])
+# assert sat([0, 1, 2,
+
+if __name__ == "__main__":
+    assert sat(sol())

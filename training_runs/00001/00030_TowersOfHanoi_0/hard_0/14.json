@@ -1,0 +1,16 @@
+{
+  "attempt_num": 14,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T10:07:56.204508+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=19|checked=19/19|preview=def sol(): return [] # Test case moves = [(0, 1), (1, 2), (2, 0), (0, 2)] assert sat(moves) == [2, 3, 1, 0] # Additio...",
+  "difficulty": "hard",
+  "problem_id": "00030_TowersOfHanoi_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

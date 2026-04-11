@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:58:31.534955+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=Here is the correct solution: ```python def sat(s: str) -> bool: return s == 'abc4.5' ```",
+  "difficulty": "medium",
+  "problem_id": "00015_Study_16_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

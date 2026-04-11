@@ -1,0 +1,13 @@
+Here is a Python solution for the given problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return False
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+```
+
+This solution works by checking if the length of the list (ls) is 0. If it is, it means the list is empty, so the function returns False. If the length of the list is not 0, it checks if all the strings in the list (ls) have the same length as the first string in the list. If they do, the function returns True; otherwise, it returns False.

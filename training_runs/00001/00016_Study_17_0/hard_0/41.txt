@@ -1,0 +1,2 @@
+def sol():
+    return len(str(10001)) > len(str(1001))

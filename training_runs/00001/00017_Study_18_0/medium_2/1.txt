@@ -1,0 +1,7 @@
+def sol():
+    return {
+        'answer': [
+            {'value': True, 'message': 'All words are unique'}, 
+            {'value': False, 'message': 'Not all words are unique'}
+        ]
+    }

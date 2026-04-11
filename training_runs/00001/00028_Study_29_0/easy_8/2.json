@@ -1,0 +1,17 @@
+{
+  "attempt_num": 2,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:42:54.249083+00:00",
+  "diagnostic": "reason=subprocess_error:NameError: name 'j' is not defined|parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): l = [i*i for i in range(996) if abs(i*i - j*j) >= 10] return l",
+  "difficulty": "easy",
+  "problem_id": "00028_Study_29_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

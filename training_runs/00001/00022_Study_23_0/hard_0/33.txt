@@ -1,0 +1,19 @@
+Sure, here's the solution:
+
+```python
+from typing import List
+
+def sol() -> List[str]:
+    return list(zip('dee', 'doo', 'dah!'))
+
+def sat(ls: List[str]) -> bool:
+    return list(ls) == list(zip('dee', 'doo', 'dah!'))
+
+def test():
+    assert sat(sol())
+
+if __name__ == "__main__":
+    test()
+```
+
+This code first defines `sol()`, a function that uses `zip()` to return a list of tuples. The test function `sat()` then checks if this list of tuples matches the expected list of tuples.

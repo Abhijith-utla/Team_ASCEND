@@ -1,0 +1,7 @@
+def sol():
+    return "_" * 18
+
+def test_sol():
+    assert sat(sol())
+
+test_sol()

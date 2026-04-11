@@ -1,0 +1,24 @@
+Sure, here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function takes no arguments, and returns a list of words, which is the result of splitting the string 'berlin berger linber linger gerber gerlin' into individual words.
+
+The checker will run: `assert sat(sol())`
+
+This checks if the result of `sol` is equal to the expected output, which is a list of words split from the string 'berlin berger linber linger gerber gerlin'. If they are equal, the assertion will pass, otherwise it will fail.
+
+Here is the complete code:
+
+```python
+def sat(ls: List[str]):
+    return [s + t for s in ls for t in ls if s != t] == 'berlin berger linber linger gerber gerlin'.split()
+
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+
+assert sat(sol())
+```

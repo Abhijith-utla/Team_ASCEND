@@ -1,0 +1,16 @@
+Sure, here is the Python code that solves the problem:
+
+```python
+def sol():
+    return ''.join(chr(i) for i in range(ord('A'), ord('Z')+1))
+```
+
+This function generates a string of all uppercase letters in the range A-Z using the built-in `chr()` function, which returns a character representing a specific Unicode code point. The `range()` function generates a sequence of numbers starting from the start (inclusive) to the end (exclusive). `ord()` is a built-in Python function that returns the Unicode code point of a specified character.
+
+The `join()` function is used to concatenate the characters in the list into a single string. The result of the expression `chr(i) for i in range(ord('A'), ord('Z')+1)` is a generator that yields the characters in the range A-Z one by one.
+
+The assertion checker will run:
+
+```python
+assert sol() == ''.join(chr(i) for i in range(ord('A'), ord('Z')+1))
+```

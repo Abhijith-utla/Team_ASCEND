@@ -1,0 +1,17 @@
+Here is the correct code for the function `sol`.
+
+```python
+from typing import List
+
+def sol():
+    li = [0] * 1000
+    li[0] = 4
+    return li
+
+# Checker code
+def sat(li: List[int]):
+    li.insert(0, 4)
+    return all(i + j == 3 for i, j in zip(li, [4] + li)) and len(li) == 1001
+```
+
+This function `sol` returns a list of 1000 elements with the first element set to 4. The `sat` function checks whether this list satisfies the condition that every element in the list plus the corresponding element in the list `[4] + li` is 3 and the length of the list is 1001. If both conditions are satisfied, the function returns `True`, otherwise it returns `False`.

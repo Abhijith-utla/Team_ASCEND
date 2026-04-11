@@ -1,0 +1,2 @@
+def sol():
+    return sorted(s) == sorted('sirnemtpuA') and s == s[::-1]

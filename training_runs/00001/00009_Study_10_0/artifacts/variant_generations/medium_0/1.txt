@@ -1,0 +1,16 @@
+Here are three simple Python functions to test the same core concept, but with slightly different input values.
+
+```python
+# Variant 1
+def sat(s: str):
+    return s in str(10 ** 300) and s == s[::-1] and len(s) > 20
+
+# Variant 2
+def sat(s: str):
+    return s in str(10 ** 300) and s[-1] == '0' and len(s) > 20
+
+# Variant 3
+def sat(s: str):
+    return s in str(10 ** 300) and s[0] == '0' and len(s) > 20
+```
+In each variant, the input string `s` is supposed to be greater than 20 characters long and equal to its reverse. Additionally, the input string `s` should contain the number 10000 in its string representation. This test checks the correctness of the statement `s in str(10 ** 300) and s == s[::-1] and len(s) > 20`.

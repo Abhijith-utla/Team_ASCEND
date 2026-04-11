@@ -1,0 +1,20 @@
+Here is the Python code to construct a single answer value:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+assert sat(sol())
+```
+
+In this code, the function `sol` initializes a variable `i` to 0, then increments `i` until `sat(i)` returns `True`. This is the answer to the problem.
+
+The `sat` function is a helper function that checks if the length of the string representation of `i + 1000` is greater than the length of `i + 1001`. If this condition is met, the function returns `True`; otherwise, it returns `False`.
+
+The `assert` statement at the end of the code ensures that the solution returned by `sol` is correct. If the solution is incorrect, the program will raise an AssertionError.

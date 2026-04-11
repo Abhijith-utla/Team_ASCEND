@@ -1,0 +1,6 @@
+def sol():
+    li = list(range(21))
+    return {i + j for i in li for j in li}
+
+# Verification
+assert sat(sol())

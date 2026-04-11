@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# The function 'sat' takes a list of integers and returns True if the list sums up to 9 for every pair of numbers, and the list has 1000 elements. Otherwise, it returns False.
+# We need to find an array with 1000 elements such that its sum is 9.
+# Since the first element is fixed at 4, the remaining elements must be 1, 2, 3, ..., 9.
+# Therefore, the sum of all the elements in the array is 45.
+# This is an arithmetic series. The sum of the first n numbers is n*(n+1)/2.
+# Since the first element is 4 and the last element is 9, the sum is 45 = n*(n+1)/2, where n = 9.
+# Therefore, the solution is an array with 1000 elements that sums up to 9.
+
+def sat(li: List[int]):
+    n = 9
+    return all(i == n + j for j in range(1, 10)) and len(li) == 1

@@ -1,0 +1,36 @@
+def sol():
+    return {}
+
+# Test Case 1
+# numbers = [1, 2, 3, 4, 5]
+# n = 5
+# assert sat(numbers, n) == True
+
+# Test Case 2
+# numbers = [2, 4, 6, 8, 10]
+# n = 5
+# assert sat(numbers, n) == False
+
+# Test Case 3
+# numbers = [0, 1, 2, 3, 4]
+# n = 5
+# assert sat(numbers, n) == True
+
+# Test Case 4
+# numbers = [5, 5, 5, 5, 5]
+# n = 5
+# assert sat(numbers, n) == False
+
+# Test Case 5
+# numbers = [1]
+# n = 1
+# assert sat(numbers, n) == True
+
+# Test Case 6
+# numbers = [2]
+# n = 1
+# assert sat(numbers, n) == False
+
+# Test Case 7
+# numbers = []
+#

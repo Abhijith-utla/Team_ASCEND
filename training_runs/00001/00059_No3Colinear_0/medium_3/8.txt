@@ -1,0 +1,22 @@
+def sol():
+    return []
+
+# Adding points to the given coordinates
+def add_point(coords, x, y):
+    return coords + [(x, y)]
+
+# Check if the point is on the given side of the line formed by the previous point and the given point
+def is_on_side(coords, x, y, side=10):
+    if len(coords) < 2:
+        return False
+    (x1, y1), (x2, y2) = coords[-2], coords[-1]
+    dx, dy = x - x1, y - y1
+    d = dx * (y2 - y1) - dy * (x2 - x1)
+    return d == 0
+
+# Solving the problem
+def sol(coords=[], side=10, num_points=20):
+    while len(coords) < num_points and len(coords) < 2 * side:
+        for x in range(1, side + 1):
+            for y in range(1, side + 1):
+                if is_on_

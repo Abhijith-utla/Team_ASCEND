@@ -1,0 +1,7 @@
+def sol():
+    return [17, 17, 3, 3]
+
+# The function 'sat' checks if the list contains exactly one 17 and two 3s.
+# The 'sol' function returns this list.
+
+print(sat(sol()))

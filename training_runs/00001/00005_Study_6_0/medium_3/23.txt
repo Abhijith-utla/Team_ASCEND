@@ -1,0 +1,6 @@
+def sol():
+    for i in range(-10 ** 10, 10 ** 10):
+        if sat(i):
+            return i
+
+assert sat(sol())

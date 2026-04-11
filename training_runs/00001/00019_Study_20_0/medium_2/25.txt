@@ -1,0 +1,16 @@
+def sol():
+    def sat(li: List[int]):
+        return all(j in {i} for i, j in enumerate(li))
+
+    assert sat([]) == True
+    assert sat([1]) == True
+    assert sat([1, 1]) == False
+    assert sat([1, 2]) == True
+    assert sat([1, 2, 3]) == True
+    assert sat([1, 2, 2]) == False
+    assert sat([1, 2, 3, 4]) == True
+    assert sat([1, 2, 3, 4, 4]) == False
+    assert sat([1, 2, 3, 4, 5]) == False
+    print("All test cases passed")
+
+sol()

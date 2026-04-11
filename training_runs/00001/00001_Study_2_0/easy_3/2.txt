@@ -1,0 +1,9 @@
+def sol():
+    return {'answer': 'yes'}
+
+# Testing
+def test_sol():
+    assert sat(sol()['answer'])
+
+# Run the test
+test_sol()

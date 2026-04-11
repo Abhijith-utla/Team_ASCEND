@@ -1,0 +1,4 @@
+def sol():
+    return [chr(ord('a') + i) for i in range(9)]
+
+assert sat(sol())

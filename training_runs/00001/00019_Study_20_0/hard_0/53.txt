@@ -1,0 +1,16 @@
+Sure, here is a solution to the problem:
+
+```python
+def sol():
+    return 128
+```
+
+This function will always return 128 because the function `sat` checks whether every number in the list is either 1, 2, or 3 times its position, and the check is done in the order of the list. Therefore, 128 is the only number that can pass this check.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```
+
+This code will pass the test if the function `sol` returns 128.

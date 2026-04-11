@@ -1,0 +1,6 @@
+```python
+def sol():
+    return tuple(zip('dee', 'doo', 'dah!'))
+
+print(sat(sol()))
+```

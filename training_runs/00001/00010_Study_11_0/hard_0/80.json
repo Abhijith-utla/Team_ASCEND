@@ -1,0 +1,17 @@
+{
+  "attempt_num": 80,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:12:40.476177+00:00",
+  "diagnostic": "reason=subprocess_error:EOFError: EOF when reading a line|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return min(str(x) for x in input(\"Enter your list of numbers separated by space: \").split(' ')) assert sat...",
+  "difficulty": "hard",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

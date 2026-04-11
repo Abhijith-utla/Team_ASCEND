@@ -1,0 +1,16 @@
+The given function `sat` checks if a list `li` is sorted in non-descending order and does not contain any duplicate values. Here's the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+```
+This code works as follows:
+
+1. The function `sat` takes a list of integers `li` as an argument.
+2. The first line checks if the list `li` is sorted in non-descending order. This is done by comparing the sorted list with the list `[0, 1, ..., 998]`.
+3. The second line checks if the list `li` does not contain any duplicate values. This is done by checking if any element in the list `li` is not equal to its index.
+4. The function returns `True` if both conditions are met, `False` otherwise.
+
+You can use this function in your code by calling `sat` with a list of

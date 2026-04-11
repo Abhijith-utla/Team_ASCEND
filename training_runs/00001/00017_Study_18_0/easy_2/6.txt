@@ -1,0 +1,13 @@
+Here is the correct pattern:
+
+```python
+def sol() -> str:
+    return "I'm a solution!"
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+
+# Testing the function
+assert sat(["abcd", "abce", "efgh"]) == True
+assert sat(["abcd", "abcc", "efgh"]) == False
+```

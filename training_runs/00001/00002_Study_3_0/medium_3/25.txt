@@ -1,0 +1,12 @@
+Here's the Python code for the function `sol` which returns a single answer value.
+
+```python
+def sol():
+    return 998
+```
+
+You can check the result by running `assert sat()`.
+
+The function `sat` checks two conditions. The first condition is that the list `li` is sorted in ascending order. The second condition is that no element in the list is repeated. 
+
+In this case, the function returns `998` as the answer.

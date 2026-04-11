@@ -1,0 +1,4 @@
+def sol():
+    return 'doo'
+
+assert sat(sol())

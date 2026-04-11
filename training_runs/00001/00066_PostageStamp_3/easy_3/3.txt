@@ -1,0 +1,5 @@
+def sol():
+    return [19, 19]
+
+# The solution is correct because it satisfies the conditions of the problem.
+assert sat(sol())

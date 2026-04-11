@@ -1,0 +1,4 @@
+def sol():
+    return sat(['a', 'ab', 'abc'])
+
+print(sol())

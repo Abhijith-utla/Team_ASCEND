@@ -1,0 +1,30 @@
+Here are three simple variations of the problem statement. The first variant tests whether a given number is divisible by 5. The second variant checks whether a number is greater than 0 and divisible by 5. The third variant performs a test similar to the first but with a smaller range.
+
+VARIANT1:
+```python
+def sat(n: int):
+    for _ in range(5):
+        assert n % 5 == 0
+        n -= 1
+    return n > 0
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    for _ in range(5):
+        assert n % 5 != 0
+        n -= 1
+    return n > 0
+```
+
+VARIANT3:
+```python
+def sat(n: int):
+    for _ in range(3):
+        assert n % 5 == 0
+        n -= 1
+    return n > 0
+```
+
+In all of these variations, the function performs a test to determine whether a given number is divisible by 5. If the number is divisible by 5, the function returns True. If not, the function returns False.

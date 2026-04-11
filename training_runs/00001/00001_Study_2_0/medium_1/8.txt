@@ -1,0 +1,11 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    s = 'x' * 100 + 'o' * 101 + 'xx' * 98
+    return s
+
+assert sat(sol())
+```
+
+This function constructs a string that contains 'x' 100 times, 'xo' 101 times, and 'xx' 98 times. It then returns this string. The assert statement checks that the function returns the correct string, which satisfies the conditions of the problem.

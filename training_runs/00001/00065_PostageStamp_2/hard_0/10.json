@@ -1,0 +1,17 @@
+{
+  "attempt_num": 10,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T15:28:39.850317+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return [] # Let's test our function with the given stamps and target. assert sat([18, 1, 43, 81]) assert n...",
+  "difficulty": "hard",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

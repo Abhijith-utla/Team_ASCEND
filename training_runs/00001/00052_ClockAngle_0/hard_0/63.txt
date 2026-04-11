@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# Do not modify the function body here.
+# Instead, put your solution code in the function sol().
+
+# The function sol() must have no arguments and must return a list of integers.
+# The list should be empty in the first implementation.
+
+# Please provide the solution code in the body of the function sol().
+
+# For example, here is a possible implementation:
+def sol():
+    return []
+
+# The function sol() must have no arguments and must return a list of integers.
+# The list should be empty in the first implementation.

@@ -1,0 +1,10 @@
+Sure, here is the Python code for your function:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function first checks if the list is sorted and contains no repeated numbers. If it does, it returns True, otherwise it returns False.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 76,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:01:58.222070+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: string index out of range|parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): return ''.join([i for i in str(8 ** 1818) if i.isdigit() and i != '0' and len(i) > 1]) # Test print(sol() ...",
+  "difficulty": "hard",
+  "problem_id": "00009_Study_10_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

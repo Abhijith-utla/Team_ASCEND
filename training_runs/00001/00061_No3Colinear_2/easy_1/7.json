@@ -1,0 +1,16 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:41:23.677070+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [] Incorrect pattern: def sol(coords, side=1, num_points=1): for i in range(len(coords)): x, y = co...",
+  "difficulty": "easy",
+  "problem_id": "00061_No3Colinear_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

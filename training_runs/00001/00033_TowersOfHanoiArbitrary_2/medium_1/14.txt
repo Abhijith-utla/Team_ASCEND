@@ -1,0 +1,8 @@
+def sol():
+    moves = [[0, 1], [2, 0], [1, 2]]
+    source = [[0, 1, 2], [3], [4, 5, 6]]
+    target = [[1, 2, 3], [4, 5], [0, 6]]
+
+    return sat(moves, source, target)
+
+sol()

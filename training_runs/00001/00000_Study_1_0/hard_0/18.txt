@@ -1,0 +1,17 @@
+Here is the Python solution:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+In the above code, we are first creating a string 's' with 'oo' repeated 1000 times. Then, we return this string 's'. The function 'sat' checks if the string 's' contains 1000 'o's and 0 'oo's. If both conditions are met, the function returns the string 's', which satisfies the condition of the function.
+
+The checker will run:
+
+```python
+print(sat(sol()))
+```
+
+This will print 'oooo' if the function 'sol' returns a string of 1000 'o's and 0 'oo's. If it does not print anything, that means the function 'sol' did not return a string of 1000 'o's and 0 'oo's, which is an invalid output.

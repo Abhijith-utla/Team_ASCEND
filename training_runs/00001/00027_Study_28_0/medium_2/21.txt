@@ -1,0 +1,13 @@
+Here is the correct solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return all(abs(i - j) >= 10 for i in li for j in li) and len(set(li)) == 10
+
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return sat(li)
+```
+This function checks if the given list contains at least 10 integers and all integers are at least 10 apart. It also ensures that there are no duplicate integers in the list.

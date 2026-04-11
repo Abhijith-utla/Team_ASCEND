@@ -1,0 +1,5 @@
+def sol():
+    number_string = str(8 ** 1818)
+    return sat(number_string)
+
+print(sol())

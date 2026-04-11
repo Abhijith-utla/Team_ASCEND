@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+In this function, the first argument `ls` is a list of strings, and the function checks if the string `ls[1234]` is present in the list `ls[1235]` and is not equal to `ls[1235]`. If both conditions are satisfied, the function returns `True`; otherwise, it returns `False`.

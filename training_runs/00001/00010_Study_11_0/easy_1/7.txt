@@ -1,0 +1,5 @@
+def sol():
+    return True
+
+# The answer will be True if the list is empty, otherwise it will be False
+assert sat(sol())

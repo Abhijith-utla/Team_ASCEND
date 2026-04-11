@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li[i] < sum(li[:i]) for i in range(len(li)))
+```
+
+This function checks if each element in the list is smaller than the sum of all the elements before it. It does this for all the elements in the list. If all elements pass this check, it returns True, otherwise it returns False.
+
+The sum of all elements before an element is the sum of all the elements in the list up to that element, and the sum of an empty list is considered to be 0.
+
+Note that this function assumes that the list is not empty. If the list can be empty, you should add a condition to check for this.

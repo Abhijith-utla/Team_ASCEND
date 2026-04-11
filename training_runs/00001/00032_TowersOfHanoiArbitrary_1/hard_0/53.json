@@ -1,0 +1,16 @@
+{
+  "attempt_num": 53,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "expected an indented block after 'if' statement on line 14",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T10:39:05.850066+00:00",
+  "diagnostic": "reason=ast_syntax_error:expected an indented block after 'if' statement on line 14|parse=fence=none,preamble=1,found_sol=1,candidates=14|checked=14/14|preview=Here's a solution written in Python: ```python def sol(): moves = [[1, 3, 5], [2, 8, 14], [0, 4, 6, 7, 9, 10, 11, 12,...",
+  "difficulty": "hard",
+  "problem_id": "00032_TowersOfHanoiArbitrary_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

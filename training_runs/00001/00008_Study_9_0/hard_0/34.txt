@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list("The five boxing wizards jump quickly")
+```
+
+This function checks if each character in the list `li` matches the corresponding character in the string "The quick brown fox jumps over the lazy dog". If all characters match, it returns True, otherwise it returns False.

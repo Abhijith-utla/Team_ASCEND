@@ -1,0 +1,27 @@
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+def sol(li: List[int]):
+    if len(li) != 1000:
+        raise ValueError("List must be of length 1000")
+    
+    if not all(isinstance(i, int) for i in li):
+        raise ValueError("All elements in the list must be integers")
+    
+    if not all(0 <= i <= 9 for i in li):
+        raise ValueError("All elements in the list must be in the range 0-9")
+    
+    if not all(i + j == 9 for i, j in zip([4] + li, li)):
+        raise ValueError("The elements in the list must satisfy the condition i + j = 9 for all i, j in zip([4] + li, li)")
+    
+    return True
+
+# Test the function
+li = [4] + [1]*987
+assert sat(li)
+
+li = [4] + [5]*986
+assert not sat(li)
+
+if __name__ == "__main__":
+    assert sat(sol())

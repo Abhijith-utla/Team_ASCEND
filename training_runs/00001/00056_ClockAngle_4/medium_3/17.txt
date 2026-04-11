@@ -1,0 +1,10 @@
+def sol():
+    hour = 0
+    minute = 0
+    while not sat(hour, minute):
+        hour = (hour + 1) % 12
+        minute = (minute + 1) % 60
+    return (hour, minute)
+
+# Test case
+assert sat(*sol())

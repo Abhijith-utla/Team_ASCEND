@@ -1,0 +1,5 @@
+def sol():
+    answer = 1100000000000000
+    return answer
+
+# Checker will run: assert sat(sol())

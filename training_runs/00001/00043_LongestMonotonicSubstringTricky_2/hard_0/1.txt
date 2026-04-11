@@ -1,0 +1,20 @@
+The function `sat` is already defined by the user. It checks if all elements in the list `x` are in ascending order and the next element is greater than the previous one. The function is defined as follows:
+
+```python
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] for i in range(length - 1))
+```
+
+The function `sat` takes three arguments:
+
+- `x`: a list of integers.
+- `length`: the length of the list.
+- `s`: a string of characters.
+
+The function `sat` returns `True` if all elements in the list `x` are in ascending order and the next element is greater than the previous one, and `False` otherwise.
+
+The function `sat` is defined as a helper function for the `check` function, which is used to check if a solution is valid.
+
+The function `check` is defined as follows:
+
+```python

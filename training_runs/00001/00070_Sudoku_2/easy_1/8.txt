@@ -1,0 +1,4 @@
+def sol():
+    return ['_' * 9 for _ in range(9)]
+
+print(sol())

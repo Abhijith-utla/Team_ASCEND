@@ -1,0 +1,7 @@
+def sol():
+    return 2
+
+# Test case 1
+assert sat(1, 4)
+# Test case 2
+assert not sat(3, 3)

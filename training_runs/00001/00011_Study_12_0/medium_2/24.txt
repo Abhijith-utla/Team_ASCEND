@@ -1,0 +1,15 @@
+Here is a correct Python function for the given problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [4]
+    li += [0] * 999
+    return li
+
+# Check the solution
+assert sat(sol())
+```
+
+This function creates a list with 1000 elements starting with 4. The final element is 0, which is the pattern of a list of size 1000.

@@ -1,0 +1,5 @@
+def sol():
+    return "_"*16
+
+# run the assert statement
+assert sat(sol())

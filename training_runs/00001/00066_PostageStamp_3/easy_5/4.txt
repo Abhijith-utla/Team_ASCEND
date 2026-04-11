@@ -1,0 +1,9 @@
+def sol():
+    return {
+        'stamps': [14, 14, 81],
+        'target': 19,
+        'unique_stamps': set([14, 14, 81]),
+        'is_valid': len([14, 14, 81]) <= 2 and sum([14, 14, 81]) == 19
+    }
+
+print(sol())

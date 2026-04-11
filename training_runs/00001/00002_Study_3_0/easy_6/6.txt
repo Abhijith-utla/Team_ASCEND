@@ -1,0 +1,10 @@
+Here is the Python code that implements the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+```
+
+This function first checks if the list `li` is sorted and contains the numbers from 0 to 998, and then checks if all the elements in `li` are equal to their corresponding indices. If both conditions are met, it returns `True`; otherwise, it returns `False`.

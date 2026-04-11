@@ -1,0 +1,28 @@
+The function `sat` is defined in the question with the correct pattern. It checks if all elements in the list are less than the sum of all elements before it. Here is the Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li[i] < sum(li[:i+1]) for i in range(len(li)))
+```
+
+And the function `sol` is defined in the pattern as:
+
+```python
+def sol():
+    return sat
+```
+
+To use the `sol` function, you can simply call it:
+
+```python
+answer = sol()
+```
+
+And then verify the answer using a test:
+
+```python
+assert answer([5, 3, 2, 1, 4]) is True
+assert answer([5, 3, 3, 1, 4]) is False
+```

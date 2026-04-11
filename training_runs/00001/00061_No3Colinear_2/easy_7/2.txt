@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+assert sat([])
+assert not sat([[0, 0]])
+assert not sat([[0, 1]])
+assert sat([[0, 0]], 2, 1)
+assert not sat([[0, 0]], 2, 2)
+assert sat([[0, 0]], side=2, num_points=1)
+assert not sat([[0, 0]], side=1, num_points=2)
+assert sat([[0, 0], [1, 1]], side=2, num_points=2)
+assert not sat([[0, 0], [1, 2]], side=2, num_points=2)
+assert sat([[0, 0], [1, 1]], side=2, num_points=1)
+assert not sat([[0, 0], [1, 2]], side=2, num_points=3)
+assert sat([[0, 0], [1, 1]], side=1, num_points=1)
+assert not

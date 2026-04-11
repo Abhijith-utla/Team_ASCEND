@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(535) if (ord(s[i]) < 97 or ord(s[i]) > 122)]

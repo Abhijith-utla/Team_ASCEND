@@ -1,0 +1,4 @@
+def sol():
+    li = [17, 17, 17, 3, 3, 3]
+    assert sat(li)
+    return li

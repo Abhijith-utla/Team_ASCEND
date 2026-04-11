@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# To validate the solution, we run the function and assert it returns an empty list.
+assert sat(sol())

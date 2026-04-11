@@ -1,0 +1,23 @@
+Here is the correct code for the `sol` function:
+
+```python
+def sol():
+    return 8 ** 2888
+```
+
+The `sol` function simply returns the number 8 raised to the power of 2888, which is 8 to the power of 2888. The checker will then see if this number contains the string `'888'` exactly three times and returns the result.
+
+The checker will run:
+
+```python
+assert sat(str(sol()))
+```
+
+Here is the `sat` function:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This function checks if the string `s` contains the string `'888'` three times in the number 8 raised to the power of 2888. The checker will call this function with the `sol` function's result as the argument. If the function returns `True`, then the checker will pass the assertion; if it returns `False`, the checker

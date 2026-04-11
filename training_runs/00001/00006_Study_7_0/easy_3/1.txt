@@ -1,0 +1,5 @@
+def sol():
+    return "888"
+
+# This line checks the correctness of the solution.
+assert sat(sol())

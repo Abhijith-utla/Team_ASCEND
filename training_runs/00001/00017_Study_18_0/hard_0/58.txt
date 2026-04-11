@@ -1,0 +1,4 @@
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+
+print(sat(sol()))

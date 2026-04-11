@@ -1,0 +1,15 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return <answer>
+```
+
+Incorrect pattern:
+
+```python
+def sol(x):
+    ...
+```
+
+This pattern is not used in the problem because the problem is asking for a solution that works for any integer input, not just the pattern in the question.

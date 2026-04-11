@@ -1,0 +1,13 @@
+Below are the three simpler variants of the original puzzle:
+
+VARIANT1:
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 3 and s.count("1") == 1 and eval(s) == 99
+
+VARIANT2:
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 4 and s.count("1") == 1 and eval(s) == 197
+
+VARIANT3:
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 5 and s.count("1") == 1 and eval(s) == 295

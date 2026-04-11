@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# In the given problem, there is no way to get any stamps as the stamps are limited to the options 3, 3, 3, 3, 3. 
+# So, returning an empty list will satisfy the condition of having no stamps.

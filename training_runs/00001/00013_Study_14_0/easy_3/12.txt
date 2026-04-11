@@ -1,0 +1,9 @@
+Here is the correct pattern for the Python solution:
+
+```python
+def sat(li: List[int]) -> bool:
+    s = sum(li)
+    return all(li[i] < s - sum(li[:i]) for i in range(len(li)))
+```
+
+This solution works by summing up all the elements in the list, then checking if each element is less than the total sum minus the sum of all previous elements. The sum of all previous elements is calculated using the previous sum minus the current element. The all function is used to check if all elements in the list are True.

@@ -1,0 +1,21 @@
+The Python function `sat` is defined as follows:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+
+This function takes a string `s` as input and returns a boolean value. It checks the number of 'o's in the string, which should be 1000. It also checks for the number of 'oo's in the string, which should be 100. Finally, it checks the number of 'ho's in the string, which should be 801.
+
+The correct pattern for the function is:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+
+The incorrect pattern is:
+
+```python
+def sat(s):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho')

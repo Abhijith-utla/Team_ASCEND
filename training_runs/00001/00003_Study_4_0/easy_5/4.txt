@@ -1,0 +1,19 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+This function takes a list of 10 integers as input and checks if the following conditions are satisfied:
+
+1. The length of the list is 10.
+2. The count of the value at the fourth position in the list is 2.
+
+If the conditions are not met, the function returns False. Otherwise, it returns True. This function is essentially checking if there are two identical values at the fourth position in a list of 10 integers.

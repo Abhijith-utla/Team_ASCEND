@@ -1,0 +1,5 @@
+def sol():
+    return {
+        "result": None,
+        "nums": [3, 7, 3, 7]
+    }

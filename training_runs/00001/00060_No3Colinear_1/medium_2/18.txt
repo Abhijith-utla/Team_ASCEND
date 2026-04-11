@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is to show that the function does not return anything
+assert sat([])
+!

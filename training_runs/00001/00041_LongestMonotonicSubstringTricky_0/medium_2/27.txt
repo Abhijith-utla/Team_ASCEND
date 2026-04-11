@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# Checker function
+def checker(sol_val):
+    assert sat(sol_val)
+
+# Run checker
+checker(sol())

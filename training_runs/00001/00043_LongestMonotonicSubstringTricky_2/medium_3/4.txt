@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+print(sat([], 1, "O!A{SeKv"))
+print(sat([0], 1, "O!A{SeKv"))
+print(sat([0, 1], 2, "O!A{SeKv"))
+print(sat([1, 0], 2, "O!A{SeKv"))
+print(sat([0, 2], 2, "O!A{SeKv"))
+print(sat([2, 0], 2, "O!A{SeKv"))
+print(sat([0, 1, 2], 3, "O!A{SeKv"))
+print(sat([1, 0, 2], 3, "O!A{SeKv"))
+print(sat([0, 2, 1], 3, "O!A{SeKv"))
+print(sat([2, 0, 1], 3, "O!A{SeKv"))
+print(sat([0, 2, 1, 3, 4, 5,

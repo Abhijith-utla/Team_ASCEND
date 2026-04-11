@@ -1,0 +1,21 @@
+Here are three variations on the original Python function:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(i not in li for i in range(1000)) and abs(min(li)-max(li)) < 10
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li) and len(set(li)) == 10
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li if i != j) and len(li) == 100
+```
+
+In all three versions, the original function checks if all elements in the list are unique and different, with at least a difference of 10 between the minimum and maximum elements. The first version removes the in-list check, meaning that all elements must be unique. The second version modifies the range check to exclude 0, as 0 is not a valid value for an integer. The third version adds a condition to the all function to ensure the list has exactly 100 elements.

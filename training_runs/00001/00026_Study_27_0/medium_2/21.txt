@@ -1,0 +1,13 @@
+Here is a solution in Python:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4]
+
+# Test
+assert sat(sol())
+```
+
+This solution assumes that the function `sat` checks whether the list `li` satisfies the condition that the element at index `li[0]` is equal to the element at index `li[1]` and the element at index `li[2]` is not equal to the element at index `li[3]`. The list `[1, 2, 3, 4]` satisfies this condition because `1` is equal to `2` and `3` is not equal to `4`.

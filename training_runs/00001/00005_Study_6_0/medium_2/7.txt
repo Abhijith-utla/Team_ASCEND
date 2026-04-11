@@ -1,0 +1,23 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    for i in range(100):
+        if i % 5 == 0:
+            return i
+```
+
+This program will return the first number that is divisible by 5 and less than 100. If there is no such number, it will return None.
+
+The checker will run:
+
+```python
+def test_sat():
+    assert sat(30) == 0
+    assert sat(35) == 5
+    assert sat(90) == 90
+    assert sat(95) == 95
+    assert not sat(20)
+    assert not sat(60)
+    assert not sat(105)
+```

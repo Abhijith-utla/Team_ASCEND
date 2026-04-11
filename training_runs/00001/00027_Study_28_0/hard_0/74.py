@@ -1,0 +1,24 @@
+def sat(li: List[int]):
+    return all(i in range(1000) and abs(i - j) >= 10 for i in li for j in li if i != j) and len(set(li)) == 100
+
+def sol():
+    return []
+
+# Checker code
+def test_sat():
+    assert sat([])
+    assert sat([1] * 999)
+    assert not sat([1] * 1000)
+    assert sat([999] * 100)
+    assert not sat([0] * 1000)
+    assert sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    assert not sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 11])
+    assert sat([i for i in range(1000)])
+    assert not sat([i for i in range(999, 1001)])
+    assert not sat([i for i in range(1000, 1001)])
+
+# Run the test
+test_sat()
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,27 @@
+Here is the solution to the given problem. The function `sat` checks whether the list `li` meets the provided conditions. The conditions are:
+
+1. The list `li` must contain exactly 10 elements.
+2. The element at the third position (index 2) should appear twice in the list.
+3. The element at the third position (index 2) should not appear at the third position in the list.
+4. The element at the third position (index 2) should only appear once in the list.
+
+Here is the Python code for the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+You can use this function to check whether a list satisfies the conditions in the problem. For example:
+
+```

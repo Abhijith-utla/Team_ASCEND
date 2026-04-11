@@ -1,0 +1,10 @@
+Here's a solution for this problem. This solution assumes that the list is an array of integers, and that it starts with a zero. It also assumes that the list is not empty.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return li[0] == 0 and set(li) == {0}
+```
+
+This function checks if the first element of the list is zero and if the list contains only zeroes. If these conditions are met, it returns True. Otherwise, it returns False. The set function is used to check that all elements in the list are the same (which is the case here because the list only contains zeroes).

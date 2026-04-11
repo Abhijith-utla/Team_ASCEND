@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Test cases
+assert sat(coords=[(0, 0)]) == False
+assert sat(coords=[(5, 5)]) == False
+assert sat(coords=[(0, 0), (5, 5)]) == False
+assert sat(coords=[(0, 0), (2, 2)]) == True
+assert sat(coords=[(0, 0), (5, 5), (2, 2)]) == True
+assert sat(coords=[(0, 0), (5, 5), (7, 7)]) == False

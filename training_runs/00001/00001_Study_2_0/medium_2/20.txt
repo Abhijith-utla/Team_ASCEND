@@ -1,0 +1,16 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return "yyyooooyyyyy"
+```
+
+The function `sol` returns a string of 100 occurrences of the character 'y' and 101 occurrences of the character 'yo'. The remaining characters 'yy' are missing 8 times.
+
+You can use the `assert` statement to verify the solution. For example:
+
+```python
+assert sat(sol())
+```
+
+If the function `sol` returns the expected string, the `assert` statement will pass without raising an `AssertionError`. If it does not, then the function is not working correctly.

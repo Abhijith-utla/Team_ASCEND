@@ -1,0 +1,11 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts with a `i` of 1000 and increases `i` by 1 in each iteration until `sat(i)` returns `True`. The function then returns `i`. This is because the function `sat` checks if the length of the string representation of `i + 1000` is greater than the length of the string representation of `i + 1001`. As long as this condition is not met, `i` is increased by 1 and the function checks again. The first `i` for which `sat(i)` returns `True` is returned.

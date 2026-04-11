@@ -1,0 +1,6 @@
+def sol(value=None):
+    idx1 = 1234
+    idx2 = 1235
+    if idx1 >= len(ls) or idx2 >= len(ls) or value is None:
+        return False
+    return ls[idx1] in ls[idx2] and ls[idx1] != value

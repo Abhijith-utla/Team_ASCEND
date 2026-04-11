@@ -1,0 +1,19 @@
+Sure, here is a Python function named `sol` that satisfies the given conditions.
+
+```python
+def sol():
+    li = [i for i in range(999)]
+    return sorted(li)
+
+# This is the main function to test our solution
+def main():
+    assert sat(sol())
+
+# Run the main function
+if __name__ == "__main__":
+    main()
+```
+
+In this code, the `sol` function creates a list `li` with elements from 0 to 998. It then returns this list sorted in ascending order. The `sat` function checks if the returned list is sorted and all elements in the list are distinct.
+
+The `main` function is used to test the `sat` function. It asserts that the sorted list is the same as the list `li` with elements from 0 to 998. If the list is correctly sorted, no assertion error will be raised.

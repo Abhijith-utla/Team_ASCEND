@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# This function will be used by the checker
+def sat(ls, idx1=1234, idx2=1235, value=ls[idx1]):
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+
+# This is a simple test case
+test_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+assert sat(test_list, 0, 5, 2)  # The second element is not 2
+assert not sat(test_list, 0, 5, 1)  # The second element is 1

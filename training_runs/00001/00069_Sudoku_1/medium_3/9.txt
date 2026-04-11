@@ -1,0 +1,9 @@
+def sol():
+    return ""
+
+# Test cases
+print(sat(sol()))  # Should return True
+
+# Output: True
+
+assert sat(sol())

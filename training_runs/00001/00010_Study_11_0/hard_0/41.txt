@@ -1,0 +1,4 @@
+def sol():
+    return min(str(i) for i in range(10)) == max(str(i) for i in range(10)) == str(len(range(10)))
+
+assert sat(sol())

@@ -1,0 +1,32 @@
+def sol():
+    return [[0, 7], [4, 5, 6], [1, 2, 3, 8]]
+
+# Testing the solution
+moves = [[0, 1], [1, 2], [2, 3]]
+assert sat(moves)
+
+moves = [[0, 0]]
+assert not sat(moves)
+
+moves = [[0, 1], [2, 1], [1, 0]]
+assert sat(moves)
+
+moves = [[2, 0]]
+assert not sat(moves)
+
+moves = [[0, 1], [1, 2], [1, 0]]
+assert sat(moves)
+
+moves = [[2, 0], [1, 1]]
+assert not sat(moves)
+
+moves = [[1, 0]]
+assert sat(moves)
+
+moves = [[0, 0]]
+assert sat(moves)
+
+moves = [[0, 1], [0, 0]]
+assert not sat(moves)
+
+m

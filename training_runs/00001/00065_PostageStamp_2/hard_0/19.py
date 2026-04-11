@@ -1,0 +1,29 @@
+def sat(stamps: List[int], target=3, max_stamps=3, options=[18, 1, 43, 81]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+
+def sol():
+    return []
+
+assert sat([])
+assert not sat([1])
+assert not sat([1, 1])
+assert not sat([1, 1, 1])
+assert sat([18])
+assert not sat([1, 18])
+assert sat([1, 1, 18])
+assert not sat([1, 1, 1, 18])
+assert not sat([18, 1])
+assert sat([18, 1, 1])
+assert not sat([18, 1, 1, 1])
+assert not sat([1, 18, 1, 1])
+assert not sat([1, 1, 18, 1])
+assert not sat([1, 1, 1, 18])
+assert not sat([1, 1, 1, 1, 1])
+assert not sat([1, 1, 1, 1, 1, 1])
+
+def sol(stamps: List[int], target=3, max_stamps=3, options=[18, 1
+
+if __name__ == "__main__":
+    assert sat(sol())

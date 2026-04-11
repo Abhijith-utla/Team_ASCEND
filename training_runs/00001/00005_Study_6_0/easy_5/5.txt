@@ -1,0 +1,10 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    return {"answer": 12}
+
+assert sat(sol()["answer"])
+```
+
+The solution function returns a dictionary with a key "answer" and its value is 12. The assert statement checks if the value of the "answer" key is less than 100. If it is, the assert statement will pass, if not, it will raise an AssertionError.

@@ -1,0 +1,6 @@
+def sol():
+    return sat
+
+# Test cases
+print(sol()("abc", "abcd", "abcde"))  # Expected: True
+print(sol()("a", "aa", "aaa"))  # Expected: False

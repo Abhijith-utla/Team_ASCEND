@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == 1 and li[0] == 0
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]) -> bool:
+    return all(i != 0 for i in li)
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]) -> bool:
+    return len(li) == 1 and li[0] != 0
+```

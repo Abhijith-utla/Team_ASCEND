@@ -1,0 +1,6 @@
+def sol():
+    return 1
+
+# Testing the function
+assert sat(0)
+!

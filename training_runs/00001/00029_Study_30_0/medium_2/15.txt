@@ -1,0 +1,38 @@
+def sol():
+    return []
+
+Incorrect pattern:
+def sol(li: List[int]):
+    return []
+
+Incorrect pattern:
+def sol(li: List[int]):
+    return []
+
+Correct pattern:
+def sol():
+    return []
+
+Incorrect pattern:
+def sol(li: List[int]):
+    return []
+
+Correct pattern:
+def sol():
+    return []
+
+Incorrect pattern:
+def sol(li: List[int]):
+    return []
+
+Correct pattern:
+def sol():
+    return []
+
+Incorrect pattern:
+def sol(li: List[int]):
+    return []
+
+Correct pattern:
+def sol():
+    return []

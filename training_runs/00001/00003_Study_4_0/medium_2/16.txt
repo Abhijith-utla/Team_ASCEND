@@ -1,0 +1,4 @@
+def sol():
+    li = [0] * 10
+    li[3] = li[3] + 1
+    return li

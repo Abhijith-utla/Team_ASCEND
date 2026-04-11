@@ -1,0 +1,19 @@
+The Python function `sat` is defined to check if a string `s` contains exactly 1000 'o's and 0 'oo's. The string should only contain 'o's and 'oo's, and not any other characters.
+
+The correct Python code for `sol` function is:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+This function constructs and returns a string of 1000 'oo's.
+
+The final checker will run:
+
+```python
+assert sat(sol())
+```
+
+The assert statement is used to test a condition and if the condition is false, it will raise an AssertionError. Here, the function `sol` should return a string of exactly 1000 'oo's.

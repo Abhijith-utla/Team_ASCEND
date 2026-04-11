@@ -1,0 +1,16 @@
+Sure, here's the correct pattern for the function `sol`:
+
+```python
+def sol():
+    from random import randint
+    li = [randint(1, 10) for _ in range(10)]
+    while not sat(li):
+        li[randint(0, 9)] = randint(1, 10)
+    return li
+```
+
+In this code, we first generate a list of 10 random integers between 1 and 10. Then, we continually swap a random element with another random integer until we have a list that satisfies the condition `sat(li)`.
+
+The function `sat` checks if all elements in the list are different and the list contains exactly three unique elements. If the list doesn't satisfy the condition, it will keep trying to swap elements until it does. This is a random process because it doesn't depend on the input.
+
+This function will always eventually return a solution, as it tries to make the list satisfy the `sat` function, but it's not guaranteed to find a solution in every possible run.

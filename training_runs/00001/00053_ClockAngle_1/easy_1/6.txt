@@ -1,0 +1,5 @@
+def sol():
+    return {"hands": [h, m]}
+
+# Call the function to verify the solution
+assert sat(sol()["hands"])

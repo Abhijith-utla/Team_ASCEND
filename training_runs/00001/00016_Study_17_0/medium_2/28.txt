@@ -1,0 +1,22 @@
+The function `sat` takes an integer as input and checks if the length of the string representation of the integer plus 1000 and plus 1001 is the same. If they are, it returns `True`, otherwise it returns `False`.
+
+Here is the Python code for `sol` function:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts with `i` equal to 1000 and increases `i` by 1 in each iteration of the loop until `sat(i)` returns `True`. At that point, it returns `i`.
+
+The `sat` function checks if the length of the string representation of `i + 1000` and `i + 1001` is the same. If they are not the same, it means that `i + 1000` and `i + 1001` do not represent the same number.
+
+The final checker will run:
+
+```python
+def sol():
+    i = 1000
+    while not

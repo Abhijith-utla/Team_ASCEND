@@ -1,0 +1,5 @@
+def sol():
+    return 8 * 3 - 12 / 1 + 12 - 1
+
+# Checker
+assert sat(str(sol()))

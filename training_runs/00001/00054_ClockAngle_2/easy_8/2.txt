@@ -1,0 +1,11 @@
+def sol():
+    h, m = 0, 0
+    while True:
+        if sat(h, m):
+            return h, m
+        m += 1
+        if m == 60:
+            h += 1
+            m = 0
+        if h == 12:
+            h = 0

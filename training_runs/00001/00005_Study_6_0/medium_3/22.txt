@@ -1,0 +1,24 @@
+The function `sat` checks if the input `i` is less than or equal to 10^10 and if it's even. Let's write the function `sol` that returns an answer object.
+
+```python
+def sol():
+    class Answer:
+        def __init__(self, valid, output):
+            self.valid = valid
+            self.output = output
+
+    return Answer(sat(1), 2)
+
+def sat(i: int):
+    return i <= 10 ** 10 and i % 2 == 0
+```
+
+The `sol` function constructs an `Answer` object. The `Answer` object contains a boolean property `valid` that indicates whether the input to the `sat` function is valid, and an integer property `output` that represents the output of the `sat` function.
+
+The `sat` function is defined as follows: it checks if `i` is less than or equal to 10^10 and if `i` is even.
+
+You can check the output of the function using the following code:
+
+```python
+answer = sol()
+print(answer

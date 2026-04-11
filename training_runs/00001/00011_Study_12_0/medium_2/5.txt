@@ -1,0 +1,18 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    li: List[int] = [4] + [0] * 999
+    return li
+
+# Test
+print(sat(sol()))  # This should print: [4, 0, 0, 0, 0, ..., 0, 0, 0]
+```
+
+The function `sol` creates a list of length 1000 and initializes it with the value 4 and all zeros except the first one. The function `sat` checks whether the list satisfies the condition `all(i + j == 2 for i, j in zip([4] + li, li))` and `len(li) == 1000`. 
+
+This solution assumes that the list should be filled with zeros except for the first element, and that the sum of all elements should be 2. It's a correct pattern, but it's not very efficient for large lists because it creates a new list every time the function is called. 
+
+The correct solution is to modify the existing list, not creating a new list

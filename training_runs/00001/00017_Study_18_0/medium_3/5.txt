@@ -1,0 +1,12 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+This function `sat` takes a list of strings `ls` as input and checks if the length of the list is equal to the length of the set of the list (which removes duplicates from the list). If the lengths are equal, this means that the list has no duplicates, and the function returns `True`. Otherwise, it returns `False`. 
+
+The `set` function is used to remove duplicates from the list, and the length of the list and the set of the list are then compared to see if they are equal. If they are equal, this means the list has no duplicates, and the function returns `True`. Otherwise, it returns `False`.

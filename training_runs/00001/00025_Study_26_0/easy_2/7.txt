@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The function sat is not used in the solution, it is provided as a part of the problem statement.

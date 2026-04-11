@@ -1,0 +1,18 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    def is_solution(li):
+        for i in range(1, len(li) - 1):
+            if li[i] not in {li[i-1] - 1, li[i] + 1, 3 * li[i]}:
+                return False
+        return True
+
+    return is_solution(li)
+```
+
+This function uses a helper function `is_solution` to check if the list satisfies the condition. The helper function iterates through the list and checks if each element is in the set of elements {i - 1, i + 1, 3 * i} for each index `i` in the range 1 to `len(li) - 1`. If any element in the list does not satisfy this condition, the helper function returns `False`, otherwise it returns `True`.
+
+The main function `sat` checks if the list `li` is a solution to the problem by calling `is_solution`. If `li` is

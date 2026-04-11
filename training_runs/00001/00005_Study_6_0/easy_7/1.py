@@ -1,0 +1,13 @@
+def sat(n: int):
+    return n <= 10 ** 10
+
+def sol():
+    return 1234567891011121314151617181920
+
+# The function sat is already defined by the user. It checks if the given number is less than or equal to 10^10.
+# If it is, the function returns 1234567891011121314151617181920. Otherwise, it returns None.
+
+# The checker will run: assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

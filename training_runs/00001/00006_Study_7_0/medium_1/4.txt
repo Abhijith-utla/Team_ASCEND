@@ -1,0 +1,2 @@
+def sol():
+    return str(int(8 ** 2888))

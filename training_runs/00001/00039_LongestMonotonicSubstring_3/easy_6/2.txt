@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+print(sat([], 0, ""))
+!python -m doctest -v < filename

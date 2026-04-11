@@ -1,0 +1,13 @@
+The correct pattern is:
+
+```python
+def sol():
+    return [<answer>]
+```
+
+Incorrect pattern:
+
+```python
+def sol(x):
+    ...
+```

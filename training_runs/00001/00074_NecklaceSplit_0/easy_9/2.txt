@@ -1,0 +1,13 @@
+def sol():
+    return {}
+
+# Test case
+print(sat(0)) # Expected output: False
+print(sat(1)) # Expected output: True
+print(sat(2)) # Expected output: False
+print(sat(3)) # Expected output: False
+print(sat(4)) # Expected output: True
+print(sat(5)) # Expected output: False
+print(sat(6)) # Expected output: True
+print(sat(7)) # Expected output: False
+print(sat(8)) # Expected output: False

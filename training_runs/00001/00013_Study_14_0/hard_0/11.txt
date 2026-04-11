@@ -1,0 +1,12 @@
+Sure, here is the correct pattern for the given problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+In the provided code, `li` is a list of integers. The function `sat` checks if all the sums of the elements of `li` up to the `i`-th index are equal to the `i`-th index value. The `range(20)` generates a sequence of numbers from 0 to 19, which are used to index the elements of `li`. The `all` function ensures that all elements in the list satisfy the condition. If all elements satisfy the condition, `all` returns `True`; otherwise, it returns `False`.
+
+The function `sat` is defined with the type hints `List[int]` for the input and `bool` for the output.

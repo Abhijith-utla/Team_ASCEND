@@ -1,0 +1,14 @@
+The given function `sat(x: float)` is incorrect because it checks if the string representation of `x - 3.1416` starts with "123.456" instead of "123.456". The correct function should be:
+
+```python
+def sat(x: float):
+    return str(x - 3.1416) == "123.456"
+```
+
+This function will return `True` if the string representation of `x - 3.1416` is exactly "123.456", and `False` otherwise. The checker will run:
+
+```python
+assert sat(sol())
+```
+
+And the `sol()` function should return an answer object if everything is correct, otherwise it will raise an assertion error.

@@ -1,0 +1,7 @@
+def sol():
+    answer = []
+    for i in range(10):
+        answer.append(1 if i < 5 else 3)
+    return answer
+
+print(sol())

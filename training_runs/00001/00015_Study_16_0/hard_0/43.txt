@@ -1,0 +1,6 @@
+```python
+def sol():
+    return 4.5 + len("") == 4.5
+```
+
+assert sat(sol())

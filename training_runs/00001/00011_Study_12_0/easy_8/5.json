@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:15:32.609319+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here is the Python code to construct and return a single answer value. ```python def sol(): return [2] + [4]*999 ``` ...",
+  "difficulty": "easy",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

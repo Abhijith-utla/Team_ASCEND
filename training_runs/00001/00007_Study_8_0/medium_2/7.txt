@@ -1,0 +1,4 @@
+def sol():
+    idx1 = 1234
+    idx2 = 1235
+    return idx1 in idx2 and idx1 != idx2

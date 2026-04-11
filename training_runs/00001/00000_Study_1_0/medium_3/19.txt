@@ -1,0 +1,2 @@
+def sol():
+    return 'oo' not in 'oooooooooooooooooooooooo' and 'o' in 'oooooooooooooooooooooooo' and 1000 == sum('oooooooooooooooooooooooo'.count('o'))

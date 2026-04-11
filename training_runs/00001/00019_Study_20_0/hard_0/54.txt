@@ -1,0 +1,7 @@
+def sol():
+    return {
+        'input': [],
+        'output': None,
+        'error': None,
+        'description': 'The function sol should return a single answer value.'
+    }

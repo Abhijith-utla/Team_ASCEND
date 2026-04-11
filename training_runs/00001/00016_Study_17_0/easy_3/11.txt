@@ -1,0 +1,7 @@
+def sol():
+    i = 1
+    while not sat(i):
+        i += 1
+    return i
+
+print(sol())

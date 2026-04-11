@@ -1,0 +1,17 @@
+def sol():
+    return [0]
+
+# The function sat checks if the given list contains only one zero.
+# In Python, the set data structure does not allow duplicates.
+# Hence, converting the list to a set will remove any duplicates.
+# If the set is not equal to {0}, it means the list contains more than one zero, so we return None.
+# If the set is equal to {0}, we return the list [0], which is the only zero.
+
+def sat(li: List[int]):
+    return set(li) == {0}
+
+# The function sol constructs and returns a single answer value.
+# In the case of [0], the answer is [0].
+
+# The assertion checks that sol returns the correct answer.
+assert sat(sol())

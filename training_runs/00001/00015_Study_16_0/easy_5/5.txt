@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+This solution is very straightforward. It just returns the string '4.5abc'.

@@ -1,0 +1,5 @@
+def sol():
+    answer = [2, 3, 1, 0, 5, 7, 6, 8, 4, 9, 10, 11, 12]
+    return answer
+
+print(sat(answer))  # Should return True

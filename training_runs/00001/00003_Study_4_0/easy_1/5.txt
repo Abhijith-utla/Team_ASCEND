@@ -1,0 +1,19 @@
+The function `sat` is already defined by the user and it checks if the list has exactly 10 elements. If not, it returns `False`, otherwise it returns `True`. 
+
+Here's the Python code for it:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    return True
+```
+
+You can check if the function works as expected by using this test:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # Should print: True
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9]))  # Should print: False
+```

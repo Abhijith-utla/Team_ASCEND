@@ -1,0 +1,24 @@
+def sat(li: List[int]):
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+def sol():
+    def sat(li: List[int]):
+        return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+    assert sat([1, 2, 3, 4, 5])
+    assert not sat([1, 2, 3, 4, 5, 6])
+    assert not sat([5, 3, 2, 1, 1])
+    assert sat([1, 1, 1, 1, 1])
+    assert not sat([2, 2, 2, 2, 2])
+    assert sat([1, 1, 1, 1, 2])
+    assert not sat([1, 1, 1, 1])
+    assert not sat([])
+    assert sat([1])
+    assert not sat([2, 3, 4])
+    assert sat([1, 2, 3, 5, 6])
+    return True
+
+print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,13 @@
+def sol():
+    return hour, minute
+
+hour, minute = 0, 0  # replace with correct values
+while not sat(hour, minute):
+    hour += 1
+    if hour == 13:  # 12:00 PM
+        hour = 0
+    if hour == 12 and minute == 0:  # 12:00 AM
+        minute = 0
+        break
+
+print(f"{hour}:{minute:02d}")

@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# We use the random.choice function from the random module to randomly choose the colors.
+import random
+colors = [random.choice([0, 1]) for _ in range(10000)]
+
+assert sat(colors)

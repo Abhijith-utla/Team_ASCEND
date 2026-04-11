@@ -1,0 +1,17 @@
+{
+  "attempt_num": 17,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T13:31:23.302335+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return [], 0 # The solution is trivial and doesn't need to be implemented, # since the problem doesn't req...",
+  "difficulty": "hard",
+  "problem_id": "00054_ClockAngle_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

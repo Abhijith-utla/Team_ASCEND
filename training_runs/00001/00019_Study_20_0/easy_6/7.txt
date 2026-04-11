@@ -1,0 +1,12 @@
+The function 'sat' is already defined by the user and is supposed to return a boolean value depending on whether the given list 'li' fulfills the specified conditions or not. The user provides the function 'sat' with a list of integers and it returns a boolean.
+
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(li[i] != li[i + 1] for i in range(len(li) - 1)) and (li[0] < li[-1]) or (li[0] > li[-1])
+```
+
+This function checks if all elements in the list 'li' are distinct and the first element of the list is less than the last element, or the first element of the list is greater than the last element. If all these conditions are satisfied, the function returns True, otherwise it returns False.

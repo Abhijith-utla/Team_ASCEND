@@ -1,0 +1,17 @@
+Here are three simple Python functions that test the same core concept.
+
+```python
+VARIANT1:
+def sat(s: str):
+    return s.count('x') == 100 and s.count('xo') == 101 and s.count('xx') == 98
+
+VARIANT2:
+def sat(s: str):
+    return s.count('y') == 100 and s.count('yo') == 101 and s.count('yy') == 98
+
+VARIANT3:
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+```
+
+These variants are designed to test different conditions in the string 's'. The function counts the occurrences of 'x', 'y', or 'z' in the string and checks if the counts are close to the expected values. For example, if 'x' occurs 100 times and 'xo' occurs 101 times, and 'xx' occurs 98 times, then the function returns True.

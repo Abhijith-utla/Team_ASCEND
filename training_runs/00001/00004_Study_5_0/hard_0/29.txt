@@ -1,0 +1,9 @@
+def sol():
+    from typing import List
+    from collections import Counter
+    c = Counter(range(10))
+    return all([c[i] == i for i in range(10)])
+
+# Test
+print(sat(list(range(10))))  # True
+print(sat(list(range(9)) + list(range(10))))  # False

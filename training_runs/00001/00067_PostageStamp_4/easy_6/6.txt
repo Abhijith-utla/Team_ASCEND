@@ -1,0 +1,8 @@
+def sol():
+    return [8]
+
+# Testing the solution
+if sat(sol()):
+    print("Passed")
+else:
+    print("Failed")

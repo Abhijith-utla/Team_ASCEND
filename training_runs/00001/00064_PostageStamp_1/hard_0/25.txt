@@ -1,0 +1,18 @@
+def sol():
+    return []
+
+# Example usage:
+# assert sat([])
+# assert sat([37])
+# assert sat([37, 37])
+# assert sat([37, 37, 12])
+# assert sat([37, 37, 12, 87])
+# assert sat([37, 37, 12, 87, 39])
+# assert not sat([37, 37, 12, 87, 39, 39])
+# assert not sat([37, 37, 12, 87, 39])
+# assert not sat([37, 37, 12, 87, 39, 39, 39, 39])
+
+# This test case is for an empty list, which has zero stamps. The sum should be zero, the length should be zero, and the result should be False.
+assert sat([])
+
+# This test case is for a list with a single stamp, which has one stamp and the sum

@@ -1,0 +1,6 @@
+def sol():
+    return [1, 2, 3, 4, 5]
+
+# This is to check the function 'sol'
+if __name__ == "__main__":
+    assert sat(sol())

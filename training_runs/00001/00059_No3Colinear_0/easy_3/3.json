@@ -1,0 +1,16 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:17:30.752997+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=20|checked=20/20|preview=def sol(): return [] print(sat([])) print(sat([(0, 0)])) print(sat([(5, 5)])) print(sat([(3, 4), (5, 6)])) print(sat(...",
+  "difficulty": "easy",
+  "problem_id": "00059_No3Colinear_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

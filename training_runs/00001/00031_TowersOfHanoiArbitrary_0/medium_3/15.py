@@ -1,0 +1,26 @@
+def sat(moves: List[List[int]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 7], [1, 2, 3], [4, 5, 6]]):
+    state = [s[:] for s in source]
+
+    for i, j in moves:
+        state[j].append(state[i].pop())
+        assert sorted(state[j]) == target[j]
+
+    return state == target
+
+def sol():
+    return []
+
+def sat(moves: List[List[int]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 7], [1, 2, 3], [4, 5, 6]]):
+    state = [s[:] for s in source]
+
+    for i, j in moves:
+        state[j].append(state[i].pop())
+        assert sorted(state[j]) == target[j]
+
+    return state == target
+
+# Test the function
+print(sat([[0, 1], [2, 3], [4, 5]], source=[[3, 2, 1, 0], [6, 7, 4, 5], [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]], target=[[1, 0, 3, 2], [5, 4, 3, 2], [9, 8,
+
+if __name__ == "__main__":
+    assert sat(sol())

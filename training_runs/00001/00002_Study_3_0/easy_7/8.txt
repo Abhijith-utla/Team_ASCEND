@@ -1,0 +1,8 @@
+Here is the Python code for the function `sol`.
+
+```python
+def sol():
+    return [i+1 for i in range(998)] + [999]
+```
+
+The function `sol` constructs and returns a list of integers from 1 to 999 inclusive. The integers are arranged in ascending order. The list is constructed by concatenating a list of 998 integers plus one more integer, 999, at the end.

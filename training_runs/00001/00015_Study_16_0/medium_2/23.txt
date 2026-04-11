@@ -1,0 +1,15 @@
+Sure, here is the correct implementation of the function `sol`:
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+And here is the solution checker function:
+
+```python
+def sat(s: str) -> bool:
+    return s == '4.5abc'
+```
+
+You can run the solution checker by calling `assert sat(sol())` in your Python environment. If the function works correctly, it will pass without any output.

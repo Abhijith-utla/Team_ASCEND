@@ -1,0 +1,8 @@
+Here is the Python solution for the problem.
+
+```python
+def sol():
+    return tuple(zip('dee', 'doo', 'dah!'))
+```
+
+This function constructs and returns a single answer value. The answer is a tuple of tuples, where each tuple contains characters from 'dee', 'doo', and 'dah!' respectively, zipped together.

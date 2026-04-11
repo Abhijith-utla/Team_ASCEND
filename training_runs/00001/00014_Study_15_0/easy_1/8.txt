@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x >= 0 and 2 ** x - 1 == (2 ** x) - 1 for x in li)
+```
+
+This function checks if every element in the list is non-negative and is a power of 2. It does this by checking if the binary representation of the number is the same as the number itself minus 1. The `**` operator is used for exponentiation in Python, `2 ** x` computes 2 to the power of x. The `-1` is used to match the requirement that the number is a power of 2.

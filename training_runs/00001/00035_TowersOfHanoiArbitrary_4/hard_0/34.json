@@ -1,0 +1,17 @@
+{
+  "attempt_num": 34,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T11:20:00.027975+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=19|checked=19/19|preview=def sol(): return [] # The solution to the puzzle is to append the last element of the source list to the first posit...",
+  "difficulty": "hard",
+  "problem_id": "00035_TowersOfHanoiArbitrary_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

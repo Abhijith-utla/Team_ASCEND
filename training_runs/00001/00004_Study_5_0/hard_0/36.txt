@@ -1,0 +1,10 @@
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+In this function, we iterate over the range of 10. For each number, we count how many times it appears in the list and compare this count to the number itself. If all comparisons are equal, the function returns True, otherwise it returns False.

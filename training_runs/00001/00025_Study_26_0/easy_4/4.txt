@@ -1,0 +1,14 @@
+Here is the Python solution:
+
+```python
+from typing import List
+
+def sol():
+    return [str(i) for i in range(1, 8)]
+
+# checker
+def sat(ls: List[str]):
+    return "".join(ls) == str(12345678)
+```
+
+This solution creates a list of digits from 1 to 8, which are then joined into a string. The checker function `sat` checks whether the string joined from the list is equal to the string `12345678`.

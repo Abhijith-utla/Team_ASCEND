@@ -1,0 +1,4 @@
+def sol():
+    return 'oo' * 1000
+
+print(sol())

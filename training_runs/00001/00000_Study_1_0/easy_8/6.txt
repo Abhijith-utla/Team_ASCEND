@@ -1,0 +1,7 @@
+def sol():
+    return 'oo' if not sat() else ''
+
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True

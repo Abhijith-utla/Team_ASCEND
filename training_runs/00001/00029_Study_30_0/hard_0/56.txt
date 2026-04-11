@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# You should implement the solution to the problem here.
+# This is just a placeholder for the solution. The actual solution may vary.
+
+def sol():
+    return []

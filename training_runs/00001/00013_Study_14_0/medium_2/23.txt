@@ -1,0 +1,17 @@
+Sure, here is the correct pattern for the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i, x in enumerate(li):
+        if x < sum(li[:i]):
+            return False
+    return True
+```
+
+The `sat` function checks whether all elements in the list are less than the sum of the elements before the current element in the list. If any element is less than its index plus the sum of all elements before it, it returns False, else it returns True.
+
+Please note that this function assumes that the list is not empty, so it uses `li.index(x)` instead of `li.index(x) + sum(li[:li.index(x)])` in the list comprehension to handle the case where `x` appears more than once. If the list can be empty, you should add a check for that.
+
+Also, this function doesn't handle the case when the list contains negative numbers. If you need to handle negative numbers, you should modify the function to return False if any element is less than or equal to 0.

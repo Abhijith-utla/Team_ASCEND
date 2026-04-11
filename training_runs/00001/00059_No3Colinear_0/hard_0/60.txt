@@ -1,0 +1,4 @@
+def sol():
+    return [[(random.randint(0, 10), random.randint(0, 10)) for _ in range(20)] for _ in range(20)]
+
+print(sat(sol()))

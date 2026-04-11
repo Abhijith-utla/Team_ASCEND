@@ -1,0 +1,25 @@
+def sol():
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used(coords, side=10, num_points=20):
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used2(coords, side=10, num_points=20):
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used3(coords, side=10, num_points=20):
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used4(coords, side=10, num_points=20):
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used5(coords, side=10, num_points=20):
+    return []
+
+# This function is not used in the solution, it's just a placeholder.
+def not_used6

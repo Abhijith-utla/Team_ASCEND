@@ -1,0 +1,18 @@
+def sol():
+    return []
+
+# Test cases
+print(sat([])) # True
+print(sat([18])) # True
+print(sat([18, 1])) # True
+print(sat([18, 1, 43])) # True
+print(sat([18, 1, 43, 81])) # True
+print(sat([18, 1, 43, 81, 81])) # False
+print(sat([18, 1, 43, 81, 1])) # False
+print(sat([18, 1, 43])) # True
+print(sat([18, 1, 43, 81, 2])) # False
+print(sat([1, 43, 81])) # True
+print(sat([18, 1])) # False
+print(sat([1, 43, 81, 1])) # False
+print(sat([1, 43, 81, 2])) # False
+print(sat([1, 43, 81

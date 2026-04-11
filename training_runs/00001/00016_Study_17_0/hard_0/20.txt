@@ -1,0 +1,10 @@
+The provided Python function `sat` is incorrect because it is checking if the length of the string representation of `i + 1000` is greater than the length of `i + 1001`. This is not the correct condition to check whether `i + 1000` is greater than `i + 1001`.
+
+The correct condition should be:
+
+```python
+def sat(i: int):
+    return len(str(i + 1001)) > len(str(i + 1000))
+```
+
+Now, the function `sat` checks if the length of the string representation of `i + 1001` is greater than the length of `i + 1000`.

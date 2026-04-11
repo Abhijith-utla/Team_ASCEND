@@ -1,0 +1,12 @@
+def sol():
+    return [8, 0, 0]
+
+print("Test result: ", sat([]))
+print("Test result: ", sat([(6, 3)]))
+print("Test result: ", sat([(6, 0)]))
+print("Test result: ", sat([(5, 2)]))
+print("Test result: ", sat([(2, 3)]))
+print("Test result: ", sat([(5, 5)]))
+print("Test result: ", sat([(2, 5)]))
+print("Test result: ", sat([(3, 3)]))
+print("Test result: ", sat([(4, 4)]))

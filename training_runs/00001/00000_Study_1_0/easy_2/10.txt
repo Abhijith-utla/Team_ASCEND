@@ -1,0 +1,7 @@
+Here is the correct solution to the problem:
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') >= 1000
+```
+This function checks if the string `s` contains the substring 'oo' and the count of 'o' is greater than or equal to 1000.

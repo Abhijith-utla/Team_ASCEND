@@ -1,0 +1,4 @@
+def sol():
+    return {(a, b): 0 for a, b in [(i, j) for i in range(5) for j in range(5)]}
+
+assert sat(sol())

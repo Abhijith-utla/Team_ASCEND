@@ -1,0 +1,5 @@
+def sol():
+    li = [1, 2, 3, 4]
+    while sat(li):
+        li = [li[0], li[2], li[3]]
+    return li

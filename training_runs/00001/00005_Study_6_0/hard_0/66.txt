@@ -1,0 +1,13 @@
+Here is the solution to the problem:
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+
+def sol():
+    return sat(4)
+
+print(sol())
+```
+
+This code defines a function `sat` that checks if an integer `i` satisfies the condition `i % 123 == 4` and `i > 10 ** 10`. The function `sol` returns the result of calling `sat` with the argument `4`. The last line of `sol` prints the result of `sol`.

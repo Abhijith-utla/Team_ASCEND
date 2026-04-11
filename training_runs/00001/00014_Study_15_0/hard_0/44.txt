@@ -1,0 +1,13 @@
+The provided function `sat` checks if the sum of the first `i` elements of the list `li` is equal to `2 ** i - 1` for `i` in the range `[0, 19]`. 
+
+The function `all` checks if all elements in the given iterable (in this case, a list comprehension) are True. If not, it returns False. 
+
+So, if the sum of the first `i` elements is not equal to `2 ** i - 1` for `i` in the range `[0, 19]`, the function `sat` will return False, and the checker will fail. 
+
+If the sum of the first `i` elements is equal to `2 ** i - 1` for `i` in the range `[0, 19]`, the function `sat` will return True, and the checker will pass.
+
+Here's how you can implement `sat` function:
+
+```python
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range

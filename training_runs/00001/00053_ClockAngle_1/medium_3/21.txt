@@ -1,0 +1,23 @@
+def sol():
+    return []
+
+# The answer object is a list, containing the hours and minutes of the clock.
+def sol():
+    return [[h, m] for h in range(24) for m in range(60)]
+
+# The answer object is a list, containing the hours and minutes of the clock.
+def sol():
+    return [i for i in range(12)]
+
+# The answer object is a string, containing the time in the format "HH:MM".
+def sol():
+    from datetime import datetime
+    return datetime.now().strftime("%H:%M")
+
+# The answer object is a list, containing the hours and minutes of the clock.
+def sol():
+    return [[h, m] for h in range(12) for m in range(60)]
+
+# The answer object is an integer, representing the target angle of the clock.
+def sol():
+    return 39

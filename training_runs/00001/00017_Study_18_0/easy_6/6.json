@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:18:34.081150+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): for a in range(-1000, 1000): for b in range(-1000, 1000): if sat(a, b): return a, b return None def sat(a:...",
+  "difficulty": "easy",
+  "problem_id": "00017_Study_18_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

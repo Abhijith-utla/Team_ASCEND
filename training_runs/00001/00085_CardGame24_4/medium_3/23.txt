@@ -1,0 +1,9 @@
+for i in range(4):
+    digits += str(nums[i])
+
+    if i < 3:
+        digits += "+"
+    elif i == 3:
+        digits += "-"
+
+return eval(digits) == 13

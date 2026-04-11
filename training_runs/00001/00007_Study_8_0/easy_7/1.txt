@@ -1,0 +1,18 @@
+Here's how you can define the function `sol` to satisfy the provided conditions:
+
+```python
+def sol():
+    # Your logic here
+    return 42
+```
+
+In this function, you can put your own code to solve the problem. The return value of the function should be an integer or a float. The checker will use this value to verify whether the solution is correct.
+
+For example, if your solution is `42`, then you should write:
+
+```python
+def sol():
+    return 42
+```
+
+This function will return `42` whenever it is called. The checker will assert that `42` is the return value of `sol()`. If `42` is not the return value, then the checker will report that the solution is not correct.

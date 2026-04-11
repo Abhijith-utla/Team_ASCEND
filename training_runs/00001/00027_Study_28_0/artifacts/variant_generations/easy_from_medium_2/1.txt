@@ -1,0 +1,19 @@
+Here are three simple Python functions for testing the core concept in the given puzzle.
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li)
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(i - j == 10 for i in li for j in li)
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li if i != j)
+```

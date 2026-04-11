@@ -1,0 +1,16 @@
+{
+  "attempt_num": 62,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 3)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:33:35.597130+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 3)|parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): length = 19 s = \"1>C>DmJh5\\\"Ju,\\\"Q8zJ_u-O-VfnVTZ?W'm=jq.\\\\l&%m$cU.nqv2\\\\**.o\\\">]FZ5owil>l*kIM wcLd<*UX`\\\"_...",
+  "difficulty": "hard",
+  "problem_id": "00045_LongestMonotonicSubstringTricky_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

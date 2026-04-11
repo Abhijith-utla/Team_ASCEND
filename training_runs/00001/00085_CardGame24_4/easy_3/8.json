@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T18:31:31.701863+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return \"2 + 4 * 6\" def sat(expr: str, nums=[10, 11, 1, 7]): assert len(nums) == 4 and 1 <= min(nums) and m...",
+  "difficulty": "easy",
+  "problem_id": "00085_CardGame24_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

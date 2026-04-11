@@ -1,0 +1,5 @@
+def sol():
+    s = 'mmm' * 3990
+    return s
+
+assert sat(sol())

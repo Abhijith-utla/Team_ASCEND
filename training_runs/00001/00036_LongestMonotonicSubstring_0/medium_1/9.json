@@ -1,0 +1,17 @@
+{
+  "attempt_num": 9,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T11:25:37.089188+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): answer = [1, 0, 3, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13] return answer assert sat(sol())",
+  "difficulty": "medium",
+  "problem_id": "00036_LongestMonotonicSubstring_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

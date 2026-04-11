@@ -1,0 +1,5 @@
+def sol():
+    return eval(str(26))
+
+# Asserts that the function `sol` will return the number 26 when run.
+assert sat(sol())

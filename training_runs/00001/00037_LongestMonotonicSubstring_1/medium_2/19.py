@@ -1,0 +1,17 @@
+def sat(x: Array[int, 2]):
+    return all(x[i][j] <= x[i + 1][j] for i in range(len(x) - 1) for j in range(len(x[0])))
+
+def sol():
+    return [
+        [7, 6, 5],
+        [4, 3, 2],
+        [1, 0, -1]
+    ]
+
+def sat(x: Array[int, 2]):
+    return all(x[i][j] <= x[i + 1][j] for i in range(len(x) - 1) for j in range(len(x[0])))
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

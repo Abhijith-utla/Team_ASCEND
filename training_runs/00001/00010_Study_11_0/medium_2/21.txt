@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# You can test the function with the following code
+# def test():
+#     assert sat(sol())
+#     assert not sat(["aaa", "bbb", "ccc"])
+#     assert not sat(["aa", "bb", "cc"])
+#     print("All tests passed")
+# test()

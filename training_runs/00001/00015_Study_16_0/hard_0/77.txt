@@ -1,0 +1,5 @@
+def sol():
+    return float(len(str(int(4.5))))
+
+# Testing the solution
+assert sat(sol())

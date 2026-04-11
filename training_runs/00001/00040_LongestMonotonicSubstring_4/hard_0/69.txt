@@ -1,0 +1,14 @@
+Here is the Python code for the 'sol' function:
+
+```python
+def sol():
+    return []
+```
+
+You can use the assert statement to test the correctness of your solution:
+
+```python
+assert sat(sol())
+```
+
+This will fail if 'sat' function is not correct, and will not raise any exception. If 'sat' function is correct, then the assert statement will not cause any exception.

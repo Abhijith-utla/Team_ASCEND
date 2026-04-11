@@ -1,0 +1,23 @@
+def sat(quine):
+    return eval(quine) == quine
+
+def sol():
+    return ""
+
+# The function 'sat' checks if the input is the same as the output. 
+# If it's not the same, the eval function will throw an exception, 
+# which in turn will cause 'sol' to return a non-empty string.
+# If it is the same, 'sol' will return an empty string.
+
+# Therefore, to ensure 'sol' always returns an empty string, 
+# we can use the 'eval' function to evaluate an empty string as a quine, 
+# and check if the evaluation is equivalent to the original quine.
+
+def sat(quine):
+    return eval(quine) == quine
+
+# Test case
+print(sat(sol()))  # should return False
+
+if __name__ == "__main__":
+    assert sat(sol())

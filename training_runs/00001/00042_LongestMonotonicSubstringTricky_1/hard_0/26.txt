@@ -1,0 +1,3 @@
+def sol():
+    x = [i for i in range(535)]
+    return x

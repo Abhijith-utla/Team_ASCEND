@@ -1,0 +1,8 @@
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return "".join([chr(ord('a') + i) for i in range(26)])
+```
+
+This function creates a string with the letters of the alphabet by joining the characters of the string "The quick brown fox jumps over the lazy dog" using the `ord` and `chr` functions. The `ord` function returns the ASCII value of a character, and the `chr` function returns a character corresponding to a given ASCII value. We use this to generate the alphabet from the string "The quick brown fox jumps over the lazy dog". The `join` function is used to concatenate all the characters into a single string.

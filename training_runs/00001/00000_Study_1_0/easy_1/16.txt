@@ -1,0 +1,22 @@
+Here is the Python solution for the problem:
+
+```python
+def sat(s: str):
+    return 'oo' in s and s.count('o') == 1000
+
+def sol():
+    return sat('oo' * 1000)
+```
+
+This solution works by first checking if the string 'oo' occurs exactly 1000 times in the string. If it does, then the function `sat` returns True, otherwise it returns False. The function `sol` then calls `sat` with a string of 'oo' repeated 1000 times. This is the output answer object for the checker.
+
+Here is how you can test the solution:
+
+```python
+def test_sol():
+    assert sol() == True
+
+test_sol()
+```
+
+If `sol` returns the correct answer, the test will pass, and the checker will pass the test.

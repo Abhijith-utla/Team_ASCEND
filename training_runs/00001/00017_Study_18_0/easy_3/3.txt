@@ -1,0 +1,17 @@
+The function `sat(ls: List[str]) -> bool` is defined as:
+
+```python
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+```
+
+This function checks whether all elements in the list are unique or not. The set function is used to remove any duplicate elements from the list, then the all function is used to check whether all elements in the list are unique.
+
+Here's how you might use it:
+
+```python
+assert sat(["apple", "banana", "apple"])
+assert not sat(["apple", "banana", "cherry"])
+```
+
+The first assert statement will pass because "apple" is not a duplicate of any other element in the list. The second assert statement will fail because "apple" is a duplicate of "banana", so the function will return False.

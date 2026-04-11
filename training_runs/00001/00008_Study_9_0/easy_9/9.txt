@@ -1,0 +1,22 @@
+The correct pattern for the problem is:
+
+```python
+def sol():
+    return "".join([chr(i) for i in range(97, 123)])
+```
+
+This function returns a string of all lowercase letters a-z in order.
+
+Explanation:
+- The `range(97, 123)` generates a sequence of integers from 97 to 122 (which are the ASCII codes for the lowercase letters a-z).
+- The `[chr(i) for i in range(97, 123)]` generates a list of characters corresponding to the ASCII codes in the range.
+- The `return "".join([chr(i) for i in range(97, 123)])` combines the list into a single string.
+
+The incorrect pattern would be:
+
+```python
+def sol(x):
+    return x == "Python is fun"
+```
+
+This function checks if a given string is equal to "Python is fun", which is incorrect as it is case sensitive. It will return True if the given string is exactly "

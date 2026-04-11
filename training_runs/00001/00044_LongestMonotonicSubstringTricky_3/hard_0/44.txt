@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is a placeholder and should be replaced with actual solution
+assert sat(sol())

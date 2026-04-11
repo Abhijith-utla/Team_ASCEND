@@ -1,0 +1,10 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function takes a list of integers as input and returns True if the list comprehension converts the integers to their corresponding ASCII characters and matches the converted list with the list of the characters in the string "The quick brown fox jumps over the lazy dog". The function also removes all spaces from the string before comparing the two lists. If both lists match, the function returns True; otherwise, it returns False.

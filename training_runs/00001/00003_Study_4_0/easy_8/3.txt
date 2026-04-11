@@ -1,0 +1,21 @@
+Here's the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This function `sat` takes a list of integers as input and returns a boolean. If the list has exactly 10 elements, it checks if the third element (at index 3) appears only once in the list. If both conditions are satisfied, it returns `True`, otherwise it returns `False`.
+
+The checker will run:
+
+```python
+assert sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+assert not sat([1, 2, 3, 4, 5, 6, 7, 8, 9])
+```

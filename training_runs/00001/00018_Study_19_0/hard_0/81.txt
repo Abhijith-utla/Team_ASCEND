@@ -1,0 +1,15 @@
+The given Python function 'sat' checks if a given list 'li' contains all numbers from 0 to 20, inclusive. This is done by iterating over 'li' twice and checking if each number is in the set of numbers in the expression '{i + j for i in li for j in li}'. If any number is missing, the function will return False, otherwise, it will return True.
+
+Here is the Python code to implement this function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return set(range(21)) == {i + j for i in li for j in li}
+
+print(sat([0, 1, 2, 3, 4, 5, 6]))  # Output: True
+print(sat([0, 1, 2, 3, 4, 5, 7]))  # Output: False
+```
+
+In the first call, the function 'sat' is called with a list [0, 1, 2, 3, 4, 5, 6] as argument. This list contains all numbers from 0

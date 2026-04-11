@@ -1,0 +1,17 @@
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+
+def sol():
+    ls = []
+    while True:
+        s = input()
+        if s == 'end':
+            break
+        ls.append(s)
+    return sat(ls)
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+
+if __name__ == "__main__":
+    assert sat(sol())

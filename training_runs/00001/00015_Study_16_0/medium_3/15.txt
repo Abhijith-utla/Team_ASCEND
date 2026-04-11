@@ -1,0 +1,9 @@
+def sol():
+    return 'abc4.5'
+
+# This will make sure the function 'sol' always returns the string 'abc4.5'.
+# The function 'sat' is defined with the parameter 's: str' and the return type 'bool'. 
+# The function 'sat' returns True if 's' equals 'abc4.5', and False otherwise. 
+# The function 'sol' is then guaranteed to always return the string 'abc4.5'.
+
+assert sat(sol())

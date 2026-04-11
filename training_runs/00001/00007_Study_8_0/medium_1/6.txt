@@ -1,0 +1,11 @@
+def sol():
+    import random
+    ls = [random.randint(1, 1000000000) for _ in range(1236)]
+    while not sat(ls):
+        ls = [random.randint(1, 1000000000) for _ in range(1236)]
+    return ls[1234]
+
+def sat(ls):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+
+print(sol())

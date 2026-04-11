@@ -1,0 +1,10 @@
+Sure, here is the code for the solution:
+
+```python
+def sol(ls, idx1=-1, idx2=-1, value=None):
+    if idx1 < 0 or idx2 < 0 or value is None:
+        raise ValueError("Invalid index or value")
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+In this code, we first check if the indices are valid. If not, we raise a ValueError. Then, we check if `ls[idx1]` is in `ls[idx2]` and if `ls[idx1]` is not equal to `value`. If both conditions are true, we return True; otherwise, we return False.

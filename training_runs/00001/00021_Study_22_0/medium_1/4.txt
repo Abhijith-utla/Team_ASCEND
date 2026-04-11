@@ -1,0 +1,5 @@
+def sol():
+    s = 'abcdxyzef'
+    while not sat(s):
+        s = ''.join(chr(ord('a') + i) + chr(ord('a') + i + 1) for i in range(10))
+    return s

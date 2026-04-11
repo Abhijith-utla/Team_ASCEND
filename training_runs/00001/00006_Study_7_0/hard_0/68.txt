@@ -1,0 +1,8 @@
+The correct pattern for this problem is:
+
+```python
+def sol():
+    return 8 ** 2888
+```
+
+This code returns the number 8 raised to the power of 2888. The checker will evaluate whether this number contains the string 'sat' (8 ** 2888). If the count of 'sat' is more than 8 and the length of the string is exactly 3, then the checker will pass.

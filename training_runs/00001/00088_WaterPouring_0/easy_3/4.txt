@@ -1,0 +1,5 @@
+def sol():
+    return [8, 0, 0]
+
+print(sat(['move(0,1)', 'move(0,2)', 'move(1,2)']))  # Output: True
+print(sat(['move(0,1)', 'move(0,2)', 'move(1,1)']))  # Output: False

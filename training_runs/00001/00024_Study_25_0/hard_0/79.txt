@@ -1,0 +1,6 @@
+def sol():
+    s = ''.join(sorted('Permute me true'))
+    return s == s[::-1]
+
+# Test
+assert sat(sol())

@@ -1,0 +1,8 @@
+The given Python function `sat` takes a list of integers as input and checks if the string "The quick brown fox jumps over the lazy dog" is a permutation of "The five boxing wizards jump quickly". Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return "The quick brown fox jumps over the lazy dog" == "The five boxing wizards jump quickly"
+```
+
+This code checks if the two strings are equal and returns the result.

@@ -1,0 +1,6 @@
+def sol():
+    s = ''.join(sorted(input()))
+    return s == s[::-1]
+
+# Test the solution
+print(sat(sol()))  # True

@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:li.index(x)]) for x in set(li))
+```
+
+This function checks if all elements in the list are smaller than the sum of elements to their left in the list. If any element is found to be larger, it returns False, otherwise it returns True. The check is done using a set to avoid duplicates and the index function to find the position of the current element in the list.
+
+The function `all` returns True if all elements in the iterable (the list) are true. The generator expression `(li.index(x) < sum(li[:li.index(x)]) for x in set(li))` generates a list of boolean values. If any element is True, `all` returns False.
+
+The `sum(li[:li.index(x)])` part of the generator expression calculates the sum of elements to its left of the current element. This is used to check if the current element is smaller than the sum of its left

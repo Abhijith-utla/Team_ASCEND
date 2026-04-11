@@ -1,0 +1,8 @@
+The correct pattern is:
+
+```python
+def sol():
+    return 3.1415 - 3.1415
+```
+
+This code subtracts the same number twice to check if it equals zero. If it does, then the difference is zero. If it doesn't, then the difference is not zero.

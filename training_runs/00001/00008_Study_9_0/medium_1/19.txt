@@ -1,0 +1,12 @@
+Sure, here is the Python code for the function `sat` that is supposed to check if the list of characters represented by the strings in the list `li` is equal to the sorted version of the list of characters in the string "The five boxing wizards jump quickly". The function `ord` is used to get the ASCII value of a character.
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return sorted(ord(i) for i in li) == sorted(ord(i) for i in "The five boxing wizards jump quickly")
+```
+
+This function takes as input a list of strings, and returns `True` if the list of ASCII values for the characters in the input strings is the same as the sorted version of the list of ASCII values for the characters in the string "The five boxing wizards jump quickly". Otherwise, it returns `False`.
+
+The `sorted` function is used to sort the ASCII values in ascending order. This is done for each list of ASCII values separately, and then the two lists are compared for equality.

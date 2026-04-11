@@ -1,0 +1,5 @@
+def sol():
+    return tuple(answer)
+
+answer = ['d', 'e', 'o']
+assert sat(answer)

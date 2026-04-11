@@ -1,0 +1,10 @@
+Here is the code for the function `sol` that satisfies the problem's constraints:
+
+```python
+def sol():
+    return []
+```
+
+This function does not take any arguments and always returns an empty list. The function name `sol` is meant to be passed to the `sat` function as an argument. This argument is not used in the body of the `sol` function, so it does not affect the behavior of the function.
+
+The function `sat` is defined as a helper function for the main function `sol`. It takes a list of integers and a string as arguments, but it does not use the string argument in its body. Therefore, the function `sat` does not alter the behavior of the `sol` function.

@@ -1,0 +1,15 @@
+The provided function `sat` checks if a list `li` has exactly 10 elements and if the number 3 occurs exactly twice in the list. It also checks if the number 3 is the third element in the list and if it occurs only once. If all these conditions are met, the function returns `True`; otherwise, it returns `False`.
+
+Here is the correct Python code for the `sol` function:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    li = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+    return li
+```
+
+This function simply creates a list with 10 elements (from 1 to 9) and returns this list.
+
+The function `sol` is expected to return a list of exactly 10 elements and all these elements should be integers. If the function doesn't return a list or if the list contains elements other than integers, the checker will fail.

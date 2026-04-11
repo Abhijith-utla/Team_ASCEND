@@ -1,0 +1,10 @@
+def sol():
+    return 'aabbbcccdd'
+
+# Test cases
+assert sat(sol())
+assert not sat('abcdefg')
+assert not sat('12345678')
+assert not sat('abcdwxyz')
+
+# The final checker will run: assert sat(sol())

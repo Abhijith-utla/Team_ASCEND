@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(535) if s[i] <= s[i + 1] and s[i + 1] > s[i]]

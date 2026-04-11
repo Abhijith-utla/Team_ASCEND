@@ -1,0 +1,2 @@
+def sat(x: float):
+    return str(x - 3.1416).startswith("123.456")

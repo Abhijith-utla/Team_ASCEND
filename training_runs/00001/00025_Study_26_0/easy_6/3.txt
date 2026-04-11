@@ -1,0 +1,4 @@
+def sol():
+    return str(1234567890)
+
+assert sat(sol())

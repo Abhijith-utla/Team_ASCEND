@@ -1,0 +1,9 @@
+Here is the Python code that satisfies the condition:
+
+```python
+def sol():
+    li = [4] + [0]*998
+    return li
+```
+
+In this solution, we create a list `li` of 1001 elements, where the first element is 4. The rest of the elements are 0. The `zip` function is used to combine the first element (4) and the rest of the elements in `li`, and `all` is used to check if all the elements in the pair add up to 1 (i + j == 1 for i, j in zip...).

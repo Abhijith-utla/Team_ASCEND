@@ -1,0 +1,5 @@
+def sol():
+    s = ''.join(str(8 ** 1818))
+    return s == s[::-1] and len(s) > 11
+
+print(sol())

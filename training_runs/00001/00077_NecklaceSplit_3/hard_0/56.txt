@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+print(sol())
+
+# The function sol() returns 0 because the condition in the function is not met.

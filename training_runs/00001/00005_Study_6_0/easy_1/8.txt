@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return 1
+```
+
+This function always returns 1, which is a positive integer. The function `sat` checks if the argument `i` is greater than 0, which is always the case for positive integers. This function satisfies the provided condition.

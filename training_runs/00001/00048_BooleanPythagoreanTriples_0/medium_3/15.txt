@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+print(f'assert sol() == {sat(1, 1, 1)}')
+!python -c "assert sol() == sat(1, 1, 1)"

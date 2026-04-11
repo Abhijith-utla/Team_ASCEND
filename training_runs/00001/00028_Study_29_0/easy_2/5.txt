@@ -1,0 +1,18 @@
+Here is the solution:
+
+```python
+def sol():
+    return [i for i in range(1, 1000) if all(abs(i * i - j * j) < 10 for j in range(1, 1000) if i != j)]
+```
+
+This function returns a list of integers from 1 to 999 (inclusive) that satisfy the condition `abs(i * i - j * j) < 10` for all pairs `(i, j)` where `i` is in the list and `j` is in the list and `i` is not equal to `j`. 
+
+The function uses list comprehension to generate the list of integers that satisfy the condition. The condition `abs(i * i - j * j) < 10` is a mathematical property that checks whether the difference between the square of one number and the square of another number is less than 10. The function checks this property for all pairs `(i, j)` in the list.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```
+
+This will assert that

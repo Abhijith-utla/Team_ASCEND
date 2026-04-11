@@ -1,0 +1,17 @@
+{
+  "attempt_num": 23,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T13:51:44.524172+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: sat() missing 1 required positional argument: 'minute'|parse=fence=none,preamble=0,found_sol=1,candidates=10|checked=10/10|preview=def sol(): return {} print(sat(0, 0)) print(sat(12, 0)) print(sat(0, 30)) print(sat(12, 30)) print(sat(12, 45)) print...",
+  "difficulty": "medium",
+  "problem_id": "00056_ClockAngle_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

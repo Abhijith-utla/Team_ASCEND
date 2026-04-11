@@ -1,0 +1,7 @@
+def sol():
+    s = 'abcde'
+    while not sat(s):
+        s = 'abcde' + chr(97 + len(s))
+    return s
+
+print(sol())

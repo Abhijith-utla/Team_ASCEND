@@ -1,0 +1,5 @@
+def sol():
+    li = [i for i in range(20) if (i % 2 == 0 and i % 123 == 0) and (i >= 0 and i <= 1000)]
+    return li
+
+print(sol())

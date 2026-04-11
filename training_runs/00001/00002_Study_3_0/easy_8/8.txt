@@ -1,0 +1,13 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return sorted(range(1000))
+
+# Testing the solution
+assert sat(sol())
+```
+
+This function `sol()` returns a sorted list of the first 1000 integers. The function `sat()` is then used to assert that the returned list is indeed sorted and contains the first 1000 integers. The `assert` statement is used to verify that the condition is met.
+
+The `sat()` function is an example of a correct pattern in the problem, as it takes a list of integers as an input and returns a boolean value indicating whether the list is sorted or not. The test `assert sat(sol())` is used to verify the correctness of the `sol()` function.

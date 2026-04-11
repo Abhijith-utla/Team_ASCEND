@@ -1,0 +1,10 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function first checks if the list is sorted in ascending order and its elements are distinct. Then it checks if there are any elements that are the same as their index in the range of the list. If both conditions are met, the function returns `True`, otherwise it returns `False`.

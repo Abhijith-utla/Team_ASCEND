@@ -1,0 +1,6 @@
+def sol():
+    return [chr(int(str(i)[:2]) + str(i)[2:]) for i in range(1000000, 10000000, 10)]
+
+# print(sol())
+
+# print(sat(sol()))

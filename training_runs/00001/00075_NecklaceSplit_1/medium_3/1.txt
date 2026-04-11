@@ -1,0 +1,5 @@
+def sol():
+    return {"n": 5, "m": 3}
+
+# print(sat(5, 3))
+!python sol()

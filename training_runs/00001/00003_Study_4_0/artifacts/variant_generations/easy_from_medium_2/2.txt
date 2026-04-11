@@ -1,0 +1,52 @@
+Sure, here are three simple variants of the original `sat` function:
+
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+In the first variant, the first condition in the `if` statement will always be true (`li.count(li[3]) != 2`), so we can remove this condition.
+
+In the second variant, we are checking if `li[3]` is at index 3 (`li.index(li[3]) == 3`) rather than checking if `li[3]` appears twice (`li.count(li[3]) != 2`). We can remove the second condition.
+
+In the third variant, the second condition in the `if` statement will always be true (`li.count(li[3]) != 1`), so we can remove this condition.
+
+Here is the modified code:
+
+VARIANT1:
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    return True
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    return True
+```

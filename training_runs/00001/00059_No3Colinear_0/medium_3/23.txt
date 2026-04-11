@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# This is a simple example of how you can use the function.
+# Note that you need to replace this with actual coordinates.
+coords = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
+assert sat(coords)
+
+# It's important to note that the function will not work correctly if the side parameter is not set.
+# If you want to ensure that the side parameter is set, you can simply replace the line with the following:
+# side = 10
+# assert sat(coords, side)

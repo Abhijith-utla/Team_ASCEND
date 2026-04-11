@@ -1,0 +1,21 @@
+Here's a solution for the problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(999)) and len(li) == 1000
+    return []
+
+def test():
+    assert sat([])
+    assert not sat([1])
+    assert sat([0]*998 + [999])
+    assert not sat([998]*1000)
+    assert not sat([i]*1000 for i in range(999))
+    print("All tests passed")
+
+if __name__ == "__main__":
+    test()
+```
+
+In this code, the `sat` function checks if the list is sorted in ascending order, has all elements distinct, and has exactly 1000 elements. The `test` function tests the `sat` function with a variety of inputs to ensure it behaves as expected.

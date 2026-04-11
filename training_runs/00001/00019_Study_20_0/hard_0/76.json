@@ -1,0 +1,17 @@
+{
+  "attempt_num": 76,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:43:55.375607+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here's the solution: ```python def sol(): return [128] ``` This function returns a list with the number 128. The func...",
+  "difficulty": "hard",
+  "problem_id": "00019_Study_20_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

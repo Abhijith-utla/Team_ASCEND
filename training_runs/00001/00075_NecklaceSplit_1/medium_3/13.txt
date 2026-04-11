@@ -1,0 +1,23 @@
+def sol():
+    return {}
+
+assert sat(0, 0)
+assert not sat(0, 1)
+assert not sat(1, 0)
+assert sat(1, 1)
+assert not sat(2, 2)
+assert sat(2, 3)
+assert not sat(3, 2)
+assert sat(3, 3)
+assert not sat(4, 4)
+assert sat(4, 5)
+assert not sat(5, 4)
+assert sat(5, 5)
+assert not sat(6, 6)
+assert sat(6, 7)
+assert not sat(7, 6)
+assert sat(7, 7)
+assert not sat(8, 8)
+assert sat(8, 9)
+assert not sat(9, 8)
+assert sat(9, 9)

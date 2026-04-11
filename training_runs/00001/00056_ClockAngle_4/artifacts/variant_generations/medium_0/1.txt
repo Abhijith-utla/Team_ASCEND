@@ -1,0 +1,23 @@
+VARIANT1:
+```python
+def sat(hand_position: float, target_angle = 68):
+    hour_angle = 30 * (hand_position[0] % 12) + (hand_position[1] / 12)
+    minute_angle = 6 * (hand_position[1])
+    return abs(hour_angle - minute_angle) in [target_angle, 360 - target_angle]
+```
+
+VARIANT2:
+```python
+def sat(hour: int, minute: int, target_angle = 68):
+    hour_angle = 30 * hour + minute / 2
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [target_angle, 360 - target_angle]
+```
+
+VARIANT3:
+```python
+def sat(hour: int, minute: int):
+    hour_angle = 30 * hour + minute / 2
+    minute_angle = 6 * minute
+    return abs(hour_angle - minute_angle) in [180, 360 - 180]
+```

@@ -1,0 +1,9 @@
+def sol():
+    s = input()
+    if sat(s):
+        return 'YES'
+    else:
+        return 'NO'
+
+# This is to make sure the checker is able to run
+assert sat(sol())

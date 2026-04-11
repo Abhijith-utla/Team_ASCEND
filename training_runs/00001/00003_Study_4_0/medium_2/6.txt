@@ -1,0 +1,19 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol() -> bool:
+    li: List[int] = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+The function `sol` creates a list of ten integers from 1 to 10. It checks if the list has exactly ten elements. If it does not, it returns `False`. It also checks if there are exactly two instances of the third element (3) in the list. If there are more or less, it returns `False`. The third element must appear exactly twice in the list, so it checks if the count of third element equals 2. If the third element does not appear exactly twice, it returns `False

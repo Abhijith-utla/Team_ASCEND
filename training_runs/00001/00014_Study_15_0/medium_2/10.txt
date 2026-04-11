@@ -1,0 +1,15 @@
+The given Python function `sat(li: List[int])` is supposed to return `True` if and only if `li` is a list of non-negative integers where `li[i]` + `li[i+1]` + ... + `li[n-1]` equals `2^i` for all `i` in `range(len(li))`. However, the provided code is incorrect.
+
+The correct pattern for the `sat` function is as follows:
+
+```python
+def sat(li: List[int]) -> bool:
+    total = 0
+    for i, x in enumerate(li):
+        total += 2 ** i
+        if total != sum(li[:i+1]):
+            return False
+    return True
+```
+
+In this function, we iterate over the list `li` using the enumerate function. For each element `x` in `li`, we add `2**i` to `total`. Then, we check if `total` is equal to the sum of the list `li[:i+1]`. If they're not equal, we return `False`.

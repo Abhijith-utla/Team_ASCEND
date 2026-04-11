@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# This is a placeholder, it will not affect the function because the function is returning 0.

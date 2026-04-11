@@ -1,0 +1,17 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:53:39.528936+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=none,preamble=0,found_sol=1,candidates=14|checked=14/14|preview=def sol(): return [] def test_sat(): assert sat([]) assert not sat([(0, 0)]) assert sat([(0, 0), (1, 1)]) assert not ...",
+  "difficulty": "easy",
+  "problem_id": "00062_No3Colinear_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

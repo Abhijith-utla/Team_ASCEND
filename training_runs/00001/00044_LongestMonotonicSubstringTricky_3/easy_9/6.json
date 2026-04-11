@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T12:21:53.641598+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): x = [ord(c) - ord('A') for c in \"OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx\"] return x...",
+  "difficulty": "easy",
+  "problem_id": "00044_LongestMonotonicSubstringTricky_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

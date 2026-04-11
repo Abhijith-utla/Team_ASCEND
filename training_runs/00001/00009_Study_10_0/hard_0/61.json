@@ -1,0 +1,17 @@
+{
+  "attempt_num": 61,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:01:10.424605+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: 'in <string>' requires string as left operand, not bool|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): s = \"\".join([str(8 ** i) for i in range(1818)]) return s and s == s[::-1] and len(s) > 11 # Testing assert...",
+  "difficulty": "hard",
+  "problem_id": "00009_Study_10_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

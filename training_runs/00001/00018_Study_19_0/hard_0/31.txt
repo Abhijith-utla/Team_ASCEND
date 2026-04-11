@@ -1,0 +1,13 @@
+Here's a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return {i + j for i in range(10) for j in range(10)}
+
+# Testing the solution
+assert sat(sol())
+```
+
+In this solution, we are using two nested loops to generate all possible pairs of numbers in the range from 0 to 9, and storing them in a set. The set contains all possible sums of two numbers from 0 to 9, which is the expected answer.

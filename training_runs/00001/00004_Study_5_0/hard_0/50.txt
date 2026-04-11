@@ -1,0 +1,13 @@
+Sure, here's the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function iterates over the range from 0 to 9, counts the occurrence of each number in the list, and checks if it matches the count of that number. If it finds a number that doesn't match, it immediately returns False. If it goes through all the numbers without finding any mismatches, it returns True, indicating that the list is "sorted" as per the given condition.

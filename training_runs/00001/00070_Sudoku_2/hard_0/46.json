@@ -1,0 +1,17 @@
+{
+  "attempt_num": 46,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:14:01.912003+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: invalid row|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return \"__721__56__27___________9______5____62______1_1___9___8_____________3197__61__32_\" print(sat(sol()))",
+  "difficulty": "hard",
+  "problem_id": "00070_Sudoku_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

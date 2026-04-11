@@ -1,0 +1,18 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+
+def sat(ls: List[str]):
+    return all(x in ls for x in 'berlin berger linber linger gerber gerlin'.split())
+
+# Testing the solution
+assert sat(sol())
+```
+
+This solution first defines `sol` function that returns a list of words from the string 'berlin berger linber linger gerber gerlin'. Then, `sat` function checks if all words from this list are in the given list of words. The `assert` statement is used to check if `sat` function returns the correct list.
+
+Please note that the code assumes that the string 'berlin berger linber linger gerber gerlin' is split on whitespace, and all words are separated by single spaces. If this is not the case, you may need to adjust the splitting string and word checking logic accordingly.

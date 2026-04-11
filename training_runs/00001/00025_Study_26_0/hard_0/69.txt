@@ -1,0 +1,5 @@
+def sol():
+    return str(8 ** 88)
+
+# The function sat is already defined by the user.
+assert sat(sol())

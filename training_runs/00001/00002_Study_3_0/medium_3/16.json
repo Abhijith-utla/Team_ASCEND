@@ -1,0 +1,16 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:47:24.929140+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): def sat(li: List[int]): return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1)...",
+  "difficulty": "medium",
+  "problem_id": "00002_Study_3_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

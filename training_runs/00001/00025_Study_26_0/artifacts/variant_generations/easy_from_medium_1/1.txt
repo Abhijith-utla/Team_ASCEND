@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(7 ** 64.5)
+```
+
+VARIANT2:
+```python
+def sat(ls: List[str]):
+    return all(len(s) == 8 for s in ls)
+```
+
+VARIANT3:
+```python
+def sat(ls: List[str]):
+    return "".join(ls) == str(7 ** 64.6)
+```

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:52:27.035910+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=25|checked=25/25|preview=def sol(): return {} # The code above is incorrect because the 'lace' string is not being used in the function defini...",
+  "difficulty": "medium",
+  "problem_id": "00078_NecklaceSplit_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

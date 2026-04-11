@@ -1,0 +1,5 @@
+def sol():
+    return "rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrrrbrrbrrbrbbrrbbrrbrrbrrbrrrbbrbbrrbbbbrrrrrbbrbrbrrbr"
+
+print(sat(0))
+print(sol())

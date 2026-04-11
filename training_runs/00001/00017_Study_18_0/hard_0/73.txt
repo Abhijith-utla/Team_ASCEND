@@ -1,0 +1,22 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    result = []
+    for s in ['berlin', 'berg', 'lin', 'ger', 'berlin', 'ber', 'linber', 'l', 'inger', 'gerlin']:
+        for t in ['berlin', 'berg', 'lin', 'ger', 'berlin', 'ber', 'linber', 'l', 'inger', 'gerlin']:
+            if s != t:
+                result.append(s + t)
+    return result
+```
+
+Here is how you can check it:
+
+```python
+def sat(ls: List[str]):
+    return sol() == ls.split()
+```
+
+This code will check whether the output of the 'sol' function is the same as the input string list, split by spaces. If the two are not equal, the function 'sat' will return False. If they are equal, the function will return True.

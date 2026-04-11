@@ -1,0 +1,13 @@
+Here is the correct Python code for your problem:
+
+```python
+def sol():
+    for i in range(100):
+        if sat(i):
+            return i
+    return None
+```
+
+This function uses a for loop to check each number from 0 to 99 (inclusive) and returns the first number that satisfies the condition of being divisible by 5. If no such number is found, it returns None.
+
+The `sat` function checks if a number is divisible by 5 and less than 100. The function `sol` uses this to find the smallest number that satisfies the condition.

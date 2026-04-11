@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# Add your code here to satisfy the problem's constraints

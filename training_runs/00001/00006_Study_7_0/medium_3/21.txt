@@ -1,0 +1,5 @@
+def sol():
+    return str((8 ** 2888) ** 0.5).count("0") > 8 and len("0") == 3
+
+# Checking the solution
+assert sat(sol())

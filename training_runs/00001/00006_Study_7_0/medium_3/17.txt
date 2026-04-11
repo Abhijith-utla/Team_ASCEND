@@ -1,0 +1,14 @@
+Your function is incorrect because it's trying to count the number of occurrences of a string in a large number (8 ** 2888) ** 0.5. This operation is not allowed in Python as it can lead to an infinite loop.
+
+Here is the correct Python code:
+
+```python
+import math
+
+def sat(s: str) -> bool:
+    root = 8 ** 2888
+    root_sqrt = math.sqrt(root)
+    return s in str(root_sqrt)
+```
+
+In this code, we calculate the square root of the large number and convert it to a string. Then we check if the string s is in the string representation of the root. This will give us the correct result for large numbers.

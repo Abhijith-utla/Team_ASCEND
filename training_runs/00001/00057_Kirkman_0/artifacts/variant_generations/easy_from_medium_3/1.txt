@@ -1,0 +1,30 @@
+Here are three simple but valid variants of the 'sat' function:
+
+VARIANT1:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and {i for g in groups for i in g} == set(range(15)) for groups in daygroups)
+    assert all(len(g) == 5 for groups in daygroups for g in groups)
+    return len({(i, j) for groups in daygroups for g in groups for i in g for j in g}) == 16
+```
+
+VARIANT2:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and {i for g in groups for i in g} == set(range(15)) for groups in daygroups)
+    assert all(len(g) == 5 for groups in daygroups for g in groups)
+    return len({(i, j) for g in daygroups for groups in daygroups for i in g for j in g}) == 16
+```
+
+VARIANT3:
+```python
+def sat(daygroups):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and {i for g in groups for i in g} == set(range(15)) for groups in daygroups)
+    assert all(len(g) == 5 for g in daygroups for groups in daygroups)
+    return len({(i, j) for g in daygroups for groups in daygroups for i in g for j in g}) == 16
+```
+
+In all of the above variants, the function only changes a part of the original logic. The first two checks still perform the same tasks but the third check is removed as the number of unique pairs generated does not change.

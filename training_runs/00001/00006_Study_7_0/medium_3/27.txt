@@ -1,0 +1,8 @@
+Here is the correct code for the function `sol`:
+
+```python
+def sol():
+    return str((8 ** 2888) ** 0.5).count('0.') > 8 and len(str((8 ** 2888) ** 0.5).split('.')[1]) == 3
+```
+
+The function `sol` calculates the square root of `8**2888` and counts the number of decimal points in the result. It then checks if the number of decimal points is greater than 8 and if the number of digits after the decimal point is 3. If both conditions are true, the function returns `True`. Otherwise, it returns `False`.

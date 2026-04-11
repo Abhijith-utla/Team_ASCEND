@@ -1,0 +1,17 @@
+{
+  "attempt_num": 39,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:11:09.033057+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: 'int' object is not iterable|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return str(len(ls)) assert sat([str(len(ls)) for ls in [min(ls) for ls in [max(ls) for ls in range(10)]]])",
+  "difficulty": "hard",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

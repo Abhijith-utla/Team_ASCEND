@@ -1,0 +1,16 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:31:26.305087+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return [] # Incorrect pattern: def sol(x): return [] # Test def test(): assert sol() == [] assert sol([[1,...",
+  "difficulty": "easy",
+  "problem_id": "00037_LongestMonotonicSubstring_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

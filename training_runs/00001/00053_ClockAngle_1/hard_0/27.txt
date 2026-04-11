@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The program must return an empty dictionary
+assert sat(sol())

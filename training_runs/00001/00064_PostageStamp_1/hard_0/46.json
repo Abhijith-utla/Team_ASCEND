@@ -1,0 +1,17 @@
+{
+  "attempt_num": 46,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T15:20:41.764510+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [] # To satisfy the function `sat`, you need to create a list of stamps that add up to 271. # The l...",
+  "difficulty": "hard",
+  "problem_id": "00064_PostageStamp_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

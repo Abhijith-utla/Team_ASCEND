@@ -1,0 +1,18 @@
+Sure, here is the correct pattern:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+This function `sat` checks if all elements in the list `li` are equal to their respective count, and if there is exactly one zero in the list. This is done by creating a list of boolean values that indicate whether each element in the list is equal to its count. The `all` function then checks if all these boolean values are True, which means that every element in the list is equal to its count. The count of zeros is then checked to make sure it is one.
+
+The function `all` is a built-in Python function that returns True if all elements in an iterable are True. Otherwise, it returns False.
+
+The test for this function would be:
+
+```python
+assert sat([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+assert not sat([1, 2,

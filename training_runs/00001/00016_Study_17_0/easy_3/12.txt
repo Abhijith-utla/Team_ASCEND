@@ -1,0 +1,9 @@
+def sol():
+    i = 1234
+    while not sat(i):
+        i += 1
+    return i
+
+# This will be the result of the checker
+result = sol()
+print(result)

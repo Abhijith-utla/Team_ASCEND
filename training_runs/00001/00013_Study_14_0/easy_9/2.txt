@@ -1,0 +1,21 @@
+def sol():
+    return {"result": all([i <= j for i in li for j in li if i > j])}
+
+This solution assumes that `li` is a list of integers. The function `sat` checks if all elements in the list are less than or equal to the next element, and it returns a dictionary with a boolean value indicating whether all elements are in the correct order.
+
+Here's how you can test this solution:
+
+```python
+def test_sat():
+    assert sat([1, 2, 3, 4, 5])
+    assert not sat([5, 4, 3, 2, 1])
+    assert sat([1, 5, 8, 10, 13])
+    assert not sat([13, 8, 5, 1, 0])
+    assert sat([])
+    assert not sat([0, 1, 2, 3])
+    assert not sat([1, 2, 3, 2, 1])
+
+test_sat()
+```
+
+This code will execute the `sat` function for different inputs and test whether

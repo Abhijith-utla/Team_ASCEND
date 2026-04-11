@@ -1,0 +1,17 @@
+{
+  "attempt_num": 13,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:38:56.349509+00:00",
+  "diagnostic": "reason=subprocess_error:NameError: name 'li' is not defined|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): return [sum(li[i+1:]) for i in range(len(li))] print(sol()) assert sat(sol())",
+  "difficulty": "medium",
+  "problem_id": "00013_Study_14_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

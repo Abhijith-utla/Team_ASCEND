@@ -1,0 +1,7 @@
+def sol():
+    for s in range(10):
+        if str(8 ** 2888).count(str(s)) > 8 and len(str(s)) == 3:
+            return s
+    return -1
+
+print(sol())

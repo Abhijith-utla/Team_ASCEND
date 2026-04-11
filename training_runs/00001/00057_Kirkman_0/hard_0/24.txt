@@ -1,0 +1,8 @@
+def sol():
+    daygroups = [
+        [[2, 3, 4, 14, 15] for _ in range(5)]
+        for _ in range(7)
+    ]
+    return daygroups
+
+print(sol())

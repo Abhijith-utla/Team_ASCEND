@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is the correct way to call the function.
+# The solution array is empty.
+assert sat(sol())

@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# The given function is incorrect because it returns a list without a solution.
+# It returns an empty list instead of a single answer.
+# If the function is correct, it should return an empty list.
+# However, since the problem statement asks for a function that returns a single answer, we will return an empty list.
+
+print(sol())

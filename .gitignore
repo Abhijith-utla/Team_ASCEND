@@ -5,3 +5,4 @@ outputs/
 grpo_out/
 session*.md
 *.safetensors
+*.pt

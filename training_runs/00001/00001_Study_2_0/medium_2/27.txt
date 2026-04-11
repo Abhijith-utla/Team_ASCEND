@@ -1,0 +1,9 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    s = "yo" * 100 + "y" + "yo" * 101
+    return s.count('y') == 100 and s.count('yo') == 101 and s.count('yy') == 98
+```
+
+This solution works by first creating a string of "yo"s with a total length of 100 + the length of the last "yo" + the length of the last "yyo". Then it checks if the count of 'y' in the string equals 100, 101, and 98. If all conditions are met, the function returns True, otherwise it returns False.

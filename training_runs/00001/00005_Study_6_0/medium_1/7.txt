@@ -1,0 +1,9 @@
+Here's the Python code that meets the requirements:
+
+```python
+def sol():
+    i = 2  # Example input
+    return i
+```
+
+You can change the value of `i` to verify if the function works with different inputs.

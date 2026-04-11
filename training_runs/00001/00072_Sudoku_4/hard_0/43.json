@@ -1,0 +1,16 @@
+{
+  "attempt_num": 43,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:37:14.747004+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return \"___56_4_7__92_4_65___3______9____2___5_______7___8___1_________43_____5_____76__2\" print(f\"Checkin...",
+  "difficulty": "hard",
+  "problem_id": "00072_Sudoku_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

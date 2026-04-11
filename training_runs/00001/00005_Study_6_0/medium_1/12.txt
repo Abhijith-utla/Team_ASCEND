@@ -1,0 +1,10 @@
+Here is a Python solution to the problem:
+
+```python
+def sol():
+    i = 10
+    while not sat(i):
+        i -= 1
+    return i
+```
+In this solution, we start from an initial value of `i`, which is 10. We then decrease `i` by one in each iteration until `sat(i)` returns `True`. The first `i` for which `sat(i)` returns `True` is our answer.

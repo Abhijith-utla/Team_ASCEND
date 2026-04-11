@@ -1,0 +1,14 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    # Define the list
+    li = [i for i in range(999)]
+    # Return the sorted list
+    return sorted(li)
+
+# Assert the answer
+assert sat(sol())
+```
+
+In this solution, we first create a list `li` that consists of numbers from 0 to 998. We then return the sorted version of this list. The assertion `assert sat(sol())` checks that our solution is correct by checking if the sorted list is equal to the list `range(999)` and that all elements in the list are equal to their corresponding index. If these conditions are met, the assertion will pass without throwing an error.

@@ -1,0 +1,3 @@
+The given Python function named sat(answer) is defined to check whether all numbers from 0 to 19 in the list are powers of 2 minus 1. This is done using a generator expression that checks if each number x in the range from 0 to 19 (inclusive) is equal to (2 ** x) - 1. If all the numbers satisfy this condition, the all() function returns True, otherwise it returns False.
+
+The function definition is correct as per the given pattern.

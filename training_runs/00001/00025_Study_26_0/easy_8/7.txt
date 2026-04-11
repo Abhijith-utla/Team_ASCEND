@@ -1,0 +1,6 @@
+def sol():
+    return ['8', '7', '6', '5', '4', '3', '2', '1']
+
+print(sol())
+
+assert sat(sol())

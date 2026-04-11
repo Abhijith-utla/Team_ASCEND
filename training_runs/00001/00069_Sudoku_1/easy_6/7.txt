@@ -1,0 +1,7 @@
+def sol():
+    return ""
+
+# You can use this to check if the function sol() is correct
+def test():
+    assert sat(sol())
+test()

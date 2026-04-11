@@ -1,0 +1,12 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    li = [i for i in range(1000)]
+    li.insert(0, 2)
+    return li
+```
+
+This code creates a list of integers from 0 to 999 and inserts 2 at the beginning of the list. It then returns the list.
+
+The checker will verify that the length of the list is 1001 and that the sum of every two consecutive numbers in the list is 3.

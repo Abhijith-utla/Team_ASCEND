@@ -1,0 +1,14 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return True
+```
+
+This function always returns `True`. This is because the condition in the `if` statement is always `True` (i.e., the list is empty), so the `all` function always returns `True`.
+
+You can check this function by calling `sol()` and asserting that it returns `True`. For example:
+
+```python
+assert sol() == True
+```

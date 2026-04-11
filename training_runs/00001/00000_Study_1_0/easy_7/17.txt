@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sat(s: str):
+    return 'oo' not in s and 'o' in s and s.count('o') == 1000
+```
+
+This function checks if the string 'oo' is not present in the string `s`, 'o' is present in `s`, and the count of 'o' in `s` is equal to 1000.

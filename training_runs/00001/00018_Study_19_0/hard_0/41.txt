@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return {i + j for i in range(10) for j in range(10)}
+
+assert sat(sol())
+```
+
+In the above code, we have used a combination of list comprehension and the `range` function to generate a set of numbers from 0 to 9. We then use this set in the `sat` function to check if the given list meets the given conditions. If the list is indeed a set of numbers from 0 to 9, then the `sat` function will return `True`, otherwise it will return `False`.

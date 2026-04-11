@@ -1,0 +1,17 @@
+Sure, here is the Python code for your requirement.
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    sum = 0
+    for i in range(len(li)):
+        sum += li[i]
+        if sum > sum(li[:i]):
+            return False
+    return True
+```
+
+This function checks if every number in the list is less than the sum of all numbers up to that point. It iterates over the list, adding each number to a running total, and if the total becomes greater than the sum of all numbers up to that point, it returns False, indicating that the list is not consistent. If it iterates over the entire list without finding such an inconsistency, it returns True.
+
+The function is considered correct if the passed list satisfies the requirements of the problem. The function will pass the test case if the function returns `True`.

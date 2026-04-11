@@ -1,0 +1,28 @@
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x])
+
+def sol():
+    return 1
+
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x])
+
+# This checker will fail if we are not correctly implemented, because we are not returning any value.
+assert sat([])
+assert not sat([1])
+assert not sat([1, 1])
+assert sat([1, 2])
+assert not sat([1, 3])
+assert sat([1, 2, 4])
+assert not sat([1, 2, 5])
+assert sat([1, 2, 5, 8])
+assert not sat([1, 2, 5, 9])
+assert sat([1, 2, 5, 10])
+assert not sat([1, 2, 5, 11])
+assert sat([1, 2, 5, 12])
+assert not sat([1, 2, 5, 13])
+assert sat([1, 2, 5, 14])
+assert not sat([1
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,5 @@
+def sol():
+    return 'm' * 400 + 'mm' * 401 + 'mmm' * 398
+
+# Test the solution
+print(sat(sol()))

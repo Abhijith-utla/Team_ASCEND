@@ -1,0 +1,7 @@
+def sol():
+    x = [1, 2, 3, 4, 5]
+    length = len(x)
+    s = "wVx"
+    return sat(x, length, s)
+
+print(sat(sol()))

@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# checker calls
+sat([])  # valid
+sat([[1, 2, 3]])  # valid
+sat([[0, 1, 2]])  # invalid
+
+# examples
+assert not sat([[0, 7], [4, 5, 6], [1, 2, 3, 8]], source=[[1, 2, 3], [4, 5, 6], [0, 7]], target=[[1, 2, 3], [0, 4, 5, 6], [7]])
+assert not sat([[0, 7], [4, 5, 6], [1, 2, 3, 8]], source=[[1, 2, 3], [4, 5, 6], [0, 7]], target=[[1, 2, 3], [0, 4, 5, 6], [7, 8]])
+
+# more tests
+assert sat([[0, 1, 2], [3,

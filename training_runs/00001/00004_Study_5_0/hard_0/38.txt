@@ -1,0 +1,13 @@
+Here is the solution for the given problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function checks if all elements in the list li are present exactly once. If there is an element in the list that is missing, it will return False. If all elements are present exactly once, it will return True.

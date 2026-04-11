@@ -1,0 +1,8 @@
+Here is the Python code that constructs a single answer value that satisfies the given condition.
+
+```python
+def sol():
+    return 2
+```
+
+The function `sol()` simply returns the integer 2. The checker will pass this answer if it's properly constructed.

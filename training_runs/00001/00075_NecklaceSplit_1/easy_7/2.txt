@@ -1,0 +1,4 @@
+def sol():
+    return {"n": 1, "m": 1}
+
+assert sat(sol()["n"], sol()["m"])

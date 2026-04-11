@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is an example of a solution. It returns an empty list.
+# You may replace this with any valid answer object.

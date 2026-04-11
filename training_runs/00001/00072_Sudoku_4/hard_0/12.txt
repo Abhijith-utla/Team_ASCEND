@@ -1,0 +1,6 @@
+def sol():
+    return "___56_4_7__92_4_65___3______9____2___5_______7___8___1_________43_____5_____76__2"
+
+# This test case fails as the puzzle is not solved correctly
+# The puzzle is not solved correctly because it doesn't fill in the missing numbers correctly
+assert sat(sol())

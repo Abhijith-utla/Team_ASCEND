@@ -1,0 +1,7 @@
+def sol(moves: List[List[int]]):
+    state = [[s[0]] + s[1:] for s in source]
+    for i, j in moves:
+        state[i].append(state[j].pop())
+        if sorted(state[i]) != target[i]:
+            return False
+    return all(sorted(s) == target[i] for i, s in enumerate(state))

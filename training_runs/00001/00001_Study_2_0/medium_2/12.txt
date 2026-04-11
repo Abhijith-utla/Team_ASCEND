@@ -1,0 +1,5 @@
+Here is the Python code for the function `sol` that solves the problem. The function `sat` checks if the string `s` contains 100 occurrences of the string 'y' and 101 occurrences of the string 'yo' and 98 occurrences of the string 'yy'. If `s` satisfies all these conditions, the function returns `True`. Otherwise, it returns `False`.
+
+```python
+def sol():
+    s = 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy

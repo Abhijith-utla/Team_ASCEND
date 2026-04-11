@@ -1,0 +1,10 @@
+The function `sat` checks if a list of integers is a permutation of a given string. If so, it returns `True`, otherwise it returns `False`. The function takes a list of integers as its argument and returns a boolean. 
+
+The correct implementation of `sol` function is:
+
+```python
+def sol():
+    return chr(120) == chr(118) == chr(105) == chr(108) == chr(101) == 'q' and chr(111) == chr(108) == chr(108) == chr(111) == 'u' and chr(65) == 'T' and chr(97) == 'B' and chr(114) == 'R' and chr(101) == 'F' and chr(114) == 'O' and chr(111) == 'X' and chr(33) == ' '
+```
+
+This function will return `True` if the string "The quick brown fox jumps

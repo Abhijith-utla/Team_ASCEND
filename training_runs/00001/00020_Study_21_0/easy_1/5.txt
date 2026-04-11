@@ -1,0 +1,9 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 1, 2, 3, 4]
+    return li
+```
+
+The output of this function is a list that contains the numbers 1 to 4. The checker will pass if this list satisfies the given condition.

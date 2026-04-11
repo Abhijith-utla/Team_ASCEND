@@ -1,0 +1,9 @@
+Sure, here is the Python code for the function sol:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+The function sol constructs a string of 1000 'oo' characters and returns it.

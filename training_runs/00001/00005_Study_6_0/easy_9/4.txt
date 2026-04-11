@@ -1,0 +1,4 @@
+```python
+def sol():
+    return 10 ** 10
+```

@@ -1,0 +1,8 @@
+Here is the correct Python code for your problem:
+
+```python
+def sol():
+    return {"answer": "yes"}
+```
+
+In the function `sol`, the output is a dictionary with a single key-value pair: "answer", whose value is "yes".

@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The code above will always return 0 because the for loop does not terminate and n is never set to 0.

@@ -1,0 +1,6 @@
+def sol():
+    return [ord(i) for i in "The quick brown fox jumps over the lazy dog"][0] == list(
+        "The five boxing wizards jump quickly")[0]
+
+# Test
+assert sat(sol())

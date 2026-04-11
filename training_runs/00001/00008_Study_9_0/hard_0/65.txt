@@ -1,0 +1,12 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(ord(word[i]) == ord(sentence[i]) for i, word in enumerate(li) for j, sentence in enumerate(sentence))
+
+print(sat(["The quick brown fox jumps over the lazy dog", "The five boxing wizards jump quickly"]))
+```
+
+In this solution, we iterate over the words and sentences simultaneously, and for each pair, we check if the ordinal value of the characters in the word and sentence are equal. The `ord()` function is used to get the ordinal value of a character. We use the `all()` function to check if all conditions in the generator expression are met, which means that all characters in the words are in the same order as the characters in the sentence. If they are, the function returns `True`; otherwise, it returns `False`.

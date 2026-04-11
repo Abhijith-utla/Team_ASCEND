@@ -1,0 +1,15 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return 10
+
+def sat(li: List[int]):
+    return li.count(1) == 10 and li.count(2) == 10 and li.count(3) == 10 and li.count(4) == 10 and li.count(5) == 10 and li.count(6) == 10 and li.count(7) == 10 and li.count(8) == 10 and li.count(9) == 10
+
+assert sat(sol())
+```
+
+This code first defines a function `sol` that always returns `10`. Then, it defines a function `sat` that checks whether a list contains exactly `10` instances of each number from `1` to `9`. The function `sat` returns `True` if the list `li` satisfies the condition, and `False` otherwise. The line `assert sat(sol())` checks whether `sol` returns `10`. If `sol` returns `10`, the assertion is successful; otherwise, an

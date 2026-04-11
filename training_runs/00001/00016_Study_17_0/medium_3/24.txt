@@ -1,0 +1,11 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    i = 1234567890  # Replace this with your value
+    while not sat(i):
+        i -= 1
+    return i
+```
+
+This function will keep decrementing `i` from 1234567890 until `sat(i)` returns `True`. The first value that satisfies `sat(i)` will be the largest number that is less than 1234567890 but greater than 1000.

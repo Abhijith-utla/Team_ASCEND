@@ -1,0 +1,14 @@
+Here is the solution for your problem:
+
+```python
+def sol():
+    return ''.join(chr(i) for i in range(97, 123))
+
+print(sat(list(map(ord, 'python is fun'))))
+```
+
+In this solution, we first create a list of ASCII values for the alphabet using a range of integers. We then join these values into a string using the `join` method. The `join` method is a string method and returns a string in which the elements of the sequence have been joined by str separator.
+
+The `map` function applies the `ord` function to each character in 'python is fun'. This returns a list of ASCII values for each character. We then pass this list to the `join` method to convert it back into a string.
+
+Please note that this solution assumes that you want to use the alphabet in lowercase. If you want the uppercase alphabet, you can adjust the range to (65, 91).

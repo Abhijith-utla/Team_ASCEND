@@ -1,0 +1,8 @@
+```python
+def sol():
+    return "888"
+
+assert sat(sol())
+```
+
+In this problem, the function `sat` checks if the string `s` contains the number `8` repeated exactly 2888 times, and the length of `s` is 3. The `assert` statement is used to verify the solution.

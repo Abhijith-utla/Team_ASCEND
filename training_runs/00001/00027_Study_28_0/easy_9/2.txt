@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(-50, 50) if sat([i])]

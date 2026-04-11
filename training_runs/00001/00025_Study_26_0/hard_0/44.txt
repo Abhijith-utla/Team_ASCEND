@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return 256 ** 88
+
+assert sat([chr(i) for i in range(256)])
+```
+
+In this solution, we define a function `sol` that returns the decimal value of the string `"256 ** 88"`. We then use the `assert` statement to check if the list of characters is equal to the string `"256 ** 88"` and if all the strings in the list are of length 8. The `assert` statement will throw an `AssertionError` if the condition is not true, which is correct as per the given problem statement.

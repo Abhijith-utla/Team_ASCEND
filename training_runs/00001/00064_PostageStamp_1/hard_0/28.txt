@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# Test
+assert sat([37, 37, 12, 87, 39])
+assert not sat([37, 37, 12, 87, 30])
+assert not sat([37, 37, 12, 87, 40])
+assert not sat([37, 37, 12, 87])
+assert not sat([37, 37, 12, 80])

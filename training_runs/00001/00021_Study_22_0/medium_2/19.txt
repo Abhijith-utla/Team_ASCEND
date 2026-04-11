@@ -1,0 +1,5 @@
+def sol():
+    return "aaaaabbbb" if sat("aaaaabbbb") else "bbbbb"
+
+# Testing
+assert sat(sol())

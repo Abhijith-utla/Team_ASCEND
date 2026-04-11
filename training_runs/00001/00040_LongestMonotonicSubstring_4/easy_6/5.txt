@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# Testing
+def test_sol():
+    assert sat(sol())
+
+# Run Tests
+test_sol()

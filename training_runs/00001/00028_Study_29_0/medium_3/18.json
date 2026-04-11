@@ -1,0 +1,17 @@
+{
+  "attempt_num": 18,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:46:37.724106+00:00",
+  "diagnostic": "reason=ok|parse=fence=none,preamble=0,found_sol=1,candidates=2|candidate=2/2|fmt_penalty=0.00|preview=def sol(): return [i for i in range(996) if all(abs(i * i - j * j) >= 10 for j in range(996) if i != j)]",
+  "difficulty": "medium",
+  "problem_id": "00028_Study_29_0",
+  "reward": 1.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

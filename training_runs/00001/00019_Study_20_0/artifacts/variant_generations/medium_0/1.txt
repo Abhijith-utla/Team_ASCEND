@@ -1,0 +1,19 @@
+Here are three simple Python function variants that test the same core concept.
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all((j in {i - 1, i + 1, 3 * i} for i, j in zip([0] + li, li + [128])))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(j in {i} for i, j in enumerate(li))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(j == 3 * i for i, j in enumerate(li))
+```

@@ -1,0 +1,26 @@
+Here is the Python code that solves the problem.
+
+```python
+def sol():
+    def sat(ls):
+        return ls[1234] < ls[1235] and ls[1234] != ls[1235]
+
+    return sat
+```
+
+The `sat` function takes a list `ls` as an argument and checks if the second element of the list is less than the fifth element of the list and if the second element of the list is not equal to the fifth element of the list. If the condition is satisfied, the function returns `True`, otherwise it returns `False`.
+
+The `sol` function returns the `sat` function. 
+
+Here's how you can use it:
+
+```python
+def sol():
+    def sat(ls):
+        return ls[1234] < ls[1235] and ls[1234] != ls[1235]
+
+    return sat
+
+# Usage
+sat_func = sol()
+assert sat_func([1, 2, 3, 4, 5])  #

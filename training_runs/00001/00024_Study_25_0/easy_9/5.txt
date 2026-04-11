@@ -1,0 +1,2 @@
+def sol():
+    return ''.join(sorted(s)) == ''.join(sorted('Auipenmtrs')) and ''.join(sorted(s)) == ''.join(sorted('Auipenmtrs')[::-1])

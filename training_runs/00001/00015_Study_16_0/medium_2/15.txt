@@ -1,0 +1,18 @@
+The function `sat` checks if the string `s` is equal to `'4.5abc'`. The function is defined to take a single argument of type `str` and return a boolean value. The function `sat` will return `True` if the string `s` is equal to `'4.5abc'` and `False` otherwise.
+
+Here's how the function `sat` is defined:
+
+```python
+def sat(s: str) -> bool:
+    return s == '4.5abc'
+```
+
+You can use this function in a test case like so:
+
+```python
+assert sat(sat('4.5abc'))
+```
+
+If the function `sat` returns `True`, the assertion will pass. Otherwise, it will raise an `AssertionError`.
+
+Please note that this function only checks the equality of the string and the expected string '4.5abc'. If you want to check if the string contains digits, alphabets or a combination of digits, alphabets, and special characters, you would need to adjust the function `sat` to suit your needs.

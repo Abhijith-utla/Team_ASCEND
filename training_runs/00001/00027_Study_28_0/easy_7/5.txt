@@ -1,0 +1,13 @@
+def sol():
+    return {
+        'a': [i for i in range(100)],
+        'b': [i for i in range(100)],
+        'c': [i for i in range(100)],
+        'd': [i for i in range(100)],
+        'e': [i for i in range(100)],
+        'f': [i for i in range(100)],
+        'g': [i for i in range(100)],
+        'h': [i for i in range(100)],
+        'i': [i for i in range(100)],
+        'j': [i for i in range(100)]
+    }

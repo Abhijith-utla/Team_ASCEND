@@ -1,0 +1,6 @@
+def sol():
+    return {
+        'answer': sat(['abcd', 'efgh', 'ijkl', 'mnop', 'abcd'])
+    }
+
+assert sat(sol()['answer'])

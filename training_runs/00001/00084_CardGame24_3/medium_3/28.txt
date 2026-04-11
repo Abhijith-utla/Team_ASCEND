@@ -1,0 +1,2 @@
+def sol():
+    return eval(expr) == 22.0

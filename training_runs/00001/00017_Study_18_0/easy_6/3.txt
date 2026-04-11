@@ -1,0 +1,10 @@
+def sol():
+    return sat(3, 4.24)
+
+# This will test the function 'sol' using a set of test cases
+if __name__ == "__main__":
+    assert sat(3, 4.24)
+    assert not sat(5, 5.55)
+    assert sat(7, 8.89)
+    assert not sat(10, 11.18)
+    print("All test cases passed.")

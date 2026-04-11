@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# The function "sat" is already defined by the user, so we don't need to define it again.
+# We just need to create a function named "sol" that takes no arguments and returns an empty string.
+# This function will be used by the checker to verify whether the answer is correct or not.

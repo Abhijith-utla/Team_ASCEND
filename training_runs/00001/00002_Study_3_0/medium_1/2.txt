@@ -1,0 +1,19 @@
+Here is the Python code to solve the problem. The function `sol` constructs a single answer value by returning the sorted list of the input list `li`.
+
+```python
+def sol(li: List[int]) -> List[int]:
+    return sorted(li)
+```
+
+The function `sol` is defined with a single argument of type `List[int]`. The function returns a `List[int]`. The body of the function uses Python's built-in `sorted` function to sort the list `li` and returns the sorted list.
+
+The `sorted` function returns a new sorted list from the elements in the original list. The `list(range(999))` part is used to generate a list of numbers from 0 to 998.
+
+The checker will run:
+
+```python
+assert sat([1, 2, 3, 4, 5])
+assert not sat([999, 899, 799, 699, 599])
+```
+
+Note that the `sat` function is not defined by the user. It is an

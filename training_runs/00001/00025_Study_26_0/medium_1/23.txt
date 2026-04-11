@@ -1,0 +1,12 @@
+Here is the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [str(7 ** 64.5)]
+
+assert sat(sol())
+```
+
+This code will return a list with a single element that is the string representation of 7 raised to the power of 64.5. The assert statement is used to ensure that the function sol returns the correct answer.

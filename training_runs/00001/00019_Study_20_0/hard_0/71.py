@@ -1,0 +1,22 @@
+def sat(li: List[int]):
+    return all(j in {i - 1, i + 1, 3 * i} for i, j in zip([0] + li, li + [128]))
+
+def sol():
+    def sat(li: List[int]) -> bool:
+        return all(j in {i - 1, i + 1, 3 * i} for i, j in zip([0] + li, li + [128]))
+
+    assert sat([])
+    assert not sat([1])
+    assert not sat([2])
+    assert sat([1, 3])
+    assert not sat([1, 2])
+    assert not sat([1, 2, 4])
+    assert sat([1, 2, 4, 6])
+    assert not sat([1, 2, 4, 5])
+    assert not sat([1, 2, 4, 5, 6])
+    assert sat([1, 2, 4, 5, 6, 7])
+    assert not sat([1, 2, 4, 5, 6, 8])
+    assert not sat([1, 2, 4, 5, 6, 7, 9])
+
+if __name__ == "__main__":
+    assert sat(sol())

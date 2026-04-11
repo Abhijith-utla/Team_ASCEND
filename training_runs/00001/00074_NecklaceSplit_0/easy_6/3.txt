@@ -1,0 +1,8 @@
+def sol():
+    return 1
+
+# Test case
+assert sat(1, "bbbrrrbbbbrrrbbbbrr") == False
+assert sat(2, "bbbrrrbbbbrrrbbbbrr") == True
+assert sat(3, "bbbrrrbbbbrrrbbbbrr") == False
+assert sat(4, "bbbrrrbbbbrrrbbbbrr") == True

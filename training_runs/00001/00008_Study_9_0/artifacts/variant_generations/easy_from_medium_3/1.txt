@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Hello World".replace(" ", ""))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Python is fun".replace(" ", ""))
+```

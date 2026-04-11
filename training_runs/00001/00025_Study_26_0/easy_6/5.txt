@@ -1,0 +1,4 @@
+def sol():
+    return "".join(str(1234567890))
+
+assert sat(sol())

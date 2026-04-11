@@ -1,0 +1,17 @@
+{
+  "attempt_num": 10,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T13:50:22.646945+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return None assert sat(0, 0) assert not sat(12, 0) assert not sat(0, 30) assert not sat(7, 30) assert sat(...",
+  "difficulty": "medium",
+  "problem_id": "00056_ClockAngle_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

@@ -1,0 +1,24 @@
+Here are three simple Python functions to solve the "Pandigital Square" problem:
+
+VARIANT1:
+```python
+def sat(n: int):
+    s = str(n * n)
+    return set(s) == set("0123456789")
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    s = str(n * n)
+    return len(set(s)) == 10
+```
+
+VARIANT3:
+```python
+def sat(n: int):
+    s = str(n * n)
+    return len(s) == len(set(s))
+```
+
+In all of these variants, we're transforming the number into a square and comparing it to a string of all possible digits (from 0 to 9). If the sorted string of digits matches the sorted string of the square, then the number is pandigital and the function returns True, otherwise it returns False.

@@ -1,0 +1,7 @@
+def sol():
+    li = [4]
+    for _ in range(989):
+        li.append(sum(li[-2:]))
+    return li
+
+print(sat(sol()))

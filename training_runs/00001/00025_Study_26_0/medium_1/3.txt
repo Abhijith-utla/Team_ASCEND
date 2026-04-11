@@ -1,0 +1,7 @@
+def sol():
+    return [str(x)[:8] for x in [7 ** 64.5]]
+
+print(sol())
+
+# Test
+assert sat(sol())

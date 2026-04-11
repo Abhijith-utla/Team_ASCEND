@@ -1,0 +1,5 @@
+def sol():
+    return tuple(sorted(['d', 'e', 'o', 'h']))
+
+# Testing the solution
+assert sat(sol()) == (('d', 'e', 'o', 'h'),)

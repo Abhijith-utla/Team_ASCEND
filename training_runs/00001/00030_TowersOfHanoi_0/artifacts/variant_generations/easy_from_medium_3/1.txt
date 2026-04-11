@@ -1,0 +1,33 @@
+VARIANT1:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[i].append(rods[j].pop())
+        if rods[i][-1] == min(rods[i]):
+            rods[i].append(rods[j].pop())
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[i].append(rods[j].pop())
+        if rods[i][-1] == min(rods[i]):
+            rods[i].pop()
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[i].append(rods[j].pop())
+        if rods[i][-1] < min(rods[i]):
+            rods[i].append(rods[j].pop())
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+This set of variants demonstrate different scenarios where the "larger disk on top of smaller disk" rule is violated. The first variant does not check this rule, the second one does, and the third one does not check the rule and instead checks for a smaller disk on top of the smaller disk.

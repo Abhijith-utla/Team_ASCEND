@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# This function will always return an empty list, since we're checking if every element is less than or equal to the next one.
+
+# Assertion check
+assert sat(sol())

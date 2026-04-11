@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+
+The function `sat` takes a string `s` as an input and returns a boolean value. The function counts the number of 'o' characters in the string, and checks if these counts are equal to 1000, 100, and 801 respectively.
+
+The function `sat` should be defined as shown in the provided correct pattern. The function name, return type, and parameters are assumed to be known from the context.

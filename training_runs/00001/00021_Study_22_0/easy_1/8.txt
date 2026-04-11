@@ -1,0 +1,22 @@
+def sol():
+    return 'abcdefghij'
+
+# Testing the solution
+print(sat(sol()))  # should return True
+print(sat(sol()+'a'))  # should return False
+print(sat(sol()*10))  # should return False
+print(sat(sol()[0]))  # should return True
+print(sat(sol()[1:]))  # should return False
+print(sat(sol()[1:1]))  # should return True
+print(sat(sol()[1:2]))  # should return False
+print(sat(sol()[1:3]))  # should return False
+print(sat(sol()+sol()))  # should return False
+
+# Checker
+def check_solution(s: str):
+    assert sat(s), 'The solution is not correct'
+
+# Testing the checker
+check_solution('abcdefghij')  # should not return any assertion error
+check_solution('abcdefghij'+'a')  # should return assertion error
+check_solution('abcdefghij'*10)  # should

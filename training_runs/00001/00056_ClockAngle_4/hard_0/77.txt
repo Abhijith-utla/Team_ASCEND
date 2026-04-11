@@ -1,0 +1,23 @@
+def sol():
+    return []
+
+# Correct pattern:
+# def sol():
+#     return [0, 0]
+
+# Incorrect pattern:
+# def sol(x):
+#     return [0, 0]
+
+# Answer:
+# The code provided seems to be correct, there's no mistake in it. However, to test it, you can use the following test case:
+
+def test_sol():
+    assert sat([0, 0])
+    assert not sat([12, 0])
+    assert not sat([11, 59])
+    assert not sat([12, 60])
+    assert not sat([13, 0])
+    assert sat([1, 0])
+
+test_sol()

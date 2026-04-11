@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T14:04:09.171079+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): daygroups = [[[5, 9, 14], [10, 11, 13], [12, 14, 15], [1, 2, 3], [4, 5]] for _ in range(7)] return daygroups",
+  "difficulty": "hard",
+  "problem_id": "00057_Kirkman_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

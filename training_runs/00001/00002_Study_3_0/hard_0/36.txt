@@ -1,0 +1,8 @@
+Here's the solution to this problem:
+
+```python
+def sol():
+    return sorted(range(999))
+```
+
+The `sorted` function returns a new list that is a sorted version of the original list, and the `range` function generates a list of integers from 0 to 998. The `==` operator checks if the two lists are equal, and the `all` function checks if all elements in the list satisfy a condition (the condition is that the element is not equal to its index). The function `sat` returns `True` if the condition is satisfied, and `False` otherwise.

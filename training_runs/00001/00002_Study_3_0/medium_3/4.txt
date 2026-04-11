@@ -1,0 +1,12 @@
+Here is the Python code for the problem:
+
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+```
+
+This code defines a function named `sat` that checks if a given list of integers is sorted in ascending order and all elements in the list are distinct. It does this by first checking if the list is sorted, and then checking if all elements in the list are distinct.
+
+The function is defined in such a way that it takes a single argument, `li`, which is a list of integers. The function first checks if the list `li` is sorted in ascending order, and returns `False` if it is not. It then checks if all elements in the list `li` are distinct, and returns `False` if any element in the list is repeated. If both conditions are satisfied, the function returns `True`.
+
+The function `sat` is an assertion for the correctness of the `sorted` function. If `sat` returns `True`, it means the list `li`

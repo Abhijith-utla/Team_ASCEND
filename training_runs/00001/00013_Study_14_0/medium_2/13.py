@@ -1,0 +1,20 @@
+def sat(li: List[int]):
+    return all([i < li.index(x) + sum(li[:li.index(x)]) for x in set(li)])
+
+def sol():
+    def sat(li: List[int]):
+        return all([i < li.index(x) + sum(li[:li.index(x)]) for x in set(li)])
+
+    assert sat([5, 2, 4, 6, 1, 3])
+    assert not sat([1, 2, 3, 4, 5])
+    assert not sat([5, 5, 5, 5, 5])
+    assert sat([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+    assert not sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+    return 'All tests pass.'
+
+if __name__ == "__main__":
+    print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

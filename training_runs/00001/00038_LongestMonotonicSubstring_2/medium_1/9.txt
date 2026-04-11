@@ -1,0 +1,5 @@
+def sol():
+    answer = [0]*737
+    return answer
+
+assert sat(sol())

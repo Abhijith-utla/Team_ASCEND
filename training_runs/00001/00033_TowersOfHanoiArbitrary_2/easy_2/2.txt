@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The answer to this problem is an empty list because there are no valid moves.

@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i+97) for i in li] == list("thequickbrownfoxjumpsoverthelazydog")
+```
+
+In the above code, we are simply iterating through each index of the list and converting it to its corresponding character using the ASCII value of 'a'. This will return True if the given list is the permutation of the string "thequickbrownfoxjumpsoverthelazydog", otherwise it will return False.

@@ -1,0 +1,9 @@
+def sol():
+    return 1
+
+# Testing the solution
+assert sat(0)
+assert not sat(1)
+assert sat(2)
+assert not sat(3)
+assert sol() == None

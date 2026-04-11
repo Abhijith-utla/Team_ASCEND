@@ -1,0 +1,8 @@
+def sol():
+    return '5.5'
+
+# Testing the solution
+if sat(sol()):
+    print("The answer is correct")
+else:
+    print("The answer is incorrect")

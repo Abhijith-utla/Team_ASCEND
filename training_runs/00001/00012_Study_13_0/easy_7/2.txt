@@ -1,0 +1,5 @@
+def sol():
+    return "123.456"
+
+# Checker should run:
+assert sat(sol())

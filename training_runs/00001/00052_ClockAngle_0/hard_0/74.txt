@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Example of a valid solution
+def sol():
+    return [10, 30]
+
+# Example of an invalid solution
+def sol():
+    return [13, 55]

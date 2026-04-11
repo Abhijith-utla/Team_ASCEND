@@ -1,0 +1,14 @@
+The function sat checks if the list has the same length, the same minimum and maximum elements. If these conditions are met, it returns True. Otherwise, it returns False.
+
+The code for the solution is as follows:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+The function `min` and `max` are used to find the minimum and maximum elements in the list. If these elements are the same, it means that the list has the same length and all elements are the same. So, the function returns True. If the minimum and maximum elements are not the same, or the list has a different length, the function returns False.
+
+The assert statement at the end of the function is used to check if the function is correctly implemented. If the function is correctly implemented, the assert statement will not cause an error.

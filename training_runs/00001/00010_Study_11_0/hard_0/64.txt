@@ -1,0 +1,12 @@
+The problem statement is not clear. It seems like you want to find the minimum, maximum and length of a list. However, the provided function `sat(ls: List[str])` is checking if the minimum, maximum, and length of the list are all the same. This is not clear from the problem statement.
+
+Assuming that the question is to find the minimum, maximum and length of a list, here is the correct solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+This function checks if all elements in the list are the same, i.e., if the list is a sequence of the same element. If the list is not a sequence of the same element, then the minimum, maximum, and length of the list will be different.

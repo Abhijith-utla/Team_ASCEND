@@ -1,0 +1,6 @@
+def sol():
+    s = "sirnemtpuA"
+    return s == s[::-1] and s == ''.join(sorted(s))
+
+# Testing
+print(sat(sol()))  # Returns True

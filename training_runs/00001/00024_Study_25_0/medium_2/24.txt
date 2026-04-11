@@ -1,0 +1,8 @@
+Here's the Python code for the solution:
+
+```python
+def sol():
+    return ''.join(sorted('sirnemtpuA'))
+```
+
+The function `sol` takes no arguments and returns a string that is the sorted version of 'sirnemtpuA' (all lowercase) in reverse order.

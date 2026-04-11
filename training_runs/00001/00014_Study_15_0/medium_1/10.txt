@@ -1,0 +1,7 @@
+def sol():
+    return {
+        'result': all(x + 1 == (2 ** x) - 1 for x in range(20)),
+    }
+
+# Test
+assert sat(sol())

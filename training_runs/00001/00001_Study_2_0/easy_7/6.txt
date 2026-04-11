@@ -1,0 +1,5 @@
+def sol():
+    s = 'aaaaaaaaaaa' + 'aaa'*200 + 'a'*201
+    return s
+
+print(sol())

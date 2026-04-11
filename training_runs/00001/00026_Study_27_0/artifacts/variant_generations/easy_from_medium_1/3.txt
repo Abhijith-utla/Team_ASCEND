@@ -1,0 +1,14 @@
+Sure, here are three simpler variants of the original puzzle:
+
+```python
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]]
+
+def sat(li: List[int]):
+    return li[li[0]] == li[li[1]]
+
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]] and li[li[2]] == li[li[3]]
+```
+
+This is a simple change in the list index being used. For the first variant, we are simply changing the second index to another one, while the other three remain the same. For the second variant, we are changing the second and third elements of the list to the same, while the first two remain the same. For the third variant, we are changing the fourth element of the list to match the first two elements of the list, while the rest of the list remains the same.

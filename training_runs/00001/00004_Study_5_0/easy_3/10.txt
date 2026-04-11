@@ -1,0 +1,21 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(sat(sol()))  # This should print: True
+```
+
+This function sol() returns a list of numbers from 1 to 9. The function sat() checks if all numbers from 1 to 9 appear in the list.
+
+Here's how you could implement this:
+
+```python
+def sat(li: List[int]):
+    return li.count(1) == 1 and li.count(2) == 1 and li.count(3) == 1 and li.count(4) == 1 and li.count(5) == 1 and li.count(6) == 1 and li.count(7) == 1 and li.count(8) == 1 and li.count(9) == 1
+```
+
+This function works by checking the number of occurrences of each number in the list. It returns True if all numbers from 1 to 9 appear in the list, and False

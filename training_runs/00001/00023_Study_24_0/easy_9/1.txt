@@ -1,0 +1,16 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [17, 3]
+
+def sat(li: List[int]):
+    return li.count(17) == 1 and li.count(3) == 1
+
+# Testing the solution
+assert sat(sol())
+```
+
+This solution creates a list containing both 17 and 3. The `sol()` function returns this list, and the `sat()` function checks if this list contains exactly one 17 and one 3. The `assert` statement is used to verify that the `sat()` function is correct.

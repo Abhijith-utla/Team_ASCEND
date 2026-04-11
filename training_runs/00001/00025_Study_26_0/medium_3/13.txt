@@ -1,0 +1,2 @@
+def sol():
+    return [int(i) for i in '987654321']

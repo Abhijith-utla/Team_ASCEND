@@ -1,0 +1,10 @@
+Sure, here's the code for the `sol` function.
+
+```python
+def sol():
+    for i in range(10000000000, 123000000000):
+        if sat(i):
+            return i
+    return None
+```
+This function will return the first positive integer `i` that satisfies the condition `sat(i)`. If there are no such integers, it will return `None`.

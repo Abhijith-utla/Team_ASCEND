@@ -1,0 +1,15 @@
+Sure, here is the Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+The function `sat` takes a list of integers `li` as input and returns `True` if and only if the list `li` satisfies the following conditions:
+
+1. The sum of each element in `li` with the element at the position 0 (i.e., `i + j == 9` for all `i` and `j`)
+2. The length of `li` is 1000
+
+The function uses the `zip` function to iterate over pairs of elements from `li` and the list `[4] + li`, which starts with 4 and the rest of the list. It then checks if each pair satisfies the condition `i + j == 9`. If all pairs do, the function returns `True`; otherwise, it returns `False`.

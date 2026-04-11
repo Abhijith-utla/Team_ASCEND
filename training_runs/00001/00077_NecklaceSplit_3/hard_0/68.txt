@@ -1,0 +1,8 @@
+def sol():
+    return 1
+
+print(sat(0))
+!python
+print(sat(1))
+!python
+print(sat(2))

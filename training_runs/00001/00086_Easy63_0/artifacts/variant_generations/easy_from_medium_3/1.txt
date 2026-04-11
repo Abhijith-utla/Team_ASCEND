@@ -1,0 +1,17 @@
+Sure, here are three variant functions for the given sat() Python function:
+
+```python
+# Variant 1: Change 's' to 'a'
+def sat(a: str):
+    return set(a) <= set("18-+*/") and a.count("8") == 5 and a.count("1") == 1 and eval(a) == 295
+
+# Variant 2: Change the inequality comparison operator to '<='
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 5 and s.count("1") == 1 and eval(s) == 295
+
+# Variant 3: Change 'a' to 's'
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 5 and s.count("1") == 1 and eval(s) == 295
+```
+
+Please note that these are only variants. The original problem statement does not provide a clear way to modify the code, so it's hard to make exactly the same code. If you want to modify the code in a way that makes the solution to the problem different, feel free to suggest a modification.

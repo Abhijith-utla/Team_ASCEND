@@ -1,0 +1,12 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+def sol():
+    return sum(2 ** i - 1 for i in range(20))
+```
+
+This function sums the series `2 ** i - 1` for all `i` from 0 to 19, which is equivalent to the bitwise NOT operation on each `i`th bit of a 32-bit integer, leading to the series `2 ** i - 1`. This series sums to `2 ** 20 - 1`, which is equal to `-1`.
+
+The function `sat` is used to check if the sum of this series is equal to `-1`. If the sum is `-1`, the function returns `True`; otherwise, it returns `False`.
+
+The final checker will run `assert sat(sol())` to verify the solution.

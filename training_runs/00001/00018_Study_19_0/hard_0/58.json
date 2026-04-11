@@ -1,0 +1,16 @@
+{
+  "attempt_num": 58,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T08:32:41.884814+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=generic,preamble=1,found_sol=0,candidates=0|preview=```python def sol(): return {i + j for i in range(11) for j in range(11)} ``` The code above will return the set {0, ...",
+  "difficulty": "hard",
+  "problem_id": "00018_Study_19_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

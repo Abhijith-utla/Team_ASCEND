@@ -1,0 +1,6 @@
+def sol():
+    x = "_" * 81
+    return x
+
+# Testing the function
+assert sat(sol())

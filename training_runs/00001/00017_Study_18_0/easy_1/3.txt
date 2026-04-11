@@ -1,0 +1,23 @@
+The Python function `sat` is defined to check if the length of the input list is equal to the length of the set of the list. 
+
+The set in Python is an unordered collection of unique elements. If the length of the list is equal to the length of the set, it means there are no duplicate elements in the list.
+
+Therefore, this function returns `True` if the length of the list is equal to the length of the set, and `False` otherwise.
+
+The function `sat` takes a list of strings `ls` as an argument and returns a boolean value.
+
+Here is the Python code for the function `sol`:
+
+```python
+def sol(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+To make sure that the function `sol` works correctly, you can use the following assert statements:
+
+```python
+assert sol(["apple", "banana", "apple"]) == False
+assert sol(["apple", "banana", "cherry"]) == True
+```
+
+These assert statements are used to test the correctness of the `sol` function.

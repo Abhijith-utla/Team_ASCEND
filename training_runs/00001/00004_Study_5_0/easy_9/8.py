@@ -1,0 +1,14 @@
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+
+def sol():
+    def sat(li: list) -> bool:
+        return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+
+    answer = []
+    for _ in range(100):
+        answer.append(int(sat(list(map(str, [random.randint(0, 9) for _ in range(100)])))))
+    return answer
+
+if __name__ == "__main__":
+    assert sat(sol())

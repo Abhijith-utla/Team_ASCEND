@@ -1,0 +1,16 @@
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(1, 11)])
+
+def sol():
+    def sat(li: List[int]):
+        return all([li.count(i) == i for i in range(1, 11)])
+
+    result = []
+    for _ in range(100):
+        li = [random.randint(1, 10) for _ in range(10)]
+        if sat(li):
+            result.append(li)
+    return result
+
+if __name__ == "__main__":
+    assert sat(sol())

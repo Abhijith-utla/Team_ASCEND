@@ -1,0 +1,5 @@
+def sol():
+    return "1 5 7 13"
+
+# Test
+assert sat(sol()), "Failed to satisfy the condition"

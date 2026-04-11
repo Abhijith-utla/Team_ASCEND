@@ -1,0 +1,5 @@
+def sol():
+    return "1234"
+
+# This will always return True because the input string expr is equal to the string "1234"
+# which is the output of the function sol(). The function sol() returns a string, not an answer object.

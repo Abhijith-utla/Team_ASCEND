@@ -1,0 +1,17 @@
+{
+  "attempt_num": 15,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T18:17:45.556176+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: Each number must occur exactly once|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): return \"1 7 - 3 1\" # Test assert sat(sol())",
+  "difficulty": "medium",
+  "problem_id": "00082_CardGame24_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

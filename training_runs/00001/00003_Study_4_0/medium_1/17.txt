@@ -1,0 +1,18 @@
+Here is the correct solution for the Python program.
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This function checks if the input list has 10 elements, contains exactly two occurrences of the third element, and the third element appears at the third position in the list. If all these conditions are met, the function returns `True`, otherwise it returns `False`.

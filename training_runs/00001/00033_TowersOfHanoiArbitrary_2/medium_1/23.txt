@@ -1,0 +1,12 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [[0, 1, 2], [3], [4, 5, 6]]
+
+assert sat(sol())
+```
+
+This function `sol` simply returns the expected solution. The assert statement checks if the function `sat` returns the correct result.

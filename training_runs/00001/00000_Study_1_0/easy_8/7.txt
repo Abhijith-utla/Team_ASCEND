@@ -1,0 +1,10 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True
+```
+
+The function `sat` checks if the string `s` contains the character 'oo'. If it does, the function returns `False`. If it doesn't, the function returns `True`.

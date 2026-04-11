@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return [[0, 7], [4, 5, 6], [1, 2, 3, 8]], [[0, 1, 2, 3], [4, 5], [6, 7]]
+```
+
+In this function, `moves` is a list of pairs `(i, j)` where `i` and `j` are indices representing the source and target lists respectively. We first create a copy of the source list `state = [s[:] for s in source]` and then apply the moves in reverse order to the target list. After each move, we check if the list `state[j]` is sorted and matches the target list `target[j]`. If not, we raise an `AssertionError`. If all moves are applied successfully, we check if `state` is equal to `target`. If it is, we return `True`, otherwise we return `False`.
+
+Note: The assert statement is used to check if the statement is true, if not, it raises an AssertionError. This is used for debugging

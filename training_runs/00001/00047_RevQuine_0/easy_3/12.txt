@@ -1,0 +1,8 @@
+def sol():
+    return ""
+
+# Test case
+if sat(sol()):
+    print("The solution is correct.")
+else:
+    print("The solution is incorrect.")

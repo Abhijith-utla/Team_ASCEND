@@ -1,0 +1,17 @@
+Here's the correct code:
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+
+print(sol())
+```
+
+This code creates a list with ten elements from 1 to 10. It then checks if the length of the list is 10 and if the number of occurrences of the fourth element (which is 4) in the list is 1. If both conditions are met, the function returns True, otherwise it returns False. The print statement at the end calls the function and prints the result.

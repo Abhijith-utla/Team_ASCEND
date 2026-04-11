@@ -1,0 +1,5 @@
+def sol():
+    li = [x % 1000 for x in range(10000)]
+    return all([((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] in range(1000))) for i in range(20)])
+
+print(sol())

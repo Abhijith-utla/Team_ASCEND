@@ -1,0 +1,6 @@
+Here is the Python code to construct and return a single answer value:
+
+```python
+def sol():
+    return {'answer': 'This is a test answer.'}
+```

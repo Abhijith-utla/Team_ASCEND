@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# The code for the solution is inside this function
+def sat(x):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1))
+
+# This is the final checker
+assert sat(sol())

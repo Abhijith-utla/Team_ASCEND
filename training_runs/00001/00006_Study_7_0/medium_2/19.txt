@@ -1,0 +1,10 @@
+Here is the correct solution for the problem. 
+
+The function `sat` checks if the string `s` contains exactly 8 occurrences of the substring `8**2888` and the string `s` has exactly 3 characters. It does this by converting the integer `8**2888` to a string and counting the occurrence of the string `s` in the resulting string. If the count is greater than 8 and the string `s` has exactly 3 characters, the function returns `True`. Otherwise, it returns `False`.
+
+Here is the code:
+
+```python
+def sat(s: str):
+    return str(8 ** int(2888)).count(s) > 8 and len(s) == 3
+```

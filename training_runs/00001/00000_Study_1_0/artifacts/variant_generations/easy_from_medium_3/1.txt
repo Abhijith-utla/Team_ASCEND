@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return 'oo' not in s and 'o' in s and s.count('o') == 1000
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return 'o' not in s and 'oo' not in s and s.count('o') == 1000
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return 'ooo' not in s and 'o' in s and s.count('o') == 1000
+```

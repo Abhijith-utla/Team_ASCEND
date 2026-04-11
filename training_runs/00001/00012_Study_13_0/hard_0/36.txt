@@ -1,0 +1,11 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    return 3.1415
+
+def sat(x: float):
+    return str(x - 3.1415).startswith("123.456")
+```
+
+The variable `x` is the answer provided by the user. The `sol()` function returns the value of `x` which is `3.1415`. The `sat()` function checks if the difference between `x` and `3.1415` is a string that starts with "123.456". If it is, the function returns `True`, otherwise it returns `False`.

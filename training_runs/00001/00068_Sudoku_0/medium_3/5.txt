@@ -1,0 +1,11 @@
+def sol():
+    answer = ""
+    for i in range(9):
+        for j in range(9):
+            answer += "_"
+        answer += " "
+        if i % 3 == 2:
+            answer += "\n"
+    return answer
+
+# assert sat(sol())

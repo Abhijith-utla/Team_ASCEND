@@ -1,0 +1,16 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 7)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:39:36.208600+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 7)|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): while True: test_list = [randint(0, 100) for _ in range(randint(1, 100))] if sat(test_list): return test_l...",
+  "difficulty": "easy",
+  "problem_id": "00038_LongestMonotonicSubstring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

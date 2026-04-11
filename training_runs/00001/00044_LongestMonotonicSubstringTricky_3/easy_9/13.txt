@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# This function is not defined in the problem, so it's not possible to check if the solution is correct.

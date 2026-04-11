@@ -1,0 +1,15 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+
+print(sol())
+```
+This program starts with `i = 1000` and increments `i` by 1 in each iteration of the while loop until `sat(i)` returns `True`. At this point, `i` is the answer. The `sat` function is not used in this solution, but it's included as a placeholder for the problem statement.

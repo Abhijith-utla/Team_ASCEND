@@ -1,0 +1,18 @@
+Sure, here's how you can construct a solution for this problem. 
+
+The function `sat` takes a list of integers as input and returns a boolean value. It checks if the list is sorted in ascending order and all elements in the list are unique. 
+
+Here's the correct Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function will return `True` if the input list is a permutation of the numbers 0 to 998 and `False` otherwise.
+
+The function `sorted(li)` will sort the list in ascending order and `list(range(999))` will create a list of numbers from 0 to 998. `all(li[i] != i for i in range(len(li)))` will check if all elements in the list are unique.
+
+The checker will run: `assert sat([])`,

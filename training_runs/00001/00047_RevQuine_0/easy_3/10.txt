@@ -1,0 +1,18 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return ""
+```
+
+The function `sol()` returns an empty string which is a valid answer to the problem. 
+
+The function `sat` is already defined by the user and is used to check if a given string is a valid solution to the problem. The function `sat` is defined to be True if the string can be evaluated as a valid Python code and False otherwise. 
+
+The `eval` function is used to evaluate the string as a Python expression. If the string is a valid Python expression, this will evaluate to the same result as the string. If it's not a valid Python expression, this will throw an `SyntaxError`. 
+
+So, `eval(rev_quine)` will equal `rev_quine.strip()` if `rev_quine` is a valid Python expression, which means that `rev_quine` is a solution to the problem. 
+
+The function `sol` returns an empty string as a solution to the problem.
+
+The checker will run: `assert sat(sol())`.

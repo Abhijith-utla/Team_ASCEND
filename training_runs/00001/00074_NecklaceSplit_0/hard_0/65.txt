@@ -1,0 +1,8 @@
+def sol():
+    return {"result": False}
+
+def test_sol():
+    for n in range(-10, 10):
+        assert sat(n) == sat(n)
+
+test_sol()

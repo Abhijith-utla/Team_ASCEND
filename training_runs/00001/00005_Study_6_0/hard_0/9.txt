@@ -1,0 +1,5 @@
+def sol():
+    i = 1234567891011 # Replace this number with any integer you want
+    while not sat(i):
+        i += 1
+    return i

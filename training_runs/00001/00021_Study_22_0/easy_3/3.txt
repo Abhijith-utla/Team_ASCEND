@@ -1,0 +1,5 @@
+def sol():
+    return 'Python'
+
+# Testing the solution
+assert sat(sol())

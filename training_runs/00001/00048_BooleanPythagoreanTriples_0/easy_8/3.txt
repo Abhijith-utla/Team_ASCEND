@@ -1,0 +1,8 @@
+def sol():
+    return None
+
+# Run the assertion
+assert sat(1, 1, 1)
+
+# If the assertion passed, return None
+return None

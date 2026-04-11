@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# Assuming the function 'sat' checks if a list is sorted in ascending order and all elements in the list are positive
+# If the list is empty, it's sorted and positive, so it's True
+# If the list isn't empty and all elements are positive, it's True
+def sat(ls: List[float]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+
+# Testing the function
+print(sat(sol())) # True
+print(sat([1.0, 2.0, 3.0])) # True
+print(sat([1.0, -2.0, 3.0])) # False

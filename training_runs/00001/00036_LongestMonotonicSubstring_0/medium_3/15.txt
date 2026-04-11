@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(13) if i < 13 and "a" <= str(i)[-1] <= "z" and i < 13 and "a" <= str(i)[-2] <= "z" and i < 13 and "a" <= str(i)[-3] <= "z"]
+
+print(sol())

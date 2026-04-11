@@ -1,0 +1,9 @@
+def sol():
+    return [1, 2, 3, 4, 5]
+
+print(sat(sol()))  # True
+
+def sat(x: List[int]):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1))
+
+print(sat(sol()))  # True

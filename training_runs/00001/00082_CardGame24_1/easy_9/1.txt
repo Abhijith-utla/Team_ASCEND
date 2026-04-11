@@ -1,0 +1,10 @@
+def sol():
+    return None
+
+# Testing the correct pattern
+expr = 'sol()'
+assert sat(expr)
+
+# Testing the incorrect pattern
+expr = 'sol(1)'
+assert not sat(expr)

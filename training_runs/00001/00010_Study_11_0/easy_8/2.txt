@@ -1,0 +1,6 @@
+def sol(ls: List[str]):
+    return all(len(set(i)) == len(ls[0]) for i in ls)
+
+print(sol(['abc', 'def', 'ghi']))
+print(sol(['ab', 'cd', 'ef']))
+print(sol(['abcd', 'efgh', 'ijkl']))

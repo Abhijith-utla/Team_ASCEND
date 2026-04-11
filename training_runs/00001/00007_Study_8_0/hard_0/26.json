@@ -1,0 +1,16 @@
+{
+  "attempt_num": 26,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:43:45.385594+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The provided code snippet is incorrect. The function `sat` is designed to check if the string `ls[1234]` is a substri...",
+  "difficulty": "hard",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

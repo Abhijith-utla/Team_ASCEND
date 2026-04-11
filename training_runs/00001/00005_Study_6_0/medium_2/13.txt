@@ -1,0 +1,11 @@
+def sol():
+    i = 0
+    while i < 100:
+        if i % 5 == 0:
+            return i
+        i += 1
+
+    return "No solution"
+
+# Assertion
+assert sat(sol())

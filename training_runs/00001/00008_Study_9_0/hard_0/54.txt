@@ -1,0 +1,13 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return "".join(chr(ord("The quick brown fox jumps over the lazy dog".index(c)) + i) for i, c in enumerate("The five boxing wizards jump quickly"))
+
+def sat(s: str):
+    return s == "".join(chr(ord("The quick brown fox jumps over the lazy dog".index(c)) + i) for i, c in enumerate("The five boxing wizards jump quickly"))
+```
+
+The `sat` function checks if the string `s` is equal to the translated message by the `sol` function. The `ord` function is used to get the Unicode of a character, and `index` is used to find the Unicode of a character in a string. The `chr` function is used to get a character from a Unicode.
+
+The `sol` function translates the message by mapping each character to its Unicode plus the position of the character in the string. The `join` function is used to convert a list of characters into a string. The translated message is then joined back

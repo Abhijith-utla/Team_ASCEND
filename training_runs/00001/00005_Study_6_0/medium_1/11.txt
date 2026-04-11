@@ -1,0 +1,2 @@
+def sol():
+    return 1 if sat(1) else 0

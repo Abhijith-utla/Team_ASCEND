@@ -1,0 +1,4 @@
+def sol():
+    return 1
+
+# The function `sat` is already defined by the user, but here is the function `sol` defined to return 1.

@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+print(sat(0))
+print(sol())
+!python3 sol.py

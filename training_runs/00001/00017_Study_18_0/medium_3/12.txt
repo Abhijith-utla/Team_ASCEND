@@ -1,0 +1,10 @@
+Here's the solution to the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return len(ls) == len(set(ls))
+```
+
+The function `sat` checks if the length of the list and the number of unique elements in the list are equal. If they are equal, it means that the list contains no duplicates and returns `True`, otherwise it returns `False`.

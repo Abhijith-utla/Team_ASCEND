@@ -1,0 +1,17 @@
+{
+  "attempt_num": 28,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:32:24.216579+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): return [1, 2, 3, 4] # Checker def check_sol(sol_fn): li = sol_fn() assert sat(li) check_sol(sol)",
+  "difficulty": "hard",
+  "problem_id": "00026_Study_27_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

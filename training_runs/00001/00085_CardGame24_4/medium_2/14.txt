@@ -1,0 +1,4 @@
+def sol():
+    return 10 + 12 * 1 - 7 / (13 - 10)
+
+assert sat(str(sol()))

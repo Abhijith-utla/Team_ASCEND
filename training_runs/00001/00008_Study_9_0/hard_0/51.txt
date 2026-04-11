@@ -1,0 +1,4 @@
+def sat(li: List[int]):
+    return all(chr(li[i] + ord('a')) == "The quick brown fox jumps over the lazy dog"[i] for i in li)
+
+print(sat([ord(c) - ord('a') for c in "The quick brown fox jumps over the lazy dog"]))

@@ -1,0 +1,10 @@
+def sol():
+    for i in range(-1000, 1000):
+        if sat(i):
+            return i
+    return None
+
+# Test cases
+assert sat(123) == False
+assert sat(124) == True
+assert sol() == 0

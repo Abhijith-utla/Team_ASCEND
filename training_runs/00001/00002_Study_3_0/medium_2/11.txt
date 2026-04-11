@@ -1,0 +1,18 @@
+The Python function `sat` takes a list of integers as input and returns a boolean value indicating whether the list is sorted in ascending order and all elements in the list are equal to their index.
+
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(len(li))) and all(li[i] == i for i in range(len(li)))
+```
+
+This function works by first checking if the list is sorted in ascending order using the `sorted` function. If it is, the result of this operation is the same as the input list.
+
+The second condition checks if all elements in the list are equal to their index. If this is the case, the `all` function will return `True`.
+
+So, if both conditions are met, the function returns `True`. Otherwise, it returns `False`.
+
+Please note that the problem statement does not specify what to return if the conditions are not met, so I have chosen to return `False` in this solution. You may modify the function to suit your needs

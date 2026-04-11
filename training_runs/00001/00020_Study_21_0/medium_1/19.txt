@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3

@@ -1,0 +1,12 @@
+Here's how you can implement the function `sol`:
+
+```python
+from typing import List
+
+def sol() -> List[str]:
+    return []
+
+assert sat(sol())
+```
+
+The `sol` function returns an empty list. Since all elements in the list are unique, `sat` function returns `True`. The assert statement will pass if `sat` returns `True`.

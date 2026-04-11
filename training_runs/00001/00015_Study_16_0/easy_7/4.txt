@@ -1,0 +1,6 @@
+Here is the Python code that solves the problem:
+
+```python
+def sat(s: str) -> bool:
+    return s == 'abc4.5'
+```

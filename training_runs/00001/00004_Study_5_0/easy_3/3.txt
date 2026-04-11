@@ -1,0 +1,19 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    return 1 in li and 2 in li and 3 in li and 4 in li and 5 in li and 6 in li and 7 in li and 8 in li and 9 in li
+
+print(sol([1, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+```
+
+This solution first checks if all the elements in the list `li` are 1-9. If they are, it returns `True`, otherwise it returns `False`.
+
+The function `sol` can be used as follows:
+
+```python
+print(sol([1, 1, 2, 3, 4, 5, 6, 7, 8, 9]))  # It will print: True
+print(sol([1, 2, 3, 4, 5, 6, 7, 8, 9, 1]))  # It will print: False
+```

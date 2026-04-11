@@ -1,0 +1,15 @@
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+    assert sat([])
+    assert not sat([1])
+    assert sat([2, 3, 4])
+    assert not sat([1, 2, 2])
+    assert sat([10, 20, 30])
+    assert not sat([10, 10, 20])
+    assert sat([987, 10, 20, 30])
+    assert not sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    assert sat([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+    assert not sat([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+    assert

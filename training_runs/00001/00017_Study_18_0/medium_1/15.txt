@@ -1,0 +1,5 @@
+def sol():
+    ls = ['a', 'b', 'c']
+    return sat(ls)
+
+sat = lambda ls: all(s not in ls for s in ls)

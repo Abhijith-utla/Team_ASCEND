@@ -1,0 +1,8 @@
+The correct pattern for your problem is:
+
+```python
+def sol():
+    return "123.456"
+```
+
+In the incorrect pattern, there's no argument passed into the `sol` function. This function should return a string value which starts with "123.456", but the problem statement mentions that there's no argument. The `sol` function should take no arguments to get this string.

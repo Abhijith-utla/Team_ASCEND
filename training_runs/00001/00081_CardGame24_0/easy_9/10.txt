@@ -1,0 +1,5 @@
+def sol():
+    return 8
+
+# Test
+assert sat(sol.__code__.co_consts[0].replace("<answer>", str(8)))

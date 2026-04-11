@@ -1,0 +1,7 @@
+def sol():
+    return """
+    7__________1_8_4______2_7_8_____4_____1____69_2_8__5_6__3_7___49______
+    """.replace('\n', '').replace(' ', '').replace('|', '')
+
+# This is to ensure that the solution meets the constraints of the problem
+assert sat(sol())

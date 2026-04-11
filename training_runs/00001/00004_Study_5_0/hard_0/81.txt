@@ -1,0 +1,10 @@
+The code provided is almost correct. However, it will not return a correct answer object. The function `sat` takes a list of integers as input and returns a boolean value. The correct pattern would be:
+
+```python
+def sol():
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function will return `True` if all elements in the list `li` are the same, and `False` otherwise. The list comprehension inside the `all()` function will count the occurrence of each integer in the list and compare it to the integer itself. If all integers occur the same number of times, the function will return `True`, otherwise it will return `False`. 
+
+The function `sat` should be able to return a single answer object from this function.

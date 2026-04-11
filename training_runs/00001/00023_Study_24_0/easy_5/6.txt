@@ -1,0 +1,8 @@
+Here is the Python solution:
+
+```python
+def sol():
+    return [17, 17, 3]
+```
+
+This function returns a list with three elements: 17, 17, and 3. As per the given condition, 17 appears twice and 3 appears once.

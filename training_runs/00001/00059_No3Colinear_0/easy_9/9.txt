@@ -1,0 +1,19 @@
+Here is the solution:
+
+```python
+def sol():
+    return []
+```
+
+This solution is empty as it does not return any coordinates. The function `sol()` does not take any arguments and does not return any value. The assert statement at the end of the file checks that `sol()` returns an empty list.
+
+Note: The `itertools.combinations` function is used to generate all possible pairs of coordinates. However, it does not return the pairs directly. Instead, it returns an iterator which can be converted into a list or another iterable. If you want to return the pairs directly, you can modify the function as follows:
+
+```python
+import itertools
+
+def sol():
+    return list(itertools.combinations(range(10), 2))
+```
+
+In this version of the function, `itertools.combinations(range(10), 2)` generates all possible pairs of indices for a range of 10, and `list()` converts the iterator into a list.

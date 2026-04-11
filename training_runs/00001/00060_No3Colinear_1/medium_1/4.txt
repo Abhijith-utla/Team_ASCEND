@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+print(sat([]))  # True
+print(sat([[1, 1], [2, 2], [3, 3]]))  # False
+print(sat([[0, 0], [1, 1], [2, 2]]))  # True
+print(sat([[1, 2], [2, 3], [3, 4]]))  # False
+print(sat([[0, 0], [1, 1], [0, 2]]))  # True

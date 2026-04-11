@@ -1,0 +1,4 @@
+def sol():
+    return "81811"
+
+# This is the correct pattern. It's a Python code.

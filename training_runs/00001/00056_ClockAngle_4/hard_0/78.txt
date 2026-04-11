@@ -1,0 +1,24 @@
+def sol():
+    return []
+
+assert sat([])
+assert not sat([0, 0])
+assert not sat([12, 0])
+assert not sat([11, 59])
+assert not sat([11, 60])
+assert not sat([12, 60])
+assert sat([12, 30])
+assert sat([1, 1])
+assert sat([1, 15])
+assert not sat([1, 25])
+assert not sat([2, 1])
+assert not sat([2, 15])
+assert not sat([2, 25])
+assert not sat([11, 30])
+assert not sat([11, 45])
+assert not sat([11, 55])
+assert not sat([12, 45])
+assert not sat([12, 55])
+
+if __name__ == "__main__":
+    assert sat(sol())

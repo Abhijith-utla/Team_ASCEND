@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Checker should fail because it's trying to test an empty list for "any" which is not applicable.
+assert not sat([])
+
+# Checker should fail because it's trying to test a list of length less than 100.
+assert not sat([0]*99)
+
+# Checker should pass because it's trying to test a list of length 100.
+assert sat([0]*100)

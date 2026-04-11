@@ -1,0 +1,16 @@
+{
+  "attempt_num": 60,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:56:19.784506+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The function `sat` is checking if the string \"The quick brown fox jumps over the lazy dog\" is the same as the string ...",
+  "difficulty": "hard",
+  "problem_id": "00008_Study_9_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

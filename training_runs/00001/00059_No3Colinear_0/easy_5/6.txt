@@ -1,0 +1,10 @@
+def sol():
+    return [], 10, 20
+
+# Testing
+def test_sol():
+    assert sol() == ({}, 10, 20)
+
+# Run tests
+if __name__ == '__main__':
+    test_sol()

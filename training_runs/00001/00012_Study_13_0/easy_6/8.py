@@ -1,0 +1,10 @@
+def sat(x: float):
+    return x > 3.1416
+
+def sol():
+    return {
+        "answer": 3.1416
+    }
+
+if __name__ == "__main__":
+    assert sat(sol())

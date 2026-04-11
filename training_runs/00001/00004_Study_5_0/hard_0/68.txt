@@ -1,0 +1,10 @@
+Here is the Python solution for the given problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This solution counts the number of occurrences of each integer in the list `li` and checks if all counts are equal to the number itself. The `all()` function in Python returns `True` if all elements in an iterable (like a list) are true. If any element is `False`, `all()` returns `False`.

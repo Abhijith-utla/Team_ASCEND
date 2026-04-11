@@ -1,0 +1,53 @@
+def sol():
+    return {}
+
+# Test case: valid case
+assert sat(0)
+
+# Test case: invalid case
+assert not sat(1)
+
+# Test case: invalid case
+assert not sat(2)
+
+# Test case: valid case
+assert sat(3)
+
+# Test case: invalid case
+assert not sat(4)
+
+# Test case: valid case
+assert sat(5)
+
+# Test case: invalid case
+assert not sat(6)
+
+# Test case: valid case
+assert sat(7)
+
+# Test case: invalid case
+assert not sat(8)
+
+# Test case: valid case
+assert sat(9)
+
+# Test case: invalid case
+assert not sat(10)
+
+# Test case: valid case
+assert sat(11)
+
+# Test case: invalid case
+assert not sat(12)
+
+# Test case: valid case
+assert sat(13)
+
+# Test case: invalid case
+assert not sat(14)
+
+# Test case: valid case
+assert sat(15)
+
+# Test case: invalid case
+assert not

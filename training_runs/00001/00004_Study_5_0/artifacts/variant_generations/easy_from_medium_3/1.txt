@@ -1,0 +1,19 @@
+Here are the three simpler variations of the original function:
+
+VARIANT1:
+```python
+def sat(li: list) -> bool:
+    return all(li.count(i) == i for i in range(10)) and li.count(0) == 1
+```
+
+VARIANT2:
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+VARIANT3:
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+```

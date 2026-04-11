@@ -1,0 +1,20 @@
+Here is a possible solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [4] + [0]*989
+    return li
+
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+
+assert sat(sol())
+```
+
+In the above code, we first create a list `li` where the first element is `4` and the rest are `0`s. We know that the sum of all elements in the list is `3*(1000 - 1)`, which is `3*999`. Therefore, the last element of `li` is `3*999 - 3*999 + 4 = 3*999 - 3*1000 = 3 - 4 = 1`.
+
+The function `sat` checks whether the list satisfies two conditions:
+1. The sum of all elements in the list is `3*1000`.
+2. The length of the list

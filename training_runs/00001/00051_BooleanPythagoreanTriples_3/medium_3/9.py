@@ -1,0 +1,33 @@
+def sat(numbers: List[int], n=2):
+    assert len(numbers) >= n
+    return all(numbers[i] <= numbers[i+1] for i in range(len(numbers)-n))
+
+def sol():
+    return []
+
+# Test the function with a list of integers
+# The function should return False because the list is empty
+assert not sat([], 2)
+
+# Test the function with a list of two integers
+# The function should return False because the second number is smaller than the first one
+assert not sat([1, 2], 2)
+
+# Test the function with a list of three integers
+# The function should return True because all numbers are smaller than the next one
+assert sat([1, 2, 3])
+
+# Test the function with a list of four integers
+# The function should return False because the fourth number is smaller than the third one
+assert not sat([1, 2, 3, 4])
+
+# Test the function with a list of five integers
+# The function should return True because all numbers are smaller than the next one
+assert sat([1, 2, 3, 4, 5])
+
+# Test the function with a list of six integers
+# The function should return False because the seventh number is smaller than the sixth one
+assert not sat([1, 2, 3, 4
+
+if __name__ == "__main__":
+    assert sat(sol())

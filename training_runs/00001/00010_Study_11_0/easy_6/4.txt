@@ -1,0 +1,19 @@
+The given function 'sat' is incorrect. It returns 'False' when the length of the first string in the list is less than the length of all other strings.
+
+The correct function should return 'True' only when all strings are of equal length.
+
+Here's the correct pattern:
+
+```python
+def sol(ls: List[str]):
+    return all(len(i) == len(ls[0]) for i in ls)
+```
+
+In this function, we iterate over each string in the list 'ls', and check if they're equal in length to the first string in the list. The 'all' function will return 'True' only if all strings are of equal length.
+
+The correct pattern is:
+
+```python
+def sol(ls: List[str]):
+    return all(len(i) == len(ls[0]) for i in ls)
+```

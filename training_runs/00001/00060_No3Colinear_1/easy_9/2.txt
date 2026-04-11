@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# The given answer is empty as the problem statement asks for a valid solution.
+# If we have a valid solution, we can simply return the answer as a list.
+# If we have a valid solution, we can return an empty list.
+# If we have an invalid solution, we can return None or any other error message.
+
+assert sat(sol())

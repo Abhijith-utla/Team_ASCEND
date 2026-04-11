@@ -1,0 +1,18 @@
+This is a simple implementation of the original function, with three different lists inside the function to test. Here are the three variants:
+
+```python
+def sat(li1: List[int]):
+    return all([li1[i] != li1[i + 1] for i in range(9)]) and len(set(li1)) == 3
+
+def sat(li2: List[int]):
+    li2[0] = 0
+    return all([li2[i] != li2[i + 1] for i in range(9)]) and len(set(li2)) == 3
+
+def sat(li3: List[int]):
+    li3[0] = 1
+    li3[1] = 2
+    li3[2] = 3
+    return all([li3[i] != li3[i + 1] for i in range(3)]) and len(set(li3)) == 3
+```
+
+Each of these functions take a list of integers as an argument, and return True if the list is not in ascending order and has exactly three unique elements, and False otherwise. The first variant has a different first element of the list than the other two. The second variant changes the first two elements of the list to be 0, which is not in ascending order, and satisfies the condition. The third variant changes the first three elements of the list to be 1, 2, 3, which are all different from each other and in ascending order, so satisfies the condition as well.

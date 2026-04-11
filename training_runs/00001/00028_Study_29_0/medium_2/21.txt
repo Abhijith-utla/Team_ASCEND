@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is a placeholder because there's no input to satisfy the condition.
+# The solution to this problem is not applicable as the condition in the given function is not applicable.
+# We can remove this line to satisfy the condition.

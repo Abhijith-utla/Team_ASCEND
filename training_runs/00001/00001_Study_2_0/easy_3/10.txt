@@ -1,0 +1,6 @@
+def sol():
+    s = 'xxxxxxxxxxooooo'
+    return s.count('x') == 110 and s.count('o') == 101 and s.count('xx') == 98
+
+# Test
+assert sat(sol())

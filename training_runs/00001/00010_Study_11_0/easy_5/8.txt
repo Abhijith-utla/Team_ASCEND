@@ -1,0 +1,5 @@
+def sol():
+    return ["dog", "cat", "bat"]
+
+# Testing
+assert sat(sol())

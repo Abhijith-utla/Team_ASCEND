@@ -1,0 +1,18 @@
+Here's the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return tuple(ls) in zip('dee', 'doo', 'dah!')
+
+def test():
+    assert sol() == (('d', 'e', 'e'), ('d', 'o', 'o'), ('d', 'a', 'h', '!'))
+
+if __name__ == "__main__":
+    test()
+```
+
+This code defines the function `sol`. It takes no arguments, but it's included in the `test` function because it's tested to ensure that the solution is correct. The `test` function checks if `sol` returns the expected output.
+
+Please note that the test function is included in the `test` block because it's not a part of the problem statement. If you don't want to test the solution, you can remove the `test` function.

@@ -1,0 +1,10 @@
+Here is the Python code for the solution:
+
+```python
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True
+```
+
+This function `sat` takes a string `s` as an argument and returns `True` if there are 'oo' in the string and `False` otherwise. The `count` method is used to count the number of occurrences of 'oo' in the string. If 'oo' is present, the count is not zero and so `False` is returned. If 'oo' is not present, `True` is returned.

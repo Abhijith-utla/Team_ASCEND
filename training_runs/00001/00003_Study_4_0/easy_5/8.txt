@@ -1,0 +1,14 @@
+Sure, the function `sat` is correct. The function takes a list of integers as input and returns a boolean value indicating whether the input is valid. The function first checks if the length of the list is 10, and if the count of the number 3 in the list is 2. If both conditions are met, the function returns `True`, otherwise it returns `False`.
+
+Here is the code for the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```

@@ -1,0 +1,8 @@
+def sol():
+    return [0, 1, 2, 3, 4]
+
+assert sat(sol(), 5, "abcd")
+assert not sat(sol(), 5, "acbd")
+assert sat(sol(), 5, "aabb")
+assert not sat(sol(), 5, "aba")
+assert sat(sol(), 5, "acab")

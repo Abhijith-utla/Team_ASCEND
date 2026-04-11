@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# The function `sol` is already defined by the user. 
+# The task is to write a function `sol` that does not take any arguments.
+# The function `sol` should return an empty list.
+
+# The final checker will run: assert sat(sol())
+
+assert sat(sol())

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 78,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:45:59.437805+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=Your Python function `sat` checks if the string `ls[1234]` is in `ls[1235]` and is not equal to `ls[1235]`. This seem...",
+  "difficulty": "hard",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

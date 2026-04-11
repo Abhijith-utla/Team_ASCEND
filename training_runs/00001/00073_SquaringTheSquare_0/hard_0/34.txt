@@ -1,0 +1,7 @@
+def sol():
+    return [0, 0]
+
+# The answer is [0, 0].
+
+# The last checker will run: assert sat(sol())
+# This will pass if and only if the solution satisfies the conditions set by the 'sat' function.

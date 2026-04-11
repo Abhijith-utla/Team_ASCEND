@@ -1,0 +1,14 @@
+Here's the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+In the provided Python function, `sat(li: List[int])`, the function takes a list of integers `li` as an argument. The function first checks if the sorted version of the list is the same as the list `[0, 1, 2, ..., 998, 999]`. This is checked using the `sorted(li)` function. If the sorted list is not the same as the expected list, the function returns `False`.
+
+The next part of the function checks if there is any number in the list that is the same as its index. This is done by using a generator expression `(li[i] != i for i in range(len(li)))`. The function returns `False` if any of these numbers are equal to their index.
+
+If both checks pass, the function returns `True`

@@ -1,0 +1,12 @@
+The function `sat` checks if the list `li` has no characters that have an ASCII value that is a multiple of 3 with the value 1.
+
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 1]) == 0
+```
+
+The function `ord(i)` gets the ASCII value of the character `i`, and `% 3 == 1` checks if the ASCII value is a multiple of 3 with the value 1. The `sum` function then adds up all the 1's returned by the generator expression and returns `True` if the sum is 0, `False` otherwise.

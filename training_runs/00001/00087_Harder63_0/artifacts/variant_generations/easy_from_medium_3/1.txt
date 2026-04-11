@@ -1,0 +1,25 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return len(set(s)) <= 1 and s == '1-8*+/6'
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return len(set(s)) <= 2 and s == '1-8*+/6'
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return len(set(s)) < 3 and s == '1-8*+/6'
+```
+
+In the first variant, we're checking whether the length of the set of characters `s` is 1 or less than 2 (since the set of characters in "1-8*+/6" only includes '1', '8', '*', '+', '/', and '-', it can't have more than 2 different characters). The set `s` is then checked to be equal to '1-8*+/6'.
+
+In the second variant, we're checking whether the length of the set of characters is 2 or less than 3 (since there is an extra character '6' in the set of characters, hence we can't have more than 3 different characters). The set `s` is then checked to be equal to '1-8*+/6'.
+
+In the third variant, we're checking whether the length of the set of characters is less than 3 (since there is an extra character '6' in the set of characters, hence we can't have more than 2 different characters). The set `s` is then checked to be equal to '1-8*+/6'.
+
+Note: The last variant is not correct because the string '1-8*+/6' is equivalent to '1-8*+/6' and hence it's correct to have '6' at any place. The correct set of characters is '1-8*+/'.

@@ -1,0 +1,4 @@
+def sol():
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] for i in range(18))
+
+assert sat(sol())

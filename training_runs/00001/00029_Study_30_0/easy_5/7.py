@@ -1,0 +1,11 @@
+def sat(li: List[int]):
+    return all([(li[i] > li[i + 1]) for i in range(19)])
+
+def sol():
+    def sat(li: List[int]):
+        return all([(li[i] > li[i + 1]) for i in range(19)])
+
+    return [] if not sat([]) else [1] if not sat([1]) else [2] if not sat([1, 2]) else [3] if not sat([1, 2, 3]) else [4] if not sat([1, 2, 3, 4]) else [5] if not sat([1, 2, 3, 4, 5]) else [6] if not sat([1, 2, 3, 4, 5, 6]) else [7] if not sat([1, 2, 3, 4, 5, 6, 7]) else [8] if not sat([1, 2, 3, 4, 5, 6, 7, 8]) else [9] if not sat([1, 2, 3, 4, 5, 6, 7, 8, 9]) else [10] if
+
+if __name__ == "__main__":
+    assert sat(sol())

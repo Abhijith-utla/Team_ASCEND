@@ -1,0 +1,5 @@
+def sol():
+    x = [ord(c) - ord('A') for c in "OW##P%T'UW)X+X-YY]^_`bd/044e5egk7lm779:<m?D@ADnnpDEFIpNNOqqwxx"]
+    return x
+
+print(sol())

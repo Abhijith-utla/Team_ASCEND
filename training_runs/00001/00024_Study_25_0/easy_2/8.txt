@@ -1,0 +1,5 @@
+def sol():
+    return sat('abc', 'cba')
+
+# Run the assertion
+assert sat('abc', 'cba')

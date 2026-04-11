@@ -1,0 +1,6 @@
+def sol():
+    return {
+        'stamps': [19, 14, 81],
+        'max_stamps': 2,
+        'target': 19
+    }

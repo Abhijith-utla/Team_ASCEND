@@ -1,0 +1,5 @@
+def sol():
+    return [ '12345678' ]
+
+# Assertion checker
+assert sat(sol())

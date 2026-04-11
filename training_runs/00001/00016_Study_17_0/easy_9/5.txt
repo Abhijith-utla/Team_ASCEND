@@ -1,0 +1,10 @@
+The function `sat` is incorrect because it returns `True` if `i` is equal to `i + 1`. Since `i` is always greater than `i + 1`, it will always return `True`. 
+
+To make the function `sat` correct, it should return `False` when `i` is less than `i + 1`. Here is the corrected function:
+
+```python
+def sat(i: int) -> bool:
+    return i >= i + 1
+```
+
+This function will return `True` if `i` is greater than or equal to `i + 1`, and `False` otherwise.

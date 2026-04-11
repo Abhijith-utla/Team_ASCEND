@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is just a placeholder to check if the given solution is correct.
+# The real solution should be inserted in the sol() function.
+assert sat(sol())

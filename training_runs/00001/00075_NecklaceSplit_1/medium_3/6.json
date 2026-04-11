@@ -1,0 +1,16 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:14:35.303773+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=27|checked=27/27|preview=def sol(): return 0 assert sat(0, 0) assert not sat(0, 1) assert not sat(1, 0) assert not sat(1, 1) assert sat(0, 2) ...",
+  "difficulty": "medium",
+  "problem_id": "00075_NecklaceSplit_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

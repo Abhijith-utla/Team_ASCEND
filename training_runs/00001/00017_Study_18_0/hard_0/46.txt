@@ -1,0 +1,18 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return all(s + t in ls for s in ls for t in ls if s != t) == 'berlin berger linber linger gerber gerlin'.split()
+
+print(sat(['berlin', 'berger', 'linber', 'gerber', 'gerlin']))
+```
+
+This function checks if all the words in the provided list can be constructed by concatenating any two words in the list. The function returns True if all words can be constructed, and False otherwise. 
+
+The 'all' function is used here because it stops and returns False as soon as it finds a word that is not in the list. 
+
+The function 'sat' is defined as a statement of the correct Python syntax. The function 'sat' is intended to be a solution to a Python problem. The function is called with a list of words as an argument and returns a boolean value.
+
+The print statement at the end is used to test the function with the provided list of words. The function should return True if the words

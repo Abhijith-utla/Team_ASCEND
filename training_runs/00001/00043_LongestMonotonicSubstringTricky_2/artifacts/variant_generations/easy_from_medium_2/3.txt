@@ -1,0 +1,35 @@
+VARIANT1:
+```python
+def sat(x: List[int]):
+    return all(ord(ch) <= ord(s[x[i]]) for i in range(len(x)))
+```
+
+VARIANT2:
+```python
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(ord(ch) <= ord(s[x[i]]) for i in range(length))
+```
+
+VARIANT3:
+```python
+def sat(x: List[int], s="O!A{SeKv"):
+    return all(ord(ch) <= ord(s[x[i]]) for i in range(len(x)))
+```
+
+VARIANT4:
+```python
+def sat(x: List[int], s="O!A{SeKv"):
+    return all(ord(s[x[i]]) <= ord(s[x[i + 1]]) for i in range(len(x) - 1))
+```
+
+VARIANT5:
+```python
+def sat(x: List[int], length=1, s="O!A{SeKv"):
+    return all(s[x[i]] <= s[x[i + 1]] for i in range(length))
+```
+
+VARIANT6:
+```python
+def sat(x: List[int], s="O!A{SeKv"):
+    return all(s[i] <= s[i + 1] for i in range(len(x) - 1))
+```

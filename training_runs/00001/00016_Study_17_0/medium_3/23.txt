@@ -1,0 +1,14 @@
+The provided Python function `sat` is incorrect because `len(str(i + 1000))` and `len(str(i + 1001))` will always be equal because the number `i` will increase by one in each iteration of the loop. This means that the length of the string of `i + 1000` will always be less than the length of the string of `i + 1001`. This is because the string of `i + 1000` is simply a number and the string of `i + 1001` is a number plus one. The only possible difference is that the number is greater than one. 
+
+Here's a correct implementation of `sol`:
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+In this implementation, `sol` starts a loop where it continuously increments `i` until `sat(i)` returns `True`. This means that the loop breaks when `sat(i)` returns `False`, which means `i` is the largest number such that `

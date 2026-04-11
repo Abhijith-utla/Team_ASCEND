@@ -1,0 +1,19 @@
+Here are three simpler variations of the function `sat`:
+
+VARIANT1:
+```python
+def sat(x: float):
+    return x == 3.1416
+```
+
+VARIANT2:
+```python
+def sat(x: float):
+    return x < 3.1416
+```
+
+VARIANT3:
+```python
+def sat(x: float):
+    return x > 3.1416
+```

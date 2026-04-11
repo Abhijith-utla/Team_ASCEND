@@ -1,0 +1,4 @@
+def sol():
+    return sorted([i+1 for i in range(997)]) + [0]
+
+# assert sat(sol())

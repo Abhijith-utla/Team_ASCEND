@@ -1,0 +1,8 @@
+def sol():
+    return "success"
+
+# Assign the function to a variable for testing
+sol_func = sol
+
+# Test the function
+assert sol_func() == "success"

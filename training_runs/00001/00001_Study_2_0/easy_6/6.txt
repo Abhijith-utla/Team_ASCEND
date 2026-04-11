@@ -1,0 +1,33 @@
+Here's the Python code that solves the problem.
+
+```python
+def sol():
+    def sat(s: str):
+        return s.count('yy') == 100 and s.count('yo') == 101 and s.count('y') == 98
+    
+    s = ''
+    while len(s) < 500:
+        s += 'y'
+        if sat(s):
+            break
+    
+    s += 'yo' * 101
+    if not sat(s):
+        return None
+    
+    s = ''
+    while len(s) < 1000:
+        s += 'y'
+        if sat(s):
+            break
+    
+    s += 'yy' * 100
+    if not sat(s):
+        return None
+    
+    return s
+
+assert sat(sol())
+```
+
+This program creates a string `s` by repeatedly adding 'y' to the end of it. It then checks whether the string `s` satisfies the condition defined by the function `sat`. If it doesn't, it keeps adding 'y

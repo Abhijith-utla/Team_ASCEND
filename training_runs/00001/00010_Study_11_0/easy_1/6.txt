@@ -1,0 +1,20 @@
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sol():
+    return False
+
+def sat(ls: List[int]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+```
+
+This Python function sol() returns False, which is not considered correct. The function sat(ls: List[int]) checks if all elements in the list ls are in the range from 0 to len(ls) - 1. If all elements are in the range, then it returns True, else it returns False.
+
+The provided solution is incorrect because the function sol() returns False, not True.
+
+The function "sat" is not defined, so the checker will not be able to run the test.

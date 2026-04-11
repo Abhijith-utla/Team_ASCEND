@@ -1,0 +1,18 @@
+def sol():
+    return [0, 0]
+
+# This is to simulate the test case
+# It is not a realistic situation, but it can be used to test the correctness of the solution
+def sim(x, y, side):
+    return [x, y, side]
+
+# This is the main function, it generates random values and checks whether they are valid
+def main():
+    import random
+    while True:
+        x, y, side = [random.randint(0, 10) for _ in range(3)]
+        xy_sides = [sim(x, y, side) for _ in range(4)]
+        if sat(xy_sides):
+            return [x, y]
+
+print(main())

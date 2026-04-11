@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# Explanation of the function:
+# The given function "sat" is used to check if a given list "x" satisfies certain conditions.
+# The conditions are: each element in the list is less than or equal to the next one, and the index of the last element is greater than the index of the first element.
+# The function "sol" simply returns an empty list as per the conditions.
+
+assert sat(sol())

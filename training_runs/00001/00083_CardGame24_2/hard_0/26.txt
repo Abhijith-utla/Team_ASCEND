@@ -1,0 +1,4 @@
+def sol():
+    return eval(str(10) + " " + str(7) + " " + str(3) + " " + str(1))
+
+# print(sol())

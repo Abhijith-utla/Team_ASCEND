@@ -1,0 +1,13 @@
+Here is the correct code for `sol` function:
+
+```python
+def sol():
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    while any(rods[1:]):
+        for i in range(len(rods)-1):
+            if rods[i] and rods[i+1] and rods[i+1][-1] < rods[i].pop():
+                rods[i+1].append(rods[i].pop())
+                assert rods[i+1][-1] == min(rods[i+1]), "larger disk on top of smaller disk"
+    return rods[0] == rods[1] == []
+```
+This function simulates the game of Towers of Hanoi and checks if the final configuration is valid. It runs a while loop until the last rod is empty. In each iteration of the loop, it checks if there is a disk on the top of a smaller disk in the current rod and moves it to the next rod. It also checks if the final configuration

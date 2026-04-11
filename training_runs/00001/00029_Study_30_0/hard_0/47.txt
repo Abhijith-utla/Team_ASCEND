@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# Test cases
+assert sat(sol())
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy
+!pip install sympy

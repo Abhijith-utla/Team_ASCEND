@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+assert sat([])
+assert not sat([3]), 'Incorrect stamp count.'
+assert not sat([3, 3]), 'Incorrect stamp count.'
+assert not sat([3, 3, 3]), 'Incorrect stamp count.'
+assert not sat([3, 3, 3, 3, 3]), 'Incorrect stamp count.'
+assert not sat([3, 3, 3, 3, 3, 3, 3, 3]), 'Incorrect stamp count.'
+assert sat([3, 3, 3, 3, 3]), 'Incorrect total.'
+assert not sat([3, 3, 3, 3, 3, 3, 3, 3, 3]), 'Incorrect total.'
+assert not sat([1, 2, 3, 4, 5]), 'Incorrect target.'
+assert not sat([1, 1, 1, 1, 1, 1, 1, 1]), 'Incorrect max stamps.'
+assert sat([1, 2

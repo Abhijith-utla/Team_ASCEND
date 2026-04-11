@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+In this pattern, we are checking if the element at index 1234 (ls[1234]) exists in the list at index 1235 (ls[1235]) and if it's not equal to the element at index 1235 (ls[1235]). This is a common pattern used in dynamic programming problems, where you need to check if a certain condition is met in a list of strings.

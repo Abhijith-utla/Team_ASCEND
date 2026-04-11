@@ -1,0 +1,6 @@
+def sol():
+    s = "".join([str(8 ** i) for i in range(1818)])
+    return s and s == s[::-1] and len(s) > 11
+
+# Testing
+assert sat(sol())

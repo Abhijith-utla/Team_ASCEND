@@ -1,0 +1,13 @@
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sol():
+    return 0
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+In the above code, the function sol() returns the value 0. The function sat() checks if all the elements in the list li are present exactly once and the count of the zero is exactly 1. If both conditions are satisfied, the function returns True, otherwise it returns False.

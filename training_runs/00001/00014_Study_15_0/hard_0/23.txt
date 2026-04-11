@@ -1,0 +1,11 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return {
+        "error": False,
+        "error_message": ""
+    }
+```
+
+The function `sol()` returns a dictionary that has two keys: `error` and `error_message`. The `error` key is set to `False` by default and can be set to `True` if there is an error in the execution of the function. The `error_message` key is set to an empty string by default. It can be set to a string that contains the error message if `error` is `True`.

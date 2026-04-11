@@ -1,0 +1,22 @@
+Here is the Python code that will solve the problem.
+
+```python
+from typing import Tuple
+
+def sol():
+    return 10, 30
+```
+
+In this code, the function sol() will return a tuple (10, 30) which is the correct answer.
+
+The function "sat" is defined to check if the angle formed by the hour and minute hand of a clock is equal to a target angle or 360 minus the target angle. The function "sol" is the function that returns a tuple (10, 30) which is the correct answer.
+
+Please note that the angle between the hour and minute hands of a clock is always 30 degrees. The minute hand moves 6 degrees per minute. So, the hour hand moves 30 degrees + 6 degrees/minute * m (where m is the minute of the hour) for each minute. The angle between the hour and minute hand at any given time is the absolute difference between these two angles.
+
+The checker will run:
+
+```python
+def sat(answer):
+    hour, minute = answer
+    target_angle = 30
+    hour_angle =

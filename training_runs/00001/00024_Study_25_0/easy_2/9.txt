@@ -1,0 +1,4 @@
+def sol():
+    return sat("racecar", "racecar")
+
+assert sat(sol())

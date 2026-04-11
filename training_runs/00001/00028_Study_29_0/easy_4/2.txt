@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+# Test cases
+print(sat([]))  # True
+print(sat([1]))  # False
+print(sat([2]))  # False
+print(sat([10]))  # False
+print(sat([49]))  # False
+print(sat([50]))  # True
+
+# The solution is an empty list as per the provided function.
+# Please note that the function returns an empty list for every input, as it checks if all the numbers in the input list are square numbers within the range 0 to 999, and the square difference between them is less than 10.

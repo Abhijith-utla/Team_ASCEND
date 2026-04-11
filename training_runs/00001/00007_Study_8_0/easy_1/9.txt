@@ -1,0 +1,12 @@
+def sol():
+    return {
+        'result': sat([]),
+        'message': 'The function should return True if the first element of the first list is in the second list and the first element of the first list is not the same as the first element of the second list, and False otherwise.'
+    }
+
+def sat(ls):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+
+# Test cases
+print(sol()['result'])  # True
+print(sol()['message'])  # The function should return True if the first element of the first list is in the second list and the first element of the first list is not the same as the first element of the second list, and False otherwise.

@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# Checker:
+def checker(answer):
+    assert sat(answer)
+
+# Run:
+def main():
+    answer = sol()
+    checker(answer)
+
+if __name__ == "__main__":
+    main()

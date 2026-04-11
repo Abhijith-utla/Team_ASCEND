@@ -1,0 +1,19 @@
+Here is the solution:
+
+```python
+def sol():
+    return 4.2
+```
+
+The function `sol` returns the value 4.2 as the answer to the condition defined by the function `sat`.
+
+The checker will run:
+
+```python
+def sat(x: float):
+    return x > 3.1416
+
+print(sat(sol()))
+```
+
+If `sol` returns 4.2, then the checker will print `True`, indicating that the function `sat` is correctly defined and the checker is passing the test.

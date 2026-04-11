@@ -1,0 +1,8 @@
+Here is a Python function that constructs and returns a single answer value:
+
+```python
+def sol():
+    return 'ooo' in 'This is a string with exactly 1000 o's' and 'o' not in 'This is a string with exactly 1000 o's' and 'o' not in 'This is a string with exactly 1000 o's' and 'o' not in 'This is a string with exactly 1000 o's'
+```
+
+This function returns True if the string 'This is a string with exactly 1000 o's' contains 'ooo' and also contains 'o' and 'o' not in the string but the count of 'o' is exactly 1000. Otherwise, it returns False.

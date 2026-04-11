@@ -1,0 +1,13 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return all([li.count(i) == i for i in range(10)])
+
+    return sat
+```
+
+In this code, we first import the necessary modules. Then we define a nested function `sat` that takes a list of integers `li` as an argument. This function checks if every number in the list `li` is present exactly once by counting the number of times each number appears in `li`. The outer function `sol` returns the `sat` function. This makes `sat` a function that is both passed to the checker and returned by `sol`.

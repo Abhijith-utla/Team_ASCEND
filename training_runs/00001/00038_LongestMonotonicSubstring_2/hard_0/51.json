@@ -1,0 +1,16 @@
+{
+  "attempt_num": 51,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 2)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:46:11.802059+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 2)|parse=fence=none,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=The given code is incorrect as it does not satisfy the condition in the problem. It seems that the input string is su...",
+  "difficulty": "hard",
+  "problem_id": "00038_LongestMonotonicSubstring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:17:38.583637+00:00",
+  "diagnostic": "reason=subprocess_error:EOFError: EOF when reading a line|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return ''.join(sorted(input())) == ''.join(sorted('Permute me true')) and ''.join(input()) == ''.join(reve...",
+  "difficulty": "hard",
+  "problem_id": "00024_Study_25_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

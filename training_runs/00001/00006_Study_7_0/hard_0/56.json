@@ -1,0 +1,16 @@
+{
+  "attempt_num": 56,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:32:53.859944+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The function `sat` takes a string `s` as input and returns `True` if `s` is a substring of `8 ** 2888` and its length...",
+  "difficulty": "hard",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

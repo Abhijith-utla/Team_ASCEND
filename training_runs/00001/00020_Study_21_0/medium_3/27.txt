@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7]
+
+assert sat(sol())
+```
+
+The provided function `sat` checks if all elements in the list are unique and if there are 3 unique elements in the list. The function `sol` returns the list [1, 2, 3, 4, 5, 6, 7] as the solution.

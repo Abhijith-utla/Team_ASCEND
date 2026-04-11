@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# The given function `sat` is not correct, as it does not return any value. It only contains a list comprehension and does not have any operations or decisions. The correct pattern for `sol` function is as follows:
+
+def sol():
+    return [((123 * li[i] % 1000 < 123 * li[i + 1] % 1000) and (li[i] >= 0 and li[i] < 1000)) for i in range(20)]
+
+# The function `sol` does not take any arguments.
+
+# The function `sol` returns a list of Boolean values.
+
+# The final checker will run: assert sat(sol())
+
+# In Python, an empty list is returned by the `sol` function.

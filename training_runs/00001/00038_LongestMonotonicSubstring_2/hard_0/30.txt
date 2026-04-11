@@ -1,0 +1,2 @@
+def sol():
+    return 1  # Return 1 to satisfy the condition

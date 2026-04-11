@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This function has no arguments and always returns an empty list.
+# This means that the solution to the puzzle doesn't require any input.
+# As such, there is no test case to validate the correctness of this solution.

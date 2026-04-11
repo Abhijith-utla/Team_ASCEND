@@ -1,0 +1,9 @@
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The five boxing wizards jump quickly")
+
+def sol() -> List[bool]:
+    return [char == "The quick brown fox jumps over the lazy dog"[i] for i, char in enumerate("The five boxing wizards jump quickly")]
+
+if __name__ == "__main__":
+    assert sat(sol())

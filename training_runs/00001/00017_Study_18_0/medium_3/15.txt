@@ -1,0 +1,2 @@
+def sol():
+    return len(set(input("Enter elements separated by space: ").split())) > 1

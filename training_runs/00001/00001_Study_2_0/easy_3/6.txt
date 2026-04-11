@@ -1,0 +1,8 @@
+Here is a Python solution for the problem:
+
+```python
+def sat(s: str):
+    return s.count('x') == 110 and s.count('o') == 101 and s.count('xx') == 98
+```
+
+This function will return `True` if the string `s` contains exactly 110 'x' characters, 101 'o' characters, and 98 'xx' characters. If any of these counts don't match, the function will return `False`.

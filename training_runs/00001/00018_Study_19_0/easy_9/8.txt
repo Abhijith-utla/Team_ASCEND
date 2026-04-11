@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return [1]
+```
+
+This function will always return a list with one element, which is [1]. The element will not be zero because the condition in the function `sat` is `li[0] != 0`, which is always False. The function `sat` is correct because it checks if a list has exactly one element and if this element is not zero.

@@ -1,0 +1,15 @@
+Here is the correct Python code for the solution:
+
+```python
+def sol():
+    i = 1
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts from `i` as 1 and increments `i` until `sat(i)` returns True. At that point, `i` is the smallest integer that makes `sat(i)` return True.
+
+The `sat` function is a predicate that checks if the number of digits in the number `i + 1000` is greater than the number of digits in the number `i + 1001`. The `str(i + 1000)` and `str(i + 1001)` parts convert the numbers into strings and then compare their lengths.
+
+The `while` loop is used to ensure that `sat(i)` returns True for all possible `i` values. If `sat(i)` never returns True, then `i` will never be incremented beyond its initial value and the loop will be infinite.

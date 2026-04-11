@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:43:40.226125+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=The function `sat(x: List[int], length=737, s=\" _ !m!!!!!!!!!!!V!\\\"=\\\"\\\"\\\"\\\"\\\"l#####$$r$$$$$$$$$%%%%%&&&&&&y&''''''@'...",
+  "difficulty": "hard",
+  "problem_id": "00038_LongestMonotonicSubstring_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

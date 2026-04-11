@@ -1,0 +1,5 @@
+def sol():
+    return ''.join(sorted(s)) == ''.join(sorted('trusenipM')) and ''.join(sorted(s)) == ''.join(reversed(s))
+
+# Checker
+assert sat(sol())

@@ -1,0 +1,12 @@
+Here's the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    return []
+
+assert sat(sol())
+```
+
+In the code above, we define a function `sol` that returns an empty list. Then, we use the `sat` function to check if `sol` returns an empty list, which is the definition of a correct solution to the problem.

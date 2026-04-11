@@ -1,0 +1,5 @@
+def sol():
+    return 'abc4.5'
+
+# The function `sat` checks if the given string `s` equals to 'abc4.5'. If it does, it returns `True`, else it returns `False`.
+# The function `sol` returns the string 'abc4.5'.

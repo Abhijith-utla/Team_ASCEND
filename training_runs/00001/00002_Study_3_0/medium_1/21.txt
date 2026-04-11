@@ -1,0 +1,14 @@
+Here is the correct pattern for your problem:
+
+```python
+def sol():
+    return sorted([i+1 for i in range(998)]) + [0]
+```
+
+This function will return a sorted list of numbers from 1 to 999, with a 0 at the end.
+
+The function `sol` will return a list that fulfills the following conditions:
+1. The list is sorted in ascending order.
+2. There are no repeated numbers in the list.
+
+Please note that the range in the list generation function is from 1 to 998 (999 - 1), because the last number (999) is included in the range.

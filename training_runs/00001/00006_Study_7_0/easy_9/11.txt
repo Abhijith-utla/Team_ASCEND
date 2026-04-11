@@ -1,0 +1,2 @@
+def sol():
+    return (8 ** 2888) ** 0.5 > 8 and len("sol") == 3

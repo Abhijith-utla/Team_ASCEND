@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 1,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:46:17.057351+00:00",
+  "diagnostic": "reason=sol_has_args:1|parse=fence=python,preamble=1,found_sol=1,candidates=9|checked=9/9|preview=Sure, here is the correct pattern for your code: ```python from typing import List def sol(li: List[int]): li.sort() ...",
+  "difficulty": "medium",
+  "problem_id": "00002_Study_3_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

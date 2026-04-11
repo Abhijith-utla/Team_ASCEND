@@ -1,0 +1,5 @@
+def sol():
+    return '4.5abc'
+
+# This assert statement will ensure that the output of sol() is equal to the string '4.5abc'.
+assert sat(sol())

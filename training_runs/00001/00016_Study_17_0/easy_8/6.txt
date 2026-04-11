@@ -1,0 +1,16 @@
+Here is the solution for this problem:
+
+```python
+def sol():
+    i = 10
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int) -> bool:
+    return len(str(i)) < len(str(i + 1))
+
+print(sol())
+```
+
+This code generates a number `i` such that `i` and `i + 1` have the same number of digits. It does this by incrementing `i` until the condition `len(str(i)) < len(str(i + 1))` is satisfied. The number `i` that satisfies this condition is the answer to the problem.

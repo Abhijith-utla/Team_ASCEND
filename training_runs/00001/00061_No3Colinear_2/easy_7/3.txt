@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The function 'sol' does not take any arguments, so it does not need any coordinates to be provided. 
+# Therefore, it returns an empty list.

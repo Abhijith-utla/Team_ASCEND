@@ -1,0 +1,18 @@
+The given Python function `sat` takes a list of strings `ls` as its argument and checks if all strings in the list have the same length and are equal to the longest string in the list. 
+
+The function `min(ls)`, `max(ls)`, and `str(len(ls))` are used to find the minimum, maximum, and length of the list, respectively. 
+
+The statement `min(ls) == max(ls) == str(len(ls))` checks if all strings in the list are equal to the longest string in the list and have the same length. 
+
+If all strings in the list are equal to the longest string and have the same length, the function returns `True`. Otherwise, it returns `False`.
+
+Here is the Python code for the function `sat`:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+Please note that the `min` and `max` functions return the smallest and largest elements in the list respectively. If the list is empty

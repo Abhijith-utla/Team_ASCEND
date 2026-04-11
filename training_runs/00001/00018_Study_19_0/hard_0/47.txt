@@ -1,0 +1,8 @@
+Sure, here is the correct pattern for the function sol:
+
+```python
+def sol():
+    return 21
+```
+
+This function simply returns the number 21.

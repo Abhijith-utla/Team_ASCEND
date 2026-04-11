@@ -1,0 +1,6 @@
+def sol():
+    li = [2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+    return li
+
+# Verify the answer
+assert sat(sol())

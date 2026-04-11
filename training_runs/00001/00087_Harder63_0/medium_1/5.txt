@@ -1,0 +1,7 @@
+def sol():
+    return "888"
+
+print(sol())
+
+# Assertion will pass
+assert sat(sol())

@@ -1,0 +1,5 @@
+def sol():
+    return "888" if sat("888") else "Not found"
+
+# Test
+print(sol())

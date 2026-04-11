@@ -1,0 +1,17 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+The `sat` function takes a list of strings (ls) as input and returns a boolean value. The boolean value is True if all strings in the list are anagrams (meaning all strings contain the same characters with the same frequency), and False otherwise.
+
+The function uses a generator expression within the `all` function to check for anagrams. For each string in the list, it creates a set of characters (which automatically removes any duplicate characters) and compares its length to the length of the original string. If the lengths are equal, the string is an anagram, so the generator expression returns True. If the lengths are not equal, the generator expression returns False, and the `all` function stops checking as soon as it encounters a False value.
+
+Here is an example usage of the `sat` function:
+
+```python
+print(sat(["abc", "cba", "xyz"]))  # Output: True

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 1,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:49:10.133309+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=python,preamble=1,found_sol=1,candidates=9|checked=9/9|preview=The solution to the problem is as follows: ```python from typing import List def sol(li: List[str]): return all(len(i...",
+  "difficulty": "easy",
+  "problem_id": "00008_Study_9_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

@@ -1,0 +1,10 @@
+Sure, here is the correct implementation:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+This function takes a list of strings as input and returns True if all strings in the list have the same length, False otherwise. It does this by creating a set of characters for each string and checking if the length of this set is equal to the length of the first string in the list. The set function removes duplicate characters, and the len function returns the number of elements in a set.

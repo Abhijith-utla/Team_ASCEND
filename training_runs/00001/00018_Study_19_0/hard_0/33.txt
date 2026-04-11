@@ -1,0 +1,13 @@
+The problem statement asks for a solution that checks the equality of two sets. The first part is to create a set from a list comprehension, the second part is to check if a set is exactly the set {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}.
+
+Here is the solution:
+
+```python
+def sol():
+    li = [0, 1, 2, 3, 4, 5, 6]
+    set_li = {i for i in li}
+    set_ex = {i + j for i in li for j in li}
+    return set_ex == {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}
+
+def sat(li: List[int]):
+    return {i + j for i in li for j in li} == {0, 1, 2, 3, 4, 5, 6, 17

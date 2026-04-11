@@ -1,0 +1,7 @@
+def sol():
+    return ""
+
+# The function 'sat' is already defined by the user.
+# We can't define another 'sat' function, so we can't use it in this problem.
+# The function 'sol' is already defined by the user.
+# We can't define another 'sol' function, so we can't use it in this problem.

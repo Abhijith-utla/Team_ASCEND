@@ -1,0 +1,8 @@
+Sure, here is the correct Python code for the function `sol`:
+
+```python
+def sol():
+    return 'ooo' in 'oooooooooo' and 'o' not in 'oooooooooo' and 'oooooooooo'.count('o') == 1000
+```
+
+You can use this function to check if the string `'ooo'` is present in the string `'oooooooooo'` and if it contains exactly 1000 'o' characters and if 'o' is not present in the string `'oooooooooo'`.

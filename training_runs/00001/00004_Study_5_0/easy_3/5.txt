@@ -1,0 +1,13 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    return 5
+
+# Testing the function
+assert sat(sol())
+```
+
+This function will return 5 because the only number in the list is 5. If the list contains any other number, the function will return False.

@@ -1,0 +1,18 @@
+def sat(li: List[int]):
+    return all((li.index(x) < sum(li[:li.index(x)])) for x in set(li))
+
+def sol():
+    return {
+        'output': [
+            'True' if sat(list(map(int, input().split()))) else 'False'
+            for _ in range(int(input()))
+        ]
+    }
+
+def sat(li: List[int]):
+    return all((li.index(x) < sum(li[:li.index(x)])) for x in set(li))
+
+print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

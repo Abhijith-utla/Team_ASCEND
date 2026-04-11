@@ -1,0 +1,6 @@
+def sol():
+    return [17, 3]
+
+print(sol())
+
+# After running the above code, it will return the list [17, 3] as the solution to the problem.

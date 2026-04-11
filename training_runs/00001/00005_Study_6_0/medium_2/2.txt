@@ -1,0 +1,15 @@
+The function `sat` checks if the input integer `i` is divisible by 5 and less than 100. If it is, it returns `True`, otherwise it returns `False`.
+
+The function `sol` can be implemented as follows:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function starts from `i = 0` and keeps incrementing `i` by `1` until `sat(i)` returns `True`. The first integer `i` for which `sat(i)` returns `True` is the answer to the problem.
+
+The checker will run `assert sat(sol())` to confirm that the answer is correct. If it is, the checker will pass the test. If not, the checker will fail the test.

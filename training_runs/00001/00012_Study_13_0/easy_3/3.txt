@@ -1,0 +1,8 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return 123.456789
+```
+
+The function `sol` returns the answer `123.456789`.

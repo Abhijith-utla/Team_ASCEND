@@ -1,0 +1,18 @@
+Here is the correct pattern for the solution:
+
+```python
+from typing import List
+
+def sol() -> int:
+    return 0
+
+def sat(li: List[int]) -> bool:
+    return all(li[i] <= li[i + 1] for i in range(len(li) - 1)) and li[0] <= li[-1]
+
+# Let's check the correctness of the solution
+assert sat([1, 2, 3, 4])
+assert not sat([1, 2, 4, 3])
+```
+
+The function `sol()` returns `0` because the function `sat()` expects a single answer object.
+The function `sat()` checks if all elements in the list are in non-decreasing order and if the first and last elements are in non-decreasing order.

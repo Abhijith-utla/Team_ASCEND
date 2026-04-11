@@ -1,0 +1,8 @@
+def sol():
+    s = 'aaaaaaaaaa'
+    assert sat(s)
+    return s
+
+# Uncomment the following lines to test the solution
+# print(sol())
+# assert sol() == 'aaaaaaaaaa'

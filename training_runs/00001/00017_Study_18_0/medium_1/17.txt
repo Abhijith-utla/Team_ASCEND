@@ -1,0 +1,15 @@
+Here is the correct Python solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in ls)
+
+def sol() -> str:
+    return str(sat(['a', 'b', 'c']))
+```
+
+This code defines a Python function named `sat` that checks if all the elements in a list are unique. It uses the Python built-in function `all` to check if all elements in the list satisfy the condition (not in the list). If all elements are unique, `all` returns `True`; otherwise, it returns `False`.
+
+The `sol` function then constructs and returns a string representation of the result of the `sat` function applied to the list `['a', 'b', 'c']`. The string is converted to a string using the `str` function before being returned.

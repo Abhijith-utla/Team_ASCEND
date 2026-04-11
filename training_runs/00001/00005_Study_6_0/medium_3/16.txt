@@ -1,0 +1,4 @@
+def sol():
+    return 2 * (10 ** 10)
+
+assert sat(sol())

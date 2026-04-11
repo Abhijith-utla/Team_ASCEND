@@ -1,0 +1,10 @@
+Sure, I can help you with that. Here's the correct pattern:
+
+```python
+def sol():
+    return [1234, 1235]
+```
+
+This function returns a list containing the indices 1234 and 1235, which are the indices of the two elements in the input list that should be in the same position in the output list. The input list is assumed to be sorted and the elements at indices 1234 and 1235 are the elements that should be in the same position in the output list.
+
+Please note that the function assumes that the input list has at least 2 elements. If the input list has less than 2 elements, the function will raise an IndexError.

@@ -1,0 +1,10 @@
+def sol():
+    return False
+
+# Correct pattern:
+# def sol():
+#     return False
+
+# Incorrect pattern:
+# def sol(x):
+#     pass

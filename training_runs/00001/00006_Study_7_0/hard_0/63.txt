@@ -1,0 +1,4 @@
+def sol():
+    return 8 ** 2888 == int(8 ** 2888)
+
+print(sol())  # print(True) if the function returns True else print(False)

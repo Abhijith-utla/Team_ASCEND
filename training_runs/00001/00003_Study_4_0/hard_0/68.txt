@@ -1,0 +1,9 @@
+Here is the solution:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return li
+```
+
+In this solution, the list `li` is pre-populated with 10 integers from 1 to 10. The `count` method of the list is used to check if the number 6 is repeated twice in the list. If this is the case, the function `sat` will return `True`. Otherwise, it will return `False`.

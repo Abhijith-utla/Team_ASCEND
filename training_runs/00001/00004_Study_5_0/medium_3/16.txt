@@ -1,0 +1,10 @@
+Sure, here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+This function checks if all elements in the list `li` occur exactly once and the count of zero is exactly one. It does this by using the `count` method of the list to count the occurrences of each integer, and then checking if all counts are the same as the integer and if there's only one count of zero.

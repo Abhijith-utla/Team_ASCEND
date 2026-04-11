@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# The provided function is incorrect.
+# The function expects a list of coordinates, but the example provided does not contain coordinates.
+# Therefore, we can create a valid solution for the problem by providing some coordinates.
+# We create a list of 4 points on a 2x2 grid.
+def sol():
+    return [(0,0), (0,1), (1,0), (1,1)]
+
+# The provided function is incorrect.
+# The function is supposed to check if the given points are on the same line, 
+# but the example provided does not include any points.
+# Therefore, we can create a valid solution for the problem by providing some points.
+# We create a list of 4 points on a 2x2 grid.
+def sol():
+    return [(0,0), (0,1), (1,0), (1,1)]

@@ -1,0 +1,16 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    return 'oo' not in 'oooooooooooooo' and 'o' in 'oooooooooooooo' and 'oooooooooooooo'.count('o') == 1000
+```
+
+This code checks if the string `'oo' not in 'oooooooooooooo'`, `'o' in 'oooooooooooooo'`, and `'oooooooooooooo'.count('o') == 1000` are all True. The function `sol` returns True if all conditions are met, and False otherwise.
+
+You can run the code with the following command:
+
+```python
+print(sat(sol()))
+```
+
+This will print the result of the function `sol`.

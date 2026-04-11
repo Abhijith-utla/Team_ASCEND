@@ -1,0 +1,22 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol() -> bool:
+    li: List[int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return sat(li)
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This code first creates a list of integers from 1 to 10. Then it calls the `sat` function with this list as the argument. The `sat` function checks if the length of the list is 10, if the count of the number 3 in the list is 2, if the index of the number 3 in the list is 3, and if the count of the

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:02:23.859510+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): x = \"_\"*16 + \"1\" + \"_\"*14 + \"2\" + \"_\"*15 + \"3\" + \"_\"*18 + \"5\" + \"_\"*13 + \"6\" + \"_\"*17 + \"7\" + \"_\"*12 + \"8\"...",
+  "difficulty": "medium",
+  "problem_id": "00069_Sudoku_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

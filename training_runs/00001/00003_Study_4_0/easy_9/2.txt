@@ -1,0 +1,20 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol() -> bool:
+    li = [1, 2, 3, 4, 4, 4, 7, 8, 9, 10]
+    return sat(li)
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 4:
+        return False
+    return True
+```
+
+This solution first defines the list `li` as an example, and then returns the result of calling the `sat` function with `li` as the argument. The `sat` function checks if the length of the list is 10 and if the count of the number 4 in the list equals 2 and the index of 4 in the list equals 4. If both conditions are true, the function returns `True`, otherwise it returns `False`.

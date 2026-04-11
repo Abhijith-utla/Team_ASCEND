@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sat(ls):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+The function `sat` takes a list `ls` as an argument. It checks if the element at index `1234` of `ls` is present in `ls` and is not equal to the element at index `1235` of `ls`. If both conditions are met, the function returns `True`, else it returns `False`.

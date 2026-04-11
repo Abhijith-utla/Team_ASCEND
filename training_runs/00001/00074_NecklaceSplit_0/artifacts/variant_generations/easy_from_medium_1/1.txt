@@ -1,0 +1,24 @@
+Here are the three simpler versions of the original puzzle:
+
+VARIANT1:
+```python
+def sat(n: int, lace="bbrbrbbrbrbrbbrb"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and lace.count("r") == sub.count("r") and lace.count("b") == sub.count("b")
+```
+
+VARIANT2:
+```python
+def sat(n: int, lace="bbrbrbbrbrbrbbrb"):
+    sub = lace[n: n + len(lace) // 3]
+    return n >= 0 and lace.count("r") == sub.count("r") and lace.count("b") == sub.count("b")
+```
+
+VARIANT3:
+```python
+def sat(n: int, lace="bbrbrbbrbrbrbbrb"):
+    sub = lace[n: n + len(lace) // 4]
+    return n >= 0 and lace.count("r") == sub.count("r") and lace.count("b") == sub.count("b")
+```
+
+In all of these variants, the core concept remains the same: checking the occurrence of 'r' and 'b' in the middle portion of the string. The only difference is the size of the substring, which is used to perform the counting operation.

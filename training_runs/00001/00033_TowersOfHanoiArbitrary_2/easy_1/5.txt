@@ -1,0 +1,11 @@
+def sol():
+    return [source.copy(), target.copy()]
+
+# Test cases
+print(sat(source, target))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]], target))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]], source))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]], [target, source]))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]], [[0, 2, 1], [4, 5, 3]]))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]], [[0, 2, 1], [5, 6, 4]]))  # True
+print(sat([[0, 1, 2], [3], [4, 5, 6]

@@ -1,0 +1,27 @@
+Here are three simple Python functions that test the same core concept:
+
+VARIANT1:
+```python
+def sat(n: int):
+    s = str(n)
+    return len(set(s)) == 10
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    s = str(n * 2)
+    return len(set(s)) == 10
+```
+
+VARIANT3:
+```python
+def sat(n: int):
+    s = str(n * n)
+    return len(set(s)) == 10
+```
+In the first variant, we're simply converting the integer to a string and then checking whether its length is 10.
+
+In the second variant, we're doubling the original input. The result is checked to see if its length is still 10.
+
+In the third variant, we're squaring the input. This is considered the same as multiplying by itself, so it's checked to see if its length is 10 as well.

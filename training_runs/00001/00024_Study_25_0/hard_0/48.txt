@@ -1,0 +1,2 @@
+def sol():
+    return sorted(''.join(sorted(input('Please input a string: ')))) == sorted(''.join(sorted(input('Please input another string: '))))

@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# This is an example usage of the solution.
+# You should replace it with your actual code.
+assert sat([(0, 0), (5, 5), (10, 0), (0, 10)])
+assert not sat([(0, 0), (5, 5), (10, 0)])
+!python

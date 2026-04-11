@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(len('O!A{SeKv')) if 'O!A{SeKv'[i] <= 'O!A{SeKv'[i + 1] and 'O!A{SeKv'[i + 1] > 'O!A{SeKv'[i]]]

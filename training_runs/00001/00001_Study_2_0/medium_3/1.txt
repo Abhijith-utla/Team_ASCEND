@@ -1,0 +1,18 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
+    return s
+
+def sat(s: str):
+    return s.count('z') == 100 and s.count('zo') == 101 and s.count('zz') == 98
+
+assert sat(sol())
+```
+
+In the above code, we first define a string `s` which is a string of 'z', followed by 'zo' and 'zz' ten times. Then we return `s`.
+
+The `sat` function checks if the count of 'z' is 100, the count of 'zo' is 101, and the count of 'zz' is 98. If all these conditions are met, the function returns `True`, otherwise it returns `False`.
+
+Finally, we assert that the result of `sol` is a string that satisfies `sat`, which means that `sol` returns a string that satisfies `sat`.

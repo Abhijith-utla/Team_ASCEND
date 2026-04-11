@@ -1,0 +1,16 @@
+def sol():
+    return {}
+
+def sat(li: List[int]):
+    return all(x == li[i] for i in range(len(li)))
+
+# This is just to validate the solution
+def main():
+    assert sat([])
+    assert not sat([1])
+    assert sat([1, 1, 1])
+    assert not sat([1, 2, 1])
+
+    print("All tests passed")
+
+main()

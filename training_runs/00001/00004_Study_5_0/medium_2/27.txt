@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li.count(i) == i for i in range(1, 11)])
+```
+
+This function takes a list of integers as an argument and returns True if all the elements in the list are distinct and their count is equal to the element itself. Otherwise, it returns False. 
+
+The inner comprehension `[li.count(i) == i for i in range(1, 11)]` counts the frequency of each number from 1 to 10 and compares it with the number itself. If both are equal, the function returns True, indicating that all elements in the list are distinct and their count is equal to the element itself. If not, it returns False, indicating that some elements are not distinct. 
+
+The `all` function returns True only if all the elements in the list satisfy the condition.

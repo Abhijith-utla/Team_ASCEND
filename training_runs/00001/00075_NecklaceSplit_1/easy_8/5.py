@@ -1,0 +1,34 @@
+def sat(n: int, m: int, lace="rbbrrbbrbbrrbbrrbbrbrrrbbrbrrrrrrbbrrbrrbbrrbbbrbbrbbbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrrrrrrrrbrrrbrbbrrbbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and m >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+
+def sol():
+    return {}
+
+assert sat(0, 0)
+assert not sat(0, 1)
+assert not sat(1, 0)
+assert not sat(1, 1)
+assert not sat(2, 2)
+assert not sat(2, 3)
+assert not sat(3, 4)
+assert not sat(3, 5)
+assert sat(4, 6)
+assert not sat(4, 7)
+assert not sat(5, 8)
+assert not sat(5, 9)
+assert not sat(6, 10)
+assert not sat(6, 11)
+assert not sat(7, 12)
+assert not sat(7, 13)
+assert not sat(8, 14)
+assert not sat(8, 15)
+assert not sat(9, 16)
+assert not sat(9, 17)
+assert not sat(10, 18)
+assert not sat(10, 19)
+assert not sat(11, 20)
+assert not sat(1
+
+if __name__ == "__main__":
+    assert sat(sol())

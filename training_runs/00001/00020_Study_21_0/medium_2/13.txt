@@ -1,0 +1,20 @@
+Here is a possible solution to the problem.
+
+```python
+from typing import List
+
+def sol():
+    def sat(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(8)]) and len(set(li)) == 3
+
+    answer = sat()
+    return answer
+```
+
+The `sat` function checks if all elements in the list are distinct and the length of the list is 3. If both conditions are true, the function returns `True`, otherwise it returns `False`.
+
+The `sol` function calls `sat` and returns the result.
+
+The `assert` statement is not needed in this case because we are not checking for a specific answer value, but rather checking if the output of `sat` is `True` or `False`.
+
+The final part of the code is not needed and can be removed if not needed.

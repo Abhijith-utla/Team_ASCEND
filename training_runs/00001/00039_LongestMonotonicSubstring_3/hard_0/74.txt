@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Solution:
+def sol(x: List[int], length=0, s=""):
+    # If there is a valid solution, return True
+    if sat(x, length, s):
+        return x
+    else:
+        # If there is no valid solution, return an empty list
+        return []

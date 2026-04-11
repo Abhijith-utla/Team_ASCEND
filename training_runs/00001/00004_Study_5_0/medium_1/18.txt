@@ -1,0 +1,18 @@
+Sure, here is a python function that returns a single answer value.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return li.count(1) == li.count(2) == li.count(3) == li.count(4) == li.count(5) == li.count(6) == li.count(7) == li.count(8) == li.count(9) == 10
+```
+
+The function `sat` checks if all numbers from 1 to 9 appear exactly 10 times in the list `li`. If all numbers appear the same number of times, the function returns `True`, otherwise it returns `False`.
+
+Here is an example of how you can use the function:
+
+```python
+li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(sat(li))  # Output: True
+
+li = [1, 2,

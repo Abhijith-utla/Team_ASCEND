@@ -1,0 +1,8 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    return [4] + [i + 1 for i in range(999)]
+```
+
+This function first generates a list of 1000 integers from 4 to 4999. The list is then returned as the answer.

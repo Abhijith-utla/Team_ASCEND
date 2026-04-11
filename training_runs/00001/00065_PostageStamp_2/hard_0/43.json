@@ -1,0 +1,17 @@
+{
+  "attempt_num": 43,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T15:30:50.100887+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=11|checked=11/11|preview=def sol(): return [] # This is the solution to solve the problem def sol(stamps: List[int], target=3, max_stamps=3, o...",
+  "difficulty": "hard",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

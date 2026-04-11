@@ -1,0 +1,16 @@
+Here is the correct Python code for the solution:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) == len(str(i + 1001))
+
+print(sol())
+```
+
+This program will keep incrementing the integer `i` until `sat(i)` is true, at which point it will return the value of `i`. The `sat` function checks if the length of the string representation of `i + 1000` is the same as the length of `i + 1001`. This is because `i + 1000` and `i + 1001` will both have the same number of digits, and therefore the lengths of their string representations will be the same.

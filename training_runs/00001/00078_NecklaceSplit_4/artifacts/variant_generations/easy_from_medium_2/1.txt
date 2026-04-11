@@ -1,0 +1,17 @@
+```python
+VARIANT1:
+def sat(n: int, lace="brrbbbrbbrrbrrbbrrrbbrbbrbbrrrbrbrrrrbbrrrbbbbrbbbrrbbrrbbbbrbbbbbrrbrrbbr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n < len(lace) and n >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+
+VARIANT2:
+def sat(n: int, lace="brrbbbrbbrrbrrbbrrrbbrbbrbbrrrbrbrrrrbbrrbbbbrbbbrrbbrrbbbbrbbbbbrrbrrbbr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n < len(lace) and n >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b") # Removed the condition
+
+VARIANT3:
+def sat(n: int, lace="brrbbbrbbrrbrrbbrrrbbrbbrbbrrrbrbrrrrbbrrbbbbrbbbrrbbrrbbbbrbbbbbrrbrrbbr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n < len(lace) and n >= 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b") and n + len(lace) // 2 < len(lace) # Added the condition
+```
+Note: All variants have the same core concept, but have different conditions to check the correctness of the answer.

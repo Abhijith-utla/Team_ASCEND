@@ -1,0 +1,18 @@
+Here is the Python solution:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return all(li[j - 1] in {li[j], li[j] * 2, li[j] * 3} for j in range(1, len(li) + 1))
+    return sat
+```
+
+This function returns another function named sat. This function takes a list of integers as an argument and checks if all elements in the list are either 0, 1, or 3 times their position.
+
+In Python, the in keyword is used to check if a value exists in a sequence, like a list, tuple, or string. If the value is found, it returns True; otherwise, it returns False.
+
+Here is the code explanation:
+
+- `li[j - 1]`: This is used to access the jth element in the list. Since Python indexing starts from 0, we subtract 1 from j.
+- `li[j]`: This is used to access the jth element in the list.
+- `li[j] * 2`: This is used

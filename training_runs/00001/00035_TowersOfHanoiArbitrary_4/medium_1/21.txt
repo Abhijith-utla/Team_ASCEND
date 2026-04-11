@@ -1,0 +1,15 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(moves: List[List[int]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[2, 3, 4, 6], [0, 1], [5]]):
+    state = [s[:] for s in source]
+    for i, j in moves:
+        state[j].append(state[i].pop(0))
+        assert sorted(state[j]) == target[j], f'{state[j]} is not equal to {target[j]}'
+
+    return state == target
+```
+
+You can use this function by passing a list of moves as the first argument. The moves list should be a list of pairs, where each pair represents a move. The first element of each pair is the index of the source list and the second element is the index of the target list. For example, if we have a move [0, 1] it means that we are moving element from source list at index 0 to element at index 1 in target list

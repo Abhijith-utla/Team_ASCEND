@@ -1,0 +1,16 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 4)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:09:00.191028+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 4)|parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return [] def sat(x: List[int], length=535, s=\"RRRS S !L!eSSSS!TTT+!TTTUU!!UU!UU\\\"U\\\"\\\"\\\"VVV\\\"\\\"\\\"VK#WW##g...",
+  "difficulty": "hard",
+  "problem_id": "00042_LongestMonotonicSubstringTricky_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,10 @@
+Here is a solution to your problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return not any(s in ls for s in set(ls))
+```
+
+This function `sol` takes a list of strings `ls` as input and returns `True` if all the strings in the list are unique (i.e., they don't occur more than once), and `False` otherwise. The `any` function returns `True` as soon as it encounters a string that is in the list, so if there are no duplicates in the list, it will return `False`. The `not` operator inverts the result, so if there are duplicates in the list, `not any` will return `True`, and `sol` will return `False`.

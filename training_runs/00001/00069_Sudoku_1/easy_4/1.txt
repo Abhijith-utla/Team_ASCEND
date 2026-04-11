@@ -1,0 +1,4 @@
+def sol():
+    return "_1_2_3_5_6_7_8"
+
+print(sol())

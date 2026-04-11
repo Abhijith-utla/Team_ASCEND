@@ -1,0 +1,25 @@
+The function `sat` is defined to check if a list `li` of length 10 satisfies certain conditions. The conditions include:
+
+1. The list `li` has exactly 10 elements.
+2. The third element (at index 2) of the list is repeated twice.
+3. The third element of the list is at position 3 in the list.
+4. The third element of the list is only present once in the list.
+
+Here is the Python code that implements these conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+```
+
+This function can be used to check if a list satisfies the conditions defined by the `sat` function. For example, if `li` is [1, 2, 3, 4,

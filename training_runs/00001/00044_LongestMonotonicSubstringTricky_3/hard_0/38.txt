@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+def sat(x: List[int]):
+    length = len(x)
+    return all(x[i] < length for i in range(length)) and all(x[i] >= 0 for i in x)

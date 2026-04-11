@@ -1,0 +1,4 @@
+def sol():
+    return "_" * 20
+
+assert sat(sol())

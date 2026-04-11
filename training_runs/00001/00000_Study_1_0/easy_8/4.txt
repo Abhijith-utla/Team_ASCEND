@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+def sat(s: str):
+    if s.count('oo') != 0:
+        return False
+    return True
+```
+
+In the given function, the input string s is checked if it contains the substring 'oo'. If it does, the function returns False, otherwise it returns True.

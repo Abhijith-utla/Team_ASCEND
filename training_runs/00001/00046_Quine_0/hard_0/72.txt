@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# Testing
+quine = "print('Hello, World!')"
+assert sat(quine)

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 17,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 2)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:19:58.697824+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 2)|parse=fence=python,preamble=1,found_sol=1,candidates=4|checked=4/4|preview=Here is the Python solution for your problem. ```python def sol(): s = \"The objective of the puzzle is to find a stri...",
+  "difficulty": "easy",
+  "problem_id": "00000_Study_1_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

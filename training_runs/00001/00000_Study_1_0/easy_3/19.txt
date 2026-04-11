@@ -1,0 +1,5 @@
+def sol():
+    return 'oo' in 'Hello, world!' and 'Hello, world!'.count('o') <= 1000
+
+# To validate the solution
+print(sat(sol()))

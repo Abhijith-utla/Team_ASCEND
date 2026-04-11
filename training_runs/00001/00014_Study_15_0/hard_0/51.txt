@@ -1,0 +1,10 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+def sat(li: List[int]):
+    for i in range(20):
+        if sum(li[:i]) != 2 ** i - 1:
+            return False
+    return True
+```
+This function checks if all elements in the list are correctly calculated as per the given formula. It starts with the first element and checks if the sum of all elements up to that point is equal to 2 to the power of the index minus one. If any element is not correctly calculated, the function returns False. If all elements are correctly calculated, the function returns True.

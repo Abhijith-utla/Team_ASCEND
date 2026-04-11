@@ -1,0 +1,10 @@
+Here is a correct pattern:
+
+```python
+def sol():
+    return [0, 1, 2, 3]
+```
+
+This function returns an array `[0, 1, 2, 3]` as the answer.
+
+In this function, `x` is a list of integers and `length` is the length of the list. `s` is a string of characters. The function checks if each element in the list is less than or equal to the next element in the list and if the next element is greater than or equal to the current element, and if the current element is greater than or equal to 0, for all `i` from `0` to `length - 1`. If all these conditions are satisfied, the function returns `True`; otherwise, it returns `False`.

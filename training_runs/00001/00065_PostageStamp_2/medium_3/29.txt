@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([18, 1, 43, 81])
+assert not sat([18, 1, 43])
+assert not sat([18, 1, 43, 81, 81])
+assert not sat([18, 1, 43, 81, 81, 81])
+
+# Final check
+assert sat(sol())

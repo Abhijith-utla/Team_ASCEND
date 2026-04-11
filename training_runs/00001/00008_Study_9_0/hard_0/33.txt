@@ -1,0 +1,10 @@
+Here is a Python function that solves the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return "".join(chr(i) for i in li) == "The five boxing wizards jump quickly"
+```
+
+This function takes a list of integers as input, converts them to the corresponding ASCII characters using the chr function, and then joins them into a single string. If the input list corresponds to the English sentence "The five boxing wizards jump quickly", the function will return True; otherwise, it will return False.

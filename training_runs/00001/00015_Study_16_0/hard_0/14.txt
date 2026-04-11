@@ -1,0 +1,16 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 4.5
+```
+
+The function `sol` simply returns the number `4.5`.
+
+You can test this function with the following code:
+
+```python
+print(sat(sol()))
+```
+
+This will output: `4.5`

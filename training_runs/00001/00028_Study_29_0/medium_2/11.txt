@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The solution will be an empty list as the input list cannot satisfy the condition.

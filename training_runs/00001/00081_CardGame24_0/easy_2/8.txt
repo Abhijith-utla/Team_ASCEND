@@ -1,0 +1,4 @@
+def sol():
+    return eval(str(4) + " " + str(7) + " " + str(4) + " " + str(7))
+
+assert sat(str(sol()))

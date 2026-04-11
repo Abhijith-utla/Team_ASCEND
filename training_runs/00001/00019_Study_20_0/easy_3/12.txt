@@ -1,0 +1,5 @@
+def sol():
+    return [4] * 10 + [3] * 5 + [2] * 5
+
+# The function sat(answer) is already defined by the user and is available for testing.
+assert sat(sol())

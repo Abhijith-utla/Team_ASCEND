@@ -1,0 +1,2 @@
+def sol():
+    return 'x' * 100 + 'o' * 111 + 'xx' * 98

@@ -1,0 +1,10 @@
+Here is a solution to the problem:
+
+```python
+def sol():
+    li = [ord(c) for c in "The quick brown fox jumps over the lazy dog"]
+    assert sat(li)
+    return "".join([chr(i) for i in li])
+```
+
+In this solution, we first convert the string "The quick brown fox jumps over the lazy dog" into a list of ASCII values using the `ord()` function, and then we convert the ASCII values back into characters using the `chr()` function. The `assert sat(li)` statement is used to ensure that the given list of ASCII values corresponds to the original string. If it does not, the program will raise an AssertionError.

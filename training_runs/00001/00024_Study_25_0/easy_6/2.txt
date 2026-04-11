@@ -1,0 +1,2 @@
+def sol():
+    return ''.join(sorted(s)) == ''.join(sorted('sirnemtpu')) and ''.join(sorted(s)) == ''.join(sorted('snirntempu'))

@@ -1,0 +1,19 @@
+Here are the three simple variants of the `sat` function:
+
+VARIANT1:
+```python
+def sat(x: List[int]):
+    return len(x) > 0
+```
+
+VARIANT2:
+```python
+def sat(x: List[int], length=13):
+    return len(x) >= length
+```
+
+VARIANT3:
+```python
+def sat(x: List[int], length=13, s="Dynamic programming solves this puzzle!!!"):
+    return len(x) >= length
+```

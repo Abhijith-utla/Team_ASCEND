@@ -1,0 +1,21 @@
+Here are three simple variants of the given Python function:
+
+VARIANT1:
+```python
+def sat(ls):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+VARIANT2:
+```python
+def sat(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+VARIANT3:
+```python
+def sat(ls, idx1=1234, idx2=1235, value=ls[idx1]):
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+In all these variants, the function takes a list `ls` as an argument and checks whether `ls[idx1]` is in `ls[idx2]` and if not, then whether `ls[idx1]` is not equal to some value. The specific value of `ls[idx1]` and the indices are hard-coded for simplicity.

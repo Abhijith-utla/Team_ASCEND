@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted(input('Enter a string: ')))
+
+print(sol())

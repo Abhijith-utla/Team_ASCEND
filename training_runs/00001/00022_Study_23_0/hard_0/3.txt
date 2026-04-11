@@ -1,0 +1,4 @@
+def sol():
+    return tuple(map(str, ['dee', 'doo', 'dah']))
+
+assert sat(sol())

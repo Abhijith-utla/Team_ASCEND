@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The answer object needs to be a list of tuples, but it's not defined in the problem statement.
+# You may need to adjust the code to suit your needs.

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 41,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:39:01.859815+00:00",
+  "diagnostic": "reason=subprocess_error:AttributeError: 'bool' object has no attribute 'count'|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): s = 'oooooooohooooooooooo' return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801 #...",
+  "difficulty": "hard",
+  "problem_id": "00001_Study_2_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

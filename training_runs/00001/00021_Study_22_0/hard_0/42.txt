@@ -1,0 +1,18 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return "".join([c for i, c in enumerate(s) if i % 2 == 0])
+```
+
+The code above is using a list comprehension to iterate over the string `s`, and for every even-indexed character, it adds it to a new string. The resulting string is then returned by the `sol` function.
+
+The function `sat` is already defined by the user, so we don't need to implement it again.
+
+Here is how you can test the function:
+
+```python
+assert sat(sol())
+```
+
+This will check if the `sol` function returns a string that is a valid solution to the problem statement, or else it will raise an `AssertionError`.

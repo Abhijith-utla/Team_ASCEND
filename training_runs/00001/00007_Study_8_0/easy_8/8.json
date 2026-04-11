@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:36:51.974240+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=1,found_sol=1,candidates=9|checked=9/9|preview=Here is a Python solution to the problem: ```python def sol(ls, idx1=-1, idx2=-1, value=None): if idx1 < 0 or idx2 < ...",
+  "difficulty": "easy",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

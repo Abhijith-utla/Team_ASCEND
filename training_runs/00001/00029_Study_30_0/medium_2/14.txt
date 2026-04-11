@@ -1,0 +1,6 @@
+def sol():
+    return {
+        'result': sat([])
+    }
+
+assert sat(sol()['result'])

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 18,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:36:15.296361+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=python,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=Here is the solution: ```python def sol(): return {'answer': 'The string has exactly 100 occurrences of \"z\" and 101 o...",
+  "difficulty": "medium",
+  "problem_id": "00001_Study_2_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

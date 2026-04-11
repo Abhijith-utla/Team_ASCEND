@@ -1,0 +1,7 @@
+Sure, here is the correct solution:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The five boxing wizards jump quickly")
+```
+This function takes a list of integers as input and returns a list of characters. It converts each integer to its corresponding ASCII character and returns the list of characters. The checker will then compare this list to the list of characters obtained from the string "The five boxing wizards jump quickly". If the two lists are equal, the function returns True, else it returns False.

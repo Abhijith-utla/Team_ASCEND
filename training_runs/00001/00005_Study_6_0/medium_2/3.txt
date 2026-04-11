@@ -1,0 +1,8 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+def sat(i: int) -> bool:
+    return i % 5 == 0 and i < 100
+```
+
+This function `sat` takes an integer `i` as input and checks if it is divisible by 5 and less than 100. If `i` satisfies both conditions, the function returns `True`, otherwise it returns `False`.

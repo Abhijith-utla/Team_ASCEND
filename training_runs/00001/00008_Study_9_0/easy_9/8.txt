@@ -1,0 +1,10 @@
+Sure, here is the Python solution for the problem:
+
+```python
+def sol():
+    return [chr(i) for i in range(ord('a'), ord('z')+1)]
+
+assert sat(sol())
+```
+
+This function returns a list of characters from 'a' to 'z'. The 'ord' function is used to get the ASCII value of a character and the list comprehension creates a list of characters by iterating over the range of ASCII values from 'a' to 'z'. The 'replace' function is used to replace all spaces in the string "Python is fun" with an empty string to remove spaces and then the list comprehension is used again to convert the string to a list of characters. The 'assert' statement is used to verify that the solution is correct. If the solution is correct, the program will continue without any error messages.

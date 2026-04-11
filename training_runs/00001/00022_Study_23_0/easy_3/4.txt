@@ -1,0 +1,5 @@
+def sol():
+    return 'dah!'
+
+# The checker will run: assert sat(sol())
+assert sat(sol())

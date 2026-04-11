@@ -1,0 +1,6 @@
+def sol():
+    answer = "_" * 81
+    return answer
+
+# Test case
+assert sat(sol())

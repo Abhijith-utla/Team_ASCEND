@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+This function returns the string '4.5abc' because it matches the given pattern in the problem statement. The function takes no arguments and always returns the string '4.5abc'.
+
+The function 'sat' is defined using the function definition syntax in Python. It takes one argument 's' of type str, returns a bool. The function checks if 's' equals '4.5abc', '4.5abc. ' or ' 4.5abc.', and returns True if it matches any of these strings and False otherwise.

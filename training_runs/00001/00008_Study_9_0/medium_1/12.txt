@@ -1,0 +1,13 @@
+Sure, here is a solution:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    return [ord(i) for i in li] == list("The five boxing wizards jump quickly".replace(" ", ""))
+
+# Test the function
+assert sol([ord(i) for i in 'The five boxing wizards jump quickly'.replace(' ', '')])
+```
+
+In this solution, `ord(i)` is used to get the ASCII value of each character in the string. The function `sol` returns a boolean that indicates whether the two lists are equivalent. The test at the end of the code asserts that the solution function returns the correct answer for the given input.

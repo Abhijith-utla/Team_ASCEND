@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+# The function `sat` is already defined by the user. Therefore, we can't directly use it here.
+# But, we can use this function in the next problem.
+# The function `sol` returns 0, which is correct as per the problem statement.

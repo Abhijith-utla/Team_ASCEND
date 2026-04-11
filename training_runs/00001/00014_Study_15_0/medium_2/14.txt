@@ -1,0 +1,6 @@
+def sol():
+    return 4
+
+# Checking
+assert sat([1, 2, 4, 8, 16, 32])
+assert not sat([2, 4, 8, 16, 32])

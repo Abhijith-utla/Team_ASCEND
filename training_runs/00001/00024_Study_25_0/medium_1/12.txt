@@ -1,0 +1,14 @@
+Here is the Python solution:
+
+```python
+def sol():
+    return ''.join(sorted(input()))
+```
+
+This function takes an input string, sorts it alphabetically and returns it. The assertion can be verified as follows:
+
+```python
+print(sat(sol()))
+```
+
+The output should be 'MNORPTSU'.

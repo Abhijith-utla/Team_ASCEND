@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+sat = lambda coords: len(coords) >= 20

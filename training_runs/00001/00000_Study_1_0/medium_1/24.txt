@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return 'oo' in 'oooooooooooooooooooo' and 'oo' * 1000 in 'oooooooooooooooooooo'
+```
+
+The provided function `sat` checks if a string `s` contains the substring `'oo'` exactly 1000 times. The final checker will run `assert sat(sol())` to verify the result.

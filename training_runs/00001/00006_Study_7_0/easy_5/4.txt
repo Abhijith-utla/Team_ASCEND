@@ -1,0 +1,2 @@
+def sol():
+    return '100' in str(2888 ** 8)

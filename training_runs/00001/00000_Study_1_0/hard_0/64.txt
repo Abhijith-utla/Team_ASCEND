@@ -1,0 +1,21 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+This code creates a string `s` with 1000 'oo' characters. The function `sol` returns this string.
+
+The checker will run:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+
+assert sat(sol())
+```
+
+If the `sat` function returns `True`, the checker will pass. Otherwise, it will fail.

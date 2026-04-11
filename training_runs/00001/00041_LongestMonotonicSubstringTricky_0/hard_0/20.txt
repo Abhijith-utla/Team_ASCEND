@@ -1,0 +1,7 @@
+def sol():
+    x = [i for i in range(20)]
+    random.shuffle(x)
+    return x
+
+# Testing the function
+assert sat(sol())

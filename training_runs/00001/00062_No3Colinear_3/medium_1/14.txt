@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# Test case 1: All points on same line
+coords = [(0,0), (1,1), (2,2), (3,3)]
+assert sat(coords)
+
+# Test case 2: Two points on same line and one not
+coords = [(0,0), (1,1), (2,2), (3,3), (4,4)]
+assert not sat(coords)
+
+# Test case 3: Three points on same line, two of which are on same line and one not
+coords = [(0,0), (1,1), (2,2), (3,3), (4,4), (5,5)]
+assert not sat(coords)
+
+# Test case 4: Four points on same line, three of which are on same line and two of which are not
+coords = [(0,0), (1,1), (2,2), (3,3), (4,4), (5,5), (6,6)]
+assert not sat(coords)
+
+# Test case 5:

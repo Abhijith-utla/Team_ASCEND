@@ -1,0 +1,5 @@
+def sat(s: str):
+    return len(s) == 3 and s in str(8 ** 2888)
+
+# Test the function
+assert sat(sat.__name__)

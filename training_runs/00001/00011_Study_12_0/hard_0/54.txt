@@ -1,0 +1,13 @@
+Here is a Python solution for your problem. This solution uses list comprehension and the zip function to iterate over pairs of elements from the list. The sum of the pair `(i, j)` is checked to be equal to `9` and the length of the list is checked to be `1000`.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+You can validate this solution by using the `assert` statement:
+
+```python
+assert sat([4, 2, 3, 5, 7, 1, 8, 9, 6, 10, 12, 15, 19, 21, 25, 30, 32, 38, 43, 52, 55, 62, 67, 73, 80, 85, 92, 99, 100,

@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1] * 1000
+
+assert sat(sol())
+```
+
+In this solution, we create a list of 1000 elements where every element is 1. The `assert` statement checks whether the function `sat` is returning a list of 1000 elements where every element is 1.

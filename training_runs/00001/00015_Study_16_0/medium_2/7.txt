@@ -1,0 +1,9 @@
+def sol():
+    return '4.5abc'
+
+# Checker
+def check_sol(answer):
+    assert sat(answer)
+
+# Test
+check_sol(sol())

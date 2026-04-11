@@ -1,0 +1,5 @@
+def sol():
+    return "string"
+
+# print(sat(sol()))
+!python -m test_case.checker_1 sol

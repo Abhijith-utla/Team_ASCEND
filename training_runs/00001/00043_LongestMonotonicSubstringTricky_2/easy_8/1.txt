@@ -1,0 +1,25 @@
+def sol():
+    return []
+
+# Test cases
+print(sat([0, 2, 1, 3])) # True
+print(sat([0, 2, 2, 3])) # False
+print(sat([0, 1, 2, 3])) # False
+print(sat([0, 1, 1, 3])) # False
+
+def sol():
+    return [1, 2, 3, 4]
+
+# Test cases
+print(sat([0, 1, 2, 3])) # True
+print(sat([0, 1, 2, 2])) # False
+print(sat([0, 1, 2, 1])) # False
+print(sat([0, 0, 1, 1])) # False
+
+def sol():
+    return [1, 2, 3, 2]
+
+# Test cases
+print(sat([0, 1, 2, 3])) # True
+print(sat([0, 1, 2, 2])) # False
+print(sat([0, 1, 2,

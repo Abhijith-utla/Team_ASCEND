@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [1, 2, 3, 4]
+```
+
+The solution is a list where the second element is not the third element and the fourth element is not the first element. This is a contradiction and therefore it does not satisfy the assertion `sat(answer)`.

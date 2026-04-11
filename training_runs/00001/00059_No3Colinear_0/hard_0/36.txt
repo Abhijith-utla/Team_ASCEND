@@ -1,0 +1,4 @@
+def sol():
+    return [(i, i) for i in range(10)]
+
+# This solution is incorrect. The function `sat` is trying to check whether the number of unique points on the grid is equal to the number of points or not. However, the function `sol` is not providing a correct answer.

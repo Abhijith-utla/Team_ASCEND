@@ -1,0 +1,17 @@
+Here is a Python code that uses a recursive approach to find a string in a large number. The string is searched for a sequence of digits that is an exact power of 8.
+
+```python
+def sat(s: str):
+    def solve(n: int, b: int, cnt: int, base: int):
+        if n == 0:
+            return cnt == 8 and base == 8
+        d = n % b
+        n //= b
+        if d == 8:
+            cnt += 1
+        return solve(n, b, cnt, base * 10 + d)
+
+    return solve(int(8 ** 2888), 8, 0, 0) and len(s) == 3
+```
+
+The function `solve` recursively calculates the number of times 8 appears in a number and the base 8 representation of the number. The base is incremented by the current digit of the number. If the current digit is 8, the count is increased. If the number becomes 0, the count is checked to be 8 and the base is checked to be 8.

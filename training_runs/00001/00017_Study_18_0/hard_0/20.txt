@@ -1,0 +1,6 @@
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return all(s + t not in ls for s in ls for t in ls if s != t)
+```

@@ -1,0 +1,16 @@
+Here is the correct pattern for the function `sol`.
+
+```python
+def sol():
+    return "888" in str(8 ** 2888)
+```
+
+This function checks if the string "888" is in the power of 8 to the 2888th, which is the maximum power to 8 to the 2888th (as 888 * 888 = 691328) and returns True if it is, and False otherwise.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```
+
+This will pass the test if the function `sol` returns True and fail the test if it returns False.

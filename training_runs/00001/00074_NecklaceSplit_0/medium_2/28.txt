@@ -1,0 +1,19 @@
+def sol():
+    return {}
+
+# print(sol())
+
+# This is a test to check if the function sat works correctly for different inputs
+print(sat(0))  # This should return True
+print(sat(1))  # This should return False
+print(sat(2))  # This should return True
+print(sat(3))  # This should return False
+print(sat(4))  # This should return True
+print(sat(5))  # This should return False
+
+# Check for the count of 'r' and 'b' in the middle of the lace
+print(sat(1, "bbrrrbbbbrrrbbbbrr"))  # This should return True
+print(sat(2, "bbrrrbbbbrrrbbbbrr"))  # This should return False
+print(sat(3, "bbrrrbbbbrrrbbbbrr"))  # This should return True
+print(sat(4, "bbrrrbbbbrrrbbbbrr"))  # This should return False
+print(sat(5, "bbrrrbbbbrrrbbbbrr"))

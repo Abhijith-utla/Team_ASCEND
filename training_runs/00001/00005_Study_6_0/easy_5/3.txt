@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 42
+
+assert sat(sol())
+```

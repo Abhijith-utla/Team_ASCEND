@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The function 'sol' is empty because it does not take any arguments.

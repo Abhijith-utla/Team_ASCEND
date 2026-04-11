@@ -1,0 +1,19 @@
+Here are three simple variants to the original function:
+
+VARIANT1:
+```python
+def sat(s: str) -> bool:
+    return s == '4.5'
+```
+
+VARIANT2:
+```python
+def sat(s: str) -> bool:
+    return s == '4.5abc'
+```
+
+VARIANT3:
+```python
+def sat(s: str) -> bool:
+    return s == 'abc4.5'
+```

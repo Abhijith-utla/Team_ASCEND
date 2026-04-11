@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(i + j == 1 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(i + j == 3 for i, j in zip([4] + li, li)) and len(li) == 1000
+```

@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Here is the part where we test the correctness of the function
+
+coords = [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)]
+assert sat(coords, side=10, num_points=20)
+
+coords = [(0, 0), (1, 1), (2, 2), (3, 3)]
+assert not sat(coords, side=10, num_points=20)

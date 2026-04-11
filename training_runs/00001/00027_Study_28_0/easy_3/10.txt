@@ -1,0 +1,5 @@
+def sol():
+    import random
+    li = [random.randint(-500, 500) for _ in range(500)]
+    assert sat(li)
+    return li

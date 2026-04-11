@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Correct pattern:
+def sol():
+    return [i for i in range(10) if i % 2 == 0]
+
+# Incorrect pattern:
+def sol():
+    return [i for i in range(10) if i % 5 == 0]

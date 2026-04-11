@@ -1,0 +1,2 @@
+def sol():
+    return '789' if sat('789') else '978'

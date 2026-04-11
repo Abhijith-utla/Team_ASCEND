@@ -1,0 +1,8 @@
+def sol():
+    return {}
+
+# The answer object should contain the hour and minute of the target time
+answer = {"hour": 6, "minute": 8}
+
+# Assert the answer satisfies the condition
+assert sat(answer["hour"], answer["minute"])

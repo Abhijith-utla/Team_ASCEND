@@ -1,0 +1,30 @@
+VARIANT1:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+VARIANT2:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+VARIANT3:
+```python
+def sat(moves: List[List[int]]):
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1])
+    for [i, j] in moves:
+        rods[i].append(rods[j].pop())
+        assert rods[i][-1] == min(rods[i]), "larger disk on top of smaller disk"
+    return rods[0] == [1, 2, 3, 4, 5, 6, 7, 8]
+```
+These are three simple variants of the original puzzle. Each variant changes the order of the disks on the rods. The original puzzle assumes that the rods are represented as a list of lists. The first variant changes the rods to be represented as tuples, thereby changing the order of the disks. The second variant changes the rods to be represented as sets, and the third variant changes the rods to be represented as a tuple and modifies the append and pop operations.

@@ -1,0 +1,12 @@
+Here is the solution for the problem. This function checks if all elements in the list are non-negative and their binary representations are palindromes. A binary representation is a palindrome if it reads the same backward as forward. 
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x >= 0 for x in li) and all(bin(x)[1:-1] == bin(x)[:-2][::-1] for x in li)
+```
+
+The `bin(x)` function converts the integer `x` to its binary representation as a string. The `[1:-1]` part is used to remove the first and last character of the string (since they are not part of the binary representation). The `[:-2][::-1]` part is used to reverse the string and get the correct binary representation for the previous number. The `==` operator is used to check if the binary representations are equal. 
+
+The `all()` function is a built-in Python function that returns True if all elements in an iterable (like a list) are true. In this case, it checks if

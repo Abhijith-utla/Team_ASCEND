@@ -1,0 +1,16 @@
+Here is a Python solution for the problem.
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    return all(i in ls for i in range(len(ls)))
+```
+
+The `sol` function takes a list of strings `ls` as an argument and returns `True` if all the strings in `ls` are in the range of the length of `ls` and `False` otherwise.
+
+The `all` function is used to check if all elements in an iterable (in this case, a generator expression) are `True`. The generator expression is a compact way of creating an iterable of boolean values. The `i in ls` expression checks if the element `i` is in the list `ls`. The `range(len(ls))` expression generates a sequence of numbers from 0 to the length of `ls` minus 1.
+
+The assertion `assert sat(sol(["a", "b", "c"]))` will pass if the function `sol` returns `True`, and will fail if it returns `False`.
+
+This solution assumes that the strings in the list are unique

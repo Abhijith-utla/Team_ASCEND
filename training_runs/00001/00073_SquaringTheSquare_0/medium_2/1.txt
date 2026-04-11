@@ -1,0 +1,15 @@
+def sol():
+    return {}
+
+# Assert that the solution does not take any arguments
+assert sat()
+
+# Assert that the solution returns a single answer object
+assert type(sol()) == dict
+
+# Assert that the solution correctly answers the problem
+assert sat([])
+assert sat([(0, 0, 5)])
+assert not sat([(0, 0, 5), (2, 3, 4)])
+assert sat([(0, 0, 5), (1, 1, 4), (2, 2, 3)])
+assert not sat([(0, 0, 4), (1, 1, 4), (1, 1, 3)])

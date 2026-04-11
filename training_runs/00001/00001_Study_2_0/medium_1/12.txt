@@ -1,0 +1,11 @@
+Sure, here is the correct solution:
+
+```python
+def sol():
+    s = 'xxxxxxxxxxo' * 101 + 'x'
+    return s.count('x') == 100 and s.count('xo') == 101 and s.count('xx') == 98
+```
+
+This solution creates a string with 100 'x' characters, followed by 101 'xo' characters, and then one 'x'. Then it checks if the count of 'x', 'xo', and 'xx' are correct.
+
+Please note that the count of 'xx' is incorrect because it should be 98 not 100.

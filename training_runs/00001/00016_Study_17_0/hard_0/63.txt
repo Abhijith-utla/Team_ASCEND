@@ -1,0 +1,10 @@
+The function `sat` checks if the sum of `i` and 1000 is greater than the sum of `i` and 1001. If this condition is true, it returns `True`; otherwise, it returns `False`. The sum of `i` and 1000 and `i` and 1001 are both strings, so we can compare their lengths to see if `i` and 1000 or `i` and 1001 summed up to a number greater than `i` summed up to.
+
+Here's the correct Python code for this function:
+
+```python
+def sat(i: int):
+    return len(str(i + 1000)) > len(str(i + 1001))
+```
+
+This function should pass the checker's test cases.

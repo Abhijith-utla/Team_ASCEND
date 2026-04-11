@@ -1,0 +1,28 @@
+def sol():
+    return []
+
+# checker should fail without any moves
+assert not sat([])
+
+# checker should fail if moves don't form a valid configuration
+assert not sat([[0, 1]])
+assert not sat([[0, 1], [1, 0]])
+assert not sat([[0, 1], [2, 0]])
+assert not sat([[0, 1], [1, 2]])
+assert not sat([[1, 0]])
+
+# checker should pass if moves form a valid configuration
+moves = [[0, 1], [2, 0], [1, 2]]
+assert sat(moves)
+
+moves = [[0, 1], [1, 0]]
+assert sat(moves)
+
+moves = [[0, 1], [1, 2]]
+assert sat(moves)
+
+moves = [[0, 1], [0, 2]]
+assert sat(moves)
+
+moves = [[0, 2], [0, 1]]
+assert sat(moves)

@@ -1,0 +1,16 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> bool:
+    if len(ls) == 0:
+        return True
+    else:
+        for i in range(len(ls)):
+            if not i in ls:
+                return False
+        return True
+```
+
+In this function, we check if the list is empty, if it is, we return True. If the list is not empty, we iterate over the range of the list's length and check if the index is in the list. If it is not, we return False. If we finish the iteration and haven't returned False, it means that all indices are in the list, so we return True.

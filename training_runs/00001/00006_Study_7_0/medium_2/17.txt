@@ -1,0 +1,10 @@
+Here is the Python code to satisfy the given condition:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This function takes a string `s` as an argument and returns a boolean value. It first calculates the power of 8 raised to the power of 2888 (which is 8 to the power of 2888) and then counts the number of occurrences of the string `s` in the resultant string. The function returns True if the count is greater than 8 and the length of `s` is 3. Otherwise, it returns False.
+
+Please note that this function may take a long time to execute for large numbers due to the high power of 8.

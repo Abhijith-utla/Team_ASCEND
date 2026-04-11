@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# Testing the function with several test cases
+print(sat([0, 1, 0, 1, 0, 1, 0, 1, 0, 1]))  # should return True
+print(sat([1, 0, 1, 0, 1, 0, 1, 0, 1, 0]))  # should return False
+print(sat([0, 1]))  # should return True
+print(sat([1]))  # should return False
+print(sat([0, 1, 0, 1]))  # should return False
+
+# Ensure the function works with an argument
+def sol(colors):
+    return sat(colors)
+
+# Testing the function with several test cases
+print(sol([0, 1, 0, 1, 0, 1, 0, 1, 0, 1]))  # should return True
+print(sol([1, 0, 1, 0, 1, 0, 1, 0, 1, 0]))  #

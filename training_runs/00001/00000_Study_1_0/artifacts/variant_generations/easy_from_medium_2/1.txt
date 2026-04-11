@@ -1,0 +1,22 @@
+Sure, here are three simple Python functions with different inputs that test the same core concept:
+
+VARIANT1:
+```python
+def sat(s: str):
+    return 'o' in s and 'oo' not in s and s.count('o') == 1000
+```
+This function checks if the string contains the character 'o' ten thousand times. It doesn't check for 'oo' because the question doesn't specify what characters 'oo' should be in the string.
+
+VARIANT2:
+```python
+def sat(s: str):
+    return 'oo' in s and 'o' not in s and s.count('o') == 1000
+```
+This function checks if the string contains 'oo' and also checks if it doesn't contain 'o'. It also checks if there are ten thousand 'o' characters in the string.
+
+VARIANT3:
+```python
+def sat(s: str):
+    return 'ooo' in s and 'o' not in s and s.count('o') == 1000
+```
+This function checks if the string contains 'ooo' and also checks if it doesn't contain 'o'. It also checks if there are ten thousand 'o' characters in the string.

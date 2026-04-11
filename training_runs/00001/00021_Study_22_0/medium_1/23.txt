@@ -1,0 +1,6 @@
+def sol():
+    return "Programming" if sat("Programming") else "Solved"
+
+if __name__ == "__main__":
+    answer = sol()
+    print(f"The answer is: {answer}")

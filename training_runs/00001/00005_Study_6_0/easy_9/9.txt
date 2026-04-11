@@ -1,0 +1,17 @@
+The function `sat(n: int)` is already defined by the user and checks if a given number `n` is less than or equal to 10^10 and is even. It returns `True` if the condition is met and `False` otherwise.
+
+```python
+def sat(n: int):
+    return n <= 10 ** 10 and n % 2 == 0
+```
+
+The function can be used to create a single answer as follows:
+
+```python
+def sol():
+    n = 4
+    if sat(n):
+        return n
+```
+
+This will return the number 4 if it satisfies the condition `n <= 10**10 and n % 2 == 0`.

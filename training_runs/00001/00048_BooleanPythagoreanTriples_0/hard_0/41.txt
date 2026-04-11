@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+# This function is not required for the problem statement. It is included here for completeness.
+def invalid_sol(colors: List[int], n=100):
+    assert set(colors) <= {0, 1} and len(colors) >= n
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+
+# The answer to the problem.
+def correct_sol(colors: List[int], n=100):
+    assert set(colors) <= {0, 1} and len(colors) >= n
+    squares = {i ** 2: colors[i] for i in range(1, len(colors))}
+    return not any(c == d == squares.get(i + j) for i, c in squares.items() for j, d in squares.items())
+
+print(correct_sol([0

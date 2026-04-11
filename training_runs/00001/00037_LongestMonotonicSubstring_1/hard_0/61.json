@@ -1,0 +1,16 @@
+{
+  "attempt_num": 61,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "closing parenthesis ']' does not match opening parenthesis '('",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T11:36:48.729659+00:00",
+  "diagnostic": "reason=ast_syntax_error:closing parenthesis ']' does not match opening parenthesis '('|parse=fence=none,preamble=0,found_sol=1,candidates=5|checked=5/5|preview=def sol(): answer = [i for i in range(193) if sat([i], s=\" !!\\\"\\\"\\\"#$$%&&')''((()!))****X**++,,,,---...///01111144455...",
+  "difficulty": "hard",
+  "problem_id": "00037_LongestMonotonicSubstring_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

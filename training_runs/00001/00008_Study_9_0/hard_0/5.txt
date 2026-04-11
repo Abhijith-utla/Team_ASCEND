@@ -1,0 +1,8 @@
+Here is the correct pattern:
+
+```python
+def sat(li: List[int]):
+    return "".join(chr(i + 96) for i in li) == "thequickbrownfoxjumpsoverthelazydog"
+```
+
+This function takes a list of integers and returns a boolean value. It converts each integer to its corresponding ASCII character (96 because ASCII for 'a' is 97), joins them together into a string, and checks if this string matches the expected string "thequickbrownfoxjumpsoverthelazydog".

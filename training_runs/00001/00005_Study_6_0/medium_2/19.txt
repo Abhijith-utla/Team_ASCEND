@@ -1,0 +1,11 @@
+Here's the correct Python code for the solution:
+
+```python
+def sol():
+    i = 1
+    while i < 100:
+        i += 1
+    return i
+```
+
+This code works by starting from 1 and incrementing by 1 until it reaches 100. As soon as it hits 100, it returns that value as the answer. This is because 100 is the smallest number that is divisible by 5.

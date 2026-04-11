@@ -1,0 +1,2 @@
+def sol():
+    return eval("2 + (10 * 3)")

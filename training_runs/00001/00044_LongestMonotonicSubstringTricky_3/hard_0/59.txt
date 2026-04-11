@@ -1,0 +1,5 @@
+def sol():
+    x = [30, 40, 20, 50, 10, 35, 25]
+    return x
+
+assert sat(sol())

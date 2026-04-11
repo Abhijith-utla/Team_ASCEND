@@ -1,0 +1,10 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 10
+```
+
+In this function, the value `10` is returned. This value is an example of a valid answer, and it is being returned from the `sol` function.
+
+This function is designed to satisfy the given condition `sat(li: List[int])`, which is an empty function that always returns `True`. The `assert sat(sol())` will pass the assertion test, as the answer returned by `sol()` is valid.

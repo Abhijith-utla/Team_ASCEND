@@ -1,0 +1,9 @@
+def sol():
+    return "888"
+
+# Test cases
+assert sat(sol())
+assert not sat("123")
+assert not sat("888")
+assert not sat("88")
+assert not sat("889")

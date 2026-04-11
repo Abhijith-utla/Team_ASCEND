@@ -1,0 +1,8 @@
+Here is the correct pattern for the Python function named "sol" as requested.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i <= j for i in li for j in li if i > j])
+```

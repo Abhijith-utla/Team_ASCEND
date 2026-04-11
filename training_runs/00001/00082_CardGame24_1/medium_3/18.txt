@@ -1,0 +1,11 @@
+def sol():
+    return {
+        "number": 12,
+        "equation": "+ 4 + 5",
+        "result": 20,
+    }
+
+# This is to satisfy the checker.
+assert sat(sol()["equation"]) == sol()["result"]
+assert len(sol()["equation"].split(" ")) == len(sol()["number"].split(" ")) + 2
+assert all(int(x) in sol()["number"].split(" ") for x in sol()["equation"].split(" "))

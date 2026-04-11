@@ -1,0 +1,22 @@
+Here are three simple Python functions that test the same core concept:
+
+VARIANT1:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/321") and s.count("8") == 3 and s.count("1") <= 1
+```
+This function tests whether the string `s` contains all the acceptable characters, and that the "8" appears exactly three times and the "1" appears once or more than once.
+
+VARIANT2:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/321") and s.count("8") == 4 and s.count("1") == 1
+```
+This function tests whether the string `s` contains all the acceptable characters, and that the "8" appears exactly four times and the "1" appears once.
+
+VARIANT3:
+```python
+def sat(s: str):
+    return set(s) <= set("18-+*/321") and s.count("8") == 2 and s.count("1") == 1
+```
+This function tests whether the string `s` contains all the acceptable characters, and that the "8" appears exactly two times and the "1" appears once.

@@ -1,0 +1,4 @@
+def sol():
+    return False
+
+assert not sat(["hello", "world", "python", "programming", "puzzle"])

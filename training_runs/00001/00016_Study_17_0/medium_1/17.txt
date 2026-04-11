@@ -1,0 +1,19 @@
+Here is the Python code for the problem:
+
+```python
+def sol():
+    def sat(i: int):
+        return len(str(i + 1000)) != len(str(i + 1001))
+
+    i = 0
+    while not sat(i):
+        i += 1
+
+    return i
+
+assert sat(sol())
+```
+
+In this code, the function `sol()` calls the function `sat()` to check if the length of the string representation of `i + 1000` and `i + 1001` is not equal. It uses a while loop to increment `i` until `sat(i)` returns `True`. The solution is returned by `sol()`. The assert statement at the end of `sol()` checks if the solution is correct.
+
+Please note that this solution assumes that the problem statement is meant for positive integers. If the problem statement is meant for non-positive integers, you would need to adjust the code accordingly.

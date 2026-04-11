@@ -1,0 +1,19 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 3, 1, 3, 17, 3, 3]
+    return li
+```
+
+This solution creates a list with the specified elements and returns it. The function `sat` checks if the number 17 appears exactly three times and the number 3 appears at least two times in the list. 
+
+You can run the code with the following assert statement:
+
+```python
+assert sat(sol())
+```
+
+This will raise an AssertionError if the list doesn't meet the conditions.

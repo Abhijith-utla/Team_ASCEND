@@ -1,0 +1,11 @@
+Here's the solution for the problem:
+
+```python
+def sol():
+    return "8" * 888
+
+# This assert statement will pass if the function returns the correct answer
+assert sat(sol())
+```
+
+In the code above, `sat` function checks if the string `s` contains exactly 8 occurrences of the number 8, and the length of `s` is 3. If the string `s` satisfies these conditions, it is returned by the function. The `assert` statement is used to ensure that the function is working correctly.

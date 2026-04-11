@@ -1,0 +1,11 @@
+Here is the solution for the given problem:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+
+    return sat
+```
+
+This solution first defines a nested function named `sat` that takes a list of integers as an argument. It then checks if the list is sorted and contains no duplicate elements. The final answer object is simply the result of calling the `sat` function.

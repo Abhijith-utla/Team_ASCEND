@@ -1,0 +1,14 @@
+Here is a correct solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+In this solution, we first sort the list `li` and then compare it with `list(range(999))`. If the sorted list is not equal to `list(range(999))`, it means that the list `li` does not contain all numbers from 0 to 998. 
+
+Then, we check if any element `li[i]` in the list `li` is not at position `i`. If it is not, then `all(li[i] != i for i in range(len(li)))` will be `False`. 
+
+If both conditions are met, we return `True`. Otherwise, we return `False`.

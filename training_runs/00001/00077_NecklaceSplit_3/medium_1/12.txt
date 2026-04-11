@@ -1,0 +1,4 @@
+def sol():
+    return ''
+
+# Assertion is not necessary for this case as no answer is expected.

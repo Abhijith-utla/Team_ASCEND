@@ -1,0 +1,20 @@
+The Python function `sat` checks if the given list `li` is a permutation of numbers from 0 to 998. It returns `True` if the list is a permutation and `False` otherwise.
+
+Here's the Python code for the `sol` function:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+    # Create a list of 1000 numbers
+    li = [i for i in range(999)]
+
+    # Check if the list is a permutation
+    if not sat(li):
+        return False
+
+    return True
+```
+
+The function `sol` first creates a list of 999 numbers, then calls `sat` to check if the list is a permutation. If `sat` returns `False`, the function returns `False`, otherwise it returns `True`. The function `sat` checks if the list is a permutation by checking if it's sorted and if all

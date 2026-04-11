@@ -1,0 +1,6 @@
+def sol():
+    return "1 3 12 1"
+
+print(sat("1 + 3 * 12 / 1 - 12"))
+print(sat("1 + 3 * 12 / 1 - 13"))
+print(sat("1 + 3 * 12 / 1 - 14"))

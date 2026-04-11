@@ -1,0 +1,4 @@
+def sol():
+    return sum([1 for i in range(10)])
+
+print(sol())

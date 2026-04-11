@@ -1,0 +1,10 @@
+def sol():
+    return [source[:] for source in source]
+
+# Test case
+assert sat([[1, 2, 3], [4, 5, 6], [7, 8, 0]], target=[[1, 2, 3], [4, 5, 6], [7, 8, 0]])
+
+# Repeat to check if the function works correctly after multiple moves
+assert sat([[1, 2, 3], [4, 5, 6], [7, 8, 0]], target=[[4, 5, 6], [1, 2, 3], [7, 8, 0]])
+assert sat([[1, 2, 3], [4, 5, 6], [7, 8, 0]], target=[[4, 5, 6], [1, 2, 3, 7], [8]])
+assert sat([[1, 2, 3], [4, 5, 6], [7, 8, 0]], target=[[4,

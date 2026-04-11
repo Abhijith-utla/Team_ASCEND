@@ -1,0 +1,2 @@
+def sol():
+    return float(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(str(len(str(int(float(

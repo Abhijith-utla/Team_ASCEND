@@ -1,0 +1,10 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This solution uses the `sorted` function to sort the list and the `list` function to convert the range to a list. Then it uses a generator expression to check that every index in the list is unique. The `all` function is used to ensure that every index in the list is unique.

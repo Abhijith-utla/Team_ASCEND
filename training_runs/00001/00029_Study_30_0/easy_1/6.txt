@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(1001) if i % 123 < 123]
+
+print(sol())

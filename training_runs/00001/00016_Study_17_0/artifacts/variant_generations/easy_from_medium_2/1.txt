@@ -1,0 +1,19 @@
+Sure, here are three simpler versions of the function you provided.
+
+VARIANT1:
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 1)) == len(str(i + 2))
+```
+
+VARIANT2:
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 10)) == len(str(i + 100))
+```
+
+VARIANT3:
+```python
+def sat(i: int) -> bool:
+    return len(str(i + 1000)) == len(str(i + 10000))
+```

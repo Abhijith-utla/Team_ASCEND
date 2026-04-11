@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(13) if i not in [0, 3, 5, 12]]
+
+assert sat(sol())

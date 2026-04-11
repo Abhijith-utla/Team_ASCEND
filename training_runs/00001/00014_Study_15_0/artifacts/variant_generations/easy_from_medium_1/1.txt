@@ -1,0 +1,19 @@
+Here are three variant solutions:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return all(x >= 0 and 2 ** x - 1 == (2 ** x) - 1 for x in li)
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return all(x >= 0 and x in range(20) for x in li)
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return all(x >= 0 and 2 ** x - 1 == (2 ** (x + 1)) - 1 for x in li)
+```

@@ -1,0 +1,36 @@
+def sol():
+    return []
+
+# Correct pattern:
+# def sol():
+#     return []
+
+# Incorrect pattern:
+# def sol(x):
+#     return x
+
+# def sol(x, length=0, s=""):
+#     return x
+
+# def sol(x, length=0, s=""):
+#     return [x]
+
+# def sol(x, length=0, s=""):
+#     return [x, length, s]
+
+# def sol(x, length=0, s=""):
+#     return [x, length]
+
+# def sol(x, length=0, s=""):
+#     return [x, length, s]
+
+# def sol(x, length=0, s=""):
+#     return [x, length, s]
+
+# def sol(x, length=0, s=""):
+#     return [x, length, s]
+
+# def sol(x, length=0, s=""):
+#     return [x, length, s]
+
+# def sol(x, length

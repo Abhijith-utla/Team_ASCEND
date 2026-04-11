@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# Test cases
+coords_test_1 = [(5, 5), (10, 10), (15, 15)]
+coords_test_2 = [(5, 5), (10, 10), (15, 15), (20, 20)]
+assert sat(coords_test_1)
+assert not sat(coords_test_2)

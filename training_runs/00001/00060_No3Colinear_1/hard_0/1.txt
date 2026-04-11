@@ -1,0 +1,12 @@
+The provided code is incorrect because it uses a nested loop to check the condition for the slope of the line formed by the three points. The slope of a line is calculated as the product of the differences in the x-coordinates divided by the product of the differences in the y-coordinates. If the slope is zero, it means that the line is vertical or horizontal, which is not the case in this problem.
+
+The correct code should be:
+
+```python
+from typing import List, Tuple
+
+def sat(coords: List[Tuple[int, int]], side=0, num_points=0) -> bool:
+    return len(coords) == num_points and len(coords) == len({a for a, b in coords})
+```
+
+This code checks if the number of points is equal to the number of unique points, and if the number of points is equal to the side of the square. If both conditions are met, it returns True, otherwise it returns False.

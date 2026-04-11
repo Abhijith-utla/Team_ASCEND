@@ -1,0 +1,10 @@
+def sol():
+    return [str(i) for i in str(7 ** 64.5)]
+
+print(sol())
+
+# Test
+def test_sol():
+    assert sat(sol())
+
+test_sol()

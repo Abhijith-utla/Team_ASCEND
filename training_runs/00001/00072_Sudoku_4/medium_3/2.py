@@ -1,0 +1,26 @@
+def sat(x: str, puz="1___2___3______9____2___5_______7___8___1_________43_____5_____76__2___2___7___6___1___5_______7__8___9_______4_65___3______9____2___5_______7___8___1_________43_____5_____76__2"):
+    assert all(c == "1" or c == s for (c, s) in zip(puz, x))
+
+    full = set('123456789')
+    for i in range(9):
+        assert {x[i] for i in range(9 * i, 9 * i + 9)} == full, "invalid row"
+        assert {x[i] for i in range(i, i + 81, 9)} == full, "invalid column"
+        assert {x[9 * a + b + i + 26 * (i % 3)] for a in range(3) for b in range(3)} == full, "invalid square"
+
+    return True
+
+def sol():
+    return """123456789
+912345678
+791234567
+651234567
+561234567
+456123457
+345612348
+234561239
+123456789"""
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

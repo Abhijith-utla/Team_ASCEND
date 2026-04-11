@@ -1,0 +1,18 @@
+Here is the Python code for the solution to your problem:
+
+```python
+def sol():
+    i = 1000
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int) -> bool:
+    return len(str(i + 1000)) == len(str(i + 10000))
+```
+
+This program starts with i = 1000 and increments it until the condition in the sat function is met. Once the condition is met, it returns the current value of i. This value satisfies the condition, so the while loop ends and the function returns i.
+
+The function sat(i) checks if the number of digits in the number (i + 1000) is equal to the number of digits in the number (i + 10000). If these numbers have the same number of digits, the function returns True, otherwise it returns False.
+
+The while loop in the sol function guarantees that the number of digits in the number (i + 1000) is equal to the number of digits in the number (i + 1000

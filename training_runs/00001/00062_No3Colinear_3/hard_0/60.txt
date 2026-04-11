@@ -1,0 +1,6 @@
+def sol():
+    return [(i, j) for i in range(2) for j in range(2)]
+
+# The function 'sol' constructs and returns a single answer value.
+# The answer is a list of tuples where each tuple contains two elements (x, y).
+# This list only contains tuples (0, 0) and (1, 1) since there are only two points on the square side of side=2.

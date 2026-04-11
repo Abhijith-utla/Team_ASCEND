@@ -1,0 +1,15 @@
+def sat(rev_quine: str):
+    return eval(rev_quine[::-1]) == rev_quine
+
+def sol():
+    return eval(input())
+
+print(sol())
+
+# This will run the code until it encounters a breakpoint. You can use the following commands to run the program:
+# (Ctrl+C to interrupt)
+# (press Ctrl+D on Windows/Linux)
+# (press Command+D on macOS)
+
+if __name__ == "__main__":
+    assert sat(sol())

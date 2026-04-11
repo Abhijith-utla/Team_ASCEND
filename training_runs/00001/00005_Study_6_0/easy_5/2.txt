@@ -1,0 +1,6 @@
+Here is the Python code that satisfies the pattern:
+
+```python
+def sat(i: int):
+    return i < 100
+```

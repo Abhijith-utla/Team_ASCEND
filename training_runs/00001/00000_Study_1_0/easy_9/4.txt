@@ -1,0 +1,11 @@
+Your solution is almost correct, but there is a small mistake. The function `sat` should return a boolean value, not an answer object. Here's how you can correct the function:
+
+```python
+def sat(s: str):
+    if s.count('o') != 0:
+        return False
+    else:
+        return True
+```
+
+This function checks if the string `s` contains the character `o`. If it does, the function returns `False`, otherwise it returns `True`.

@@ -1,0 +1,9 @@
+Here is the correct solution to this problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x >= 0 and (1 << x) - 1 == ((1 << (x + 1)) - 1) for x in li)
+```
+This function checks whether all the elements in the given list satisfy the condition that the result of 2 raised to the power of the element is equal to (2 raised to the power of (element + 1)) minus 1. This is a common mathematical property that is used in bit manipulation. If the condition is met, the function returns True, otherwise it returns False.

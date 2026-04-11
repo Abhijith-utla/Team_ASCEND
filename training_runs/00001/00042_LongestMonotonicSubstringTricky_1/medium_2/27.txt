@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+print(sol()) # <answer>
+
+assert sat(sol())

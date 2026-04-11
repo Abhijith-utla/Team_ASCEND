@@ -1,0 +1,5 @@
+def sol():
+    return [19, 14, 81]
+
+# Checker will call sol and assert it returns the correct answer
+assert sat(sol())

@@ -1,0 +1,24 @@
+def sat(s: str):
+    return set(s) <= set("18-+*/") and s.count("8") == 4 and s.count("1") == 0 and eval(s) == 99
+
+def sol():
+    return "8111-+*/"
+
+print(sat(sol()))  # prints: True
+
+print(sat(sol("8111-+*/")))  # prints: False
+
+print(sat(sol("8111-+**/")))  # prints: False
+
+print(sat(sol("8111-+*11/")))  # prints: False
+
+print(sat(sol("8111-+/111")))  # prints: False
+
+print(sat(sol("8181-+*/")))  # prints: False
+
+print(sat(sol("81-1-+*/")))  # prints: False
+
+print(sat(sol("18-+*/")))  # prints: True
+
+if __name__ == "__main__":
+    assert sat(sol())

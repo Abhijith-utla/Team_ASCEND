@@ -1,0 +1,5 @@
+def sol():
+    return "".join(str(12345678))
+
+# Checker
+assert sat([sol()])

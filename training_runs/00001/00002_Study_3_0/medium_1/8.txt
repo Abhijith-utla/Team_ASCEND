@@ -1,0 +1,19 @@
+Here is a solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    sorted_li = sorted(li)
+    return sorted_li == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+# Test
+print(sat([0, 1, 2, 3, 4]))  # False
+print(sat([1, 2, 3, 4, 0]))  # False
+print(sat([997, 998, 999, 0, 1]))  # True
+print(sat([5, 6, 7, 8, 9]))  # False
+```
+
+In this solution, the function `sat` checks if the given list `li` is sorted in ascending order, and if all elements in `li` are unique. If both conditions are met, it returns `True`, otherwise it returns `False`. 
+
+The function `sorted` is used to sort the list `li` and `list(range(999

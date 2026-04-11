@@ -1,0 +1,8 @@
+Here's the correct pattern for your function:
+
+```python
+def sol():
+    return "oo" * 1000
+```
+
+This function takes no arguments and returns a string of "oo" repeated 1000 times. The `sat` function checks if the string contains exactly 1000 occurrences of "oo" and not any other character.

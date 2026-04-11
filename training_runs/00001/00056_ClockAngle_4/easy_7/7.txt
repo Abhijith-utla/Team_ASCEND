@@ -1,0 +1,4 @@
+def sol():
+    return 22, 0
+
+# assert sat(sol()[0], sol()[1])

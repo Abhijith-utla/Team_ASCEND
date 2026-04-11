@@ -1,0 +1,17 @@
+{
+  "attempt_num": 17,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T10:08:05.799031+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: pop from empty list|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], []) for [i, j] in moves: rods[j].append(rods[i].pop()) assert rods[j...",
+  "difficulty": "hard",
+  "problem_id": "00030_TowersOfHanoi_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

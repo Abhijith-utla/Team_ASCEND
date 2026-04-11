@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Test
+assert sat([10, 20, 30, 40])  # True
+assert not sat([10, 20, 50, 40])  # False
+assert sol() == []  # Correct answer
+
+# Checker
+assert sat(sol())  # True

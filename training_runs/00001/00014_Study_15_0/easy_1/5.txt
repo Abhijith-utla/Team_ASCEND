@@ -1,0 +1,9 @@
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for x in li:
+        if x < 0 or 2 ** x - 1 != (2 ** x) - 1:
+            return False
+    return True
+```

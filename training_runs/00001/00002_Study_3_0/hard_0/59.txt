@@ -1,0 +1,20 @@
+Sure, the function `sat` checks whether a given list of integers satisfies two conditions:
+
+1. The list is sorted in ascending order.
+2. No element in the list is equal to its index.
+
+The first condition is always satisfied because the list is sorted in ascending order, and the second condition is always satisfied because the list contains all unique integers from 0 to 998.
+
+Here is the correct code for `sol`:
+
+```python
+def sol():
+    return 999
+```
+
+This function always returns the number 999.
+
+The final checker will run:
+```python
+assert sat(sol())
+```

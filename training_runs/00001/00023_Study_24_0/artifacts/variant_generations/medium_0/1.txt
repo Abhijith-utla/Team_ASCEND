@@ -1,0 +1,19 @@
+Here are the three simplified variants for the given problem:
+
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return li.count(17) == 1 and li.count(3) == 2
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return li.count(17) == 2 and li.count(3) == 1
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return li.count(17) == 3 and li.count(3) == 0
+```

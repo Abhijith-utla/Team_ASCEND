@@ -1,0 +1,8 @@
+Sure, here is the correct solution:
+
+```python
+def sat(x: float):
+    return str(x - 3.1415).startswith("123.456")
+```
+
+The function `sat` takes a float `x` as an argument and returns `True` if `x - 3.1415` is a string that starts with "123.456". The `startswith` method checks if the string starts with the specified prefix, and `str` is used to convert the float `x` to a string. The result of this comparison is then returned.

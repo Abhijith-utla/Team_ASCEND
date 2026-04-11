@@ -1,0 +1,6 @@
+def sol():
+    return tuple(answer)
+
+answer = [...]
+
+assert sat(answer)

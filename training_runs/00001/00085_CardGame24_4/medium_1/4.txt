@@ -1,0 +1,21 @@
+def sol():
+    return 1 + 1
+
+# Test cases
+print(sat("1 + 1"))  # True
+print(sat("2 * 3"))  # True
+print(sat("5 - 2"))  # True
+print(sat("4 / 2"))  # True
+print(sat("10 - 9 + 7 - 2"))  # True
+print(sat("10 - 7 * 4"))  # False
+print(sat("10 - (7 * 4)"))  # False
+print(sat("10 - 7) * 4"))  # False
+print(sat("10 - 7 * 4 + 1"))  # False
+print(sat(""))  # False
+print(sat("1 2 3"))  # False
+print(sat("10 12 1 7"))  # True
+print(sat("24"))  # True
+print(sat("10 13 1 7"))  # False
+
+# Checker will run:
+# print(sat(str(sol())))

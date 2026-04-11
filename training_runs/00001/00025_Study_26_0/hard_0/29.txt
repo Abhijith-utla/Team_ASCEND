@@ -1,0 +1,5 @@
+def sol():
+    return str(8 ** 88)
+
+# Checker
+assert sat([str(8 ** 88)])

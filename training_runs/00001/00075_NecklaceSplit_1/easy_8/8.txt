@@ -1,0 +1,5 @@
+def sol():
+    return 0
+
+# This will trigger the assert statement in the checker
+assert sat(0, 0)

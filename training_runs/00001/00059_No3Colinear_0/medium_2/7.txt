@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+# The given function sat is not actually defined by the user.
+# It checks whether a list of coordinates is in the correct form and whether the line formed by the coordinates is vertical.
+# However, the problem statement explicitly asks for a solution that returns an empty list, 
+# which means that the input coordinates do not meet the conditions.
+# Therefore, the function sol should return an empty list to satisfy the conditions in the problem statement.

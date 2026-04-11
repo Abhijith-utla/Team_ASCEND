@@ -1,0 +1,8 @@
+```python
+from typing import List
+
+def sol():
+    return [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+print(sat(sol()))
+```

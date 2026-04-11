@@ -1,0 +1,14 @@
+The given function `sat(li: List[int])` takes a list of integers (li) as input and checks if it's sorted in ascending order (`sorted(li) == list(range(999))`) and all elements in the list are distinct (`all(li[i] != i for i in range(len(li)-1))`).
+
+Here is the Python code for this:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+```
+
+The function `sat` is defined to be a truth value test for the given condition. This function will return `True` if the input list is valid according to the provided conditions, and `False` otherwise.
+
+The function `sorted(li) == list(range(999))` checks if the list `li` is sorted in ascending order. The list `list(range(999))` generates a list of integers from 0 to 9

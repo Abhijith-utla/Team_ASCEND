@@ -1,0 +1,10 @@
+Sure, here is a Python function named `sol` that satisfies the given condition:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function first sorts the list and checks if it equals to the list of numbers from 0 to 998. Then it checks if there are any duplicates in the list. If both conditions are satisfied, it means the list is sorted in non-descending order and does not contain any duplicates.

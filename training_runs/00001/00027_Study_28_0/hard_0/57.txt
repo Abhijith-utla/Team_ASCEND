@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(1000) if i not in range(100) or i not in range(900, 1000)]

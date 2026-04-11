@@ -1,0 +1,17 @@
+{
+  "attempt_num": 7,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 1,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:50:54.398384+00:00",
+  "diagnostic": "reason=sol_has_args:1|parse=fence=python,preamble=1,found_sol=1,candidates=3|checked=3/3|preview=The correct pattern for the solution to this problem is as follows: ```python def sol(li: List[int]): return [ord(i) ...",
+  "difficulty": "medium",
+  "problem_id": "00008_Study_9_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

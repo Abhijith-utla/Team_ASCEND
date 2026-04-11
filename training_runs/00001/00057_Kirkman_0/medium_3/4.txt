@@ -1,0 +1,4 @@
+def sol():
+    return [ [[(i+1, j+1) for j in range(5)] for i in range(5)] for _ in range(5)]
+
+print(sol())

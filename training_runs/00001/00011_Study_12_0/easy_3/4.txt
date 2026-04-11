@@ -1,0 +1,5 @@
+def sol():
+    li = [6]
+    return li
+
+assert sat(sol())

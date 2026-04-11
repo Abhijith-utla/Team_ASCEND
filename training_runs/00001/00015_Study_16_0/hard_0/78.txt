@@ -1,0 +1,4 @@
+def sol():
+    return float(str(len('Python')))
+
+assert sat(sol())

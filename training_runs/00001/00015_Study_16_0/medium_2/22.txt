@@ -1,0 +1,8 @@
+Here is a Python solution for the problem.
+
+```python
+def sol():
+    return '4.5abc'
+```
+
+The function `sol` simply returns the string '4.5abc'. This string matches the condition defined in the function `sat`.

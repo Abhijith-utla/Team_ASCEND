@@ -1,0 +1,10 @@
+Here is the Python code for the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return len(li) == 10 and li.count(li[3]) == 2
+```
+
+This function checks if the list `li` has a length of 10 and the count of the number at the third index is 2. This is done by `li.count(li[3])`. The function returns `True` if both conditions are met, and `False` otherwise.

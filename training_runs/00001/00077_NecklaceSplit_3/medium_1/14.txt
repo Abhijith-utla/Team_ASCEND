@@ -1,0 +1,5 @@
+def sol():
+    return [{'index': n, 'value': 'r' * (2 * n)} for n in range(len(lace) // 2)]
+
+# Testing the solution
+assert sat(sol())

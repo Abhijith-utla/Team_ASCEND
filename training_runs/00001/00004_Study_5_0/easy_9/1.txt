@@ -1,0 +1,8 @@
+Sure, here is the correct solution:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) == li.count(0) == 1
+```
+
+The function `sat` checks if all elements in the list `li` are equal to the count of each number from 0 to 9 (inclusive). It also checks if the count of the number 0 is equal to the total length of the list `li`. If all these conditions are met, the function returns `True`, else it returns `False`.

@@ -1,0 +1,10 @@
+Here is the correct Python code for your solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Hello World".replace(" ", ""))
+```
+
+This function will return True if the list of integers `li` corresponds to the ASCII values of the letters in the string "Hello World" (after replacing spaces with no character), and False otherwise. It uses list comprehension to convert the ASCII values to their corresponding characters, and then checks if this list is equal to the list of characters in "Hello World" (after replacing spaces with no character).

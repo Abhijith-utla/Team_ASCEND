@@ -1,0 +1,5 @@
+def sol():
+    answer = [1234, 1235, 1236]
+    return answer
+
+print(sol())

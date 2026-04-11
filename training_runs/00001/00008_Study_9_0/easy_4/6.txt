@@ -1,0 +1,12 @@
+The function `sat` checks if all elements in a list are digits. If all elements are digits, it returns `True`, otherwise it returns `False`.
+
+Here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return all(i.isdigit() for i in li)
+```
+
+This function will return `True` if all elements in the list are digits and `False` otherwise. The function `sat` is used to satisfy the problem requirements.

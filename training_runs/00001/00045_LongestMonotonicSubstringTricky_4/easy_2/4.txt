@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This assert statement is here to test the 'sat' function with a valid input.
+# You can remove it or modify it to test with other inputs.
+assert sat(sol())

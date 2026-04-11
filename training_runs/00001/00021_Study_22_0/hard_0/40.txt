@@ -1,0 +1,3 @@
+def sol():
+    s = 'aabbccddeeff'
+    return s[::2] in s and len(set(s)) == 5

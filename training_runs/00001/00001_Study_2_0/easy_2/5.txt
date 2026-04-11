@@ -1,0 +1,5 @@
+def sol():
+    s = 'x' * 100 + 'o' * 111 + 'xx' * 98
+    return s
+
+print(sol())

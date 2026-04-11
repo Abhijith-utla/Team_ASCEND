@@ -1,0 +1,12 @@
+The function `sat` is checking if the string "The quick brown fox jumps over the lazy dog" is the same as the string "The five boxing wizards jump quickly". However, the function is case-sensitive, so it will return False for both of these strings. 
+
+To make the function case-insensitive, we can convert both strings to lowercase before checking. Here is how you can do it:
+
+```python
+def sat(li: List[int]):
+    return "The quick brown fox jumps over the lazy dog".lower() == "the five boxing wizards jump quickly".lower()
+```
+
+Now, the function will return True if both the original and the lowercase version of the strings are the same, and False otherwise.
+
+Please note that this code only checks if the strings are equal, not if they are the same word in the order they appear. If the order in the strings matters, you might want to use a different approach.

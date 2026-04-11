@@ -1,0 +1,6 @@
+def sol():
+    return {}
+
+# test cases
+print(sat([1, 2, 3, 4, 5]))  # should return True
+print(sat([1, 2, 2, 4, 5]))  # should return False

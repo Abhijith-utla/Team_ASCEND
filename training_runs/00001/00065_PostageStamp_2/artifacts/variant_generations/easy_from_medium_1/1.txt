@@ -1,0 +1,29 @@
+VARIANT1:
+```python
+def sat(stamps: List[int]):
+    if len(stamps) != 3:
+        return False
+    if sum(stamps) != 18:
+        return False
+    return True
+```
+
+VARIANT2:
+```python
+def sat(stamps: List[int]):
+    if len(stamps) != 4:
+        return False
+    if sum(stamps) != 19:
+        return False
+    return True
+```
+
+VARIANT3:
+```python
+def sat(stamps: List[int]):
+    if len(stamps) != 5:
+        return False
+    if sum(stamps) != 20:
+        return False
+    return True
+```

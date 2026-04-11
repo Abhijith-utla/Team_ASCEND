@@ -1,0 +1,17 @@
+Here is the correct pattern for your Python function:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    count = [li.count(i) for i in range(10)]
+    if max(count) > 1 or min(count) < 2:
+        return False
+    zero_index = count.index(0)
+    count[zero_index] = 1
+    return all(li.count(i) == count[i] for i in range(10))
+```
+
+This function takes a list of integers as input and returns True if the list contains exactly ten unique numbers from 0 to 9 and exactly one zero. If the list contains more or fewer unique numbers or a non-unique zero, the function returns False.
+
+The code counts the occurrences of each number in the list, and checks if there is exactly one unique number and exactly one zero. If these conditions are met, the function returns True, otherwise it returns False.

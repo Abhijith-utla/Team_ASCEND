@@ -1,0 +1,5 @@
+def sol():
+    return [72, 2, 269]
+
+# We can't run assert statements in the sol function as they need to be in a test case to be run.
+# However, we can define a state that satisfies the conditions and return it as the result.

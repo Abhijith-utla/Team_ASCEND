@@ -1,0 +1,17 @@
+{
+  "attempt_num": 1,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:45:35.037457+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): def sat(li: List[int]): for x in range(20): for y in li[:x + 1]: if y + x != 2 ** x: return False return T...",
+  "difficulty": "easy",
+  "problem_id": "00014_Study_15_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 6
+}

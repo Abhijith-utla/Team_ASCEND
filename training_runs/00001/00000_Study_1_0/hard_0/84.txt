@@ -1,0 +1,5 @@
+def sol():
+    s = 'oo' * 1000
+    return s.count('o') == 1000 and s.count('oo') == 0
+
+print(sol())  # should return True

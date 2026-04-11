@@ -1,0 +1,18 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(li.index(x) < sum(li[:i]) for i in range(len(li)) for x in set(li))
+```
+
+The function `sat` takes a list of integers `li` as input. It returns `True` if every index `i` of the list is less than the sum of the list up to that index, and `False` otherwise. 
+
+This is done by iterating over the list and checking whether the index of each element is less than the sum of the list up to that index.
+
+The `set(li)` part of the loop ensures that each element in the list is unique, as it will only be less than the sum of the list up to that index if the element is not the first element in the list.
+
+The function `all` is used to check if all the conditions in the generator expression are true. If they are, it returns `True`, otherwise `False`.
+
+The checker will run: `assert sat(li)`, where `

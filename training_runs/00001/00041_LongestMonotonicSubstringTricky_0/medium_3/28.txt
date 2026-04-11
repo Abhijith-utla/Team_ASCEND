@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This function returns a list of integers.
+# The list is empty because the function does not return any answer value.

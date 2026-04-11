@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:41:51.579748+00:00",
+  "diagnostic": "reason=subprocess_error:SyntaxError: 'return' outside function (<string>, line 12)|parse=fence=none,preamble=0,found_sol=1,candidates=12|checked=12/12|preview=def sol(): return [2, 3, 4] # We will construct an answer object with the properties x, y, and sides. # You can adjus...",
+  "difficulty": "easy",
+  "problem_id": "00073_SquaringTheSquare_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

@@ -1,0 +1,5 @@
+def sol():
+    return [19]
+
+# This assertion should pass if sat(sol()) returns a list of one stamp that equals 19.
+assert sat(sol())

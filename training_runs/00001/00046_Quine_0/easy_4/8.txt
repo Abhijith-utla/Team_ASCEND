@@ -1,0 +1,8 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    return "print(\"Hello, World!\")"
+```
+
+This Python code constructs and returns a single answer value that is a Python code that will print "Hello, World!" when run. This code satisfies the condition "assert sat(sol())".

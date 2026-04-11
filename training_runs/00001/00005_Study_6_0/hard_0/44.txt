@@ -1,0 +1,8 @@
+Sure, here is the correct Python code for the solution.
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+```
+
+This function checks if the given integer is a multiple of 123 and greater than 10^10. If the condition is satisfied, it returns True. If not, it returns False.

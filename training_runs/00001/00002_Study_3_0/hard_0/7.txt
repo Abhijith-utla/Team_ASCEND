@@ -1,0 +1,10 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [i for i in range(999) if i not in range(999)]
+```
+
+The code creates a list of integers from 0 to 898, then removes the integers in the list. The remaining elements should all be in the range from 999. If the list is sorted and contains all elements from 0 to 898, then the function will return a list of integers from 999 to 0.
+
+Please note that this code assumes that the list contains distinct elements. If the list can contain duplicate elements, then the final answer should be a list of integers from 999 to 0, not a list of integers from 0 to 898.

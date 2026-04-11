@@ -1,0 +1,13 @@
+Here is a Python solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return sorted([i for i in range(1, 1001)])
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(1001))
+```
+
+In this solution, we create a sorted list of numbers from 1 to 1000. The function `sol()` returns this list, and the function `sat(li: List[int])` checks whether `li` is a sorted version of this list.

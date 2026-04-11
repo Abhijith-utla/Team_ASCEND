@@ -1,0 +1,10 @@
+The function `sat` is supposed to return `True` if all characters in the input list `li` have an ASCII value that is divisible by 3, and `False` otherwise.
+
+Here's the correct code for `sol` function:
+
+```python
+def sol():
+    return sum([1 for i in input().split() if ord(i) % 3 == 0]) == 0
+```
+
+This code takes a line of input from the user, splits it into a list of words, and then checks each word's ASCII value. If the word's ASCII value is divisible by 3, `1` is added to the sum. If the sum is `0`, the function returns `True`; otherwise, it returns `False`.

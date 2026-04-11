@@ -1,0 +1,17 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T15:02:45.444506+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): return [] # Test cases assert sat([]) assert not sat([20]) assert not sat([20, 32]) assert sat([20, 20]) a...",
+  "difficulty": "easy",
+  "problem_id": "00063_PostageStamp_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 8
+}

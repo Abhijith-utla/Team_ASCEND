@@ -1,0 +1,23 @@
+VARIANT1:
+```python
+def sat(s: str) -> bool:
+    if len(s) != 10 or not s.isalpha():
+        return False
+    return len(set(s)) == 5 and s[::2] == s[1::2]
+```
+
+VARIANT2:
+```python
+def sat(s: str) -> bool:
+    if len(s) != 20:
+        return False
+    return len(set(s)) == 5 and s[::2] == s[1::2]
+```
+
+VARIANT3:
+```python
+def sat(s: str) -> bool:
+    if len(s) < 5 or len(s) > 30:
+        return False
+    return len(set(s)) == 5 and s[::2] == s[1::2]
+```

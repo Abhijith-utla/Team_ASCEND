@@ -1,0 +1,10 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The five boxing wizards jump quickly")
+```
+This function checks if the list comprehension generated from the list comprehension expression `["The quick brown fox jumps over the lazy dog"[i] for i in li]` is equal to the string "The five boxing wizards jump quickly". If they are equal, the function returns `True`, otherwise it returns `False`.

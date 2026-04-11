@@ -1,0 +1,6 @@
+def sol():
+    answer = "This is the correct answer."
+    return answer
+
+# Testing the function
+assert sat(sol())

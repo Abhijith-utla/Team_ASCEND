@@ -1,0 +1,7 @@
+Sure, here is the solution for the problem.
+
+```python
+def sat(s: str):
+    return s.count('oo') <= 1
+```
+This function checks if the string 'oo' appears at most once in the string. If 'oo' appears only once, it returns True, otherwise, it returns False.

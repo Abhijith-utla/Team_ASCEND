@@ -1,0 +1,4 @@
+def sol():
+    return ["98765432", "1"]
+
+print(sol())

@@ -1,0 +1,20 @@
+The provided Python function `sat` is incorrect. It checks if the sum of each element and the next element in the list is 2 and the length of the list is 1000. But the `zip` function is not being used correctly. The code should be written as follows:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(len(li) - 1):
+        if li[i] + li[i+1] != 2:
+            return False
+    return len(li) == 1000
+```
+
+This code checks if the sum of each element and the next element in the list is 2. If it is not, it returns False. If it has checked all elements and the length of the list is still 1000, it returns True.
+
+You can check the correctness of the function by running the following code:
+
+```python
+print(sat([2] * 996))  # False
+print(sat([2] * 1000))  # True
+```

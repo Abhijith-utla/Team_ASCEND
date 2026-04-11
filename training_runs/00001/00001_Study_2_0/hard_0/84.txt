@@ -1,0 +1,11 @@
+Here is the solution to the problem:
+
+```python
+def sol():
+    s = 'ho' * 1000 + 'oo' * 100 + 'ho'
+    return s
+```
+
+In the solution, we first generate a string `s` that consists of 'ho' repeated 1000 times and 'oo' repeated 100 times. Then we return `s`.
+
+The checker will correctly validate the solution by running `sat(sol())`, which should return `True`.

@@ -1,0 +1,13 @@
+Here are three simpler Python function variants that test the same core concept:
+
+VARIANT1:
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'de'))
+
+VARIANT2:
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'd'))
+
+VARIANT3:
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'ee'))

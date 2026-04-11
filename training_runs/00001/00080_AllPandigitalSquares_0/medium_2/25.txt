@@ -1,0 +1,5 @@
+def sol():
+    return [n * 3 for n in range(1, 10)]
+
+# Testing the function
+assert sat(sol())

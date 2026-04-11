@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(13) if i > 0 and s[x[i]] <= s[x[i + 1]] and x[i] < x[i + 1]]

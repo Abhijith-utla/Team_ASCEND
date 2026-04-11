@@ -1,0 +1,25 @@
+def sol():
+    return ""
+
+# Explanation:
+# The string 'lace' consists of several sequences of 'b' and 'r'. 
+# We are looking for a substring in 'lace' that repeats 2 * (n-1) times, followed by 'b', followed by 'r'. 
+# The number n corresponds to the index of 'lace' in the original string, so the corresponding substring should 
+# start with 'r' * (2 * (n - 1)), followed by 'b' (which repeats 2 * (n - 1) times). 
+# This pattern repeats as much as possible, so the longest possible substring that matches this pattern is 
+# the whole 'lace'.
+
+# Test:
+assert sat(1)
+assert not sat(2)
+assert not sat(3)
+assert not sat(4)
+assert sat(5)
+assert not sat(6)
+assert sat(7)
+assert not sat(8)
+assert not sat(9)
+assert sat(10)
+assert not sat(11)
+assert sat(12)
+assert not sat(

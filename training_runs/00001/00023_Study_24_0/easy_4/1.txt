@@ -1,0 +1,9 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    return [17, 3, 17, 3]
+
+assert sat(sol())
+```
+This function `sol` returns a list with the numbers 17 and 3. The number 17 appears twice in the list, and the number 3 appears twice too, so `sat` function checks if this list satisfies the condition. If it does, the function `sol` returns this list; otherwise, it raises an AssertionError.

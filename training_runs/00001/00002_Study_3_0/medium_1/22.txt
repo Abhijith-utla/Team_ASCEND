@@ -1,0 +1,19 @@
+Here's a Python solution for the problem:
+
+```python
+def sol():
+    def sat(li: list[int]) -> bool:
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+    def gen():
+        li = [0]*1000
+        for i in range(1000):
+            li[i] = i
+        return li
+
+    answer = gen()
+    assert sat(answer)
+    return answer
+```
+
+In this solution, the `sat` function checks if a list is sorted in ascending order and all elements are unique. The `gen` function creates a list of integers from 0 to 999 and returns it. The main function `sol` uses this `gen` function to create an answer, asserts `sat(answer)` to ensure that the answer is valid, and then returns the answer.

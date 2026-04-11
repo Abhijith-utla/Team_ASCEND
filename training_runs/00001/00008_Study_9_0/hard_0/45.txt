@@ -1,0 +1,17 @@
+The function `sat` checks if the first element of the list `li` is the same as the character at the 0th index in the string "The quick brown fox jumps over the lazy dog". If all characters in the string match with the first element of `li`, the function returns `True`. Otherwise, it returns `False`.
+
+Here is the Python code for the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return ["The quick brown fox jumps over the lazy dog"[i] for i in li] == list(
+        "The quick brown fox jumps over the lazy dog")
+```
+
+The `sat` function takes a list of integers as an argument. The function iterates over the list and compares the character at the `i`th index in the string "The quick brown fox jumps over the lazy dog" with the `i`th element of the list `li`. If all characters match, the function returns `True`. Otherwise, it returns `False`.
+
+Here is how you can test the `sat` function:
+
+```

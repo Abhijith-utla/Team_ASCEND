@@ -1,0 +1,14 @@
+Here is the correct Python code to construct the function `sol`.
+
+```python
+from typing import List
+
+def sol() -> int:
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    return sum(li)
+
+# Testing the function
+assert sat(sol())
+```
+
+In this function, we first generate a list of integers from 1 to 20. Then we sum all the elements in this list and return the sum. The function `sat` checks if the sum of the first `i` numbers is `i` for all `i` from 1 to 20. If the list satisfies the condition, the function `sat` returns `True`; otherwise, it returns `False`. The `assert` statement checks if the return value of the function `sol` is equal to the expected result. If it's not, an `AssertionError

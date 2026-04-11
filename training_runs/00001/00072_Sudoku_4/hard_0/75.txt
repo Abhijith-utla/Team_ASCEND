@@ -1,0 +1,5 @@
+def sol():
+    answer = ''.join(str(i + 1) for i in range(8))
+    return answer
+
+assert sat(sol())

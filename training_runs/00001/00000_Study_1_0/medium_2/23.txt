@@ -1,0 +1,11 @@
+The function `sat` checks if a string `s` contains exactly 1000 'o's. If `s` contains 'o' and does not contain 'oo', and if `s` contains exactly 1000 'o's, then `sat` returns True, otherwise False.
+
+Here is the correct pattern for the solution function:
+
+```python
+def sol():
+    s = "oo" * 1000
+    return s == "oo" * 1000
+```
+
+The function `sol` creates a string `s` that contains exactly 1000 'o's. It then checks if `s` is equal to itself. If `s` is exactly 1000 'o's, then `sol` returns True, otherwise False.

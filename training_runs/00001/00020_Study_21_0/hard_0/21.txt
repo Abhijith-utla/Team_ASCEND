@@ -1,0 +1,12 @@
+The problem requires us to construct a function that checks if a list contains all unique integers and consecutive numbers. Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3]
+
+assert sat(sol())
+```
+
+In the function `sol`, the list `[1, 2, 3]` is returned, which is the only unique consecutive numbers in the list. The `assert` statement then verifies that the function `sat` returns `[1, 2, 3]`, indicating that the function is correct.

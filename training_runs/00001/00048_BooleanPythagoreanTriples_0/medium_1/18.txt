@@ -1,0 +1,8 @@
+def sol():
+    return {}
+
+print(f'Solved: {sat([]) == False}')
+print(f'Solved: {sat([1]*101) == False}')
+print(f'Solved: {sat([0]*100 + [1]*1) == True}')
+print(f'Solved: {sat([0]*99 + [1]*2 + [0]) == False}')
+print(f'Solved: {sat([0]*100 + [1]*100) == True}')

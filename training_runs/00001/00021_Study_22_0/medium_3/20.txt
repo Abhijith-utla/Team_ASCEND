@@ -1,0 +1,9 @@
+def sol():
+    s = '12345'
+    if len(s) < 5 or len(s) > 30:
+        return False
+    if len(set(s)) == 5 and s[::2] == s[1::2]:
+        return True
+    return False
+
+assert sat(sol())

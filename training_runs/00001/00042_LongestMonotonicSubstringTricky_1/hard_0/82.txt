@@ -1,0 +1,4 @@
+def sol():
+    return <answer>
+
+# Replace the <answer> placeholder with the actual solution

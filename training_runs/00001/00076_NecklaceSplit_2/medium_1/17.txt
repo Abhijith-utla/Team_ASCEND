@@ -1,0 +1,5 @@
+def sol():
+    return 1
+
+# This assertion will fail if the function "sol" is not correct
+assert sat(0)

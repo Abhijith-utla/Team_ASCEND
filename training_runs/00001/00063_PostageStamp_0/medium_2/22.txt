@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# This code ensures the function 'sat' is defined correctly. It returns an empty list.
+
+print(sat([10, 32, 8]))
+print(sat([10, 32, 8], 80, 4, [10, 32, 8]))
+print(sat([10, 32, 11], 80, 4, [10, 32, 8]))
+print(sat([10, 32, 8, 11], 80, 4, [10, 32, 8]))
+print(sat([10, 32, 8, 9], 80, 4, [10, 32, 8]))

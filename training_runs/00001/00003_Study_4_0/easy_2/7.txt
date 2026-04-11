@@ -1,0 +1,17 @@
+def sol():
+    answer = []
+    for i in range(10):
+        if i != 3:
+            answer.append(i)
+        else:
+            answer.append(2)
+    return answer
+
+# This is to ensure the function sol returns a list of 10 elements
+assert len(sol()) == 10
+
+# This is to ensure the third element is 2
+assert sol()[3] == 2
+
+# This is to ensure there are exactly 2 occurrences of the third element
+assert sol().count(2) == 2

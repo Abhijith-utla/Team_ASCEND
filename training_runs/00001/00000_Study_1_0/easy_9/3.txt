@@ -1,0 +1,10 @@
+Here is the Python code that satisfies the conditions:
+
+```python
+def sat(s: str):
+    if s.count('o') != 0:
+        return False
+    return True
+```
+
+This function checks if the string 'o' is in the string and if it is, it returns False. If 'o' is not in the string, it returns True.

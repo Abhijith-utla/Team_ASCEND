@@ -1,0 +1,11 @@
+def sol():
+    return {}
+
+# This checker will fail with the initial example
+assert sat(0)
+
+# This checker will pass with the correct pattern
+assert sat(len(lace) // 2)
+
+# This checker will fail with the incorrect pattern
+assert not sat(len(lace))

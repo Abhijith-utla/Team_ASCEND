@@ -1,0 +1,13 @@
+def sol():
+    hour = 0
+    while hour <= 12:
+        minute = 0
+        while minute <= 59:
+            if sat(hour, minute):
+                return hour, minute
+            minute += 1
+        hour += 1
+
+# Test
+answer = sol()
+assert sat(answer[0], answer[1])

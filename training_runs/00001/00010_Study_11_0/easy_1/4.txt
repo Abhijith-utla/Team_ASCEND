@@ -1,0 +1,21 @@
+Here's the correct pattern:
+
+```python
+def sol():
+    return [i for i in range(len(ls)) if i not in ls]
+```
+
+The answer must be a list of integers.
+
+In this solution, I used list comprehension to generate a list of integers that are not in the list `ls`. The `if i not in ls` condition ensures that each integer in the list is unique.
+
+The final checker will run:
+
+```python
+def test_sol():
+    assert sat(sol())
+
+test_sol()
+```
+
+Please note that this solution assumes that the input list `ls` is not empty. If `ls` can be empty, you should add a check for this condition before returning the result.

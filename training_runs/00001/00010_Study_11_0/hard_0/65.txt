@@ -1,0 +1,27 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    if len(ls) == 0:
+        return ""
+    
+    if not all(isinstance(x, str) for x in ls):
+        return "Invalid input: list should contain only strings"
+    
+    if len(ls) != len(set(ls)):
+        return "Invalid input: list should contain unique elements"
+    
+    if not all(len(x) == len(ls[0]) for x in ls):
+        return "Invalid input: all strings should have the same length"
+    
+    if min(ls) != max(ls):
+        return "Invalid input: strings in the list should be equal"
+    
+    return min(ls)
+
+print(sol(["abc", "def", "ghi"]))
+```
+
+This function first checks if the list is empty, if not, then it checks if all elements in the list are strings, if all elements are unique, and if all strings have the same length. Then it checks if all strings

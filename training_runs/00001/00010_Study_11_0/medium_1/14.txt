@@ -1,0 +1,10 @@
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return all(i in ls for i in range(len(ls)))
+```
+
+The function `sol` receives a list of strings `ls` as input and returns `True` if all the elements in the list are unique (i.e., all elements in the range of the list's length), and `False` otherwise. This is done by using the `all` function in combination with a generator expression.

@@ -1,0 +1,14 @@
+Sure, here's the Python code for the function `sol`:
+
+```python
+def sol(ls, idx1=1234, idx2=1235, value=ls[idx1]):
+    return ls[idx1] in ls[idx2] and ls[idx1] != value
+```
+
+The function `sol` takes three arguments:
+
+- `ls` is the list of elements
+- `idx1` and `idx2` are indices in the list
+- `value` is the value to compare with in the list
+
+It then checks if the value at index `idx1` is in the list at index `idx2` and if it's not equal to the provided `value`. The function returns `True` if both conditions are met, `False` otherwise.

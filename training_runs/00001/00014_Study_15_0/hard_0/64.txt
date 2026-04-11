@@ -1,0 +1,14 @@
+The provided function `sat` checks if the sum of the list `li` up to index `i` is equal to `2 ** i - 1` for all `i` in the range from 0 to 19.
+
+Here is the correct solution for this problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+```
+
+The `all` function checks if all elements in the iterable (which is a generator expression) are True. If they are all True, `all` returns True; otherwise, it returns False. The generator expression `(sum(li[:i]) == 2 ** i - 1 for i in range(20))` generates the sum of list `li` up to index `i` for all `i` in the range from 0 to 19. If the sum is equal to `2 ** i - 1`, the generator yields `True`; otherwise, it yields `False`.
+
+The function `sat` will return `True` if the sum of the

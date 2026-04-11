@@ -1,0 +1,3 @@
+def sol():
+    length = 19
+    s = "1>C>DmJh5\"Ju,\"Q8zJ_u-O-VfnVTZ?W'm=jq.\\l&%m$cU.nqv2\\**.o\">]FZ5owil>l*kIM wcLd<*UX`\"_u'DC3R$8wr;jT]CW\"F$QKeRPMzZY'U42&Km dRr8b$T3x)w2v,_k(dR,F:`=c$MjE_Kf/KCXFg^ueiO.U%S8_](:GF;`2`^O%eAqSRAHW0dYg5!u<ZV@usa`-<<ET@xZ)&<6=ogIhp9jJ/`$/_jEa-N$oZVT6#]^]x5u!$ Xk?g=TMwVGZqTU(OeH!Jbgz

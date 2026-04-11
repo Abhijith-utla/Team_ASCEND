@@ -1,0 +1,11 @@
+def sol():
+    for hour in range(12):
+        for minute in range(60):
+            if sat(hour, minute):
+                return hour, minute
+    return None
+
+# Check the solution
+if __name__ == "__main__":
+    hour, minute = sol()
+    print(f"The time is {hour}:{minute:02d}")

@@ -1,0 +1,16 @@
+The Python function `sat` takes a list of integers `li` as an argument and returns a boolean value. The function checks if the list has exactly 10 elements and if the number 3 appears exactly twice in the list. If these conditions are met, the function returns `True`; otherwise, it returns `False`.
+
+Here's the correct pattern for the `sat` function:
+
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 4:
+        return False
+    return True
+```
+
+This function correctly checks the provided conditions and returns `True` if the conditions are met, and `False` otherwise.

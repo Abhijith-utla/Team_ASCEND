@@ -1,0 +1,17 @@
+{
+  "attempt_num": 20,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 2
+  },
+  "created_at": "2026-04-11T15:26:48.561363+00:00",
+  "diagnostic": "reason=top_level_sol_defs:2|parse=fence=none,preamble=0,found_sol=1,candidates=16|checked=16/16|preview=def sol(): return [3, 3, 3, 3] assert sat(sol()) # Please note that the answer list is not limited to three stamps, i...",
+  "difficulty": "medium",
+  "problem_id": "00065_PostageStamp_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

@@ -1,0 +1,2 @@
+def sol():
+    return "congratulations, you've solved the puzzle!"

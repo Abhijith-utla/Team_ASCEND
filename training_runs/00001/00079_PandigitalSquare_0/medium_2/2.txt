@@ -1,0 +1,6 @@
+def sol():
+    return 1234567890
+
+print(sat(sol()))  # True
+
+print(sat(sol()))  # False

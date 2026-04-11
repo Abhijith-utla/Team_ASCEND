@@ -1,0 +1,13 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    return sorted([i for i in range(999)])
+
+# The test case.
+assert sat(sol())
+```
+
+This solution uses list comprehension to generate the list and the sorted function to sort the list. The assertion checks that the solution function generates a list that is sorted and contains all elements from 0 to 998.

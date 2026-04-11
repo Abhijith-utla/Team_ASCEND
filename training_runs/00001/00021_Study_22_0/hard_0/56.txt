@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(x for i, x in enumerate(s) if i % 2 == 0)
+
+assert sat(sol())

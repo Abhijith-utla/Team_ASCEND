@@ -1,0 +1,15 @@
+The Python function `sat` is defined to determine if all characters in a list are ASCII characters with ASCII value 1 (the ASCII value for 'a' is 97, for 'b' is 98, and for 'c' is 99). The `ord` function is used to get the ASCII value of a character, and the `%` operator is used for modulus division.
+
+Here is the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return [chr(i) for i in range(97, 123) if chr(i) not in 'abc']
+```
+
+This function returns a list of lowercase letters that are not in the string 'abc'. The `range` function is used to generate a sequence of numbers from 97 to 122 (the ASCII value for 'z' is 122), and the `chr` function is used to convert a number to its corresponding character. The `not in` operator is used to check if a character is not in a string.
+
+The final checker will run:
+
+```python
+assert sat

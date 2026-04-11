@@ -1,0 +1,4 @@
+def sol():
+    return sum(range(1, 21))
+
+assert sat(sol())

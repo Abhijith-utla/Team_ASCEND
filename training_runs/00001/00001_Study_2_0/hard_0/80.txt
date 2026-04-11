@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+def sol():
+    s = 'ho' * 1000 + 'oo' * 100 + 'ho'
+    return s
+
+assert sat(sol())
+```
+
+This code first constructs a string 's' with 1000 'ho's, 100 'oo's, and 801 'ho's in it. This string satisfies the condition defined in the problem.

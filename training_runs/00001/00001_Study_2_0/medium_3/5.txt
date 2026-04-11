@@ -1,0 +1,11 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    s = 'zo' * 100 + 'z'
+    return s
+
+assert sat(sol())
+```
+
+This function first creates a string 'zo' * 100 + 'z' and returns it. The count operation will correctly check if there are 100 'z's followed by 101 'zo's and 98 'zz's in the string.

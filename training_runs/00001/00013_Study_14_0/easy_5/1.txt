@@ -1,0 +1,15 @@
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all((li.index(x) < sum(li[:li.index(x)])) for x in set(li))
+
+print(sat([1, 2, 3, 3]))
+print(sat([1, 1, 2, 3]))
+print(sat([5, 5, 5, 5]))
+print(sat([1, 2, 3, 5]))
+```
+
+This Python function checks if all elements in the list are smaller than the sum of elements before them. It does this by iterating over the list and checking if the current element is smaller than the sum of all previous elements. If it is, the function returns True, otherwise it returns False. 
+
+The function `sat` takes a list of integers as input and returns True if all elements in the list are smaller than the sum of all previous elements, and False otherwise. The function is used to test the function `sol` by comparing the results of `sol([1, 2, 3, 3])`, `sol([1, 1,

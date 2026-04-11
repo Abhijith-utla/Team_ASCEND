@@ -1,0 +1,9 @@
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+
+# Test cases
+print(sat(["apple", "banana", "cherry", "date", "elderberry"])) # Should return True
+print(sat(["apple", "banana", "cherry", "date", "elderberry"])) # Should return False
+print(sat(["apple", "banana", "cherry", "date", "elderberry", "fig"])) # Should return False
+print(sat(["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"])) # Should return True
+print(sat(["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew"])) # Should return False

@@ -1,0 +1,18 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6]
+    while True:
+        if sat(li):
+            return li
+        li[0] += 1
+```
+
+In this solution, the `sol` function creates a list `li` with six elements. It then enters an infinite loop where it checks if the condition `sat(li)` is true. If it is, the list `li` is returned. Otherwise, `li` is incremented by one and the loop continues.
+
+The `sat` function is a recursive function that checks if the list `li` satisfies the condition. The condition is that `li[li[0]] != li[li[1]]` and `li[li[1]] == li[li[2]]`. It does this by iterating over the list `li` and checking if the conditions are met. If any condition is not met, the function returns `False`. If all conditions are met, the function returns `True`.
+
+The checker will run: `

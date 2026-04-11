@@ -1,0 +1,20 @@
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(20):
+        if sum(li[:i]) != i:
+            return False
+    return True
+```
+
+This function `sat` checks if all elements in the list `li` have the same sum as their index. It does this by summing up the elements of the list `li` up to index `i` and comparing this sum to `i`. If any index `i` results in a sum that is not equal to `i`, the function immediately returns `False`. If the function gets through all indexes without finding such an `i`, it returns `True`.
+
+Here is how you can use this function:
+
+```python
+print(sat([0, 1, 2, 3, 4, 5]))  # True
+print(sat([1, 1, 2, 3, 4, 5]))  # False
+```

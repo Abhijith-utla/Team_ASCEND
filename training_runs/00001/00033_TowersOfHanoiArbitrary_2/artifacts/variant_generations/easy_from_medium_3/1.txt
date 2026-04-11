@@ -1,0 +1,37 @@
+Sure, here are three simple variations of the `sat` function:
+
+```python
+VARIANT1:
+def sat(moves: List[List[int]], source=[[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]], target=[[1, 2, 3, 8, 9], [4], [5]]):
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop())
+        assert sorted(state[i]) == state[i]
+
+    return state == target
+
+VARIANT2:
+def sat(moves: List[List[int]], source=[[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]], target=[[1, 2, 3, 8, 9], [4], [5]]):
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop(0))
+        assert sorted(state[i]) == state[i]
+
+    return state == target
+
+VARIANT3:
+def sat(moves: List[List[int]], source=[[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]], target=[[1, 2, 3, 8, 9], [4], [5]]):
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].insert(0, state[j].pop(0))
+        assert sorted(state[i]) == state[i]
+
+    return state == target
+```
+These variations of `sat` function have different ways of dealing with the appending of elements in `state[i]`. In the first version, the element is appended without knowing its original index, which is the original behavior of the `sat` function. In the second version, the element is appended at the beginning of its original position, which is different from the original behavior. In the third version, the element is inserted at the beginning of `state[i]` without knowing its original position, which is different from the original behavior.

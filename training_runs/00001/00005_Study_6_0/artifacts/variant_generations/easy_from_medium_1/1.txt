@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(i: int) -> bool:
+    return i > 0 
+```
+
+VARIANT2:
+```python
+def sat(i: int) -> bool:
+    return i % 2 == 0
+```
+
+VARIANT3:
+```python
+def sat(i: int) -> bool:
+    return i == 0
+```

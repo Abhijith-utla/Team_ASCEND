@@ -1,0 +1,8 @@
+Sure, here is the Python code for your solution:
+
+```python
+def sat(i: int) -> bool:
+    return i % 123 == 4 and i > 10 ** 10
+```
+
+This function checks if the input is an integer and if it's greater than 10^10, and if it's divisible by 123 with no remainder. If both conditions are met, it returns True, otherwise it returns False.

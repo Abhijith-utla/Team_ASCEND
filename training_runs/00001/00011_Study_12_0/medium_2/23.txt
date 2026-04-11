@@ -1,0 +1,16 @@
+The given function `sat` checks whether a list of integers satisfies two conditions:
+
+1. The sum of all elements in the list is 2.
+2. The length of the list is 1000.
+
+Here is a Python function that solves the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    total = sum(li)
+    return total == 2 and len(li) == 1000
+```
+
+This function first calculates the sum of all elements in the list, and then checks if it equals 2 and if the length of the list is 1000. If both conditions are true, the function returns `True`; otherwise, it returns `False`.

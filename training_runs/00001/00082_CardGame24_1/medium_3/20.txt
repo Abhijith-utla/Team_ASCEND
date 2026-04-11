@@ -1,0 +1,15 @@
+def sol():
+    return {
+        'number': '2022',
+        'variables': {
+            'a': 0,
+            'b': 0,
+            'c': 0,
+            'd': 0
+        },
+        'constraints': [
+            "a + b * 10 + c * 100 + d * 1000 = 2022",
+            "1 <= a, b, c, d <= 13",
+            "a, b, c, d are integer"
+        ]
+    }

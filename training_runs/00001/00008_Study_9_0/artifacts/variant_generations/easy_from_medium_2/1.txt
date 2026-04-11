@@ -1,0 +1,22 @@
+Here are three variants to test the same logic, each with a different implementation. 
+
+VARIANT1:
+```python
+def sat(li: List[str]):
+    return all(i.isdigit() for i in li)
+```
+In this variant, instead of splitting the string into words, we check if each string is a digit.
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return len(li) == 10 and max(li) == 12
+```
+In this variant, we manually set the length and maximum value of the list.
+
+VARIANT3:
+```python
+def sat(li: List[str]):
+    return all(len(i) <= 5 for i in li) and all(i.isalpha() for i in li)
+```
+In this variant, we manually set the length and type of the string.

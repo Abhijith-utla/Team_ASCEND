@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+# Test case
+assert sat([[0, 0]]) == True
+assert sat([[0, 1], [1, 1]]) == True
+assert sat([[0, 1], [2, 1]]) == False
+assert sat([[0, 0]], side=3, num_points=2) == True
+assert sat([[0, 1], [1, 2]], side=3, num_points=2) == False

@@ -1,0 +1,4 @@
+def sol():
+    return sum(range(20))
+
+print(sat(list(range(20))))

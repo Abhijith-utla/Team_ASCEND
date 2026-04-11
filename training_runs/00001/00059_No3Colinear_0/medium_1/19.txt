@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+print(f"The answer is: {sol()}")

@@ -1,0 +1,17 @@
+def sol():
+    return []
+
+# Test case
+# The first solution should return [1, 2]
+assert sat([(0, 0), (1, 1), (2, 2)])
+# The second solution should return [3, 4]
+assert sat([(0, 0), (3, 4), (1, 2), (2, 3)])
+# The third solution should return [5, 6]
+assert sat([(0, 0), (5, 6), (3, 1), (1, 2), (2, 3), (4, 7)])
+# The fourth solution should return [8, 9]
+assert sat([(0, 0), (8, 9), (3, 1), (1, 2), (2, 3), (4, 7), (5, 8)])
+
+# Test case with less points
+assert not sat([(0, 0), (1, 1)])
+# Test case with more points
+assert not sat([(0, 0), (1, 1), (2

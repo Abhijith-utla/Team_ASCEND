@@ -1,0 +1,7 @@
+def sol():
+    class Answer:
+        def __init__(self, x):
+            self.x = x
+    return Answer(None)
+
+assert sat(sol().x)

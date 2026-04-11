@@ -1,0 +1,10 @@
+Sure, here is the Python code that solves the problem:
+
+```python
+def sat(s: str):
+    return str((8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+```
+
+This function will return True if the string `s` can be expressed as the square root of an integer in the decimal system (with a precision of 3 decimal places) and the length of the string is 3, and False otherwise. 
+
+For example, if you call `sat('1.414')`, it will return True because `1.414` can be expressed as the square root of 8,000,000 with a precision of 3 decimal places, and its length is 3. If you call `sat('1.4142')`, it will return False because `1.4142` cannot be expressed as the square root of 8,000,000 with a precision of 3 decimal places, and its length is not 3.

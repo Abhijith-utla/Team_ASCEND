@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# Running the assert statement will fail here because the function doesn't return any value
+assert sat(sol())

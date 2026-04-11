@@ -1,0 +1,4 @@
+def sol():
+    return str(len(ls))
+
+print(sol())

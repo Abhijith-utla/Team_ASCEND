@@ -1,0 +1,5 @@
+def sol():
+    return [x for x in range(10) if not sat([x])]
+
+# Test
+assert sat(sol())

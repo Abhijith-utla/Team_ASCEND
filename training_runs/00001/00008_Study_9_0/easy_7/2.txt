@@ -1,0 +1,12 @@
+Here is the Python code to solve the problem. The function `sol` constructs and returns a single answer value.
+
+```python
+from typing import List
+
+def sol():
+    return "".join(chr(i) for i in range(32, 127))
+```
+
+In this function, we use a generator expression to convert each number in the range 32 to 126 (all ASCII characters) into their corresponding character. We then join all the characters together to form a string.
+
+This solution satisfies the requirements of the problem.

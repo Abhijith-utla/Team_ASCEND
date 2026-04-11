@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(sum(li[:i]) == 2 ** i - 1 for i in range(20))
+```
+
+This function checks if the sum of all elements in the list up to the current index is equal to 2 raised to the power of the index minus one. It does this by using Python's list slicing feature to get the elements of the list up to the current index, then using the built-in sum function to calculate their sum. It then checks if this sum is equal to 2 raised to the power of the current index minus one. The all function is used to check if all conditions in the list comprehension are true, which means that all elements in the list up to the current index are correct.

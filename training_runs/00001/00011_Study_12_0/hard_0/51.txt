@@ -1,0 +1,15 @@
+The given Python function `sat` checks if all elements in a given list `li` are less than 1000 and the sum of all pairs of elements in `li` is 9.
+
+Here's the correct implementation for the function `sol`:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    li = [i for i in range(999)] + [1000]
+    return li
+```
+
+This function creates a list of 1000 elements where each element is a number less than 1000 and the last element is 1000.
+
+The checker will pass this test if the function returns the correct list and the length of the list is 1000. The checker will also pass if the sum of all elements is 995.

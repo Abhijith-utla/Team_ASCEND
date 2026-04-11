@@ -1,0 +1,10 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    def sat(s: str):
+        return 'oo' in s and s.count('o') == 1000
+    return sat
+```
+
+This function `sol` returns a function `sat` that checks if a string `s` contains exactly one 'o' and exactly 1000 'o's. The function `sol` is a higher-order function that takes no arguments and returns a function `sat`. The function `sat` is a closure that encapsulates the logic of checking whether a string `s` contains exactly one 'o' and exactly 1000 'o's.

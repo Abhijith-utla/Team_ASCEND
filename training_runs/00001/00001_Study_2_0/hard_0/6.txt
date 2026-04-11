@@ -1,0 +1,10 @@
+def sol():
+    s = "ho"*801 + "oo"*100 + "o"*1000
+    return s
+
+# Checker code
+def check(solution):
+    assert sat(solution), "sol() failed"
+
+# Test case
+check(sol())

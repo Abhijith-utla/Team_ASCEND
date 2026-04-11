@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+if sat([]):
+    print("Valid solution.")
+else:
+    print("Invalid solution.")

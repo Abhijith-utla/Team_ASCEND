@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return 123.456
+```
+
+In this case, the function `sol` returns the number 123.456. The function `sat` is defined to check if the difference between the input (x) and 3.1415 is a string that starts with "123.456".

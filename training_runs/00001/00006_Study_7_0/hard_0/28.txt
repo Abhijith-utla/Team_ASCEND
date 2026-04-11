@@ -1,0 +1,6 @@
+def sol():
+    return "8" * 8 + "8" * 888 + "8" * 8
+
+print(sat(sol()))
+
+assert sat(sol())

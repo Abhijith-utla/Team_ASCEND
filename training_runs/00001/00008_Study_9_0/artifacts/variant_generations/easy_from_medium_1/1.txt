@@ -1,0 +1,19 @@
+VARIANT1:
+```python
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 0]) == 0
+```
+
+VARIANT2:
+```python
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 1]) == 0
+```
+
+VARIANT3:
+```python
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 2]) == 0
+```
+
+These variants are based on the behavior of the modulo operation on the ASCII values of characters. Since the modulo operation is not distributive over the whole character set, different characters in the string could have different modulo values, thereby varying the behavior of the sum. The first variant returns True if the count of characters with modulo value 0 is zero, indicating incorrect input. The second variant does the same, but for characters with modulo value 1, and the third for characters with modulo value 2.

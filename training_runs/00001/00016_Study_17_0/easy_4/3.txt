@@ -1,0 +1,16 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int) -> bool:
+    return len(str(i + 1)) == len(str(i + 2))
+```
+
+In this solution, the function `sol` iterates over integers starting from 0 until it finds a number that satisfies the condition `len(str(i + 1)) == len(str(i + 2))`. This number is then returned.
+
+The function `sat` is the one you are supposed to implement, which is a mathematical predicate that checks if the length of the string representation of a number plus one is equal to the length of the string representation of a number plus two.

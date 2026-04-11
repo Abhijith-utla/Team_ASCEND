@@ -1,0 +1,17 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(10):
+        if li.count(i) != i:
+            return False
+    return True
+```
+
+This function checks if all elements in the list are present exactly once in the range from 0 to 9. If it finds any element that is not present exactly once, it returns False, otherwise it returns True.
+
+The time complexity of this function is O(n) where n is the length of the list. This is because the list.count() method has a time complexity of O(n) and it is called for each element in the list once.
+
+The space complexity of this function is O(1) because it uses a constant amount of space to store the count of each element. This function does not use any additional data structures that scale with the size of the input.

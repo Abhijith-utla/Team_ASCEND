@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+# The function `sol` returns 0 because it is the return value of the function `sat`. Therefore, `sat(sol())` will return True.

@@ -1,0 +1,4 @@
+def sol():
+    return {
+        "answer": [1, 2, 3, 4]
+    }

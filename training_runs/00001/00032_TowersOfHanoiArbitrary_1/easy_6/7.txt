@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+print('Assertion passed:', sat(sol(), [], []))
+!python3 checker.py

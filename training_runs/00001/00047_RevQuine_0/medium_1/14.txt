@@ -1,0 +1,8 @@
+def sol():
+    return ''
+
+# testing the function
+def test_sol():
+    assert sat(sol())
+
+test_sol()

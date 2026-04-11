@@ -1,0 +1,5 @@
+def sol():
+    def check_word(word):
+        return all(word[i] == "The quick brown fox jumps over the lazy dog"[i] for i in range(len(word)))
+
+    return [check_word(word) for word in "The five boxing wizards jump quickly".split()]

@@ -1,0 +1,30 @@
+The provided Python function sat(answer) checks if a number is divisible by 5 and less than 100.
+
+Here is the solution to the problem:
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+```
+
+This function will start from 0 and increment the value of i until it finds a number that is divisible by 5 and less than 100. It will then return this number.
+
+This solution has a time complexity of O(n) because it checks each number in a loop. However, since the number is guaranteed to be less than 100, the time complexity is still O(n).
+
+The correct pattern is:
+
+```python
+def sol():
+    return <answer>
+```
+
+Incorrect patterns are:
+
+```python
+def sol(x):
+    ...
+```

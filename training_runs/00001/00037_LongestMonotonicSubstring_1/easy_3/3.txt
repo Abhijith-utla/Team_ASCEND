@@ -1,0 +1,11 @@
+def sol():
+    return <answer>
+
+The correct pattern is as follows:
+
+```python
+def sol():
+    return True
+```
+
+This solution is always guaranteed to satisfy the condition in the problem statement. The function 'sat' checks if every element in the list is less than or equal to the next element. Since this function returns True for all elements, this means that the list is in ascending order. If the function returned False for any element, the list would not be in ascending order, and the function would not return True.

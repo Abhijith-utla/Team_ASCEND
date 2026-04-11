@@ -1,0 +1,6 @@
+def sol():
+    return {
+        "nums": [1, 10, 13, 4]
+    }
+
+# The above function satisfies the problem's constraints. It returns a dictionary with the list of numbers as the value.

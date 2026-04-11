@@ -1,0 +1,8 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return '12345'
+```
+
+This function will always return the string '12345'. This is because the all() function in Python returns True only if all elements of the iterable (in this case, the list of strings li) are true. The isdigit() method checks if all the characters in the string are digits. Therefore, the string '12345' will be considered as a valid answer when the function is called.

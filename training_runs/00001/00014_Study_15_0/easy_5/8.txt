@@ -1,0 +1,13 @@
+Sure, here's the Python code to solve the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [1] * 20
+    return li
+
+print(sol())
+```
+
+In the code above, we first define a function `sol` that returns a list with 20 elements, where every element is 1. The checker will assert that `sol()` returns a list with 20 elements, where every element is 1.

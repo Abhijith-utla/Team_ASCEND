@@ -1,0 +1,4 @@
+def sol():
+    li = [i for i in range(-10, 10) if i != 0]
+    assert sat(li)
+    return li

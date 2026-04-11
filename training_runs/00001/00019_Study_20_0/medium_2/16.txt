@@ -1,0 +1,15 @@
+Here is the correct Python code for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return []
+
+def sat(li: List[int]):
+    return all(j in {i} for i, j in enumerate(li))
+```
+
+This code defines a function `sol` which returns an empty list. The function `sat` checks if all elements in the list are unique by using the `all` function with a generator expression. It checks if each element `j` in the list is in the set `{i}` for all `i` in the list. If all elements are in the set, the `all` function returns `True`, otherwise it returns `False`.
+
+The function `sat` is considered correct if it satisfies the problem's constraints. The checker will run `assert sat(sol())` to ensure the solution is correct.

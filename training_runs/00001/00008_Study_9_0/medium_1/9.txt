@@ -1,0 +1,15 @@
+Sure, here is the solution.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+The function `ord()` returns an integer representing the Unicode character. The expression `[ord(i) for i in li]` returns a list of these Unicode codes. The `==` operator is used to compare this list with a list that contains the Unicode codes of the words "The five boxing wizards jump quickly".
+
+In the statement `"The five boxing wizards jump quickly".replace(" ", "")`, the space character (" ") is replaced with nothing, resulting in a string that contains the Unicode codes of the words "Thefiveboxingwizardsjumpquickly". This list of Unicode codes is then compared with the list of Unicode codes of the words "Thefiveboxingwizardsjumpquickly".
+
+The function `sat` checks whether this comparison is true. If it is, the function returns `True`; otherwise

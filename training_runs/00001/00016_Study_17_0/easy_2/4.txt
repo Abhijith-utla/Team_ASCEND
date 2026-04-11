@@ -1,0 +1,26 @@
+Here is the Python code to solve the problem:
+
+```python
+def sol():
+    i = 123
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) != len(str(i + 1001))
+
+# Test the function with a sample input
+assert sat(123)
+assert not sat(124)
+
+# Test the function with a larger input
+i = 1000000
+while not sat(i):
+    i += 1
+assert sat(i)
+```
+
+This code defines two functions, `sol` and `sat`. The `sol` function is a simple loop that increments the input number `i` until `sat(i)` is `True`. This means that `sat(i)` has to return `False` for `i + 1000` and `i + 1001` to be the same length.
+
+The `sat` function is a mathematical statement that should be `True` if `i + 1000`

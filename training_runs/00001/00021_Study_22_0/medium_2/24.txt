@@ -1,0 +1,2 @@
+def sol():
+    return {'answer': 'True'} if sat('aabbaabb') else {'answer': 'False'}

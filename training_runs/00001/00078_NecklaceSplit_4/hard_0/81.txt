@@ -1,0 +1,4 @@
+def sol():
+    return 0
+
+print(f"Assertion test: {sat(0)}")

@@ -1,0 +1,5 @@
+def sol():
+    return sorted([i for i in range(1000)])
+
+# This is a test case to check the function
+assert sat(sol())

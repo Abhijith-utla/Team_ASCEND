@@ -1,0 +1,22 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return "888"
+
+assert sat(sol())
+```
+
+Explanation:
+The function `sat` checks if the string `s` contains the sequence `"888"`. We can use the Python built-in function `str(8 ** int(2888)).count(s)` to calculate the number of times `s` occurs in the power of 8. This number should be greater than 8, which means `s` is part of the sequence, and the length of `s` should be 3, which means `s` is indeed "888".
+
+In the main block, we call `sol` to get the answer and then we check it using `sat` to ensure it is correct. If `sat(sol())` returns `True`, then the answer is correct.
+
+Note: The correct answer is "888", not "8 ** int(2888)". The correct Python code is:
+
+```python
+def sol():
+    return "888"
+
+assert sat(sol())
+```

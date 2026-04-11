@@ -1,0 +1,19 @@
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    return True
+
+def sol():
+    return [0, 1, 2, 0, 3, 1, 2, 0, 3, 2]
+
+# Test case
+print(sat(sol())) # True
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 13,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "expected an indented block after function definition on line 1",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:43:11.933605+00:00",
+  "diagnostic": "reason=ast_syntax_error:expected an indented block after function definition on line 1|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=The function `sat` is not defined in the problem. However, based on the problem statement, the function `sat` is supp...",
+  "difficulty": "hard",
+  "problem_id": "00007_Study_8_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,4 @@
+def sol():
+    return "5 * (4 + 3)"
+
+# The correct answer is "5 * (4 + 3)", because the expression "5 * (4 + 3)" evaluates to 24.

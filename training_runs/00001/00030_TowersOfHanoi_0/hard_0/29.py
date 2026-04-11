@@ -1,0 +1,30 @@
+def sat(moves: List[List[int]]):
+    rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+    for [i, j] in moves:
+        rods[j].append(rods[i].pop())
+        assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+    return rods[0] == rods[1] == []
+
+def sol():
+    class Answer:
+        def __init__(self, rods):
+            self.rods = rods
+
+    def sat(moves):
+        rods = ([8, 7, 6, 5, 4, 3, 2, 1], [], [])
+        for [i, j] in moves:
+            rods[j].append(rods[i].pop())
+            assert rods[j][-1] == min(rods[j]), "larger disk on top of smaller disk"
+        return Answer(rods[0] == rods[1] == [])
+
+    moves = [(0, 1), (1, 0)] # Example moves. Modify as needed.
+    answer = sol()
+    assert answer.rods == Answer([8, 7, 6, 5, 4, 3, 2, 1]).rods
+    assert answer.rods == Answer([]).rods
+
+    # assert sat(moves) # This will fail if the solution is incorrect.
+
+if __
+
+if __name__ == "__main__":
+    assert sat(sol())

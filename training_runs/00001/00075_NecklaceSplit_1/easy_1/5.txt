@@ -1,0 +1,6 @@
+def sol():
+    return 0
+
+# This is to ensure that the code is executable
+if __name__ == "__main__":
+    assert sat(sol())

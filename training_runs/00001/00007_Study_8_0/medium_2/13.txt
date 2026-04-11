@@ -1,0 +1,14 @@
+Here is the correct pattern for the solution:
+
+```python
+def sol(ls):
+    idx1 = 1234
+    idx2 = 1235
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+In the above solution, `idx1` and `idx2` are default arguments. They are set to `1234` and `1235` respectively.
+
+The function `sol` takes a list `ls` as an argument. It returns `True` if `ls[idx1]` is in `ls[idx2]` and `ls[idx1]` is not equal to `ls[idx2]`. If `ls[idx1]` is not in `ls[idx2]` or `ls[idx1]` is equal to `ls[idx2]`, then the function returns `False`.
+
+The checker will run `assert sat(sol([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,

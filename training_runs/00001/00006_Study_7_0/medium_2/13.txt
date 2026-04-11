@@ -1,0 +1,15 @@
+Here is a Python solution for your problem. The function `sat` checks if a string `s` can be formed by taking 8 digits from the number 2888. If the string `s` is greater than 8 times and is of length 3, the function returns `True`. Otherwise, it returns `False`.
+
+```python
+def sat(s: str):
+    return str(8 ** int(2888)).count(s) > 8 and len(s) == 3
+```
+
+You can use this function by calling it with a string argument, for example:
+
+```python
+print(sat('888'))  # Returns: True
+print(sat('988'))  # Returns: False
+```
+
+The function works by first converting the number 2888 to a string and counting the occurrence of the string `s` in the result. It then checks if the count is greater than 8 and if the length of the string `s` is 3. If both conditions are met, the function returns `True`; otherwise, it returns `False`.

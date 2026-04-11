@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# Correct pattern
+def sol(x: List[int], s: str):
+    if not sat(x, s):
+        raise ValueError("x and s do not satisfy the relation x[i] <= x[i+1] for all i")
+    return x
+
+# Incorrect pattern
+def sol(x: List[int], s: str):
+    if not sat(x, s):
+        return []
+    return x
+
+assert sol() == []
+assert sol([1, 2, 3, 4], 'abcd') == [1, 2, 3, 4]
+assert sol([4, 3, 2, 1], 'dcba') == [4, 3, 2, 1]
+assert sol([1, 3, 2, 4], 'dcba') == [1, 3, 2, 4]
+assert sol([4, 2, 3, 1], 'abcd') == [4, 2, 3, 1]

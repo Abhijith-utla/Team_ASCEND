@@ -1,0 +1,4 @@
+def sol():
+    return tuple(ord(c) for c in 'dee' + 'doo' + 'dah!')
+
+# assert sat(sol())

@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(text: str):
+    return text == text[::-1]
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    return n == n * 2
+```
+
+VARIANT3:
+```python
+def sat(lst: list):
+    return lst == lst[::-1]
+```

@@ -1,0 +1,9 @@
+def sol():
+    answer = []
+    for i in range(1000):
+        for j in range(i, 1000):
+            if i * i + j * j < 1000:
+                answer.append((i, j))
+    return answer
+
+print(sol())

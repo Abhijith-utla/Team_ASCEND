@@ -1,0 +1,15 @@
+Here is a Python solution that follows the given rules:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if not li:
+        return False
+    for i in range(len(li)):
+        if sum(li[j] for j in range(i+1, len(li))) != li[i]:
+            return False
+    return True
+```
+
+This solution works by iterating over each element in the list and checking if its right side sum is equal to the current element. If any element does not match the condition, it returns False, indicating that the list is not valid according to the problem's rules. If the function goes through all the elements without finding a mismatch, it returns True, indicating that the list is valid.

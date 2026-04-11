@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The assertion code should not change the return value of the function.
+assert sat(repr(sol()))

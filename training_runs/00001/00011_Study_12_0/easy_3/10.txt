@@ -1,0 +1,6 @@
+def sol():
+    li = [6]
+    li.extend([0]*997)
+    return li
+
+print(sol())

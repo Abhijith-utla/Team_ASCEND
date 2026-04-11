@@ -1,0 +1,12 @@
+The function `sat` takes a list of integers and returns a boolean value. It checks whether all elements in the list are equal to the sum of all elements before it in the list. Here is the correct code:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(x == sum(li[:i]) for i in range(20))
+
+print(sat([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]))
+```
+
+In this code, `li[:i]` is used to slice the list and get the elements before index `i`. The sum of these elements is calculated and checked if it is equal to the element at index `i` in the list. The `all` function is used to check whether all elements in the list satisfy the condition, and it returns `True` if all elements are equal to the sum of all elements before them, and `False` otherwise

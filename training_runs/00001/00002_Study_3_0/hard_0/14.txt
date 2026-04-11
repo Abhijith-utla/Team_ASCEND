@@ -1,0 +1,19 @@
+Here's the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    sorted_li = sorted(li)
+    if sorted_li == list(range(999)):
+        for i in range(len(li)):
+            if li[i] != i:
+                return False
+        return True
+    else:
+        return False
+```
+
+This function first checks if the given list is sorted in ascending order. If it is, then it checks if all elements in the list are unique. If both conditions are satisfied, then the function returns True. Otherwise, it returns False.
+
+This function should work correctly for any integer list that is 999 elements long. It will return False if the list is not sorted in ascending order or contains non-unique elements.

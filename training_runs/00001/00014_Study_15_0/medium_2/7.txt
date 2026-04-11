@@ -1,0 +1,8 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return [x + 2 ** x for x in range(20)]
+```
+
+This code creates a list of integers where the `x + 2 ** x` equals to `2 ** x` for each `x` in the range of `20`. This list is then returned by the `sol` function.

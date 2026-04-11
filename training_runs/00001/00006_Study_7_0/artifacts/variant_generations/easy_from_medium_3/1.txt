@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return str(int(8 ** 2888) ** 0.5).count(s) > 8 and len(s) == 3
+```
+
+VARIANT2:
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+VARIANT3:
+```python
+def sat(s: str):
+    return (8 ** 2888) ** 0.5 > 8 and len(s) == 3
+```

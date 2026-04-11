@@ -1,0 +1,20 @@
+The given Python function `sat` checks whether all elements in the list are less than their respective sums with all elements on its left.
+
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    total = sum(li)
+    current_sum = 0
+    for i, num in enumerate(li):
+        if current_sum > total - current_sum:
+            return False
+        current_sum += num
+    return True
+```
+
+This solution works by iterating over the list from the beginning to the end. For each element, it adds it to the current sum and checks if this sum is greater than the total sum minus the current sum (which is the sum of all elements up to this element). If it is, the function returns False, indicating that there is an element in the list that is greater than the sum of all elements to its left. If it doesn't find such an element, the function returns True.
+
+This solution assumes that the list `li` has at least one element. If the list can be empty, you might want to add a check at the start

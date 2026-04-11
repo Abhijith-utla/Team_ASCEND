@@ -1,0 +1,5 @@
+def sol():
+    li = [i for i in range(1000) if i not in range(100) and i not in range(900, 1000)]
+    return li
+
+assert sat(sol())

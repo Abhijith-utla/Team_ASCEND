@@ -1,0 +1,12 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sol():
+    li = [4]
+    for i in range(999):
+        li.append(li[-1] + 1)
+    return li
+```
+This code creates a list `li` with the first element as 4, and then appends 9 to the last element of the list in a loop until the list has 1000 elements. The `sat` function checks if this list satisfies the condition given in the problem statement.

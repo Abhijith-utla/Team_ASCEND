@@ -1,0 +1,20 @@
+def sol():
+    return {}
+
+# Test cases
+print(sat(sol()))  # True
+print(sat(sol(12, 30)))  # False
+print(sat(sol(15, 0)))  # False
+print(sat(sol(23, 59)))  # False
+print(sat(sol(0, 0)))  # False
+print(sat(sol(12, 60)))  # False
+print(sat(sol(24, 0)))  # False
+
+# Checker function
+assert sat(sol())  # True
+assert not sat(sol(12, 30))  # False
+assert not sat(sol(15, 0))  # False
+assert not sat(sol(23, 59))  # False
+assert not sat(sol(0, 0))  # False
+assert not sat(sol(12, 60))  # False
+assert not sat(sol(24, 0))  # False

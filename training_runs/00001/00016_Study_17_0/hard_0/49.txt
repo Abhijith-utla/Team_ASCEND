@@ -1,0 +1,14 @@
+The function `sat` checks if the length of the string representation of the input number `i` plus 1000 is greater than the length of the string representation of the input number `i` plus 1001. 
+
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    return 1001  # Return the number 1001 as the answer
+
+assert sat(sol())
+```
+
+This function always returns 1001 as the answer because the length of the string representation of the number `i` plus 1000 is always greater than the length of the string representation of the number `i` plus 1001. 
+
+The checker will run: `assert sat(sol())` and it will pass if the answer is 1001.

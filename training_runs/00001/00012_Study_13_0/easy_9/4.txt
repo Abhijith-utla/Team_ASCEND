@@ -1,0 +1,14 @@
+Here is the Python code for the solution to the problem:
+
+```python
+def sol():
+    return 123.456
+
+def sat(x: float):
+    return str(x - 3.1418).startswith("123.456")
+
+# Testing the solution
+assert sat(sol())
+```
+
+This code defines a function `sol()` that returns a float value `123.456`. Then it defines another function `sat()` that takes a float argument and checks if the result of `x - 3.1418` starts with the string `"123.456"`. The function `sat()` is used to verify the correctness of the solution to the problem. The `assert` statement is used to verify the correctness of the solution. If the solution is incorrect, the program will raise an `AssertionError`.

@@ -1,0 +1,12 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+This function checks if all elements in the provided list `li` sum to `i` for `i` in the range from 0 to 19. It uses list slicing to get each sublist from the start to `i`, and then checks if the sum of that sublist is `i`. If all sums are `i`, the `all()` function returns `True`; otherwise, it returns `False`.
+
+The function `sat(li)` will return `True` if the list `li` satisfies the condition, and `False` otherwise.

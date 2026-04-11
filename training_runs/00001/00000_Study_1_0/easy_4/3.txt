@@ -1,0 +1,25 @@
+The correct pattern is:
+
+```python
+def sat(s: str) -> bool:
+    return s.count('oo') == 1
+```
+
+This function takes a string `s` as an argument and returns a boolean value. It checks if the string `s` contains exactly one 'oo' and returns `True` if it does and `False` otherwise.
+
+The function `count` is a built-in Python method that returns the number of non-overlapping occurrences of a substring in a string. In this case, it counts the number of occurrences of 'oo' in the string `s`.
+
+The `->` operator is used to specify the type of the function's return value. This is a form of type hinting in Python. The type `str` is a string and `bool` is a boolean, and the function `sat` returns a boolean.
+
+The correct pattern is:
+
+```python
+def sat(s: str) -> bool:
+    return s.count('oo') == 1
+```
+
+Incorrect patterns would be:
+
+```python
+def sat(s):
+    return s.

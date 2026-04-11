@@ -1,0 +1,2 @@
+def sol():
+    return ''.join(['_' * 81] + [str(i) for i in range(1, 10)] + [''.join(['_' * 27] + [str(i) for i in range(10, 19)] + [''.join(['_' * 36] + [str(i) for i in range(19, 28)]) + [''.join(['_' * 45] + [str(i) for i in range(28, 31)]) + [''.join(['_' * 54] + [str(i) for i in range(31, 34)]) + [''.join(['_' * 63] + [str(i) for i in range(34, 37)]) + [''.join(['_' * 72] + [str(i) for i in range(37, 40)]) + [''.join(['_' * 81] + [str(i) for i in range(40, 48)

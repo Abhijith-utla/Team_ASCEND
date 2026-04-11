@@ -1,0 +1,13 @@
+Here is the correct Python code that solves the problem.
+
+```python
+from typing import List
+
+def sat(ls: List[float]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(i in ls for i in range(len(ls)))
+```
+
+In the provided function `sat`, the main logic checks if the list `ls` is empty or not. If it's empty, it returns `True`, else it checks whether every element of the list `ls` is in the range of the length of the list. If all elements are in the range, it returns `True`, else it returns `False`.

@@ -1,0 +1,7 @@
+def sol():
+    result = []
+    for i in range(737):
+        result.append(chr(97 + i))
+    return ''.join(result)
+
+print(sol())

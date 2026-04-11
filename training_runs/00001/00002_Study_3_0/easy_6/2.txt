@@ -1,0 +1,5 @@
+def sol():
+    return sorted([0]*1000)
+
+# Checker
+assert sat(sol())

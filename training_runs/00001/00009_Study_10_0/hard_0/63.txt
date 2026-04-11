@@ -1,0 +1,10 @@
+Here is the Python code for the `sol` function that satisfies the given conditions:
+
+```python
+def sol():
+    num = 8 ** 1818
+    str_num = str(num)
+    return str_num == str_num[::-1] and len(str_num) > 11
+```
+
+You can run the checker by calling `sol()`. This function will return a boolean value based on whether the string `str_num` is a palindrome and has more than 11 characters.

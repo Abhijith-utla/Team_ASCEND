@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(19)]
+
+assert sat(sol())

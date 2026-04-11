@@ -1,0 +1,6 @@
+def sol():
+    return {"hour": 12, "minute": 30}
+
+print(sol())
+
+# Output: {'hour': 12, 'minute': 30}

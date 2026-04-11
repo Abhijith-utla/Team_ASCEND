@@ -1,0 +1,29 @@
+def sat(moves: List[List[int]], capacities=[8, 5, 3], init=[8, 0, 0], goal=[4, 4, 0]):
+    state = init.copy()
+
+    for [i, j] in moves:
+        assert min(i, j) >= 0, "Indices must be non-negative"
+        assert i != j, "Cannot pour from same state to itself"
+        n = min(capacities[j], state[i] + state[j])
+        state[i], state[j] = state[i] + state[j] - n, n
+
+    return state == goal
+
+def sol():
+    return []
+
+# You can replace the `moves`, `capacities`, `init`, and `goal` with actual moves, capacities, and states
+moves = [[0, 0], [0, 1], [0, 2], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+capacities = [8, 5, 3]
+init = [8, 0, 0]
+goal = [4, 4, 0]
+
+# The moves should be applied to the capacities and the states should be updated accordingly
+for move in moves:
+    assert min(move) >= 0, "Indices must be non-negative"
+    assert move[0] != move[1], "Cannot pour from same state to itself"
+    n = min(capacities[move[1]], init[move[0]] + init[move[1]])
+    init[move[0]], init[move[1]] = init[move[0]] + init[move[
+
+if __name__ == "__main__":
+    assert sat(sol())

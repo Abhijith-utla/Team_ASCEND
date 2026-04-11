@@ -1,0 +1,8 @@
+def sol():
+    return [i for i in range(19) if s[i] == s[i + 1]]
+
+# Testing the function
+if sat(sol()):
+    print("The solution is correct.")
+else:
+    print("The solution is incorrect.")

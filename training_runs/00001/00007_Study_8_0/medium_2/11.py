@@ -1,0 +1,17 @@
+def sat(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+def sol():
+    def sat(ls, idx1=1234, idx2=1235):
+        return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+
+    ls = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    assert sat(ls, 1, 20)
+
+    ls = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]
+    assert not sat(ls, 1, 20)
+
+    ls = [1, 2, 3, 4, 5, 6
+
+if __name__ == "__main__":
+    assert sat(sol())

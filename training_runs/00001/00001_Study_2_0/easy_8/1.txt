@@ -1,0 +1,10 @@
+Here is the correct solution for the given problem.
+
+```python
+def sol():
+    return 's' * 300 + 's' * 301 + 's' * 298
+
+assert sat(sol())
+```
+
+This solution creates a string 's' of length 300, 301, and 298 respectively. The '+' operator is used to concatenate these strings. The `assert` statement is used to check that the string 's' indeed contains 300 's's, 301 'ss's, and 298 'sss's.

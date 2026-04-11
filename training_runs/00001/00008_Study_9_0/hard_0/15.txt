@@ -1,0 +1,7 @@
+def sol():
+    li = [ord(s) for s in "The five boxing wizards jump quickly"]
+    return li
+
+
+# Run the solution with the checker
+print(sat(sol()))  # should print: True

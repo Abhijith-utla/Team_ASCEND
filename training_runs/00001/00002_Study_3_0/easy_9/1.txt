@@ -1,0 +1,8 @@
+Here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return sorted(range(1, 1001))
+```
+
+The function `sol` returns a list of integers from 1 to 1000, sorted in ascending order. This is a correct solution to the problem because the `sat` function checks if the list is sorted and equals the expected result.

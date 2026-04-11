@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The function sol is empty because it does not return anything.
+# This means the answer object is an empty dictionary.

@@ -1,0 +1,2 @@
+def sol():
+    return [4] + [i+2 for i in range(989)]

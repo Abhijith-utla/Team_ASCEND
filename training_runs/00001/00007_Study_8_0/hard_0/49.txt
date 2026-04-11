@@ -1,0 +1,12 @@
+Sure, here is the correct pattern for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return ls[1234] if ls[1234] in ls[1235] and ls[1234] != ls[1235] else 'No solution'
+```
+
+This function takes a list of strings as an argument, and returns the string located at index 1234 if it exists in the list at index 1235 and is not equal to the string at index 1235. If no such string exists, it returns the string 'No solution'.
+
+The function uses the `in` keyword to check if an element exists in a list, and the `!=` operator to check if two elements are not equal.

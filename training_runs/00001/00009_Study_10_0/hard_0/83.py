@@ -1,0 +1,30 @@
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+
+def sol():
+    def is_power_of_8(n: int) -> bool:
+        while n % 8 == 0:
+            n /= 8
+        return n == 1
+
+    def is_palindrome(s: str) -> bool:
+        return s == s[::-1]
+
+    def has_more_than_11_chars(s: str) -> bool:
+        return len(s) > 11
+
+    def is_valid_solution(s: str) -> bool:
+        return is_power_of_8(len(s)) and is_palindrome(s) and has_more_than_11_chars(s)
+
+    def generate_answer() -> str:
+        for i in range(123456789):
+            if is_valid_solution(str(i)):
+                return str(i)
+        return "No solution found"
+
+    return generate_answer()
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

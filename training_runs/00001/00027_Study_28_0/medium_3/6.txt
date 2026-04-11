@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(-50, 50) if i not in [j for j in range(-50, 50) if i != j]]
+
+print(sol())

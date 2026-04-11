@@ -1,0 +1,7 @@
+def sol():
+    return {
+        "code": 400,
+        "message": "Bad Request"
+    }
+
+assert sat(sol())

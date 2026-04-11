@@ -1,0 +1,5 @@
+def sol():
+    return {"result": 15}
+
+if __name__ == "__main__":
+    assert sat(sol()["result"])

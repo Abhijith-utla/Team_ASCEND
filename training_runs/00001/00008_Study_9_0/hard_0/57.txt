@@ -1,0 +1,16 @@
+The function `sat` takes a list of integers `li` as input. It then checks if the corresponding character in the strings "The quick brown fox jumps over the lazy dog" and "The five boxing wizards jump quickly" are the same. If they are, it returns `True`, otherwise it returns `False`.
+
+Here's how you can implement this function in Python:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    string1 = "The quick brown fox jumps over the lazy dog"
+    string2 = "The five boxing wizards jump quickly"
+    return [string1[i] for i in li] == list(string2)
+```
+
+The function `sat` takes a list of integers `li` as input. It then generates a list of characters from `string1` that are at the indices specified by `li`. It checks if this list of characters is the same as the list of characters from `string2`. If they are the same, the function returns `True`; otherwise, it returns `False`.
+
+The `assert sat(li)`

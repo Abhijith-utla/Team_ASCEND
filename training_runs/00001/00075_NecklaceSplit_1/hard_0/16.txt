@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# The function is not supposed to return anything, so we can use an empty string as a placeholder
+# In the actual implementation, the function should return the specific answer object
+# But since the problem statement doesn't specify what that answer object is, we're returning an empty string

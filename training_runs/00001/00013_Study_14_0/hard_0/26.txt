@@ -1,0 +1,8 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return [i for i in range(20) if i == sum([sum(li[:i]) for li in range(20)])]
+```
+
+This function uses a list comprehension to generate a list of indices `i` such that the sum of all numbers up to `i` is equal to `i`. The function `sat` is then defined to check if this condition is satisfied.

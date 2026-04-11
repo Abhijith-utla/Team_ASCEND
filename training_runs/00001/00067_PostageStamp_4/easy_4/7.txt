@@ -1,0 +1,5 @@
+def sol():
+    return [25]
+
+# This test checks that the answer is a single stamp with 25.
+assert sat() == [25]

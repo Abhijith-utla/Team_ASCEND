@@ -1,0 +1,5 @@
+def sol():
+    return 7 # Return the answer
+
+# Checker
+assert sat(sol())

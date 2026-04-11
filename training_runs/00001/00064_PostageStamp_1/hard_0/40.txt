@@ -1,0 +1,11 @@
+def sol():
+    return []
+
+# This function checks if the stamps and target form a valid combination, it doesn't necessarily create the answer.
+# It only checks the validity of the input and doesn't generate or return an answer.
+# The final checker will run `assert sat(sol())` to check if the answer is correct.
+
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target

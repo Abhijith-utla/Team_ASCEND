@@ -1,0 +1,23 @@
+Here is the Python code for the `sol` function.
+
+```python
+def sol():
+    result = []
+    words = 'berlin berger linber linger gerber gerlin'.split()
+    for i in range(len(words)):
+        for j in range(i + 1, len(words)):
+            result.append(words[i] + words[j])
+    return result
+```
+
+You can test it with the following code:
+
+```python
+def sat(ls: List[str]):
+    return set(ls) == {'berlin', 'berger', 'linber', 'linger', 'gerber', 'gerlin'}
+
+answer = sol()
+assert sat(answer)
+```
+
+This code will return the list of all possible words that can be formed by concatenating two words from the list. The `sat` function checks that the result set is equal to the expected set of words. If they are equal, the function returns True, otherwise it returns False. The `sol` function generates the list and returns it.

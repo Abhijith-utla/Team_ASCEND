@@ -1,0 +1,7 @@
+def sol():
+    return [(x, y) for x in range(2) for y in range(2)]
+
+# The function sol() returns a list of tuples (x, y) where x and y are integers between 0 and 1.
+# The list comprehensions inside sol() generate these tuples.
+
+assert sat(sol())

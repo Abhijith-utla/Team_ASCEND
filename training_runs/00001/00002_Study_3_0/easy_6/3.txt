@@ -1,0 +1,23 @@
+Here's a Python function named `sol` that constructs and returns a single answer value:
+
+```python
+def sol():
+    return 999
+```
+
+The function `sol` returns the value `999`.
+
+The `assert` statement is used to check that the function `sat` is returning the correct answer. Here's how you might use it:
+
+```python
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(999)) and all(li[i] == i for i in range(len(li)))
+
+def test_sol():
+    assert sat(list(range(1000)))
+    assert not sat(list(range(999)))
+
+test_sol()
+```
+
+In the `test_sol` function, we're using `sat` to check that `list(range(1000))` and `list(range(999))` return the correct answer. The `assert` statement will raise an `AssertionError` if the condition in the `sat` function is not met.

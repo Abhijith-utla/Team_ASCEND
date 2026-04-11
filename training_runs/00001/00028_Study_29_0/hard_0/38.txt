@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(1000) if all(abs(i * i - j * j) >= 10 for j in range(1000) if i != j)]

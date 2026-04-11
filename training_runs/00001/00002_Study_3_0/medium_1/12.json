@@ -1,0 +1,17 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:46:28.131993+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=python,preamble=1,found_sol=1,candidates=4|checked=4/4|preview=The function `sat(li: List[int])` checks if a list `li` is sorted in ascending order and contains no duplicates. The ...",
+  "difficulty": "medium",
+  "problem_id": "00002_Study_3_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

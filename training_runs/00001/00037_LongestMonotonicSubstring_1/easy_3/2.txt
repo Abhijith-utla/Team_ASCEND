@@ -1,0 +1,16 @@
+def sol():
+    return []
+
+def sat(x):
+    return all(x[i] <= x[i+1] for i in range(len(x)-1))
+
+# Test cases
+print(sat([])) # True
+print(sat([1])) # True
+print(sat([1, 2])) # True
+print(sat([1, 2, 3])) # True
+print(sat([3, 2, 1])) # True
+print(sat([1, 2, 3, 4])) # False
+print(sat([4, 3, 2, 1])) # False
+print(sat([1, 5, 3, 4])) # False
+print(sat([1, 5, 3, 4, 2])) # False

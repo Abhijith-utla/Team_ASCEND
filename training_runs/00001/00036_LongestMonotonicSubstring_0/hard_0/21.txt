@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(13) if i+1<13 and 5<=i+1<9]

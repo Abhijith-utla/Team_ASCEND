@@ -1,0 +1,4 @@
+def sol():
+    return [18, 1, 43, 81]
+
+print(sat(sol()))

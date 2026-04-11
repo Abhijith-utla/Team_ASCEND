@@ -1,0 +1,6 @@
+def sol():
+    return 4
+
+# The answer should be 4 as it is an even number.
+# Assertion will check whether the solution matches the expected output.
+assert sat(sol())

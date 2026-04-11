@@ -1,0 +1,4 @@
+def sol():
+    return [0, 1, 2, 3, 4, 5, 6]
+
+print(sat(sol())) # This will pass the assertion

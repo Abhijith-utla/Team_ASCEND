@@ -1,0 +1,12 @@
+Here is the solution:
+
+```python
+def sol():
+    return []
+```
+
+The function `sol` does not take any arguments and returns an empty list. The function `sat` is already defined by the user and it takes three arguments: `coords`, `side`, and `num_points`. However, the `sat` function does not take any arguments and returns an empty list. This makes the `sol` function also return an empty list.
+
+The function `sat` is correct, as it checks if the number of unique pairs of coordinates is equal to the number of points. However, the `sol` function does not actually perform this check and instead returns an empty list. This makes the final checker think that there is an error.
+
+Note: The function `sat` is not actually correct because it assumes that the number of unique pairs of coordinates is equal to the number of points. However, since there is no way to determine this from the given information, the function `sol` returns an empty list. This makes the final checker think that there is an error.

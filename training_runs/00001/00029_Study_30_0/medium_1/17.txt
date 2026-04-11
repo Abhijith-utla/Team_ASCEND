@@ -1,0 +1,9 @@
+Here is the correct solution to your problem:
+
+```python
+def sol():
+    li = [0] * 20
+    return li
+```
+
+In this solution, we create a list of 20 elements all initialized to 0. The function `sol()` returns this list, which satisfies the condition in the problem.

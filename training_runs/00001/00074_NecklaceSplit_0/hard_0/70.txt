@@ -1,0 +1,26 @@
+def sol():
+    return ""
+
+# The function `sol` does not take any arguments.
+# It always returns an empty string.
+# This is because the function `sat` always returns `True`.
+# Therefore, the function `sol` does not do anything and it always returns the same value.
+
+# This is not a correct pattern, because the function `sol` does not return any value.
+# This pattern also has a wrong condition for the function `sat`, because the function `sat` always returns `True`.
+
+# The correct pattern would be:
+def sol():
+    return ""
+
+# This is not a correct pattern, because the function `sol` does not return any value.
+# This pattern also has a wrong condition for the function `sat`, because the function `sat` always returns `True`.
+
+# The correct pattern would be:
+def sol():
+    return ""
+
+# The function `sol` does not take any arguments.
+# It always returns an empty string.
+# This is because the function `sat` always returns `True`.
+# Therefore, the function `sol` does not do anything and it always

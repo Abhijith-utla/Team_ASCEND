@@ -1,0 +1,15 @@
+Here is the correct pattern:
+
+```python
+def sol():
+    return [1, 2, 3, 4, 5]
+```
+
+In the incorrect pattern, the function `sat` is incorrect because the list does not satisfy the condition `i == li[j] + li[j+1]`. The correct code is:
+
+```python
+def sat(li: List[int]):
+    return all([i == li[j] + li[j+1] for j in range(len(li) - 1)])
+```
+
+This code checks if each element in the list `li` is equal to the sum of its two neighbors on the list. If all elements satisfy this condition, the function `sat` returns `True`, otherwise it returns `False`.

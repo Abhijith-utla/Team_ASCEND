@@ -1,0 +1,25 @@
+def sol():
+    def is_valid(li: List[int]):
+        count_dict = {}
+        for num in li:
+            if num in count_dict:
+                count_dict[num] += 1
+            else:
+                count_dict[num] = 1
+        for i in range(1, 10):
+            if i not in count_dict:
+                return False
+        return True
+
+    def generate():
+        li = []
+        while len(li) < 10:
+            num = random.randint(1, 9)
+            if num not in li:
+                li.append(num)
+        return li
+
+    li = generate()
+    while not is_valid(li):
+        li = generate()
+    return li

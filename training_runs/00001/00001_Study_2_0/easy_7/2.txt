@@ -1,0 +1,15 @@
+Here is the Python code to solve the problem. The function `sol` takes a string `s` as input and returns a boolean value based on the conditions specified in the problem.
+
+```python
+def sol(s: str):
+    return s.count('a') == 200 and s.count('aa') == 201 and s.count('aaa') == 198
+
+# Test the function
+assert sat("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+assert not sat("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+assert not sat("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab")
+```
+
+The function `sol` first counts the number of 'a's in `s`. If all counts are equal to the respective values in the problem statement, the function returns `True`; otherwise, it returns `False`.
+
+The test cases are included at the end of the code to validate the function's correctness.

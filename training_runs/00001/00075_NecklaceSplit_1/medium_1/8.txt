@@ -1,0 +1,12 @@
+def sol():
+    return 1
+
+# Testing the function
+assert sat(0)
+
+# Correct answer
+def sol():
+    return "rbbrrbbrbrbbbrrrbbrbrbrrbbrbbbbbbrrrrrrrrbrrrbbrbrrbbbrbbrrrbbrbbrrbrrbrbbrbbbbbbrbbbrrrbrrbrrbrbbrrbbrrbrrbrrbrrbrrrbbrbrbbrrbbbbrrrrrbbrbrbrrbr"
+
+# Testing the function
+assert sat(sol())

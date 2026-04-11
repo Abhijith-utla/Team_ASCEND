@@ -1,0 +1,13 @@
+The function `sat` checks if a string `s` contains exactly 1000 'o' characters and exactly 100 'oo' characters, and exactly 801 'ho' characters.
+
+Correct pattern:
+```python
+def sat(s: str):
+    return s.count('o') == 1000 and s.count('oo') == 100 and s.count('ho') == 801
+```
+
+Incorrect pattern:
+```python
+def sat(s: str):
+    return s.count('o') == 100 and s.count('oo') == 10 and s.count('ho') == 81
+```

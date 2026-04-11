@@ -1,0 +1,5 @@
+def sol():
+    li = [2, 1, 2, 1, 3]
+    return sat(li)
+
+print(sol())

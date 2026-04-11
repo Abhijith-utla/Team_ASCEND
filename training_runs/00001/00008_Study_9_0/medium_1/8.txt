@@ -1,0 +1,13 @@
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [ord(i) for i in li] == list(
+        "The five boxing wizards jump quickly".replace(" ", ""))
+```
+
+In the function `sat`, the list comprehension `[ord(i) for i in li]` generates a new list where each element is the ASCII value of the corresponding character in the input list `li`. The `ord` function returns the ASCII value of a character, and this is used here to generate the new list.
+
+The string `"The five boxing wizards jump quickly"` is then replaced with no spaces, and the resulting string is converted into a list of characters using the `list` function. This is then compared to the generated list. If both lists are the same, the function returns `True`, indicating that the input list satisfies the condition. If not, it returns `False`.

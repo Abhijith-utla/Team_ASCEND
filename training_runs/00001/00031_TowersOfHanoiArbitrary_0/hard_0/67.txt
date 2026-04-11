@@ -1,0 +1,5 @@
+def sol():
+    return [source[:], target[:]]
+
+# You can run the following lines to check if the function works correctly.
+# print(sat(moves=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 1, 2, 3, 8], [4, 5], [6, 7]]))

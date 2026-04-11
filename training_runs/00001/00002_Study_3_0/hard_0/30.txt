@@ -1,0 +1,23 @@
+Here is the correct solution:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+
+    def random_list():
+        import random
+        li = [random.randint(0, 999) for _ in range(1000)]
+        return li
+
+    li = random_list()
+
+    while not sat(li):
+        li = random_list()
+
+    return li
+```
+
+This code first generates a random list with 1000 integers between 0 and 999 (inclusive). Then it checks if this list is sorted and all elements are distinct. If not, it generates a new random list and checks again. This process repeats until a valid list is found.
+
+The `sat` function checks if a list is sorted and all elements are distinct. The `random_list` function generates a random list. The `while` loop runs until a valid list is found, i.e., the `sat` function

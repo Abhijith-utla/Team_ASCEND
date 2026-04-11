@@ -1,0 +1,4 @@
+def sol():
+    return [str(i) for i in reversed(range(1, 8))]
+
+assert sat(sol())

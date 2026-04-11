@@ -1,0 +1,16 @@
+{
+  "attempt_num": 9,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'(' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:31:01.769966+00:00",
+  "diagnostic": "reason=ast_syntax_error:'(' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): return \"1___2___3______9____2___5_______7___8___1_________43_____5_____76__2___2___7___6___1___5_______7__...",
+  "difficulty": "easy",
+  "problem_id": "00072_Sudoku_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

@@ -1,0 +1,8 @@
+def sol():
+    result = {}
+    for i in range(1234, 1235):
+        result[i] = [i]
+    return result
+
+# Testing
+assert sat(sol())

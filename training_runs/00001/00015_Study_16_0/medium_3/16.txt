@@ -1,0 +1,12 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return 'abc4.5'
+```
+
+This function returns the string 'abc4.5' as output.
+
+The function `sol` takes no arguments, and it returns the string 'abc4.5'.
+
+The checker for this problem is defined by the function `sat`, which checks if the given string `s` equals 'abc4.5'. If `s` equals 'abc4.5', the function returns `True`, otherwise `False`.

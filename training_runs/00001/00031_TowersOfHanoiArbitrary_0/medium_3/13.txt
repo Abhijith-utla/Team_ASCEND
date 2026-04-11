@@ -1,0 +1,11 @@
+def sol():
+    return [source[:], target[:]]
+
+# Testing
+def test_sol():
+    assert sat(moves=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 7], [1, 2, 3], [4, 5, 6]])
+    assert not sat(moves=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], source=[[0, 7], [4, 5, 6], [1, 2, 3, 8]], target=[[0, 7], [1, 2, 3], [5, 4, 6]])
+
+# Calling the functions
+moves = [[0, 7], [4, 5, 6], [1, 2, 3, 8]]
+source = [[0,

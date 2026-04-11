@@ -1,0 +1,6 @@
+```python
+def sol():
+    return ''.join(chr(i) for i in range(8 ** 8))
+
+assert sat(sol())
+```

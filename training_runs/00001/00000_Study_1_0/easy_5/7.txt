@@ -1,0 +1,8 @@
+Sure, here is the correct code for the problem:
+
+```python
+def sat(s: str):
+    return s.count('oo') >= 2
+```
+
+The function `sat` takes a string `s` as input and checks if the string contains at least two occurrences of the substring `'oo'`. If it does, it returns `True`, otherwise it returns `False`. The count method of the string is used to count the occurrences of `'oo'` in the string.

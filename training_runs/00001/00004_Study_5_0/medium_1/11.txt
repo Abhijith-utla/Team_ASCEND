@@ -1,0 +1,10 @@
+Your code is almost correct, but there's a mistake. The count() method returns the number of occurrences of the given value, not the sum. So, you need to sum the values instead of counting them. Here's the corrected code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return sum(li) == 45 and max(li) == 9 and min(li) == 1
+```
+
+This function checks if the sum of the list is 45, and the maximum value in the list is 9, and the minimum value in the list is 1.

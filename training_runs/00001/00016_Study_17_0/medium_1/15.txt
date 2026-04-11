@@ -1,0 +1,12 @@
+The correct pattern to construct the function sol is:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+This function will keep incrementing i until sat(i) returns True. After that point, it will return the current value of i.
+
+The function sat(i) is a custom function that checks if the number of digits in the number i + 1000 and i + 1001 are not the same. If they are not the same, it returns True, otherwise it returns False.

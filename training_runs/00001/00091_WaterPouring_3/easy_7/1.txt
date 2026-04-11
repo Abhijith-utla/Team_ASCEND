@@ -1,0 +1,4 @@
+def sol():
+    return [472, 153, 127]
+
+print(f"The solution for the problem is: {sol()}")

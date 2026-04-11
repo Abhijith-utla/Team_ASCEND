@@ -1,0 +1,15 @@
+The given Python function `sat(s: str)` checks if a string `s` contains three characters and the first character is '8' repeated 2888 times. Here is the code for the function:
+
+```python
+def sat(s: str):
+    return str(int(8 ** 2888)).count(s) > 8 and len(s) == 3
+```
+This function works by converting the integer 8 raised to the power of 2888 to a string, then checking if the given string `s` is present in this string. It also checks that the length of `s` is 3, as the problem statement indicates that `s` should contain three characters.
+
+You can test the function with the following code:
+
+```python
+print(sat('888'))  # True
+print(sat('88'))  # False
+print(sat('8'))  # False
+```

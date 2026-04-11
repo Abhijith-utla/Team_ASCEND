@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+def sol():
+    def sat(li: List[int]):
+        return [chr(i) for i in li] == list("Python is fun".replace(" ", ""))
+```
+
+The function `sat` checks if a list of integers represents a string where each integer corresponds to a ASCII character, and the spaces are replaced with no space. If the list of integers corresponds to this string, `sat` returns `True`; otherwise, it returns `False`.
+
+This is a common pattern in programming puzzles, where the problem statement is a constraint satisfaction problem.

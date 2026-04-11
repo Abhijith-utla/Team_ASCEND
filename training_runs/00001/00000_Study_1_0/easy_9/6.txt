@@ -1,0 +1,8 @@
+def sol():
+    return 'Success' if sat('') else 'Failure'
+
+# This will result in a success message
+assert sol() == 'Success'
+
+# This will result in a failure message
+assert sol() == 'Failure'

@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This code will always return an empty list as the problem statement does not specify any solution.
+# If you are trying to solve a specific problem, feel free to provide the answer in the next steps.

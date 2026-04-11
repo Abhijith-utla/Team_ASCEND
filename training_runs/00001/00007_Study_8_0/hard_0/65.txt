@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return ls[1234] if ls[1234] in ls[1235] and ls[1234] != ls[1235] else None
+```
+
+This function checks if the string `ls[1234]` is in `ls[1235]` and if it's not equal to `ls[1235]`. If it satisfies these conditions, it returns `ls[1234]`. If it doesn't, it returns `None`.

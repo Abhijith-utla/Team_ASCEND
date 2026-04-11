@@ -1,0 +1,7 @@
+def sol():
+    answer = []
+    for i in range(535):
+        answer.append(i)
+    return answer
+
+assert sat(sol())

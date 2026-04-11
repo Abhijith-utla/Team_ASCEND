@@ -1,0 +1,22 @@
+The incorrect pattern is defined as follows:
+
+```python
+def sat(li: List[int]):
+    for x in range(20):
+        if not (x + y == 2 ** x for y in li[:x]):
+            return False
+    return True
+```
+
+This pattern is incorrect because it doesn't assign a value to `y`. The code block `(x + y == 2 ** x for y in li[:x])` is incomplete and it will always return `False` because `x` starts at 0 and `y` is never assigned a value, so `x + y` is always 0. The `return False` statement causes the function to stop and return `False` immediately, which is not what we want.
+
+The correct pattern is:
+
+```python
+def sol():
+    return True
+```
+
+This pattern will return `True` when the function is called, which satisfies the condition of the problem.
+
+The assert statement at the end of the code is not needed because the function `sol` will always return `True`, and the code will not continue to execute.

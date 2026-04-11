@@ -1,0 +1,5 @@
+def sol():
+    return sorted([*range(1, 1001)])
+
+# Testing
+assert sat(sol())

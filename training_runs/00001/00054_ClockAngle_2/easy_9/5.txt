@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# Here is the correct pattern of the solution.
+def sol():
+    return [h, m]

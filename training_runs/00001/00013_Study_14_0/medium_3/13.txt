@@ -1,0 +1,6 @@
+def sol():
+    return [sum(li[i+1:]) for i in range(len(li))]
+
+print(sol())
+
+assert sat(sol())

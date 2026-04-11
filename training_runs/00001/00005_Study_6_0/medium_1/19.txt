@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    def sat(i: int):
+        return i > 0 and i % 2 == 0
+
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This code will return the first positive even number. If there is no positive even number, it will return 0.

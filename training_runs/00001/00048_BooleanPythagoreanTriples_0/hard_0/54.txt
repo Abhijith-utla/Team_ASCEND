@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# The above code is incorrect because it doesn't meet the conditions of the problem.
+# We need to modify the function to generate a list of colors that satisfy the conditions of the problem.
+# We can do this by generating a list of colors from 0 to 1 with a length of 100.
+def sol():
+    import random
+    colors = [random.randint(0, 1) for _ in range(100)]
+    return colors

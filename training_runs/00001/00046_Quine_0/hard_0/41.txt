@@ -1,0 +1,22 @@
+def sol():
+    return ""
+
+# Uncomment these lines to check the code
+# assert sat(sol())
+# assert sat(str(sol()))
+# assert sat("sol()")
+# assert sat("sol()()")
+# assert sat("sol()()()")
+# assert sat("lambda sol: sol()")
+# assert sat("lambda sol: sol()()")
+# assert sat("lambda sol: sol()()()")
+# assert sat("lambda sol: eval(sol())")
+# assert sat("lambda sol: eval(sol()())")
+# assert sat("lambda sol: eval(sol()()())")
+# assert sat("lambda sol: eval(str(sol))")
+# assert sat("lambda sol: eval(str(sol)())")
+# assert sat("lambda sol: eval(str(sol)()())")
+# assert sat("lambda sol: eval(str(sol))()")
+# assert sat("lambda sol: eval(str(sol))()()")
+# assert sat("lambda sol: eval(str(sol))()()()")
+# assert sat("lambda sol: ev

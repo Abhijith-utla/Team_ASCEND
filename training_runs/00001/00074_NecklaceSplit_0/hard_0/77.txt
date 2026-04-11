@@ -1,0 +1,26 @@
+def sol():
+    return 1
+
+assert sat(0)
+assert not sat(1)
+assert sat(2)
+assert not sat(3)
+assert sat(4)
+assert not sat(5)
+assert sol()
+
+def sol():
+    return 0
+
+assert not sat(0)
+assert sol()
+assert not sat(1)
+assert sol()
+assert not sat(2)
+assert sol()
+assert not sat(3)
+assert sol()
+assert not sat(4)
+assert sol()
+assert not sat(5)
+assert sol()

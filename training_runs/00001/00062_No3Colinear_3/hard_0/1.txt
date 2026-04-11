@@ -1,0 +1,15 @@
+The given Python function `sat` is a mathematical problem that involves the concept of distance and the concept of a convex polygon. The function takes a list of coordinates and a side length of the square grid, and checks if the given points are inside the polygon.
+
+The function `sat` uses a nested loop to check if the given points are inside the polygon. It uses the formula for the distance between two points in 2D space to check if the points are inside the polygon.
+
+The function `sat` returns `True` if the number of unique points in the list of coordinates is equal to or greater than the given number of points, and `False` otherwise.
+
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol(coords: List[Tuple[int, int]], side=2, num_points=4) -> bool:
+    for i1 in range(len(coords)):
+        x1, y1 = coords[i1]
+        assert 0 <= x1 < side and 0 <= y1 < side
+        for i2 in range(i1):
+            x2, y2 = coords[

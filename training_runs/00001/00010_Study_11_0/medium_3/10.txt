@@ -1,0 +1,8 @@
+def sol():
+    return [{
+        "word": "apple",
+        "count": 2
+    }, {
+        "word": "banana",
+        "count": 1
+    }]

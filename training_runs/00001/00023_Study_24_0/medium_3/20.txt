@@ -1,0 +1,4 @@
+def sol():
+    return [17] * 3
+
+assert sat(sol())

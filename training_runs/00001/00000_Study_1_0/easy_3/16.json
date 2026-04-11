@@ -1,0 +1,17 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T05:19:17.772564+00:00",
+  "diagnostic": "reason=ok|parse=fence=none,preamble=0,found_sol=1,candidates=2|candidate=2/2|fmt_penalty=0.00|preview=def sol(): return 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooooooooooooooo' and 'oo' in 'oooooooooooo...",
+  "difficulty": "easy",
+  "problem_id": "00000_Study_1_0",
+  "reward": 1.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

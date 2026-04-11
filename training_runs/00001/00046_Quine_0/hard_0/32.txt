@@ -1,0 +1,6 @@
+def sol():
+    return eval('return ' + str(quine))
+
+# Checker code
+def sat(quine: str):
+    return eval(quine) == quine

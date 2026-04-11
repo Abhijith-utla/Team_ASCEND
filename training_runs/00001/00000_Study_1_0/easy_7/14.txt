@@ -1,0 +1,11 @@
+Sure, here is the Python code that satisfies the given condition.
+
+```python
+def sol():
+    return 'oo' not in 'oooooooooo' and 'o' in 'oooooooooo' and 'oooooooooo'.count('o') == 1000
+
+# Test the function
+assert sat(sol())
+```
+
+In this code, `sol()` function will return `True` if the string 'oo' does not occur in the string 'oooooooooo' and the string 'o' occurs exactly 1000 times. Otherwise, it will return `False`. The assert statement is used to validate the output of the function `sat(sol())`.

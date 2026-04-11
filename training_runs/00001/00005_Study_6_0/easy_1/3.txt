@@ -1,0 +1,8 @@
+Sure, here is the correct implementation for the function `sol`:
+
+```python
+def sol():
+    return 1
+```
+
+This function always returns `1` and satisfies the condition `sat(i)`.

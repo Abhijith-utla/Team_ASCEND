@@ -1,0 +1,16 @@
+The function `sat` checks if a string `s` contains exactly 3 occurrences of the digit `8`, in any position, and is greater than `8**2888`. The `**` operator is used for exponentiation in Python.
+
+However, the `8 ** 2888` part of the code is too large for a reasonable amount of computation. It's not practical to calculate this value and compare it to `s`. 
+
+A possible solution to this problem could be to calculate the occurrences of `8` in the string `s` using a loop. Here's a possible implementation:
+
+```python
+def sat(s: str) -> bool:
+    count = s.count('8')
+    if count < 3:
+        return False
+    else:
+        return True
+```
+
+In this solution, we first count the number of occurrences of `8` in the string `s`. If it's less than 3, we return `False`. Otherwise, we return `True`. This ensures that the function returns a boolean value.

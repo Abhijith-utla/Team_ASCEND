@@ -1,0 +1,15 @@
+def sol():
+    return None
+
+# Evaluate the quine with parentheses, if it's a function then return None, otherwise return the result
+result = eval(str(sol()) + "()")
+
+# If it's not a function, return the result
+if result is not None:
+    return result
+
+# If it's a function, return None
+return None
+
+# This code will return None if the function is not a function and the result of the function if it is
+assert sat(sol)

@@ -1,0 +1,21 @@
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return False
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+
+def sol():
+    if len(ls) == 0:
+        return False
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+
+# Test cases
+print(sat([]))  # False
+print(sat(["abcd"]))  # True
+print(sat(["abc", "abcd"]))  # False
+print(sat(["abc", "ab", "abcd"]))  # False
+print(sat(["a", "ab", "abc", "abcd"]))  # True
+
+if __name__ == "__main__":
+    assert sat(sol())

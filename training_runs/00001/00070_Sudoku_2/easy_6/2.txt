@@ -1,0 +1,5 @@
+def sol():
+    return "_" * 30
+
+# Test case
+print(sat(sol()))

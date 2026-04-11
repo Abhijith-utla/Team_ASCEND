@@ -1,0 +1,14 @@
+Sure, here is a solution in Python. The idea is to use a Counter object from the collections module to count the occurrences of each character in the two strings, and then compare these Counter objects.
+
+```python
+from collections import Counter
+
+def sat(li: List[int]):
+    return Counter(str(li)) == Counter("The quick brown fox jumps over the lazy dog")
+```
+
+This function assumes that `li` is a list of integers. If `li` is a list of characters, you would need to convert it to a string before counting the occurrences.
+
+The `Counter` class is a dictionary subclass for counting hashable objects, and it's commonly used to count the occurrences of elements in a list or a string. It creates a dictionary with elements as keys and their counts as values.
+
+The `Counter(str(li))` creates a Counter object with the counts of each character in the list `li`, and the `==` operator then compares this Counter object with the Counter object with the counts of the characters in "The quick brown fox jumps over the lazy dog".

@@ -1,0 +1,16 @@
+The given Python function `sat` takes a list of integers `li` as input and returns a boolean value indicating whether the list is sorted and each element in the list is its index. 
+
+Here's the code for the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return sorted(li) == list(range(len(li))) and all(li[i] == i for i in range(len(li)))
+```
+
+This function first checks if the list `li` is sorted (the result of `sorted(li)` is `li` sorted in ascending order). If it is not sorted, the function immediately returns `False`. 
+
+Next, it checks if all elements in `li` are equal to their index (the result of `all(li[i] == i for i in range(len(li)))` is `True` if and only if all elements in `li` are unique and their indices are consecutive). If not, the function again returns `False`.
+
+If the list is both sorted and contains all elements at their correct index, the function returns `True

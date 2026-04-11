@@ -1,0 +1,16 @@
+def sol():
+    return ""
+
+# The function 'sol' is already defined by the user.
+# The function 'sol' does not take any arguments.
+# The function 'sol' returns an answer object.
+# The final checker will run: assert sat(sol())
+# The output must be valid Python code only.
+
+# Correct pattern:
+def sol():
+    return ""
+
+# Incorrect pattern:
+def sol(x):
+    ...

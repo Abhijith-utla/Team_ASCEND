@@ -1,0 +1,4 @@
+def sol():
+    return sat([1234, 1235, 1236])
+
+print(sol())

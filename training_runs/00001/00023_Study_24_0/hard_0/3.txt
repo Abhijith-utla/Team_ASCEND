@@ -1,0 +1,7 @@
+def sol():
+    return [1, 17, 3, 17, 1, 1]
+
+def test():
+    assert sat(sol())
+
+test()

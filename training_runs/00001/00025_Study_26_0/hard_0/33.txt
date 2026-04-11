@@ -1,0 +1,4 @@
+def sol():
+    return "".join(chr(i+96) for i in range(8))
+
+assert sat(sol())

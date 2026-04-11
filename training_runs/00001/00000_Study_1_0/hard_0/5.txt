@@ -1,0 +1,11 @@
+Sure, here is the correct solution:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+
+assert sat(sol())
+```
+
+This code creates a string of 'oo's of length 1000 and returns it. The assert statement checks whether the function `sat` returns a string of length 1000 and contains only 'oo's. If this condition is not met, the program will raise an AssertionError.

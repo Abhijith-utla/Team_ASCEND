@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# This is a solution to the problem.
+# Let's test the function.
+print(sat([10, 32, 8]))  # should return True
+print(sat([10, 32, 11]))  # should return False
+print(sat([10, 10, 10]))  # should return True
+print(sat([10, 10, 10, 10]))  # should return False
+print(sat([], max_stamps=4, options=[10, 32, 8]))  # should return True
+print(sat([10, 10, 10, 11], max_stamps=4, options=[10, 32, 8]))  # should return False
+print(sat([10, 10, 10, 11], max_stamps=4, options=[10, 32, 8, 11]))  # should return False

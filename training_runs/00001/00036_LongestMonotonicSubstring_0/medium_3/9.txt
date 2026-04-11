@@ -1,0 +1,5 @@
+def sol():
+    x = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 12, 14, 16]
+    return x
+
+print(sat(sol()))  # Should print: True

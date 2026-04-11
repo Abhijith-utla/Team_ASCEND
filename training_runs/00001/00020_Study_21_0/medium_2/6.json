@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:48:27.537033+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: list index out of range|parse=fence=none,preamble=0,found_sol=1,candidates=10|checked=10/10|preview=def sol(): li = [3, 1, 4, 1, 5, 9, 2, 6] assert sat(li) return li # You can run this code in a Python environment to ...",
+  "difficulty": "medium",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

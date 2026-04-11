@@ -1,0 +1,13 @@
+Here is the correct solution to the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+```
+
+This solution uses Python's set data type to remove duplicates from each string in the list. The length of this set is then compared to the length of the first string in the list to ensure that all strings in the list have the same number of unique characters. If the lengths do not match, the function returns False. Otherwise, it returns True. The function is named `sat` because it's a specific condition for validating whether or not to give an answer based on the given conditions.

@@ -1,0 +1,26 @@
+The function `sat(s: str)` checks if a given string `s` can be a base-8 string representation of a number with a maximum length of 3 digits, and more than 8 occurrences of a particular substring. 
+
+Here is the implementation of the function `sol()`:
+
+```python
+def sol():
+    import math
+    import decimal
+
+    base = 8
+    power = 2888
+    max_length = 3
+    substring = '8'
+
+    decimal.getcontext().prec = power + max_length
+
+    num = decimal.Decimal(10) ** decimal.Decimal(power / base)
+    result = round(num ** (1 / base))
+
+    result_str = str(result)
+    count = result_str.count(substring)
+
+    return count > 8 and len(result_str) == max_length
+```
+
+This function first calculates the number represented by the base-8 representation of a number raised to the power of 2888. It then rounds this number to the nearest integer. It converts the rounded number to a

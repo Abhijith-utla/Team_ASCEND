@@ -1,0 +1,10 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(s not in ls for s in set(ls))
+```
+
+The function `sat` checks if all elements in the list are distinct. It does this by converting the list to a set, which removes any duplicate elements because sets only allow unique elements. It then checks if each distinct element is in the original list, which would result in a ValueError if there were any duplicates. The `all` function returns `True` if all elements in the list are True, so this check will return `True` only if all elements in the list are distinct.

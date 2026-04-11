@@ -1,0 +1,12 @@
+The given Python function `sat` is designed to check if a list of integers is a set of "symmetric arrays" where each index `i` has the sum of all elements at indices greater than `i`.
+
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+```
+
+In this function, we iterate over the list `li` using a for loop, where `i` is the index of the current element. We then generate a list of sums of all elements in the list `li` starting from the current index `i+1` up to the end of the list. If all these sums are equal to the current element at index `i`, we return `True`; otherwise, we return `False`. If all these checks are passed, the function will return `True`, indicating that the list is a set of symmetric arrays.

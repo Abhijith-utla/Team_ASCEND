@@ -1,0 +1,16 @@
+def sat(li: List[int]):
+    return all(abs(i - j) >= 10 for i in li for j in li if i != j)
+
+def sol():
+    li = [10, 20, 30, 40, 50]
+    return sat(li)
+
+# assertions for testing purposes
+assert sol() == False
+assert sol([20, 30, 40, 50, 60]) == False
+assert sol([11, 21, 31, 41, 51]) == False
+assert sol([10, 11, 20, 21, 30]) == False
+assert sol([1, 2, 3, 4, 5]) == True
+
+if __name__ == "__main__":
+    assert sat(sol())

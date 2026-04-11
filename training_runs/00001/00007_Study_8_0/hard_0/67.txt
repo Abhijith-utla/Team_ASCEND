@@ -1,0 +1,10 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+This function `sat` takes a list of strings `ls` as input. It returns `True` if the string `ls[1234]` is in `ls[1235]` and is not equal to `ls[1235]`. Otherwise, it returns `False`.

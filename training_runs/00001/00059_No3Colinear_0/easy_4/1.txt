@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# This is just a placeholder. The actual function body will be filled in later.

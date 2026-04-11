@@ -1,0 +1,5 @@
+def sol():
+    l = [i for i in range(1000) if sat(l=[i])]
+    return l
+
+print(sol())

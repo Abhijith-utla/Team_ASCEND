@@ -1,0 +1,16 @@
+Sure, here is a Python solution that uses the provided function to create a solution.
+
+```python
+def sol():
+    for i in range(1000000000):  # because 8 ** 1818 is a very large number
+        if not sat(str(i)):
+            return str(i)
+    return None
+
+def sat(s: str):
+    return s in str(8 ** 1818) and s == s[::-1] and len(s) > 11
+```
+
+The `sol` function iterates over a range of numbers from 0 to 999999999 and checks each one to see if it satisfies the conditions provided by the `sat` function. If it doesn't find a number that does, it returns the current number.
+
+The `sat` function checks if the string `s` is a substring of the string representation of 8 ** 1818, if it's a reversal, and if it's more than 11 characters long.

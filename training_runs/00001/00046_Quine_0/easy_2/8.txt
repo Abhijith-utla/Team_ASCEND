@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# The following line will assert that `sol` returns an empty dictionary.
+assert sat(sol())

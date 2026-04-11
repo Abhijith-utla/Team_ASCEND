@@ -1,0 +1,12 @@
+Your solution seems to be incomplete and there is a missing return statement. I will add it for completeness.
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list(
+        "The quick brown fox jumps over the lazy dog".replace(" ", ""))
+
+def sol():
+    return sat([ord(c) for c in "The quick brown fox jumps over the lazy dog"])
+```
+
+This solution works by using the `ord()` function to get the ASCII value of each character in the string, and then using that value to get the corresponding character using the `chr()` function. The `sat()` function checks if the two lists are equal, and the `sol()` function calls `sat()` to get the answer.

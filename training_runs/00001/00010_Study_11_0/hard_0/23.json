@@ -1,0 +1,17 @@
+{
+  "attempt_num": 23,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:10:32.333363+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=def sol(): return len(max(min(sat(str(int(input())))))) def sat(ls: List[str]): return min(ls) == max(ls) == str(len(...",
+  "difficulty": "hard",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

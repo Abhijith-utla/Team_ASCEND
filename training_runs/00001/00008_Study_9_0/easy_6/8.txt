@@ -1,0 +1,17 @@
+The solution to the problem is as follows:
+
+```python
+from typing import List
+
+def sol(li: List[str]):
+    return all(len(i) <= 5 and i.isalpha() for i in li)
+
+def sat(li: List[str]):
+    return sol(li)
+
+# Test case
+print(sat(["abcde", "abc", "xyz"]))  # Expected output: True
+print(sat(["abcdef", "abc", "xyz"]))  # Expected output: False
+```
+
+In the above code, the `sol` function checks if all the elements in the list satisfy two conditions: the length of the string is less than or equal to 5 and it is an alphabet. The `sat` function uses this `sol` function to check if the input list satisfies the given conditions.

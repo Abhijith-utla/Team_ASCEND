@@ -1,0 +1,17 @@
+{
+  "attempt_num": 9,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T15:14:30.654036+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here's the correct Python function for the problem: ```python from typing import List def sol(): return [] ``` This f...",
+  "difficulty": "easy",
+  "problem_id": "00064_PostageStamp_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

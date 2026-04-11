@@ -1,0 +1,4 @@
+def sol():
+    return "b" * 10
+
+assert sat(sol())

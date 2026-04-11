@@ -1,0 +1,12 @@
+The problem is to construct a single answer value that satisfies the given condition. The single answer value should be a number less than 100 that is divisible by 5.
+
+Here is a Python function that meets these requirements:
+
+```python
+def sol():
+    for i in range(1, 100):
+        if i % 5 == 0:
+            return i
+```
+
+This function starts from 1 and goes up to 99. It checks if the current number is divisible by 5 and returns it if it is. If none of the numbers are divisible by 5, the function returns None.

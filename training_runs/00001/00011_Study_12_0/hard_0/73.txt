@@ -1,0 +1,21 @@
+The given Python function is correct. It checks if all pairs of elements in the list are equal to 9. The function takes a list of integers as input and returns a boolean value indicating whether all pairs of elements in the list are equal to 9. If all pairs are equal to 9 and the list has a length of 1000, the function returns True. If either condition is not met, the function returns False.
+
+Here is the Python code for the function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 9 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This function can be used in the following way:
+
+```python
+assert sat([4] + [4]*987)
+assert not sat([4] + [5]*987)
+assert sat([1]*1000)
+assert not sat([1]*999)
+```
+
+The first two assert statements check if the function works correctly with a list of 1000 integers all equal

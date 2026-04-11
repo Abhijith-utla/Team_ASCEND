@@ -1,0 +1,5 @@
+def sol():
+    for _ in range(3):
+        assert 10 % 5 == 0
+        n = 10 - 1
+    return n > 0

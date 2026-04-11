@@ -1,0 +1,12 @@
+def sol():
+    return []
+
+# Testing the function
+assert sat([10, 32, 8]) == True
+assert sat([10, 32]) == False
+assert sat([10]) == False
+assert sat([]) == True
+assert sat([10, 32, 8, 8, 8]) == False
+
+# Check if the function returns an empty list
+assert sol() == []

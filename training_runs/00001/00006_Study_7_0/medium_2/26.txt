@@ -1,0 +1,8 @@
+Here is the correct Python code for the function `sol`:
+
+```python
+def sol():
+    return '8' * 8 + '8' * 8
+```
+
+This function constructs a string of 8 '8's, which can be repeated any number of times. The checker will pass if the string contains 8 '8's of any length. The length of the string is determined by the count of '8's in the string.

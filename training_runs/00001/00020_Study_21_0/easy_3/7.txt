@@ -1,0 +1,5 @@
+def sol():
+    return [1, 2, 3]
+
+# The function 'sat' checks if all elements in the list are different from the next one and the list contains exactly 3 unique elements.
+# The list [1, 2, 3] satisfies all these conditions.

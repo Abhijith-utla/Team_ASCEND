@@ -1,0 +1,5 @@
+def sol():
+    return 'd'
+
+def sat(answer):
+    return all(a == b for a, b in zip(answer, 'd'))

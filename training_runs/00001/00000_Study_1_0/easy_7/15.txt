@@ -1,0 +1,9 @@
+Sure, here is the code for the function `sol`.
+
+```python
+def sol():
+    s = 'oo' * 1000 + 'o'
+    return s
+```
+
+This function constructs a string of length 1000 with 'oo' in the middle, followed by 'o'. Then it returns this string. The checker will test this function with the string 'oo' repeated 1000 times, followed by 'o', and it should return the correct answer.

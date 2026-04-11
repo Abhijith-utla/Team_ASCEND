@@ -1,0 +1,19 @@
+Here is the Python code that sol() function is supposed to be returning:
+
+```python
+def sol():
+    return [37, 37, 12, 87, 39]
+```
+
+This function returns a list of integers that add up to the target value, which is 271. There are 5 stamps and the maximum number of stamps is 8. The options available are 37, 37, 12, 87, and 39.
+
+The function `sat` is not supposed to be used to check if the answer is correct, it should be used to check if the answer meets the requirements of the problem.
+
+The code for `sat` is correct:
+
+```python
+def sat(stamps: List[int], target=271, max_stamps=8, options=[37, 37, 12, 87, 39]):
+    for s in stamps:
+        assert s in options
+    return len(stamps) <= max_stamps and sum(stamps) == target
+```

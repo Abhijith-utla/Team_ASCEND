@@ -1,0 +1,17 @@
+Here is the solution to the problem.
+
+```python
+from typing import List
+
+def sol():
+    li = [4]
+    for _ in range(989):  # fill the list with 4s and 999 others
+        li.extend([4, 999])
+    return li
+
+print(sol())
+```
+
+The `sol` function creates a list `li` with 1000 elements. The first 4 elements are 4s and the next 989 elements are 4 and 999. The function returns the list `li`.
+
+The checker uses the `sat` function to check if the result of `sol` is a valid answer. It verifies that the sum of each pair of elements in the list is 9, and also that the length of the list is 1000.

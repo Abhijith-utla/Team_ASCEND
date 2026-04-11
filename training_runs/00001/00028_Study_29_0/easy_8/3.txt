@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Correct pattern:
+def sol():
+    return [i for i in range(996) if abs(i * i - 498 * 498) >= 10]
+
+# Incorrect pattern:
+def sol():
+    return [i for i in range(996) if abs(i * i - 498 * 497) >= 10]

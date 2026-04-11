@@ -1,0 +1,20 @@
+Here is the Python code for the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+
+def sol():
+    return sat(['abcd', 'efgh', 'ijkl'])
+```
+
+In this code, `sat` function checks if all strings in the list have the same length. If all strings have the same length, it returns `True`, otherwise `False`.
+
+The `sol` function calls `sat` function with a list of strings.
+
+The function `sat` is a solution to the problem.

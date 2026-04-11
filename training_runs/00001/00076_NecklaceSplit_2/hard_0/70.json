@@ -1,0 +1,16 @@
+{
+  "attempt_num": 70,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T17:36:51.734304+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=53|checked=53/53|preview=def sol(): return {} # Test case: valid case assert sat(0) # Test case: invalid case assert not sat(1) # Test case: i...",
+  "difficulty": "hard",
+  "problem_id": "00076_NecklaceSplit_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

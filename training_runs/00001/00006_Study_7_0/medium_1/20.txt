@@ -1,0 +1,13 @@
+The provided function `sat(s: str)` is an incorrect one as it is counting the number of occurrences of a string `s` in the base-8 representation of an integer that is a power of 2888 (which is 8**2888), which is not correct. The correct function should be:
+
+```python
+def sol():
+    count = 0
+    for i in range(2888):
+        count += str(8 ** i).count('1')
+    return count > 8 and len('{0:b}'.format(count)) == 3
+```
+
+This function works by first converting each power of 8 from 0 to 2887 to a binary number, counting the number of ones in each binary number, and then adding these counts. The final result is checked to be greater than 8 and has exactly 3 digits.
+
+Note: This function will not work as expected for large integers because of the limitations in Python's integer representation and the maximum length of the binary representation. It may return incorrect results for very large integers or very long binary strings.

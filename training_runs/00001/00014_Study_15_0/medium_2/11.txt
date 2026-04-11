@@ -1,0 +1,17 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for x in range(20):
+        if any(y == 2 ** i for i, y in enumerate(li[:x])):
+            return False
+    return True
+```
+
+This function checks if any number in the list `li` satisfies the equation `x + y == 2 ** x` for all `x` from 0 to 19. If any such `x` is found, the function returns `False`. Otherwise, it returns `True`.
+
+The use of `enumerate` in the loop is used to get the index `i` and the value `y` in the list `li`.
+
+The `any` function is used to return `True` as soon as a True condition is found, and `False` otherwise. This is the equivalent of the `all` function in the provided code.

@@ -1,0 +1,6 @@
+def sol():
+    return 1000
+
+# The solution is 1000 because 1001 - 1000 = 1
+# so the length of str(i + 1000) is equal to the length of str(i + 1001)
+# hence, 1000 + 1000 = 2000, which is not 1001, so the function returns 1000.

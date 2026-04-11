@@ -1,0 +1,10 @@
+def sol():
+    n = 100
+    while n > 0:
+        if sat(n):
+            return n
+        n -= 1
+    return None
+
+# This assert statement will fail if sat(n) returns False for any value of n, but will not affect the output of sol()
+assert sat(sol())

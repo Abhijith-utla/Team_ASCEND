@@ -1,0 +1,8 @@
+def sol():
+    answer = []
+    for i in range(13):
+        answer.append(i)
+    return answer
+
+# Test case
+assert sat(sol())

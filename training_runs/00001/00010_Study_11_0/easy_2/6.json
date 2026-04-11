@@ -1,0 +1,17 @@
+{
+  "attempt_num": 6,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:05:14.124945+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: 'in <string>' requires string as left operand, not int|parse=fence=python,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Here's the correct pattern for the `sol` function: ```python def sol(): return \"Hello, World!\" ``` In this function, ...",
+  "difficulty": "easy",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

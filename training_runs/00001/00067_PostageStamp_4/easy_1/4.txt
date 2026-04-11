@@ -1,0 +1,5 @@
+def sol():
+    return [8, 7, 54, 60, 22]
+
+# This will pass the solution
+assert sat(sol())

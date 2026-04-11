@@ -1,0 +1,43 @@
+To generate three different variants of the sat function, we will change the way we construct and validate the puzzles. Our first variant will allow for a 3x3 number grid, while the second and third variants will allow for a 4x4 number grid.
+
+Variation 1: 3x3 number grid
+```python
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+
+    full = set('123456789')
+    for i in range(9):
+        assert {x[i] for i in range(9 * i, 9 * i + 9)} == full, "invalid row"
+        assert {x[i] for i in range(i, i + 81, 9)} == full, "invalid column"
+        assert {x[9 * a + b + i + 26 * (i % 3)] for a in range(3) for b in range(3)} == full, "invalid square"
+
+    return True
+```
+
+Variation 2: 4x4 number grid
+```python
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+
+    full = set('123456789')
+    for i in range(16):
+        assert {x[i] for i in range(16 * i, 16 * i + 16)} == full, "invalid row"
+        assert {x[i] for i in range(i, i + 16, 16)} == full, "invalid column"
+        assert {x[16 * a + b + i + 26 * (i % 4)] for a in range(4) for b in range(4)} == full, "invalid square"
+
+    return True
+```
+
+Variation 3: 3x3 number grid with different squares
+```python
+def sat(x: str, puz="__2__1_3__9_7_____5______8_6___5_______12____2____3_68________9_1_8__4____7____25"):
+    assert all(c == "_" or c == s for (c, s) in zip(puz, x))
+
+    full = set('123456789')
+    for i in range(9):
+        assert {x[i] for i in range(9 * i, 9 * i + 9)} == full, "invalid row"
+        assert {x[i] for i in range(i, i + 81, 9)} == full, "invalid column"
+        assert {x[9 * a + b + i + 26 * ((i // 3) % 3)] for a in range(3) for b in range(3)} == full, "invalid square"
+
+    return True
+```

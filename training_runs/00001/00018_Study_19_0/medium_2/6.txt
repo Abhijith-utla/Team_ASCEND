@@ -1,0 +1,4 @@
+def sol():
+    return [34]
+
+print(sat(sol()))  # assert sat(sol())

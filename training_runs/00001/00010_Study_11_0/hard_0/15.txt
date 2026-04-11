@@ -1,0 +1,8 @@
+The Python function `sat` is already defined by the user and it checks whether a list of strings is equal to the length of the list, and the minimum and maximum elements in the list are the same. It does this by converting the list to a string and comparing the string with its length. Here is the Python code for `sol`:
+
+```python
+def sol():
+    return len(max(input().split())) == len(min(input().split())) == len(input())
+```
+
+This function will read a list of strings from the user and return whether the list is balanced. The `input()` function is used to read the input from the user. The `split()` function is used to split the input string into a list of strings, and the `max()` and `min()` functions are used to find the maximum and minimum elements in the list. The `len()` function is used to find the length of the list. The `==` operator is used to compare the lengths of the list with the length of the string, and the result is returned by the function.

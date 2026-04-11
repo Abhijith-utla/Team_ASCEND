@@ -1,0 +1,10 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li[i] == i for i in range(20)])
+```
+
+This function checks if every element in the list is equal to its index. If all elements satisfy this condition, the function returns True; otherwise, it returns False.

@@ -1,0 +1,7 @@
+def sol():
+    li = list(range(1000))
+    for i in range(1000):
+        li[i] = i
+    return li
+
+print(sol())

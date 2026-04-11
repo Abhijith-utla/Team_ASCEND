@@ -1,0 +1,4 @@
+def sol():
+    return len(str(len(str(10**72)) + 1000)) > len(str(len(str(10**73)) + 1001))
+
+print(sol())

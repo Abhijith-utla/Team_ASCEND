@@ -1,0 +1,12 @@
+def sol():
+    return {}
+
+print(sat([0, 1]))  # This should return True
+print(sat([0, 0, 1]))  # This should return False
+print(sat([0, 0, 0]))  # This should return True
+print(sat([0, 1, 1]))  # This should return False
+print(sat([0, 0, 1, 1]))  # This should return False
+print(sat([0, 1, 0, 1]))  # This should return True
+print(sat([0, 0, 0, 0]))  # This should return True
+print(sat([0, 1, 1, 1]))  # This should return True
+print(sat([0, 0, 1, 1, 1]))  # This should return False

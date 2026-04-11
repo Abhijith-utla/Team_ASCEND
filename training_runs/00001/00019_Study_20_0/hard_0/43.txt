@@ -1,0 +1,15 @@
+Here's the correct pattern for the `sol` function:
+
+```python
+def sol():
+    return <answer>
+```
+
+In this function, the `<answer>` part should be replaced with the appropriate Python code or expression that solves the problem. For example, if you are asked to return a single answer, you might do something like:
+
+```python
+def sol():
+    return 42
+```
+
+This function does not take any arguments, and it should return a single answer.

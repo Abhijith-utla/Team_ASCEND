@@ -1,0 +1,7 @@
+def sol():
+    return 'dah!'
+
+# The final checker will run: assert sat(sol())
+# And it passes if the answer is 'dah!'
+# If it fails, the final checker will print an error message.
+!sat(sol())

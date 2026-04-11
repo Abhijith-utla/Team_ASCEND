@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# This will break the assertion in the checker
+assert sat(sol())

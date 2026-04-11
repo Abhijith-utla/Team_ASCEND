@@ -1,0 +1,14 @@
+def sol():
+    return [56]
+
+# You can check the solution by running: assert sat(sol())
+
+# Test cases:
+assert sat(sol())
+assert not sat([25] + [22] + [8] + [84] + [60] + [56])
+assert not sat([56] * 3)
+assert not sat([25, 25, 25, 25] + [56])
+assert not sat([])
+assert not sat([1])
+assert not sat([25] * 3 + [56])
+assert not sat([25, 25, 25, 25] + [1] + [22] + [8] + [84] + [60] + [56])

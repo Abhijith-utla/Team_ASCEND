@@ -1,0 +1,10 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return {i + j for i in range(11) for j in range(11)} == {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}
+```
+
+The code above defines a function `sol` that calculates the sum of all numbers from 0 to 10 and from 0 to 10 and stores these sums in a set. The set `{0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}` is the set of expected sums. The function returns whether or not these sums match the expected ones.
+
+The code inside the function uses a double comprehension to generate all possible combinations of adding numbers from 0 to 10. This is done by using two nested loops, one for `i` and one for `j`. The outer loop iterates from 0 to 10, and the inner loop also iter

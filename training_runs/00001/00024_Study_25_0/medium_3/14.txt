@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(sorted(input('Please enter a string: ')))
+
+assert sat(sol())

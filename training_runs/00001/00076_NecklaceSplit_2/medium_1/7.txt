@@ -1,0 +1,4 @@
+def sol():
+    return 1
+
+# The provided function is correct. The only missing piece is the definition of sol.

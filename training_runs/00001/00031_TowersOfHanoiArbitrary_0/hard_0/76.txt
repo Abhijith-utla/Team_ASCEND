@@ -1,0 +1,19 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    moves = [[0, 7], [4, 5, 6], [1, 2, 3, 8]]
+    source = [[0, 7], [4, 5, 6], [1, 2, 3, 8]]
+    target = [[0, 1, 2, 3, 8], [4, 5], [6, 7]]
+
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move
+        state[j].append(state[i].pop())
+        assert sorted(state[j]) == target[j]
+
+    return state == target
+```
+
+This solution first defines the moves, source and target state. It then creates a copy of the source state and sorts the target state. It iterates over the moves, pops the last element from the source state and appends it to the target state, and checks if the state is equal to the target. If the state is equal to the target, it means that the moves are correct

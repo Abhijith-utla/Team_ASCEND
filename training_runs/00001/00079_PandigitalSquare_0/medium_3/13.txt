@@ -1,0 +1,27 @@
+def sol():
+    return 1
+
+# Correct answer
+assert sat(1)
+assert not sat(2)
+assert not sat(987)
+assert sat(111)
+assert not sat(100)
+assert not sat(10235)
+assert sat(371)
+assert not sat(456)
+assert not sat(7890)
+assert sat(12331)
+assert not sat(2321)
+assert not sat(5435)
+assert sat(65535)
+assert not sat(89999)
+assert sat(99999)
+assert not sat(999999)
+assert sat(9999999)
+assert not sat(123456789)
+assert sat(123456798)
+assert not sat(111111111)
+assert sat(101010101)
+assert not sat(112233445)
+assert sat(123

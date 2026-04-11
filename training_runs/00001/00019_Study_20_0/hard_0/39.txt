@@ -1,0 +1,4 @@
+def sol():
+    return {i: j for i, j in zip([0] + [1 if i == 0 else 3 * i - 1 for i in range(128)], [128] + [i - 1 for i in range(128) if i != 0]) if i == 0}
+
+assert sat(sol())

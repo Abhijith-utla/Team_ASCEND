@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The function sol() is empty because the problem is solved by creating an empty list as the output.
+# This function will not make any assert statements to satisfy the problem's condition and will return an empty list.

@@ -1,0 +1,8 @@
+Here is the solution:
+
+```python
+def sol():
+    return 'x'*100 + 'o'*101 + 'x'*98
+```
+
+The function `sol` concatenates a string of 'x', 'o', and 'x' such that the total number of 'x's and 'o's is 100, 101, and 98 respectively. The count operation in Python is used to count the occurrences of a specific character in a string.

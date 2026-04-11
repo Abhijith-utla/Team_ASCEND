@@ -1,0 +1,10 @@
+You can modify the given Python function as follows to meet the criteria.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 2 for i, j in zip(li, li[1:])) and len(li) == 1000
+```
+
+This function checks if all elements in the list li are adjacent and their sum is 2. The zip function is used to iterate over two lists simultaneously, and the all function is used to check if all elements in the zip object are True. The len function is used to check if the length of the list is 1000.

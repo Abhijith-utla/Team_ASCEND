@@ -1,0 +1,31 @@
+def sol():
+    return []
+
+# Test case 1
+coords = [[0, 0], [1, 1], [2, 2]]
+side = 3
+num_points = 3
+assert sat(coords, side, num_points)
+
+# Test case 2
+coords = [[0, 0], [1, 1], [1, 2]]
+side = 3
+num_points = 3
+assert not sat(coords, side, num_points)
+
+# Test case 3
+coords = [[0, 0], [1, 1], [0.5, 0.5]]
+side = 1
+num_points = 3
+assert sat(coords, side, num_points)
+
+# Test case 4
+coords = [[0, 0], [1, 1], [0, 1]]
+side = 2
+num_points = 3
+assert not sat(coords, side, num_points)
+
+# Test case 5
+coords = [[0, 0], [1, 1], [0, 2]]
+side = 3
+num

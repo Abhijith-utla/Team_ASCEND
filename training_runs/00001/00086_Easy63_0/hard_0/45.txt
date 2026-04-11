@@ -1,0 +1,5 @@
+def sol():
+    return "81-*8+"
+
+# Testing the solution
+print(sat(sol()))

@@ -1,0 +1,6 @@
+def sol():
+    return ""
+
+# Checker
+print("Your solution is correct if it prints 'True'.")
+assert sat(sol())

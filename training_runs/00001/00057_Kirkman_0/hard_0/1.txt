@@ -1,0 +1,13 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(daygroups: List[List[List[int]]]):
+    assert len(daygroups) == 7
+    assert all(len(groups) == 5 and {i for g in groups for i in g} == set(range(15)) for groups in daygroups)
+    assert all(len(g) == 3 for groups in daygroups for g in groups)
+    return len({(i, j) for groups in daygroups for g in groups for i in g for j in g}) == 15 * 15
+```
+
+This function checks if the given list of lists of lists (daygroups) satisfies the conditions given in the problem. The function first checks if the length of the daygroups is 7. Then, for each group in the daygroups, it checks if the length of the group is 5 and if all the elements in the group are in the set {1, 2, ..., 14}. After that, it checks if the length of each group is 3. Finally, it checks if the number of unique pairs (i,

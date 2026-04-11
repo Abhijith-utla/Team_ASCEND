@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+def sol(x: List[int], length=1, s="xwV"):
+    return [x[i] for i in range(length) if s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0]

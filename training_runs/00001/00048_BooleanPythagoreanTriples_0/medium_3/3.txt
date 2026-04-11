@@ -1,0 +1,8 @@
+def sol():
+    return {
+        "n": 0,
+        "m": 0,
+        "p": 0
+    }
+
+assert sat(sol()["n"], sol()["m"], sol()["p"])

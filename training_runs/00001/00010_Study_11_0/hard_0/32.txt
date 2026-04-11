@@ -1,0 +1,5 @@
+```python
+def sol():
+    ls = [str(i) for i in range(10)]  # Replace 0 to 9 to use the correct range.
+    return min(ls) == max(ls) == str(len(ls))
+```

@@ -1,0 +1,6 @@
+def sol():
+    li = [0]*1000
+    li[0] = 5
+    return li
+
+assert sat(sol())

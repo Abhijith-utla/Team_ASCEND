@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# This function should return a list of sorted integers, it seems like the problem statement is not clear.
+# Therefore, I am assuming that we want to sort the list of random numbers
+
+import random
+
+def sol():
+    return random.sample(range(61), 61)

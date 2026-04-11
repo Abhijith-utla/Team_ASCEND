@@ -1,0 +1,8 @@
+Here is a correct Python solution:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("Python is fun".replace(" ", ""))
+```
+
+This function takes a list of integers as an input and returns a boolean value. The boolean value is True if the list of integers corresponds to the string "Python is fun" without any space. The function uses a list comprehension to convert each integer into its corresponding ASCII character and compares these characters to the characters in the string. If they match, the function returns True; otherwise, it returns False.

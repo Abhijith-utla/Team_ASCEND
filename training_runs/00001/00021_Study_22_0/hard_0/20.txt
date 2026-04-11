@@ -1,0 +1,5 @@
+def sol():
+    return "".join(s[::2] for s in [chr(i) for i in range(65, 91)] + [chr(i) for i in range(97, 123)])
+
+# test the solution
+assert sat(sol())

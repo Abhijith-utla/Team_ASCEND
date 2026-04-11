@@ -1,0 +1,20 @@
+Here are three simpler Python functions that test the same core concept using a different approach:
+
+VARIANT1:
+```python
+def sat(quine):
+    exec(quine)
+    return True
+```
+
+VARIANT2:
+```python
+def sat(quine):
+    return eval(quine) == quine
+```
+
+VARIANT3:
+```python
+def sat(quine):
+    return str(quine) == quine
+```

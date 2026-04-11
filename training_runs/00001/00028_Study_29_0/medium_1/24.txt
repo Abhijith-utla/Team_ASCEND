@@ -1,0 +1,13 @@
+Here is the solution:
+
+```python
+def sol():
+    return [i for i in range(1000) for j in range(i + 1, 1000) if abs(i*i - j*j) >= 10]
+```
+This function returns a list of numbers that satisfy the condition in the problem statement. 
+
+The condition `abs(i * i - j * j) >= 10` means that the square of `i` and square of `j` should be greater than or equal to 10. 
+
+The `all` function is used to check if all elements in the list satisfy the condition. If all elements in the list satisfy the condition, the `all` function returns `True`, otherwise it returns `False`. 
+
+The list comprehension `[i for i in range(1000) for j in range(i + 1, 1000) if abs(i*i - j*j) >= 10]` is used to create a list of all numbers `i` in the range from 0 to 999 that satisfy the condition.

@@ -1,0 +1,2 @@
+def sol():
+    return float(input()) + len(input()) == 4.5

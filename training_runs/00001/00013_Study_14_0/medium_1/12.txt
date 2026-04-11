@@ -1,0 +1,10 @@
+Here is the correct Python code for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([i < sum(li[:i]) for i in range(20)])
+```
+
+This function checks if the given list of integers satisfies the condition that for every index i in the list, the sum of all elements before index i is less than the element at index i. The sum function is used to get the sum of the elements before index i and the all function is used to check if the condition is satisfied for all indices.

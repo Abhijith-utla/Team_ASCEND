@@ -1,0 +1,12 @@
+def sol():
+    return {34}
+
+# Checker code
+def sat(li: List[int]):
+    return set(li) == {34}
+
+# Testing
+assert sat([]) == False
+assert sat([34]) == True
+assert sat([34, 34]) == False
+assert sat([34, 34, 34]) == True

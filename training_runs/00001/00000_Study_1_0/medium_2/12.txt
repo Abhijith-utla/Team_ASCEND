@@ -1,0 +1,17 @@
+The correct pattern for the `sol` function is as follows:
+
+```python
+def sol():
+    return 'oooooooooo'
+```
+
+This function will always return the string 'oooooooooo'. This is because 'oo' appears 1000 times in the string, so the string will always end with 'oooooooooo'.
+
+The incorrect pattern is as follows:
+
+```python
+def sol(x):
+    ...
+```
+
+The incorrect pattern doesn't have any code inside the `sol` function. It only declares the function without any parameters. However, the function does not do anything with the input `x`.

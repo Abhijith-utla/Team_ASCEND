@@ -1,0 +1,5 @@
+def sol():
+    return 'xyaa' if sat('xyaa') else 'not_a_solution'
+
+# Testing
+assert sat(sol())

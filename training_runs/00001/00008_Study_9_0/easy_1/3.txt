@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return sum([1 for i in li if ord(i) % 3 == 0]) == 0
+```
+
+Explanation:
+This function `sat` checks if the sum of the ordinals of all characters in the list `li` is divisible by 3. The `ord` function returns the Unicode code point of a character, and `%` is the modulus operator. The `sum` function adds up the elements in the list. If the sum is divisible by 3, it returns 0, otherwise it returns 1.

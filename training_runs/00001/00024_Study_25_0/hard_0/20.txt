@@ -1,0 +1,2 @@
+def sol():
+    return ''.join(sorted(s)) == ''.join(sorted('Permute me true')) and s == s[::-1]

@@ -1,0 +1,8 @@
+Here is the correct Python code for the problem:
+
+```python
+def sol():
+    return [[1, 2], [2, 3]]
+```
+
+This function returns a list of lists where each inner list is a pair of indices [i, j] such that i != j.

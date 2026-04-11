@@ -1,0 +1,16 @@
+{
+  "attempt_num": 11,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unindent does not match any outer indentation level",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:28:02.155972+00:00",
+  "diagnostic": "reason=ast_syntax_error:unindent does not match any outer indentation level|parse=fence=python,preamble=1,found_sol=1,candidates=10|checked=10/10|preview=Here is a Python code that uses a recursive approach to find a string in a large number. The string is searched for a...",
+  "difficulty": "medium",
+  "problem_id": "00006_Study_7_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

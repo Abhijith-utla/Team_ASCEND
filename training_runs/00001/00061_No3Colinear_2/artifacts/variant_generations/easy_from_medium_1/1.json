@@ -1,0 +1,13 @@
+{
+  "attempt_num": 1,
+  "created_at": "2026-04-11T14:39:12.380641+00:00",
+  "parsed_variant_count": 3,
+  "parsed_variant_nums": [
+    1,
+    2,
+    3
+  ],
+  "problem_id": "00061_No3Colinear_2",
+  "source_variant_num": 1,
+  "stage": "easy_from_medium"
+}

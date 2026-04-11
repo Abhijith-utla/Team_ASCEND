@@ -1,0 +1,16 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T08:37:46.156322+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=```python from typing import List def sol(): return {\"answer\": 42} ``` This is an incorrect pattern because the list ...",
+  "difficulty": "medium",
+  "problem_id": "00019_Study_20_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

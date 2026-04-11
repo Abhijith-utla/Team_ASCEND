@@ -1,0 +1,6 @@
+def sol(side=0, num_points=0):
+    coords = []
+    return coords
+
+assert sat(sol(side=10, num_points=3))
+assert not sat(sol(side=10, num_points=4))

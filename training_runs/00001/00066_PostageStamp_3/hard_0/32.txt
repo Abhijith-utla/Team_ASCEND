@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The solution to the problem doesn't have any specific inputs, 
+# so we can just return an empty list. 
+# This can be replaced with the actual implementation of the solution to the problem.

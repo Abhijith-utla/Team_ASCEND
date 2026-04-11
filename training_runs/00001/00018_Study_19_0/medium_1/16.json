@@ -1,0 +1,16 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T08:29:07.841316+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=none,preamble=1,found_sol=0,candidates=0|preview=The problem statement is not clear, but assuming that you are looking for an answer that appears to be correct given ...",
+  "difficulty": "medium",
+  "problem_id": "00018_Study_19_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

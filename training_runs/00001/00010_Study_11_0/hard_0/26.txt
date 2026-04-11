@@ -1,0 +1,4 @@
+```python
+def sol(ls: List[str]) -> str:
+    return min(ls) == max(ls) == str(len(ls))
+```

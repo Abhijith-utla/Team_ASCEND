@@ -1,0 +1,6 @@
+def sol():
+    return 'Hello, World!'
+
+print(sol())
+
+# Output: Hello, World!

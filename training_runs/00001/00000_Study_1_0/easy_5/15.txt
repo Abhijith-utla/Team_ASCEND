@@ -1,0 +1,8 @@
+Sure, here is the correct Python solution:
+
+```python
+def sat(s: str):
+    return 'oo' in s and 'o' not in s and s.count('o') == 1000
+```
+
+This function `sat` checks if the string `s` contains the sequence `oo` and the sequence `o` appears exactly once. The count of `o` in the string is exactly 1000. If all these conditions are met, the function returns `True`, otherwise `False`.

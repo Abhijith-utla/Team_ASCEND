@@ -1,0 +1,8 @@
+Here is the correct pattern for your solution:
+
+```python
+def sol():
+    return all([li.count(i) == i for i in range(10)])
+```
+
+This function will return True if all elements in the list 'li' are found in the range from 0 to 9 exactly once. If any element is not found in the range, the function will return False.

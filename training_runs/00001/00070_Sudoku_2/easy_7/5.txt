@@ -1,0 +1,5 @@
+def sol():
+    return ''
+
+# This is for the assertion, you can remove or adapt it as needed.
+assert sat(sol())

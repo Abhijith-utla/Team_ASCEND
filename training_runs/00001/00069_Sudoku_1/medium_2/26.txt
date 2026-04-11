@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(chr(i+65) for i in range(8))
+
+print(sol())

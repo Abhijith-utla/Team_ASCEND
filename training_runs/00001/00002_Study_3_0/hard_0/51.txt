@@ -1,0 +1,19 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    li = sorted(li)
+    for i in range(len(li)):
+        if li[i] != i:
+            return i
+    return len(li)
+
+def sat(li: List[int]):
+    return sol(li) == 999
+```
+
+The function `sol` sorts the input list and then finds the index at which the list is not sorted. If the list is already sorted, `sol` returns the length of the list, which is 999.
+
+The function `sat` checks if the output of `sol` is 999. If `sol` returns a value different from 999, it means that the list is not sorted correctly, and `sat` returns False. Otherwise, `sat` returns True.

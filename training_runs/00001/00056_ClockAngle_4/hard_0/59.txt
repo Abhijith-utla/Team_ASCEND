@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# You may change the hands list to test the function with different values
+hands = [12, 0]
+assert sat(hands)

@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This code will not return anything because the condition in the if statement is False
+# which means the list will not be processed by the all function and will not be returned by the sol function.

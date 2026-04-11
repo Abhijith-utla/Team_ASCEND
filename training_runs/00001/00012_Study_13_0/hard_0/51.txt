@@ -1,0 +1,17 @@
+def sol():
+    return 3.1415
+
+# Testing the correct pattern
+assert sat(sol())
+
+# Testing the incorrect pattern
+assert not sat(sol() + 1)
+
+# Testing the incorrect pattern
+assert not sat(sol() - 1)
+
+# Testing the incorrect pattern
+assert not sat(sol() * 2)
+
+# Testing the incorrect pattern
+assert not sat(sol() / 2)

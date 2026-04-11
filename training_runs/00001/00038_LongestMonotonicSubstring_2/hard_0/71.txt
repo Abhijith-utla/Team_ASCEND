@@ -1,0 +1,8 @@
+def sol():
+    x = []
+    while len(x) < 737:
+        x.append(randint(0, 100))
+    return x
+
+# Test
+assert sat(sol())

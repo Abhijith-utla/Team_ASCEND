@@ -1,0 +1,5 @@
+def sol():
+    return {x[9 * a + b + i + 26 * (i % 3)] for a in range(3) for b in range(3)}
+
+# Testing
+assert sat(sol())

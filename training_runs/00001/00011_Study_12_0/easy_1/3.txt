@@ -1,0 +1,9 @@
+```python
+from typing import List
+
+def sol() -> int:
+    li = [0]*1000
+    return sum(li)
+
+assert sat(sol())
+```

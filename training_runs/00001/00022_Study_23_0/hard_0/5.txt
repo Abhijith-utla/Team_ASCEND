@@ -1,0 +1,5 @@
+def sol():
+    return tuple(list('dee') + list('doo') + list('dah!'))
+
+# Do not remove this line, it is used to validate the solution.
+assert sat(sol())

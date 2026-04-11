@@ -1,0 +1,15 @@
+```python
+def sol():
+    return [1]*20
+```
+
+In the function `sol`, we return a list of 20 elements with each element being 1. This is because the sum of all numbers from 1 to 20 is 1 + 2 + ... + 20 = 210 which is the same as the sum of the first 20 numbers. This is the correct answer for the given problem.
+
+Here is the function `sat` which checks if the sum of the first 20 numbers is equal to 210:
+
+```python
+def sat(li: List[int]):
+    return sum(li[:20]) == 210
+```
+
+This function `sat` takes a list of integers `li` as an argument and returns `True` if the sum of the first 20 numbers is equal to 210, and `False` otherwise.

@@ -1,0 +1,2 @@
+def sat(li: List[int]):
+    return sorted(li) == list(set("The five boxing wizards jump quickly".replace(" ", "")))

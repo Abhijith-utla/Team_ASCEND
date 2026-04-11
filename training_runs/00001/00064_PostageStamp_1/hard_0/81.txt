@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+assert not sat()
+assert not sat([])
+assert sat([37, 37, 12, 87, 39])
+assert not sat([37, 37, 12, 87])
+assert not sat([37, 37, 12, 87, 39, 39])
+assert not sat([37, 37, 12, 87, 39, 39, 39])
+
+# Test with different target
+assert not sat([37, 37, 12, 87, 39], 269, 8, [37, 37, 12, 87, 39])
+assert not sat([37, 37, 12, 87, 39], 271, 8, [37, 37, 12, 87, 39])
+assert sat([37, 37, 12, 87, 39

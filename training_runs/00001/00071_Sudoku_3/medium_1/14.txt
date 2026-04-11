@@ -1,0 +1,5 @@
+def sol():
+    return "_____42______7_____4______9__49___626_8__3___3_7__65_4_5_3__1__1____8_7__________"
+
+# Run the assertion to validate the answer.
+assert sat(sol())

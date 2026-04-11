@@ -1,0 +1,4 @@
+def sol():
+    return [123 * x % 1000 for x in range(1000)]
+
+print(sol())

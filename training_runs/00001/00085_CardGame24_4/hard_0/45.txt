@@ -1,0 +1,5 @@
+def sol():
+    return "12 * (5 / 2 + 3 * 7)"
+
+# Testing the solution
+assert sat(sol())

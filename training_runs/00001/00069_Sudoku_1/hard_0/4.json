@@ -1,0 +1,17 @@
+{
+  "attempt_num": 4,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:04:54.054097+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=4|checked=4/4|preview=def sol(): return [\"_\"] * 81 assert sat(sol())",
+  "difficulty": "hard",
+  "problem_id": "00069_Sudoku_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

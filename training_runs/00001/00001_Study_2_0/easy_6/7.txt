@@ -1,0 +1,8 @@
+Here is the Python code that meets all the requirements:
+
+```python
+def sat(s: str):
+    return s.count('yy') == 100 and s.count('yo') == 101 and s.count('y') == 98
+```
+
+This function takes a string `s` as input. It checks if the number of times 'yy' appears is 100, the number of times 'yo' appears is 101, and the number of times 'y' appears is 98. If all conditions are met, it returns `True`, otherwise it returns `False`.

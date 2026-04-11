@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# Testing the function
+assert sat([])
+assert not sat([[1, 1, 1]])
+assert not sat([[2, 2, 2]])
+assert sat([[1, 1, 1], [2, 2, 2], [3, 3, 3]])
+assert not sat([[1, 2, 1], [2, 3, 2]])
+assert sat([[1, 1, 2]])
+assert not sat([[2, 3, 4], [3, 4, 5]])
+assert sat([[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]])
+assert not sat([[1, 2, 1], [2, 3, 2], [3, 4, 3]])
+assert sat([[2, 3, 4]])
+assert not sat([[3, 4, 5], [4, 5, 6]])

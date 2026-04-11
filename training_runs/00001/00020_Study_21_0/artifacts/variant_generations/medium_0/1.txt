@@ -1,0 +1,28 @@
+Sure, here are three simpler variants of the original function:
+
+VARIANT1:
+
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3
+```
+
+In this variant, the range of the for loop has been reduced by 1 from 10 to 9, since it is testing the non-adjacent elements in the list.
+
+VARIANT2:
+
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(8)]) and len(set(li)) == 3
+```
+
+In this variant, the range of the for loop has been reduced by 2 from 10 to 8, since it is testing the non-adjacent elements in the list.
+
+VARIANT3:
+
+```python
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(7)]) and len(set(li)) == 3
+```
+
+In this variant, the range of the for loop has been reduced to 3 from 10, since it is testing the non-adjacent elements in the list.

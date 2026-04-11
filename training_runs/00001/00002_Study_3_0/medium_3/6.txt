@@ -1,0 +1,17 @@
+Sure, here is the correct pattern for your code:
+
+```python
+from typing import List
+
+def sol(li: List[int]):
+    li.sort()
+    for i in range(1, len(li)):
+        if li[i] == li[i-1]:
+            return False
+    return True
+
+print(sol([1, 2, 3, 4, 5]))  # Should return True
+print(sol([5, 4, 3, 2, 1]))  # Should return False
+```
+
+This code first sorts the list and then checks if any adjacent elements are the same. If they are, it returns False. If no such pairs are found, it returns True. The time complexity of this solution is O(n log n) due to the sort operation.

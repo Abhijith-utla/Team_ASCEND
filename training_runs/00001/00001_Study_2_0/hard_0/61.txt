@@ -1,0 +1,9 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    s = "ho"*1000 + "oo"*100 + "ho"*801
+    return s
+
+assert sat(sol())
+```

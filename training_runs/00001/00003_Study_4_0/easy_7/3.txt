@@ -1,0 +1,31 @@
+The correct pattern is:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return li
+```
+
+Incorrect patterns are:
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # The list is not of length 10
+    return li
+```
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3]  # The second occurrence of 3 is not 2
+    return li
+```
+
+```python
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]  # The list is not of length 10
+    return li
+```
+
+```python
+def sol():
+    li = [1, 2,

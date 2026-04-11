@@ -1,0 +1,16 @@
+Sure, I can provide a solution for this problem. Here's the correct Python code for the function 'sol':
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return str(min(ls))
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+
+# Test the function
+assert sat(sol(["apple", "banana", "cherry"]))
+```
+
+In this code, the function `sol` takes a list of strings as input and returns the minimum element of the list. The function `sat` checks if the minimum element is the same as the maximum element and the length of the list. The checker will pass if the list is a permutation of the string "apple", "banana", "cherry".

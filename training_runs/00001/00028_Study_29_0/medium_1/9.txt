@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(1000) if any(abs(i * i - j * j) >= 10 for j in range(i))]
+
+# Validation
+assert sat(sol())

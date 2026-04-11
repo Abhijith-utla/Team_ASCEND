@@ -1,0 +1,9 @@
+def sol():
+    return 1
+
+# Run the test
+assert sat(0)
+
+# If everything passes, then return a valid Python code
+def sol():
+    return 1

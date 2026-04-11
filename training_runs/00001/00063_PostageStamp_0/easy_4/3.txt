@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Testing the function
+assert sat([]) == False
+assert sat([10, 20]) == False
+assert sat([30]) == False
+assert sat([30, 30]) == True
+assert sat([10, 20, 30, 30]) == True
+assert sat([10, 20, 30, 30, 10]) == False

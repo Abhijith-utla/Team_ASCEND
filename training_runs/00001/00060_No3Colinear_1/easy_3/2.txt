@@ -1,0 +1,2 @@
+def sol():
+    return {(a, b) for a, b in coords} == num_points

@@ -1,0 +1,9 @@
+The function `sat` checks if the string `s` contains 1000 'o' characters, 100 'oo' characters, and 801 'ho' characters. The correct solution is:
+
+```python
+def sol():
+    s = "ho" * 801 + "oo" * 100 + "o" * 1000
+    return s
+```
+
+The code above creates a string `s` that contains 1000 'o' characters, 100 'oo' characters, and 801 'ho' characters, as required.

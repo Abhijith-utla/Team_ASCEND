@@ -1,0 +1,19 @@
+def sol():
+    return []
+
+# You should replace the lines below with the actual implementation of the function 'sol'
+# This function should return a list of the answers as a list of tuples [(h, m), ..., (h, m)]
+# where h and m are the numbers between 0 and 12 representing the hours and minutes,
+# respectively.
+
+# The function 'sol' should not take any arguments
+# The function 'sol' should return a list of answers as a list of tuples [(h, m), ..., (h, m)]
+# where h and m are the numbers between 0 and 12 representing the hours and minutes,
+# respectively.
+
+# The function 'sol' should return a list of answers as a list of tuples [(h, m), ..., (h, m)]
+# where h and m are the numbers between 0 and 12 representing the hours and minutes,
+# respectively.
+
+# The function 'sol' should return a list of answers as a list of tuples [(h, m), ..., (h, m)]
+# where h and m are

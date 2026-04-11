@@ -1,0 +1,8 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    return []
+```
+
+The function `sol` does not take any arguments and does not return any value. This function is an example of a function that does not take any arguments and does not return any value.

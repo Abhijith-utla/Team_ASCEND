@@ -1,0 +1,16 @@
+{
+  "attempt_num": 13,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated triple-quoted string literal (detected at line 2)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T16:03:16.718657+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated triple-quoted string literal (detected at line 2)|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): return \"\"\"587_____6____251_____468_139_375_852_29_764_635_971____28_418_376_519_584_627_732_981_174_528_61...",
+  "difficulty": "medium",
+  "problem_id": "00069_Sudoku_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

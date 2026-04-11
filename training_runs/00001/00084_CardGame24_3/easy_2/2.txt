@@ -1,0 +1,4 @@
+def sol():
+    return "13*2*1*4*2*1"
+
+print(sol())

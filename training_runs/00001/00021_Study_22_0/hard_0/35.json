@@ -1,0 +1,17 @@
+{
+  "attempt_num": 35,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:00:37.405339+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=13|checked=13/13|preview=def sol(): return \"impossible\" def sat(s: str): if len(s) != 10: return False if len(set(s)) != 5: return False if no...",
+  "difficulty": "hard",
+  "problem_id": "00021_Study_22_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

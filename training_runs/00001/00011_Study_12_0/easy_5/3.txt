@@ -1,0 +1,9 @@
+Here is the solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 4 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+This function `sat` takes a list of integers as an argument and returns a boolean value. It uses the `zip` function to pair each element of the list with the next one. The first pair is always a tuple with `(4, 4)`, and the rest of the pairs are pairs of the elements of the input list and the number `4`. The `all` function returns `True` if all pairs are satisfied (i.e., the sum of all pairs equals `4`), and `False` otherwise. The `len` function is used to check if the list has a length of `1000`.

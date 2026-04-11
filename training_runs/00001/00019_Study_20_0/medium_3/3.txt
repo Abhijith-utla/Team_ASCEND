@@ -1,0 +1,14 @@
+Here is the Python code for the function `sol`:
+
+```python
+def sol():
+    return 3
+```
+
+This function returns `3` as a single answer object.
+
+The checker will run:
+
+```python
+assert sat(sol())
+```

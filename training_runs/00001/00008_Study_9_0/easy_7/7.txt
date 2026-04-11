@@ -1,0 +1,2 @@
+def sol():
+    return chr(ord("T") - 32) + chr(ord("h") - 32) + chr(ord("e") - 32) + chr(ord(" ") - 32) + chr(ord("q") - 32) + chr(ord("u") - 32) + chr(ord("ick") - 32) + chr(ord(" brown")) + chr(ord(" ")) + chr(ord("f") - 32) + chr(ord("o") - 32) + chr(ord("x")) + " " + chr(ord("j") - 32) + chr(ord("u") - 32) + chr(ord("m") - 32) + chr(ord("p") - 32) + chr(ord("s") - 32) + " " + chr(ord("o") - 32) + chr(ord("v") - 32) + chr(ord("e") - 32) +

@@ -1,0 +1,11 @@
+Here is the Python code to solve the problem.
+
+```python
+def sol(ls, idx1=1234, idx2=1235):
+    if idx1 < len(ls) and idx2 < len(ls) and idx1 >= 0 and idx2 >= 0:
+        return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+    else:
+        return False
+```
+
+In the code above, we first check if the indices are valid within the range of the list. If they are, we then check if the elements at the specified indices in the list are the same and not equal. If all these conditions are met, we return True; otherwise, we return False.

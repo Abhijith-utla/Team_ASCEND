@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+# Incorrect patterns:
+def sol(coords):
+    return []
+
+def sol(coords, side=0, num_points=0):
+    return []
+
+# Correct pattern:
+def sol(coords, side=0, num_points=0):
+    return [coords]

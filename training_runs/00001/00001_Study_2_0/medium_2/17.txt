@@ -1,0 +1,8 @@
+Sure, here is the correct solution:
+
+```python
+def sat(s: str):
+    return s.count('y') == 100 and s.count('yo') == 101 and s.count('yy') == 98
+```
+
+The function `sat` takes a string `s` as input and returns a boolean value. The boolean value is `True` if the string `s` contains exactly 100 'y' characters and exactly 101 'yo' characters, and exactly 98 'yy' characters, and `False` otherwise.

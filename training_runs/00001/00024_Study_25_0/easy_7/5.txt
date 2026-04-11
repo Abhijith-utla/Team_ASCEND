@@ -1,0 +1,4 @@
+def sol():
+    return sorted(s) == sorted('uipenmtrsA') and s == s[::-1]
+
+print(sol())

@@ -1,0 +1,10 @@
+def sol():
+    return 1
+
+# Checker
+def check(n: int):
+    s = str(n * n)
+    return len(s) == len(set(s))
+
+# Run checker
+check(sol())

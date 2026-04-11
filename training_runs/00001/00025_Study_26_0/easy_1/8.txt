@@ -1,0 +1,2 @@
+def sol():
+    return [str(7 ** 64.5)]

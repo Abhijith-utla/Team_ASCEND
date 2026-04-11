@@ -1,0 +1,10 @@
+Sure, here's a Python solution for the problem. This function takes a list of integers as input and returns True if the corresponding character in the strings "The quick brown fox jumps over the lazy dog" and "The five boxing wizards jump quickly" are the same, and False otherwise.
+
+```python
+def sat(li: List[int]):
+    str1 = "The quick brown fox jumps over the lazy dog"
+    str2 = "The five boxing wizards jump quickly"
+    return [str1[i] == str2[i] for i in li] == list(str1 == str2)
+```
+
+This function works by iterating over the list of integers and comparing the corresponding characters in the two strings. If all characters are the same, it returns True; otherwise, it returns False.

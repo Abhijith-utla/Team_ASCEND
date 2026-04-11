@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(["__" if i == 2 or i == 5 or i == 8 else "_" for i in range(81)])
+
+assert sat(sol())

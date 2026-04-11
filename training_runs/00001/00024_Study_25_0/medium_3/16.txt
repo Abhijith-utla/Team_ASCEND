@@ -1,0 +1,4 @@
+def sol():
+    return sorted(''.join(filter(str.isalpha, 'uipenmtrsA'))) == sorted(''.join(filter(str.isalpha, 'uipenmtrsA'[::-1])))
+
+assert sat(sol())

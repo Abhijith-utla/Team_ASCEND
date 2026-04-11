@@ -1,0 +1,24 @@
+Here is a Python solution for the problem:
+
+```python
+def sol():
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+This function `sol()` returns a boolean value based on the condition that the minimum value in the list `ls`, the maximum value in the list `ls`, and the length of the list `ls` are all equal. If all are equal, then the function returns `True`, otherwise it returns `False`.
+
+The function `sat` is defined as a constraint for the checker. It takes a list of strings `ls` as an input and returns `True` if all elements in the list are equal and `False` otherwise. The function is assumed to be defined as:
+
+```python
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+To use this function with the checker, you would do something like:
+
+```python
+ls = ['a', 'a', 'a', 'a', 'a']
+assert sat(ls)
+```
+
+Here, the list `ls

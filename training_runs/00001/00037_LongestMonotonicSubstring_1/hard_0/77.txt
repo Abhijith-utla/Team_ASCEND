@@ -1,0 +1,7 @@
+def sol():
+    answer = []
+    for i in range(193):
+        answer.append(chr(65 + i))
+    return answer
+
+print(sol())

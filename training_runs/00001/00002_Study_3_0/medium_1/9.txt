@@ -1,0 +1,10 @@
+Here is the Python code to solve the problem:
+
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)))
+```
+
+This function `sat` takes a list of integers as an argument and returns a boolean value. It first checks if the list is sorted in ascending order and then checks if all elements in the list are unique. If both conditions are met, it returns `True`, otherwise it returns `False`.
+
+Please note that this function assumes that the list can contain integers up to 999 and that the list contains at least one element.

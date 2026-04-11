@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# Asserts that `moves` is a list of tuples where each tuple represents a move from one list to another.
+# This is a helper function to check that the moves are valid
+def assert_valid_moves(moves):
+    for [i, j] in moves:
+        if i >= len(moves) or j >= len(moves):
+            raise ValueError(f"Invalid move: ({i}, {j})")
+        if i != j and moves.count([i, j]) > 1:
+            raise ValueError(f"Invalid move: ({i}, {j})")
+
+# Asserts that `source` and `target` are valid starting and ending states
+def assert_valid_source_and_target(source, target):
+    if len(source) != len(target):
+        raise ValueError(f"Invalid source: {source}")
+    if len(source[0]) != len(target[0]):
+        raise ValueError(f"Invalid source: {source}")
+
+# Asserts that `moves` are valid

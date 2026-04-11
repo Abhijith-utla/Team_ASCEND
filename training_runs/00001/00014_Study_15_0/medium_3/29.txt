@@ -1,0 +1,5 @@
+def sol():
+    return [sum(li[:i]) for i in range(20)]
+
+# Testing
+assert sat(sol())

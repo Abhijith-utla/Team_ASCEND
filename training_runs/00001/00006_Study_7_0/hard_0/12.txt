@@ -1,0 +1,4 @@
+def sol():
+    return "True" if sat("88888") else "False"
+
+assert sol() == "True"

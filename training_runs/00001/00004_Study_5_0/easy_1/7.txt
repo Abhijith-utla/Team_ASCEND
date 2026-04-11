@@ -1,0 +1,16 @@
+Here is a Python solution to the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+# Checker
+def sat(li: List[int]):
+    return li.count(1) == 2 and li.count(2) == 2 and li.count(3) == 2 and li.count(4) == 2 and li.count(5) == 2 and li.count(6) == 2 and li.count(7) == 2 and li.count(8) == 2 and li.count(9) == 2
+```
+
+The `sol` function returns a list of integers with all elements equal to 1.
+
+The `sat` function checks if the list contains exactly two of each number from 1 to 9. It returns `True` if all numbers are present, and `False` otherwise.

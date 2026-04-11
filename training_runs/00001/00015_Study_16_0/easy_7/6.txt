@@ -1,0 +1,14 @@
+Here's how you can define the `sol` function:
+
+```python
+def sol():
+    return 'abc4.5'
+```
+
+This function simply returns the string 'abc4.5'. Now, you can call this function with the assert statement to check if the function `sat` works correctly:
+
+```python
+assert sat(sol())
+```
+
+This will fail if `sat` returns anything other than 'abc4.5', which means `sol` function works as expected.

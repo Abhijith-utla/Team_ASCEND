@@ -1,0 +1,5 @@
+def sol():
+    li = [ord(i) for i in list("The five boxing wizards jump quickly")]
+    return li
+
+print(sol())

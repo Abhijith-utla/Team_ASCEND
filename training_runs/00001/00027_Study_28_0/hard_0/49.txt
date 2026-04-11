@@ -1,0 +1,10 @@
+Here is the correct pattern for the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [i for i in range(1000) if i not in [j for j in range(1000) if i != j]]
+```
+
+This function returns a list of integers from 0 to 999 (inclusive) that are not in any other list. This is achieved by checking each number in the range and ensuring that the difference between each pair of numbers is at least 10. The use of the set function to eliminate duplicates is not necessary in this case as the range is not empty.

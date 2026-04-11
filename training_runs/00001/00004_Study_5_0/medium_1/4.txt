@@ -1,0 +1,13 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+
+# Check the solution
+assert sat(sol())
+```
+
+This solution creates a list with the numbers 1 through 9, then returns this list. The assertion at the end of the program checks whether the function `sat` correctly counts the number of 1's through 9's in the list. If the function is correct, this assertion will pass and the program will not crash.

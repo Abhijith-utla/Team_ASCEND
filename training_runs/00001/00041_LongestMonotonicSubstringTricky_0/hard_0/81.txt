@@ -1,0 +1,4 @@
+def sol():
+    x = [1, 0, 2, 3]
+    s = "Dynamic programming solves this classic job-interview puzzle!!!"
+    return x, s

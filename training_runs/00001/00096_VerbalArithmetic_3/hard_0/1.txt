@@ -1,0 +1,7 @@
+def sol():
+    li = [1, 2, 3, 4, 5]
+    words = ['fqjb', 'awqw', 'lfll', 'fvvvb']
+    assert sat(li, words)
+    return sum(li)
+
+print(sol())

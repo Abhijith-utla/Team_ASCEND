@@ -1,0 +1,18 @@
+def sol():
+    return [19, 14, 81]
+
+# Test the solution
+print(sol())
+assert sat(sol())
+
+# Test with a different solution
+print(sol([19, 14, 81]))
+assert sat(sol([19, 14, 81]))
+
+# Test with an incorrect solution
+print(sol([19, 13, 81]))
+assert not sat(sol([19, 13, 81]))
+
+# Test with a different correct solution
+print(sol([81, 14]))
+assert sat(sol([81, 14]))

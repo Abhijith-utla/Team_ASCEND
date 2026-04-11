@@ -1,0 +1,20 @@
+The function `sat(i: int)` checks if the length of the string representation of `i + 1000` is equal to the length of `i + 1001`. 
+
+Here is the solution:
+
+```python
+def sol():
+    i = 0
+    while True:
+        if sat(i):
+            return i
+        i += 1
+
+def sat(i: int):
+    return len(str(i + 1000)) == len(str(i + 1001))
+
+# Testing the solution
+assert sat(sol())
+```
+
+This program runs an infinite loop and checks if `sat(i)` is True at every iteration. If it is, it returns `i`. If not, it increments `i` by 1 and checks again. This continues until `sat(i)` is True. This is a brute-force solution and it will take a long time to find the correct answer if `sat(i)` is not True for all `i`.

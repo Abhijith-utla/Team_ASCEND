@@ -1,0 +1,8 @@
+Here's the solution to the problem:
+
+```python
+def sol():
+    return 456
+```
+
+This function returns the integer 456 because it satisfies the condition defined in the function `sat`.

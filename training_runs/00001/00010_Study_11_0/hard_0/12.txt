@@ -1,0 +1,19 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    return min(ls) == max(ls) == str(len(ls))
+```
+
+The function `sat` takes a list of strings as input and checks if all elements in the list are equal in length. It returns `True` if all elements are equal and `False` otherwise. 
+
+The function uses the `min`, `max`, and `len` functions to find the minimum, maximum, and length of the list, respectively. If these values are all equal, it returns `True`, otherwise it returns `False`.
+
+The checker will run:
+
+```python
+assert sat(["a", "aa", "aaa"])
+assert not sat(["a", "aaa"])
+```

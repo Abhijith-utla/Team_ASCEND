@@ -1,0 +1,8 @@
+def sol():
+    return [0, 1, 2, 3, 4, 5, 6, 7]
+
+# Explanation:
+# This solution checks whether all characters in the string s[x[i]] are less than or equal to the character in s[x[i + 1]] for all i in the range of length - 1.
+# Since the problem does not specify what the answer should be if sat(x) is not true, we simply return a sorted version of [0, 1, 2, 3, 4, 5, 6, 7] as the answer.
+
+assert sat(sol())

@@ -1,0 +1,20 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    li = [i % 2 for i in range(8)]  # generate a list with alternating 0s and 1s
+    while not sat(li):  # keep changing the list until it satisfies the condition
+        li[0] = (li[0] + 1) % 2
+    return li
+
+def sat(li: List[int]):
+    return all([li[i] != li[i + 1] for i in range(7)]) and len(set(li)) == 3
+
+# Uncomment the following lines to check the result of the solution
+# print(sol())
+# print(sat(sol()))  # should return True
+```
+
+In the code above, the `sol` function generates a list with alternating 0s and 1s (like [0, 1, 0, 1, 0, 1, 0, 1]). It then changes the first element of the list (which is the first one, since indexing starts from 0) to 1 and

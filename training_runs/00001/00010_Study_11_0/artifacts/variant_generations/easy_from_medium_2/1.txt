@@ -1,0 +1,29 @@
+Here are the three simpler variants of the function:
+
+VARIANT1:
+```python
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return False
+    else:
+        return all(len(i) == len(ls[0]) for i in ls)
+```
+
+VARIANT2:
+```python
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(i) > len(ls[0]) for i in ls)
+```
+
+VARIANT3:
+```python
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return False
+    else:
+        return all(len(i) < len(ls[0]) for i in ls)
+```
+All of the variants return False when the input list is empty (VARIANT1), and return True when the input list is not empty (VARIANT2 and VARIANT3). The first variant returns True when all strings in the list are of the same length (VARIANT1), and False when there are strings of different lengths (VARIANT2 and VARIANT3).

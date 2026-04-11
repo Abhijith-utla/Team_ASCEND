@@ -1,0 +1,28 @@
+def sat(li):
+    return li[li[0]] < li[li[1]]
+
+def sol():
+    return [1, 2]
+
+# Checker:
+def test_sol():
+    assert sat(sol())
+
+# Testing the function sol:
+# [1, 2] should be less than [2, 3] as the second element of the first list is less than the second element of the second list
+assert sat(sol())
+
+# Testing the function sol:
+# [2, 3] should not be less than [1, 2] as the second element of the first list is not less than the second element of the second list
+assert not sat([2, 3])
+
+# Testing the function sol:
+# [10, 20] should be less than [15, 25] as the second element of the first list is less than the second element of the second list
+assert sat([10, 20])
+
+# Testing the function sol:
+# [30, 40] should not be less than [25, 35] as the second element of the first list is not less than the second element of the second list
+assert not sat([3
+
+if __name__ == "__main__":
+    assert sat(sol())

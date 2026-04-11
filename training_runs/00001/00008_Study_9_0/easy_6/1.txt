@@ -1,0 +1,19 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol() -> str:
+    li = []
+    while True:
+        s = input("Enter a string: ")
+        if len(s) <= 5 and s.isalpha():
+            li.append(s)
+            if len(li) == 5:
+                break
+    return ' '.join(li)
+
+print(sol())
+```
+
+This function will ask the user to enter a string until they have entered five strings that are both less than or equal to five characters long and contain only alphabetic characters. After these five strings have been entered, the function will join them into a single string and return that string.

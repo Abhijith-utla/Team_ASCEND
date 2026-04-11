@@ -1,0 +1,20 @@
+Here is the correct pattern:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([li[i] < li.index(x) + sum(li[:li.index(x)]) for x in set(li)])
+```
+
+This Python function named `sat` receives a list of integers `li`. It then checks if every element in the list is less than its index plus the sum of the elements before it.
+
+The condition `li[i] < li.index(x) + sum(li[:li.index(x)])` is used to check this condition.
+
+The expression `li.index(x) + sum(li[:li.index(x)])` calculates the sum of the elements before the current element `x` in the list.
+
+The function `set(li)` is used to get unique elements in the list.
+
+The `all()` function returns `True` only if all the elements in the list are true. Otherwise, it returns `False`.
+
+The final `assert` statement will pass if the function returns `True`, otherwise it will

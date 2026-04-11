@@ -1,0 +1,8 @@
+Here is the correct Python code to solve the problem:
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+
+This function checks if all elements in the list are present exactly once, and if there is exactly one zero in the list. The function returns True if both conditions are met, and False otherwise.

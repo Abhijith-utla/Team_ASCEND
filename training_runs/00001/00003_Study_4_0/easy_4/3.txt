@@ -1,0 +1,17 @@
+The Python function `sat` takes a list of integers as input and returns a boolean value. Here's a solution to the problem based on the given conditions:
+
+```python
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 1:
+        return False
+    if li.index(li[3]) == 3:
+        return False
+    return True
+```
+
+The `len(li) != 10` condition checks if the length of the list is not equal to 10.
+The `li.count(li[3]) != 1` condition checks if the number 3 appears more than once in the list.
+The `li.index(li[3]) == 3` condition checks if the index of the number 3 in the list is not 3.
+All conditions must be met for the function `sat` to return True, otherwise it returns False.

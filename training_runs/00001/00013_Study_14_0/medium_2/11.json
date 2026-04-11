@@ -1,0 +1,16 @@
+{
+  "attempt_num": 11,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "no_candidate",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:38:27.781048+00:00",
+  "diagnostic": "reason=no_def_sol|parse=fence=python,preamble=1,found_sol=0,candidates=0|preview=The Python function `sat` is to check if the list `li` is sorted in ascending order. Here is a correct solution for i...",
+  "difficulty": "medium",
+  "problem_id": "00013_Study_14_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

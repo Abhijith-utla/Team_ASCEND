@@ -1,0 +1,7 @@
+def sol():
+    n = 5
+    while n > 0:
+        n -= 1 + (n - 1) // 5
+    return n
+
+assert sat(sol())

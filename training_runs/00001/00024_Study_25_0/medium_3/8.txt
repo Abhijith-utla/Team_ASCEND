@@ -1,0 +1,7 @@
+def sol():
+    return ''.join(sorted(input()))
+
+# This function first takes input from the user, sorts the characters in the input string and then checks if the sorted string is the same as the reversed string.
+# The checker will run: assert sat(sol())
+!cat test.py
+!python3 test.py

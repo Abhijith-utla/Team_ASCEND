@@ -1,0 +1,11 @@
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int) -> bool:
+    return len(str(i + 10)) == len(str(i + 100))
+
+# Testing the solution
+assert sat(sol())

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 68,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T16:38:11.564757+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): puz = \"___56_4_7__92_4_65___3______9____2___5_______7___8___1_________43_____5_____76__2\" x = ''.join(chr(...",
+  "difficulty": "hard",
+  "problem_id": "00072_Sudoku_4",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

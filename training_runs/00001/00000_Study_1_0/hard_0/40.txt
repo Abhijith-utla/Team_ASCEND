@@ -1,0 +1,3 @@
+def sol():
+    s = 'oo' * 1000
+    return s

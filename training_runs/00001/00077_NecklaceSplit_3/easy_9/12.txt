@@ -1,0 +1,8 @@
+def sol():
+    return 12
+
+# Checker function
+def check(n: int, lace="bbbbrrbbrrbbrrbbrrbbb"):
+    return sat(n, lace)
+
+assert check(sol())

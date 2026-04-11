@@ -1,0 +1,16 @@
+Here is a Python function that checks if a string contains exactly 1000 'o' characters and no 'oo':
+
+```python
+def sat(s: str):
+    return 'o' in s and 'oo' not in s and s.count('o') == 1000
+```
+
+You can use this function like this:
+
+```python
+assert sat("ooooooooooooooooooo")
+assert not sat("ooooooooooooooooo")
+assert not sat("oooooooooooooo")
+```
+
+This function works by checking if 'o' is in the string and if 'oo' is not in the string, and also checking if the count of 'o' is exactly 1000. If all these conditions are met, the function returns True, otherwise it returns False.

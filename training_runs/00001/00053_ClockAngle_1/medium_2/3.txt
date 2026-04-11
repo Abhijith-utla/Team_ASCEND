@@ -1,0 +1,23 @@
+def sol():
+    return {"hands": [h, m]}
+
+# Test cases
+test_cases = [
+    ([0, 0], 39),
+    ([12, 0], 39),
+    ([12, 30], 60 - 39),
+    ([12, 45], 90 - 39),
+    ([12, 59], 90 - 39)
+]
+
+for case in test_cases:
+    h, m = case[0]
+    target_angle = case[1]
+    solution = {"hands": [h, m]}
+    assert sat(solution["hands"], target_angle) == (abs(30 * h + m / 2 - 6 * m) in [target_angle, 360 - target_angle]), f"Test case {case} failed"
+
+# Assert that the function works as expected
+assert sat({"hands": [h, m]}), f"Function {sol} does not return a valid answer"
+
+# Print a success message
+print("All test cases passed")

@@ -1,0 +1,4 @@
+def sol():
+    return "abcdefghijk" if sat("abcdefghijk") else "not a solution"
+
+print(sol())

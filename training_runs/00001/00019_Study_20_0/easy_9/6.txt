@@ -1,0 +1,6 @@
+def sol():
+    li = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+    return sat(li)
+
+# Test
+assert sat(sol())

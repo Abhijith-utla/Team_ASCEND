@@ -1,0 +1,14 @@
+The given function `sat` checks if all characters in a list have ASCII values that are multiples of 3. It returns `True` if all characters have ASCII values that are multiples of 3, and `False` otherwise.
+
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return all([ord(i) % 3 == 2 for i in li])
+```
+
+This function uses list comprehension to generate a list of boolean values. It checks for each character in the list `li` if its ASCII value is a multiple of 3. The `all` function returns `True` only if all elements in the list are `True`.
+
+The provided function is incorrect because it returns `False` for all characters, as they all have ASCII values that are not multiples of 3.

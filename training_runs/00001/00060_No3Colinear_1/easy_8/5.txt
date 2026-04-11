@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# The solution here is empty as no input is given.
+# The function 'sol' is designed to return an empty list.

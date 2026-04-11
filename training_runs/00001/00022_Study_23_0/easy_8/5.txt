@@ -1,0 +1,5 @@
+def sol():
+    answer = 'deep learning'
+    return answer
+
+assert sat(sol())

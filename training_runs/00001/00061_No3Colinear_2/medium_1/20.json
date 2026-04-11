@@ -1,0 +1,16 @@
+{
+  "attempt_num": 20,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T14:46:23.612474+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=26|checked=26/26|preview=def sol(): return [] # Test case 1: All points on a single line assert sat([[0, 0]]) # Test case 2: All points on a l...",
+  "difficulty": "medium",
+  "problem_id": "00061_No3Colinear_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

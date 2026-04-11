@@ -1,0 +1,2 @@
+def sol():
+    return "__John__"

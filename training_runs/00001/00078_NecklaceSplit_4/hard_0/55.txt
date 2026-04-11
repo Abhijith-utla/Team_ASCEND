@@ -1,0 +1,5 @@
+def sol():
+    return "brrbbbrbbrrbrrbbrrbrrrbbrbbrrrbrbrbrrrrbbrrrbbbbrbbbrrbbrrrbbrbbbbbrrbrrbbr"
+
+# The function `sat` is already defined by the user.
+# We don't need to define it here.

@@ -1,0 +1,8 @@
+def sol():
+    return [5, 6], [1, 2, 4, 5], [0, 3, 2, 1]
+
+# Test
+if sat(sol()):
+    print("The solution is correct.")
+else:
+    print("The solution is incorrect.")

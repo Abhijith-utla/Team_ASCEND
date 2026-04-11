@@ -1,0 +1,20 @@
+The problem can be solved by using the idea of prefix sum and indexing in Python. We iterate over the list and calculate the prefix sum. We then use this prefix sum to check whether each index of the list is less than the sum of all elements before it. If any of the conditions is not met, we return False. If all conditions are met, we return True.
+
+Here is the Python code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    prefix_sum = 0
+    for i, x in enumerate(li):
+        if x < li[i]:
+            prefix_sum += x
+            if prefix_sum > sum(li[:i]):
+                return False
+        else:
+            prefix_sum = x
+    return True
+```
+
+This function will return True if the input list is sorted in non-decreasing order, and False otherwise. The function uses a prefix sum to keep track of the sum of elements before each index. If a number is less than the number before it and the sum of all numbers before it is less than the sum of all numbers up to that index, then the list is sorted

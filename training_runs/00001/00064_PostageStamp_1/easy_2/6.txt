@@ -1,0 +1,13 @@
+def sol():
+    return []
+
+print(sat([]))
+print(sat([37]))
+print(sat([37, 12]))
+print(sat([37, 12, 39]))
+print(sat([37, 12, 39], max_stamps=7))
+print(sat([37, 12, 39], options=[37, 12, 39, 87]))
+print(sat([37, 12, 39], options=[37, 12, 39, 87], max_stamps=7))
+print(sat([37, 12, 39, 87, 39], target=377))
+print(sat([37, 12, 39, 87, 39], target=271, options=[37, 12, 39, 87, 39]))
+print(sat([37, 12, 39, 87, 39], target

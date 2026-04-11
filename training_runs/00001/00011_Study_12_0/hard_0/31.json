@@ -1,0 +1,17 @@
+{
+  "attempt_num": 31,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:22:24.300401+00:00",
+  "diagnostic": "reason=subprocess_error:AssertionError: |parse=fence=python,preamble=1,found_sol=1,candidates=4|checked=4/4|preview=Here is the correct solution for the problem: ```python from typing import List def sol(): return [9, 8, 7, 6, 5, 4, ...",
+  "difficulty": "hard",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

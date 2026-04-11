@@ -1,0 +1,6 @@
+def sol():
+    return len(set(input().split()))
+
+# Test
+assert sat(sol(['1', '2', '2', '3', '4', '4', '5', '5']))
+assert not sat(sol(['1', '2', '3', '4', '5']))

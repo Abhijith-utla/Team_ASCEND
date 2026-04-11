@@ -1,0 +1,18 @@
+The function `sat` is a checker function that checks if the input list `li` contains exactly one instance of the number 3. If the list `li` contains more or less than 10 elements, the function returns `False`. If the count of the number 3 in the list is not exactly 2, the function also returns `False`. Otherwise, the function returns `True`.
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+To use the function, you can call it with a list of 10 integers as an argument. If the list meets the conditions, the function will return `True`; otherwise, it will return `False`. Here is an example:
+
+```python
+print(sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 3]))  # True
+print(sat([1, 2, 3

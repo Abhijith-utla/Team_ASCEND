@@ -1,0 +1,6 @@
+def sol():
+    return [i*2 for i in 'dee']
+
+print(sol())
+
+assert sat(sol())

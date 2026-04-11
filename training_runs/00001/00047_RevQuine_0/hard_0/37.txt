@@ -1,0 +1,8 @@
+def sol():
+    return eval(str(id(str(""))) + "[" + str(id(str("")))[::-1] + "]")
+
+# Test
+print(sat(sol()))  # Should print True
+
+# This is to confirm the correctness of the function
+assert sat(sol())

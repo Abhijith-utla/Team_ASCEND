@@ -1,0 +1,10 @@
+def sol():
+    moves = [[0, 6], [1, 5], [0, 4], [3, 2], [2, 1]]
+    rods = ([], [], [8, 7, 6, 5, 4, 3, 2, 1], 0)
+    for [i, j] in moves:
+        rods = (rods[0], [x for x in rods[1] if x != rods[2]], rods[2] + 1, rods[3], [rods[3] + 1, rods[2], rods[1][0]], [rods[1][0]] + [rods[2] + 1, rods[1][1:]])
+        if rods[0][-1] == min(rods[0]):
+            break
+    else:
+        return False
+    return True

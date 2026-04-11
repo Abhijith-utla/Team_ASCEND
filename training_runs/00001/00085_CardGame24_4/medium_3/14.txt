@@ -1,0 +1,6 @@
+def sol():
+    return {
+        "nums": [10, 12, 1, 7]
+    }
+
+print(sat("", nums=[10, 12, 1, 7]))

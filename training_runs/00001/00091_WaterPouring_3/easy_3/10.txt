@@ -1,0 +1,12 @@
+def sol():
+    return [472, 153, 127, 500]
+
+# Testing the solution
+moves = [[2, 1], [0, 3], [1, 2], [3, 0], [0, 1]]
+assert sat(moves, capacities=[511, 625], init=[472, 153, 127, 500], goal=[97, 625, 30])
+
+moves = [[1, 2], [3, 0], [0, 1], [2, 3]]
+assert not sat(moves, capacities=[511, 625], init=[472, 153, 127, 500], goal=[97, 625, 30])
+
+moves = [[1, 0], [0, 2], [2, 1]]
+assert not sat(moves, capacities=[511, 625], init

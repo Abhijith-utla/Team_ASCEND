@@ -1,0 +1,11 @@
+def sol(coords: List[Tuple[int, int]], side=0, num_points=0):
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert 0 <= x < side
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert 0 <= y < side
+    for i in range(len(coords)):
+        x, y = coords[i]
+        assert x * (y - coords[i - 1][1]) + y * (coords[i - 1][1] - coords[i - 2][1]) + coords[i - 1][1] * (coords[i - 2][1] - y) == x * y + y * coords[i - 1][1] + coords[i - 1][1] * coords[i - 1][1]
+    return len(set(coords)) == num_points

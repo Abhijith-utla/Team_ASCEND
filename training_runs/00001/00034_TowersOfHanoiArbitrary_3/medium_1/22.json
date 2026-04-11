@@ -1,0 +1,17 @@
+{
+  "attempt_num": 22,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T11:04:35.948936+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: 'Answer' object is not iterable|parse=fence=python,preamble=1,found_sol=1,candidates=8|checked=8/8|preview=Here is a Python solution for the problem: ```python def sol(): class Answer: def __init__(self, moves, source, targe...",
+  "difficulty": "medium",
+  "problem_id": "00034_TowersOfHanoiArbitrary_3",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

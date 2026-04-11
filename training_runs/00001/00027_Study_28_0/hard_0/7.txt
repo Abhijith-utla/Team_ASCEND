@@ -1,0 +1,12 @@
+```python
+def sol():
+    return [i for i in range(1000) if i not in [j for j in range(1000) if i != j]]
+
+print(sol())
+```
+
+In this solution, the function sol() returns a list of numbers from 0 to 999 that are not in the list [j for j in range(1000) if i != j]. This is done in the following steps:
+
+- The list comprehension [j for j in range(1000) if i != j] generates a list of all numbers j such that i != j.
+- The outer list comprehension [i for i in range(1000) if i not in ...] generates a list of all numbers i from 0 to 999 such that i is not in the list of numbers j.
+- Finally, the sol() function returns the list of numbers from 0 to 999 that are not in the list [j for j in range(1000) if i != j].

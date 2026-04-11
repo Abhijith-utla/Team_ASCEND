@@ -1,0 +1,16 @@
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]] and li[li[li[0]]] == li[li[li[1]]]
+
+def sol():
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    while not sat(li):
+        li = [li[1], li[li[0]], li[li[1]], li[0]]
+    return li[0]
+
+def sat(li: List[int]):
+    return li[li[0]] != li[li[1]] and li[li[li[0]]] == li[li[li[1]]]
+
+print(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

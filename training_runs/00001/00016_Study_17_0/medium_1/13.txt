@@ -1,0 +1,6 @@
+def sol():
+    return len(str(1000)) != len(str(1001))
+
+# Testing
+assert sat(1000)
+assert not sat(1001)

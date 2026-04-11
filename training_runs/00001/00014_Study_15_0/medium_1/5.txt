@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x + 1 == (2 ** x) - 1 for x in range(20))
+```

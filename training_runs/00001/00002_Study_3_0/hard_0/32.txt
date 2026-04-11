@@ -1,0 +1,15 @@
+Here is a solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    if sorted(li) != list(range(999)):
+        return False
+    for i in range(len(li)):
+        if li[i] != i:
+            return False
+    return True
+```
+
+This function first checks if the list is sorted in ascending order and if it's a permutation of the numbers from 0 to 998. Then it checks if any number in the list is not equal to its index. If all these conditions are met, the function returns `True`. Otherwise, it returns `False`.

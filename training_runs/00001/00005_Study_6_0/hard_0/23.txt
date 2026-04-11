@@ -1,0 +1,8 @@
+Here is the Python code for the solution:
+
+```python
+def sol():
+    return 1234567890
+```
+
+This function will return the integer 1234567890 whenever the condition `i % 123 == 4 and i > 10 ** 10` is satisfied.

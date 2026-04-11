@@ -1,0 +1,7 @@
+def sol():
+    li = [i for i in range(998)]
+    li.append(998)
+    return li
+
+# Test
+assert sat(sol())

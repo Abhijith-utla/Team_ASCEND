@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function sat(l) checks if all numbers in the list l are in the set {0, 1, 2, ..., 995} and the square of each number is at least 10.
+# This means that the absolute difference between the square of each number and its corresponding number from the list l is at least 10.
+# The function returns an empty list if all numbers are in the set, otherwise, it returns the list of numbers which are not in the set.

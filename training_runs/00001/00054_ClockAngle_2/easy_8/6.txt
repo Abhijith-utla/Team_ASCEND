@@ -1,0 +1,5 @@
+def sol():
+    return {}
+
+# This will be automatically checked by the checker
+assert sat(sol())

@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function `sat` is not provided by the user. The function `sol` returns an empty list which satisfies the condition of the problem statement.
+
+assert sat(sol())

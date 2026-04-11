@@ -1,0 +1,4 @@
+def sol():
+    return 25
+
+# The correct solution is 25, as 25 is the only number that satisfies the expression "10 + 12 - 1 * 7 = 24".

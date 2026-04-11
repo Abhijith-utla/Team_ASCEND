@@ -1,0 +1,17 @@
+{
+  "attempt_num": 12,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:18:51.771329+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=python,preamble=1,found_sol=1,candidates=8|checked=8/8|preview=Here is a possible solution for the problem: ```python from typing import List def sol(): li = [4] + [0]*989 return l...",
+  "difficulty": "medium",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

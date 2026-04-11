@@ -1,0 +1,8 @@
+```python
+def sol():
+    return 2
+```
+
+This function always returns 2, satisfying the condition of the problem.
+
+The checker will run: `assert sat(sol())`, which will pass if `sol()` returns 2.

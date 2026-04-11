@@ -1,0 +1,8 @@
+Here's a correct pattern for the function `sat`:
+
+```python
+def sat(i: int):
+    return i % 123 == 4 and i > 10 ** 10
+```
+
+This function checks if the given integer `i` is greater than 10 to the power of 10 and has a remainder of 4 when divided by 123. If this condition is met, the function returns `True`. Otherwise, it returns `False`.

@@ -1,0 +1,6 @@
+def sol():
+    li = [i for i in range(1000) if abs(i - j) >= 10 for j in range(i+1, 1000) if i != j]
+    li.append(999) # to ensure the last number is distinct
+    return li
+
+assert sat(sol())

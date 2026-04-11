@@ -1,0 +1,7 @@
+def sol():
+    return tuple(ord(ch) for ch in 'dee')
+
+print(sol())
+
+# Checker
+assert sat(sol())

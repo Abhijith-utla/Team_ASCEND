@@ -1,0 +1,15 @@
+def sol():
+    return {"n": 0, "lace": "bbbrrrbbbbrrrbbbbrr"}
+
+# The above function will return an object with "n" as 0 and "lace" as "bbbrrrbbbbrrrbbbbrr"
+
+assert sat(0, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(1, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(2, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(3, "bbbrrrbbbbrrrbbbbrr")
+assert sat(4, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(5, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(6, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(7, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(8, "bbbrrrbbbbrrrbbbbrr")
+assert not sat(9, "bbbrrrbbbbr

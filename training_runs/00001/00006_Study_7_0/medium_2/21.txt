@@ -1,0 +1,28 @@
+The Python function `sat` is defined to check if a string `s` is present in a power of 8 with the length of 3. It uses the `count` method of the string to count the occurrences of the substring in the string. The function returns True if the count is greater than 8 and the length of the string is 3, otherwise it returns False.
+
+Here is the Python code to define the function `sol`:
+
+```python
+def sol():
+    return '8' * 3
+```
+
+In this case, the function `sol` will always return the string '8' repeated 3 times.
+
+The function `sat` is already defined by the user and it checks if a string `s` is present in a power of 8 with the length of 3.
+
+The final checker will run:
+
+```python
+assert sat(sol())
+```
+
+This will pass if the function `sol` returns a string that is present in a power of 8 with the length of 3.
+
+Incorrect pattern:
+```python
+def sol(x):
+    ...
+```
+
+This pattern is incorrect because the

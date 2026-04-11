@@ -1,0 +1,10 @@
+The provided Python function `sat` is incorrect because it uses the `eval` function to evaluate a string as Python code. This is a security risk as it allows arbitrary code execution. The function should only be used for evaluating strings that are known to be safe and have been properly sanitized.
+
+Here is the correct pattern:
+
+```python
+def sol():
+    return "<answer>"
+```
+
+In this pattern, replace `<answer>` with the actual answer you want to return.

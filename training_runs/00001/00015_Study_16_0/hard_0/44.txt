@@ -1,0 +1,19 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return float(len(str(int(4.5))))
+```
+
+The function `sol` calculates the floating point number by converting the integer to a string and then to an integer. Then it calculates the length of the string, which is the number of digits in the floating point number. The answer is then converted back to a floating point number with the same length.
+
+The checker will run:
+
+```python
+def sol():
+    return float(len(str(int(4.5))))
+
+print(sat(str(sol())))  # Output: 4.5
+```
+
+This code will print `True` if the function `sol` returns the correct answer, and `False` otherwise.

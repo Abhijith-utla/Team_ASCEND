@@ -1,0 +1,8 @@
+Sure, the correct pattern is as follows:
+
+```python
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+Here, we are creating a list of characters using the ASCII values of the characters in the string. The list comprehension is used to create a new list of characters from the string. The `list()` function is used to convert the string into a list of characters. The `replace()` function is used to replace all spaces in the string with no space. The function `chr()` is used to convert an integer into its corresponding character.

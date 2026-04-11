@@ -1,0 +1,13 @@
+Here is the solution for the problem:
+
+```python
+def sat(s: str):
+    return str(8 ** int(2888)).count(s) > 8 and len(s) == 3
+```
+
+This function takes a string `s` as an argument and returns a boolean value. The boolean value is determined by the following conditions:
+
+1. The string `s` appears more than 8 times in the string `(8 ** int(2888))`.
+2. The length of the string `s` is 3.
+
+If both conditions are true, the function returns `True`; otherwise, it returns `False`.

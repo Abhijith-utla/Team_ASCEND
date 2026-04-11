@@ -1,0 +1,17 @@
+{
+  "attempt_num": 69,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T07:12:11.401951+00:00",
+  "diagnostic": "reason=subprocess_error:TypeError: 'bool' object is not iterable|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): ls = [str(i) for i in range(10)] # Correct pattern: Min and max are equal and the length is also equal. re...",
+  "difficulty": "hard",
+  "problem_id": "00010_Study_11_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

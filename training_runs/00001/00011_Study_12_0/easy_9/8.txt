@@ -1,0 +1,13 @@
+Sure, here is the correct Python code for the solution:
+
+```python
+from typing import List
+
+def sol():
+    li = [0]*1000
+    li.insert(0, 5)
+    return li
+
+assert sat(sol())
+```
+This code creates a list `li` of length 1000 and inserts the number 5 at the beginning. Then it returns `li`. The assert statement checks if the function `sat` returns `li` as expected. If `li` is returned correctly, the assert statement will not cause any error. If `li` is not returned correctly, an error will be raised.

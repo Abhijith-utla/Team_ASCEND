@@ -1,0 +1,4 @@
+def sol():
+    return "".join(str(8 ** 88).split())
+
+# The checker will run: assert sat(sol())

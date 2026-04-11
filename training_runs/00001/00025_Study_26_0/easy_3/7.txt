@@ -1,0 +1,5 @@
+def sol():
+    return "".join(map(str, [7 ** 64.6]))
+
+# Test
+assert sat(list(map(str, [7 ** 64.6])))

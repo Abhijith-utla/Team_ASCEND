@@ -1,0 +1,8 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol(ls, idx1=1234, idx2=1235):
+    return ls[idx1] in ls[idx2] and ls[idx1] != ls[idx2]
+```
+
+The function `sol` takes a list `ls` and two indices `idx1` and `idx2` as arguments. It returns `True` if the element at `idx1` in `ls` is in `ls[idx2]` and is not the same as the element at `idx2` in `ls`. If either of these conditions is not met, it returns `False`.

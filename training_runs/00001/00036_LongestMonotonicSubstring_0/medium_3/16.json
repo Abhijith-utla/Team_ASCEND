@@ -1,0 +1,17 @@
+{
+  "attempt_num": 16,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T11:26:24.873650+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=9|checked=9/9|preview=def sol(): # Your solution goes here return [] def sat(x: List[int], length=13, s=\"Dynamic programming solves this pu...",
+  "difficulty": "medium",
+  "problem_id": "00036_LongestMonotonicSubstring_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

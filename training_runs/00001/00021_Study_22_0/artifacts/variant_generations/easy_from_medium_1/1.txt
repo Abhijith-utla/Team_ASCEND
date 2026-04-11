@@ -1,0 +1,19 @@
+Here are three simple Python functions that test the same core concept:
+
+VARIANT1:
+```python
+def sat(s: str) -> bool:
+    return len(s) == 10 and s.isalpha()
+```
+
+VARIANT2:
+```python
+def sat(s: str) -> bool:
+    return len(s) == 10 and s.isalpha() and '0' not in s and '1' not in s
+```
+
+VARIANT3:
+```python
+def sat(s: str) -> bool:
+    return len(s) == 10 and s.isalpha() and all(s[i] == s[0] for i in range(1, len(s)))
+```

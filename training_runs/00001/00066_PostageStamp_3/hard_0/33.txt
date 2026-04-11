@@ -1,0 +1,10 @@
+def sol():
+    return [19, 14, 81]
+
+# Asserts
+assert sat([19, 14, 81])
+assert not sat([19, 14])
+assert not sat([19, 14, 99])
+
+# Checker
+assert sat(sol())

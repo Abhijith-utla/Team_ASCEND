@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(len(li)) if li[i] != i]
+
+assert sat(sol())

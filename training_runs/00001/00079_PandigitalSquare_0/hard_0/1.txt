@@ -1,0 +1,8 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return 123456789
+```
+
+This function returns the number 123456789 as the answer. The number 123456789 is a single digit number and it's the only number that can be obtained by squaring the digits 0-9.

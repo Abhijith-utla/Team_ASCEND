@@ -1,0 +1,20 @@
+VARIANT1:
+```python
+def sat(s: str):
+    return set(s) <= set("1-8*+/3") and s.count("8") == 3 and s.count("1") == 1 and eval(s.replace('+', '*')) == 63
+```
+The function 'sat' takes a string argument 's' and checks if set(s) includes all characters of the string "1-8*+/3" and whether the count of "8" and "1" in the string equals to 3 and 1 respectively. It also evaluates the string 's' using the operator '*' and replaces '+' with '*' before evaluating the result.
+
+VARIANT2:
+```python
+def sat(s: str):
+    return set(s) <= set("1-8*+/3") and s.count("8") == 3 and s.count("1") == 1 and eval(s.replace('+', '**')) == 63
+```
+In this variant, the parameter 's' is replaced with 's' multiplied by itself (** operator) in the line where 'eval(s.replace('+', '**'))' is called. This changes the operation from addition to multiplication in the evaluation, thereby increasing the value of 's'.
+
+VARIANT3:
+```python
+def sat(s: str):
+    return set(s) <= set("1-8*+/3") and s.count("8") == 3 and s.count("1") == 1 and eval(s.replace('+', '//')) == 63
+```
+In this variant, the parameter 's' is replaced with 's' divided by 8 (integer division) in the line where 'eval(s.replace('+', '//'))' is called. This operation does not preserve the decimal part of the number, and therefore, it may result in a floored value.

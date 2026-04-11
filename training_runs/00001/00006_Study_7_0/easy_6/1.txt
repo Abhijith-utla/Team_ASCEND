@@ -1,0 +1,5 @@
+def sol():
+    for i in range(2888):
+        if str(8 ** i).count('88888') > 8:
+            return True
+    return False

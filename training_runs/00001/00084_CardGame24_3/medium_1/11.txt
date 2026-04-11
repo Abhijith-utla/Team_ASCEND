@@ -1,0 +1,2 @@
+def sol():
+    return eval(eval(eval(eval("12*3"))) + "+" + eval(eval(eval("9*6"))) + "=" + "18")

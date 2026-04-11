@@ -1,0 +1,17 @@
+VARIANT1:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999))
+```
+
+VARIANT2:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(1000))
+```
+
+VARIANT3:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(1001))
+```

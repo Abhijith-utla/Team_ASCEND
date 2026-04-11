@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This checks if the sequence is in non-decreasing order
+assert sat(sol())

@@ -1,0 +1,8 @@
+def sol():
+    moves = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]
+    if sat(moves):
+        return
+
+# Test case
+moves = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]
+assert sat(moves)

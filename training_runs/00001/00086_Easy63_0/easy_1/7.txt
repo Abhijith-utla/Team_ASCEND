@@ -1,0 +1,4 @@
+def sol():
+    return "18-+*/"
+
+print(sat(sol()))

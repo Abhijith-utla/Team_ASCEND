@@ -1,0 +1,15 @@
+def sat(quine: str):
+    return eval(quine) == quine
+
+def sol():
+    return ""
+
+# The function 'sat' checks if the input string 'quine' is equivalent to its original form.
+# If the string 'quine' is equal to its original form, then it is considered a valid answer.
+# Here, the function returns an empty string. 
+# The final checker will run: assert sat(sol())
+
+print(sat(sol()))
+
+if __name__ == "__main__":
+    assert sat(sol())

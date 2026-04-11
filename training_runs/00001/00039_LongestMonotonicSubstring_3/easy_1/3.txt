@@ -1,0 +1,8 @@
+Here is the Python code that constructs and returns a single answer value.
+
+```python
+def sol():
+    return "Output"
+```
+
+This function `sol` doesn't take any arguments and returns the string "Output". The function is named `sol` because it's the solution to the given problem.

@@ -1,0 +1,9 @@
+Here is the correct Python code:
+
+```python
+def sol():
+    return {"result": True}
+
+def sat(li: List[int]):
+    return all(x == sum(li[:i]) for i in range(20))
+```

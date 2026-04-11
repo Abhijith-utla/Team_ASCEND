@@ -1,0 +1,4 @@
+def sol():
+    from collections import Counter
+    counter = Counter([i for i in range(1, 11)])
+    return counter == Counter()

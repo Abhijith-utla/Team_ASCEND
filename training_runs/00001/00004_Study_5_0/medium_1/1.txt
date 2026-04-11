@@ -1,0 +1,11 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+
+# Let's check if the function works by running the assert statement
+assert sat(sol())
+```
+
+This function always returns the same list [1, 2, 3, 4, 5, 6, 7, 8, 9, 1] as the count of each number from 1 to 9 is always 10.

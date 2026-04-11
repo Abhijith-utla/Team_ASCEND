@@ -1,0 +1,16 @@
+{
+  "attempt_num": 15,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "unterminated string literal (detected at line 2)",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T05:19:17.706268+00:00",
+  "diagnostic": "reason=ast_syntax_error:unterminated string literal (detected at line 2)|parse=fence=none,preamble=1,found_sol=1,candidates=2|checked=2/2|preview=Sure, here's a possible solution: ```python def sol(): return \"oo\" in \"ooo\" and \"o\" not in \"ooo\" and \"oo\" in \"oo\" and...",
+  "difficulty": "easy",
+  "problem_id": "00000_Study_1_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 3
+}

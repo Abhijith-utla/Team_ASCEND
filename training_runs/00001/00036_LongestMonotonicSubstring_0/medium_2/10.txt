@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# Incorrect pattern:
+def sol(x):
+    if len(x) != len(set(x)):
+        return "Invalid input: the list contains duplicates."
+    else:
+        return []
+
+# Correct pattern:
+def sol(x=[4, 5, 3, 8, 1, 2, 6, 7, 9, 10, 11, 12, 13]):
+    return x
+
+assert sat(sol())

@@ -1,0 +1,17 @@
+The function `sat` checks if the list `li` is a valid sequence of integers such that the sum of the first `i` integers is `i` for `i` in the range from 0 to 19. The `all` function is used here to ensure that all these checks are true.
+
+Here's the correct Python code for this function:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all([sum(li[:i]) == i for i in range(20)])
+```
+
+This function will return `True` if `li` is a valid sequence of integers, and `False` otherwise. The test for this function will be:
+
+```python
+def test_sat():
+    assert sat([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+    assert not sat([1, 2, 3,

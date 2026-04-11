@@ -1,0 +1,9 @@
+def sol():
+    return {
+        "answer": sat([
+            "python",
+            "programming",
+            "puzzle",
+            "sat"
+        ])
+    }

@@ -1,0 +1,10 @@
+Sure, here is your Python solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all(x == li[i] for i in range(len(li)))
+```
+
+This function takes a list of integers as an argument and returns True if all the integers in the list are equal to the first integer in the list, and False otherwise.

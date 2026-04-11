@@ -1,0 +1,30 @@
+Here are three simple Python functions that test the same core concept.
+
+```python
+def sat1(x: List[int], s: str):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1))
+
+def sat2(x: List[int]):
+    return all(x[i] < x[i + 1] for i in range(len(x) - 1))
+
+def sat3(x: List[str]):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1))
+```
+
+VARIANT1:
+```python
+def sat(x: List[int], s: str):
+    return all(s[i] <= s[i + 1] for i in range(len(x) - 1))
+```
+
+VARIANT2:
+```python
+def sat(x: List[int]):
+    return all(x[i] < x[i + 1] for i in range(len(x) - 1))
+```
+
+VARIANT3:
+```python
+def sat(x: List[str]):
+    return all(x[i] <= x[i + 1] for i in range(len(x) - 1))
+```

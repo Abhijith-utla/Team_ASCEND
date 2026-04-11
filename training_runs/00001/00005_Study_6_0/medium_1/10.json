@@ -1,0 +1,16 @@
+{
+  "attempt_num": 10,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T06:17:46.039808+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=6|checked=6/6|preview=def sol(): while True: i = int(input(\"Please enter an integer: \")) if sat(i): return i !",
+  "difficulty": "medium",
+  "problem_id": "00005_Study_6_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

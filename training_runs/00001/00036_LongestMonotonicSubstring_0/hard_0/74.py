@@ -1,0 +1,12 @@
+def sat(x: List[int], length=13, s="Dynamic programming solves this puzzle!!!"):
+    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(length - 1))
+
+def sol():
+    return [i for i in range(13) if i % 2 == 0]
+
+print(sol())
+
+# The final checker will run: assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

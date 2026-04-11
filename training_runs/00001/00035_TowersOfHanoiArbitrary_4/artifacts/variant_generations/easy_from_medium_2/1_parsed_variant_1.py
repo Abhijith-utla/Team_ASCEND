@@ -1,0 +1,10 @@
+def sat(moves: List[List[int]], source=[[5, 6], [1, 2, 4], [0, 3]], target=[[3, 2, 4, 6], [0, 1], [5]]):
+    state = [s[:] for s in source]
+    for i, j in moves:
+        state[i].append(state[j].pop(0))
+        assert sorted(state[i]) == target[i], f'{state[i]} is not equal to {target[i]}'
+
+    return state == target
+
+if __name__ == "__main__":
+    print("Parsed sat() loaded successfully")

@@ -1,0 +1,5 @@
+def sol():
+    return "pandemonium"
+
+# Test case
+assert sat(sol())

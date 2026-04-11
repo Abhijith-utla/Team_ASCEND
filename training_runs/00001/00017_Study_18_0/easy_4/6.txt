@@ -1,0 +1,4 @@
+def sol():
+    def inner(ls: List[str]) -> bool:
+        return all(len(set(s)) == len(s) for s in ls)
+    return inner

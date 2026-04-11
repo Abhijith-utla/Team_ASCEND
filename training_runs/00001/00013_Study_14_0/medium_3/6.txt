@@ -1,0 +1,17 @@
+Here is the solution for your problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    return all([i == sum(li[j] for j in range(i+1, len(li))) for i in range(len(li))])
+
+print(sat([1, 2, 3, 4, 5]))  # False
+print(sat([1, 1, 1, 1, 1]))  # True
+```
+
+This function `sat` checks if all elements in the list `li` are the sum of the elements after them in the list. The function returns `True` if all elements are the sum of the elements after them in the list and `False` otherwise.
+
+The `all` function in Python returns `True` if all elements in the given iterable (in this case, a list comprehension) are `True`. If there's at least one `False` element in the iterable, `all` will return `False`.
+
+In the list comprehension, `i` is the index of the current element in the list `li`,

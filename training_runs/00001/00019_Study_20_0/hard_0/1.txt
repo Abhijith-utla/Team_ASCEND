@@ -1,0 +1,14 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(j in {i - 1, i + 1, 3 * i} for i, j in zip([0] + li, li + [128]))
+```
+
+This function `sat` takes a list of integers `li` as input. It returns `True` if all elements in the list satisfy the condition `j in {i - 1, i + 1, 3 * i}` for each index `i` and value `j` in the list, and `False` otherwise.
+
+The function uses a generator expression to iterate over the list of tuples `(i, j)` where `i` is the index and `j` is the value at that index. It checks if `j` is in the set `{i - 1, i + 1, 3 * i}` for each `i`. If all values in the list satisfy this condition, the function returns `True`; otherwise, it returns `False`.
+
+The `zip` function is used to pair each element

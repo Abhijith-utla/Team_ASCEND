@@ -1,0 +1,10 @@
+def sol():
+    return ""
+
+# You can test this function with the following test case:
+# assert sol() == ""
+# assert sat(sol()) == True
+# assert sol() != "a"
+# assert sat(sol()) == False
+# assert sol() == "a"
+# assert sat(sol()) == True

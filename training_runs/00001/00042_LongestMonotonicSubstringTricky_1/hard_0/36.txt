@@ -1,0 +1,2 @@
+def sol():
+    return [i for i in range(len(s)) if s[i] == 'S' or s[i] == 'L' or s[i] == 'I' or s[i] == 'E' or s[i] == 'T' or s[i] == 'U' or s[i] == 'V' or s[i] == 'K' or s[i] == 'W' or s[i] == 'X' or s[i] == 'Y' or s[i] == 'Z']

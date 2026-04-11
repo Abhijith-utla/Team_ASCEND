@@ -1,0 +1,7 @@
+def sol():
+    return []
+
+# The function 'sat' does not take any arguments.
+# Therefore, 'sol' does not require any arguments.
+# But, 'sol' is returning an empty list because there is no logic inside 'sol'.
+# Hence, the function 'sol' does not return anything, but does not do anything.

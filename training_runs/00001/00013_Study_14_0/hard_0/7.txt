@@ -1,0 +1,15 @@
+Sure, the given function `sat` checks if all elements in the list `li` are equal to their index `i`. If the sum of all elements up to `i` is `i`, then the function returns `True`. Otherwise, it returns `False`.
+
+Here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    for i in range(20):
+        if sum(li[:i]) != i:
+            return False
+    return True
+```
+
+This function uses a list comprehension to generate a list of conditions. Each condition checks if the sum of the elements in the list `li` up to index `i` is equal to `i`. If any of these conditions is not met, the function returns `False`. If all conditions are met, the function returns `True`.

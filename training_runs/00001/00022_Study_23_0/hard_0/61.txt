@@ -1,0 +1,14 @@
+The given Python function `sat` is already defined by the user. It checks if the provided list is a permutation of the string 'dee', 'doo', and 'dah!'. The function takes a list of strings as input and returns a boolean indicating whether the list is a permutation of the string 'dee', 'doo', and 'dah!'.
+
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return tuple(ls) in zip('dee', 'doo', 'dah!')
+```
+
+In this pattern, `ls` is the input list of strings. The function `sol` returns `True` if the list is a permutation of the string 'dee', 'doo', and 'dah!', and `False` otherwise. 
+
+This function must be able to handle a list of strings of any length, as long as they are all the same length. If the list is longer or shorter than the strings 'dee', 'doo', and 'dah!', the function will return `False`. 
+
+The final checker will run: `assert sat(sol())

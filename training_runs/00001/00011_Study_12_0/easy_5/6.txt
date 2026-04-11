@@ -1,0 +1,14 @@
+Here is the solution for the given problem.
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(i + j == 4 for i, j in zip([4] + li, li)) and len(li) == 1000
+```
+
+This solution uses the `zip` function to iterate over pairs of elements from the list `li` and `[4] + li`. It checks if the sum of each pair equals `4`. If all pairs have a sum of `4`, the function returns `True`. If not, it returns `False`.
+
+The second condition ensures that the length of the list `li` is `1000`. The `len` function returns the length of the list, and the condition `len(li) == 1000` checks if the length is `1000`.
+
+The function `sat` is defined to satisfy the problem's constraints.

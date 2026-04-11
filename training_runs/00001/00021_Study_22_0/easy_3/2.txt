@@ -1,0 +1,4 @@
+def sol():
+    return 'catinhat'
+
+assert sat(sol())

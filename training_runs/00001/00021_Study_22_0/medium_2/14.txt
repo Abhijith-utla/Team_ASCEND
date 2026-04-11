@@ -1,0 +1,8 @@
+def sol():
+    s = input()
+    if sat(s):
+        return s
+    else:
+        return "Invalid input."
+
+print(sol())

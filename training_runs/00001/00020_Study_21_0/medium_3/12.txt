@@ -1,0 +1,19 @@
+Sure, here is a solution for the problem:
+
+```python
+from typing import List
+
+def sol() -> List[int]:
+    li = [1, 2, 2, 3, 3, 3, 4]
+    while not sat(li):
+        li[li.index(4) - 1] += 1
+        li[li.index(4) + 1] += 1
+    return li
+
+def sat(li: List[int]) -> bool:
+    return all([li[i] != li[i + 1] for i in range(7)]) and len(set(li)) == 3
+
+assert sat(sol())
+```
+
+This program creates a list `li` with the correct pattern. It then enters a loop where it increases the second and third elements by 1. The loop continues until the list satisfies both conditions: that the list is in non-decreasing order and that the list has exactly three unique elements. The function `sat` checks if a list satisfies these conditions. The loop ensures that the list satisfies the conditions, as long as the list is not in non-decreasing order

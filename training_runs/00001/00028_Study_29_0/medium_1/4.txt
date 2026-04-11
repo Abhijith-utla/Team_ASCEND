@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The solution is an empty list, because the predicate `all(i in range(1000) and abs(i * i - j * j) >= 10 for i in l for j in l if i != j)` is always False.

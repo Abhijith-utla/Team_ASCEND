@@ -1,0 +1,5 @@
+def sol():
+    return 3.1417
+
+# Checker will call this function and will assert that the result of the function matches the expected result
+assert sat(sol())

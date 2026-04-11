@@ -1,0 +1,26 @@
+Here are the three simpler variants of the original puzzle:
+
+```python
+# Variant 1
+def sat(answers):
+    if len(answers) == 0:
+        return True
+    else:
+        return all(answer in answers for answer in range(len(answers)))
+
+# Variant 2
+def sat(answers):
+    if not answers:
+        return True
+    else:
+        return all(answer in answers for answer in range(len(answers)))
+
+# Variant 3
+def sat(answers):
+    if len(answers) == 0:
+        return True
+    else:
+        return all(answer in range(len(answers)) for answer in answers)
+```
+
+These functions take a list of answers and return True if the list is empty or if all answers are in the list, otherwise it returns False. They use the all() function to test if all answers are in the list, and the range() function to create the list of answers (which is a list of numbers from 0 to len(answers) - 1). The first variant checks if the list is empty, while the second variant checks if the list is not empty. The third variant checks if the list is not empty, while the first variant checks if all answers are in the list.

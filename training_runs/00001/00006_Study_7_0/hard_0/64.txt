@@ -1,0 +1,5 @@
+def sol():
+    return 'e' in str(8 ** 2888)
+
+# Test
+assert sat(sol())

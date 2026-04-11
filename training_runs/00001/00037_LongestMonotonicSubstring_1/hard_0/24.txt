@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(193) if sat([i, i + 1])]
+
+# This is a test code, you should remove it
+print(sol())

@@ -1,0 +1,12 @@
+def sol():
+    return '4.5abc'
+
+# testing the function
+def test_sol():
+    assert sat(sol())
+
+# calling the function
+print(sol())
+
+# running the test
+test_sol()

@@ -1,0 +1,5 @@
+def sol():
+    return ""
+
+# This line is just to verify the code above, remove it or replace with your own code
+assert sat(sol())

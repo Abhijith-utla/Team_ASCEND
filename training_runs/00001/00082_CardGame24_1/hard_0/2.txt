@@ -1,0 +1,18 @@
+def sol():
+    return 15
+
+# Test cases
+assert sat(sol())
+assert not sat("1+2*3-4/1")
+assert not sat("1+2*3-4/2")
+assert not sat("1+2*3-4/13")
+assert not sat("1+2*3-4/1")
+assert not sat("1+2*3-4/12")
+assert not sat("1+2*3-4/123")
+assert not sat("1+2*3-4/1234")
+assert not sat("1+2*3-4/12345")
+assert not sat("1+2*3-4/123456")
+assert not sat("1+2*3-4/1234567")
+assert not sat("1+2*3-4/12345678")
+assert not sat("1+2*3-4/123456789")
+assert not sat("1+2*3-4/123456

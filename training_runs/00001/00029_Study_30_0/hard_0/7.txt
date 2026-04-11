@@ -1,0 +1,7 @@
+def sol():
+    li = [0]*20
+    for i in range(20):
+        li[i] = i+1
+    return li
+
+print(sol())

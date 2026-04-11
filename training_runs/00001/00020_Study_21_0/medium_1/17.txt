@@ -1,0 +1,11 @@
+def sol():
+    def sat(li: List[int]):
+        return all([li[i] != li[i + 1] for i in range(9)]) and len(set(li)) == 3
+
+    answer = [i + 1 for i in range(9)]
+    return answer
+
+    # assert sat(sol())
+
+# The last line is to ensure the function works and the assert statement will fail if the function doesn't return the correct answer
+assert sat(sol())

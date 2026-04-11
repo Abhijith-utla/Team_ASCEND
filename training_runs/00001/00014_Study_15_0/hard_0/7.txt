@@ -1,0 +1,10 @@
+Here is the correct pattern for the Python function `sol`:
+
+```python
+def sol():
+    return sum([2 ** i - 1 for i in range(20)])
+```
+
+This function calculates the sum of the binary sequence from 1 to 20 and returns this sum. The sum is calculated using a list comprehension, which iterates over the range from 0 to 19 (inclusive), and for each iteration, it adds 2 raised to the power of the current iteration to 1 (using the `2 ** i - 1` formula). The `sum` function then adds up all these values to get the final sum.
+
+This function is correct because it satisfies the condition given in the problem statement.

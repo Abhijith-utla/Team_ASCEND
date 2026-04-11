@@ -1,0 +1,5 @@
+def sol():
+    return {
+        "result": False,
+        "message": "Invalid expression"
+    }

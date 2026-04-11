@@ -1,0 +1,14 @@
+Here is the solution for the Python programming puzzle:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(ch == "The quick brown fox jumps over the lazy dog"[i] for i in li) == list("The five boxing wizards jump quickly")
+```
+
+This function takes a list of integers as input and returns True if all characters at corresponding indices in the two strings match, and False otherwise. The strings are indexed from 0, so the first character in "The quick brown fox jumps over the lazy dog" is at index 0, the first character in "The five boxing wizards jump quickly" is at index 0, etc.
+
+The `all` function is used to check if all elements in the iterable (in this case, the list of characters) are True. If all elements are True, `all` returns True; otherwise, it returns False.
+
+The `==` operator is used to compare the two strings. If both strings are equal, `==` returns True; otherwise, it returns False.

@@ -1,0 +1,16 @@
+{
+  "attempt_num": 71,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T12:40:13.192145+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): return \"\" # Evaluating an empty string should not change it assert sat(sol()) !python -c \"print('Hello, Wo...",
+  "difficulty": "hard",
+  "problem_id": "00046_Quine_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

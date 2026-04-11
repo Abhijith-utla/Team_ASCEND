@@ -1,0 +1,9 @@
+def sol():
+    return []
+
+if __name__ == "__main__":
+    assert sat(sol())
+
+__test__ = {
+    'sol': sol
+}

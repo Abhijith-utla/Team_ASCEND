@@ -1,0 +1,4 @@
+def sol():
+    return ''
+
+# Insert your code here. Replace the code in brackets with the correct Python code to solve this problem.

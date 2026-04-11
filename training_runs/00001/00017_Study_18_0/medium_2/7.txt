@@ -1,0 +1,10 @@
+Here is the solution for this problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+This function checks if all strings in the list `ls` have unique characters by converting each string into a set and comparing the length of the set to the length of the string. If all strings have unique characters, the function returns `True`, otherwise it returns `False`.

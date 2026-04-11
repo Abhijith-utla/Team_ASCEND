@@ -1,0 +1,19 @@
+The function `sat` is already defined by the user. It checks if the first element of the list is not equal to the second element, and the second element of the list is equal to the third element of the list.
+
+Here is the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return [1, 2, 3]
+```
+
+In this case, the list `[1, 2, 3]` satisfies the conditions.
+
+Here is the incorrect pattern for the function `sol`:
+
+```python
+def sol(x):
+    return [1, 2, 3]
+```
+
+In this case, the list `[1, 2, 3]` does not satisfy the conditions.

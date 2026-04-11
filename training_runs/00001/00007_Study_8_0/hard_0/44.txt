@@ -1,0 +1,19 @@
+Here is the correct solution:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+```
+
+Here is the incorrect solution:
+
+```python
+from typing import List
+
+def sol(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1235] != ls[1234]
+```
+
+In the incorrect solution, the check `ls[1235] != ls[1234]` is supposed to be `ls[1234] != ls[1235]` to ensure that `ls[1234]` is not equal to `ls[1235]`. However, the check is reversed, thus, it will always return `False`.

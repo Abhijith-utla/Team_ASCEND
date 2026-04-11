@@ -1,0 +1,15 @@
+Below are three variants of the function sat().
+
+```python
+# Variant 1
+def sat(n: int):
+    return len(str(n + 1000)) == len(str(n + 1001))
+
+# Variant 2
+def sat(n: int):
+    return len(str(n + 1000)) != len(str(n + 1001))
+
+# Variant 3
+def sat(n: int):
+    return len(str(n + 1000)) > len(str(n + 1001))
+```

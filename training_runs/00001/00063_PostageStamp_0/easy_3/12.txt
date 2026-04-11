@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Testing
+assert sat([])
+assert not sat([10, 32, 8])
+assert sat([10]*10)
+assert not sat([10]*11)
+
+print("All tests passed")

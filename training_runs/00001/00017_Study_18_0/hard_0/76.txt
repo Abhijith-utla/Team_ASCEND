@@ -1,0 +1,22 @@
+Here is a Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    result = []
+    for s in ls:
+        for t in ls:
+            if s != t:
+                result.append(s + t)
+    return result == 'berlin berger linber linger gerber gerlin'.split()
+```
+
+In this code, we iterate over the list `ls` twice. For each element `s` in `ls`, we iterate over `ls` again. If `s` is not equal to `t`, we append `s` concatenated with `t` to the `result` list. Finally, we return whether `result` is equal to a list of words in the string 'berlin berger linber linger gerber gerlin' split by spaces.
+
+Please note that the function `sat` is defined to accept a list of strings and it returns a boolean value indicating whether the operation was successful. The operation is successful if the output of the function equals the expected result.
+
+Here is the function call:
+
+```python
+print(

@@ -1,0 +1,7 @@
+def sol():
+    return {"solution": True}
+
+# Test
+assert sat([""])
+assert not sat(["abc", "bcd", "efg"])
+assert not sat(["abc", "bcd", "abcd"])

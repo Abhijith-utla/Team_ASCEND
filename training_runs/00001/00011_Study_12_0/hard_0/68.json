@@ -1,0 +1,16 @@
+{
+  "attempt_num": 68,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T07:24:07.603508+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=7|checked=7/7|preview=```python def sol(): return 9 ``` In this case, the answer is 9. The function `sol` is defined to return the number 9...",
+  "difficulty": "hard",
+  "problem_id": "00011_Study_12_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

@@ -1,0 +1,14 @@
+Here is the Python code that solves the problem:
+
+```python
+from typing import List
+
+def sol(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    return True
+```
+
+The function `sol` takes a list of integers as input. It first checks if the length of the list is 10. If it's not, it returns False. Then it counts the number of occurrences of the fourth element in the list and checks if it occurs twice. If it doesn't, it returns False. If all the conditions are met, it returns True.

@@ -1,0 +1,12 @@
+def sol():
+    for i in range(10**10, 10**10 + 123):
+        if sat(i):
+            return i
+    return None
+
+# Test cases
+print(sat(123))  # False
+print(sat(124))  # True
+print(sat(125))  # False
+print(sat(20000000000124))  # True
+print(sol())  # None or any valid answer

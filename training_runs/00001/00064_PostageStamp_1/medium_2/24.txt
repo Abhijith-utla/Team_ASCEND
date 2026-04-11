@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# Here, we will use a simple approach where we will iterate over all possible combinations of stamps and check if they sum up to the target.
+# We will keep track of the best combination that gives us the target sum.
+
+def sol():
+    target = 271
+    max_stamps = 8
+    options = [1, 2, 3]
+
+    best_combination = None
+    for i in range(max_stamps + 1):
+        for j in range(max_stamps + 1 - i):
+            for k in range(max_stamps + 1 - i - j):
+                l = max_stamps - i - j - k
+                current_combination = [options[x] for x in [0, 1, 2] if i * options[0] + j * options[1] + k * options[2] + l * options[3] == target]
+                if best_combination is None or len(current_combination) < len(best_combination):
+                    best_combination = current_combination
+    return best

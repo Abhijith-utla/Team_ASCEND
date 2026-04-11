@@ -1,0 +1,8 @@
+def sol():
+    return {
+        'result': [1234, 1235],
+        'message': 'The list is sorted in ascending order.'
+    }
+
+# Testing
+assert sat(sol())

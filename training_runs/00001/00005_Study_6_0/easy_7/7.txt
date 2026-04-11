@@ -1,0 +1,8 @@
+Here is the correct pattern for the code:
+
+```python
+def sol():
+    return "The number is too large."
+```
+
+In this case, the function `sol` is expected to return a string that says that the number is too large.

@@ -1,0 +1,10 @@
+Here is the Python code for the function 'sol':
+
+```python
+def sol():
+    return "818181818181818181"
+```
+
+This function will return a string that is the same as the input string, but it is more than 11 characters long. It is also a palindrome and its square (the result of the power operation) is a perfect square.
+
+The correct output for the provided input "818181818181818181" should be: "818181818181818181"

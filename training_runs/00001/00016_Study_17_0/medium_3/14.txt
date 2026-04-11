@@ -1,0 +1,22 @@
+Here is the solution for the problem:
+
+```python
+def sol():
+    i = 1
+    while not sat(i):
+        i += 1
+    return i
+
+def sat(i: int):
+    return len(str(i + 1000)) < len(str(i + 1001))
+```
+
+This program uses a while loop to find the smallest integer that satisfies the condition defined in the `sat` function. The condition `len(str(i + 1000)) < len(str(i + 1001))` checks if the length of the string representation of `i + 1000` is less than the length of `i + 1001`. If the condition is not satisfied, the program increments `i` and checks the condition again. When the condition is satisfied, the program returns `i`.
+
+The test for this program would look like this:
+
+```python
+assert sat(sol())
+```
+
+This test checks if the smallest integer that satisfies the condition is equal to the value returned by the `sol` function.

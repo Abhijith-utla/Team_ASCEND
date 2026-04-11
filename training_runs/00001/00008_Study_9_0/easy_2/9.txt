@@ -1,0 +1,5 @@
+def sol():
+    return [i for i in range(10) if ord(chr(i)) % 3 == 1]
+
+# Test
+assert sat(sol())

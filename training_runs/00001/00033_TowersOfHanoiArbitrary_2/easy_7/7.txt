@@ -1,0 +1,5 @@
+def sol():
+    return [source[:], target[:]]
+
+# Validate
+assert sat(sol())

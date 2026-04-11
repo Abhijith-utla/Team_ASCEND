@@ -1,0 +1,13 @@
+Here is the solution:
+
+```python
+def sol():
+    x = [0]*19
+    for i in range(18):
+        x[i] = i
+    x[18] = 18
+    x[19] = 19
+    return x
+```
+
+This function creates a list `x` of length 19, where each element is a number from 0 to 18. The last two elements are 18 and 19 respectively. It's not clear what is meant by the last condition, but if it was checking if the list `x` is sorted in ascending order, then this would be the correct solution.

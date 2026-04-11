@@ -1,0 +1,11 @@
+def sol():
+    x = [i for i in range(19)]
+    return x
+
+# The solution is:
+# def sol():
+#     x = [i for i in range(19)]
+#     return x
+
+# The final checker will run:
+# assert sat(sol())

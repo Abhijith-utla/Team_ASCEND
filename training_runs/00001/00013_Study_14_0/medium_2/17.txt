@@ -1,0 +1,14 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> int:
+    for i in range(len(li)):
+        x = li[i]
+        if x < sum(li[:i]):
+            return 0
+    return 1
+```
+
+This function checks if every element is less than the sum of all elements before it in the list. It does this by comparing each element in the list to the sum of all elements before it. If any element is found to be less than the sum, the function returns 0. If all elements are less than the sum, the function returns 1.

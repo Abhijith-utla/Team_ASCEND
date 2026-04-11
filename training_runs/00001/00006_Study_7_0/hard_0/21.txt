@@ -1,0 +1,10 @@
+Here is the correct pattern for the Python code:
+
+```python
+def sol():
+    return "8" * 2888
+
+assert sat(sol())
+```
+
+This code uses a Python built-in function to generate a string of "8"s, then checks if this string contains the substring "8" more than once and has exactly three characters. The final assert statement checks if the function sol() returns a string that satisfies the conditions.

@@ -1,0 +1,14 @@
+def sol():
+    return ""
+
+assert sat()
+assert not sat()
+assert not sat()
+assert not sat()
+assert not sat()
+assert sat("brrrbrrbrbbbbbrrbbrr", 1)
+assert not sat("brrrbrrbrbbbbbrrbbrr", 2)
+assert not sat("brrrbrrbrbbbbbrrbbrr", 3)
+assert not sat("brrrbrrbrbbbbbrrbbrr", 4)
+assert not sat("brrrbrrbrbbbbbrrbbrr", 5)
+assert sat("brrrbrrbrbbbbbrrbbrr", 6)

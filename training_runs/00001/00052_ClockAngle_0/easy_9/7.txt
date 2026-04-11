@@ -1,0 +1,4 @@
+def sol():
+    return 13, 45
+
+print(f"Hour: {sol()[0]}, Minute: {sol()[1]}")

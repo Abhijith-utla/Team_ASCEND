@@ -1,0 +1,14 @@
+Here is the solution:
+
+```python
+def sol():
+    num = 8 ** 1818
+    str_num = str(num)
+    return str_num[0] + str_num[1:-1][::-1] + str_num[-1]
+
+assert sat(sol())
+```
+
+This function `sol()` returns a string that is the first, last, and reversed part of the string representation of the number 8 raised to the power of 1818. The assertion `assert sat(sol())` will pass if `sol()` returns a valid answer.
+
+The assertion line checks if `sol()` returns a valid answer by calling `sat()` with `sol()`'s result as an argument. If `sat()` returns True, the assertion passes, indicating that `sol()` is correct. If `sat()` returns False, the assertion fails, indicating that `sol()` is not correct.

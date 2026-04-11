@@ -1,0 +1,5 @@
+def sol():
+    return [19, 14, 81]
+
+# Testing
+assert sat(options=[19, 14, 81], max_stamps=2, stamps=[19, 14, 81], target=19)

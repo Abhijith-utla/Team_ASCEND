@@ -1,0 +1,6 @@
+def sol():
+    s = input("Enter a string: ")
+    while not sat(s):
+        print("The string is not valid. Please try again.")
+        s = input("Enter a string: ")
+    return s[::2]

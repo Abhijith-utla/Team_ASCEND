@@ -1,0 +1,5 @@
+def sol():
+    return {"n": 5, "lace": "bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"}
+
+# Test case
+assert sat(sol()["n"])

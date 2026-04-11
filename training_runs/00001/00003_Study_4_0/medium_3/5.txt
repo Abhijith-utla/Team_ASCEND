@@ -1,0 +1,24 @@
+Here's a Python solution for the problem:
+
+```python
+from typing import List
+
+def sol() -> bool:
+    li = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    return sat(li)
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    if li.count(li[3]) != 2:
+        return False
+    if li.index(li[3]) != 3:
+        return False
+    if li.count(li[3]) == 1:
+        return False
+    return True
+```
+
+This solution uses the function `sat` to check if a list `li` meets the conditions defined in the problem. The `sat` function checks if the list `li` has exactly 10 elements, the 4th element in the list occurs twice, the 4th element in the list is the fourth element in the list, and the 4th element in the list does not occur twice.
+
+The solution defines a list

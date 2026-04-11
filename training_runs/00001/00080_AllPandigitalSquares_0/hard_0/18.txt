@@ -1,0 +1,5 @@
+def sol():
+    return [sorted([int(s) for s in str(n * n)]) for n in range(10)]
+
+# Test Case
+print(sat(sol()))

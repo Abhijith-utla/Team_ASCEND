@@ -1,0 +1,6 @@
+def sol():
+    return hour, minute
+
+hour, minute = sol()
+
+assert sat(hour, minute)

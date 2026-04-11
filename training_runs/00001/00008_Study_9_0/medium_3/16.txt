@@ -1,0 +1,10 @@
+Sure, here is the correct solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return [chr(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))
+```
+
+This function `sat` checks if the list of integers `li` is equal to the list of characters produced by replacing spaces in the string "The quick brown fox jumps over the lazy dog" with nothing. If they are equal, the function returns `True`; otherwise, it returns `False`.

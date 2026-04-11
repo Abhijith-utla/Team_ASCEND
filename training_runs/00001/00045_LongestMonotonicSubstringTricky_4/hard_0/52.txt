@@ -1,0 +1,4 @@
+def sol():
+    return [x for x in range(19)]
+
+print(sol())

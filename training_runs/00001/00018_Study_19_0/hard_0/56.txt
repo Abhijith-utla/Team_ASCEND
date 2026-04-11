@@ -1,0 +1,11 @@
+Here is the solution:
+
+```python
+from typing import List
+
+def sol():
+    li = [i for i in range(21) if i not in [0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34]]
+    return li
+```
+
+This solution is correct if the answer object (the variable `li`) meets the conditions specified in the problem. The output of `sol()` is a list of integers that is not in the set {0, 1, 2, 3, 4, 5, 6, 17, 18, 19, 20, 34}.

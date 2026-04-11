@@ -1,0 +1,8 @@
+def sol(coords: List[List[int]], side=0, num_points=0):
+    def get_perimeter(coord):
+        return [(x + dx, y + dy) for (x, y) in coord for (dx, dy) in [(-1, 0), (1, 0), (0, -1), (0, 1)]]
+    
+    def is_convex(coord):
+        return sum(1 for (x1, y1), (x2, y2) in zip(coord, coord[1:] + coord[:1]) in ((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) for (x1, y1), (x2, y2), (x3, y3) in zip(coord, coord[1:] + coord[:1], coord[2:] + coord[:2]))
+    
+    return len({(a, b) for a, b in coords}) >= num_points and len(coords) == len(set(tuple(s

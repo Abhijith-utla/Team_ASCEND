@@ -1,0 +1,18 @@
+Here is the Python code that satisfies the given conditions:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for i in range(len(li)):
+        for j in range(i):
+            if li[i] < li[j]:
+                return False
+    return True
+```
+
+The code creates a nested loop to check each number in the list for being less than any other number in the list. If it finds a number that is less than any of the previous numbers, it returns False. If it doesn't find any such number, it returns True.
+
+The time complexity of this code is O(n^2) where n is the number of elements in the list. This is because there are two nested loops. 
+
+The space complexity is O(1) because the code only uses a constant amount of space.

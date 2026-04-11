@@ -1,0 +1,8 @@
+def sol():
+    return min(ls) == max(ls) == str(len(ls))
+
+# Test
+assert sat(["1", "2", "3", "4", "5"])
+assert not sat(["1", "2", "3", "4"])
+assert not sat(["1"])
+assert not sat([])

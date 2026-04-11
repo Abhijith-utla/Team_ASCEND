@@ -1,0 +1,8 @@
+def sol():
+    return "This list is empty."
+
+def test_sat():
+    assert sat(["a", "b", "c"])
+    assert not sat([])
+
+test_sat()

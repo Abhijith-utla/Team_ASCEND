@@ -1,0 +1,16 @@
+The function `sat` is already defined by the user and is supposed to check if the difference between the length of the string representation of `i + 1000` and `i + 1001` is greater than the length of `i + 1001`. If this condition is not satisfied, the function returns `False`. If it is satisfied, the function returns `True`.
+
+Here is the correct pattern:
+
+```python
+def sol():
+    i = 5000
+    if sat(i):
+        return i + 1000
+    else:
+        return i + 1001
+```
+
+In the above code, `sol` function is designed to return `i + 1000` if the condition in `sat` is satisfied, otherwise it will return `i + 1001`. The final checker will run: `assert sat(sol())`.
+
+In the incorrect pattern, `sol` function is designed to return `i + 1001` if the condition in `sat` is satisfied, otherwise it will return `i + 1000`. The final checker will run: `assert

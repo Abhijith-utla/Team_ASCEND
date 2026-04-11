@@ -1,0 +1,17 @@
+{
+  "attempt_num": 19,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T06:18:25.331439+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=python,preamble=1,found_sol=1,candidates=5|checked=5/5|preview=Here's the correct Python code for the solution: ```python def sol(): i = 1 while i < 100: i += 1 return i ``` This c...",
+  "difficulty": "medium",
+  "problem_id": "00005_Study_6_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

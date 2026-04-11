@@ -1,0 +1,19 @@
+Here is the Python solution to the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    total = 0
+    for i in range(len(li)):
+        total += li[i]
+        if total >= sum(li[:i+1]):
+            return False
+    return True
+```
+
+The function `sat` takes a list of integers `li` as input. It iterates over the list, adding each element to a running total. If the total exceeds the sum of the list up to that point, it returns `False`, indicating that the list is not a valid answer. If it doesn't find such a case, it returns `True`.
+
+This solution assumes that the list contains at least one element, because we check `total >= sum(li[:i+1])` for each `i`. If the list is empty, the sum of the list is zero, which would satisfy `total >= sum(li[:i+1])`, so we return `True`.
+
+The time complexity of this solution is O(n), where n is the length of the list. This

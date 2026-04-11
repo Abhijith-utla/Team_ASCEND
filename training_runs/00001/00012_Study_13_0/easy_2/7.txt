@@ -1,0 +1,14 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    return 123.456
+```
+
+The function `sat` checks if the value of `x` is equal to `123.456`, which is the expected output.
+
+The final checker will run:
+```python
+assert sat(sol())
+```
+This will pass if the function `sol` returns `123.456`.

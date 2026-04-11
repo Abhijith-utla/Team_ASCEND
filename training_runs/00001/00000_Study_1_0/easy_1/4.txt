@@ -1,0 +1,6 @@
+```python
+def sol():
+    return 'Hello World'
+
+assert sat(sol())
+```

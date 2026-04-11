@@ -1,0 +1,12 @@
+Sure, here is the solution:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return li == [i for i in li if i >= 0]
+```
+
+This function will return True if the list `li` is a list of positive integers, and False otherwise. It uses a list comprehension to generate a new list that contains only the positive integers from the original list.
+
+The function `sat` is used by the checker to test if the result of the function `sol` is a list of positive integers. If `sol` returns a list of positive integers, `sat` will return True, otherwise it will return False.

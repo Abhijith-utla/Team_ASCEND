@@ -1,0 +1,17 @@
+Here is the Python code that satisfies the requirements:
+
+```python
+from typing import List
+
+def sat(ls: List[str]):
+    if len(ls) == 0:
+        return True
+    else:
+        return all(len(set(i)) == len(ls[0]) for i in ls)
+
+print(sat([]))  # True
+print(sat(["abc", "def", "ghi"]))  # True
+print(sat(["abc", "abcd", "ghi"]))  # False
+```
+
+In the `sat` function, we first check if the list is empty. If it is, we return `True` since it satisfies the condition. Then, we check if all elements in the list are of the same length by converting each string to a set and comparing the length of the set to the length of the first element in the list. If all elements are of the same length, the function returns `True`, otherwise it returns `False`.

@@ -1,0 +1,8 @@
+Here is the Python code to satisfy the function `sat(s: str)`:
+
+```python
+def sat(s: str):
+    return len(s) == 1000 and 'o' in s
+```
+
+This function takes a string `s` as input, and returns a boolean value indicating whether the length of `s` is exactly 1000 characters and whether the character 'o' appears in `s`. If `s` is both 1000 characters long and contains the character 'o', the function returns `True`; otherwise, it returns `False`.

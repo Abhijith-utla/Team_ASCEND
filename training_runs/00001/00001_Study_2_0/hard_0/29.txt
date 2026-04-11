@@ -1,0 +1,14 @@
+Sure, here is the Python function sol that satisfies the given condition.
+
+```python
+def sol():
+    s = "ho" * 801 + "oo" * 100 + "o" * 1000
+    return s
+```
+
+This function creates a string s by repeating the string "ho" 801 times, "oo" 100 times, and "o" 1000 times. Then, it returns the string s.
+
+The final checker will run:
+```python
+assert sat(sol())
+```

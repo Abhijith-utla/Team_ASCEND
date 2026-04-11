@@ -1,0 +1,4 @@
+```python
+def sol():
+    return 12 if sat(12) else -1
+```

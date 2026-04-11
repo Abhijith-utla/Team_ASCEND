@@ -1,0 +1,15 @@
+```python
+def sol():
+    return 8 ** 2888
+```
+
+In the given Python function, we are simply returning the string representation of the number 8 raised to the power of 2888. We are then checking if this number contains the string "888" more than 8 times and the length of the string is 3.
+
+Here is the Python code for the function:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+This function `sat` takes a string `s` as input. It first calculates `8 ** 2888` and converts it to a string. It then counts the number of occurrences of the string `s` in the calculated string, checks if the count is greater than 8, and checks if the length of the string is 3. If all conditions are met, it returns `True`, otherwise it returns `False`.

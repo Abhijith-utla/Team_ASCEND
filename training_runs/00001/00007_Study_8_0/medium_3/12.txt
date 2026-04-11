@@ -1,0 +1,14 @@
+def sol():
+    return []
+
+# This will be the answer value
+answer = []
+
+# Put the answer value in the answer variable
+answer.append(answer)
+
+# This will be the final answer object
+return answer
+
+# Checker: This should pass
+assert sat(answer)

@@ -1,0 +1,9 @@
+def sol():
+    return [1]*10
+
+print(sat(sol())) # True
+
+def sat(li: List[int]) -> bool:
+    if len(li) != 10:
+        return False
+    return True

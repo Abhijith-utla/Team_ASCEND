@@ -1,0 +1,4 @@
+def sol():
+    return 5
+
+print(sat(sol))

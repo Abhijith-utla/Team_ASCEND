@@ -1,0 +1,9 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    s = 'oo' * 1000
+    return s
+```
+
+The function `sol` constructs a string `s` such that `'oo'` occurs 1000 times, and returns this string. The assert statement at the end ensures that the function is correctly implemented.

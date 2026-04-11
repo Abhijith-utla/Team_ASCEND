@@ -1,0 +1,8 @@
+Sure, the function `sat(answer)` checks if the answer is greater than 3.1416. Here is the correct code:
+
+```python
+def sol():
+    return 3.1416
+```
+
+The final checker will run: assert sat(sol()) which should return True if the answer is greater than 3.1416, otherwise it will raise an AssertionError.

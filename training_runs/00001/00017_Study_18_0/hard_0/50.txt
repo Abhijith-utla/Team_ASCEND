@@ -1,0 +1,7 @@
+def sol():
+    return 'berlin berger linber linger gerber gerlin' == ' '.join(' '.join(sorted(w)) for w in 'berlin berger linber linger gerber gerlin'.split() for s in 'berlin berger linber linger gerber gerlin'.split())
+
+def test():
+    assert sat(sol())
+
+test()

@@ -1,0 +1,4 @@
+def sol():
+    return [i for i in range(100) if i not in [j for j in range(100) if j != i]]
+
+assert sat(sol())

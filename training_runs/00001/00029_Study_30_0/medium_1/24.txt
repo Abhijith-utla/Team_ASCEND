@@ -1,0 +1,9 @@
+Here is a correct Python solution for the problem:
+
+```python
+def sol():
+    li = [0]*20
+    return li
+```
+
+In this solution, the function `sol` creates an empty list of size 20, and it returns this list. The list is filled with zeros because the problem statement specifies that the list should be filled with integers.

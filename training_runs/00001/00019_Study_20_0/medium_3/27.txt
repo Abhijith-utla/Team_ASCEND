@@ -1,0 +1,14 @@
+Here is the solution for the problem:
+
+```python
+from typing import List
+
+def sol():
+    return [3, 6, 9]
+
+assert sat(sol())
+```
+
+In this code, the function `sol` returns a list of three numbers [3, 6, 9]. This list is the same as the input list `[2, 3, 4]` because every element in the list is three times the corresponding element in the input list.
+
+The function `sat` is used to verify this. The `all` function is used to check if all elements in the list satisfy the condition `j == 3 * i`. If all elements satisfy the condition, `all` returns `True`, otherwise it returns `False`. The assert statement at the end of the code makes sure that `sat(sol())` is `True`, which means that the function `sol` returns the correct answer.

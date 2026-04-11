@@ -1,0 +1,21 @@
+Here are three simple Python functions to test the core concept of the original puzzle:
+
+VARIANT1:
+```python
+def sat(n: int):
+    return lace[n:n + len(lace) // 2] == 'r' * (2 * n)
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    return lace[n:n + len(lace) // 2] == 'r' * (2 * n + 1)
+```
+
+VARIANT3:
+```python
+def sat(n: int):
+    return lace[n:n + len(lace) // 2] == 'r' * (2 * n - 1)
+```
+
+In VARIANT1, the slice that we are trying to compare with 'r' repeated twice larger than the given `n`. In VARIANT2, the same but 'r' repeated twice larger than the given `n` plus one. In VARIANT3, the same but 'r' repeated twice larger than the given `n` minus one. These will always return False because the slice of `lace` that we are trying to compare with is larger than the original `lace`.

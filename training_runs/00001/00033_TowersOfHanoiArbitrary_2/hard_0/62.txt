@@ -1,0 +1,11 @@
+def sol():
+    return [[0, 1, 6, 7, 8, 9, 14, 16], [5, 15], [2, 3, 4, 10, 11, 12, 13]]
+
+def sat(moves: List[List[int]], source=sol(), target=sol()):
+    state = [s[:] for s in source]
+
+    for [i, j] in moves:
+        state[j].append(state[i].pop())
+        assert state[j] == sorted(state[j])
+
+    return state == target

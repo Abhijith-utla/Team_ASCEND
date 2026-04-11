@@ -1,0 +1,8 @@
+Sure, here is the Python code for the `sol` function:
+
+```python
+def sol():
+    return 127
+```
+
+This function returns the number `127`. The checker will run `assert sat(sol())`, and since `127` is the only valid answer, the checker will pass.

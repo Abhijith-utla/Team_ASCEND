@@ -1,0 +1,4 @@
+def sol():
+    return {(a, b): 1 for a in range(10) for b in range(10)}
+
+# print(sat(sol()))

@@ -1,0 +1,6 @@
+def sol():
+    return [max(len(x), len(str(len(x)))) for x in range(10)]
+
+print(sol())
+
+assert sat(sol())

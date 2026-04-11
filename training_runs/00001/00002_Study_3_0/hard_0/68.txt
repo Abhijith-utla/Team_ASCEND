@@ -1,0 +1,8 @@
+Here's the correct pattern for the function `sol`:
+
+```python
+def sol():
+    return sorted(range(999))
+```
+
+The function `sol` returns a list of sorted numbers from 0 to 998. This list is a valid answer to the problem. The condition `sorted(li) == list(range(999))` checks if the list `li` is a valid answer. The condition `all(li[i] != i for i in range(len(li)))` checks if all the elements in the list `li` are unique.

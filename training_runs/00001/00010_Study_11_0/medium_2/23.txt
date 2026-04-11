@@ -1,0 +1,12 @@
+The correct pattern is:
+
+```python
+def sol():
+    return "answer"
+```
+
+In this solution, `"answer"` is the only value that satisfies the condition.
+
+Explanation:
+
+The function `sol` takes no arguments and returns the string `"answer"`. This string is the answer value.

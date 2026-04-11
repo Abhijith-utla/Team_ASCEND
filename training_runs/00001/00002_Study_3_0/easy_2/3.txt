@@ -1,0 +1,22 @@
+Here is the correct pattern for the function "sol":
+
+```python
+def sol():
+    li = [0] * 1000
+    li[0] = 1
+    return li
+```
+
+This function returns a list with 1000 elements where each element is 1 and the first element is 1. The rest of the elements are 0. The list is sorted in ascending order and all elements are distinct.
+
+The function `sat` is provided by the user and is used to check if the result of `sol()` is correct. The correctness of `sol()` is not explicitly checked in this case, as it is not mentioned in the problem statement.
+
+The checker will run:
+```python
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(999)) and len(li) == 1000
+```
+which checks if the list is sorted, all elements are distinct, and its length is 1000.
+
+The checker will run:
+```python

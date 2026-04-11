@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# The function 'sat' is already defined by the user. It checks if two elements at certain indices are the same and not equal to a certain value. The function 'sol' returns an empty list.
+
+# Testing the function 'sol'
+assert sat(sol()) == []
+
+# Checking if the function works correctly with a list [1, 2, 3, 4, 5] and indices 0 and 2. The element at index 0 (value 1) is not equal to the element at index 2 (value 3), so the function should return False.
+assert sat(sol(), 0, 2, 3) == False
+
+# Checking if the function works correctly with a list [1, 2, 3, 4, 5] and indices 0 and 4. The element at index 0 (value 1) is not equal to the element at index 4 (value 5), so the function should return False.
+assert sat(sol(), 0, 4, 5) == False
+
+# Checking if the function works correctly with a list [1

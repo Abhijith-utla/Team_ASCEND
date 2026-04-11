@@ -1,0 +1,13 @@
+def sol():
+    return {}
+
+# Test cases
+print(sat((2, 30)))  # Returns True
+print(sat((10, 20)))  # Returns True
+print(sat((18, 10)))  # Returns False
+print(sat((22, 0)))  # Returns True
+print(sat((2, 0)))  # Returns True
+print(sat((12, 60)))  # Returns True
+print(sat((12, 70)))  # Returns False
+print(sat((5, 30)))  # Returns True
+print(sat((11, 55)))  # Returns False

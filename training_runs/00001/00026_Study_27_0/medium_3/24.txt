@@ -1,0 +1,9 @@
+Here is the Python code for the sol function:
+
+```python
+def sol():
+    answer = [1, 2, 3, 4, 5]
+    return answer
+```
+
+This function returns a list with the elements [1, 2, 3, 4, 5] as the answer.

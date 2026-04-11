@@ -1,0 +1,5 @@
+def sol():
+    return 'dee'
+
+# Check the solution
+assert sat(sol())

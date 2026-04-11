@@ -1,0 +1,6 @@
+def sol():
+    answer = (10 ** 10) + 4
+    return answer
+
+# The assertion checks that the answer is a multiple of 123, and is greater than 10^10.
+assert sat(sol())

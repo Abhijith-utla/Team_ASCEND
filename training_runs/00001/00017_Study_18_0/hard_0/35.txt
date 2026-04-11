@@ -1,0 +1,5 @@
+def sol():
+    return [s + t for s in 'berlin berger linber linger gerber gerlin'.split() for t in 'berlin berger linber linger gerber gerlin'.split() if s != t]
+
+# Testing the solution
+assert sat(sol())

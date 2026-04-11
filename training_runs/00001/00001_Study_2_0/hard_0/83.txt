@@ -1,0 +1,17 @@
+Here is the Python code that solves the problem:
+
+```python
+def sol():
+    s = 'ho' * 1000 + 'oo' * 100 + 'ho'
+    return s
+```
+
+The function `sol` constructs a string `s` that has 1000 'ho's, 100 'oo's, and 801 'ho's in total. The string is created by concatenating the three parts and the 'ho' and 'oo' characters in a circular manner. This ensures that there are exactly 1000 'ho's and 100 'oo's. The function `sat` then checks if the string contains exactly 1000 'o's and 100 'oo's.
+
+The function `sol` is defined to return the string `s`.
+
+The checker will run:
+```python
+s = sol()
+assert sat(s)
+```

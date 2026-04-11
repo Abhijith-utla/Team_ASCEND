@@ -1,0 +1,19 @@
+The function `sat(n: int)` is already defined by the user. It is a function that takes one argument `n` of type `int`. The function returns `True` if `n` is even and `False` otherwise.
+
+Here is the correct pattern for defining `sol` function:
+
+```python
+def sol():
+    return <answer>
+```
+
+Here, `<answer>` should be replaced with the actual answer to the problem.
+
+Incorrect pattern:
+
+```python
+def sol(x):
+    ...
+```
+
+In this incorrect pattern, `<answer>` is not replaced with the actual answer. The function definition should include the correct answer for the problem.

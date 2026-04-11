@@ -1,0 +1,12 @@
+Here is the correct pattern for the function `sol`:
+
+```python
+from typing import List
+
+def sol(ls: List[str]) -> str:
+    return ls[1234] if ls[1234] in ls[1235] and ls[1234] != ls[1235] else ''
+```
+
+In this function, we are trying to find a string in the second half of the list that is also in the first half of the list and is not equal to the first half of the list. If such a string is found, we return it, otherwise, we return an empty string.
+
+Please note that this function assumes that the indices 1234 and 1235 are valid in the list and that they are within the bounds of the list. If there's a chance that this could be an issue, you should add some error handling code to deal with these situations.

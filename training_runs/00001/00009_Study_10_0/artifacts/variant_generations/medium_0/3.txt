@@ -1,0 +1,17 @@
+Sure, here are the three simpler variants for the original puzzle:
+
+```python
+# Variant 1
+def sat(s: str):
+    return s in str(10 ** 1818) and s == s[::-1] and len(s) > 11
+
+# Variant 2
+def sat(s: str):
+    return s in str(20 ** 1818) and s == s[::-1] and len(s) > 11
+
+# Variant 3
+def sat(s: str):
+    return s in str(30 ** 1818) and s == s[::-1] and len(s) > 11
+```
+
+These functions test if a string `s` is an integer greater than or equal to `10 ** 1818`, equals its reverse and its length is greater than `11`. If all these conditions are met, the function returns `True`; otherwise, it returns `False`.

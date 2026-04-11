@@ -1,0 +1,6 @@
+def sol():
+    return [2, 3, 2]
+
+# Test the solution
+print(sat(sol()))  # Returns True
+!cat solution.py

@@ -1,0 +1,4 @@
+def sol():
+    return ''.join(ch for ch in 'abcdef' if sat(ch))
+
+assert sat(sol())

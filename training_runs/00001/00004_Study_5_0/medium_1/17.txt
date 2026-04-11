@@ -1,0 +1,11 @@
+Your code is almost correct, but it should check if the sum of all elements in the list is 54 (10*6), not 10. Here's the correct code:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    total = sum(li)
+    return total == 54
+```
+
+This function will return `True` if the sum of all elements in the list is 54, and `False` otherwise.

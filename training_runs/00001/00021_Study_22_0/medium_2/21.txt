@@ -1,0 +1,5 @@
+def sol():
+    return "".join(chr(int(s[::2]) ^ int(s[1::2])) for s in map(str, range(20)))
+
+# Testing
+assert sat(sol())

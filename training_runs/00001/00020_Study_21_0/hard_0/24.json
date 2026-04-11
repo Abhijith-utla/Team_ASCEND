@@ -1,0 +1,17 @@
+{
+  "attempt_num": 24,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T08:52:19.524933+00:00",
+  "diagnostic": "reason=subprocess_error:IndexError: list index out of range|parse=fence=none,preamble=0,found_sol=1,candidates=15|checked=15/15|preview=def sol(): from random import randint def gen_list(): lst = [randint(0, 10) for _ in range(10)] lst[0] = lst[-1] retu...",
+  "difficulty": "hard",
+  "problem_id": "00020_Study_21_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

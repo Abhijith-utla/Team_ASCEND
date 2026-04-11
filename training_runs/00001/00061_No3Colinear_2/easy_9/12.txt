@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# The function sol does not take any arguments. 
+# Therefore, the function does not require any input.
+# The function returns an empty list, which matches the requirement.

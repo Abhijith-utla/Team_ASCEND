@@ -1,0 +1,11 @@
+def sat(y):
+    assert '__' not in y and '_' not in y and '9' not in y, "The string should not contain '__', '9' or '_'"
+    return True
+
+def sol():
+    return '9'
+
+assert sat(sol())
+
+if __name__ == "__main__":
+    assert sat(sol())

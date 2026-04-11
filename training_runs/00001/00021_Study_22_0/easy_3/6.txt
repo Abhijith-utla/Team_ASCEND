@@ -1,0 +1,11 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    s = "abcdefghij"
+    return s
+```
+
+This solution uses the defined function `sat` to check if the string `s` is equal to `"abcdefghij"`. If the string `s` is of length 10 and contains only alphabetic characters, and all characters in `s` are the same, the function `sat` returns `True`. Otherwise, it returns `False`. 
+
+The checker `assert sat(sol())` will then assert that this function is correct.

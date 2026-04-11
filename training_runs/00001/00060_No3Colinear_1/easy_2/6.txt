@@ -1,0 +1,8 @@
+def sol():
+    side = 5
+    num_points = 9
+    coords = [(2, 3), (4, 6), (1, 2)]
+    return sat(coords, side, num_points)
+
+if __name__ == "__main__":
+    assert sat(sol())

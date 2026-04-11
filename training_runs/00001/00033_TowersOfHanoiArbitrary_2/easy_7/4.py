@@ -1,0 +1,23 @@
+def sat(moves: List[List[int]], source=[[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]], target=[[1, 2, 3, 8, 9], [4], [5]]):
+    state = [s[:] for s in source]
+
+    for move in moves:
+        i, j = move[0], move[1]
+        state[i].append(state[j].pop())
+        assert sorted(state[i]) == state[i]
+
+    return state == target
+
+def sol():
+    return [[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]]
+
+# Explanation:
+# The initial state is [[0, 1, 2, 3], [4], [5, 6, 7, 8, 9]]
+# After the first move, the state becomes [[0, 1, 2, 3], [4], [5, 7, 8, 9]]
+# After the second move, the state becomes [[0, 1, 2, 3], [4], [5, 6, 8, 9]]
+# After the third move, the state becomes [[0, 1, 2, 3], [4], [5, 6, 7, 9]]
+# After the fourth move, the state becomes [[0, 1, 2, 3], [4], [5, 6, 7, 8]]
+# After the fifth move, the state becomes [[0, 1, 2, 3], [4], [5,
+
+if __name__ == "__main__":
+    assert sat(sol())

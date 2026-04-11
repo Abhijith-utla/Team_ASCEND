@@ -1,0 +1,10 @@
+Here is the correct Python code:
+
+```python
+from typing import List
+
+def sat(li: List[str]):
+    return all(i.isdigit() for i in li)
+```
+
+This function takes a list of strings and checks if all the elements in the list are digits using the isdigit() method. If all elements are digits, it returns True; otherwise, it returns False.

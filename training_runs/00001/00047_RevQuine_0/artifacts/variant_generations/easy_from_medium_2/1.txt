@@ -1,0 +1,15 @@
+VARIANT1:
+```python
+def sat(rev_quine):
+    return eval(rev_quine[::-1]) == rev_quine
+```
+VARIANT2:
+```python
+def sat(quine):
+    return eval(quine[::-1]) == quine
+```
+VARIANT3:
+```python
+def sat(quine: str):
+    return eval(quine[::-1]) == quine
+```

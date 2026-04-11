@@ -1,0 +1,5 @@
+def sol():
+    return 4
+
+# This is a simple test case that checks if the function sol can solve the problem correctly.
+assert sat(sol())

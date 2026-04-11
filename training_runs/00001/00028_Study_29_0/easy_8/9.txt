@@ -1,0 +1,4 @@
+def sol():
+    return []
+
+# The function 'sat' is not defined in the problem, so it's not possible to check the correctness of the solution.

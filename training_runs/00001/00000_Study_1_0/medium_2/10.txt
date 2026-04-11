@@ -1,0 +1,22 @@
+The provided Python function `sat` checks if a string `s` satisfies the following conditions:
+
+1. The string `s` contains the character 'o' exactly 1000 times.
+2. The string `s` does not contain the sequence 'oo' anywhere.
+
+The function is defined as follows:
+
+```python
+def sat(s: str) -> bool:
+    return 'o' in s and 'oo' not in s and s.count('o') == 1000
+```
+
+To validate this function, you can use the following test:
+
+```python
+assert sat('oooooooooo')
+assert not sat('oooooooooooo')
+assert not sat('ooooooo')
+assert not sat('oooooo')
+```
+
+Please replace `'oooooooooo'`, `'oooooooooooo'`, `'ooooooo'`, and `'oooooo'` with your actual strings to validate them.

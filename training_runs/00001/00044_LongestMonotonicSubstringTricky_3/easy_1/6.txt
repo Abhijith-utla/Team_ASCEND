@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Correct pattern:
+def sol():
+    return [1, 2, 3, 4, 5]
+
+# Incorrect pattern:
+def sol():
+    return [1, 5, 3, 4, 2]

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 3,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T09:34:53.003054+00:00",
+  "diagnostic": "reason=sat_returned_false|parse=fence=none,preamble=0,found_sol=1,candidates=3|checked=3/3|preview=def sol(): li = [i for i in range(100)] return li",
+  "difficulty": "easy",
+  "problem_id": "00027_Study_28_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 9
+}

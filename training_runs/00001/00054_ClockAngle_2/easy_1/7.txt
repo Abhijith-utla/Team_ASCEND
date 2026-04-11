@@ -1,0 +1,20 @@
+def sol():
+    return []
+
+# Test cases
+assert sat([0, 0])
+assert not sat([12, 0])
+assert not sat([0, 30])
+assert sat([12, 30])
+assert not sat([11, 59])
+assert sat([11, 30])
+assert not sat([1, 60])
+assert sat([1, 0])
+assert not sat([0, 60])
+
+# Testing for edge cases
+assert sat([12, 30])
+assert sat([1, 0])
+assert not sat([0, 30])
+assert not sat([11, 59])
+assert not sat([0, 60])

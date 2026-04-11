@@ -1,0 +1,2 @@
+def sat(s: str):
+    return 'oo' in s and len(s.split('o')) >= 1000

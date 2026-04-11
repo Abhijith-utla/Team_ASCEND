@@ -1,0 +1,12 @@
+def sol():
+    return {}
+
+# We assume that the answer object is a dictionary with two keys: 'coords' and 'side'.
+# 'coords' key stores the list of coordinates as tuples.
+# 'side' key stores the side length of the grid.
+
+def sol(side=10, num_points=20):
+    coords = [(i, i) for i in range(side)]
+    return {'coords': coords, 'side': side, 'num_points': num_points}
+
+assert sat(sol().get('coords'))

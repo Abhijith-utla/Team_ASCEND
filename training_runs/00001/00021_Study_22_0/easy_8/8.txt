@@ -1,0 +1,5 @@
+```
+def sol():
+    s = input()
+    return sat(s)
+```

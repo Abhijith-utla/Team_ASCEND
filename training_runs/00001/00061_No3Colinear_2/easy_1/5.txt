@@ -1,0 +1,8 @@
+def sol():
+    return []
+
+print(sat([]))
+print(sat([[0, 0]]))
+print(sat([[0, 0], [1, 1]]))
+print(sat([[0, 0], [2, 2]], side=3))
+print(sat([[0, 0], [2, 2]], side=3, num_points=2))

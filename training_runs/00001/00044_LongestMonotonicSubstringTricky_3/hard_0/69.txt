@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This is just a placeholder. The actual answer is not provided in the problem statement.
+# Please provide the actual answer to verify the solution.

@@ -1,0 +1,19 @@
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+
+def sol():
+    return [997, 998, 999] if sat([997, 998, 999]) else [999, 997, 998]
+
+def sat(li: List[int]):
+    return sorted(li) == list(range(999)) and all(li[i] != i for i in range(len(li)-1))
+
+print(sol())
+
+# Assertion tests
+assert sat([997, 998, 999]) == True
+assert sat([999, 997, 998]) == True
+assert sat([997, 998, 996]) == False
+assert sat([999, 999, 999]) == False
+
+if __name__ == "__main__":
+    assert sat(sol())

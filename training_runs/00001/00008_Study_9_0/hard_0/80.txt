@@ -1,0 +1,10 @@
+Here is a solution for the problem:
+
+```python
+def sol():
+    li = [ord(c) for c in "The quick brown fox jumps over the lazy dog"]
+    assert sat(li)
+    return "".join([chr(i) for i in li])
+```
+
+This function first converts the string to a list of ASCII codes using the `ord()` function. Then it checks if the list of ASCII codes satisfies the condition provided in the problem statement. If it does, the function returns the string constructed by joining the ASCII codes with no spaces. Otherwise, it raises an assertion error.

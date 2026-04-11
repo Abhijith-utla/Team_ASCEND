@@ -1,0 +1,4 @@
+def sol():
+    return None
+
+assert sat(sol()) is None

@@ -1,0 +1,5 @@
+def sol():
+    return {"answer": "Yes"}
+
+# The assertion check
+assert sat(sol())

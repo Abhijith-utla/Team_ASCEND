@@ -1,0 +1,4 @@
+def sol():
+    return [x for x in range(20) if all(x + y == 2 ** x for y in range(x+1))]
+
+print(sol())

@@ -1,0 +1,17 @@
+{
+  "attempt_num": 61,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": false,
+    "sol_arg_count": null,
+    "top_level_sol_defs": 9
+  },
+  "created_at": "2026-04-11T15:21:25.127847+00:00",
+  "diagnostic": "reason=top_level_sol_defs:9|parse=fence=none,preamble=0,found_sol=1,candidates=28|checked=28/28|preview=def sol(): return [] # Correct answer: def sol(): return [37, 37, 12, 87, 39] # Incorrect answers: def sol(): return ...",
+  "difficulty": "hard",
+  "problem_id": "00064_PostageStamp_1",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 0
+}

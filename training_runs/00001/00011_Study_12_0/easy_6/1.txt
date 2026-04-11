@@ -1,0 +1,12 @@
+Here is the Python code for the solution:
+
+```python
+from typing import List
+
+def sol():
+    return [4] + [5] * 999
+
+assert sat(sol())
+```
+
+This solution is based on the assumption that the function `sat` takes a list of integers and checks if the sum of each element and the next one equals 5 for all elements in the list. The list starts with a 4 and ends with 5 for 999 times.

@@ -1,0 +1,4 @@
+def sol():
+    def sat(li: List[str]):
+        return all(i.isdigit() for i in li)
+    return sat

@@ -1,0 +1,22 @@
+Here are the three simpler variants for the original `sat` function:
+
+VARIANT1:
+```python
+def sat(n: int, lace="brrrbrrbrbbbbbrrbbrr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and len(sub) > 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+```
+
+VARIANT2:
+```python
+def sat(n: int):
+    sub = 'brrrbrrbrbbbbbrrbbrr'[n: n + len('brrrbrrbrbbbbbrrbbrr') // 2]
+    return n >= 0 and len(sub) > 0 and 'r' in lace and 'b' in lace and lace.count('r') == 2 * sub.count('r') and lace.count('b') == 2 * sub.count('b')
+```
+
+VARIANT3:
+```python
+def sat(n: int, lace="brrrbrrbrbbbbbrrbbrr"):
+    sub = lace[n: n + len(lace) // 2]
+    return n >= 0 and len(sub) > 0 and lace.count("r") == 2 * sub.count("r") and lace.count("b") == 2 * sub.count("b")
+```

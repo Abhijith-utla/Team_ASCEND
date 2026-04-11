@@ -1,0 +1,6 @@
+def sol():
+    li = list(range(999))
+    return li
+
+# Checker
+assert sat(sol())

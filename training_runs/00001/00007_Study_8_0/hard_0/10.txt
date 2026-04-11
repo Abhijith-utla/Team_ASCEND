@@ -1,0 +1,16 @@
+The problem statement does not provide any details about the `ls` list, so I'm assuming that `ls` is a list of strings. 
+
+However, if `ls[1234]` and `ls[1235]` are valid indexes into the list `ls`, and they refer to different positions in the list, then `sat(ls)` will return `True`. 
+
+If `ls[1234]` and `ls[1235]` refer to the same position in the list, then `sat(ls)` will return `False`. 
+
+If you want `sat(ls)` to return `True` if `ls[1234]` and `ls[1235]` refer to the same position in the list, you can use a function like this:
+
+```python
+def sat(ls: List[str]):
+    if ls[1234] == ls[1235]:
+        return False
+    return ls[1234] in ls[1235]
+```
+
+This function first checks if `ls[12

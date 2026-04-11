@@ -1,0 +1,7 @@
+def sol():
+    s = 'Hello World' * 1000
+    return s
+
+print(sol())  # Hello World
+
+assert sat(sol())

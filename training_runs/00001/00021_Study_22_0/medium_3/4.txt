@@ -1,0 +1,5 @@
+def sol():
+    return "easy" if sat("easy") else "hard"
+
+# For the assertion
+assert sat(sol())

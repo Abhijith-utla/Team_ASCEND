@@ -1,0 +1,11 @@
+The given Python function is incorrect because it uses the sum of the elements before the current element to construct the condition in the list comprehension, which will lead to incorrect results. The correct pattern is:
+
+```python
+def sol(li: List[int]):
+    for x in set(li):
+        if li.index(x) < sum(li[:li.index(x)]):
+            return False
+    return True
+```
+
+In this corrected code, we iterate through the set of elements in the list `li`. For each element `x`, we check if its index is less than the sum of elements before it in the list. If it is, we return `False` because the condition is not fulfilled. If no such element is found, we return `True` after the loop. This indicates that all elements in the list are in ascending order.

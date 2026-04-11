@@ -1,0 +1,4 @@
+def sol():
+    return [ord(c) for c in "The quick brown fox jumps over the lazy dog" if c in "The five boxing wizards jump quickly"]
+
+print(sol())

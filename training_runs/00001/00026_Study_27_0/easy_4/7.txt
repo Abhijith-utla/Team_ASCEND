@@ -1,0 +1,9 @@
+Here is the Python code that satisfies the condition:
+
+```python
+def sol():
+    answer = [1, 2, 3, 4]
+    return answer
+```
+
+This solution constructs the list `answer` and then returns it. The `sat` function checks whether the first element is not equal to the second, the second element is not equal to the third, and the third element is equal to the first. If the condition is satisfied, the function returns `True`, otherwise `False`.

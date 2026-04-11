@@ -1,0 +1,15 @@
+Here is the correct Python solution for the problem:
+
+```python
+def sat(li: List[int]):
+    total = 0
+    for i in range(len(li)):
+        total += li[i]
+        if total > sum(li[:i]):
+            return False
+    return True
+```
+
+This solution works by iterating over the list and adding each element to the current total. If the total exceeds the sum of the list up to that point, it returns False, indicating that the list does not satisfy the condition. If it reaches the end of the list without finding a case where the total exceeds the sum of the list, it returns True, indicating that the list satisfies the condition.
+
+The time complexity of this solution is O(n), where n is the length of the list. This is because we are only iterating over the list once.

@@ -1,0 +1,8 @@
+Here is the correct solution for the problem:
+
+```python
+def sat(s: str):
+    return str(8 ** 2888).count(s) > 8 and len(s) == 3
+```
+
+In this function, we calculate `8 ** 2888` and count the occurrences of `s` in the result. We ensure that the number of occurrences is greater than 8 and the length of `s` is equal to 3.

@@ -1,0 +1,4 @@
+def sol():
+    return "yes" if sat("abcde") else "no"
+
+assert sat(sol())

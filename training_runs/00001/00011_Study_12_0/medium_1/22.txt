@@ -1,0 +1,9 @@
+def sol():
+    return { 'li': [4]*1000 }
+
+# Test
+def test_sol():
+    assert sat(sol()['li'])
+
+# Run Test
+test_sol()

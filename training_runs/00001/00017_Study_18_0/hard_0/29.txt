@@ -1,0 +1,18 @@
+Sure, here is the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol():
+    return 'berlin berger linber linger gerber gerlin'.split()
+```
+
+This function creates a list of words by splitting the string 'berlin berger linber linger gerber gerlin' into words. The resulting list is returned.
+
+The function `sat` checks if this list equals a given list of words. The check is done by comparing the length of the list and the sorted versions of the two lists. If the lengths are the same, then the two lists are equal, so the function returns `True`. Otherwise, it returns `False`.
+
+The test for this function would be:
+
+```python
+assert sat(sol())
+```

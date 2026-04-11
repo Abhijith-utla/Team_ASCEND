@@ -1,0 +1,16 @@
+def sol():
+    def sat(li: List[int]):
+        return all(x >= 0 and 2 ** x - 1 == (2 ** (x + 1)) - 1 for x in li)
+
+    def not_sat(li: List[int]):
+        return not sat(li)
+
+    # Add some random values to the list to trigger the not_sat function
+    li = [0, -1, 1, 2, -2, 3]
+    not_sat(li)
+
+    return not_sat(li)
+
+# Run the solution
+if __name__ == "__main__":
+    print(sol())

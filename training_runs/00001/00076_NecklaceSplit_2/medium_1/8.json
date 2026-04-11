@@ -1,0 +1,17 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": true,
+    "parse_error": null,
+    "redefines_sat": true,
+    "sol_arg_count": 0,
+    "top_level_sol_defs": 1
+  },
+  "created_at": "2026-04-11T17:29:02.709682+00:00",
+  "diagnostic": "reason=redefines_sat|parse=fence=none,preamble=0,found_sol=1,candidates=18|checked=18/18|preview=def sol(): return { \"result\": \"invalid\", \"output\": \"None\" } def sat(n: int, lace=\"brrrbrrbrbbbbbrrbbrr\"): sub = lace[...",
+  "difficulty": "medium",
+  "problem_id": "00076_NecklaceSplit_2",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 1
+}

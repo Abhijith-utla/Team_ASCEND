@@ -1,0 +1,4 @@
+def sol():
+    return [{"name": "John", "age": 30}, {"name": "Jane", "age": 28}, {"name": "Joe", "age": 32}]
+
+assert sat(sol())

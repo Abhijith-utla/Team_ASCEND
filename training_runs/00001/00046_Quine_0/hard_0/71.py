@@ -1,0 +1,14 @@
+def sat(quine: str):
+    return eval(quine) == quine
+
+def sol():
+    return ""
+
+# Evaluating an empty string should not change it
+assert sat(sol())
+!python -c "print('Hello, World!')" # This will output 'Hello, World!'
+assert not sat(sol())
+!python -c "print('')" # This will not output anything
+
+if __name__ == "__main__":
+    assert sat(sol())

@@ -1,0 +1,5 @@
+def sol():
+    return "bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"
+
+# Test
+assert sat(0, lace=sol())

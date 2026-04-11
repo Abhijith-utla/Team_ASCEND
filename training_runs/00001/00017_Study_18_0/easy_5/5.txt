@@ -1,0 +1,8 @@
+Here's the correct pattern:
+
+```python
+def sol():
+    return 5
+```
+
+In this case, the function `sol` returns the number 5, because the condition `a + b == 5` holds true.

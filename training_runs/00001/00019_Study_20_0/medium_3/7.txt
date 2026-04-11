@@ -1,0 +1,13 @@
+Here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(li: List[int]) -> bool:
+    for i, j in enumerate(li):
+        if j != 3 * i:
+            return False
+    return True
+```
+
+This function checks if all elements in the list are multiples of 3 with their corresponding indices. If any element is not a multiple of 3, it returns False, otherwise it returns True. The function uses the `enumerate` function to get the index and value of each element in the list. If any element is not a multiple of 3, it immediately returns False. If it goes through the entire list without finding a non-multiple of 3, it returns True.

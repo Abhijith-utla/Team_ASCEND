@@ -1,0 +1,11 @@
+Here is a possible solution:
+
+```python
+def sol():
+    i = 0
+    while not sat(i):
+        i += 1
+    return i
+```
+
+This function uses a while loop to increment the input `i` until the `sat` function returns `True`. The `sat` function checks if `i` is a multiple of 123 and greater than a number with 100 digits. If both conditions are satisfied, the function returns `i`.

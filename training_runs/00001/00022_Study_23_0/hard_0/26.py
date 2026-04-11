@@ -1,0 +1,15 @@
+def sat(ls: List[str]):
+    return tuple(ls) in zip('dee', 'doo', 'dah!')
+
+def sol():
+    return tuple(["d", "e", "e", "o", "o", "h"])
+
+# This is the function you will use to check if the solution is correct.
+def check_solution():
+    assert sat(sol())
+
+# Call the check function
+check_solution()
+
+if __name__ == "__main__":
+    assert sat(sol())

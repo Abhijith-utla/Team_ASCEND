@@ -1,0 +1,16 @@
+{
+  "attempt_num": 5,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "'[' was never closed",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T09:09:22.384371+00:00",
+  "diagnostic": "reason=ast_syntax_error:'[' was never closed|parse=fence=none,preamble=0,found_sol=1,candidates=2|checked=2/2|preview=def sol(): li = [17, 17, 3, 17, 17, 17, 17, 3, 17, 17, 17, 17, 17, 17, 17, 17, 3, 17, 17, 17, 17, 17, 17, 17, 17, 17,...",
+  "difficulty": "medium",
+  "problem_id": "00023_Study_24_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

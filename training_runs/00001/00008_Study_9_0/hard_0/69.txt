@@ -1,0 +1,12 @@
+The function `sat` checks if each character in the list `li` matches the corresponding character in the string "The quick brown fox jumps over the lazy dog". If they match, it returns `True`; otherwise, it returns `False`. 
+
+Here's the correct Python code for the function `sol`:
+
+```python
+from typing import List
+
+def sol() -> List[bool]:
+    return [char == "The quick brown fox jumps over the lazy dog"[i] for i, char in enumerate("The five boxing wizards jump quickly")]
+```
+
+The `sol` function returns a list of booleans where `True` indicates that the corresponding character in the list `li` matches the corresponding character in the string "The quick brown fox jumps over the lazy dog", and `False` indicates that it does not.

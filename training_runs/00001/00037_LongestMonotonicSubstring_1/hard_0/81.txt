@@ -1,0 +1,10 @@
+Here is the Python solution for the problem:
+
+```python
+def sol():
+    x = list(range(192))
+    x[191] = 1
+    return x
+```
+
+This solution works by creating a list of integers from 0 to 191. It then replaces the last element (index 191) with 1. This change is not possible as there is no further space in the list. The result is a valid permutation of the list from 0 to 191.

@@ -1,0 +1,10 @@
+Sure, here is the Python solution for the problem:
+
+```python
+from typing import List
+
+def sat(ls: List[str]) -> bool:
+    return all(len(set(s)) == len(s) for s in ls)
+```
+
+In this code, the function `sat` checks if all strings in the given list satisfy the condition that all characters are distinct. This is done by converting each string to a set, which automatically removes any duplicates. If the original string had duplicates, the set would not have the same length. Therefore, the length of the set is equal to the length of the original string, which verifies the condition.

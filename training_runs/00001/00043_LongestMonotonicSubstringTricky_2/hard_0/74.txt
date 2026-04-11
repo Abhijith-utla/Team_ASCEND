@@ -1,0 +1,10 @@
+def sol():
+    return []
+
+# Correct pattern:
+def sol(x):
+    return [i for i in range(len(x)) if x[i] >= x[i+1]]
+
+# Incorrect pattern:
+def sol(x):
+    return [i for i in range(len(x)) if x[i] > x[i+1]]

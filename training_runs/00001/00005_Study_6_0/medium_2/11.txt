@@ -1,0 +1,10 @@
+Here's the solution:
+
+```python
+def sol():
+    for i in range(101):  # The range is exclusive of the end value
+        if sat(i):
+            return i
+```
+
+The function `sol` iterates over the numbers from 0 to 100, and for each number it checks if it satisfies the condition `sat`. When it finds a number that satisfies the condition, it returns that number. This will be the smallest number that satisfies the condition `sat`.

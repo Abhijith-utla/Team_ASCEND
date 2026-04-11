@@ -1,0 +1,24 @@
+def sol():
+    return {}
+
+# Assign an arbitrary value to hands to test the function with different inputs
+hands = (4, 5)
+assert sat(hands)
+
+hands = (12, 30)
+assert not sat(hands)
+
+hands = (12, 60)
+assert not sat(hands)
+
+hands = (13, 0)
+assert not sat(hands)
+
+hands = (11, 59)
+assert sat(hands)
+
+hands = (0, 0)
+assert sat(hands)
+
+hands = (11, 55)
+assert not sat(hands)

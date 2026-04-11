@@ -1,0 +1,5 @@
+def sol():
+    return [1234, 1235]
+
+# Testing the solution
+assert sat(sol())

@@ -1,0 +1,15 @@
+Here is the correct solution:
+
+```python
+def sol():
+    return [1234, 1235]
+```
+
+This solution creates a list with the indices 1234 and 1235 and checks if the first element of the list is in the second element of the list. If the first element is not equal to the second element, it returns True, otherwise it returns False.
+
+The final checker will run:
+
+```python
+def test_sat():
+    assert sat(sol())
+```

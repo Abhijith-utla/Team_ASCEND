@@ -1,0 +1,5 @@
+def sol():
+    return len(str(int(1e9) + 1000)) > len(str(int(1e9) + 1001))
+
+# Test the function
+assert sat(sol())

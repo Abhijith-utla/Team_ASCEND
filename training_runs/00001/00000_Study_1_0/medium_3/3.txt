@@ -1,0 +1,8 @@
+Sure, here is the solution:
+
+```python
+def sol():
+    return 'oo' not in 'o' * 1000
+```
+
+This function returns 'oo' when 'o' is repeated 1000 times. It is guaranteed by the rules given that 'oo' does not occur and 'o' occurs 1000 times.

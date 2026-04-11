@@ -1,0 +1,15 @@
+def sol():
+    return []
+
+# Add a test to make sure the function works properly
+def test_sol():
+    assert not sat([])
+    assert not sat([1])
+    assert sat([1, 2])
+    assert sat([2, 1])
+    assert not sat([1, 2, 3])
+    assert sat([1, 2, 3, 4])
+    assert not sat([4, 3, 2, 1])
+    print("All tests pass")
+
+test_sol()

@@ -1,0 +1,18 @@
+Sure, here is the correct pattern:
+
+```python
+def sol():
+    return [1234, 1235]
+```
+
+The `sol` function returns a list of two elements: the index at which a value is located in the list. This information can be used to check if the desired value is present in the list. The value is not the same as the value at the given index.
+
+You can use this function in the following way:
+
+```python
+def sat(ls: List[str]):
+    return ls[1234] in ls[1235] and ls[1234] != ls[1235]
+
+# Check the result
+print(sat(sol()))  # This will output: False
+```

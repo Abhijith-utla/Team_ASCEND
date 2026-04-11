@@ -1,0 +1,9 @@
+Here's the Python code for the `sol` function:
+
+```python
+def sol():
+    l = [0]*1000
+    return l
+```
+
+This function creates and returns a list with 1000 elements, all set to zero. The `assert sat(sol())` checker will pass if `sol()` returns a list with 1000 elements, all set to zero.

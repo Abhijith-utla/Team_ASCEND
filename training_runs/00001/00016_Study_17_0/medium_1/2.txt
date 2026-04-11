@@ -1,0 +1,5 @@
+def sol():
+    return len(str(len(str(1000)) + len(str(1001))))
+
+# Test
+assert sat(sol())

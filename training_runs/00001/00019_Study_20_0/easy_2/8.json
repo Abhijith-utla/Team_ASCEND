@@ -1,0 +1,16 @@
+{
+  "attempt_num": 8,
+  "candidate_metadata": {
+    "ast_parse_ok": false,
+    "parse_error": "invalid syntax",
+    "redefines_sat": null,
+    "sol_arg_count": null
+  },
+  "created_at": "2026-04-11T08:36:23.513462+00:00",
+  "diagnostic": "reason=ast_syntax_error:invalid syntax|parse=fence=none,preamble=0,found_sol=1,candidates=8|checked=8/8|preview=def sol(): return { 1: [2, 3, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25], 2: [4, 5, 6, 7,...",
+  "difficulty": "easy",
+  "problem_id": "00019_Study_20_0",
+  "reward": 0.0,
+  "reward_std": 0.0,
+  "variant_num": 2
+}

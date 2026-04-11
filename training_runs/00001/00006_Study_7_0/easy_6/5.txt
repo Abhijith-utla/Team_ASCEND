@@ -1,0 +1,8 @@
+```python
+def sol():
+    return "12345" in str(8 ** 2888)
+
+assert sat(sol())
+```
+
+The string "12345" is inside the result of the expression 8 ** 2888, which is converted to a string. The count of the string "12345" in the string result is greater than 8 and the length of the string is 5.

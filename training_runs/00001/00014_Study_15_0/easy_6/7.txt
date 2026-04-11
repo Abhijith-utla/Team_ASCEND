@@ -1,0 +1,8 @@
+Here is the Python code that correctly implements the function `sat`:
+
+```python
+from typing import List
+
+def sat(li: List[int]):
+    return all(x + y == 2 ** x for x in range(20) for y in li[:x + 1])
+```

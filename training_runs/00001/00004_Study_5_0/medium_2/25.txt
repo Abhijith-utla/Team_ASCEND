@@ -1,0 +1,12 @@
+The correct pattern for the solution is as follows:
+
+```python
+def sol():
+    li = [int(i) for i in input().split()]
+    if sat(li):
+        return "YES"
+    else:
+        return "NO"
+```
+
+This Python function `sol` takes a list of space-separated integers as input and checks if the list satisfies the condition defined by the function `sat`. If the list satisfies the condition, the function returns "YES", otherwise it returns "NO".

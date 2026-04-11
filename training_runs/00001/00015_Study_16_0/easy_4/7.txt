@@ -1,0 +1,8 @@
+Here is the Python code that satisfies the condition:
+
+```python
+def sat(s: str) -> bool:
+    return s == '4.5abc' or s == '4.5abc ' or s == ' 4.5abc'
+```
+
+The function `sat` takes a string as input and returns `True` if the string is either '4.5abc' or '4.5abc ' or ' 4.5abc'. If the string does not satisfy any of these, it returns `False`.

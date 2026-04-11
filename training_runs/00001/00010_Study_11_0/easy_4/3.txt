@@ -1,0 +1,6 @@
+def sol():
+    return []
+
+# This is a test to ensure the function 'sat' works correctly.
+# The 'assert' statement is used to raise an AssertionError if the condition is false.
+assert sat(sol())

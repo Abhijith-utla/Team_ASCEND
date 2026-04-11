@@ -1,0 +1,7 @@
+Here is a correct Python solution for the given problem. This solution first counts the occurrences of each number in the list using the count() method. Then, it checks if all numbers are present and if there is only one zero in the list.
+
+```python
+def sat(li: list) -> bool:
+    return all([li.count(i) == i for i in range(10)]) and li.count(0) == 1
+```
+This function will return True if the list has 10 distinct integers from 0 to 9, and exactly one integer 0, and False otherwise.

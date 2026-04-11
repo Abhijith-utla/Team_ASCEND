@@ -1,0 +1,5 @@
+def sol():
+    return []
+
+# This assertion will fail since the function 'sat' is not defined by the user.
+assert sat()
