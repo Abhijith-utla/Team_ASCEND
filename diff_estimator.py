@@ -150,20 +150,20 @@ def _bucket(score):
 
 
 def _score_metrics(m: dict) -> tuple[float, float, float]:
-    loc_score       = _normalize(m["lines_of_code"], 5,  80) * 10
-    inputs_score    = _normalize(m["num_inputs"],    1,   6) * 10
-    nesting_score   = _normalize(m["nesting_depth"], 0,   4) * 10
+    loc_score       = _normalize(m["lines_of_code"], 1, 10) * 10
+    inputs_score    = _normalize(m["num_inputs"],    1,  3) * 10
+    nesting_score   = _normalize(m["nesting_depth"], 0,  3) * 10
     structure_score = (loc_score + inputs_score + nesting_score) / 3
 
-    decision_score = _normalize(m["decision_paths"], 1, 12) * 10
-    call_score     = _normalize(m["function_calls"], 0, 10) * 10
-    state_score    = _normalize(m["state_changes"],  0, 12) * 10
+    decision_score = _normalize(m["decision_paths"], 1, 6) * 10
+    call_score     = _normalize(m["function_calls"], 0, 5) * 10
+    state_score    = _normalize(m["state_changes"],  0, 4) * 10
 
     difficulty_score = (
-        0.35 * structure_score +
-        0.30 * decision_score  +
-        0.15 * call_score      +
-        0.20 * state_score
+        0.25 * structure_score +
+        0.40 * decision_score  +
+        0.25 * call_score      +
+        0.10 * state_score
     )
 
     difficulty_pct = difficulty_score / MAX_DIFFICULTY_SCORE
