@@ -200,7 +200,7 @@ def analyse_variant(code: str) -> dict[str, DifficultyMetrics]:
     return results
 
 
-def filter_variants(variants: list[dict]) -> dict:
+def filter_variants(variants: list[dict], original_score: float = None) -> dict:
     kept      = []
     discarded = []
 
@@ -214,28 +214,55 @@ def filter_variants(variants: list[dict]) -> dict:
 
         fn_name, m = next(iter(metrics.items()))
         m_dict     = asdict(m)
-        pct_label  = f"{m.difficulty_pct * 100:.1f}%"
 
-        if m.kept:
-            kept.append({**variant, "fn_name": fn_name, "metrics": m_dict})
+        # score relative to the original problem if available, otherwise absolute
+        if original_score and original_score > 0:
+            relative_pct = m.difficulty_score / original_score
+        else:
+            relative_pct = m.difficulty_pct
+
+        pct_label = f"{relative_pct * 100:.1f}%"
+        kept_flag = LOWER_BOUND <= relative_pct <= UPPER_BOUND
+
+        if kept_flag:
+            kept.append({**variant, "fn_name": fn_name, "metrics": m_dict, "relative_pct": relative_pct})
         else:
             reason = (
                 f"too easy ({pct_label} < {int(LOWER_BOUND*100)}%)"
-                if m.difficulty_pct < LOWER_BOUND
+                if relative_pct < LOWER_BOUND
                 else f"too hard ({pct_label} > {int(UPPER_BOUND*100)}%)"
             )
-            discarded.append({**variant, "fn_name": fn_name, "metrics": m_dict, "reason": reason})
+            discarded.append({**variant, "fn_name": fn_name, "metrics": m_dict, "relative_pct": relative_pct, "reason": reason})
 
     return {"kept": kept, "discarded": discarded}
 
 
 def filter_variant_tree(tree: dict) -> dict:
     filtered_tree = {}
+
+    # score the original hard problem first
+    original_score = None
+    if tree.get("hard"):
+        hard_code = tree["hard"][0].get("prompt", "")
+        hard_metrics = analyse_variant(hard_code)
+        if hard_metrics:
+            _, original_score, _ = _score_metrics(next(iter(hard_metrics.values())).__dict__ 
+                if hasattr(next(iter(hard_metrics.values())), '__dict__') else {})
+
+    # re-score using dataclass fields directly
+    if tree.get("hard"):
+        hard_code = tree["hard"][0].get("prompt", "")
+        hard_metrics = analyse_variant(hard_code)
+        if hard_metrics:
+            hm = next(iter(hard_metrics.values()))
+            original_score = hm.difficulty_score
+
     for tier, variants in tree.items():
         if tier == "hard":
             filtered_tree[tier] = {"kept": variants, "discarded": []}
         else:
-            filtered_tree[tier] = filter_variants(variants)
+            filtered_tree[tier] = filter_variants(variants, original_score)
+
     return filtered_tree
 
 
@@ -247,16 +274,18 @@ def print_filter_summary(filtered_tree: dict) -> None:
 
         for v in result["kept"]:
             m = v["metrics"]
+            rel = v.get("relative_pct", m["difficulty_pct"] if m else 0)
             if m:
                 print(f"  ✓ KEEP   {v.get('fn_name','?'):20s}  "
                       f"score={m['difficulty_score']:4.1f}/10  "
-                      f"({m['difficulty_pct']*100:.1f}%)  "
+                      f"({rel*100:.1f}% of original)  "
                       f"[{m['difficulty_bucket']}]")
 
         for v in result["discarded"]:
             m = v.get("metrics")
+            rel = v.get("relative_pct", m["difficulty_pct"] if m else 0)
             score_str = (
-                f"score={m['difficulty_score']:4.1f}/10  ({m['difficulty_pct']*100:.1f}%)"
+                f"score={m['difficulty_score']:4.1f}/10  ({rel*100:.1f}% of original)"
                 if m else "unparseable"
             )
             print(f"  ✗ DROP   {v.get('fn_name','?'):20s}  {score_str}  → {v.get('reason','')}")
