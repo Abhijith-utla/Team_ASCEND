@@ -26,8 +26,24 @@ Description:
 
 Generate exactly 3 simpler variants that test the same core concept.
 
+CRITICAL: Each variant must be GENUINELY EASIER to solve, not just different parameters.
+The variants must be of the SAME TOPIC/TYPE but simplified in actual execution.
+
+Simplification guidelines (apply one or more):
+1. REDUCE CONSTRAINT COUNT: 3 constraints -> 2 -> 1
+2. REDUCE INPUT SIZE: count to 5 instead of 100, list of 3 instead of 20
+3. REDUCE NESTING/COMPLEXITY: nested loops -> single loop, recursion -> iteration
+4. SIMPLIFY OPERATIONS: regex -> string methods, sorting -> counting, math operations -> comparisons
+
+Example progression for a string counting puzzle:
+HARD:   def sat(s): return s.count('x')==100 and s.count('o')==101 and s.count('xx')==98
+MEDIUM: def sat(s): return s.count('x')==10 and s.count('o')==11  
+EASY:   def sat(s): return s.count('x')==3
+
 Requirements:
 - Each variant must be a complete, syntactically valid Python function named sat
+- Each variant must test the SAME core concept (same topic/type)
+- Each variant must be GENUINELY EASIER than the original
 - Do not include explanations
 - Do not include comments outside the function
 - Do not include markdown code fences
@@ -249,7 +265,9 @@ def generate_variant_tree(
             ]
             break
 
-        print(f"[medium] attempt {attempt}/{max_retries} failed: parsed {len(parsed)} variants")
+        print(
+            f"[medium] attempt {attempt}/{max_retries} failed: parsed {len(parsed)} variants"
+        )
 
     easy_counter = 1
     for medium_variant in out["medium"]:
