@@ -10,11 +10,15 @@ Usage (Colab, from the repo root):
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
-from datasets import Dataset
+# Make the repo root importable when run as `python scripts/eval_split.py`.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-import ladder_optimizer_v4 as lo
+from datasets import Dataset  # noqa: E402
+
+import ladder_optimizer_v4 as lo  # noqa: E402
 
 PUZZLES = Path("PythonProgrammingPuzzles/puzzles/puzzles.json")
 
