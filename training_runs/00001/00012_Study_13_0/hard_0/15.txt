@@ -1,6 +1,0 @@
-```python
-def sol():
-    return {"answer": 3.1415}
-
-assert sat(sol()["answer"])
-```

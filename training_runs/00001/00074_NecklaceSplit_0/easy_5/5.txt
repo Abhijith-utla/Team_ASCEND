@@ -1,4 +1,0 @@
-def sol():
-    return {"result": False}
-
-assert sat(sol())

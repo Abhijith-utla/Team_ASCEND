@@ -1,4 +1,0 @@
-def sol():
-    return {"n": 0, "m": 0}
-
-print(sol())

@@ -1,6 +1,0 @@
-def sol():
-    s = 'oo'*1000 + 'o' + 'ho'*800
-    return s
-
-# Test
-print(sat(sol()))

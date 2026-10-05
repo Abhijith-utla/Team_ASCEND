@@ -1,4 +1,0 @@
-def sol():
-    return "4 * (12 - 3) / (1 + 8)"
-
-print(sat(sol()))

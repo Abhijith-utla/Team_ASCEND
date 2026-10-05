@@ -1,5 +1,0 @@
-def sol():
-    s = 'z' * 100 + 'zo' * 101 + 'zz' * 98
-    return s
-
-print(sol())

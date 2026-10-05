@@ -1,2 +1,0 @@
-def sol():
-    return all(s[x[i]] <= s[x[i + 1]] and x[i + 1] > x[i] >= 0 for i in range(736))

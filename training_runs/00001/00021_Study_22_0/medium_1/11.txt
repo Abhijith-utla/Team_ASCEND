@@ -1,4 +1,0 @@
-def sol():
-    return 'abcdefghij'
-
-print(sat(sol()))

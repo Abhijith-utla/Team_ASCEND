@@ -1,7 +1,0 @@
-def sol():
-    answer = []
-    for i in range(193):
-        answer.append(chr(i + 33))
-    return answer
-
-assert sat(sol())

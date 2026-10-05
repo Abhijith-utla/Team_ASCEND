@@ -1,5 +1,0 @@
-def sol():
-    return "".join(sorted("".join(filter(str.isalpha, "uipenmtrsA"))))[::-1]
-
-# checker
-assert sat(sol())

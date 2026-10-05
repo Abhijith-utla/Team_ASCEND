@@ -1,6 +1,0 @@
-def sol():
-    return []
-
-# Testing the function
-assert sat(sol()) == True
-assert sat(sol(['abc', 'def', 'ghijklmnopqrstuvwxyz'])) == False

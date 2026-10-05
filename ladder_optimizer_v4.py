@@ -55,6 +55,11 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _supports_bf16() -> bool:
+    # T4 GPUs (Colab default) have no native bf16; fall back to fp16 there.
+    return torch.cuda.is_available() and torch.cuda.is_bf16_supported()
+
+
 def load_default_model(model_id: str = "deepseek-ai/deepseek-coder-1.3b-instruct"):
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     has_native_chat_template = tokenizer.chat_template is not None
@@ -777,8 +782,8 @@ if __name__ == "__main__":
                 max_completion_length=256,
                 temperature=0.8,
                 top_p=0.95,
-                fp16=False,
-                bf16=True,
+                fp16=not _supports_bf16(),
+                bf16=_supports_bf16(),
             )
 
             before_state = self._snapshot_trainable_state()

@@ -1,2 +1,0 @@
-def sol():
-    return 'yes' if sat('bcdfe') else 'no'

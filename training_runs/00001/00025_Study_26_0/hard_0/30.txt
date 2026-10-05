@@ -1,4 +1,0 @@
-def sol():
-    return "".join(["a"] * 88)
-
-assert sat(sol())

@@ -1,5 +1,0 @@
-def sol():
-    return all([[i for i in range(10)]*100 for _ in range(10)])
-
-# test case
-assert sat(sol())

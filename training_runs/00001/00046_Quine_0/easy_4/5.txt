@@ -1,2 +1,0 @@
-def sol():
-    return eval(open('sat.py').read())

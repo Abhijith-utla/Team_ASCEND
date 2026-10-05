@@ -1,5 +1,0 @@
-def sol():
-    return 42
-
-# check
-assert sat(sol)() == 42

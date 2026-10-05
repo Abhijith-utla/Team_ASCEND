@@ -1,4 +1,0 @@
-def sol():
-    return ["abcd1234", "abcd1234", "abcd1234", "abcd1234"]
-
-assert sat(sol())

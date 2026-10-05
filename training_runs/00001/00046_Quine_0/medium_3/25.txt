@@ -1,7 +1,0 @@
-def sol():
-    return eval("""
-    def sol():
-        return {}
-    """.format(str(sat)))
-
-print(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return 123.456
-
-# The checker will run: assert sat(sol())

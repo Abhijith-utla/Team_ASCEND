@@ -1,4 +1,0 @@
-def sol():
-    return "8888"
-
-print(sat(sol()))

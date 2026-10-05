@@ -1,5 +1,0 @@
-def sol():
-    moves = []
-    return moves
-
-assert sat(sol())

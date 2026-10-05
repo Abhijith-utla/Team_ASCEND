@@ -1,5 +1,0 @@
-def sol():
-    return []
-
-# Check the solution
-assert sat(sol())

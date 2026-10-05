@@ -1,5 +1,0 @@
-def sol():
-    i = 1002
-    while not sat(i):
-        i += 1
-    return i

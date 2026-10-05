@@ -1,4 +1,0 @@
-def sol():
-    return ''.join(chr(ord('A') + sum((ord(c) - ord('A')) * (ord(c) - ord('A')) for c in s))
-
-print(sol())

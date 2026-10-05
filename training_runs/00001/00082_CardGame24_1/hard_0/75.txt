@@ -1,5 +1,0 @@
-def sol():
-    return {"answer": 1}
-
-# Prints: {"answer": 1}
-print(sol())

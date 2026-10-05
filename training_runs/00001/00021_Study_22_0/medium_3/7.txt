@@ -1,3 +1,0 @@
-def sol():
-    s = 'abcba' if sat(s) else 'not_valid'
-    return s

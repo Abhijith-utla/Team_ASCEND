@@ -1,4 +1,0 @@
-def sol():
-    return 'oo' not in 'oooooooooooo' and 'o' in 'oooooooooooo' and 'oooooooooooo'.count('o') == 1000
-
-assert sat(sol())

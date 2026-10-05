@@ -1,5 +1,0 @@
-def sol():
-    return '8' * 5
-
-# Checker
-assert sat(sol())

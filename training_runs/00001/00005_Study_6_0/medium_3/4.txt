@@ -1,8 +1,0 @@
-```python
-def sol():
-    i = 0
-    while True:
-        i += 1
-        if sat(i):
-            return i
-```

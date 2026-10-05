@@ -1,5 +1,0 @@
-def sol():
-    x = [i for i in range(20)]
-    x[0] = 19
-    x[19] = 1
-    return x

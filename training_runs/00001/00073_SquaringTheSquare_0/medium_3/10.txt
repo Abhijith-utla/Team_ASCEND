@@ -1,5 +1,0 @@
-def sol():
-    return {
-        'max_sum': None,
-        'max_sum_squared': None
-    }

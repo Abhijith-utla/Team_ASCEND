@@ -1,4 +1,0 @@
-def sol():
-    return eval("13 - 3 + 8 - 1")
-
-print(sol())

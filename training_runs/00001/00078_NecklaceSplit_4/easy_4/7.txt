@@ -1,6 +1,0 @@
-def sol():
-    return {}
-
-# The correct pattern is:
-# def sol():
-#     return {}

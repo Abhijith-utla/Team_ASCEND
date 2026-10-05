@@ -1,8 +1,0 @@
-```python
-def sol():
-    answer = '8' * 3
-    return answer
-
-# Testing
-assert sat(sol())
-```

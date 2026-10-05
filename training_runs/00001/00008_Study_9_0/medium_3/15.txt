@@ -1,3 +1,0 @@
-def sol():
-    return [chr(i) for i in list(range(32, 127))] == list(
-        "The quick brown fox jumps over the lazy dog".replace(" ", ""))

@@ -1,5 +1,0 @@
-def sol():
-    return ''.join(sorted(input())) == ''.join(sorted('Permute me true')) and ''.join(input()) == ''.join(input())[::-1]
-
-# Checker
-assert sat(sol())

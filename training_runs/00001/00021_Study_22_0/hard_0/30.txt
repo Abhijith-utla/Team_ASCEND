@@ -1,3 +1,0 @@
-def sol():
-    s = 'aabbccdd12345'
-    return s[::2] in s and len(set(s)) == 5

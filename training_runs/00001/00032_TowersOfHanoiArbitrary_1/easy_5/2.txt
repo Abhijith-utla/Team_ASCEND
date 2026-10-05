@@ -1,4 +1,0 @@
-def sol():
-    return [source[:] for source in source]
-
-assert sat(moves, source, target)

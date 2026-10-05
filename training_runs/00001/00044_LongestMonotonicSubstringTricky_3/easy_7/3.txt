@@ -1,5 +1,0 @@
-def sol():
-    return []
-
-# Output must be valid Python code only.
-assert sat(sol())

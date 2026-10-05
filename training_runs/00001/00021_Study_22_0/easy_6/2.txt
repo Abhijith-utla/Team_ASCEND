@@ -1,2 +1,0 @@
-def sol():
-    return "This string should be 20 characters long."

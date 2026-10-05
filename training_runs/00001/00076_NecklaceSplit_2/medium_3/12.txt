@@ -1,8 +1,0 @@
-def sol():
-    return {}
-
-# Test the function
-assert sat(0)
-assert not sat(1)
-assert not sat(2)
-assert not sat(3)

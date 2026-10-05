@@ -1,4 +1,0 @@
-def sol():
-    return float(len(str(int(123))))
-
-assert sat(sol())

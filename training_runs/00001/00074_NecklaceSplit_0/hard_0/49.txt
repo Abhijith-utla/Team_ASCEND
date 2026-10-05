@@ -1,5 +1,0 @@
-def sol():
-    return "bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"
-
-# Running assert statement to validate the solution
-assert sat(0)

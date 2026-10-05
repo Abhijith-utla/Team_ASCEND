@@ -1,5 +1,0 @@
-def sol():
-    s = 'x' * 110 + 'o' * 101 + 'xx' * 98
-    return s
-
-print(sol())

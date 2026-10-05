@@ -1,2 +1,0 @@
-def sol():
-    return "10 1 12 7"

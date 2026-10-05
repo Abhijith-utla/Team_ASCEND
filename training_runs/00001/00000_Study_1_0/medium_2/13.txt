@@ -1,4 +1,0 @@
-def sol():
-    return 'oooooooooo' in 'oooooooooo'*1000
-
-print(sol())

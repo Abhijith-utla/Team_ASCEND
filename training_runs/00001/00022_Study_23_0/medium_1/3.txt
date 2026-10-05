@@ -1,4 +1,0 @@
-def sol():
-    return tuple(answer)
-
-assert sat(sol())

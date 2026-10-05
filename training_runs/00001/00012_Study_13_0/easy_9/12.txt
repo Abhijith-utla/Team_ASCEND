@@ -1,6 +1,0 @@
-def sol():
-    return 3.1418
-
-# Testing
-assert sat(sol()) == True
-assert sat(sol()) == False

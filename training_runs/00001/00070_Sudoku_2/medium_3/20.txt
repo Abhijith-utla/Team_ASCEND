@@ -1,4 +1,0 @@
-def sol():
-    return "_"*25
-
-assert sat(sol())

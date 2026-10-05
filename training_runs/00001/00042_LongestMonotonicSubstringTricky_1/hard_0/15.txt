@@ -1,5 +1,0 @@
-def sol():
-    answer = ["0"]*535
-    return answer
-
-print(sol())

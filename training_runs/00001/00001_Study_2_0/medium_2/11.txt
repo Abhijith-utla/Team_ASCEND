@@ -1,5 +1,0 @@
-def sol():
-    return {"answer": "Yes"} if sat("yyyyyyyyyyyyyyyyyyy") else {"answer": "No"}
-
-# This is the checker code, you should ignore it.
-assert sat(sol()["answer"])

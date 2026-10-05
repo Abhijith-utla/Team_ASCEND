@@ -1,2 +1,0 @@
-def sol():
-    return all([li.count(i) == i for i in range(10)])

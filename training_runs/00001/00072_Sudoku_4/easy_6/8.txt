@@ -1,6 +1,0 @@
-def sol():
-    x = "_"*81
-    return x
-
-# Testing
-assert sat(sol())

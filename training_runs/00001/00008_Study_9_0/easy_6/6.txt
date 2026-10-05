@@ -1,4 +1,0 @@
-def sol():
-    li = ['hello', 'world']
-    assert sat(li)
-    return 'answer'

@@ -1,4 +1,0 @@
-def sol():
-    return sorted(range(999))
-
-print(sat(sol()))

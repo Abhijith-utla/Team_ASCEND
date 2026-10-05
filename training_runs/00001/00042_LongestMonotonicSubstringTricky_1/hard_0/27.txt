@@ -1,4 +1,0 @@
-def sol():
-    return [x for x in range(535)]
-
-print(sol())

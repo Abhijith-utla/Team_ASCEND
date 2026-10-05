@@ -1,2 +1,0 @@
-def sol():
-    return len(min(ls)) == len(max(ls)) == str(len(ls))

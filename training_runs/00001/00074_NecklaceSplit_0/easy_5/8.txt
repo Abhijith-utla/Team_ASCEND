@@ -1,6 +1,0 @@
-def sol():
-    return {}
-
-# checker
-assert sat(0, "bbbrrrbbbbrrrbbbbrr1")
-!pytest test_sat.py

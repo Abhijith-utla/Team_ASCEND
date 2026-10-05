@@ -1,8 +1,0 @@
-def sol():
-    return 0
-
-# Testing the function
-assert sat(0)
-
-# Printing the answer
-print(sol())

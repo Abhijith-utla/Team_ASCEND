@@ -1,5 +1,0 @@
-def sol():
-    s = 'oooooooooooo'
-    return sat(s)
-
-print(sol())  # False

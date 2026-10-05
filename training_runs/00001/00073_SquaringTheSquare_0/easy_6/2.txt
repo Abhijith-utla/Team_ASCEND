@@ -1,4 +1,0 @@
-def sol():
-    return [2, 3, 5]
-
-print(sat(sol()))

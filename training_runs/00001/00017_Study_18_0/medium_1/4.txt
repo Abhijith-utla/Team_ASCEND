@@ -1,4 +1,0 @@
-def sol():
-    return not any(s in ls for s in ls)
-
-assert sat(sol())

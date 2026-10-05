@@ -1,4 +1,0 @@
-def sol():
-    return "8"*5 + "-"*4 + "1"*1 + "+" + "8"*4
-
-assert sat(sol())

@@ -1,2 +1,0 @@
-def sol():
-    return {"hours": 0, "minutes": 0}

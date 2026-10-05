@@ -1,2 +1,0 @@
-def sol():
-    return {"hands": [], "target_angle": 138}

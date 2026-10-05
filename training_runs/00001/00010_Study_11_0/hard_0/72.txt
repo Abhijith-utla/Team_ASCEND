@@ -1,4 +1,0 @@
-def sol():
-    return str(len(ls))
-
-assert sat(sol())

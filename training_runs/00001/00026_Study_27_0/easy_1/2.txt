@@ -1,7 +1,0 @@
-Here is the Python code that sol(answer) should return.
-
-```python
-def sol():
-    answer = [1, [1, 2]]
-    return answer
-```

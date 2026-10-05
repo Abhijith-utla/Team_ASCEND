@@ -1,4 +1,0 @@
-def sol():
-    return [source.pop(0)]
-
-print(sat(moves))

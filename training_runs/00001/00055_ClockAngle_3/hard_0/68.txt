@@ -1,4 +1,0 @@
-def sol():
-    return {"hands": [h, m]}
-
-assert sat(sol())

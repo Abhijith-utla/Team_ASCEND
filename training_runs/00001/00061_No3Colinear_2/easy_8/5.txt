@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This function will always return an empty list because the coords list is empty.

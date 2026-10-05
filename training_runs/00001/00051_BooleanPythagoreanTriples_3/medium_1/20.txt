@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# The function sol should return an empty list, because by definition it doesn't satisfy the condition.

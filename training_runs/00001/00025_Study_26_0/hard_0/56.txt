@@ -1,4 +1,0 @@
-def sol():
-    return [str(8 ** i)[:8] for i in range(8)]
-
-print(sol())

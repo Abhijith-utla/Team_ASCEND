@@ -1,2 +1,0 @@
-def sol():
-    return eval("987654321") == 24.0

@@ -1,4 +1,0 @@
-def sol():
-    return len(str(1000)) == len(str(10000))
-
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return {}
-
-# The solution to the problem is an empty dictionary.

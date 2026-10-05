@@ -1,4 +1,0 @@
-def sol():
-    return [i for i in range(26) if 'a' <= chr(97 + i) <= 'f' or 'A' <= chr(65 + i) <= 'F']
-
-assert sat(sol())

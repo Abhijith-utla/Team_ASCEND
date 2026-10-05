@@ -1,5 +1,0 @@
-def sol():
-    return 0
-
-# Checking the function with the test case
-assert sat(0)

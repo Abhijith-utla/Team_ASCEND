@@ -1,4 +1,0 @@
-def sol():
-    return "tetststr"
-
-print(sat(sol()))

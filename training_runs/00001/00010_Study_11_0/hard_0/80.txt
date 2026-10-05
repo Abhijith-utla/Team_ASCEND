@@ -1,4 +1,0 @@
-def sol():
-    return min(str(x) for x in input("Enter your list of numbers separated by space: ").split(' '))
-
-assert sat(sol())

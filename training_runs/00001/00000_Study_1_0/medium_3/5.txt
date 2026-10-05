@@ -1,2 +1,0 @@
-def sol():
-    return {'answer': 'oo not in s and o in s and s.count('o') == 1000'}

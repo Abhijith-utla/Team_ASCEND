@@ -1,4 +1,0 @@
-def sol():
-    return "This string is too short"
-
-assert sat(sol())

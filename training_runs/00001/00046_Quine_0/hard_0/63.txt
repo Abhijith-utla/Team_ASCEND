@@ -1,5 +1,0 @@
-def sol():
-    return ""
-
-# This test ensures the quine is a valid python code
-assert sat(sol())

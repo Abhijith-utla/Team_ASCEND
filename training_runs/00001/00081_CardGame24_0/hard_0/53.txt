@@ -1,4 +1,0 @@
-def sol():
-    return {
-        "nums": [3, 7, 3, 7]
-    }

@@ -1,2 +1,0 @@
-def sol():
-    return sorted(s) == sorted(r) and s == r

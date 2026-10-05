@@ -1,4 +1,0 @@
-def sol():
-    return float(len(str(4.5))) + 4.5
-
-print(sat(str(sol())))

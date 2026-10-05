@@ -1,5 +1,0 @@
-def sol():
-    return ""
-
-# Assertion for the question's solution
-assert sat(sol())

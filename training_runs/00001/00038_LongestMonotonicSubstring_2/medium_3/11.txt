@@ -1,5 +1,0 @@
-def sol():
-    x = ["A", "B", "C", "D"]
-    return x
-
-print(sol())

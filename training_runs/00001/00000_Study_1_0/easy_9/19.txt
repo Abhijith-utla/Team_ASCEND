@@ -1,4 +1,0 @@
-def sol():
-    return 'ooo' not in 'oooooooooooo' and 'o' in 'oooooooooooo' and 'oooooooooooo' == 'oooooooooooo'
-
-assert sat(sol())

@@ -1,7 +1,0 @@
-```python
-def sol():
-    s = 'oo' * 1000
-    return s
-
-assert sat(sol())
-```

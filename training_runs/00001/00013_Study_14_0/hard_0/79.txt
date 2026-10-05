@@ -1,4 +1,0 @@
-def sol():
-    return sum(range(20))
-
-print(sol())

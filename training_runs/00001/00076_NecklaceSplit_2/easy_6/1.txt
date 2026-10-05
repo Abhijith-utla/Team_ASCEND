@@ -1,2 +1,0 @@
-def sol():
-    return {"n": 100000, "lace": "brrrbrrbrbbbbbrrbbrr"}

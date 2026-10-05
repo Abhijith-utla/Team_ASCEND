@@ -1,5 +1,0 @@
-def sol():
-    return "ooooooooooohooooooooooo"
-
-# Testing
-print(sat(sol()))

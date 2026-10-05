@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This is a solution to the problem using Python. The function 'sol' returns an empty list.

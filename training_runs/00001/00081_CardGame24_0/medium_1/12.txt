@@ -1,4 +1,0 @@
-def sol():
-    return "3 * (7 - (3 / 7))"
-
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return sum(i for i in range(20) if sum(range(i)) == sum(range(i, 20)))
-
-assert sat(sol())

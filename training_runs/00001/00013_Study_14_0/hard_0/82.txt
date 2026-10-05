@@ -1,4 +1,0 @@
-def sol():
-    return sum([i for i in range(20)])
-
-print(sat(list(range(20))))

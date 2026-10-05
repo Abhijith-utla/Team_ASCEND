@@ -1,6 +1,0 @@
-def sol():
-    answer = [i for i in range(193) if i%2==0]
-    return answer
-
-# This checker will run: assert sat(sol())
-!

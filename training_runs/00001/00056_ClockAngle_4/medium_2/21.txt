@@ -1,6 +1,0 @@
-def sol():
-    return hour, minute
-
-print("Hour: ", hour, "Minute: ", minute)
-
-assert sat(hour, minute)

@@ -1,2 +1,0 @@
-def sol():
-    return [['cat', 'dog'], ['tac', 'god'], ['act', 'good']]

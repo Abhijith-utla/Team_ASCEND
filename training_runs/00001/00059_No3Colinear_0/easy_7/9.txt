@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This function is not used in the problem, so it's not necessary to implement it.

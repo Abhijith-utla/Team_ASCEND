@@ -1,2 +1,0 @@
-def sol():
-    return eval(str(1) + " " + str(3) + " " + str(7) + " " + str(13))

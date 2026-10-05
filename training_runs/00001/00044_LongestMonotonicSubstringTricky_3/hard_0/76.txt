@@ -1,5 +1,0 @@
-def sol():
-    x = [20, 1, 21, 3, 23, 12, 17, 32, 5]
-    return x
-
-print(sat(sol()))

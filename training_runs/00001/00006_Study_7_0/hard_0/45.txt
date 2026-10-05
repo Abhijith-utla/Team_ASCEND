@@ -1,5 +1,0 @@
-def sol():
-    s = "888"
-    while not sat(s):
-        s += "8"
-    return s

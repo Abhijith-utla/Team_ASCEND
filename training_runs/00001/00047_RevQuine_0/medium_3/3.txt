@@ -1,2 +1,0 @@
-def sol():
-    return eval(str(id(str(__builtin__.eval.__code__))))

@@ -1,4 +1,0 @@
-def sol():
-    return {"hours": 12, "minutes": 30}
-
-assert sat(sol())

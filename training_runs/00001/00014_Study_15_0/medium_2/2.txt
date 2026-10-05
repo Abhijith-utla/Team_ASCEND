@@ -1,4 +1,0 @@
-def sol():
-    return [2 ** x for x in range(20)]
-
-assert sat(sol())

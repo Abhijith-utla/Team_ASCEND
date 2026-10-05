@@ -1,5 +1,0 @@
-def sol():
-    return [8, 0, 0]
-
-# Running the function
-print(sol())

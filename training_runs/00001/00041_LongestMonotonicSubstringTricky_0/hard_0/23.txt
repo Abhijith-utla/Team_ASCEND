@@ -1,2 +1,0 @@
-def sol():
-    return [x[i] for x in range(20) if x[x[i]] <= x[x[i + 1]] and x[i + 1] > x[i]]

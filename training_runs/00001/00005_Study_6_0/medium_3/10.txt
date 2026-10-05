@@ -1,4 +1,0 @@
-```python
-def sol():
-    return 2
-```

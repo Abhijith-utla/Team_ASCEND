@@ -1,6 +1,0 @@
-def sol():
-    x = [i for i in range(61)]
-    return x
-
-# Testing
-assert sat(sol())

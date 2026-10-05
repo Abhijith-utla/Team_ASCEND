@@ -1,3 +1,0 @@
-def sol():
-    s = "3.5"
-    return float(s) + len(s) == 4.5

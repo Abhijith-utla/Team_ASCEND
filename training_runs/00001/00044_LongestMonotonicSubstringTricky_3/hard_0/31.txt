@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# Insert your code here. It will depend on the requirements.

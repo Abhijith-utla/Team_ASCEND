@@ -1,7 +1,0 @@
-def sol():
-    return {
-        'answer': 19,
-        'stamps': [19, 14, 81],
-        'max_stamps': 2,
-        'options': [19, 14, 81]
-    }

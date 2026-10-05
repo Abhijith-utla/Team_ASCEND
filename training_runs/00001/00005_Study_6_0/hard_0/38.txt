@@ -1,8 +1,0 @@
-Here's the correct solution:
-
-```python
-def sol():
-    return 4
-```
-
-The function `sol` returns the number `4` as required by the problem.

@@ -1,6 +1,0 @@
-def sol():
-    li = [0]*20
-    return li
-
-# Uncomment the following line to see the output of the function
-# print(sol())

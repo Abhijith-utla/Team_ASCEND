@@ -1,5 +1,0 @@
-def sol():
-    return ["_" * 9 * 9]
-
-# Testing the function
-assert sat(sol())

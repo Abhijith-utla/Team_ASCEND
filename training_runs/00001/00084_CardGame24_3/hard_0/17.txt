@@ -1,2 +1,0 @@
-def sol():
-    return "5 9 4 3"

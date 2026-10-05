@@ -1,4 +1,0 @@
-def sol():
-    return [25, 22, 8, 84, 60, 56]
-
-print(sat(sol()))  # Output: True

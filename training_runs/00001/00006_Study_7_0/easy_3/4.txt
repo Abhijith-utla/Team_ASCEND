@@ -1,6 +1,0 @@
-```python
-def sol():
-    return "8" * 2888
-
-assert sat(sol())
-```

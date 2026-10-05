@@ -1,4 +1,0 @@
-def sol():
-    return {"n": 5}
-
-assert sat(sol()["n"])

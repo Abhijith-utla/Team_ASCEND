@@ -1,4 +1,0 @@
-def sol():
-    return 10 + 12 * 1 + 7
-
-assert sat(sol())

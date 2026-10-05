@@ -1,5 +1,0 @@
-def sol():
-    return [s for s in '12345678']
-
-# Test
-assert sat(sol())

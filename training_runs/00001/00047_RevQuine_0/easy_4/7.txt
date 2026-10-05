@@ -1,6 +1,0 @@
-def sol():
-    return ''
-
-# Testing the function
-if __name__ == '__main__':
-    assert sat(sol())

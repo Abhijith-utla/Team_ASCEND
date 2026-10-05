@@ -1,7 +1,0 @@
-def sol():
-    answer = []
-    for i in range(100):
-        answer.append(i)
-    return answer
-
-print(sol())

@@ -1,6 +1,0 @@
-def sol():
-    answer = []
-    return answer
-
-# Checker should print: []
-print(sol())

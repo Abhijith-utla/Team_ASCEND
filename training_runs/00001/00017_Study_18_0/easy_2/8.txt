@@ -1,2 +1,0 @@
-def sol():
-    return all(len(set(s)) == len(s) for s in ls)

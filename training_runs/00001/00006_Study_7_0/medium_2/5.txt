@@ -1,4 +1,0 @@
-def sol():
-    return '888' if sat('888') else '000'
-
-print(sol())

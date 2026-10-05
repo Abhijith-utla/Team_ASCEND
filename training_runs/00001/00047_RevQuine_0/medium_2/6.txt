@@ -1,4 +1,0 @@
-def sol():
-    return eval(str(rev_quine)) == str(rev_quine)
-
-assert sat(sol())

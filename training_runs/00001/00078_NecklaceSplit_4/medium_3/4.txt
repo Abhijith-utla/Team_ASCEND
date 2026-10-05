@@ -1,4 +1,0 @@
-def sol():
-    return 0
-
-print(f"Assertion: sat(sol()) is {'' if sat(sol()) else 'not '}True")

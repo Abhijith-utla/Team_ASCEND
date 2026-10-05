@@ -1,4 +1,0 @@
-def sol():
-    return ""
-
-assert sat(0)

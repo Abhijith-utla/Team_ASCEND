@@ -1,5 +1,0 @@
-def sol():
-    answer = "123456789987654321123456789123456789"
-    return answer
-
-assert sat(sol())

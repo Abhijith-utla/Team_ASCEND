@@ -1,4 +1,0 @@
-def sol():
-    return {"n": 10, "lace": "bbbbbbbbbbbbbbbbb"}
-
-assert sat(sol()["n"], sol()["lace"])

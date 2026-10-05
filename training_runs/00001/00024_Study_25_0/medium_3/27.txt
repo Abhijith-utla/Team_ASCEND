@@ -1,2 +1,0 @@
-def sol():
-    return ''.join(sorted(sorted(s) == sorted('uipenmtrsA') and s == s[::-1] for s in [input()])))

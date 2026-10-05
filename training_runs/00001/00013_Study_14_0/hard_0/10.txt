@@ -1,5 +1,0 @@
-def sol():
-    return [sum(i) for i in range(20)]
-
-# Test case
-print(sat(sol()))

@@ -1,5 +1,0 @@
-def sol():
-    return "r" * (2 * 5)
-
-# Run the code to test the function
-assert sat(sol())

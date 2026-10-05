@@ -1,5 +1,0 @@
-def sol():
-    return ""
-
-# This should pass the test.
-assert sat(sol())

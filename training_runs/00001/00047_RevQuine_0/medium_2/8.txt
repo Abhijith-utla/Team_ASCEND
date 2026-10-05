@@ -1,9 +1,0 @@
-def sol():
-    return ""
-
-# Test
-def test_sol():
-    assert sat(sol())
-
-# Run test
-test_sol()

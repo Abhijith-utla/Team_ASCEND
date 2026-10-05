@@ -1,6 +1,0 @@
-def sol():
-    x = [0]*737
-    return x
-
-# Checker will run:
-assert sat(sol())

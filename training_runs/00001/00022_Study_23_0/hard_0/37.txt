@@ -1,2 +1,0 @@
-def sol():
-    return tuple(chr(ord('a')+2*i)+chr(ord('b')+2*i) for i in range(3))

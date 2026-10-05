@@ -1,4 +1,0 @@
-def sol():
-    return 0
-
-print(f"The solution is: {sol()}")

@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This solution will always return an empty list as no answer is provided by the problem.

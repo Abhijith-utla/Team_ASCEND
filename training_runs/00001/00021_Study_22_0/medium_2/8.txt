@@ -1,2 +1,0 @@
-def sol():
-    return '0123456789ABCBA' if sat('0123456789ABCBA') else '0123456789ABCBB'

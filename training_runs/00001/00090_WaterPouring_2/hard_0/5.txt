@@ -1,5 +1,0 @@
-def sol():
-    return [[357, 0, 298], [8, 284, 72], [0, 0, 364]]
-
-# Testing
-assert sat(sol())

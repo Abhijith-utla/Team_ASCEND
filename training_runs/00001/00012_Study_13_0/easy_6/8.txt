@@ -1,4 +1,0 @@
-def sol():
-    return {
-        "answer": 3.1416
-    }

@@ -1,5 +1,0 @@
-def sol():
-    return eval(str(sol))
-
-# Checker
-assert sat(str(sol))

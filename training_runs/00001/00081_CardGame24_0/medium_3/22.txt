@@ -1,4 +1,0 @@
-def sol():
-    return {}
-
-# Add your Python code here

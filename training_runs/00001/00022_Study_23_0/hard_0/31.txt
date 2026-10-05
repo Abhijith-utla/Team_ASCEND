@@ -1,2 +1,0 @@
-def sol():
-    return tuple(chr(sum(ord(c) for c in 'dee'+'doo'+'dah!')) for _ in range(3))

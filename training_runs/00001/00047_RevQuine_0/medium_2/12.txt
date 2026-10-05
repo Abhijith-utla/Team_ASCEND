@@ -1,2 +1,0 @@
-def sol():
-    return eval(str(id(str(str('string'))))[::-1]) == str(id(str(str('string'))))[::-1]

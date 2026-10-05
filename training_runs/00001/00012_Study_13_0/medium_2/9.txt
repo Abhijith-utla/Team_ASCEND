@@ -1,5 +1,0 @@
-def sol():
-    return "123.456"
-
-# Run the checker
-assert sat(float(sol()))

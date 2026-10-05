@@ -1,6 +1,0 @@
-def sol():
-    x = [0]*19
-    return x
-
-# Testing the solution
-assert sat(sol())

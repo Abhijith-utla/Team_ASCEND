@@ -1,4 +1,0 @@
-def sol():
-    return 'oooo' if sat('oooo') else 'not oo'
-
-print(sol())

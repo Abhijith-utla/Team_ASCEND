@@ -1,2 +1,0 @@
-def sol():
-    return {"index": -1, "value": -1}

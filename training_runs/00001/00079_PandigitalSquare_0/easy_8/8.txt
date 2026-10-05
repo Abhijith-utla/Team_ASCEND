@@ -1,5 +1,0 @@
-def sol():
-    n = 10
-    while not sat(n):
-        n += 1
-    return n

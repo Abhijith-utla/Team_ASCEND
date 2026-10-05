@@ -1,4 +1,0 @@
-def sol():
-    return ''.join(sorted(answer)) == ''.join(sorted('Auipenmtrs')) and ''.join(answer) == ''.join(reversed(answer))
-
-assert sat(sol())

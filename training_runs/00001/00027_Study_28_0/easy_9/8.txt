@@ -1,4 +1,0 @@
-def sol():
-    return [x for x in range(-100, 100) if abs(x - 0) >= 10]
-
-assert sat(sol())

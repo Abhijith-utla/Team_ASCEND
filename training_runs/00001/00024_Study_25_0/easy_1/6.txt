@@ -1,4 +1,0 @@
-def sol():
-    return ''.join(sorted(sorted('trusenipM'), reverse=True))
-
-print(sol())

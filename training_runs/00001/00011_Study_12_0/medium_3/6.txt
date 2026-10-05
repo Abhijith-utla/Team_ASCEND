@@ -1,6 +1,0 @@
-def sol():
-    li = [0]*1000
-    return li
-
-# Check the answer
-assert sat(sol())

@@ -1,6 +1,0 @@
-def sol():
-    return "I am a quine!"
-
-print(sol())
-
-assert sat(sol)

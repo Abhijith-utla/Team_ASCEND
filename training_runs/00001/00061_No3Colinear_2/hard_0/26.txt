@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This function is incomplete. You need to fill in the details.

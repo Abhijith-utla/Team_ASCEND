@@ -1,6 +1,0 @@
-def sol():
-    return <answer>
-
-Incorrect pattern:
-def sol(x):
-    ...

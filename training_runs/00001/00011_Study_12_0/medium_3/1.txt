@@ -1,5 +1,0 @@
-def sol():
-    li = [1] * 999 + [3]
-    return li
-
-assert sat(sol())

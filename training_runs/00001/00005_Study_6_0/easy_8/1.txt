@@ -1,2 +1,0 @@
-def sol():
-    return 0 if sat(0) else 1

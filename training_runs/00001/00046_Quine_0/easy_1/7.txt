@@ -1,4 +1,0 @@
-def sol():
-    return "Hello World"
-
-print(sat(sol))  # Outputs: Hello World

@@ -1,5 +1,0 @@
-def sol():
-    return True
-
-# The function `sat` is already defined by the user.
-# We don't need to define another function named `sol`.

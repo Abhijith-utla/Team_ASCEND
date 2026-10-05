@@ -1,4 +1,0 @@
-def sol():
-    return [3]*1000000000
-
-assert sat(sol())

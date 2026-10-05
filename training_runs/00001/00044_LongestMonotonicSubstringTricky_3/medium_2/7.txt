@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# This code is just a placeholder, it is not an actual solution. It is to be used by the checker.

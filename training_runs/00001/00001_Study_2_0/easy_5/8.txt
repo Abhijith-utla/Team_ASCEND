@@ -1,4 +1,0 @@
-def sol():
-    return 'yyyyyyyyyyyyyyyy'
-
-print(sol())

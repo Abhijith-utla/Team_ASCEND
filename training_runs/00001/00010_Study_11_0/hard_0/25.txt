@@ -1,4 +1,0 @@
-def sol():
-    return len(set(str(x) for x in range(10))) == 1
-
-assert sat(sol())

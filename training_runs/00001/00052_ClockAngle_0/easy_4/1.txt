@@ -1,4 +1,0 @@
-def sol():
-    return {"h": 0, "m": 0}
-
-print(sat(sol()))

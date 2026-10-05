@@ -1,6 +1,0 @@
-def sol():
-    return {
-        'answer': int((2 ** 20) - 1)
-    }
-
-assert sat(sol())

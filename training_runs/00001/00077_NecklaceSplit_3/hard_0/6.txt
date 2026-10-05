@@ -1,5 +1,0 @@
-def sol():
-    return ""
-
-print(sat(0))
-print(sol())

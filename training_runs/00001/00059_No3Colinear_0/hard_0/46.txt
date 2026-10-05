@@ -1,6 +1,0 @@
-def sol():
-    return []
-
-# Put your solution here
-!pip install pytest
-!pip install pytest-cov

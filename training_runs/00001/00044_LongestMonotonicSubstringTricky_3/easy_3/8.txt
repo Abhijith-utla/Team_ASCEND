@@ -1,8 +1,0 @@
-def sol():
-    return []
-
-def main():
-    assert sat(sol())
-
-if __name__ == "__main__":
-    main()

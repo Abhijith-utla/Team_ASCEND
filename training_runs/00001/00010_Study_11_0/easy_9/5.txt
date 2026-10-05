@@ -1,4 +1,0 @@
-```python
-def sol():
-    return bool(set([input().strip() for _ in range(int(input().strip()))]))
-```

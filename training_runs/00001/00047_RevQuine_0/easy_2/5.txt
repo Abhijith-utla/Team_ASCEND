@@ -1,6 +1,0 @@
-def sol():
-    return ""
-
-# Test the solution
-rev_quine = 'def sol():\n    return ""'
-assert sat(rev_quine)

@@ -1,5 +1,0 @@
-def sol():
-    return 'dee'
-
-# Verification
-assert sat(sol())

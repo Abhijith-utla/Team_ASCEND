@@ -1,7 +1,0 @@
-def sol():
-    s = input()
-    while not sat(s):
-        s = input()
-    return s
-
-print(sol())

@@ -1,5 +1,0 @@
-def sol():
-    return 11
-
-# Test case
-print(sat(sol()))

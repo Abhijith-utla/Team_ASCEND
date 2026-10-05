@@ -1,8 +1,0 @@
-Here's the correct pattern for the solution:
-
-```python
-def sol():
-    return []
-```
-
-This function will return an empty list as the answer.

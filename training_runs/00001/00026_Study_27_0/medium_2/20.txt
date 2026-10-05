@@ -1,6 +1,0 @@
-def sol():
-    arr = [5, 2, 1, 6]
-    arr[0] = 4
-    return arr
-
-assert sat(sol())

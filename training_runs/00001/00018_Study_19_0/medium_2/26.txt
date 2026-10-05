@@ -1,5 +1,0 @@
-def sol():
-    return {34}
-
-# Run the assertion
-assert sat(sol())

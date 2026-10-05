@@ -1,7 +1,0 @@
-def sol():
-    s = input()
-    assert sat(s)
-    return s
-
-# Testing
-assert sat(sol())

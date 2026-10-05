@@ -1,6 +1,0 @@
-def sol():
-    s = 'abcdefghij'
-    return sat(s)
-
-# Testing
-assert sat(sol())

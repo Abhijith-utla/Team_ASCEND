@@ -1,2 +1,0 @@
-def sol():
-    return {"result": 0.0}

@@ -1,4 +1,0 @@
-def sol():
-    return 'r' * 100
-
-assert sat(sol())

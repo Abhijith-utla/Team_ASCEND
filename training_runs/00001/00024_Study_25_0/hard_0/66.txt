@@ -1,2 +1,0 @@
-def sol():
-    return sorted(s) == sorted('Permute me true') and s == s[::-1]

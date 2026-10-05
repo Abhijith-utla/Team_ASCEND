@@ -1,4 +1,0 @@
-def sol():
-    return {}
-
-# The assert statement is not needed in this context as we are not testing anything.

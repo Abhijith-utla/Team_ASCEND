@@ -1,5 +1,0 @@
-def sol():
-    return [False]*20
-
-# Checker
-assert sat(sol())

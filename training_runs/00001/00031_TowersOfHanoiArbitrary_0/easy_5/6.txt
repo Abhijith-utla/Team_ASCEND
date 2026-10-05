@@ -1,5 +1,0 @@
-def sol():
-    return [source[:] for source in source]
-
-# Test
-assert sat(source)

@@ -1,4 +1,0 @@
-def sol():
-    return '123456'
-
-assert sat(sol())

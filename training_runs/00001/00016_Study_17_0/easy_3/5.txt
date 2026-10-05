@@ -1,4 +1,0 @@
-def sol():
-    return len(str(1000 + 1)) < len(str(1001 + 1))
-
-print(sat(sol()))

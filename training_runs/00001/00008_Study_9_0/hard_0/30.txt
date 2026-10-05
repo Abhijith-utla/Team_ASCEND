@@ -1,2 +1,0 @@
-def sat(li: List[int]):
-    return [ord(i) for i in li] == list("The quick brown fox jumps over the lazy dog".replace(" ", ""))

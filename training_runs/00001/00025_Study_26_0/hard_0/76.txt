@@ -1,4 +1,0 @@
-def sol():
-    return "".join(["0"] * 88)
-
-print(sol())

@@ -1,3 +1,0 @@
-def sol():
-    li = [3, 1, 4, 2]
-    return sat(li)

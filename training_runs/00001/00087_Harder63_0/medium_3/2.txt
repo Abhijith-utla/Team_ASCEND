@@ -1,4 +1,0 @@
-def sol():
-    return "8*1-63"
-
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return "def sol():\n    return " + str(sorted([10, 12, 1, 7])) + "()"
-
-print(sol())

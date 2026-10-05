@@ -1,2 +1,0 @@
-def sol():
-    return "wbqjxzjzqh" if sat("wbqjxzjzqh") else "pqzxwhqz"

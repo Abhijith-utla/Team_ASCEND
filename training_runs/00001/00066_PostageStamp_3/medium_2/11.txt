@@ -1,7 +1,0 @@
-def sol():
-    return {
-        'stamps': [19, 14, 81],
-        'target': 19,
-        'max_stamps': 2,
-        'options': [19, 14, 81]
-    }

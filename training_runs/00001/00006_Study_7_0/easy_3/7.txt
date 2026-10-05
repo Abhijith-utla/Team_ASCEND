@@ -1,9 +1,0 @@
-def sol():
-    return "1000000000000000000000000000000000000000000000000000000000000000"
-
-# Test the solution
-def test():
-    assert sat(sol()) == True
-
-# Run the test
-test()

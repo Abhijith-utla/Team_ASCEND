@@ -1,4 +1,0 @@
-def sol():
-    return ''.join(ch for ch in 'abcde'[::2])
-
-assert sat(sol())

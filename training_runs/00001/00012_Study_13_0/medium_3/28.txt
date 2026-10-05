@@ -1,4 +1,0 @@
-def sol():
-    return 3.1417
-
-assert sat(sol())

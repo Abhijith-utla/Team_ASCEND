@@ -1,5 +1,0 @@
-def sol():
-    return 5
-
-# Uncomment the following line to test your solution
-# assert sat(sol())

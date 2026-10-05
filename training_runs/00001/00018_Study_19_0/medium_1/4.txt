@@ -1,4 +1,0 @@
-def sol():
-    return [i for i in range(32)]
-
-assert sat(sol())

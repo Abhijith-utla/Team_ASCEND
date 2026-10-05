@@ -1,6 +1,0 @@
-def sol():
-    class Answer:
-        def __init__(self, state):
-            self.state = state
-
-    return Answer(source)

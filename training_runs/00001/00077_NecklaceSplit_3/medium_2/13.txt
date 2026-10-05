@@ -1,4 +1,0 @@
-def sol():
-    return "r" * (2 * 42)
-
-assert sat(sol())

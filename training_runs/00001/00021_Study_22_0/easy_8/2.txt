@@ -1,2 +1,0 @@
-def sol():
-    return "This is not a valid Python code."

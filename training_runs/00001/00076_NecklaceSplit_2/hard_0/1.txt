@@ -1,4 +1,0 @@
-def sol():
-    lace = "brrrbrrbrbbbbbrrbbrr"
-    n = lace.index("r")
-    return n

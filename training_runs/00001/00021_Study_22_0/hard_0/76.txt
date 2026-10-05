@@ -1,2 +1,0 @@
-def sol():
-    return 'abcde' if sat('abcde') else 'fghij'

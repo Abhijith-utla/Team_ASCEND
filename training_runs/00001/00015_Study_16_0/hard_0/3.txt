@@ -1,2 +1,0 @@
-def sol():
-    return str(float("1") + len("1"))

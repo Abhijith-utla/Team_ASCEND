@@ -1,6 +1,0 @@
-def sol():
-    return {}
-
-# This is just a placeholder, please replace it with your solution
-def sol():
-    return {}

@@ -1,5 +1,0 @@
-def sol():
-    return 'x' * 1000
-
-# Checker
-assert sat(sol())

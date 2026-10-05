@@ -1,4 +1,0 @@
-def sol():
-    return 4
-
-# The output is valid Python code only.

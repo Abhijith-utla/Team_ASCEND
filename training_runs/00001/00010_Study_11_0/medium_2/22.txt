@@ -1,4 +1,0 @@
-def sol():
-    return ["python", "programming", "puzzle"]
-
-assert sat(sol())

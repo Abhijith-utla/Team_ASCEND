@@ -1,4 +1,0 @@
-def sol():
-    return " ".join(str(num) for num in [1, 10, 13, 4])
-
-sat(sol())

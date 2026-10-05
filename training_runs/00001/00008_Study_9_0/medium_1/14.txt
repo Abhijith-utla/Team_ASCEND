@@ -1,5 +1,0 @@
-def sol():
-    return [ord(i) for i in 'The five boxing wizards jump quickly']
-
-# Run the test
-assert sat(sol())

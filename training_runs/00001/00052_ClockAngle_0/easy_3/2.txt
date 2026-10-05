@@ -1,7 +1,0 @@
-def sol():
-    return ()
-
-def test():
-    assert sol() == ()
-
-test()

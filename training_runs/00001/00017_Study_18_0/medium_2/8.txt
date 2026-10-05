@@ -1,2 +1,0 @@
-def sol():
-    return {"answer": len(set([s for s in input().split()]))}

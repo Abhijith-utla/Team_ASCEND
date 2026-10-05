@@ -1,4 +1,0 @@
-def sol():
-    return ''
-
-# In the provided pattern, the answer is an empty string.

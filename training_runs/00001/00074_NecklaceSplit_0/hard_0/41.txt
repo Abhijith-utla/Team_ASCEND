@@ -1,5 +1,0 @@
-def sol():
-    lace = "bbrbrbbbbbbrrrrrrrbrrrrbbbrbrrbbbrbrrrbrrbrrbrbbrrrrrbrbbbrrrbbbrbbrbbbrbrbb"
-    return lace
-
-print(sat(1))

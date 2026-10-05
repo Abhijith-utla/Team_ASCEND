@@ -1,5 +1,0 @@
-def sol():
-    return {}
-
-# Testing the function
-print(sat(repr(sol())))  # should return {}

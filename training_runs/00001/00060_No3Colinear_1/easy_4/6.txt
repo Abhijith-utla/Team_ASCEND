@@ -1,4 +1,0 @@
-def sol():
-    return {(a, b): 1 for a, b in coords}
-
-assert sat(sol())

@@ -1,5 +1,0 @@
-def sat(li: List[int]):
-    for i in range(10):
-        if li.count(i) != i:
-            return False
-    return True

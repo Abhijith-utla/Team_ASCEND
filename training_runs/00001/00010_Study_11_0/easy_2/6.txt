@@ -1,8 +1,0 @@
-Here's the correct pattern for the `sol` function:
-
-```python
-def sol():
-    return "Hello, World!"
-```
-
-In this function, the output is a string "Hello, World!".

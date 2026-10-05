@@ -1,5 +1,0 @@
-def sol():
-    return [str(i) for i in range(8 ** 88)]
-
-# Testing the function
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return 'pqrst'
-
-# assert sat(sol())

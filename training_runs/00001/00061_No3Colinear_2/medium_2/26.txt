@@ -1,4 +1,0 @@
-def sol():
-    return []
-
-# The function sol is already defined by the user, so no code is required to be written here.

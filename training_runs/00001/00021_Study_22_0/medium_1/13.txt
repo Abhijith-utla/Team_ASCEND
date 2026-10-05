@@ -1,6 +1,0 @@
-def sol():
-    s = 'abcdefghi'
-    return sat(s)
-
-if __name__ == '__main__':
-    assert sat(sol())

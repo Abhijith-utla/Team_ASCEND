@@ -1,6 +1,0 @@
-def sol():
-    for _ in range(3):
-        assert 5 % 5 == 0
-        n = 4
-        n -= 1
-    return n > 0

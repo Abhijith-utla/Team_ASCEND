@@ -1,3 +1,0 @@
-def sol():
-    ls = ["Hello", "World"]
-    return ls

@@ -1,4 +1,0 @@
-```python
-def sol():
-    return 'oooo' if sat('oooo') else 'noooo'
-```

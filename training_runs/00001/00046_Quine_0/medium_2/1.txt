@@ -1,6 +1,0 @@
-def sol():
-    return eval("print('Hello, World!')")
-
-# Checker code:
-
-assert sat(sol())

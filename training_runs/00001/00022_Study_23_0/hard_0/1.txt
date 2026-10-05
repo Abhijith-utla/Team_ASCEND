@@ -1,5 +1,0 @@
-def sol():
-    return tuple(zip('dee', 'doo', 'dah!'))
-
-# Testing
-assert sat(sol())

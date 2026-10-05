@@ -1,2 +1,0 @@
-def sol():
-    return "Sample" if sat("Sample") else "Not Sample"

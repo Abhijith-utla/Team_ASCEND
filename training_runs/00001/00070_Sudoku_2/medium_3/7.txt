@@ -1,5 +1,0 @@
-def sol():
-    x = "_" * 31
-    return x
-
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return "True" if sat("abba") else "False"
-
-print(sol())

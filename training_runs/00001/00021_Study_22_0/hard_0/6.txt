@@ -1,4 +1,0 @@
-def sol():
-    return "even"
-
-assert sat(sol())

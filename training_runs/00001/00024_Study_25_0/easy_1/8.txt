@@ -1,4 +1,0 @@
-def sol():
-    return ''.join(sorted(s for s in 'trusenipM' if s in 'trusenipM'))
-
-assert sat(sol())

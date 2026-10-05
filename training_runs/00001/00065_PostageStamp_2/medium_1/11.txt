@@ -1,4 +1,0 @@
-def sol():
-    return [2, 4, 6]
-
-assert sat(sol())

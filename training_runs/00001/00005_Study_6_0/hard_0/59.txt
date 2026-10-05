@@ -1,7 +1,0 @@
-def sol():
-    for i in range(10 ** 10 + 1, 10 ** 12):
-        if sat(i):
-            return i
-    return None
-
-print(sol())

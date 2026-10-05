@@ -1,8 +1,0 @@
-def sol():
-    return [0, 0]
-
-# Testing
-def test_hand_position():
-    assert sat(sol())
-
-test_hand_position()

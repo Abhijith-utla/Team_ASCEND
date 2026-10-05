@@ -1,6 +1,0 @@
-def sol():
-    return len(max(min(range(1, 1000), key=len)))
-
-print(sol())
-
-assert sat(sol())

@@ -1,4 +1,0 @@
-def sol():
-    return [x % 1000 for x in range(1001)]
-
-print(sat(sol()))

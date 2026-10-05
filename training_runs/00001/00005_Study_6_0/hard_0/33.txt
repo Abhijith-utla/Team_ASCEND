@@ -1,5 +1,0 @@
-def sol():
-    return 1234567890
-
-# Checker
-assert sat(sol())

@@ -1,2 +1,0 @@
-def sol():
-    return [set(s) for s in ['hello', 'world', 'python', 'programming'] if len(set(s)) == len(s)]

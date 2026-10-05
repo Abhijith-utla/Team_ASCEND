@@ -1,5 +1,0 @@
-def sol():
-    return [123 * i % 1000 for i in range(20)]
-
-# Checker
-assert sat(sol())

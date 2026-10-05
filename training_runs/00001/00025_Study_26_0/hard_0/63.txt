@@ -1,5 +1,0 @@
-def sol():
-    return [str(int(i)) * 8 for i in range(8)]
-
-# Testing the function
-print(sat(sol()))  # Expected output: False

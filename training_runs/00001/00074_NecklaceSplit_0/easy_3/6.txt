@@ -1,6 +1,0 @@
-def sol():
-    return {
-        "result": None,
-        "n": None,
-        "lace": None
-    }

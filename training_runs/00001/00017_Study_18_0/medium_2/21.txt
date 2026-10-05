@@ -1,6 +1,0 @@
-def sol():
-    return {
-        'answer': sat(['abc', 'def', 'ghi'])
-    }
-
-# assert sat(sol())

@@ -1,8 +1,0 @@
-Here is the Python solution:
-
-```python
-def sol():
-    return 'dee'
-```
-
-The function sol() returns the string 'dee'.

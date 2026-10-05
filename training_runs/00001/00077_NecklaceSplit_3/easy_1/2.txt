@@ -1,4 +1,0 @@
-def sol():
-    return [['r' * n] * (2 * n) for n in range(len(lace) // 2)]
-
-assert sat(sol())

@@ -1,5 +1,0 @@
-def sol():
-    return [1, 2, 3]
-
-print(sat(sol()))  # should return True
-print(sat(sol()))  # should return False

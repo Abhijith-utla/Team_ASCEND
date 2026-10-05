@@ -1,5 +1,0 @@
-def sol():
-    x = [random.randint(1, 1000) for _ in range(737)]
-    return x
-
-print(sat(sol()))

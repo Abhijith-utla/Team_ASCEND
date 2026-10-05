@@ -1,4 +1,0 @@
-def sol():
-    return <answer>
-
-# The problem does not provide an answer, so it is not possible to solve this.

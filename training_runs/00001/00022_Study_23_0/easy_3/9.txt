@@ -1,4 +1,0 @@
-def sol():
-    return 'dah!'
-
-assert sat(sol())

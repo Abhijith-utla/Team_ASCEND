@@ -1,5 +1,0 @@
-def sol():
-    return "8-+1/"
-
-# Test
-print(sat(sol()))

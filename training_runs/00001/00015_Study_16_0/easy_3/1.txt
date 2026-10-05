@@ -1,6 +1,0 @@
-def sol():
-    return '5.5'
-
-# Checker
-def test_sat():
-    assert sat(sol())

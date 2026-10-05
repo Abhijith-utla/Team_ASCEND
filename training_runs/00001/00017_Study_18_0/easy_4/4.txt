@@ -1,4 +1,0 @@
-def sol():
-    return len(set(''.join(sorted(input("Enter strings separated by space: ").split())))) == 1
-
-assert sat(sol)

@@ -1,4 +1,0 @@
-def sol():
-    return (8 ** 2888) ** 0.5 == round((8 ** 2888) ** 0.5)
-
-print(sol())

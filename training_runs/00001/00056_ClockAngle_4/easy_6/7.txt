@@ -1,5 +1,0 @@
-def sol():
-    return hour, minute
-
-# Test
-assert sat(*sol())

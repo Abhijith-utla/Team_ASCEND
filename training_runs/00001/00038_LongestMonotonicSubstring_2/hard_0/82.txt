@@ -1,5 +1,0 @@
-def sol():
-    answer = []
-    for i in range(737):
-        answer.append(i)
-    return answer

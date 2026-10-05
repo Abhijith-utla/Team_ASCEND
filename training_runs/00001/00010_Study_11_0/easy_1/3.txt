@@ -1,6 +1,0 @@
-The correct solution is:
-
-```python
-def sol():
-    return True
-```

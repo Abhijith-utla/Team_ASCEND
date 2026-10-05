@@ -1,5 +1,0 @@
-def sol():
-    return "812+2//3"
-
-# Checker
-assert sat(sol())

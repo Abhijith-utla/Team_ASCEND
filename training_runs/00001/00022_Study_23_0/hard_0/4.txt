@@ -1,5 +1,0 @@
-def sol():
-    return [a for a, b, c in zip('dee', 'doo', 'dah!')]
-
-# Test
-assert sat(sol())

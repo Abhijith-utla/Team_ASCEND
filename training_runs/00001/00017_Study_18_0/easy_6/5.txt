@@ -1,6 +1,0 @@
-def sol():
-    a = 10
-    b = 22.3456789123456789
-    return sat(a, b)
-
-assert sat(sol())

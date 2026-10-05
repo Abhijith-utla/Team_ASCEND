@@ -1,5 +1,0 @@
-def sol():
-    return ''
-
-# This should return True since 'sol' is a pure function which does not perform any computations or manipulations.
-assert sat(sol())

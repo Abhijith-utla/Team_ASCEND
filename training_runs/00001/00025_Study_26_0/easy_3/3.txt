@@ -1,4 +1,0 @@
-def sol():
-    return [str(i) for i in str(7 ** 64.6)]
-
-print(sol())

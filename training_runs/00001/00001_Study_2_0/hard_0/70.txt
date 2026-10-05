@@ -1,3 +1,0 @@
-def sol():
-    s = 'hoooooooooooooooo'
-    return sat(s)

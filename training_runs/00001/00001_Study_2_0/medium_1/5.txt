@@ -1,4 +1,0 @@
-def sol():
-    return 'x' * 100 + 'o' * 101 + 'x' * 98
-
-assert sat(sol())

@@ -1,6 +1,0 @@
-def sol():
-    return [34, 34, 34]
-
-# Testing the solution
-if __name__ == "__main__":
-    assert sat(sol())

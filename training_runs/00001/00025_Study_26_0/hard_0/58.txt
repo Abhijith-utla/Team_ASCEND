@@ -1,5 +1,0 @@
-def sol():
-    return "".join(["E" * 8 for _ in range(88)])
-
-# Checker
-print(sat(sol()))

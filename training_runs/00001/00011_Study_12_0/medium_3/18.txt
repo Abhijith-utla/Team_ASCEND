@@ -1,4 +1,0 @@
-def sol():
-    return 1 if sat([4] + [1]*999) else 0
-
-print(sol())

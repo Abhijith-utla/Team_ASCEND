@@ -1,5 +1,0 @@
-def sol():
-    x = ["Hello, world!" for _ in range(737)]
-    return x
-
-assert sat(sol())

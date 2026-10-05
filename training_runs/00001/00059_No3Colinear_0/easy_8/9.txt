@@ -1,5 +1,0 @@
-def sol():
-    return []
-
-# This function is not correct because the function `sat` is not defined.
-# The function `sol` is supposed to return an empty list.

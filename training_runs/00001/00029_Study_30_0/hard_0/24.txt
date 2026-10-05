@@ -1,5 +1,0 @@
-def sol():
-    li = [100] * 20
-    return li
-
-assert sat(sol())

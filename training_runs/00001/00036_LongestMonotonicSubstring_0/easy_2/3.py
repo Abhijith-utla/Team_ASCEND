@@ -1,9 +1,0 @@
-def sat(x: List[int], length=13):
-    return all(x[i] <= x[i + 1] for i in range(length - 1))
-
-def sol():
-    answer = 1
-    return answer
-
-if __name__ == "__main__":
-    assert sat(sol())

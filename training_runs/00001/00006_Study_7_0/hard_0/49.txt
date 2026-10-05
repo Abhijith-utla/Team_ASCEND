@@ -1,3 +1,0 @@
-def sol():
-    result = str(8 ** 2888)
-    return sat(result)

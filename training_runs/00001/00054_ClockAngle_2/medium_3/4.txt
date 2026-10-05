@@ -1,6 +1,0 @@
-def sol():
-    return []
-
-# The function `sol` is already defined by the user.
-# It does not take any arguments, and it returns an empty list.
-# The checker will run: assert sol() == []

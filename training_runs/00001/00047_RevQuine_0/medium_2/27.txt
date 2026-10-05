@@ -1,4 +1,0 @@
-def sol():
-    return ""
-
-# The solution is empty string, because the rev_quine is empty string and the result is also an empty string.

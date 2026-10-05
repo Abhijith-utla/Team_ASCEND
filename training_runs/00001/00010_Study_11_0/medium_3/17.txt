@@ -1,6 +1,0 @@
-def sol():
-    return []
-
-# This is to ensure that the function does not take any arguments
-if __name__ == "__main__":
-    assert sat(sol())
