@@ -55,10 +55,59 @@ def main() -> None:
         debug=False,
         has_native_chat_template=has_chat,
     )
-    # Greedy, one sample per puzzle: pass@1.
-    result = opt.evaluate_performance(Dataset.from_list(items), num_samples=1, do_sample=False)
-    score = result.get("hard", 0.0)
+    # Greedy, one sample per puzzle: pass@1. Resumable: each result is appended to a
+    # JSONL file, and puzzles already in it are skipped on re-run.
+    import torch
+    from tqdm import tqdm
 
+    log_path = Path(f"results/eval_artifacts/{args.split}_seed{args.seed}_results.jsonl")
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    done = {}
+    if log_path.exists():
+        for line in log_path.read_text(encoding="utf-8").splitlines():
+            r = json.loads(line)
+            done[r["problem_id"]] = r
+    print(f"Resuming with {len(done)} puzzles already scored")
+
+    MAX_PROMPT_TOKENS = 3000
+    with log_path.open("a", encoding="utf-8") as f:
+        for item in tqdm(items, desc="Evaluating", unit="problem"):
+            if item["problem_id"] in done:
+                continue
+            status, reward = "ok", 0.0
+            try:
+                inputs = opt._tokenize_prompt(opt._build_prompt_representation(item["sat_code"]))
+                if inputs["input_ids"].shape[1] > MAX_PROMPT_TOKENS:
+                    status = "skipped_too_long"
+                else:
+                    with torch.no_grad():
+                        out_ids = model.generate(
+                            **inputs,
+                            do_sample=False,
+                            max_new_tokens=256,
+                            pad_token_id=tokenizer.eos_token_id,
+                        )
+                    completion = opt._decode_generated_completion(inputs, out_ids)
+                    reward = opt._reward_func(
+                        [None],
+                        [completion],
+                        sat_code=[item["sat_code"]],
+                        problem_id=[item["problem_id"]],
+                        difficulty=["hard"],
+                        variant_num=[0],
+                    )[0]
+            except torch.OutOfMemoryError:
+                status = "oom"
+            finally:
+                torch.cuda.empty_cache()
+            rec = {"problem_id": item["problem_id"], "status": status, "reward": float(reward)}
+            done[rec["problem_id"]] = rec
+            f.write(json.dumps(rec) + "\n")
+            f.flush()
+
+    n_fail_infra = sum(1 for r in done.values() if r["status"] != "ok")
+    score = sum(r["reward"] for r in done.values()) / len(items)
+    print(f"({n_fail_infra} puzzles skipped/oom, counted as 0)")
     print(f"\n{args.split} greedy pass@1 = {score:.4f}  (n={len(items)})")
     if args.out:
         Path(args.out).parent.mkdir(parents=True, exist_ok=True)
@@ -70,6 +119,7 @@ def main() -> None:
                     "model": args.model,
                     "n": len(items),
                     "pass_at_1_greedy": score,
+                    "n_skipped_or_oom": n_fail_infra,
                 },
                 indent=2,
             )
