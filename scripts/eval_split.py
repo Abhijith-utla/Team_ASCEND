@@ -49,9 +49,9 @@ def main() -> None:
 
     model, tokenizer, has_chat = lo.load_default_model(args.model)
     opt = lo.LadderOptimizer(
-        Dataset.from_list([{"prompt": x["prompt"]} for x in items]),
-        model,
-        tokenizer,
+        model=model,
+        tokenizer=tokenizer,
+        run_dir=Path(f"results/eval_artifacts/{args.split}_seed{args.seed}"),
         debug=False,
         has_native_chat_template=has_chat,
     )
